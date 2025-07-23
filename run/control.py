@@ -2,7 +2,7 @@ import numpy as np
 import os
 import time
 
-import MFGOGRFunctions as mfgogr
+import MFGoGrFunctions as mfgogr
 import importConnect as connect
 import WireFunctions
 
@@ -16,7 +16,7 @@ import WireFunctions
 # Cell Numbers
 numGO = 4096
 numMF = 4096
-numGR = 1048576
+numGR = 10000 # for testing let's just start with 10000, might not work because of connect_arr # 1048576
 
 # Go Activity
 # upper lim and lower lim are global variables
@@ -40,7 +40,7 @@ CSon, CSoff = 500, 3500
 numTrial = 150
 
 # saving to hard drive
-saveDir = 'C:/Users/Einez (School)/Desktop/Mauk Lab Notes/small_sim_skeleton/Results/'
+saveDir = 'C:/Users/Einez (School)/Desktop/homeosim/Results/'
 expName = 'MFGoGr_Experiment'
 # Save Rasters
 saveGORaster = True
@@ -64,15 +64,15 @@ def run_Session(recip, filpath, filepath_g, conv, grgoW, gogrW, RA = False, mfgo
     GRrasters = np.zeros((numTrial, numBins, numGR), dtype = int)
 
     # Get connect arrays
-    MFGOimportPath = ''
+    MFGOimportPath = 'C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.mfgo'
     MFGO_connect_arr = connect.read_connect(MFGOimportPath, numMF, 20)
-    MFGRimportPath = ''
+    MFGRimportPath = 'C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.mfgr'
     MFGR_connect_arr = connect.read_connect(MFGRimportPath, numMF, 20)
-    GOGRimportPath = ''
+    GOGRimportPath = "C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.gogr"
     GOGR_connect_arr = connect.read_connect(GOGRimportPath, numGO, 20)
-    GRGOimportPath = ''
+    GRGOimportPath = "C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.grgo"
     GRGO_connect_arr = connect.read_connect(GRGOimportPath, numGR, 20)
-    GOGO_connect_arr = WireFunctions.wire_up_cerified(conv, recip, span)
+    GOGO_connect_arr = "C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.gogo"
 
     # Sim Core
     #####################
