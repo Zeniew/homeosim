@@ -1,4 +1,5 @@
 import numpy as np
+import cupy as cp
 import struct
 
 def read_connect(filename, rows, cols, testing = False):
@@ -20,7 +21,7 @@ def read_connect(filename, rows, cols, testing = False):
     
     # Reshape the flat list into a 2D array
     array_2d = [array_flat[i*cols : (i+1)*cols] for i in range(rows)]
-    array_2d = np.array(array_2d)
+    array_2d = cp.array(array_2d)
 
     if testing == True:
         print("Shape:", array_2d.shape)

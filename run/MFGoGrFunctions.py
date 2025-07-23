@@ -1,4 +1,5 @@
 import numpy as np
+import cupy as cp
 import math
 import matplotlib.pyplot as plt
 
@@ -232,9 +233,9 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
                 # add to list
                 spiked_connections.extend(valid_conns)
             # use bincount to count post occurances of cell
-            spiked_connections = np.array(spiked_connections, dtype=int)
+            spiked_connections = cp.array(spiked_connections, dtype=int)
             # count occurances
-            counts = np.bincount(spiked_connections)
+            counts = cp.bincount(spiked_connections)
             # add to GRGO input
             self.inputGRGO[:len(counts)] = counts
 
@@ -282,21 +283,21 @@ class Granule(): # class of Granule cells, entire network of Granule cells
         self.threshRest = -40.0
 
         ### Arrays
-        self.mfgrW = np.full(self.numGranule, mfgr_weight, dtype = float) # synaptic weight of mossy fiber to granule 
-        self.Vm = np.full(self.numGranule, self.eLeak, dtype = float) # membrane potential of Granule cells, initialized to leak reversal potential
-        self.gSum_MFGR = np.zeros(self.numGranule, dtype = float) # sum of excitatory conductances from MF to Granule
-        self.inputMFGR = np.zeros(self.numGranule, dtype = int) # input excit
-        self.gSum_GOGR = np.zeros(self.numGranule, dtype = float) # sum of GABA conductances from Golgi to Granule
-        self.inputGOGR = np.zeros(self.numGranule, dtype = int) # input GABA conductance from Golgi to Granule
-        # self.gAMPA_Inc_MFGR = np.zeros(self.numGranule, dtype = float) # AMPA conductance increment from MF to Granule
-        # self.AMPA_MFGR = np.zeros(self.numGranule, dtype = float) # AMPA conductance from MF to Granule
-        self.gNMDA_MFGR= np.zeros(self.numGranule, dtype = float) # NMDA conductance from MF to Granule
-        self.gNMDA_Inc_MFGR = np.zeros(self.numGranule, dtype = float) # NMDA conductance increment from MF to Granule
-        self.gLeak = np.full(self.numGranule, self.gLeak_base, dtype = float) # leak conductance for Granule cells, initialized to leak conductance
-        self.gKCa = np.zeros(self.numGranule, dtype = float) # experimental K and Ca conductance, initialized to 0
+        self.mfgrW = cp.full(self.numGranule, mfgr_weight, dtype = float) # synaptic weight of mossy fiber to granule 
+        self.Vm = cp.full(self.numGranule, self.eLeak, dtype = float) # membrane potential of Granule cells, initialized to leak reversal potential
+        self.gSum_MFGR = cp.zeros(self.numGranule, dtype = float) # sum of excitatory conductances from MF to Granule
+        self.inputMFGR = cp.zeros(self.numGranule, dtype = int) # input excit
+        self.gSum_GOGR = cp.zeros(self.numGranule, dtype = float) # sum of GABA conductances from Golgi to Granule
+        self.inputGOGR = cp.zeros(self.numGranule, dtype = int) # input GABA conductance from Golgi to Granule
+        # self.gAMPA_Inc_MFGR = cp.zeros(self.numGranule, dtype = float) # AMPA conductance increment from MF to Granule
+        # self.AMPA_MFGR = cp.zeros(self.numGranule, dtype = float) # AMPA conductance from MF to Granule
+        self.gNMDA_MFGR= cp.zeros(self.numGranule, dtype = float) # NMDA conductance from MF to Granule
+        self.gNMDA_Inc_MFGR = cp.zeros(self.numGranule, dtype = float) # NMDA conductance increment from MF to Granule
+        self.gLeak = cp.full(self.numGranule, self.gLeak_base, dtype = float) # leak conductance for Granule cells, initialized to leak conductance
+        self.gKCa = cp.zeros(self.numGranule, dtype = float) # experimental K and Ca conductance, initialized to 0
         # Threshold
-        self.currentThresh = np.full(self.numGranule, self.threshRest, dtype = float) # current threshold of Granule cells, initialized to resting threshold
-        self.act = np.zeros((trialSize, self.numGranule), dtype = int) # activity of Granule cells over the entire trial, 2D array of size
+        self.currentThresh = cp.full(self.numGranule, self.threshRest, dtype = float) # current threshold of Granule cells, initialized to resting threshold
+        self.act = cp.zeros((trialSize, self.numGranule), dtype = int) # activity of Granule cells over the entire trial, 2D array of size
         
     # generic function for updating GOGR and MFGR input arrays
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, goAct = None):
@@ -310,7 +311,7 @@ class Granule(): # class of Granule cells, entire network of Granule cells
         elif inputArrayChoice == 2:
             spike_mask = (goAct == 1)
 
-        spiked_idx = np.where(spike_mask)[0]
+        spiked_idx = cp.where(spike_mask)[0]
         # get connections for all spiked cells
         spiked_connections = [] # list to hold connections for all spiked MFs
         for cell in spiked_idx:
@@ -321,8 +322,8 @@ class Granule(): # class of Granule cells, entire network of Granule cells
             # add to list
             spiked_connections.extend(valid_conns)
         # use bincount to count post occurances of cell
-        spiked_connections = np.array(spiked_connections, dtype = int) # convert list to
-        counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
+        spiked_connections = cp.array(spiked_connections, dtype = int) # convert list to
+        counts = cp.bincount(spiked_connections) # count occurrences of each index in spiked_connections
         
         if inputArrayChoice == 1:
             # add to MFGR input
@@ -372,12 +373,12 @@ class Granule(): # class of Granule cells, entire network of Granule cells
         self.inputGOGR.fill(0)
         ## Do spikes
         # Get minimum values between arrays, though Carter said could probably get rid of this
-        self.Vm = np.minimum(self.Vm, self.thresholdMax) # set Vm to max threshold if it exceeds it
+        self.Vm = cp.minimum(self.Vm, self.thresholdMax) # set Vm to max threshold if it exceeds it
         # Calculate spikes with boolean mask, fit to int array     
         spike_mask = self.Vm > self.currentThresh # boolean array indicating which Granule cells fired, true where Vm exceeds current threshold
         self.act[t] = spike_mask.astype(int) # convert boolean array to int array,
         # Update thresholds where spikes occurred (condition, value if true, if false)
-        self.currentThresh = np.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
+        self.currentThresh = cp.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
         
         # update experimental K and Ca conductance, probably can omit?
         self.gKCa = spike_mask.astype(int) * (self.gKCa * 0.9999) + ((~spike_mask).astype(int)) * self.gKCa

@@ -1,4 +1,5 @@
 import numpy as np
+import cupy as cp
 import os
 import time
 
@@ -16,7 +17,7 @@ import WireFunctions
 # Cell Numbers
 numGO = 4096
 numMF = 4096
-numGR = 10000 # for testing let's just start with 10000, might not work because of connect_arr # 1048576
+numGR = 1048576
 
 # Go Activity
 # upper lim and lower lim are global variables
@@ -53,15 +54,15 @@ saveGRRaster = True
 def run_Session(recip, filpath, filepath_g, conv, grgoW, gogrW, RA = False, mfgoW = 0.0042, mfgrW = 0.0042):
     # Init MF class and create ISI Distributions
     MF = mfgogr.MF(numMF, CSon, CSoff)
-    MFrasters = np.zeros((numBins, numMF), dtype = int)
+    MFrasters = cp.zeros((numBins, numMF), dtype = int)
 
     # Init GO class
     GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins)
-    GOrasters = np.zeros((numTrial, numBins, numGO), dtype = int)
+    GOrasters = cp.zeros((numTrial, numBins, numGO), dtype = int)
 
     # Init GR class
     GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
-    GRrasters = np.zeros((numTrial, numBins, numGR), dtype = int)
+    GRrasters = cp.zeros((numTrial, numBins, numGR), dtype = int)
 
     # Get connect arrays
     MFGOimportPath = 'C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.mfgo'
@@ -105,12 +106,12 @@ def run_Session(recip, filpath, filepath_g, conv, grgoW, gogrW, RA = False, mfgo
         GOrasters[trial] = GO.get_act()
         GRrasters[trial] = GR.get_act()
         all_end = time.time()
-        print(f"Trial: {trials+1}, Time:{(all_end - all_start):.3f}s")
+        print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
 
     # Save rasters
     if saveGORaster:
-        np.save(os.path.join(saveDir, f"{expName}_GOrasters.npy"), GOrasters)
+        cp.save(os.path.join(saveDir, f"{expName}_GOrasters.npy"), GOrasters)
     if saveGRRaster:
-        np.save(os.path.join(saveDir, f"{expName}_GRrasters.npy"), GRrasters)
+        cp.save(os.path.join(saveDir, f"{expName}_GRrasters.npy"), GRrasters)
 
 
