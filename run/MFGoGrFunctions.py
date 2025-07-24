@@ -151,7 +151,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.gSum_GRGO = (self.inputGRGO * self.grgoW) + self.gSum_GRGO * self.g_decayGRGO # decay previous conductance and add new input conductance scaled by weight
         # update NMDA mf -> go conductance
         self.gNMDA_MFGO = (
-            self.inputMFGO * (self.mfgoW * self.NDMA_AMPA_ratioMFGO * self.gNMDA_inc_MFGO) +
+            self.inputMFGO * (self.mfgoW * self.NMDA_AMPA_ratioMFGO * self.gNMDA_inc_MFGO) +
             self.gNMDA_MFGO * self.g_decay_NMDA_MFGO
         ) # decay previous NMDA conductance and add new input conductance scaled by weight and NMDA increment
         # update current threshold
@@ -379,6 +379,7 @@ class Granule(): # class of Granule cells, entire network of Granule cells
         self.act[t] = spike_mask.astype(int) # convert boolean array to int array,
         # Update thresholds where spikes occurred (condition, value if true, if false)
         self.currentThresh = cp.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
+        
         
         # update experimental K and Ca conductance, probably can omit?
         self.gKCa = spike_mask.astype(int) * (self.gKCa * 0.9999) + ((~spike_mask).astype(int)) * self.gKCa
