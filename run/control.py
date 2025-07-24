@@ -18,7 +18,7 @@ def gen_filepaths(exp_name, convergence, gogoW):
 
 def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.0042):
     # Init MF class and create ISI Distributions
-    MF = mfgogr.MF(numMF, CSon, CSoff)
+    MF = mfgogr.Mossy(numMF, CSon, CSoff)
     MFrasters = cp.zeros((numBins, numMF), dtype = int)
 
     # Init GO class
