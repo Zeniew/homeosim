@@ -10,17 +10,17 @@ class Mossy(): # MF Objects, entire network of MF per object
         self.minBackground, self.maxBackground = 1, 30 # background frequency range
         self.minCS, self.maxCS = 90, 100 # CS frequency range
 
-        self.act = np.zeros(self.numMossy, dtype = int) # activity of MFs, indicated by 0/1
+        self.act = cp.zeros(self.numMossy, dtype = int) # activity of MFs, indicated by 0/1
         self.sizeOfDist = 1000 # size of the ISI distribution
-        self.MFisiDistribution = np.zeros((101, self.sizeOfDist), dtype = int) # 2D array, with 101 rows of arrays that consist of 1000 zeroes , each row corresponds to ISI of particular frequency, where we select the new ISI distribution from
-        self.MFisi = np.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
+        self.MFisiDistribution = cp.zeros((101, self.sizeOfDist), dtype = int) # 2D array, with 101 rows of arrays that consist of 1000 zeroes , each row corresponds to ISI of particular frequency, where we select the new ISI distribution from
+        self.MFisi = cp.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
 
         for i in range(0, 101): # for each integer from 0 to 100 <-- for gnenerating frequencies?
             if i == 0 : f = 1000 # f = firing frequency
             else: f = 1000.0/(i) 
             f_stdev = f/5.0  # why 5.0?
-            # np.random.normal(loc, scale, size) <-- generate random numbers from a normal distribution, characterized by mean, stdev, and last param = number of random numbers to generate
-            ISItemp = np.random.normal(loc = f, scale = f_stdev, size = self.sizeOfDist) # create an array of random integers selected from normal distribution of ISI values with mean f and standard deviation f_stdev, these will be our "countdown" ISI values
+            # cp.random.normal(loc, scale, size) <-- generate random numbers from a normal distribution, characterized by mean, stdev, and last param = number of random numbers to generate
+            ISItemp = cp.random.normal(loc = f, scale = f_stdev, size = self.sizeOfDist) # create an array of random integers selected from normal distribution of ISI values with mean f and standard deviation f_stdev, these will be our "countdown" ISI values
             # check for values less than 5 and replace with 5
             for j in range(0, self.sizeOfDist):
                 if ISItemp[j] < 5: ISItemp[j] = 5
@@ -28,10 +28,10 @@ class Mossy(): # MF Objects, entire network of MF per object
             self.MFisiDistribution[i, :] = ISItemp
 
         # Set Frequency index selection arrays <-- just curious, why not use normal distribution for the MF freq? is it completely uniform
-        self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
-        self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
+        self.MFfreqs = cp.random.randint(self.minBackground, self.maxBackground, self.numMossy)
+        self.CSfreqs = cp.random.randint(self.minCS, self.maxCS, self.numMossy)
         # choose CS MF
-        self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
+        self.CSMFindex = cp.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
 
     def do_MF_dist(self, timestep, useCS):
         self.act.fill(0) # reset activity of MFs to 0 for new timestep
@@ -39,13 +39,13 @@ class Mossy(): # MF Objects, entire network of MF per object
         self.act = isi_mask.astype(int) # convert boolean array to int array, true = 1, false = 0
         if useCS == 1:
             # get random indices the size of all spiked cells
-            random_idx = np.random.randint(0, self.sizeOfDist - 1, size = np.sum(isi_mask)) # array of random integers from the range of sizeOfDist - 1, For each spiked cell, get a random index to select new ISI from distribution
+            random_idx = cp.random.randint(0, self.sizeOfDist - 1, size = cp.sum(isi_mask)) # array of random integers from the range of sizeOfDist - 1, For each spiked cell, get a random index to select new ISI from distribution
             # for starting and ending artifacts
-            random_CSMF_idx = np.random.randint(0, self.sizeOfDist - 1, size = len(self.CSMFindex)) # For each CS MF (in CS, the CSMF definitely spiked, so there's no "checking"), get a random index to select new ISI from distribution
+            random_CSMF_idx = cp.random.randint(0, self.sizeOfDist - 1, size = len(self.CSMFindex)) # For each CS MF (in CS, the CSMF definitely spiked, so there's no "checking"), get a random index to select new ISI from distribution
             # only need to worry about CS MF if in CS
             if (timestep >= self.CSon) and (timestep < self.CSoff): # if in CS period
                 # create boolean array for CS cells
-                is_CSMF = np.zeros(self.numMossy, dtype = bool)
+                is_CSMF = cp.zeros(self.numMossy, dtype = bool)
                 is_CSMF[self.CSMFindex] = True # set the CS MF indices to true
                 # find cells that meet all conditions <-- what are theses conditions?
                 spiking_cs_cell = isi_mask & is_CSMF # boolean arrays, which MF fired and are CSMF
@@ -54,7 +54,7 @@ class Mossy(): # MF Objects, entire network of MF per object
                 # **ASK CARTER
                 if spiking_cs_cell.any(): # if there are any spiking CS cells that are also part of the ones that spiked
                     # pulls out actual index values
-                    cs_idx = np.where(spiking_cs_cell)[0] # get the indices of the MF that fired and are CSMF
+                    cs_idx = cp.where(spiking_cs_cell)[0] # get the indices of the MF that fired and are CSMF
                     # store frequencies for the indexes
                     cs_freqs = self.CSfreqs[cs_idx] # get the preset firing frequencies of the CSMF that fired
                     # up to len cs idx get these rand idx, non cs indx get the rest
@@ -62,7 +62,7 @@ class Mossy(): # MF Objects, entire network of MF per object
                 #**
                 if timestep == self.CSon: # dealing with starting CS artifact
                     temp_isi = self.MFisiDistribution[self.CSfreqs[self.CSMFindex], random_CSMF_idx] # get new ISI values from distribution for the CSMF
-                    self.MFisi[self.CSMFindex] = np.minimum(temp_isi, self.MFisi[self.CSMFindex]) # update the ISI values of the CSMF with the new ISI values, taking the minimum of the current ISI and the new ISI
+                    self.MFisi[self.CSMFindex] = cp.minimum(temp_isi, self.MFisi[self.CSMFindex]) # update the ISI values of the CSMF with the new ISI values, taking the minimum of the current ISI and the new ISI
                     # why take the minimum?
             else:
                 freq_idx = self.MFfreqs[isi_mask] # get the frequencies of the MFs that fired
@@ -70,15 +70,15 @@ class Mossy(): # MF Objects, entire network of MF per object
                 self.MFisi[isi_mask] = new_isi
                 if timestep == self.CSoff: # dealing with ending CS artifact
                     temp_isi = self.MFisiDistribution[self.CSfreqs[self.CSMFindex], random_CSMF_idx] # get new ISI values from distribution for the CSMF
-                    min_isi = np.minimum(temp_isi, self.MFisi[self.CSMFindex]) # take the minimum of the current ISI and the new ISI
-                    max_isi = np.maximum(temp_isi, self.MFisi[self.CSMFindex]) # take the maximum of the current ISI and the new ISI
+                    min_isi = cp.minimum(temp_isi, self.MFisi[self.CSMFindex]) # take the minimum of the current ISI and the new ISI
+                    max_isi = cp.maximum(temp_isi, self.MFisi[self.CSMFindex]) # take the maximum of the current ISI and the new ISI
                     # get new isi inbetween temp and current ISI <-- why do this for the ending artifact?
-                    self.MFisi[self.CSMFindex] = np.random.randint(min_isi, max_isi + 1, len(self.CSMFindex)) # update the ISI values of the CSMF with a random integer between the min and max ISI values        
+                    self.MFisi[self.CSMFindex] = cp.random.randint(min_isi, max_isi + 1, len(self.CSMFindex)) # update the ISI values of the CSMF with a random integer between the min and max ISI values        
         else: # No CS, if MF fired, then get new ISI from background distribution
             # only need the MFfreqs where firing = true
             freq_idx = self.MFfreqs[isi_mask] # get the frequencies of the MFs that fired
            # for selecting MF isi's from distribution
-            random_idx = np.random.randint(0, self.sizeOfDist - 1, size = np.sum(isi_mask))
+            random_idx = cp.random.randint(0, self.sizeOfDist - 1, size = cp.sum(isi_mask))
            # generating new isi's
             new_isi = self.MFisiDistribution[freq_idx, random_idx] # get new ISI values from distribution for the MFs that fired
             # place into main MFisi array
@@ -113,26 +113,26 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.threshRest = -34.0 # resting threshold for Golgi cells
 
         ### Arrays
-        self.Vm = np.full(self.numGolgi, self.eLeak, dtype = float) # membrane potential of Golgi cells, initialized to leak reversal potential
-        self.gSum_GOGO = np.zeros(self.numGolgi, dtype = float) # sum of GABA conductances from Golgi to Golgi
-        self.inputGOGO = np.zeros(self.numGolgi, dtype = int) # input GABA conductance from Golgi to Golgi
-        self.gSum_MFGO = np.zeros(self.numGolgi, dtype = float) # sum of excitatory conductances from MF to Golgi
-        self.inputMFGO = np.zeros(self.numGolgi, dtype = int) # input excitatory conductance from MF to Golgi
-        self.gSum_GRGO = np.zeros(self.numGolgi, dtype = float) # sum of excitatory conductances from granule to Golgi
-        self.inputGRGO = np.zeros(self.numGolgi, dtype = int) # input excitatory conductance from granule to Golgi
-        self.gNMDA_inc_MFGO = np.zeros(self.numGolgi, dtype = float) # NMDA conductance increment from MF to Golgi
-        self.gNMDA_MFGO = np.zeros(self.numGolgi, dtype = float) # NMDA conductance from MF to Golgi
+        self.Vm = cp.full(self.numGolgi, self.eLeak, dtype = float) # membrane potential of Golgi cells, initialized to leak reversal potential
+        self.gSum_GOGO = cp.zeros(self.numGolgi, dtype = float) # sum of GABA conductances from Golgi to Golgi
+        self.inputGOGO = cp.zeros(self.numGolgi, dtype = int) # input GABA conductance from Golgi to Golgi
+        self.gSum_MFGO = cp.zeros(self.numGolgi, dtype = float) # sum of excitatory conductances from MF to Golgi
+        self.inputMFGO = cp.zeros(self.numGolgi, dtype = int) # input excitatory conductance from MF to Golgi
+        self.gSum_GRGO = cp.zeros(self.numGolgi, dtype = float) # sum of excitatory conductances from granule to Golgi
+        self.inputGRGO = cp.zeros(self.numGolgi, dtype = int) # input excitatory conductance from granule to Golgi
+        self.gNMDA_inc_MFGO = cp.zeros(self.numGolgi, dtype = float) # NMDA conductance increment from MF to Golgi
+        self.gNMDA_MFGO = cp.zeros(self.numGolgi, dtype = float) # NMDA conductance from MF to Golgi
         
         ## GRGO dist params ### <-- [CHANGE THIS] this is for generating the gr activity, but we need a whole new gr class for this...
-        self.gGRGO_mu_noCS = np.random.normal(0.0180218, 0.0014705, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
-        self.gGRGO_sig_noCS = np.random.normal(0.0031327, 0.00015542, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
+        self.gGRGO_mu_noCS = cp.random.normal(0.0180218, 0.0014705, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
+        self.gGRGO_sig_noCS = cp.random.normal(0.0031327, 0.00015542, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
         if self.useCS == 1: 
-            self.gGRGO_mu_CS = np.random.normal(0.02779684,0.0031472,self.numGolgi)
-            self.gGRGO_sig_CS = np.random.normal(0.00358812,0.0003982685,self.numGolgi)
+            self.gGRGO_mu_CS = cp.random.normal(0.02779684,0.0031472,self.numGolgi)
+            self.gGRGO_sig_CS = cp.random.normal(0.00358812,0.0003982685,self.numGolgi)
         
         # Threshold
-        self.currentThresh = np.full(self.numGolgi, self.threshRest, dtype = float) # current threshold of Golgi cells, initialized to resting threshold
-        self.act = np.zeros((trialSize, self.numGolgi), dtype = int) # activity of Golgi cells over the entire trial, 2D array of size (trialSize, numGolgi)
+        self.currentThresh = cp.full(self.numGolgi, self.threshRest, dtype = float) # current threshold of Golgi cells, initialized to resting threshold
+        self.act = cp.zeros((trialSize, self.numGolgi), dtype = int) # activity of Golgi cells over the entire trial, 2D array of size (trialSize, numGolgi)
         # NTS: Properties of gr that are different from Go? think abt it
 
     def do_Golgi_dist(self, t):
@@ -175,7 +175,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         spike_mask = self.Vm > self.currentThresh # boolean array indicating which Golgi cells fired, true where Vm exceeds current threshold
         self.act[t] = spike_mask.astype(int) # convert boolean array to int array, true = 1, false = 0
         # Update thresholds where spikes occurred (condition, value if true, if false)
-        self.currentThresh = np.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
+        self.currentThresh = cp.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
 
     # generic function for updating GOGO and MFGO input arrays
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, t = None, grAct = None):
@@ -186,7 +186,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         # MF activity is part of Mossy class, so needs to be input as param
         if inputArrayChoice == 1:
             spike_mask = (mfAct == 1) # integer array indicating which MFs fired, 1 where MF fired, 0 otherwise
-            spiked_idx = np.where(spike_mask)[0] # get the indices of the MFs that fired
+            spiked_idx = cp.where(spike_mask)[0] # get the indices of the MFs that fired
             # get connections for all spiked cells
             spiked_connections = [] # list to hold connections for all spiked MFs
             for cell in spiked_idx:
@@ -197,8 +197,8 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
                 # add to list
                 spiked_connections.extend(valid_conns)
             # use bincount to count post occurances of cell
-            spiked_connections = np.array(spiked_connections, dtype = int) # convert list to array
-            counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
+            spiked_connections = cp.array(spiked_connections, dtype = int) # convert list to array
+            counts = cp.bincount(spiked_connections) # count occurrences of each index in spiked_connections
             # add to MFGO input
             self.inputMFGO[:len(counts)] = counts # update inputMFGO with counts, only up to length of counts to avoid index error
             # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
@@ -206,7 +206,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         # golgi activity is made internal, not required as a param, but time is needed instead
         if inputArrayChoice == 2:
             spike_mask = self.act[t] == 1 # integer array indicating which Golgi cells fired, 1 where Golgi fired, 0 otherwise
-            spiked_idx = np.where(spike_mask)[0] # get the indices of the Golgi cells that fired
+            spiked_idx = cp.where(spike_mask)[0] # get the indices of the Golgi cells that fired
             # get connections for each spiked cell
             spiked_connections = [] # list to hold connections for all spiked Golgi cells
             for cell in spiked_idx:
@@ -215,15 +215,15 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
                 valid_conns = connectArr[cell, valid_idx]
                 spiked_connections.extend(valid_conns)
             # use bincount to count occurances of target idx
-            spiked_connections = np.array(spiked_connections, dtype = int)
-            counts = np.bincount(spiked_connections) # count occurances of each index
+            spiked_connections = cp.array(spiked_connections, dtype = int)
+            counts = cp.bincount(spiked_connections) # count occurances of each index
             # add to GOGO input
             self.inputGOGO[:len(counts)] = counts # update inputGOGO with counts, only up to length of counts to avoid index error
         # GR input
         # GR activity is part of Mossy class, so needs to be input as param
         if inputArrayChoice == 3:
             spike_mask = (grAct == 1)
-            spiked_idx = np.where(spike_mask)[0]
+            spiked_idx = cp.where(spike_mask)[0]
             spiked_connections = []
             for cell in spiked_idx:
                 # eliminate -1 terminator
@@ -246,11 +246,11 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
     #     if self.useCS == 1: 
     #         # different g for CS
     #         if timebin >= self.csOn and timebin < self.csOff: # during CS
-    #             self.gSum_GRGO = np.random.normal(self.gGRGO_mu_CS, self.gGRGO_sig_CS)
+    #             self.gSum_GRGO = cp.random.normal(self.gGRGO_mu_CS, self.gGRGO_sig_CS)
     #         else:
-    #             self.gSum_GRGO = np.random.normal(self.gGRGO_mu_noCS,self.gGRGO_sig_noCS)
+    #             self.gSum_GRGO = cp.random.normal(self.gGRGO_mu_noCS,self.gGRGO_sig_noCS)
     #     else: # CS == 0
-    #         self.gSum_GRGO = np.random.normal(self.gGRGO_mu_noCS,self.gGRGO_sig_noCS)
+    #         self.gSum_GRGO = cp.random.normal(self.gGRGO_mu_noCS,self.gGRGO_sig_noCS)
 
     def get_act(self):
         return self.act

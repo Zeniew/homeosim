@@ -9,7 +9,7 @@ import WireFunctions
 ##### Methods #####
 def gen_filepaths(exp_name, convergence, gogoW):
     # made for conv and gogoW rn, current naming convention defined here
-    filename = exp_name + "_C" + str(convergence) + "_W" + str(int(gogoW * 10000)) + ".npy"
+    filename = exp_name + "_C" + str(convergence) + "_W" + str(int(gogoW * 10000)) + ".cpy"
     filepath = os.path.join(saveDir, filename)
     # filename_g = exp_name + "_g_" + str(sessionNum)+ ".npy"
     # filepath_g = os.path.join(saveDir, filename_g)
