@@ -6,52 +6,17 @@ import time
 import MFGoGrFunctions as mfgogr
 import importConnect as connect
 import WireFunctions
-
-#def gen_filepaths(exp_name)
-
-# function gets param globally bc they're all in same file
-# anything that is being changed each session needs to be passed in
-
-### Input Params###
-
-# Cell Numbers
-numGO = 4096
-numMF = 4096
-numGR = 1048576
-
-# Go Activity
-# upper lim and lower lim are global variables
-upper_lim_GO = 0.014
-lower_lim_GR = 0.01
-
-# GR Activity ! will have to change this later
-upper_lim_GR = 0.014
-lower_lim_GR = 0.01
-
-# GOGO Connect Params
-conv_list = [25]
-gogoW_list = [0.05] # range cant iter by floats
-recip_list = [0.75] 
-#span = 6 # changing span below
-
-# Trial Params
-numBins = 50000
-useCS = 1
-CSon, CSoff = 500, 3500
-numTrial = 150
-
-# saving to hard drive
-saveDir = 'C:/Users/Einez (School)/Desktop/homeosim/Results/'
-expName = 'MFGoGr_Experiment'
-# Save Rasters
-saveGORaster = True
-saveGRRaster = True
-
-##### Experiment Loop #####
-
 ##### Methods #####
+def gen_filepaths(exp_name, convergence, gogoW):
+    # made for conv and gogoW rn, current naming convention defined here
+    filename = exp_name + "_C" + str(convergence) + "_W" + str(int(gogoW * 10000)) + ".npy"
+    filepath = os.path.join(saveDir, filename)
+    # filename_g = exp_name + "_g_" + str(sessionNum)+ ".npy"
+    # filepath_g = os.path.join(saveDir, filename_g)
+    filepath_g = None
+    return filepath, filepath_g
 
-def run_Session(recip, filpath, filepath_g, conv, grgoW, gogrW, RA = False, mfgoW = 0.0042, mfgrW = 0.0042):
+def run_session(recip, filpath, filepath_g, conv, grgoW, gogrW, RA = False, mfgoW = 0.0042, mfgrW = 0.0042):
     # Init MF class and create ISI Distributions
     MF = mfgogr.MF(numMF, CSon, CSoff)
     MFrasters = cp.zeros((numBins, numMF), dtype = int)
@@ -110,8 +75,71 @@ def run_Session(recip, filpath, filepath_g, conv, grgoW, gogrW, RA = False, mfgo
 
     # Save rasters
     if saveGORaster:
-        cp.save(os.path.join(saveDir, f"{expName}_GOrasters.npy"), GOrasters)
+        os.makedirs(saveDir, exist_ok = True)
+        cp.save(filepath, GOrasters[:, CSon:CSoff,:])
+        print(f"Raster array saved to '{filepath}'")
     if saveGRRaster:
-        cp.save(os.path.join(saveDir, f"{expName}_GRrasters.npy"), GRrasters)
+        cp.save(filepath_g, GRrasters[:, CSon:CSoff,:])
+        print(f"Raster array saved to '{filepath_g}'")
+    # if saveGORaster:
+    #     cp.save(os.path.join(saveDir, f"{expName}_GOrasters.npy"), GOrasters)
+    # if saveGRRaster:
+    #     cp.save(os.path.join(saveDir, f"{expName}_GRrasters.npy"), GRrasters)
 
+
+
+
+### Input Params###
+
+# Cell Numbers
+numGO = 4096
+numMF = 4096
+numGR = 1048576
+
+# Go Activity
+# upper lim and lower lim are global variables
+upper_lim_GO = 0.014
+lower_lim_GR = 0.01
+
+# GR Activity ! will have to change this later
+upper_lim_GR = 0.014
+lower_lim_GR = 0.01
+
+# GOGO Connect Params
+conv_list = [25]
+gogoW_list = [0.05] # range cant iter by floats
+recip_list = [0.75] 
+#span = 6 # changing span below
+
+# Trial Params
+numBins = 50000
+useCS = 1
+CSon, CSoff = 500, 3500
+numTrial = 150
+
+# saving to hard drive
+saveDir = 'C:/Users/Einez (School)/Desktop/homeosim/Results/'
+expName = 'MFGoGr_Experiment'
+# Save Rasters
+saveGORaster = True
+saveGRRaster = True
+
+# GOGO Connect Params
+conv_list = [25]
+gogoW_list = [0.05] # range can't iter by floats
+recip_list = [0.75]
+# span = 6 # changing span below
+
+##### Experiment Loop #####
+
+for i in range(len(recip_list)):
+    for conv in conv_list:
+        for gogoW in gogoW_list:
+            if (conv < 15):
+                continue
+            print(f"Starting Session for GoGo Conv: {conv} W: {gogoW} ...")
+            span = int(conv/2) if conv > 5 else 6 
+            filepath, filepath_g = gen_filepaths(expName, conv, gogoW)
+            recip = round(conv * recip_list[i])
+            run_session(recip, filepath, filepath_g, conv, gogoW, RA = True)
 
