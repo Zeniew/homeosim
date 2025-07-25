@@ -6,6 +6,7 @@ import time
 import MFGoGrFunctions as mfgogr
 import importConnect as connect
 import WireFunctions
+
 ##### Methods #####
 def gen_filepaths(exp_name, convergence, gogoW):
     # made for conv and gogoW rn, current naming convention defined here
@@ -30,15 +31,15 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
     GRrasters = cp.zeros((numTrial, numBins, numGR), dtype = int)
 
     # Get connect arrays
-    MFGOimportPath = 'C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.mfgo'
+    MFGOimportPath = 'C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.mfgo'
     MFGO_connect_arr = connect.read_connect(MFGOimportPath, numMF, 20)
-    MFGRimportPath = 'C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.mfgr'
+    MFGRimportPath = 'C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.mfgr'
     MFGR_connect_arr = connect.read_connect(MFGRimportPath, numMF, 20)
-    GOGRimportPath = "C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.gogr"
+    GOGRimportPath = "C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.gogr"
     GOGR_connect_arr = connect.read_connect(GOGRimportPath, numGO, 20)
-    GRGOimportPath = "C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.grgo"
+    GRGOimportPath = "C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.grgo"
     GRGO_connect_arr = connect.read_connect(GRGOimportPath, numGR, 20)
-    GOGO_connect_arr = "C:\Users\Einez (School)\homeosim\run\connect_arr\connect_arr_PRE.gogo"
+    GOGO_connect_arr = "C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.gogo"
 
     # Sim Core
     #####################
@@ -47,25 +48,25 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
         all_start = time.time()
         for t in range(0, numBins):
             MFact = MF.do_MF_dist(t, useCS)
-            # MF input --> GO and GR
-            GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
-            GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
+            # # MF input --> GO and GR
+            # GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
+            # GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
             
-            # Update Vm and thresh
-            GO.do_Golgi(t)
-            GR.do_Granule(t)
+            # # Update Vm and thresh
+            # GO.do_Golgi(t)
+            # GR.do_Granule(t)
             
-            # GOGO
-            GO.update_input_activity(GOGO_connect_arr, 2, t = t)
-            GO.do_Golgi(t)
+            # # GOGO
+            # GO.update_input_activity(GOGO_connect_arr, 2, t = t)
+            # GO.do_Golgi(t)
             
-            # Grab activity
-            GRact = GR.get_act()
-            GOact = GO.get_act()
+            # # Grab activity
+            # GRact = GR.get_act()
+            # GOact = GO.get_act()
             
-            # GRGO, GOGR
-            GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact)
-            GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact)
+            # # GRGO, GOGR
+            # GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact)
+            # GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact)
             
             MFrasters[t, :] = MFact
         GOrasters[trial] = GO.get_act()
@@ -81,6 +82,10 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
     if saveGRRaster:
         cp.save(filepath_g, GRrasters[:, CSon:CSoff,:])
         print(f"Raster array saved to '{filepath_g}'")
+    if saveMFRaster:
+        cp.save(os.path.join(saveDir, f"{expName}_MFrasters.npy"), MFrasters[:, CSon:CSoff,:])
+        print(f"Raster array saved to '{saveDir}/{expName}_MFrasters.npy'")
+
     # if saveGORaster:
     #     cp.save(os.path.join(saveDir, f"{expName}_GOrasters.npy"), GOrasters)
     # if saveGRRaster:
@@ -94,12 +99,12 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
 # Cell Numbers
 numGO = 4096
 numMF = 4096
-numGR = 1048576
+numGR = 10 # 1048576
 
 # Go Activity
 # upper lim and lower lim are global variables
 upper_lim_GO = 0.014
-lower_lim_GR = 0.01
+lower_lim_GO = 0.01
 
 # GR Activity ! will have to change this later
 upper_lim_GR = 0.014
@@ -119,10 +124,11 @@ numTrial = 150
 
 # saving to hard drive
 saveDir = 'C:/Users/Einez (School)/Desktop/homeosim/Results/'
-expName = 'MFGoGr_Experiment'
+expName = 'MFGoGr_Experiment_TestMF'
 # Save Rasters
-saveGORaster = True
-saveGRRaster = True
+saveGORaster = False
+saveGRRaster = False
+saveMFRaster = True
 
 # GOGO Connect Params
 conv_list = [25]
@@ -141,5 +147,5 @@ for i in range(len(recip_list)):
             span = int(conv/2) if conv > 5 else 6 
             filepath, filepath_g = gen_filepaths(expName, conv, gogoW)
             recip = round(conv * recip_list[i])
-            run_session(recip, filepath, filepath_g, conv, gogoW, RA = True)
+            run_session(recip, filepath, filepath_g, conv, gogoW, RA = True, grgoW= 0, gogrW = 0, mfgrW = 0)
 
