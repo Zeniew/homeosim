@@ -39,7 +39,7 @@ class Mossy(): # MF Objects, entire network of MF per object
         self.act = isi_mask.astype(int) # convert boolean array to int array, true = 1, false = 0
         if useCS == 1:
             # get random indices the size of all spiked cells
-            random_idx = cp.random.randint(0, self.sizeOfDist - 1, size = cp.sum(isi_mask)) # array of random integers from the range of sizeOfDist - 1, For each spiked cell, get a random index to select new ISI from distribution
+            random_idx = cp.random.randint(0, self.sizeOfDist - 1, size=int(cp.sum(isi_mask).item())) # array of random integers from the range of sizeOfDist - 1, For each spiked cell, get a random index to select new ISI from distribution
             # for starting and ending artifacts
             random_CSMF_idx = cp.random.randint(0, self.sizeOfDist - 1, size = len(self.CSMFindex)) # For each CS MF (in CS, the CSMF definitely spiked, so there's no "checking"), get a random index to select new ISI from distribution
             # only need to worry about CS MF if in CS
@@ -78,7 +78,7 @@ class Mossy(): # MF Objects, entire network of MF per object
             # only need the MFfreqs where firing = true
             freq_idx = self.MFfreqs[isi_mask] # get the frequencies of the MFs that fired
            # for selecting MF isi's from distribution
-            random_idx = cp.random.randint(0, self.sizeOfDist - 1, size = cp.sum(isi_mask))
+            random_idx = cp.random.randint(0, self.sizeOfDist - 1, size=int(cp.sum(isi_mask).item()))
            # generating new isi's
             new_isi = self.MFisiDistribution[freq_idx, random_idx] # get new ISI values from distribution for the MFs that fired
             # place into main MFisi array
