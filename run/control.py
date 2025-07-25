@@ -17,7 +17,7 @@ def gen_filepaths(exp_name, convergence, gogoW):
     filepath_g = None
     return filepath, filepath_g
 
-def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.0042):
+def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.0042, gogoW = 0.05):
     # Init MF class and create ISI Distributions
     MF = mfgogr.Mossy(numMF, CSon, CSoff)
     MFrasters = cp.zeros((numBins, numMF), dtype = int)
@@ -147,5 +147,5 @@ for i in range(len(recip_list)):
             span = int(conv/2) if conv > 5 else 6 
             filepath, filepath_g = gen_filepaths(expName, conv, gogoW)
             recip = round(conv * recip_list[i])
-            run_session(recip, filepath, filepath_g, conv, gogoW, RA = True, grgoW = 0, gogrW = 0, mfgrW = 0)
+            run_session(recip, filepath, filepath_g, conv, grgoW=0, gogrW=0, mfgrW=0, gogoW = gogoW)
 
