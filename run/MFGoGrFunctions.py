@@ -73,7 +73,7 @@ class Mossy(): # MF Objects, entire network of MF per object
                     min_isi = cp.minimum(temp_isi, self.MFisi[self.CSMFindex]) # take the minimum of the current ISI and the new ISI
                     max_isi = cp.maximum(temp_isi, self.MFisi[self.CSMFindex]) # take the maximum of the current ISI and the new ISI
                     # get new isi inbetween temp and current ISI <-- why do this for the ending artifact?
-                    self.MFisi[self.CSMFindex] = cp.random.randint(min_isi, max_isi + 1, len(self.CSMFindex)) # update the ISI values of the CSMF with a random integer between the min and max ISI values        
+                    self.MFisi[self.CSMFindex] = cp.random.randint(min_isi, max_isi + 1, int(len(self.CSMFindex))) # update the ISI values of the CSMF with a random integer between the min and max ISI values        
         else: # No CS, if MF fired, then get new ISI from background distribution
             # only need the MFfreqs where firing = true
             freq_idx = self.MFfreqs[isi_mask] # get the frequencies of the MFs that fired
