@@ -31,15 +31,15 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
     # GRrasters = cp.zeros((numTrial, numBins, numGR), dtype = int)
 
     # Get connect arrays
-    MFGOimportPath = 'C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.mfgo'
+    MFGOimportPath = 'connect_arr/connect_arr_PRE.mfgo'
     MFGO_connect_arr = connect.read_connect(MFGOimportPath, numMF, 20)
-    MFGRimportPath = 'C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.mfgr'
+    MFGRimportPath = 'connect_arr/connect_arr_PRE.mfgr'
     MFGR_connect_arr = connect.read_connect(MFGRimportPath, numMF, 20)
-    # GOGRimportPath = "C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.gogr"
+    # GOGRimportPath = "connect_arr/connect_arr_PRE.gogr"
     # GOGR_connect_arr = connect.read_connect(GOGRimportPath, numGO, 20)
-    # GRGOimportPath = "C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.grgo"
+    # GRGOimportPath = "connect_arr/connect_arr_PRE.grgo"
     # GRGO_connect_arr = connect.read_connect(GRGOimportPath, numGR, 20)
-    # GOGO_connect_arr = "C:/Users/Einez (School)/homeosim/run/connect_arr/connect_arr_PRE.gogo"
+    # GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
 
     # Sim Core
     #####################
