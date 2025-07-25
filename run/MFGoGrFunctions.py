@@ -41,7 +41,7 @@ class Mossy(): # MF Objects, entire network of MF per object
             # get random indices the size of all spiked cells
             random_idx = cp.random.randint(0, self.sizeOfDist - 1, size=int(cp.sum(isi_mask).item())) # array of random integers from the range of sizeOfDist - 1, For each spiked cell, get a random index to select new ISI from distribution
             # for starting and ending artifacts
-            random_CSMF_idx = cp.random.randint(0, self.sizeOfDist - 1, size = len(self.CSMFindex)) # For each CS MF (in CS, the CSMF definitely spiked, so there's no "checking"), get a random index to select new ISI from distribution
+            random_CSMF_idx = cp.random.randint(0, self.sizeOfDist - 1, size = int(len(self.CSMFindex))) # For each CS MF (in CS, the CSMF definitely spiked, so there's no "checking"), get a random index to select new ISI from distribution
             # only need to worry about CS MF if in CS
             if (timestep >= self.CSon) and (timestep < self.CSoff): # if in CS period
                 # create boolean array for CS cells
