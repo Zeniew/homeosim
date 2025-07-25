@@ -147,5 +147,5 @@ for i in range(len(recip_list)):
             span = int(conv/2) if conv > 5 else 6 
             filepath, filepath_g = gen_filepaths(expName, conv, gogoW)
             recip = round(conv * recip_list[i])
-            run_session(recip, filepath, filepath_g, conv, gogoW, RA = True, grgoW= 0, gogrW = 0, mfgrW = 0)
+            run_session(recip, filepath, filepath_g, conv, gogoW, RA = True, grgoW = 0, gogrW = 0, mfgrW = 0)
 
