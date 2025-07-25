@@ -120,7 +120,7 @@ recip_list = [0.75]
 numBins = 50000
 useCS = 1
 CSon, CSoff = 500, 3500
-numTrial = 150
+numTrial = 5 # 150
 
 # saving to hard drive
 saveDir = 'C:/Users/Einez (School)/Desktop/homeosim/Results/'
