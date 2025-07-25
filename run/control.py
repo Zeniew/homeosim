@@ -31,10 +31,10 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
     # GRrasters = cp.zeros((numTrial, numBins, numGR), dtype = int)
 
     # Get connect arrays
-    MFGOimportPath = 'connect_arr/connect_arr_PRE.mfgo'
-    MFGO_connect_arr = connect.read_connect(MFGOimportPath, numMF, 20)
-    MFGRimportPath = 'connect_arr/connect_arr_PRE.mfgr'
-    MFGR_connect_arr = connect.read_connect(MFGRimportPath, numMF, 20)
+    # MFGOimportPath = 'connect_arr/connect_arr_PRE.mfgo'
+    # MFGO_connect_arr = connect.read_connect(MFGOimportPath, numMF, 20)
+    # MFGRimportPath = 'connect_arr/connect_arr_PRE.mfgr'
+    # MFGR_connect_arr = connect.read_connect(MFGRimportPath, numMF, 20)
     # GOGRimportPath = "connect_arr/connect_arr_PRE.gogr"
     # GOGR_connect_arr = connect.read_connect(GOGRimportPath, numGO, 20)
     # GRGOimportPath = "connect_arr/connect_arr_PRE.grgo"
