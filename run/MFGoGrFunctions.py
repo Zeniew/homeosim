@@ -59,7 +59,15 @@ class Mossy(): # MF Objects, entire network of MF per object
                     cs_freqs = self.CSfreqs[cs_idx] # get the preset firing frequencies of the CSMF that fired
                     # up to len cs idx get these rand idx, non cs indx get the rest
                     cs_rand_idx = random_idx[:len(cs_idx)] # get the random indices for the CSMF that fired
+                    # select new isi
+                    self.MFisi[cs_idx] = self.MFisiDistribution[cs_freqs, cs_rand_idx] # update the ISI values of the CSMF that fired with the new ISI values from the distribution
                 #**
+                spiking_non_cs_cell = isi_mask & ~is_CSMF # boolean arrays, which MF fired and are not CSMF
+                if spiking_non_cs_cell.any(): # if there are any spiking non-CS cells that are also part of the ones that spiked
+                    non_cs_idx = cp.where(spiking_non_cs_cell)[0]
+                    non_cs_freq = self.MFfreqs[non_cs_idx]
+                    non_cs_rand_idx = random_idx[-len(non_cs_idx):] # get the random indices for the non-CS MFs that fired
+                    self.MFisi[non_cs_idx] = self.MFisiDistribution[non_cs_freq, non_cs_rand_idx] # update the ISI values of the non-CS MFs that fired with the new ISI values from the distribution
                 if timestep == self.CSon: # dealing with starting CS artifact
                     temp_isi = self.MFisiDistribution[self.CSfreqs[self.CSMFindex], random_CSMF_idx] # get new ISI values from distribution for the CSMF
                     self.MFisi[self.CSMFindex] = cp.minimum(temp_isi, self.MFisi[self.CSMFindex]) # update the ISI values of the CSMF with the new ISI values, taking the minimum of the current ISI and the new ISI

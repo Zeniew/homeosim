@@ -117,7 +117,7 @@ recip_list = [0.75]
 #span = 6 # changing span below
 
 # Trial Params
-numBins = 50000
+numBins = 5000
 useCS = 1
 CSon, CSoff = 500, 3500
 numTrial = 5 # 150
