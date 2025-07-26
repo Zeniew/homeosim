@@ -23,7 +23,7 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
     MFrasters = cp.zeros((numBins, numMF), dtype = int)
 
     # # Init GO class
-    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins)
+    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW)
     GOrasters = cp.zeros((numTrial, numBins, numGO), dtype = int)
 
     # # Init GR class
