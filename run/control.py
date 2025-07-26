@@ -53,7 +53,7 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
             # GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
             
             # # Update Vm and thresh
-            GO.do_Golgi(t)
+            GO.do_Golgi_dist(t)
             # GR.do_Granule(t)
             
             # # GOGO
