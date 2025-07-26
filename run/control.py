@@ -78,10 +78,10 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
     if saveGORaster:
         os.makedirs(saveDir, exist_ok = True)
         cp.save(filepath, GOrasters[:, CSon:CSoff,:])
-        print(f"Raster array saved to '{filepath}'")
+        print(f"Raster array saved to '{saveDir}/{expName}_GOrasters.npy'")
     if saveGRRaster:
         cp.save(filepath_g, GRrasters[:, CSon:CSoff,:])
-        print(f"Raster array saved to '{filepath_g}'")
+        print(f"Raster array saved to '{saveDir}/{expName}_GRrasters.npy'")
     if saveMFRaster:
         cp.save(os.path.join(saveDir, f"{expName}_MFrasters.npy"), MFrasters)
         print(f"Raster array saved to '{saveDir}/{expName}_MFrasters.npy'")
