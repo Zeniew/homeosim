@@ -206,7 +206,11 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
                 spiked_connections.extend(valid_conns)
             # use bincount to count post occurances of cell
             spiked_connections = cp.array(spiked_connections, dtype = int) # convert list to array
-            counts = cp.bincount(spiked_connections) # count occurrences of each index in spiked_connections
+            ## artifact from Numpy convert: counts = cp.bincount(spiked_connections) # count occurrences of each index in spiked_connections
+            if spiked_connections.size == 0:
+                counts = cp.zeros_like(self.inputMFGO)  # or use cp.zeros(self.numGO) if more appropriate
+            else:
+                counts = cp.bincount(spiked_connections, minlength=self.inputMFGO.size)
             # add to MFGO input
             self.inputMFGO[:len(counts)] = counts # update inputMFGO with counts, only up to length of counts to avoid index error
             # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
