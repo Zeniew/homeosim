@@ -23,23 +23,23 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
     MFrasters = cp.zeros((numBins, numMF), dtype = int)
 
     # # Init GO class
-    # GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins)
-    # GOrasters = cp.zeros((numTrial, numBins, numGO), dtype = int)
+    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins)
+    GOrasters = cp.zeros((numTrial, numBins, numGO), dtype = int)
 
     # # Init GR class
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
     # GRrasters = cp.zeros((numTrial, numBins, numGR), dtype = int)
 
     # Get connect arrays
-    # MFGOimportPath = 'connect_arr/connect_arr_PRE.mfgo'
-    # MFGO_connect_arr = connect.read_connect(MFGOimportPath, numMF, 20)
+    MFGOimportPath = 'connect_arr/connect_arr_PRE.mfgo'
+    MFGO_connect_arr = connect.read_connect(MFGOimportPath, numMF, 20)
     # MFGRimportPath = 'connect_arr/connect_arr_PRE.mfgr'
     # MFGR_connect_arr = connect.read_connect(MFGRimportPath, numMF, 20)
     # GOGRimportPath = "connect_arr/connect_arr_PRE.gogr"
     # GOGR_connect_arr = connect.read_connect(GOGRimportPath, numGO, 20)
     # GRGOimportPath = "connect_arr/connect_arr_PRE.grgo"
     # GRGO_connect_arr = connect.read_connect(GRGOimportPath, numGR, 20)
-    # GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
+    GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
 
     # Sim Core
     #####################
@@ -49,11 +49,11 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
         for t in range(0, numBins):
             MFact = MF.do_MF_dist(t, useCS)
             # # MF input --> GO and GR
-            # GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
+            GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
             # GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
             
             # # Update Vm and thresh
-            # GO.do_Golgi(t)
+            GO.do_Golgi(t)
             # GR.do_Granule(t)
             
             # # GOGO
@@ -62,14 +62,14 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
             
             # # Grab activity
             # GRact = GR.get_act()
-            # GOact = GO.get_act()
+            GOact = GO.get_act()
             
             # # GRGO, GOGR
             # GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact)
             # GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact)
             
             MFrasters[t, :] = MFact
-        # GOrasters[trial] = GO.get_act()
+        GOrasters[trial] = GO.get_act()
         # GRrasters[trial] = GR.get_act()
         all_end = time.time()
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
@@ -126,9 +126,9 @@ numTrial = 5 # 150
 saveDir = '/home/aw39625/minisim/Results/'
 expName = 'MFGoGr_Experiment_TestMF'
 # Save Rasters
-saveGORaster = False
+saveGORaster = True
 saveGRRaster = False
-saveMFRaster = True
+saveMFRaster = False
 
 # GOGO Connect Params
 conv_list = [25]
@@ -147,4 +147,4 @@ for i in range(len(recip_list)):
             span = int(conv/2) if conv > 5 else 6 
             filepath, filepath_g = gen_filepaths(expName, conv, gogoW)
             recip = round(conv * recip_list[i])
-            run_session(recip, filepath, filepath_g, conv, grgoW=0, gogrW=0, mfgrW=0, gogoW = 0)
+            run_session(recip, filepath, filepath_g, conv, grgoW=0, gogrW=0, gogoW = 0)

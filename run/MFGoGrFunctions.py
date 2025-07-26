@@ -96,7 +96,7 @@ class Mossy(): # MF Objects, entire network of MF per object
         return self.act # return the activity of the MFs for this timestep
             
 class Golgi(): # class of Golgi cells, entire network of Golgi cells
-    def __init__(self, n, csOFF, csON, useCS, trialSize, gogo_weight = 0.0125, mfgo_weight = 0.0042, grgo_weight = 0.0007):
+    def __init__(self, n, csON, csOFF, useCS, trialSize, gogo_weight = 0.0125, mfgo_weight = 0.0042, grgo_weight = 0.0007):
         ### Constants
         self.numGolgi = n
         self.useCS = useCS
