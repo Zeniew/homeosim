@@ -139,7 +139,7 @@ def wire_up(conv, recip, span, verbose, showWhat=None, xGol=32, yGol=128):
     ### Bug check
     if any(cp.sum(Gconnect, axis=1)!=conv):
         unfilled = cp.where(cp.sum(Gconnect, axis=1)!=conv)[0]
-        unfilled_picked = set(unfilled)
+        unfilled_picked = set(cp.asnumpy(unfilled).tolist())
         print(f"Cell:{unfilled_picked} has {cp.sum(Gconnect, axis=1)[unfilled]} num connections.") if verbose else None
     elif not any(SynNum!=conv) and not any(preSynNum!=conv):
         verify = True
