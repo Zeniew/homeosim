@@ -123,7 +123,7 @@ CSon, CSoff = 500, 3500
 numTrial = 5 # 150
 
 # saving to hard drive
-saveDir = '/home/aw39625/minisim/Results/'
+saveDir = '/home/aw39625/minisim/Results'
 expName = 'MFGoGr_Experiment_TestMF'
 # Save Rasters
 saveGORaster = True

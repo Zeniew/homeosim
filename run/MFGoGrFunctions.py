@@ -228,7 +228,11 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
                 spiked_connections.extend(valid_conns)
             # use bincount to count occurances of target idx
             spiked_connections = cp.array(spiked_connections, dtype = int)
-            counts = cp.bincount(spiked_connections) # count occurances of each index
+            if spiked_connections.size == 0:
+                counts = cp.zeros_like(self.inputMFGO)  # or use cp.zeros(self.numGO) if more appropriate
+            else:
+                counts = cp.bincount(spiked_connections, minlength=self.inputMFGO.size)
+            # counts = cp.bincount(spiked_connections) # count occurances of each index
             # add to GOGO input
             self.inputGOGO[:len(counts)] = counts # update inputGOGO with counts, only up to length of counts to avoid index error
         # GR input
@@ -247,7 +251,11 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             # use bincount to count post occurances of cell
             spiked_connections = cp.array(spiked_connections, dtype=int)
             # count occurances
-            counts = cp.bincount(spiked_connections)
+            # counts = cp.bincount(spiked_connections)
+            if spiked_connections.size == 0:
+                counts = cp.zeros_like(self.inputMFGO)  # or use cp.zeros(self.numGO) if more appropriate
+            else:
+                counts = cp.bincount(spiked_connections, minlength=self.inputMFGO.size)
             # add to GRGO input
             self.inputGRGO[:len(counts)] = counts
 
