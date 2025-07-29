@@ -1,3 +1,0 @@
-*.gogr filter=lfs diff=lfs merge=lfs -text
-*.grgo filter=lfs diff=lfs merge=lfs -text
-*.mfgr filter=lfs diff=lfs merge=lfs -text
