@@ -1,19 +1,48 @@
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
+import os
 
-def showRasters(raster):
-    print("Raster shape:", raster.shape)
-    if raster.ndim != 2:
-        raise ValueError(f"Expected a 2D raster array, but got shape {raster.shape}")
+def showRasters(raster, save_path=None, raster_type = 1):
+    if raster_type == 1: # MF
+        print("Raster shape:", raster.shape)
+        if raster.ndim != 2:
+            raise ValueError(f"Expected a 2D raster array, but got shape {raster.shape}")
 
-    numCell = raster.shape[1]
-    plotarray = [np.where(raster[:, i] == 1)[0] for i in range(numCell)]
+        numCell = raster.shape[1]
+        plotarray = [np.where(raster[:, i] == 1)[0] for i in range(numCell)]
 
-    plt.figure(figsize=(18, 9))
-    plt.eventplot(plotarray, colors='black')
-    plt.xlabel("Timestep")
-    plt.ylabel("Neuron #")
+        plt.figure(figsize=(18, 9))
+        plt.eventplot(plotarray, colors='black', linelengths=0.8)
+        plt.xlabel("Timestep")
+        plt.ylabel("Mossy Fiber Number")
+        plt.title("Spike Raster")
+
+    if raster_type == 2: # Go
+        averaged_raster = np.mean(raster, axis=0)
+
+        print("Averaged raster shape:", averaged_raster.shape)
+
+        plt.figure(figsize=(18, 9))
+        plt.imshow(averaged_raster.T, aspect='auto', cmap='hot', origin='upper')
+        plt.colorbar(label='Average spike probability')
+        plt.xlabel("Timestep")
+        plt.ylabel("Golgi Cell Number")
+        plt.title("Trial-Averaged Spike Raster (Heatmap)")
+
+    if save_path:
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        print(f"Plot saved to {save_path}")
+
     plt.show()
 
-raster_data = np.load("/home/aw39625/minisim/Results/MFGoGr_Experiment_TestMF_MFrasters.npy")
-showRasters(raster_data)
+
+# Load the raster data
+raster_data = np.load('/home/aw39625/gogo-sim/Results/Recip75.0_C25_W500.npy')
+
+# Define save location
+plot_save_path = "/home/aw39625/minisim/Results/Carter_GOGO_GOrasters.png"
+
+# Show and save
+showRasters(raster_data, save_path=plot_save_path, raster_type = 2)
+
