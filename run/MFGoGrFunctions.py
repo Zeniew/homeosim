@@ -1,5 +1,6 @@
 import numpy as np
 import cupy as cp
+from cupy import ElementwiseKernel
 import math
 import matplotlib.pyplot as plt
 
@@ -143,7 +144,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.act = cp.zeros((trialSize, self.numGolgi), dtype = int) # activity of Golgi cells over the entire trial, 2D array of size (trialSize, numGolgi)
         # NTS: Properties of gr that are different from Go? think abt it
 
-    def do_Golgi_dist(self, t):
+    def do_Golgi(self, t):
         # Vectorized
         # NMDA High (voltage-dep step size for nMDa conductance update mf -> go)
         self.gNMDA_inc_MFGO = (
@@ -278,39 +279,34 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
     def get_gGOGO(self):
         return self.gSum_GOGO
 
-# Based off of Golgi class for now, will need to modify for granule specific params
-class Granule(): # class of Granule cells, entire network of Granule cells
+
+class Granule():
     def __init__(self, n, csOFF, csON, useCS, trialSize, mfgr_weight = 0.0042, gogr_weight = 0.015):
         ### Constants
         self.numGranule = n
         self.csOFF, self.csON = csOFF, csON
         self.useCS = useCS # whether to use CS or not
-        # self.eMFGR = 0.0
         self.eLeak = -65.0
         self.eGOGR = -75.0
         self.thresholdMax = 10.0 # maximum Vm threshold
-        # self.gAMPAInc = 0.0320 + 0.0320 * 0.2
         self.gLeak_base = 0.1  # leak conductance
-        # self.gAMPA_Inc = 0.0384 # AMPA increment, taken from Golgi class
         self.g_decay_NMDA_MFGR = math.exp(-1.0/30.0) # 0.9672
 
         self.g_decay_MFGR = math.exp(-1.0/3.0) # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
-        # self.g_decay_NMDA_MFGR # where is this value?
         self.gogrW = gogr_weight
+        self.mfgrW = mfgr_weight
         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule
 
         self.threshDecGR = 1 - math.exp(-1.0/3.0) 
         self.threshRest = -40.0
 
         ### Arrays
-        self.mfgrW = cp.full(self.numGranule, mfgr_weight, dtype = float) # synaptic weight of mossy fiber to granule 
+        # self.mfgrW = cp.full(self.numGranule, mfgr_weight, dtype = float) # synaptic weight of mossy fiber to granule 
         self.Vm = cp.full(self.numGranule, self.eLeak, dtype = float) # membrane potential of Granule cells, initialized to leak reversal potential
         self.gSum_MFGR = cp.zeros(self.numGranule, dtype = float) # sum of excitatory conductances from MF to Granule
         self.inputMFGR = cp.zeros(self.numGranule, dtype = int) # input excit
         self.gSum_GOGR = cp.zeros(self.numGranule, dtype = float) # sum of GABA conductances from Golgi to Granule
         self.inputGOGR = cp.zeros(self.numGranule, dtype = int) # input GABA conductance from Golgi to Granule
-        # self.gAMPA_Inc_MFGR = cp.zeros(self.numGranule, dtype = float) # AMPA conductance increment from MF to Granule
-        # self.AMPA_MFGR = cp.zeros(self.numGranule, dtype = float) # AMPA conductance from MF to Granule
         self.gNMDA_MFGR= cp.zeros(self.numGranule, dtype = float) # NMDA conductance from MF to Granule
         self.gNMDA_Inc_MFGR = cp.zeros(self.numGranule, dtype = float) # NMDA conductance increment from MF to Granule
         self.gLeak = cp.full(self.numGranule, self.gLeak_base, dtype = float) # leak conductance for Granule cells, initialized to leak conductance
@@ -318,6 +314,101 @@ class Granule(): # class of Granule cells, entire network of Granule cells
         # Threshold
         self.currentThresh = cp.full(self.numGranule, self.threshRest, dtype = float) # current threshold of Granule cells, initialized to resting threshold
         self.act = cp.zeros((trialSize, self.numGranule), dtype = int) # activity of Granule cells over the entire trial, 2D array of size
+
+        self.compile_doGranule_kernel()
+    
+    def compile_doGranule_kernel(self):
+        self.doGranule_kernel = ElementwiseKernel(
+            in_params = """
+            float32 Vm_prev, int8 input_MFGR_prev, float32 gSum_MFGR_prev,
+            int8 input_GOGR_prev, float32 gSum_GOGR_prev, float32 gNMDA_Inc_MFGR_prev,
+            float32 gNMDA_MFGR_prev, float32 currentThresh_prev
+            """,
+            out_params = """
+            float32 gLeak_new, float32 gNMDA_Inc_MFGR_new, float32 gSum_MFGR_new, float32 gSum_GOGR_new, 
+            float32 gNMDA_MFGR_new, float32 currentThresh_new, float32 Vm_new
+            """,
+
+            operation = """
+            gLeak_new = (0.0000001021370733 * Vm_prev * Vm_prev * Vm_prev * Vm_prev) + 
+            (0.00001636462 * Vm_prev * Vm_prev * Vm_prev) +
+            (0.00113971219 * Vm_prev * Vm_prev + 0.038772 * Vm_prev + 0.6234929)
+
+            gNMDA_Inc_MFGR_new = (
+            (0.00000011969 * Vm_prev * Vm_prev * Vm_prev) +
+            (0.000089369 * Vm_prev * Vm_prev) +
+            (0.0151 * Vm_prev) + 0.7713
+            )
+
+            gSum_MFGR_new = (input_MFGR_prev * __mfgrW) + gSum_MFGR_prev * __g_decay_MFGR
+
+            gSum_GOGR_new = (input_GOGR_prev * __gogrW) + gSum_GOGR_prev * __gGABA_decayGOGR
+
+            gNMDA_MFGR_new = (
+                input_MFGR_prev * (__mfgrW * gNMDA_Inc_MFGR_new) + 
+                gNMDA_MFGR_prev * __g_decay_NMDA_MFGR
+            )
+
+            currentThresh_new = currentThresh_prev + (__threshRest - currentThresh_prev) * __threshDecGR
+
+            Vm_new = Vm_prev + (
+                gLeak_new * (__eLeak - Vm_prev) - gSum_MFGR_new * Vm_prev - 
+                gNMDA_MFGR_new * Vm_prev + gSum_GOGR_new * (__eGOGR - Vm_prev)
+            )
+            """
+        )
+
+        self.kernel.set_constant('__mfgrW', float(self.mfgrW))
+        self.kernel.set_constant('__g_decay_MFGR', float(self.g_decay_MFGR))
+        self.kernel.set_constant('__gogrW', float(self.gogrW))
+        self.kernel.set_constant('__gGABA_decayGOGR', float(self.gGABA_decayGOGR))
+        self.kernel.set_constant('__g_decay_NMDA_MFGR', float(self.g_decay_NMDA_MFGR))
+        self.kernel.set_constant('__threshRest', float(self.threshRest))
+        self.kernel.set_constant('__threshDecGR', float(self.threshDecGR))
+        self.kernel.set_constant('__eLeak', float(self.eLeak))
+        self.kernel.set_constant('__eGOGR', float(self.eGOGR))
+
+
+# # # Based off of the Golgi class, this is the version that is unparallelized
+# class Granule(): # class of Granule cells, entire network of Granule cells
+#     def __init__(self, n, csOFF, csON, useCS, trialSize, mfgr_weight = 0.0042, gogr_weight = 0.015):
+#         ### Constants
+#         self.numGranule = n
+#         self.csOFF, self.csON = csOFF, csON
+#         self.useCS = useCS # whether to use CS or not
+#         # self.eMFGR = 0.0
+#         self.eLeak = -65.0
+#         self.eGOGR = -75.0
+#         self.thresholdMax = 10.0 # maximum Vm threshold
+#         # self.gAMPAInc = 0.0320 + 0.0320 * 0.2
+#         self.gLeak_base = 0.1  # leak conductance
+#         # self.gAMPA_Inc = 0.0384 # AMPA increment, taken from Golgi class
+#         self.g_decay_NMDA_MFGR = math.exp(-1.0/30.0) # 0.9672
+
+#         self.g_decay_MFGR = math.exp(-1.0/3.0) # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
+#         # self.g_decay_NMDA_MFGR # where is this value?
+#         self.gogrW = gogr_weight
+#         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule
+
+#         self.threshDecGR = 1 - math.exp(-1.0/3.0) 
+#         self.threshRest = -40.0
+
+#         ### Arrays
+#         self.mfgrW = cp.full(self.numGranule, mfgr_weight, dtype = float) # synaptic weight of mossy fiber to granule 
+#         self.Vm = cp.full(self.numGranule, self.eLeak, dtype = float) # membrane potential of Granule cells, initialized to leak reversal potential
+#         self.gSum_MFGR = cp.zeros(self.numGranule, dtype = float) # sum of excitatory conductances from MF to Granule
+#         self.inputMFGR = cp.zeros(self.numGranule, dtype = int) # input excit
+#         self.gSum_GOGR = cp.zeros(self.numGranule, dtype = float) # sum of GABA conductances from Golgi to Granule
+#         self.inputGOGR = cp.zeros(self.numGranule, dtype = int) # input GABA conductance from Golgi to Granule
+#         # self.gAMPA_Inc_MFGR = cp.zeros(self.numGranule, dtype = float) # AMPA conductance increment from MF to Granule
+#         # self.AMPA_MFGR = cp.zeros(self.numGranule, dtype = float) # AMPA conductance from MF to Granule
+#         self.gNMDA_MFGR= cp.zeros(self.numGranule, dtype = float) # NMDA conductance from MF to Granule
+#         self.gNMDA_Inc_MFGR = cp.zeros(self.numGranule, dtype = float) # NMDA conductance increment from MF to Granule
+#         self.gLeak = cp.full(self.numGranule, self.gLeak_base, dtype = float) # leak conductance for Granule cells, initialized to leak conductance
+#         self.gKCa = cp.zeros(self.numGranule, dtype = float) # experimental K and Ca conductance, initialized to 0
+#         # Threshold
+#         self.currentThresh = cp.full(self.numGranule, self.threshRest, dtype = float) # current threshold of Granule cells, initialized to resting threshold
+#         self.act = cp.zeros((trialSize, self.numGranule), dtype = int) # activity of Granule cells over the entire trial, 2D array of size
         
     # generic function for updating GOGR and MFGR input arrays
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, goAct = None):
@@ -353,41 +444,50 @@ class Granule(): # class of Granule cells, entire network of Granule cells
             # add to GOGR input
             self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
             # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
-    
+
     def do_Granule(self, t): # t for MF output, golgi for Golgi activity
-        # Update leak conductance
-        self.gLeak = (
-            (0.0000001021370733 * self.Vm * self.Vm * self.Vm * self.Vm) + 
-            (0.00001636462 * self.Vm * self.Vm * self.Vm) +
-            (0.00113971219 * self.Vm * self.Vm + 0.038772 * self.Vm + 0.6234929)
-        )
-        #### COMPLETELY TAKEN FROM GOLGI #####
+        # # Update leak conductance
+        # self.gLeak = (
+        #     (0.0000001021370733 * self.Vm * self.Vm * self.Vm * self.Vm) + 
+        #     (0.00001636462 * self.Vm * self.Vm * self.Vm) +
+        #     (0.00113971219 * self.Vm * self.Vm + 0.038772 * self.Vm + 0.6234929)
+        # )
+        # #### COMPLETELY TAKEN FROM GOLGI #####
 
-        # NMDA High (voltage-dep step size for NMDA conductance update mf -> gr)
-        self.gNMDA_Inc_MFGR = (
-            (0.00000011969 * self.Vm * self.Vm * self.Vm) +
-            (0.000089369 * self.Vm * self.Vm) +
-            (0.0151 * self.Vm) + 0.7713
-        ) # taken directly from Golgi class, calculated
-        # update total mf -> gr input conductance
-        self.gSum_MFGR = (self.inputMFGR * self.mfgrW) + self.gSum_MFGR * self.g_decay_MFGR # taken directly from Golgi class
-        # update total go -> gr input conductance
-        self.gSum_GOGR = (self.inputGOGR * self.gogrW) + self.gSum_GOGR * self.gGABA_decayGOGR # taken directly from Golgi class, GABA since it's inhibitory
-        # Update NMDA mf -> gr input conductance
-        self.gNMDA_MFGR = (
-            # self.gNMDA_Inc_MFGR * self.gAMPA_Inc * mfAct + self.gNMDA_MFGR * self.g_decay_NMDA_MFGR
-            # # From Golgi
-            self.inputMFGR * (self.mfgrW * self.gNMDA_Inc_MFGR) +
-            self.gNMDA_MFGR * self.g_decay_NMDA_MFGR
-        )
-        # update current threshold
-        self.currentThresh += (self.threshRest - self.currentThresh) * (self.threshDecGR) # decay current threshold towards resting threshold
-        # calc new Vm
-        self.Vm += (
-            self.gLeak * (self.eLeak - self.Vm) - self.gSum_MFGR * self.Vm - 
-            self.gNMDA_MFGR * self.Vm + self.gSum_GOGR * (self.eGOGR - self.Vm)
-        ) # update Vm based on conductances and reversal potentials
+        # # NMDA High (voltage-dep step size for NMDA conductance update mf -> gr)
+        # self.gNMDA_Inc_MFGR = (
+        #     (0.00000011969 * self.Vm * self.Vm * self.Vm) +
+        #     (0.000089369 * self.Vm * self.Vm) +
+        #     (0.0151 * self.Vm) + 0.7713
+        # ) # taken directly from Golgi class, calculated
+        # # update total mf -> gr input conductance
+        # self.gSum_MFGR = (self.inputMFGR * self.mfgrW) + self.gSum_MFGR * self.g_decay_MFGR # taken directly from Golgi class
+        # # update total go -> gr input conductance
+        # self.gSum_GOGR = (self.inputGOGR * self.gogrW) + self.gSum_GOGR * self.gGABA_decayGOGR # taken directly from Golgi class, GABA since it's inhibitory
+        # # Update NMDA mf -> gr input conductance
+        # self.gNMDA_MFGR = (
+        #     # self.gNMDA_Inc_MFGR * self.gAMPA_Inc * mfAct + self.gNMDA_MFGR * self.g_decay_NMDA_MFGR
+        #     # # From Golgi
+        #     self.inputMFGR * (self.mfgrW * self.gNMDA_Inc_MFGR) +
+        #     self.gNMDA_MFGR * self.g_decay_NMDA_MFGR
+        # )
+        # # update current threshold
+        # self.currentThresh += (self.threshRest - self.currentThresh) * (self.threshDecGR) # decay current threshold towards resting threshold
+        # # calc new Vm
+        # self.Vm += (
+        #     self.gLeak * (self.eLeak - self.Vm) - self.gSum_MFGR * self.Vm - 
+        #     self.gNMDA_MFGR * self.Vm + self.gSum_GOGR * (self.eGOGR - self.Vm)
+        # ) # update Vm based on conductances and reversal potentials
 
+        self.doGranule_kernel(
+            self.Vm, self.inputMFGR, self.gSum_MFGR,
+            self.inputGOGR, self.gSum_GOGR, self.gNMDA_Inc_MFGR,
+            self.gNMDA_MFGR, self.currentThresh,
+            gLeak_new=self.gLeak, gNMDA_Inc_MFGR_new=self.gNMDA_Inc_MFGR,
+            gSum_MFGR_new=self.gSum_MFGR, gSum_GOGR_new=self.gSum_GOGR,
+            gNMDA_MFGR_new=self.gNMDA_MFGR, currentThresh_new=self.currentThresh,
+            Vm_new=self.Vm
+        )
         # reset inputs
         self.inputMFGR.fill(0)
         self.inputGOGR.fill(0)
@@ -406,4 +506,4 @@ class Granule(): # class of Granule cells, entire network of Granule cells
 
     def get_act(self):
         return self.act
-
+    
