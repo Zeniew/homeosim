@@ -3,6 +3,7 @@ import cupy as cp
 from cupy import ElementwiseKernel
 import math
 import matplotlib.pyplot as plt
+import time
 
 class Mossy(): # MF Objects, entire network of MF per object
     def __init__(self,n,CSon, CSoff):
@@ -208,7 +209,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
                 # add to list
                 spiked_connections.extend(valid_conns)
             # use bincount to count post occurances of cell
-            spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
+            # spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
             spiked_connections = np.asarray(spiked_connections, dtype = int) # convert list to array
             ## artifact from Numpy convert: counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
             if spiked_connections.size == 0:
@@ -231,7 +232,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
                 valid_conns = connectArr[cell, valid_idx]
                 spiked_connections.extend(valid_conns)
             # use bincount to count occurances of target idx
-            spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
+            # spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
             spiked_connections = np.asarray(spiked_connections, dtype = int)
             if spiked_connections.size == 0:
                 counts = np.zeros_like(self.inputMFGO)  # or use np.zeros(self.numGO) if more appropriate
@@ -242,28 +243,34 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             self.inputGOGO[:len(counts)] = counts # update inputGOGO with counts, only up to length of counts to avoid index error
         # GR input
         # GR activity is part of Mossy class, so needs to be input as param
-        if inputArrayChoice == 3:
-            spike_mask = (grAct == 1)
-            spiked_idx = np.where(spike_mask)[0]
-            spiked_connections = []
-            for cell in spiked_idx:
-                # eliminate -1 terminator
-                valid_idx = connectArr[cell] != -1
-                # get valid connections for spiked cell
-                valid_conns = connectArr[cell, valid_idx]
-                # add to list
-                spiked_connections.extend(valid_conns)
-            # use bincount to count post occurances of cell
-            spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
-            spiked_connections = np.asarray(spiked_connections, dtype=int)
-            # count occurances
-            # counts = np.bincount(spiked_connections)
-            if spiked_connections.size == 0:
-                counts = np.zeros_like(self.inputMFGO)  # or use np.zeros(self.numGO) if more appropriate
-            else:
-                counts = np.bincount(spiked_connections, minlength=self.inputMFGO.size)
+        if inputArrayChoice == 3: 
+            # spike_mask = (grAct == 1) # change this
+            # spiked_idx = np.where(spike_mask)[0]
+            # spiked_connections = []
+            # for cell in spiked_idx:
+            #     # eliminate -1 terminator
+            #     valid_idx = connectArr[cell] != -1
+            #     # get valid connections for spiked cell
+            #     valid_conns = connectArr[cell, valid_idx]
+            #     # add to list
+            #     spiked_connections.extend(valid_conns)
+            # # use bincount to count post occurances of cell
+            # # spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
+            # spiked_connections = np.asarray(spiked_connections, dtype=int)
+            # # count occurances
+            # # counts = np.bincount(spiked_connections)
+            # if spiked_connections.size == 0:
+            #     counts = np.zeros_like(self.inputMFGO)  # or use np.zeros(self.numGO) if more appropriate
+            # else:
+            #     counts = np.bincount(spiked_connections, minlength=self.inputMFGO.size)
+            for i in range(self.numGolgi): 
+                gr_conn = connectArr[i]
+                valid_conn = gr_conn[gr_conn != -1]
+                grAct[valid_conn[0]] = 1
+                count = np.sum(grAct[valid_conn])
+                self.inputGRGO[i] = count
             # add to GRGO input
-            self.inputGRGO[:len(counts)] = counts
+            # self.inputGRGO[:len(counts)] = counts
 
 
     # [CHANGE THIS] this is for generating the gr activity, but we need a whole new gr class for this...
@@ -420,6 +427,7 @@ class Granule():
         elif inputArrayChoice == 2:
             spike_mask = (goAct == 1)
 
+
         spiked_idx = np.where(spike_mask)[0]
         # get connections for all spiked cells
         spiked_connections = [] # list to hold connections for all spiked MFs
@@ -431,7 +439,7 @@ class Granule():
             # add to list
             spiked_connections.extend(valid_conns)
         # use bincount to count post occurances of cell
-        spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
+        # spiked_connections = [arr.get() if isinstance(arr, np.ndarray) else arr for arr in spiked_connections]
         spiked_connections = np.asarray(spiked_connections, dtype = int) # convert list to
         counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
         
@@ -443,6 +451,8 @@ class Granule():
             # add to GOGR input
             self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
             # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
+        input_end = time.time()
+        # print("Exit update_input_activity, time taken:", input_end - input_start, "seconds")
 
     def np_to_cp(self):
         self.Vm = cp.asarray(self.Vm)
@@ -522,13 +532,15 @@ class Granule():
 
         self.np_to_cp()
         # print("Converted parameters to cupy")
+        kernel_start = time.time()
         self.gLeak, self.gNMDA_Inc_MFGR, self.gSum_MFGR, self.gSum_GOGR, self.gNMDA_MFGR, self.currentThresh, self.Vm = self.doGranule_kernel(
             self.Vm, self.inputMFGR, self.gSum_MFGR,
             self.inputGOGR, self.gSum_GOGR, self.gNMDA_Inc_MFGR,
             self.gNMDA_MFGR, self.currentThresh, self.mfgrW, self.g_decay_MFGR,
             self.gogrW, self.gGABA_decayGOGR, self.g_decay_NMDA_MFGR,
             self.threshRest, self.threshDecGR, self.eLeak, self.eGOGR)
-        
+        kernel_end = time.time()
+        # print("Exit kernel, time taken:", kernel_end - kernel_start, "seconds")
 
         self.cp_to_np()
         # print("Converted parameters to back to numpy")

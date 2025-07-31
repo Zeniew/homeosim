@@ -92,10 +92,10 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
             GOact = GO.get_act()
             
             # # # GRGO, GOGR
-            GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact)
-            GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact)
+            GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial])
+            GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[trial])
             timestep_end = time.time()
-            print("Time step:", t, ", time taken:", timestep_end - timestep_start)
+            # print("Time step:", t, ", time taken:", timestep_end - timestep_start)
             
             MFrasters[t, :] = MFact
         GOrasters[trial] = GO.get_act()
@@ -154,9 +154,10 @@ numTrial = 1 # 150
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_Experiment_SingleTrial_yesCS_numBins50'
+expName = 'MFGoGr_changedgrgo'
+
 # Save Rasters
-saveGORaster = False
+saveGORaster = True
 saveGRRaster = False
 saveMFRaster = False
 

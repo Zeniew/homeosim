@@ -38,11 +38,11 @@ def showRasters(raster, save_path=None, raster_type = 1):
 
 
 # Load the raster data
-raster_data = np.load('/home/data/einez/MFGoGr_Experiment_SingleTrial_yesCS_numBins50_MFrasters.npy')
+raster_data = np.load('/home/data/einez/MFGoGr_changedgrgo_GOrasters.npy')
 
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_Experiment_SingleTrial_yesCS_numBins50_MFrasters.png"
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_changedgrgo_GOrasters.png"
 
 # Show and save
-showRasters(raster_data, save_path=plot_save_path, raster_type = 1)
+showRasters(raster_data, save_path=plot_save_path, raster_type = 2)
 
