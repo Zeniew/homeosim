@@ -9,37 +9,55 @@ import WireFunctions
 
 ##### Methods #####
 def gen_filepaths(exp_name, convergence, gogoW):
-    # made for conv and gogoW rn, current naming convention defined here
-    filename = exp_name + "_C" + str(convergence) + "_W" + str(int(gogoW * 10000)) + ".cpy"
-    filepath = os.path.join(saveDir, filename)
-    # filename_g = exp_name + "_g_" + str(sessionNum)+ ".npy"
-    # filepath_g = os.path.join(saveDir, filename_g)
-    filepath_g = None
-    return filepath, filepath_g
+    # Match printed file names
+    filename_m = f"{exp_name}_MFrasters.npy"
+    filename_g = f"{exp_name}_GRrasters.npy"
+    filename_go = f"{exp_name}_GOrasters.npy"
+    
+    filepath_m = os.path.join(saveDir,filename_m)
+    filepath_go = os.path.join(saveDir, filename_go)
+    filepath_gr = os.path.join(saveDir, filename_g)
+    
+    return filepath_m, filepath_go, filepath_gr
 
-def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.0042, gogoW = 0.05):
+def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.0042, gogoW = 0.05):
+    
+    print("Initializing objects...")
+
     # Init MF class and create ISI Distributions
     MF = mfgogr.Mossy(numMF, CSon, CSoff)
-    MFrasters = cp.zeros((numBins, numMF), dtype = int)
+    MFrasters = np.zeros((numBins, numMF), dtype = np.uint8)
 
     # # Init GO class
     GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW)
-    GOrasters = cp.zeros((numTrial, numBins, numGO), dtype = int)
+    GOrasters = np.zeros((numTrial, numBins, numGO), dtype = np.uint8)
 
     # # Init GR class
-    # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
-    # GRrasters = cp.zeros((numTrial, numBins, numGR), dtype = int)
+    GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
+    GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
+    print("Objects initialized.")
+
+    print("Loading connectivity arrays...")
 
     # Get connect arrays
-    MFGOimportPath = 'connect_arr/connect_arr_PRE.mfgo'
+    MFGOimportPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgo'
     MFGO_connect_arr = connect.read_connect(MFGOimportPath, numMF, 20)
-    # MFGRimportPath = 'connect_arr/connect_arr_PRE.mfgr'
-    # MFGR_connect_arr = connect.read_connect(MFGRimportPath, numMF, 20)
-    # GOGRimportPath = "connect_arr/connect_arr_PRE.gogr"
-    # GOGR_connect_arr = connect.read_connect(GOGRimportPath, numGO, 20)
-    # GRGOimportPath = "connect_arr/connect_arr_PRE.grgo"
-    # GRGO_connect_arr = connect.read_connect(GRGOimportPath, numGR, 20)
-    GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
+    print("MFGO Connectivity Array Loaded.")
+    MFGRimportPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgr'
+    MFGR_connect_arr = connect.read_connect(MFGRimportPath, numMF, 4000)
+    print("MFGR Connectivity Array Loaded.")
+    GOGRimportPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogr"
+    GOGR_connect_arr = connect.read_connect(GOGRimportPath, numGO, 12800)
+    print("GOGR Connectivity Array Loaded.")
+    GRGOimportPath = "/home/data/einez/connect_arr/connect_arr_PRE.grgo"
+    GRGO_connect_arr = connect.read_connect(GRGOimportPath, numGR, 50)
+    print("GRGO Connectivity Array Loaded.")
+    # GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
+    GOGOimportPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogo"
+    GOGO_connect_arr = connect.read_connect(GOGOimportPath, numGO, 12)
+    print("GOGO Connectivity Array Loaded.")
+
+    print("Connectivity Arrays Loaded")
 
     # Sim Core
     #####################
@@ -47,26 +65,37 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
         # Run trial
         all_start = time.time()
         for t in range(0, numBins):
+            timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
+            # print("Mossy Fiber Activity generated")
+
             # # MF input --> GO and GR
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
-            # GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
+            GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
             
+            # # print("Golgi, Granule activity updated")
+
             # # Update Vm and thresh
             GO.do_Golgi(t)
-            # GR.do_Granule(t)
+            GR.do_Granule(t)
+
+            # # print("Golgi, Granule Vm & thresh updated")
             
             # # GOGO
-            # GO.update_input_activity(GOGO_connect_arr, 2, t = t)
-            # GO.do_Golgi(t)
+            GO.update_input_activity(GOGO_connect_arr, 2, t = t)
+            GO.do_Golgi(t)
+
+            # # print("GoGo done")
             
-            # # Grab activity
-            # GRact = GR.get_act()
+            # # # Grab activity
+            GRact = GR.get_act()
             GOact = GO.get_act()
             
-            # # GRGO, GOGR
-            # GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact)
-            # GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact)
+            # # # GRGO, GOGR
+            GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact)
+            GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact)
+            timestep_end = time.time()
+            print("Time step:", t, ", time taken:", timestep_end - timestep_start)
             
             MFrasters[t, :] = MFact
         GOrasters[trial] = GO.get_act()
@@ -77,14 +106,15 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
     # Save rasters
     if saveGORaster:
         os.makedirs(saveDir, exist_ok = True)
-        cp.save(filepath, GOrasters[:, CSon:CSoff,:])
-        print(f"Raster array saved to '{saveDir}/{expName}_GOrasters.npy'")
+        cp.save(filepath_go, GOrasters)
+        print(f"Raster array saved to '{filepath_go}'")
     if saveGRRaster:
-        cp.save(filepath_g, GRrasters[:, CSon:CSoff,:])
-        print(f"Raster array saved to '{saveDir}/{expName}_GRrasters.npy'")
+        cp.save(filepath_gr, GRrasters)
+        print(f"Raster array saved to '{filepath_gr}'")
     if saveMFRaster:
-        cp.save(os.path.join(saveDir, f"{expName}_MFrasters.npy"), MFrasters)
-        print(f"Raster array saved to '{saveDir}/{expName}_MFrasters.npy'")
+        # cp.save(os.path.join(saveDir, f"{expName}_MFrasters.npy"), MFrasters)
+        cp.save(filepath_m, MFrasters)
+        print(f"Raster array saved to '{filepath_m}'")
 
     # if saveGORaster:
     #     cp.save(os.path.join(saveDir, f"{expName}_GOrasters.npy"), GOrasters)
@@ -99,7 +129,7 @@ def run_session(recip, filpath, filepath_g, conv, grgoW = 0.0007, gogrW = 0.015,
 # Cell Numbers
 numGO = 4096
 numMF = 4096
-numGR = 10 # 1048576
+numGR = 1048576
 
 # Go Activity
 # upper lim and lower lim are global variables
@@ -117,16 +147,16 @@ recip_list = [0.75]
 #span = 6 # changing span below
 
 # Trial Params
-numBins = 5000
+numBins =  50 # 5000
 useCS = 1
-CSon, CSoff = 500, 3500
-numTrial = 5 # 150
+CSon, CSoff = 10, 30 # 500, 3500
+numTrial = 1 # 150
 
 # saving to hard drive
-saveDir = '/home/aw39625/minisim/Results'
-expName = 'MFGoGr_Experiment_TestMF'
+saveDir = '/home/data/einez'
+expName = 'MFGoGr_Experiment_SingleTrial_yesCS_numBins50'
 # Save Rasters
-saveGORaster = True
+saveGORaster = False
 saveGRRaster = False
 saveMFRaster = False
 
@@ -145,6 +175,6 @@ for i in range(len(recip_list)):
                 continue
             print(f"Starting Session for GoGo Conv: {conv} W: {gogoW} ...")
             span = int(conv/2) if conv > 5 else 6 
-            filepath, filepath_g = gen_filepaths(expName, conv, gogoW)
+            filepath_m, filepath_go, filepath_gr = gen_filepaths(expName, conv, gogoW)
             recip = round(conv * recip_list[i])
-            run_session(recip, filepath, filepath_g, conv, grgoW=0, gogrW=0, gogoW = 0)
+            run_session(recip, filepath_m, filepath_go, filepath_gr, conv, grgoW=0, gogrW=0, gogoW = 0)

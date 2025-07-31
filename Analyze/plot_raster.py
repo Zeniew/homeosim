@@ -15,7 +15,7 @@ def showRasters(raster, save_path=None, raster_type = 1):
         plt.eventplot(plotarray, colors='black', linelengths=0.8)
         plt.xlabel("Timestep")
         plt.ylabel("Mossy Fiber Number")
-        plt.title("Spike Raster")
+        plt.title("MF Spike Raster")
 
     if raster_type == 2: # Go
         averaged_raster = np.mean(raster, axis=0)
@@ -27,7 +27,7 @@ def showRasters(raster, save_path=None, raster_type = 1):
         plt.colorbar(label='Average spike probability')
         plt.xlabel("Timestep")
         plt.ylabel("Golgi Cell Number")
-        plt.title("Trial-Averaged Spike Raster (Heatmap)")
+        plt.title("Trial-Averaged Golgi Spike Raster (Heatmap)")
 
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
@@ -38,11 +38,11 @@ def showRasters(raster, save_path=None, raster_type = 1):
 
 
 # Load the raster data
-raster_data = np.load('/home/aw39625/gogo-sim/Results/Recip75.0_C25_W500.npy')
+raster_data = np.load('/home/data/einez/MFGoGr_Experiment_SingleTrial_yesCS_numBins50_MFrasters.npy')
 
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/Carter_GOGO_GOrasters.png"
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_Experiment_SingleTrial_yesCS_numBins50_MFrasters.png"
 
 # Show and save
-showRasters(raster_data, save_path=plot_save_path, raster_type = 2)
+showRasters(raster_data, save_path=plot_save_path, raster_type = 1)
 
