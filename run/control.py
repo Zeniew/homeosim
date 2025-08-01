@@ -79,27 +79,29 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
             GO.do_Golgi(t)
             GR.do_Granule(t)
 
-            # # print("Golgi, Granule Vm & thresh updated")
+            # # # print("Golgi, Granule Vm & thresh updated")
             
-            # # GOGO
-            GO.update_input_activity(GOGO_connect_arr, 2, t = t)
-            GO.do_Golgi(t)
+            # Debug starting from below
 
-            # # print("GoGo done")
+            # # # # GOGO
+            # GO.update_input_activity(GOGO_connect_arr, 2, t = t)
+            # GO.do_Golgi(t)
+
+            # # # print("GoGo done")
             
-            # # # Grab activity
+            # # # # Grab activity
             GRact = GR.get_act()
             GOact = GO.get_act()
             
-            # # # GRGO, GOGR
+            # # # # GRGO, GOGR
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial])
             GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[trial])
-            timestep_end = time.time()
+            # timestep_end = time.time()
             # print("Time step:", t, ", time taken:", timestep_end - timestep_start)
             
             MFrasters[t, :] = MFact
         GOrasters[trial] = GO.get_act()
-        # GRrasters[trial] = GR.get_act()
+        GRrasters[trial] = GR.get_act()
         all_end = time.time()
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
 
@@ -147,19 +149,19 @@ recip_list = [0.75]
 #span = 6 # changing span below
 
 # Trial Params
-numBins =  50 # 5000
+numBins =  5000 # 5000
 useCS = 1
-CSon, CSoff = 10, 30 # 500, 3500
+CSon, CSoff = 500, 3500
 numTrial = 1 # 150
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_changedgrgo'
+expName = 'MFGoGr_no_GoGo'
 
 # Save Rasters
 saveGORaster = True
 saveGRRaster = False
-saveMFRaster = False
+saveMFRaster = True
 
 # GOGO Connect Params
 conv_list = [25]

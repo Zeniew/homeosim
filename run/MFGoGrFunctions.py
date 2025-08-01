@@ -192,8 +192,8 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
     # generic function for updating GOGO and MFGO input arrays
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, t = None, grAct = None):
         ''' inputArrayChoice selects between 1 = MFGO, 2 = GOGO, 3 = GRGO'''
-        # numCells = connectArr.shape[0] # number of Golgi cells
-        # maxnumConnect = connectArr.shape[1] # maximum number of connections per Golgi cell
+        numCells = connectArr.shape[0] # number of Golgi cells
+        maxnumConnect = connectArr.shape[1] # maximum number of connections per Golgi cell
         ## MF input update
         # MF activity is part of Mossy class, so needs to be input as param
         if inputArrayChoice == 1:
@@ -210,12 +210,12 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
                 spiked_connections.extend(valid_conns)
             # use bincount to count post occurances of cell
             # spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
-            spiked_connections = np.asarray(spiked_connections, dtype = int) # convert list to array
+            spiked_connections = np.array(spiked_connections, dtype = int) # convert list to array
             ## artifact from Numpy convert: counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
-            if spiked_connections.size == 0:
-                counts = np.zeros_like(self.inputMFGO)  # or use np.zeros(self.numGO) if more appropriate
-            else:
-                counts = np.bincount(spiked_connections, minlength=self.inputMFGO.size)
+            # if spiked_connections.size == 0:
+            #     counts = np.zeros_like(self.inputMFGO)  # or use np.zeros(self.numGO) if more appropriate
+            # else:
+            counts = np.bincount(spiked_connections) # np.bincount(spiked_connections, minlength=self.inputMFGO.size)
             # add to MFGO input
             self.inputMFGO[:len(counts)] = counts # update inputMFGO with counts, only up to length of counts to avoid index error
             # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
@@ -418,15 +418,14 @@ class Granule():
     # generic function for updating GOGR and MFGR input arrays
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, goAct = None):
         ''' inputArrayChoice selects between 1 = MFGR, 2 = GOGR '''
-        # numCells = connectArr.shape[0] # number of Granule cells
-        # maxnumConnect = connectArr.shape[1] # maximum number of connections per Granule
+        numCells = connectArr.shape[0] # number of Granule cells
+        maxnumConnect = connectArr.shape[1] # maximum number of connections per Granule
         ### [ASK CARTER] does this slow things down by having 2 if checks?
         ## MF input update
         if inputArrayChoice == 1:
             spike_mask = (mfAct == 1)
         elif inputArrayChoice == 2:
             spike_mask = (goAct == 1)
-
 
         spiked_idx = np.where(spike_mask)[0]
         # get connections for all spiked cells
@@ -440,7 +439,7 @@ class Granule():
             spiked_connections.extend(valid_conns)
         # use bincount to count post occurances of cell
         # spiked_connections = [arr.get() if isinstance(arr, np.ndarray) else arr for arr in spiked_connections]
-        spiked_connections = np.asarray(spiked_connections, dtype = int) # convert list to
+        spiked_connections = np.array(spiked_connections, dtype = int) # convert list to
         counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
         
         if inputArrayChoice == 1:
@@ -451,7 +450,7 @@ class Granule():
             # add to GOGR input
             self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
             # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
-        input_end = time.time()
+
         # print("Exit update_input_activity, time taken:", input_end - input_start, "seconds")
 
     def np_to_cp(self):
