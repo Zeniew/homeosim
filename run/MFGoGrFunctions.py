@@ -135,12 +135,12 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.gNMDA_inc_MFGO = np.zeros(self.numGolgi, dtype = float) # NMDA conductance increment from MF to Golgi
         self.gNMDA_MFGO = np.zeros(self.numGolgi, dtype = float) # NMDA conductance from MF to Golgi
         
-        ## GRGO dist params ### <-- [CHANGE THIS] this is for generating the gr activity, but we need a whole new gr class for this...
-        self.gGRGO_mu_noCS = np.random.normal(0.0180218, 0.0014705, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
-        self.gGRGO_sig_noCS = np.random.normal(0.0031327, 0.00015542, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
-        if self.useCS == 1: 
-            self.gGRGO_mu_CS = np.random.normal(0.02779684,0.0031472,self.numGolgi)
-            self.gGRGO_sig_CS = np.random.normal(0.00358812,0.0003982685,self.numGolgi)
+        # ## GRGO dist params ### <-- [CHANGE THIS] this is for generating the gr activity, but we need a whole new gr class for this...
+        # self.gGRGO_mu_noCS = np.random.normal(0.0180218, 0.0014705, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
+        # self.gGRGO_sig_noCS = np.random.normal(0.0031327, 0.00015542, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
+        # if self.useCS == 1: 
+        #     self.gGRGO_mu_CS = np.random.normal(0.02779684,0.0031472,self.numGolgi)
+        #     self.gGRGO_sig_CS = np.random.normal(0.00358812,0.0003982685,self.numGolgi)
         
         # Threshold
         self.currentThresh = np.full(self.numGolgi, self.threshRest, dtype = float) # current threshold of Golgi cells, initialized to resting threshold
@@ -183,6 +183,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
 
         ## Do spikes
         # Get minimum values between arrays
+        self.Vm = np.minimum(self.Vm, self.thresholdMax)
         # Calculate spikse with boolean mask, fit to int array
         spike_mask = self.Vm > self.currentThresh # boolean array indicating which Golgi cells fired, true where Vm exceeds current threshold
         self.act[t] = spike_mask.astype(np.uint8) # convert boolean array to int array, true = 1, false = 0
@@ -222,25 +223,21 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         # GO input 
         # golgi activity is made internal, not required as a param, but time is needed instead
         if inputArrayChoice == 2:
-            spike_mask = self.act[t] == 1 # integer array indicating which Golgi cells fired, 1 where Golgi fired, 0 otherwise
-            spiked_idx = np.where(spike_mask)[0] # get the indices of the Golgi cells that fired
+            spike_mask = (self.act[t] == 1)
+            spiked_idx = np.where(spike_mask)[0]
             # get connections for each spiked cell
-            spiked_connections = [] # list to hold connections for all spiked Golgi cells
+            spiked_connections = []
             for cell in spiked_idx:
                 # eliminate -1 terminator
                 valid_idx = connectArr[cell] != -1
                 valid_conns = connectArr[cell, valid_idx]
                 spiked_connections.extend(valid_conns)
-            # use bincount to count occurances of target idx
-            # spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
-            spiked_connections = np.asarray(spiked_connections, dtype = int)
-            if spiked_connections.size == 0:
-                counts = np.zeros_like(self.inputMFGO)  # or use np.zeros(self.numGO) if more appropriate
-            else:
-                counts = np.bincount(spiked_connections, minlength=self.inputMFGO.size)
-            # counts = np.bincount(spiked_connections) # count occurances of each index
-            # add to GOGO input
-            self.inputGOGO[:len(counts)] = counts # update inputGOGO with counts, only up to length of counts to avoid index error
+            # use bincount to count occurrances of target idx
+            spiked_connections = np.array(spiked_connections, dtype=int)
+            # count occurances of each index
+            counts = np.bincount(spiked_connections)
+            # add to input array
+            self.inputGOGO[:len(counts)] = counts
         # GR input
         # GR activity is part of Mossy class, so needs to be input as param
         if inputArrayChoice == 3: 

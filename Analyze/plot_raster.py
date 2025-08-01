@@ -23,11 +23,10 @@ def showRasters(raster, save_path=None, raster_type = 1):
         print("Averaged raster shape:", averaged_raster.shape)
 
         plt.figure(figsize=(18, 9))
-        plt.imshow(averaged_raster.T, aspect='auto', cmap='hot', origin='upper')
-        plt.colorbar(label='Average spike probability')
+        plt.imshow(raster.T, aspect='auto', cmap='Greys', origin='lower')
         plt.xlabel("Timestep")
         plt.ylabel("Golgi Cell Number")
-        plt.title("Trial-Averaged Golgi Spike Raster (Heatmap)")
+        plt.title("Golgi Spike Raster")
 
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)

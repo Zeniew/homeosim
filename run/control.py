@@ -69,35 +69,26 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
             MFact = MF.do_MF_dist(t, useCS)
             # print("Mossy Fiber Activity generated")
 
-            # # MF input --> GO and GR
-            GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
+            # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
-            
-            # # print("Golgi, Granule activity updated")
-
-            # # Update Vm and thresh
-            GO.do_Golgi(t)
+            # do gr spikes
             GR.do_Granule(t)
 
-            # # # print("Golgi, Granule Vm & thresh updated")
-            
-            # Debug starting from below
-
-            # # # # GOGO
-            # GO.update_input_activity(GOGO_connect_arr, 2, t = t)
-            # GO.do_Golgi(t)
-
-            # # # print("GoGo done")
-            
-            # # # # Grab activity
+            # grab GR activity
             GRact = GR.get_act()
-            GOact = GO.get_act()
-            
-            # # # # GRGO, GOGR
+
+            # GR -> GO update
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial])
-            GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[trial])
-            # timestep_end = time.time()
-            # print("Time step:", t, ", time taken:", timestep_end - timestep_start)
+
+            # MF -> GO
+            GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
+            # GO spikes
+            GO.do_Golgi(t)
+
+            # GO -> GO update
+            GO.update_input_activity(GOGO_connect_arr, 2, t = t)
+            # GO -> GR update
+            GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial])
             
             MFrasters[t, :] = MFact
         GOrasters[trial] = GO.get_act()
