@@ -302,7 +302,7 @@ class Granule():
         self.g_decay_NMDA_MFGR = math.exp(-1.0/30.0) # 0.9672
         self.gDirectInc_MFGR = 0.0320
 
-        self.g_decay_MFGR = 1.0 # 0.0 # math.exp(-1.0/0.0), which compiles as 0 in C++? # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
+        self.g_decay_MFGR = 0.0 # 1.0 # math.exp(-1.0/0.0), which compiles as 0 in C++? # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
         self.gogrW = gogr_weight
         self.mfgrW = mfgr_weight
         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule
