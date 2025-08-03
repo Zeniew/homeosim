@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import cupy as cp
+
 
 def showRasters(raster, save_path=None, raster_type = 1):
     if raster_type == 1: # MF
@@ -23,10 +25,23 @@ def showRasters(raster, save_path=None, raster_type = 1):
         print("Averaged raster shape:", averaged_raster.shape)
 
         plt.figure(figsize=(18, 9))
-        plt.imshow(raster.T, aspect='auto', cmap='Greys', origin='lower')
+        plt.imshow(averaged_raster.T, aspect='auto', cmap='binary', origin='lower', alpha = 1.0)
         plt.xlabel("Timestep")
         plt.ylabel("Golgi Cell Number")
         plt.title("Golgi Spike Raster")
+    
+    if raster_type == 3: # Gr
+        # print("Entered granule raster plotting function")
+        averaged_raster = np.mean(raster, axis=0)
+        print("Averaged raster shape:", averaged_raster.shape)
+        raster_ds = downsample_granule_cells_only(averaged_raster)
+        print("Downsampled shape (only granule cells):", raster_ds.shape)
+        plt.figure(figsize=(18, 9))
+        plt.imshow(raster_ds.T, aspect='auto', cmap='binary', origin='lower', alpha = 1.0)
+        plt.xlabel("Timestep")
+        plt.ylabel("Granule Cell Number")
+        plt.title("Granule Spike Raster")
+
 
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
@@ -35,12 +50,20 @@ def showRasters(raster, save_path=None, raster_type = 1):
 
     plt.show()
 
+def downsample_granule_cells_only(raster, max_cells=10000):
+    raster = np.asarray(raster)
+    print("Using CPU downsampling. Shape:", raster.shape)
+
+    num_timesteps, num_cells = raster.shape
+    downsample_factor = max(1, num_cells // max_cells)
+
+    return raster[:, ::downsample_factor]
 
 # Load the raster data
-raster_data = np.load('/home/data/einez/MFGoGr_no_GoGo_GOrasters.npy')
+raster_data = np.load('/home/data/einez/MFGoGr_full_GRrasters.npy')
 
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_no_GoGo_GOrasters.png"
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_full_GRrasters.png"
 
 # Show and save
-showRasters(raster_data, save_path=plot_save_path, raster_type = 2)
+showRasters(raster_data, save_path=plot_save_path, raster_type = 3)

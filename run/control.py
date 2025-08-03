@@ -147,11 +147,11 @@ numTrial = 1 # 150
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_no_GoGo'
+expName = 'MFGoGr_full'
 
 # Save Rasters
 saveGORaster = True
-saveGRRaster = False
+saveGRRaster = True
 saveMFRaster = True
 
 # GOGO Connect Params

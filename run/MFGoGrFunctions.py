@@ -276,7 +276,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
     #     if self.useCS == 1: 
     #         # different g for CS
     #         if timebin >= self.csOn and timebin < self.csOff: # during CS
-    #             self.gSum_GRGO = cp.random.normal(self.gGRGO_mu_CS, self.gGRGO_sig_CS)
+    #             self.gSum_GRGO = cp.random.norsmal(self.gGRGO_mu_CS, self.gGRGO_sig_CS)
     #         else:
     #             self.gSum_GRGO = cp.random.normal(self.gGRGO_mu_noCS,self.gGRGO_sig_noCS)
     #     else: # CS == 0
@@ -300,8 +300,9 @@ class Granule():
         self.thresholdMax = 10.0 # maximum Vm threshold
         self.gLeak_base = 0.1  # leak conductance
         self.g_decay_NMDA_MFGR = math.exp(-1.0/30.0) # 0.9672
+        self.gDirectInc_MFGR = 0.0320
 
-        self.g_decay_MFGR = math.exp(-1.0/3.0) # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
+        self.g_decay_MFGR = 1.0 # 0.0 # math.exp(-1.0/0.0), which compiles as 0 in C++? # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
         self.gogrW = gogr_weight
         self.mfgrW = mfgr_weight
         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule
@@ -329,10 +330,10 @@ class Granule():
     def compile_doGranule_kernel(self):
         self.doGranule_kernel = ElementwiseKernel(
             in_params = """
-            float64 Vm_prev, uint8 input_MFGR_prev, float64 gSum_MFGR_prev,
-            uint8 input_GOGR_prev, float64 gSum_GOGR_prev, float64 gNMDA_Inc_MFGR_prev,
+            float64 Vm_prev, uint8 inputMFGR, float64 gSum_MFGR_prev,
+            uint8 inputGOGR, float64 gSum_GOGR_prev, float64 gNMDA_Inc_MFGR_prev,
             float64 gNMDA_MFGR_prev, float64 currentThresh_prev, float64 mfgrW, float64 g_decay_MFGR,
-            float64 gogrW, float64 gGABA_decayGOGR, float64 g_decay_NMDA_MFGR,
+            float64 gogrW, float64 gGABA_decayGOGR, float64 g_decay_NMDA_MFGR, float64 gDirectInc_MFGR,
             float64 threshRest, float64 threshDecGR, float64 eLeak, float64 eGOGR
             """,
             out_params = """
@@ -352,21 +353,17 @@ class Granule():
             (0.0151 * Vm_prev) + 0.7713
             );
 
-            gSum_MFGR_new = (input_MFGR_prev * mfgrW) + gSum_MFGR_prev * g_decay_MFGR;
+            gSum_MFGR_new = inputMFGR * mfgrW + gSum_MFGR_prev * g_decay_MFGR; 
+            
+            gSum_GOGR_new = inputGOGR * gogrW + gSum_GOGR_prev * gGABA_decayGOGR;
 
-            gSum_GOGR_new = (input_GOGR_prev * gogrW) + gSum_GOGR_prev * gGABA_decayGOGR;
+            gNMDA_MFGR_new = gNMDA_Inc_MFGR_new * gDirectInc_MFGR * inputMFGR + gNMDA_MFGR_prev * 0.9672;
 
-            gNMDA_MFGR_new = (
-                input_MFGR_prev * (mfgrW * gNMDA_Inc_MFGR_new) + 
-                gNMDA_MFGR_prev * g_decay_NMDA_MFGR
-            );
+            Vm_new = Vm_prev + gLeak_new * (eLeak - Vm_prev) - gSum_MFGR_prev * Vm_prev - 
+            gNMDA_MFGR_new * Vm_prev + gSum_GOGR_prev * (eGOGR - Vm_prev);
 
-            currentThresh_new = currentThresh_prev + (threshRest - currentThresh_prev) * threshDecGR;
+            currentThresh_new = currentThresh_prev + (threshRest - currentThresh_prev) * (threshDecGR);
 
-            Vm_new = Vm_prev + (
-                gLeak_new * (eLeak - Vm_prev) - gSum_MFGR_new * Vm_prev - 
-                gNMDA_MFGR_new * Vm_prev + gSum_GOGR_new * (eGOGR - Vm_prev)
-            );
             """
         )
 
@@ -533,9 +530,10 @@ class Granule():
             self.Vm, self.inputMFGR, self.gSum_MFGR,
             self.inputGOGR, self.gSum_GOGR, self.gNMDA_Inc_MFGR,
             self.gNMDA_MFGR, self.currentThresh, self.mfgrW, self.g_decay_MFGR,
-            self.gogrW, self.gGABA_decayGOGR, self.g_decay_NMDA_MFGR,
+            self.gogrW, self.gGABA_decayGOGR, self.g_decay_NMDA_MFGR, self.gDirectInc_MFGR,
             self.threshRest, self.threshDecGR, self.eLeak, self.eGOGR)
         kernel_end = time.time()
+        
         # print("Exit kernel, time taken:", kernel_end - kernel_start, "seconds")
 
         self.cp_to_np()
@@ -545,13 +543,13 @@ class Granule():
         self.inputGOGR.fill(0)
         ## Do spikes
         # Get minimum values between arrays, though Carter said could probably get rid of this
-        self.Vm = np.minimum(self.Vm, self.thresholdMax) # set Vm to max threshold if it exceeds it
-        # Calculate spikes with boolean mask, fit to int array     
+        # self.Vm = np.minimum(self.Vm, self.thresholdMax) # set Vm to max threshold if it exceeds it
+        # Calculate spikes with boolean mask, fit to int array  
+
         spike_mask = self.Vm > self.currentThresh # boolean array indicating which Granule cells fired, true where Vm exceeds current threshold
         self.act[t] = spike_mask.astype(np.uint8) # convert boolean array to int array,
         # Update thresholds where spikes occurred (condition, value if true, if false)
         self.currentThresh = np.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
-        
         
         # update experimental K and Ca conductance, probably can omit?
         self.gKCa = spike_mask.astype(np.uint8) * (self.gKCa * 0.9999) + ((~spike_mask).astype(np.uint8)) * self.gKCa
