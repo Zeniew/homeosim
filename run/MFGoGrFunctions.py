@@ -552,7 +552,7 @@ class Granule():
         self.currentThresh = np.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
         
         # update experimental K and Ca conductance, probably can omit?
-        self.gKCa = spike_mask.astype(np.uint8) * (self.gKCa * 0.9999) + ((~spike_mask).astype(np.uint8)) * self.gKCa
+        # self.gKCa = spike_mask.astype(np.uint8) * (self.gKCa * 0.9999) + ((~spike_mask).astype(np.uint8)) * self.gKCa
 
     def get_act(self):
         return self.act
