@@ -91,6 +91,9 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial])
             
             MFrasters[t, :] = MFact
+        # Final update
+        # GR.updateFinalState()
+        # Rasters
         GOrasters[trial] = GO.get_act()
         GRrasters[trial] = GR.get_act()
         all_end = time.time()
@@ -159,6 +162,7 @@ conv_list = [25]
 gogoW_list = [0.05] # range can't iter by floats
 recip_list = [0.75]
 # span = 6 # changing span below
+
 
 ##### Experiment Loop #####
 

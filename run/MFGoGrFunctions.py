@@ -324,91 +324,72 @@ class Granule():
         # Threshold
         self.currentThresh = np.full(self.numGranule, self.threshRest, dtype = float) # current threshold of Granule cells, initialized to resting threshold
         self.act = np.zeros((trialSize, self.numGranule), dtype = np.uint8) # activity of Granule cells over the entire trial, 2D array of size
+        
+        # Kernel stuff
+        doGranulekernel_code = """
+        extern "C" __global__ void doGranule(int size, double *GPU_gLeak, double *GPU_Vm, unsigned char *inputMFGR, double *GPU_gSum_MFGR,
+        unsigned char *inputGOGR, double *GPU_gSum_GOGR, double *GPU_gNMDA_Inc_MFGR, double *GPU_gNMDA_MFGR, double *GPU_currentThresh, double GPU_mfgrW, 
+        double GPU_g_decay_MFGR, double GPU_gogrW, double GPU_gGABA_decayGOGR, double GPU_g_decay_NMDA_MFGR, double GPU_gDirectInc_MFGR,
+        double GPU_threshRest, double GPU_threshDecGR, double GPU_eLeak, double GPU_eGOGR, unsigned char *GPU_spike_mask){
+            int idx = threadIdx.x + blockIdx.x * blockDim.x;
+            if (idx >= size) return;
+            GPU_gLeak[idx] = (0.0000001021370733 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
+            (0.00001636462 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) +
+            (0.00113971219 * GPU_Vm[idx] * GPU_Vm[idx] + 0.038772 * GPU_Vm[idx] + 0.6234929);
 
-        self.compile_doGranule_kernel()
-    
-    def compile_doGranule_kernel(self):
-        self.doGranule_kernel = ElementwiseKernel(
-            in_params = """
-            float64 Vm_prev, uint8 inputMFGR, float64 gSum_MFGR_prev,
-            uint8 inputGOGR, float64 gSum_GOGR_prev, float64 gNMDA_Inc_MFGR_prev,
-            float64 gNMDA_MFGR_prev, float64 currentThresh_prev, float64 mfgrW, float64 g_decay_MFGR,
-            float64 gogrW, float64 gGABA_decayGOGR, float64 g_decay_NMDA_MFGR, float64 gDirectInc_MFGR,
-            float64 threshRest, float64 threshDecGR, float64 eLeak, float64 eGOGR
-            """,
-            out_params = """
-            float64 gLeak_new, float64 gNMDA_Inc_MFGR_new, float64 gSum_MFGR_new, float64 gSum_GOGR_new, 
-            float64 gNMDA_MFGR_new, float64 currentThresh_new, float64 Vm_new 
-
-            """,
-
-            operation = """
-            gLeak_new = (0.0000001021370733 * Vm_prev * Vm_prev * Vm_prev * Vm_prev) + 
-            (0.00001636462 * Vm_prev * Vm_prev * Vm_prev) +
-            (0.00113971219 * Vm_prev * Vm_prev + 0.038772 * Vm_prev + 0.6234929);
-
-            gNMDA_Inc_MFGR_new = (
-            (0.00000011969 * Vm_prev * Vm_prev * Vm_prev) +
-            (0.000089369 * Vm_prev * Vm_prev) +
-            (0.0151 * Vm_prev) + 0.7713
+            GPU_gNMDA_Inc_MFGR[idx] = (
+            (0.00000011969 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
+            (0.000089369 * GPU_Vm[idx] * GPU_Vm[idx]) +
+            (0.0151 * GPU_Vm[idx]) + 0.7713
             );
 
-            gSum_MFGR_new = inputMFGR * mfgrW + gSum_MFGR_prev * g_decay_MFGR; 
+            GPU_gSum_MFGR[idx] = inputMFGR[idx] * GPU_mfgrW + GPU_gSum_MFGR[idx] * GPU_g_decay_MFGR; 
             
-            gSum_GOGR_new = inputGOGR * gogrW + gSum_GOGR_prev * gGABA_decayGOGR;
+            GPU_gSum_GOGR[idx] = inputGOGR[idx] * GPU_gogrW + GPU_gSum_GOGR[idx] * GPU_gGABA_decayGOGR;
 
-            gNMDA_MFGR_new = gNMDA_Inc_MFGR_new * gDirectInc_MFGR * inputMFGR + gNMDA_MFGR_prev * 0.9672;
+            GPU_gNMDA_MFGR[idx] = GPU_gNMDA_Inc_MFGR[idx] * GPU_gDirectInc_MFGR * inputMFGR[idx] + GPU_gNMDA_MFGR[idx] * 0.9672;
 
-            Vm_new = Vm_prev + gLeak_new * (eLeak - Vm_prev) - gSum_MFGR_prev * Vm_prev - 
-            gNMDA_MFGR_new * Vm_prev + gSum_GOGR_prev * (eGOGR - Vm_prev);
+            GPU_Vm[idx] = GPU_Vm[idx] + GPU_gLeak[idx] * (GPU_eLeak - GPU_Vm[idx]) - GPU_gSum_MFGR[idx] * GPU_Vm[idx] - 
+            GPU_gNMDA_MFGR[idx] * GPU_Vm[idx] + GPU_gSum_GOGR[idx] * (GPU_eGOGR - GPU_Vm[idx]);
 
-            currentThresh_new = currentThresh_prev + (threshRest - currentThresh_prev) * (threshDecGR);
+            GPU_currentThresh[idx] = GPU_currentThresh[idx] + (GPU_threshRest - GPU_currentThresh[idx]) * (GPU_threshDecGR);
 
-            """
-        )
+            GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
+        }
+        """
 
+        self.GRgpu = cp.RawKernel(doGranulekernel_code, 'doGranule')
+        self.GPU_gLeak = cp.array(self.gLeak, dtype = cp.float64)
+        self.GPU_Vm = cp.array(self.Vm, dtype = cp.float64)
+        self.GPU_gSum_MFGR = cp.array(self.gSum_MFGR, dtype = cp.float64)
+        self.GPU_gSum_GOGR = cp.array(self.gSum_GOGR, dtype = cp.float64)
+        self.GPU_gNMDA_Inc_MFGR = cp.array(self.gNMDA_Inc_MFGR, dtype = cp.float64)
+        self.GPU_gNMDA_MFGR = cp.array(self.gNMDA_MFGR, dtype = cp.float64)
+        self.GPU_currentThresh = cp.array(self.currentThresh, dtype = cp.float64)
+        self.GPU_mfgrW = cp.float64(self.mfgrW)
+        self.GPU_g_decay_MFGR = cp.float64(self.g_decay_MFGR)
+        self.GPU_gogrW  = cp.float64(self.gogrW)
+        self.GPU_gGABA_decayGOGR = cp.float64(self.gGABA_decayGOGR)
+        self.GPU_g_decay_NMDA_MFGR = cp.float64(self.g_decay_NMDA_MFGR)
+        self.GPU_gDirectInc_MFGR = cp.float64(self.gDirectInc_MFGR)
+        self.GPU_threshRest = cp.float64(self.threshRest)
+        self.GPU_threshDecGR = cp.float64(self.threshDecGR)
+        self.GPU_eLeak = cp.float64(self.eLeak)
+        self.GPU_eGOGR = cp.float64(self.eGOGR)
+        self.GPU_spike_mask = cp.zeros(self.numGranule, dtype = cp.uint8)
 
-# # # Based off of the Golgi class, this is the version that is unparallelized
-# class Granule(): # class of Granule cells, entire network of Granule cells
-#     def __init__(self, n, csOFF, csON, useCS, trialSize, mfgr_weight = 0.0042, gogr_weight = 0.015):
-#         ### Constants
-#         self.numGranule = n
-#         self.csOFF, self.csON = csOFF, csON
-#         self.useCS = useCS # whether to use CS or not
-#         # self.eMFGR = 0.0
-#         self.eLeak = -65.0
-#         self.eGOGR = -75.0
-#         self.thresholdMax = 10.0 # maximum Vm threshold
-#         # self.gAMPAInc = 0.0320 + 0.0320 * 0.2
-#         self.gLeak_base = 0.1  # leak conductance
-#         # self.gAMPA_Inc = 0.0384 # AMPA increment, taken from Golgi class
-#         self.g_decay_NMDA_MFGR = math.exp(-1.0/30.0) # 0.9672
+    def doGRGPU(self):
+        block_size = 256
+        grid_size = (self.numGranule + block_size - 1) // block_size
+        with cp.cuda.Device(0):
+            GPU_inputMFGR = cp.array(self.inputMFGR)
+            GPU_inputGOGR = cp.array(self.inputGOGR)
+            self.GRgpu((grid_size,),(block_size,), (self.numGranule, self.GPU_gLeak, self.GPU_Vm, GPU_inputMFGR, self.GPU_gSum_MFGR, GPU_inputGOGR, 
+            self.GPU_gSum_GOGR, self.GPU_gNMDA_Inc_MFGR, self.GPU_gNMDA_MFGR, self.GPU_currentThresh, self.GPU_mfgrW, self.GPU_g_decay_MFGR, self.GPU_gogrW, 
+            self.GPU_gGABA_decayGOGR, self.GPU_g_decay_NMDA_MFGR, self.GPU_gDirectInc_MFGR, self.GPU_threshRest, self.GPU_threshDecGR, self.GPU_eLeak, 
+            self.GPU_eGOGR, self.GPU_spike_mask))
+            return self.GPU_spike_mask.get()
 
-#         self.g_decay_MFGR = math.exp(-1.0/3.0) # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
-#         # self.g_decay_NMDA_MFGR # where is this value?
-#         self.gogrW = gogr_weight
-#         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule
-
-#         self.threshDecGR = 1 - math.exp(-1.0/3.0) 
-#         self.threshRest = -40.0
-
-#         ### Arrays
-#         self.mfgrW = cp.full(self.numGranule, mfgr_weight, dtype = float) # synaptic weight of mossy fiber to granule 
-#         self.Vm = cp.full(self.numGranule, self.eLeak, dtype = float) # membrane potential of Granule cells, initialized to leak reversal potential
-#         self.gSum_MFGR = cp.zeros(self.numGranule, dtype = float) # sum of excitatory conductances from MF to Granule
-#         self.inputMFGR = cp.zeros(self.numGranule, dtype = int) # input excit
-#         self.gSum_GOGR = cp.zeros(self.numGranule, dtype = float) # sum of GABA conductances from Golgi to Granule
-#         self.inputGOGR = cp.zeros(self.numGranule, dtype = int) # input GABA conductance from Golgi to Granule
-#         # self.gAMPA_Inc_MFGR = cp.zeros(self.numGranule, dtype = float) # AMPA conductance increment from MF to Granule
-#         # self.AMPA_MFGR = cp.zeros(self.numGranule, dtype = float) # AMPA conductance from MF to Granule
-#         self.gNMDA_MFGR= cp.zeros(self.numGranule, dtype = float) # NMDA conductance from MF to Granule
-#         self.gNMDA_Inc_MFGR = cp.zeros(self.numGranule, dtype = float) # NMDA conductance increment from MF to Granule
-#         self.gLeak = cp.full(self.numGranule, self.gLeak_base, dtype = float) # leak conductance for Granule cells, initialized to leak conductance
-#         self.gKCa = cp.zeros(self.numGranule, dtype = float) # experimental K and Ca conductance, initialized to 0
-#         # Threshold
-#         self.currentThresh = cp.full(self.numGranule, self.threshRest, dtype = float) # current threshold of Granule cells, initialized to resting threshold
-#         self.act = cp.zeros((trialSize, self.numGranule), dtype = int) # activity of Granule cells over the entire trial, 2D array of size
-        
     # generic function for updating GOGR and MFGR input arrays
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, goAct = None):
         ''' inputArrayChoice selects between 1 = MFGR, 2 = GOGR '''
@@ -447,113 +428,35 @@ class Granule():
 
         # print("Exit update_input_activity, time taken:", input_end - input_start, "seconds")
 
-    def np_to_cp(self):
-        self.Vm = cp.asarray(self.Vm)
-        self.gSum_MFGR = cp.asarray(self.gSum_MFGR)
-        self.inputMFGR = cp.asarray(self.inputMFGR)
-        self.inputGOGR = cp.asarray(self.inputGOGR)
-        self.gSum_GOGR = cp.asarray(self.gSum_GOGR)
-        self.gNMDA_Inc_MFGR = cp.asarray(self.gNMDA_Inc_MFGR)
-        self.gNMDA_MFGR = cp.asarray(self.gNMDA_MFGR)
-        self.currentThresh = cp.asarray(self.currentThresh)
-        self.mfgrW = cp.asarray(self.mfgrW)
-        self.g_decay_MFGR = cp.asarray(self.g_decay_MFGR)
-        self.gogrW = cp.asarray(self.gogrW)
-        self.gGABA_decayGOGR = cp.asarray(self.gGABA_decayGOGR)
-        self.g_decay_NMDA_MFGR = cp.asarray(self.g_decay_NMDA_MFGR)
-        self.threshRest = cp.asarray(self.threshRest)
-        self.threshDecGR = cp.asarray(self.threshDecGR)
-        self.eLeak = cp.asarray(self.eLeak)
-        self.eGOGR = cp.asarray(self.eGOGR)
-
-    
-    def cp_to_np(self):
-        self.Vm = cp.asnumpy(self.Vm)
-        self.gSum_MFGR = cp.asnumpy(self.gSum_MFGR)
-        self.inputMFGR = cp.asnumpy(self.inputMFGR)
-        self.inputGOGR = cp.asnumpy(self.inputGOGR)
-        self.gSum_GOGR = cp.asnumpy(self.gSum_GOGR)
-        self.gNMDA_Inc_MFGR = cp.asnumpy(self.gNMDA_Inc_MFGR)
-        self.gNMDA_MFGR = cp.asnumpy(self.gNMDA_MFGR)
-        self.currentThresh = cp.asnumpy(self.currentThresh)
-        self.mfgrW = cp.asnumpy(self.mfgrW)
-        self.g_decay_MFGR = cp.asnumpy(self.g_decay_MFGR)
-        self.gogrW = cp.asnumpy(self.gogrW)
-        self.gGABA_decayGOGR = cp.asnumpy(self.gGABA_decayGOGR)
-        self.g_decay_NMDA_MFGR = cp.asnumpy(self.g_decay_NMDA_MFGR)
-        self.threshRest = cp.asnumpy(self.threshRest)
-        self.threshDecGR = cp.asnumpy(self.threshDecGR)
-        self.eLeak = cp.asnumpy(self.eLeak)
-        self.eGOGR = cp.asnumpy(self.eGOGR)
-        self.gLeak = cp.asnumpy(self.gLeak)
-        self.currentThresh = cp.asnumpy(self.currentThresh)
-
-
     def do_Granule(self, t): # t for MF output, golgi for Golgi activity
-        # # Update leak conductance
-        # self.gLeak = (
-        #     (0.0000001021370733 * self.Vm * self.Vm * self.Vm * self.Vm) + 
-        #     (0.00001636462 * self.Vm * self.Vm * self.Vm) +
-        #     (0.00113971219 * self.Vm * self.Vm + 0.038772 * self.Vm + 0.6234929)
-        # )
-        # #### COMPLETELY TAKEN FROM GOLGI #####
-
-        # # NMDA High (voltage-dep step size for NMDA conductance update mf -> gr)
-        # self.gNMDA_Inc_MFGR = (
-        #     (0.00000011969 * self.Vm * self.Vm * self.Vm) +
-        #     (0.000089369 * self.Vm * self.Vm) +
-        #     (0.0151 * self.Vm) + 0.7713
-        # ) # taken directly from Golgi class, calculated
-        # # update total mf -> gr input conductance
-        # self.gSum_MFGR = (self.inputMFGR * self.mfgrW) + self.gSum_MFGR * self.g_decay_MFGR # taken directly from Golgi class
-        # # update total go -> gr input conductance
-        # self.gSum_GOGR = (self.inputGOGR * self.gogrW) + self.gSum_GOGR * self.gGABA_decayGOGR # taken directly from Golgi class, GABA since it's inhibitory
-        # # Update NMDA mf -> gr input conductance
-        # self.gNMDA_MFGR = (
-        #     # self.gNMDA_Inc_MFGR * self.gAMPA_Inc * mfAct + self.gNMDA_MFGR * self.g_decay_NMDA_MFGR
-        #     # # From Golgi
-        #     self.inputMFGR * (self.mfgrW * self.gNMDA_Inc_MFGR) +
-        #     self.gNMDA_MFGR * self.g_decay_NMDA_MFGR
-        # )
-        # # update current threshold
-        # self.currentThresh += (self.threshRest - self.currentThresh) * (self.threshDecGR) # decay current threshold towards resting threshold
-        # # calc new Vm
-        # self.Vm += (
-        #     self.gLeak * (self.eLeak - self.Vm) - self.gSum_MFGR * self.Vm - 
-        #     self.gNMDA_MFGR * self.Vm + self.gSum_GOGR * (self.eGOGR - self.Vm)
-        # ) # update Vm based on conductances and reversal potentials
-
-        self.np_to_cp()
-        # print("Converted parameters to cupy")
-        kernel_start = time.time()
-        self.gLeak, self.gNMDA_Inc_MFGR, self.gSum_MFGR, self.gSum_GOGR, self.gNMDA_MFGR, self.currentThresh, self.Vm = self.doGranule_kernel(
-            self.Vm, self.inputMFGR, self.gSum_MFGR,
-            self.inputGOGR, self.gSum_GOGR, self.gNMDA_Inc_MFGR,
-            self.gNMDA_MFGR, self.currentThresh, self.mfgrW, self.g_decay_MFGR,
-            self.gogrW, self.gGABA_decayGOGR, self.g_decay_NMDA_MFGR, self.gDirectInc_MFGR,
-            self.threshRest, self.threshDecGR, self.eLeak, self.eGOGR)
-        kernel_end = time.time()
-        
-        # print("Exit kernel, time taken:", kernel_end - kernel_start, "seconds")
-
-        self.cp_to_np()
-        # print("Converted parameters to back to numpy")
+        self.act[t] = self.doGRGPU() # convert boolean array to int array,
         # reset inputs
         self.inputMFGR.fill(0)
         self.inputGOGR.fill(0)
-        ## Do spikes
-        # Get minimum values between arrays, though Carter said could probably get rid of this
-        # self.Vm = np.minimum(self.Vm, self.thresholdMax) # set Vm to max threshold if it exceeds it
-        # Calculate spikes with boolean mask, fit to int array  
+        ## Do spikes  
+        # boolean array indicating which Granule cells fired, true where Vm exceeds current threshold
 
-        spike_mask = self.Vm > self.currentThresh # boolean array indicating which Granule cells fired, true where Vm exceeds current threshold
-        self.act[t] = spike_mask.astype(np.uint8) # convert boolean array to int array,
         # Update thresholds where spikes occurred (condition, value if true, if false)
-        self.currentThresh = np.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
-        
-        # update experimental K and Ca conductance, probably can omit?
-        # self.gKCa = spike_mask.astype(np.uint8) * (self.gKCa * 0.9999) + ((~spike_mask).astype(np.uint8)) * self.gKCa
 
     def get_act(self):
         return self.act
+
+    def updateFinalState(self):
+        with cp.cuda.Device(0):
+            self.Vm = cp.asnumpy(self.GPU_Vm)
+            self.gSum_MFGR = cp.asnumpy(self.GPU_gSum_MFGR)
+            self.gSum_GOGR = cp.asnumpy(self.GPU_gSum_GOGR)
+            self.gNMDA_Inc_MFGR = cp.asnumpy(self.GPU_gNMDA_Inc_MFGR)
+            self.gNMDA_MFGR = cp.asnumpy(self.GPU_gNMDA_MFGR)
+            self.currentThresh = cp.asnumpy(self.GPU_currentThresh)
+            self.mfgrW = cp.asnumpy(self.GPU_mfgrW)
+            self.g_decay_MFGR = cp.asnumpy(self.GPU_g_decay_MFGR)
+            self.gogrW  = cp.asnumpy(self.GPU_gogrW)
+            self.gGABA_decayGOGR = cp.asnumpy(self.GPU_gGABA_decayGOGR)
+            self.g_decay_NMDA_MFGR = cp.asnumpy(self.GPU_g_decay_NMDA_MFGR)
+            self.gDirectInc_MFGR = cp.asnumpy(self.GPU_gDirectInc_MFGR)
+            self.threshRest = cp.asnumpy(self.GPU_threshRest)
+            self.threshDecGR = cp.asnumpy(self.GPU_threshDecGR)
+            self.eLeak = cp.asnumpy(self.GPU_eLeak)
+            self.eGOGR = cp.asnumpy(self.GPU_eGOGR)
     
