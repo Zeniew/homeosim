@@ -67,12 +67,14 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
         for t in range(0, numBins):
             timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
-            # print("Mossy Fiber Activity generated")
+            print("Mossy Fiber Activity generated")
 
             # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
             # do gr spikes
             GR.do_Granule(t)
+
+            print("MFGR complete")
 
             # grab GR activity
             GRact = GR.get_act()
@@ -80,17 +82,29 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
             # GR -> GO update
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial])
 
+            print("GRGO complete")
+
             # MF -> GO
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
             # GO spikes
             GO.do_Golgi(t)
 
+            print("MFGO complete")
+
             # GO -> GO update
             GO.update_input_activity(GOGO_connect_arr, 2, t = t)
+            
+            print("GOGO complete")
+
+            GOact = GO.get_act()
             # GO -> GR update
-            GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial])
+            GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[trial])
+
+            print("GOGR complete")
             
             MFrasters[t, :] = MFact
+
+            print("Time step:", t)
         # Final update
         # GR.updateFinalState()
         # Rasters

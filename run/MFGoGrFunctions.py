@@ -260,10 +260,11 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             #     counts = np.zeros_like(self.inputMFGO)  # or use np.zeros(self.numGO) if more appropriate
             # else:
             #     counts = np.bincount(spiked_connections, minlength=self.inputMFGO.size)
+            
+            # Version 1 
             for i in range(self.numGolgi): 
                 gr_conn = connectArr[i]
                 valid_conn = gr_conn[gr_conn != -1]
-                grAct[valid_conn[0]] = 1
                 count = np.sum(grAct[valid_conn])
                 self.inputGRGO[i] = count
             # add to GRGO input
