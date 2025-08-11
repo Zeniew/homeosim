@@ -20,12 +20,10 @@ def showRasters(raster, save_path=None, raster_type = 1):
         plt.title("MF Spike Raster")
 
     if raster_type == 2: # Go
-        averaged_raster = np.mean(raster, axis=0)
-
-        print("Averaged raster shape:", averaged_raster.shape)
+        raster = raster[0]
 
         plt.figure(figsize=(18, 9))
-        plt.imshow(averaged_raster.T, aspect='auto', cmap='binary', origin='lower', alpha = 1.0)
+        plt.imshow(raster.T, aspect='auto', cmap='binary', origin='lower', alpha = 1.0)
         plt.xlabel("Timestep")
         plt.ylabel("Golgi Cell Number")
         plt.title("Golgi Spike Raster")
@@ -60,10 +58,10 @@ def downsample_granule_cells_only(raster, max_cells=10000):
     return raster[:, ::downsample_factor]
 
 # Load the raster data
-raster_data = np.load('/home/data/einez/MFGoGr_full_GRrasters.npy')
+raster_data = np.load('/home/data/einez/MFGoGr_full_GOrasters.npy')
 
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_full_GRrasters.png"
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_full_GOrasters.png"
 
 # Show and save
-showRasters(raster_data, save_path=plot_save_path, raster_type = 3)
+showRasters(raster_data, save_path=plot_save_path, raster_type = 2)

@@ -51,6 +51,7 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
     print("GOGR Connectivity Array Loaded.")
     GRGOimportPath = "/home/data/einez/connect_arr/connect_arr_PRE.grgo"
     GRGO_connect_arr = connect.read_connect(GRGOimportPath, numGR, 50)
+    GRGO_connect_arr[GRGO_connect_arr == -1] = 0 # changes the -1 padding to index 0
     print("GRGO Connectivity Array Loaded.")
     # GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
     GOGOimportPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogo"
@@ -67,44 +68,36 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
         for t in range(0, numBins):
             timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
-            print("Mossy Fiber Activity generated")
 
             # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
             # do gr spikes
             GR.do_Granule(t)
 
-            print("MFGR complete")
-
             # grab GR activity
             GRact = GR.get_act()
 
+            GRGO_start = time.time()
             # GR -> GO update
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial])
-
-            print("GRGO complete")
+            GRGO_end = time.time()
+            # print("GRGO time taken:", GRGO_end - GRGO_start, "seconds")
 
             # MF -> GO
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
             # GO spikes
             GO.do_Golgi(t)
 
-            print("MFGO complete")
-
             # GO -> GO update
             GO.update_input_activity(GOGO_connect_arr, 2, t = t)
-            
-            print("GOGO complete")
 
             GOact = GO.get_act()
             # GO -> GR update
             GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[trial])
-
-            print("GOGR complete")
             
             MFrasters[t, :] = MFact
 
-            print("Time step:", t)
+            # print("Time step:", t)
         # Final update
         # GR.updateFinalState()
         # Rasters
