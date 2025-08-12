@@ -40,22 +40,23 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
     print("Loading connectivity arrays...")
 
     # Get connect arrays
-    MFGOimportPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgo'
-    MFGO_connect_arr = connect.read_connect(MFGOimportPath, numMF, 20)
+    MFGO_importPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgo'
+    MFGO_connect_arr = connect.read_connect(MFGO_importPath, numMF, 20)
     print("MFGO Connectivity Array Loaded.")
-    MFGRimportPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgr'
-    MFGR_connect_arr = connect.read_connect(MFGRimportPath, numMF, 4000)
+    MFGR_importPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgr'
+    MFGR_connect_arr = connect.read_connect(MFGR_importPath, numMF, 4000)
     print("MFGR Connectivity Array Loaded.")
-    GOGRimportPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogr"
-    GOGR_connect_arr = connect.read_connect(GOGRimportPath, numGO, 12800)
+    GOGR_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogr"
+    GOGR_connect_arr = connect.read_connect(GOGR_importPath, numGO, 12800)
+    GOGR_connect_arr[GOGR_connect_arr == -1] = 0 # changes the -1 padding to index 0
     print("GOGR Connectivity Array Loaded.")
-    GRGOimportPath = "/home/data/einez/connect_arr/connect_arr_PRE.grgo"
-    GRGO_connect_arr = connect.read_connect(GRGOimportPath, numGR, 50)
-    GRGO_connect_arr[GRGO_connect_arr == -1] = 0 # changes the -1 padding to index 0
+    GRGO_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.grgo"
+    GRGO_connect_arr = connect.read_connect(GRGO_importPath, numGR, 50)
+    # GRGO_connect_arr[GRGO_connect_arr == -1] = 0 # changes the -1 padding to index 0
     print("GRGO Connectivity Array Loaded.")
     # GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
-    GOGOimportPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogo"
-    GOGO_connect_arr = connect.read_connect(GOGOimportPath, numGO, 12)
+    GOGO_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogo"
+    GOGO_connect_arr = connect.read_connect(GOGO_importPath, numGO, 12)
     print("GOGO Connectivity Array Loaded.")
 
     print("Connectivity Arrays Loaded")
@@ -68,38 +69,62 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
         for t in range(0, numBins):
             timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
+            MF_end = time.time()
 
             # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
+
+            MFGR_end = time.time()
+
             # do gr spikes
             GR.do_Granule(t)
+
+            GR_end = time.time()
 
             # grab GR activity
             GRact = GR.get_act()
 
-            GRGO_start = time.time()
             # GR -> GO update
-            GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial])
+            GO.update_input_activity(GOGR_connect_arr, 3, grAct = GRact[trial])
+
             GRGO_end = time.time()
             # print("GRGO time taken:", GRGO_end - GRGO_start, "seconds")
 
             # MF -> GO
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
+
+            MFGO_end = time.time()
+
             # GO spikes
             GO.do_Golgi(t)
+
+            GOspike_end = time.time()
 
             # GO -> GO update
             GO.update_input_activity(GOGO_connect_arr, 2, t = t)
 
+            GOGO_end = time.time()
+
             GOact = GO.get_act()
             # GO -> GR update
             GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[trial])
+
+            GOGR_end = time.time()
             
             MFrasters[t, :] = MFact
 
+            # print("MF time:", MF_end - timestep_start)
+            # print("MFGR time:", MFGR_end - MF_end)
+            # print("GR time:", GR_end - MFGR_end)
+            # print("GRGO time:", GRGO_end - GR_end)
+            # print("MFGO time:", MFGO_end - GRGO_end)
+            # print("GO spikes time:", GOspike_end - MFGO_end)
+            # print("GOGO time:", GOGO_end - GOspike_end)
+            # print("GOGR time:", GOGR_end - GOGO_end)
+
             # print("Time step:", t)
         # Final update
-        # GR.updateFinalState()
+        GR.updateFinalState()
         # Rasters
         GOrasters[trial] = GO.get_act()
         GRrasters[trial] = GR.get_act()

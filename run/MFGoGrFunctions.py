@@ -263,29 +263,11 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             
             # Version 1 
             grAct[0] = 0 # hardcode to 0 for optimization
+            # for i in range(self.numGolgi): 
+            #     self.inputGRGO[i] = np.sum(grAct[connectArr[i]])
+            self.inputGRGO = np.sum(grAct[connectArr], axis = 1)
+            #     # print("Updating GRGO input:", line4_end - line1_start, "seconds")
 
-            for i in range(self.numGolgi): 
-                line1_start = time.time()
-
-                # # Line 1
-                # gr_conn = connectArr[i]
-                # line1_end = time.time()
-                # # Line 2
-                # valid_conn = gr_conn[gr_conn != -1]
-                # line2_end = time.time()
-                # # Line 3
-                # count = np.sum(grAct[valid_conn])
-                # line3_end = time.time()
-                # # Line 4
-                # self.inputGRGO[i] = count
-
-                self.inputGRGO[i] = np.sum(grAct[connectArr[i]])
-
-                line4_end = time.time()
-
-                # print("Updating GRGO input:", line4_end - line1_start, "seconds")
-            # add to GRGO input
-            # self.inputGRGO[:len(counts)] = counts
 
 
     # [CHANGE THIS] this is for generating the gr activity, but we need a whole new gr class for this...
@@ -320,7 +302,7 @@ class Granule():
         self.g_decay_NMDA_MFGR = math.exp(-1.0/30.0) # 0.9672
         self.gDirectInc_MFGR = 0.0320
 
-        self.g_decay_MFGR = 0.5 # 1.0 # math.exp(-1.0/0.0), which compiles as 0 in C++? # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
+        self.g_decay_MFGR = 0.9355 # math.exp(-1.0/15.0), which compiles as 0 in C++? # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
         self.gogrW = gogr_weight
         self.mfgrW = mfgr_weight
         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule
@@ -444,7 +426,15 @@ class Granule():
             self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
             # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
 
-        # print("Exit update_input_activity, time taken:", input_end - input_start, "seconds")
+
+        # if inputArrayChoice == 1:
+        #     mfAct[0] = 0 # hardcode to 0 for optimization
+        #     for i in range(self.numGranule): 
+        #         self.inputMFGR[i] = np.sum(mfAct[connectArr[i]])
+        # elif inputArrayChoice == 2:
+        #     goAct[0] = 0 # hardcode to 0 for optimization
+        #     for i in range(self.numGranule): 
+        #         self.inputGOGR[i] = np.sum(goAct[connectArr[i]])
 
     def do_Granule(self, t): # t for MF output, golgi for Golgi activity
         self.act[t] = self.doGRGPU() # convert boolean array to int array,
