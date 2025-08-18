@@ -20,7 +20,7 @@ def gen_filepaths(exp_name, convergence, gogoW):
     
     return filepath_m, filepath_go, filepath_gr
 
-def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.0042, gogoW = 0.05):
+def run_session(recip, filepath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.0042, gogoW = 0.05):
     
     print("Initializing objects...")
 
@@ -42,22 +42,44 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
     # Get connect arrays
     MFGO_importPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgo'
     MFGO_connect_arr = connect.read_connect(MFGO_importPath, numMF, 20)
+    MFGO_connect_arr = MFGO_connect_arr[:, :16]
+    MFGO_connect_arr[MFGO_connect_arr == -1] = 0
     print("MFGO Connectivity Array Loaded.")
+
     MFGR_importPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgr'
     MFGR_connect_arr = connect.read_connect(MFGR_importPath, numMF, 4000)
+    MFGR_connect_arr = MFGR_connect_arr[:, :1289]
+    MFGR_connect_arr[MFGR_connect_arr == -1] = 0
     print("MFGR Connectivity Array Loaded.")
+
     GOGR_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogr"
-    GOGR_connect_arr = connect.read_connect(GOGR_importPath, numGO, 12800)
-    GOGR_connect_arr[GOGR_connect_arr == -1] = 0 # changes the -1 padding to index 0
+    GOGR_connect_arr = connect.read_connect(GOGR_importPath, numGO, 12800) # TRUNCATE: just grab the first 975 columns, the furthest start of -1 is at 975
+    GOGR_connect_arr = GOGR_connect_arr[:, :975]
+    # GOGR_connect_arr[GOGR_connect_arr == -1] = 0
+    # print(GOGR_connect_arr.shape)
+    # max_val = 0
+    # for i in range(4096):
+    #     indices = np.where(GOGR_connect_arr[i, :] == -1)[0]  # grab the row indices
+    #     if indices.size > 0:  # check if any matches
+    #         local_max = indices.min()
+    #         if local_max > max_val:
+    #             max_val = local_max
+    # print("max:", max_val)
+    # exit()
     print("GOGR Connectivity Array Loaded.")
+
     GRGO_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.grgo"
     GRGO_connect_arr = connect.read_connect(GRGO_importPath, numGR, 50)
-    # GRGO_connect_arr[GRGO_connect_arr == -1] = 0 # changes the -1 padding to index 0
+    GRGO_connect_arr = GRGO_connect_arr[:, :30]
+    GRGO_connect_arr[GRGO_connect_arr == -1] = 0 # changes the -1 padding to index 0
     print("GRGO Connectivity Array Loaded.")
+
     # GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
     GOGO_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogo"
     GOGO_connect_arr = connect.read_connect(GOGO_importPath, numGO, 12)
+    GOGO_connect_arr[GOGO_connect_arr == -1] = 0
     print("GOGO Connectivity Array Loaded.")
+
 
     print("Connectivity Arrays Loaded")
 
@@ -113,14 +135,14 @@ def run_session(recip, filpath_m, filepath_go, filepath_gr, conv, grgoW = 0.0007
             
             MFrasters[t, :] = MFact
 
-            # print("MF time:", MF_end - timestep_start)
-            # print("MFGR time:", MFGR_end - MF_end)
-            # print("GR time:", GR_end - MFGR_end)
-            # print("GRGO time:", GRGO_end - GR_end)
-            # print("MFGO time:", MFGO_end - GRGO_end)
-            # print("GO spikes time:", GOspike_end - MFGO_end)
-            # print("GOGO time:", GOGO_end - GOspike_end)
-            # print("GOGR time:", GOGR_end - GOGO_end)
+            print("MF time:", MF_end - timestep_start)
+            print("MFGR time:", MFGR_end - MF_end)
+            print("GR time:", GR_end - MFGR_end)
+            print("GRGO time:", GRGO_end - GR_end)
+            print("MFGO time:", MFGO_end - GRGO_end)
+            print("GO spikes time:", GOspike_end - MFGO_end)
+            print("GOGO time:", GOGO_end - GOspike_end)
+            print("GOGR time:", GOGR_end - GOGO_end)
 
             # print("Time step:", t)
         # Final update

@@ -60,7 +60,7 @@ self.GPU_spike_mask = cp.full(self.numGranule, False, dtype = bool)
 
 
 # Calling the kernel inside the code
-GRgpu((grid_size,),(block_size), (GR.numGRanule, GPU_Vm, GR.inputMFGR, GPU_gSum_MFGR, GR.inputGOGR, 
+GRgpu((grid_size,),(block_size), (GR.numGranule, GPU_Vm, GR.inputMFGR, GPU_gSum_MFGR, GR.inputGOGR, 
 GPU_gSum_GOGR, GPU_gNMDA_Inc_MFGR, GPU_gNMDA_MFGR, GPU_currentThresh, GPU_mfgrW, GPU_g_decay_MFGR, GPU_gogrW, 
 GPU_gGABA_decayGOGR, GPU_g_decay_NMDA_MFGR, GPU_gDirectInc_MFGR, GPU_threshRest, GPU_threshDecGR, GPU_eLeak, GPU_eGOGR))
 
@@ -95,3 +95,181 @@ def updateFinalState(self):
         self.threshDecGR = cp.asnumpy(self.GPU_threshDecGR)
         self.eLeak = cp.asnumpy(self.GPU_eLeak)
         self.eGOGR = cp.asnumpy(self.GPU_eGOGR)
+
+#### Golgi
+
+doGolgiKernel_code = """
+extern "C" __global__ void doGolgi(int size, float *GPU_gNMDA_inc_MFGO, float *GPU_Vm, 
+float *GPU_gSum_GOGO, unsigned char *GPU_inputGOGO, float GPU_gogoW, float GPU_gGABA_decayGOGO,
+float *GPU_gSum_MFGO, unsigned char *GPU_inputMFGO, float GPU_mfgoW, float GPU_g_decayMFGO,
+float *GPU_gSum_GRGO, unsigned char *GPU_inputGRGO, float GPU_grgoW, float GPU_g_decayGRGO,
+float *GPU_gNMDA_MFGO, float GPU_NMDA_AMPA_ratioMFGO, float GPU_g_decay_NMDA_MFGO, float *GPU_currentThresh,
+float GPU_threshRest, float GPU_threshDecGo, float GPU_gLeak, float GPU_eLeak, unsigned char *GPU_spike_mask)
+    int idx = threadIdx.x + blockIdx.x * blockDim.x;
+    if (idx >= size) return;
+    GPU_gNMDA_inc_MFGO[idx] = (
+        (0.00000011969 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) +
+        (0.000089369 * GPU_Vm[idx] * GPU_Vm[idx]) +
+        (0.0151 * GPU_Vm[idx]) + 0.7713
+    );
+
+    GPU_gSum_GOGO[idx] = GPU_inputGOGO[idx] * GPU_gogoW + GPU_gSum_GOGO[idx] * GPU_gGABA_decayGOGO;
+
+    GPU_gSum_MFGO[idx] = GPU_inputMFGO[idx] * GPU_mfgoW + GPU_gSum_MFGO[idx] * GPU_g_decayMFGO;
+
+    GPU_gSum_GRGO[idx] = GPU_inputGRGO[idx] * GPU_grgoW + GPU_gSum_GRGO[idx] * GPU_g_decayGRGO;
+
+    GPU_gNMDA_MFGO[idx] = (
+        GPU_inputMFGO[idx] * (GPU_mfgoW * GPU_NMDA_AMPA_ratioMFGO * GPU_gNMDA_inc_MFGO[idx]) + 
+        GPU_gNMDA_MFGO[idx] * GPU_g_decay_NMDA_MFGO
+    );
+
+    GPU_currentThresh[idx] = GPU_currentThresh[idx] + (GPU_threshRest - GPU_currentThresh[idx]) * (GPU_threshDecGO);
+
+    GPU_spike_mask = GPU_Vm > GPU_currentThresh
+
+"""
+
+self.GOGPU = cp.RawKernel(doGolgiKernel_code, 'doGolgi')
+self.GPU_gNMDA_inc_MFGO = cp.array(self.gNMDA_inc_MFGO, dtype = cp.float32)
+self.GPU_Vm = cp.array(self.Vm, dtype = cp.float32)
+self.GPU_gSum_GOGO = cp.array(self.gSum_GOGO, dtype = cp.float32)
+self.GPU_gogoW = cp.float32(self.gogoW)
+self.GPU_gGABA_decayGOGO = cp.float32(self.gGABA_decayGOGO)
+self.GPU_gSum_MFGO = cp.array(self.gSum_MFGO, dtype = cp.float32)
+self.GPU_mfgoW = cp.float32(self.mfgoW)
+self.GPU_g_decayMFGO = cp.float32(self.g_decayMFGO)
+self.GPU_gSum_GRGO = cp.array(self.gSum_GRGO, dtype = cp.float32)
+self.GPU_grgoW = cp.float32(self.grgoW)
+self.GPU_g_decayGRGO = cp.float32(self.g_decayGRGO)
+self.GPU_gNMDA_MFGO = cp.array(self.gNMDA_MFGO, dtype = cp.float32)
+self.GPU_NMDA_AMPA_ratioMFGO = cp.float32(self.NMDA_AMPA_ratioMFGO)
+self.GPU_g_decay_NMDA_MFGO = cp.float32(self.g_decay_NMDA_MFGO)
+self.GPU_currentThresh = cp.array(self.currentThresh, dtype = cp.float32)
+self.GPU_threshRest = cp.float32(self.threshRest)
+self.GPU_threshDecGo = cp.float32(self.threshDecGo)
+self.GPU_gLeak = cp.float32(self.gLeak)
+self.GPU_eLeak = cp.float32(self.eLeak)
+self.GPU_spike_mask = cp.array(self.spike_mask, dtype = cp.uint8)
+
+def doGOGPU(self):
+    block_size = 256
+    grid_size = (self.numGolgi + block_size - 1) // block_size
+    with cp.cuda.Device(0):
+        GPU_inputMFGO = cp.array(self.inputMFGO) # might be able to get rid of later when update_input_activity also on GPU
+        GPU_inputGOGO = cp.array(self.inputGOGO)
+        GPU_inputGRGO = cp.array(self.inputGRGO)
+        self.GOgpu((grid_size,), (block_size), (self.numGolgi, self.GPU_gNMDA_inc_MFGO, self.GPU_Vm, 
+        self.GPU_gSum_GOGO, self.GPU_inputGOGO, self.GPU_gogoW, self.GPU_gGABA_decayGOGO, self.GPU_gSum_MFGO, self.GPU_inputMFGO,
+        self.GPU_mfgoW, self.GPU_g_decayMFGO, self.GPU_gSum_GRGO, self.GPU_inputGRGO, self.GPU_grgoW, self.GPU_g_decayGRGO, self.GPU_gNMDA_MFGO, 
+        self.GPU_NMDA_AMPA_ratioMFGO, self.GPU_g_decay_NMDA_MFGO, self.GPU_currentThresh, self.GPU_threshRest, self.GPU_threshDecGo, 
+        self.GPU_gLeak, self.GPU_eLeak, self.GPU_spike_mask))
+        return self.GPU_spike_mask.get()
+
+def do_Golgi(self, t):
+    self.act[t] = self.doGOGPU()
+    self.inputMFGO.fill(0)
+    self.inputGOGO.fill(0)
+    self.inputGRGO.fill(0)
+
+
+######################## Update Input Activity #######################################################
+# Update Input Activity Kernel Code for Golgi
+
+block_size = 256
+grid_size = (numGOs + block_size - 1) // block_size
+
+update_input_kernel_code = """
+extern "C" __global__ void updateInputActivity(
+    unsigned char *act,           // activity vector of golgi cells (0/1)
+    const int *connArr,     // flattened 2D array: numGolgi x numInputsPerCell       
+    unsigned char *inputArr,             // output sum for each Golgi
+    int numGolgi,
+    int numInputsPerCell
+) {
+
+    int idx = threadIdx.x + blockIdx.x * blockDim.x;
+    if (idx >= numGolgi) return;
+
+    int sum = 0;
+    for (int j = 0; j < numInputsPerCell; j++) {
+        int inputIndex = connArr[idx * numInputsPerCell + j]; // get connected golgi index
+        sum += act[inputIndex];                             // add 0 or 1
+    }
+
+    inputArr[idx] = sum;
+
+}
+"""
+
+self.updateGOGPU = cp.RawKernel(update_input_kernel_code, 'updateInputActivity')
+
+def update_input_activity(self, inputArrayChoice, activity, mfgoconnArr, gogoconnArr, grgoconnArr):
+    act = cp.array(activity, dtype = cp.uint8)
+    block_size = 256
+    grid_size = (self.numGolgi + block_size - 1) // block_size
+    if inputArrayChoice == 1:
+        numInputsPerCell = 20
+        with cp.cuda.Device(0):
+            self.updateGOGPU((grid_size,), (block_size,), (act, mfgoconnArr, self.GPU_inputMFGO, self.numGolgi, numInputsPerCell))
+        self.inputMFGO = cp.asnumpy(self.GPU_inputMFGO)
+    elif inputArrayChoice == 2:
+        numInputsPerCell = 12
+        with cp.cuda.Device(0):
+            self.updateGOGPU((grid_size,), (block_size,), (act, gogoconnArr, self.GPU_inputGOGO, self.numGolgi, numInputsPerCell))
+        self.inputGOGO = cp.asnumpy(self.GPU_inputGOGO)
+    elif inputArrayChoice == 3:
+        numInputsPerCell = 50
+        with cp.cuda.Device(0):
+            self.updateGOGPU((grid_size,), (block_size,), (act, grgoconnArr, self.GPU_inputGRGO, self.numGolgi, numInputsPerCell))
+        self.inputGRGO = cp.asnumpy(self.GPU_inputGRGO)
+
+GO.update_input_activity(1, mfAct, MFGO_connect_arr, GOGO_connect_arr, GRGO_connect_arr)
+GO.update_input_activity(2, goAct, MFGO_connect_arr, GOGO_connect_arr, GRGO_connect_arr)
+GO.update_input_activity(3, grAct, MFGO_connect_arr, GOGO_connect_arr, GRGO_connect_arr)
+
+# Update Input Activity Kernel Code for Granule
+
+block_size = 256
+grid_size = (numGRs + block_size - 1) // block_size
+
+update_input_kernel_code = """
+extern "C" __global__ void updateInputActivity(
+    unsigned char *act,           // activity vector of golgi cells (0/1)
+    const int *connArr,     // flattened 2D array: numGolgi x numInputsPerCell       
+    int *inputArr,             // output sum for each Golgi
+    int numGranule,
+    int numInputsPerCell
+) {
+
+    int idx = threadIdx.x + blockIdx.x * blockDim.x;
+    if (idx >= numGranule) return;
+
+    int sum = 0;
+    for (int j = 0; j < numInputsPerCell; j++) {
+        int inputIndex = connArr[idx * numInputsPerCell + j]; // get connected granule index
+        sum += act[inputIndex];                             // add 0 or 1
+    }
+
+    inputArr[idx] = sum;
+
+}
+"""
+
+def update_input_activity(self, inputArrayChoice, activity, mfgrconnArr, gogrconnArr):
+    act = cp.array(activity, dtype = cp.uint8)
+    block_size = 256
+    grid_size = (self.numGranule + block_size - 1) // block_size
+    if inputArrayChoice == 1:
+        numInputsPerCell = 4000
+        with cp.cuda.Device(0):
+            self.updateGRGPU((grid_size,), (block_size,), (act, mfgrconnArr, self.GPU_inputMFGR, self.numGranule, numInputsPerCell))
+        self.inputMFGR = cp.asnumpy(self.GPU_inputMFGR)
+    elif inputArrayChoice == 2:
+        numInputsPerCell = 12800
+        with cp.cuda.Device(0):
+            self.updateGRGPU((grid_size,), (block_size,), (act, gogrconnArr, self.GPU_inputGOGR, self.numGranule, numInputsPerCell))
+        self.inputGOGR = cp.asnumpy(self.GPU_inputGOGR)
+
+GR.update_input_activity(1, mfAct, MFGR_connect_arr, GOGR_connect_arr)
+GR.update_input_activity(2, goAct, MFGR_connect_arr, GOGR_connect_arr)

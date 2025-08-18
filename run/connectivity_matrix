@@ -1,0 +1,44 @@
+import numpy as np
+# Connectivity Array to Matrix
+
+conn_matrix = np.zeros((numrows, numcolumns + 1))
+for r in range(row):
+    conn_matrix[connArr[r]] = 1
+conn_matrix = conn_matrix[:, column]
+
+input = np.sum(connectivity matrix * activity vector, axis = 1)
+
+ print("Creating Connectivity Matrices")
+
+    # Converting Connectivity Arrays to Binary
+    MFGO_conn_matrix = np.zeros((numMF, numGO + 1), dtype = np.uint8) # GO (rows) <-- MF
+    for r in range(numMF):
+        MFGO_conn_matrix[r, MFGO_connect_arr[r]] = 1
+    MFGO_conn_matrix = MFGO_conn_matrix[:, :-1]
+    print("MFGO_conn_matrix.shape", MFGO_conn_matrix.shape)
+    
+    MFGR_conn_matrix = np.zeros((numMF, numGR + 1), dtype = np.uint8) # GR (rows) <-- MF
+    for r in range(numMF):
+        MFGR_conn_matrix[r, MFGR_connect_arr[r]] = 1
+    MFGR_conn_matrix = MFGR_conn_matrix[:, :-1]
+    print("MFGR_conn_matrix.shape", MFGR_conn_matrix.shape)
+    
+    GOGR_conn_matrix = np.zeros((numGO, numGR + 1), dtype = np.uint8) # GO (rows) <-- GR
+    for r in range(numGO):
+        GOGR_conn_matrix[r, GOGR_connect_arr[r]] = 1
+    GOGR_conn_matrix = GOGR_conn_matrix[:, :-1]
+    print("GOGR_conn_matrix.shape", GOGR_conn_matrix.shape)
+
+    GRGO_conn_matrix = np.zeros((numGR, numGO + 1), dtype = np.uint8) # GR (rows) <-- GO 
+    for r in range(numGR):
+        GRGO_conn_matrix[r, GRGO_connect_arr[r]] = 1
+    GRGO_conn_matrix = GRGO_conn_matrix[:, :-1]
+    print("GRGO_conn_matrix.shape", GRGO_conn_matrix.shape)
+
+    GOGO_conn_matrix = np.zeros((numGO, numGO + 1), dtype = np.uint8) # GO (rows) <-- GO
+    for r in range(numGO):
+        GOGO_conn_matrix[r, GOGO_connect_arr[r]] = 1
+    GOGO_conn_matrix = GOGO_conn_matrix[:, :-1]
+    print("GOGO_conn_matrix.shape", GOGO_conn_matrix.shape)
+
+    print("Connectivity Matrices generated.")
