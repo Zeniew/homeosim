@@ -29,11 +29,11 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, conv, grgoW = 0.000
     MFrasters = np.zeros((numBins, numMF), dtype = np.uint8)
 
     # # Init GO class
-    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW)
+    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, mfgo_plast = 0, gogo_plast = 0, grgo_plast = 1, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW)
     GOrasters = np.zeros((numTrial, numBins, numGO), dtype = np.uint8)
 
     # # Init GR class
-    GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
+    GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_plast = 0, gogr_plast = 0)
     GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
     print("Objects initialized.")
 
