@@ -110,13 +110,8 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.eLeak = -70.0 #
         self.eGABA = -64.0 #
         self.thresholdMax = 10.0 #
-        
-        
-        self.gogoW = gogo_weight # weight of Golgi to Golgi synapse
         self.gGABA_decayGOGO = math.exp(-1.0/10.0) # (-msPerTimestep / gGABADecTauGOtoGO), decay constant for GABA conductance from Golgi to Golgi
-        self.mfgoW = mfgo_weight # weight of MF to Golgi synapse
         self.g_decayMFGO = math.exp(-1.0/3.0) # (-msPerTimestep / gDecayTauMFtoGO), decay constant for excitatory conductance from MF to Golgi
-        self.grgoW = grgo_weight # weight of granule to Golgi synapse
         self.g_decayGRGO = math.exp(-1.0/4.0) # (-msPerTimestep / gDecayTauGRtoGO), decay constant for excitatory conductance from granule to Golgi
         self.g_decay_NMDA_MFGO = math.exp(-1.0/30.0) # (-msPerTimestep / decayTauNMDA_MFtoGO), decay constant for NMDA conductance from MF to Golgi
         self.NMDA_AMPA_ratioMFGO = 1.3 # ratio of NMDA to AMPA conductance for MF to Golgi synapse
@@ -124,7 +119,22 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.threshDecGo = 1- math.exp(-1.0/11.0) # (-msPerTimestep / threshDecTauGO), decay constant for Golgi threshold
         self.threshRest = -34.0 # resting threshold for Golgi cells
 
+        ##### Plasticity
+        self.plast_ratio = 1/200 # LTP / LTD, 5 Hz
+        self.mfgo_LTD_inc = 1/1000 * mfgo_weight * -1
+        self.mfgo_LTP_inc = self.plast_ratio * self.mfgo_LTD_inc # negative due to computation
+        self.gogo_LTD_inc = 1/1000 * gogo_weight * -1
+        self.gogo_LTP_inc = self.plast_ratio * self.gogo_LTD_inc 
+        self.grgo_LTD_inc = 1/1000 * grgo_weight * -1
+        self.grgo_LTP_inc = self.plast_ratio * self.grgo_LTD_inc 
+        self.mf_input = 0 
+        self.gr_input = 0
+        self.go_input = 0
+
         ### Arrays
+        self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float32) # array of synaptic weight
+        self.mfgoW = np.full(self.numGolgi, mfgo_weight, dtype = np.float32) # array of synaptic weight
+        self.gogoW = np.full(self.numGolgi, gogo_weight, dtype = np.float32) # array of synaptic weight
         self.Vm = np.full(self.numGolgi, self.eLeak, dtype = np.float32) # membrane potential of Golgi cells, initialized to leak reversal potential
         self.gSum_GOGO = np.zeros(self.numGolgi, dtype = np.float32) # sum of GABA conductances from Golgi to Golgi
         self.inputGOGO = np.zeros(self.numGolgi, dtype = np.uint8) # input GABA conductance from Golgi to Golgi
@@ -134,13 +144,6 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.inputGRGO = np.zeros(self.numGolgi, dtype = np.uint8) # input excitatory conductance from granule to Golgi
         self.gNMDA_inc_MFGO = np.zeros(self.numGolgi, dtype = np.float32) # NMDA conductance increment from MF to Golgi
         self.gNMDA_MFGO = np.zeros(self.numGolgi, dtype = np.float32) # NMDA conductance from MF to Golgi
-        
-        # ## GRGO dist params ### <-- [CHANGE THIS] this is for generating the gr activity, but we need a whole new gr class for this...
-        # self.gGRGO_mu_noCS = np.random.normal(0.0180218, 0.0014705, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
-        # self.gGRGO_sig_noCS = np.random.normal(0.0031327, 0.00015542, self.numGolgi) # mean and stdev for GRGO conductance distribution without CS
-        # if self.useCS == 1: 
-        #     self.gGRGO_mu_CS = np.random.normal(0.02779684,0.0031472,self.numGolgi)
-        #     self.gGRGO_sig_CS = np.random.normal(0.00358812,0.0003982685,self.numGolgi)
         
         # Threshold
         self.currentThresh = np.full(self.numGolgi, self.threshRest, dtype = np.float32) # current threshold of Golgi cells, initialized to resting threshold
@@ -181,12 +184,23 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.inputGRGO.fill(0)
         self.inputGOGO.fill(0)
 
+
         ## Do spikes
         # Get minimum values between arrays
         self.Vm = np.minimum(self.Vm, self.thresholdMax)
         # Calculate spikse with boolean mask, fit to int array
         spike_mask = self.Vm > self.currentThresh # boolean array indicating which Golgi cells fired, true where Vm exceeds current threshold
         self.act[t] = spike_mask.astype(np.uint8) # convert boolean array to int array, true = 1, false = 0
+
+        # plasticity
+        self.grgoW += self.gr_input * ((self.act[t] * self.grgo_LTD_inc) + ((self.act[t] - 1) * self.grgo_LTP_inc))
+        self.mfgoW += self.mf_input * ((self.act[t] * self.mfgo_LTD_inc) + ((self.act[t] - 1) * self.mfgo_LTP_inc))
+        self.gogoW += self.go_input * ((self.act[t] * self.gogo_LTD_inc) + ((self.act[t] - 1) * self.gogo_LTP_inc)) 
+
+        self.mf_input = 0 
+        self.gr_input = 0
+        self.go_input = 0
+
         # Update thresholds where spikes occurred (condition, value if true, if false)
         self.currentThresh = np.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
 
@@ -194,44 +208,14 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
     # def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, t = None, grAct = None):
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, t = None, grAct = None):
         ''' inputArrayChoice selects between 1 = MFGO, 2 = GOGO, 3 = GRGO'''
-        # # Version 2, binary
-        # if inputArrayChoice == 1:
-        #     self.inputMFGO = np.sum(connect_matrix * activity, axis = 1)
-        # if inputArrayChoice == 2:
-        #     self.inputGOGO = np.sum(connect_matrix * activity, axis = 1)
-        # if inputArrayChoice == 3:
-        #     self.inputGRGO = np.sum(connect_matrix * activity, axis = 1)
-
-        # # # numCells = connectArr.shape[0] # number of Golgi cells
-        # # # maxnumConnect = connectArr.shape[1] # maximum number of connections per Golgi cell
-        # # ## MF input update
-        # # # MF activity is part of Mossy class, so needs to be input as param
-        # # if inputArrayChoice == 1:
-        # #     spike_mask = (mfAct == 1) # integer array indicating which MFs fired, 1 where MF fired, 0 otherwise
-        # #     spiked_idx = np.where(spike_mask)[0] # get the indices of the MFs that fired
-        # #     # get connections for all spiked cells
-        # #     spiked_connections = [] # list to hold connections for all spiked MFs
-        # #     for cell in spiked_idx:
-        # #         # eliminate -1 terminator
-        # #         valid_idx = connectArr[cell] != -1 # check for valid connections (not -1)
-        # #         # get valid connections for spiked cell
-        # #         valid_conns = connectArr[cell, valid_idx]
-        # #         # add to list
-        # #         spiked_connections.extend(valid_conns)
-        # #     # use bincount to count post occurances of cell
-        # #     # spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
-        # #     spiked_connections = np.array(spiked_connections, dtype = int) # convert list to array
-        # #     ## artifact from Numpy convert: counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
-        # #     # if spiked_connections.size == 0:
-        # #     #     counts = np.zeros_like(self.inputMFGO)  # or use np.zeros(self.numGO) if more appropriate
-        # #     # else:
-        # #     counts = np.bincount(spiked_connections) # np.bincount(spiked_connections, minlength=self.inputMFGO.size)
-        # #     # add to MFGO input
-        # #     self.inputMFGO[:len(counts)] = counts # update inputMFGO with counts, only up to length of counts to avoid index error
-        # #     # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
-        # # # GO input 
-        # # # golgi activity is made internal, not required as a param, but time is needed instead
+        # MFGO
+        if inputArrayChoice == 1:
+            self.mf_input = 1
+            mfAct[0] = 0 # hardcode to 0 for optimization
+            self.inputMFGO = np.sum(mfAct[connectArr], axis = 1)
+        # GOGO
         if inputArrayChoice == 2:
+            self.go_input = 1
             spike_mask = (self.act[t] == 1)
             spiked_idx = np.where(spike_mask)[0]
             # get connections for each spiked cell
@@ -247,62 +231,12 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             counts = np.bincount(spiked_connections)
             # add to input array
             self.inputGOGO[:len(counts)] = counts
-        # # # GR input
-        # # # GR activity is part of Mossy class, so needs to be input as param
-        if inputArrayChoice == 1:
-            # Version 1 
-            mfAct[0] = 0 # hardcode to 0 for optimization
-            # for i in range(self.numGolgi): 
-            #     self.inputGRGO[i] = np.sum(grAct[connectArr[i]])
-            self.inputMFGO = np.sum(mfAct[connectArr], axis = 1)
-        # if inputArrayChoice == 2: Somehow this is slower?
-        #     goAct = self.act[t]
-        #     goAct[0] = 0
-        #     self.inputGOGO = np.sum(goAct[connectArr], axis = 1)
+        # GRGO
         if inputArrayChoice == 3: 
-            # spike_mask = (grAct == 1) # change this
-            # spiked_idx = np.where(spike_mask)[0]
-            # spiked_connections = []
-            # for cell in spiked_idx:
-            #     # eliminate -1 terminator
-            #     valid_idx = connectArr[cell] != -1
-            #     # get valid connections for spiked cell
-            #     valid_conns = connectArr[cell, valid_idx]
-            #     # add to list
-            #     spiked_connections.extend(valid_conns)
-            # # use bincount to count post occurances of cell
-            # # spiked_connections = [arr.get() if isinstance(arr, cp.ndarray) else arr for arr in spiked_connections]
-            # spiked_connections = np.asarray(spiked_connections, dtype=int)
-            # # count occurances
-            # # counts = np.bincount(spiked_connections)
-            # if spiked_connections.size == 0:
-            #     counts = np.zeros_like(self.inputMFGO)  # or use np.zeros(self.numGO) if more appropriate
-            # else:
-            #     counts = np.bincount(spiked_connections, minlength=self.inputMFGO.size)
-            
+            self.gr_input = 1
             # Version 1 
             grAct[0] = 0 # hardcode to 0 for optimization
-            # for i in range(self.numGolgi): 
-            #     self.inputGRGO[i] = np.sum(grAct[connectArr[i]])
             self.inputGRGO = np.sum(grAct[connectArr], axis = 1)
-
-            
-            #     # print("Updating GRGO input:", line4_end - line1_start, "seconds")
-
-
-
-
-    # [CHANGE THIS] this is for generating the gr activity, but we need a whole new gr class for this...
-    # def gen_grgo_G(self, timebin):
-    #     ## All vectorized now
-    #     if self.useCS == 1: 
-    #         # different g for CS
-    #         if timebin >= self.csOn and timebin < self.csOff: # during CS
-    #             self.gSum_GRGO = cp.random.norsmal(self.gGRGO_mu_CS, self.gGRGO_sig_CS)
-    #         else:
-    #             self.gSum_GRGO = cp.random.normal(self.gGRGO_mu_noCS,self.gGRGO_sig_noCS)
-    #     else: # CS == 0
-    #         self.gSum_GRGO = cp.random.normal(self.gGRGO_mu_noCS,self.gGRGO_sig_noCS)
 
     def get_act(self):
         return self.act
@@ -325,15 +259,24 @@ class Granule():
         self.gDirectInc_MFGR = 0.0320
 
         self.g_decay_MFGR = 0.9355 # math.exp(-1.0/15.0), which compiles as 0 in C++? # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
-        self.gogrW = gogr_weight
-        self.mfgrW = mfgr_weight
         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule
 
         self.threshDecGR = 1 - math.exp(-1.0/3.0) 
         self.threshRest = -40.0
 
+        ##### Plasticity
+        self.GPU_plast_ratio = cp.float32(1/10000) # LTP / LTD, 0.1 Hz
+        self.GPU_mfgr_LTD_inc = cp.float32(1/1000 * mfgr_weight * -1)
+        self.GPU_mfgr_LTP_inc = cp.float32(self.plast_ratio * self.mfgr_LTD_inc) # negative due to computation
+        self.GPU_gogr_LTD_inc = cp.float32(1/1000 * gogr_weight * -1)
+        self.GPU_gogr_LTP_inc = cp.float32(self.plast_ratio * self.gogr_LTD_inc)
+        self.GPU_mf_input = cp.uint8(0) 
+        self.GPU_go_input = cp.uint8(0)
+
+
         ### Arrays
-        # self.mfgrW = cp.full(self.numGranule, mfgr_weight, dtype = float) # synaptic weight of mossy fiber to granule 
+        self.mfgrW = np.full(self.numGranule, mfgr_weight, dtype = float) # synaptic weight of mossy fiber to granule
+        self.gogrW = np.full(self.numGranule, gogr_weight, dtype = float) # synaptic weight of mossy fiber to granule 
         self.Vm = np.full(self.numGranule, self.eLeak, dtype = np.float32) # membrane potential of Granule cells, initialized to leak reversal potential
         self.gSum_MFGR = np.zeros(self.numGranule, dtype = np.float32) # sum of excitatory conductances from MF to Granule
         self.inputMFGR = np.zeros(self.numGranule, dtype = np.uint8) # input excit
@@ -350,9 +293,10 @@ class Granule():
         # Kernel stuff
         doGranulekernel_code = """
         extern "C" __global__ void doGranule(int size, float *GPU_gLeak, float *GPU_Vm, unsigned char *inputMFGR, float *GPU_gSum_MFGR,
-        unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, float *GPU_currentThresh, float GPU_mfgrW, 
-        float GPU_g_decay_MFGR, float GPU_gogrW, float GPU_gGABA_decayGOGR, float GPU_g_decay_NMDA_MFGR, float GPU_gDirectInc_MFGR,
-        float GPU_threshRest, float GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask){
+        unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, float *GPU_currentThresh, float *GPU_mfgrW, 
+        float GPU_g_decay_MFGR, float *GPU_gogrW, float GPU_gGABA_decayGOGR, float GPU_g_decay_NMDA_MFGR, float GPU_gDirectInc_MFGR,
+        float GPU_threshRest, float GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask, float GPU_gogr_LTD_inc, float GPU_gogr_LTP_inc, 
+        float GPU_mfgr_LTD_inc, float GPU_mfgr_LTP_inc, uint8 GPU_go_input, uint8 GPU_mf_input){
             int idx = threadIdx.x + blockIdx.x * blockDim.x;
             if (idx >= size) return;
             GPU_gLeak[idx] = (0.0000001021370733 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
@@ -377,6 +321,9 @@ class Granule():
             GPU_currentThresh[idx] = GPU_currentThresh[idx] + (GPU_threshRest - GPU_currentThresh[idx]) * (GPU_threshDecGR);
 
             GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
+
+            GPU_gogrW = GPU_gogrW + GPU_go_input * ((GPU_spike_mask[idx] * GPU_gogr_LTD_inc) + ((GPU_spike_mask[idx] - 1) * GPU_gogr_LTP_inc)
+            GPU_mfgrW = GPU_mfgrW + GPU_mf_input * ((GPU_spike_mask[idx] * GPU_mfgr_LTD_inc) + ((GPU_spike_mask[idx] - 1) * GPU_mfgr_LTP_inc)
         }
         """
 
@@ -388,9 +335,9 @@ class Granule():
         self.GPU_gNMDA_Inc_MFGR = cp.array(self.gNMDA_Inc_MFGR, dtype = cp.float32)
         self.GPU_gNMDA_MFGR = cp.array(self.gNMDA_MFGR, dtype = cp.float32)
         self.GPU_currentThresh = cp.array(self.currentThresh, dtype = cp.float32)
-        self.GPU_mfgrW = cp.float32(self.mfgrW)
+        self.GPU_mfgrW = cp.array(self.mfgrW)
         self.GPU_g_decay_MFGR = cp.float32(self.g_decay_MFGR)
-        self.GPU_gogrW  = cp.float32(self.gogrW)
+        self.GPU_gogrW  = cp.array(self.gogrW)
         self.GPU_gGABA_decayGOGR = cp.float32(self.gGABA_decayGOGR)
         self.GPU_g_decay_NMDA_MFGR = cp.float32(self.g_decay_NMDA_MFGR)
         self.GPU_gDirectInc_MFGR = cp.float32(self.gDirectInc_MFGR)
@@ -409,19 +356,18 @@ class Granule():
             self.GRgpu((grid_size,),(block_size,), (self.numGranule, self.GPU_gLeak, self.GPU_Vm, GPU_inputMFGR, self.GPU_gSum_MFGR, GPU_inputGOGR, 
             self.GPU_gSum_GOGR, self.GPU_gNMDA_Inc_MFGR, self.GPU_gNMDA_MFGR, self.GPU_currentThresh, self.GPU_mfgrW, self.GPU_g_decay_MFGR, self.GPU_gogrW, 
             self.GPU_gGABA_decayGOGR, self.GPU_g_decay_NMDA_MFGR, self.GPU_gDirectInc_MFGR, self.GPU_threshRest, self.GPU_threshDecGR, self.GPU_eLeak, 
-            self.GPU_eGOGR, self.GPU_spike_mask))
+            self.GPU_eGOGR, self.GPU_spike_mask, self.GPU_gogr_LTD_inc, self.GPU_gogr_LTP_inc, self.GPU_mfgr_LTD_inc, self.GPU_mfgr_LTP_inc, self.GPU_go_input, self.GPU_mf_input))
             return self.GPU_spike_mask.get()
 
     # generic function for updating GOGR and MFGR input arrays
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, goAct = None):
         ''' inputArrayChoice selects between 1 = MFGR, 2 = GOGR '''
-        # numCells = connectArr.shape[0] # number of Granule cells
-        # maxnumConnect = connectArr.shape[1] # maximum number of connections per Granule
-        ### [ASK CARTER] does this slow things down by having 2 if checks?
         ## MF input update
         if inputArrayChoice == 1:
+            self.GPU_mf_input = cp.uint8(1) 
             spike_mask = (mfAct == 1)
         elif inputArrayChoice == 2:
+            self.GPU_go_input = cp.uint8(1) 
             spike_mask = (goAct == 1)
 
         spiked_idx = np.where(spike_mask)[0]
@@ -434,39 +380,21 @@ class Granule():
             valid_conns = connectArr[cell, valid_idx]
             # add to list
             spiked_connections.extend(valid_conns)
-        # use bincount to count post occurances of cell
-        # spiked_connections = [arr.get() if isinstance(arr, np.ndarray) else arr for arr in spiked_connections]
         spiked_connections = np.array(spiked_connections, dtype = int) # convert list to
         counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
         
         if inputArrayChoice == 1:
             # add to MFGR input
             self.inputMFGR[:len(counts)] = counts # update inputMFGR with counts, only up to length of counts to avoid index error
-            # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
         elif inputArrayChoice == 2:
             # add to GOGR input
             self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
-            # [:len(counts)] is in case the last few cells never get activated, saves dimensionality issues
-
-
-        # if inputArrayChoice == 1:
-        #     mfAct[0] = 0 # hardcode to 0 for optimization
-        #     for i in range(self.numGranule): 
-        #         self.inputMFGR[i] = np.sum(mfAct[connectArr[i]])
-        # elif inputArrayChoice == 2:
-        #     goAct[0] = 0 # hardcode to 0 for optimization
-        #     for i in range(self.numGranule): 
-        #         self.inputGOGR[i] = np.sum(goAct[connectArr[i]])
 
     def do_Granule(self, t): # t for MF output, golgi for Golgi activity
         self.act[t] = self.doGRGPU() # convert boolean array to int array,
         # reset inputs
         self.inputMFGR.fill(0)
         self.inputGOGR.fill(0)
-        ## Do spikes  
-        # boolean array indicating which Granule cells fired, true where Vm exceeds current threshold
-
-        # Update thresholds where spikes occurred (condition, value if true, if false)
 
     def get_act(self):
         return self.act

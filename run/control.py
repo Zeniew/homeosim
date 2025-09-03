@@ -3,7 +3,7 @@ import cupy as cp
 import os
 import time
 
-import MFGoGrFunctions as mfgogr
+import playground_MFGOGRFunctions as mfgogr
 import importConnect as connect
 import WireFunctions
 
@@ -89,60 +89,61 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, conv, grgoW = 0.000
         # Run trial
         all_start = time.time()
         for t in range(0, numBins):
-            timestep_start = time.time()
+            # timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
-            MF_end = time.time()
+            # MF_end = time.time()
 
             # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
 
-            MFGR_end = time.time()
+            # MFGR_end = time.time()
 
             # do gr spikes
             GR.do_Granule(t)
 
-            GR_end = time.time()
+            # GR_end = time.time()
 
             # grab GR activity
             GRact = GR.get_act()
 
             # GR -> GO update
-            GO.update_input_activity(GOGR_connect_arr, 3, grAct = GRact[trial])
+            # GO.update_input_activity(GOGR_connect_arr, 3, grAct = GRact[trial])
+            GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[trial]) # for the new version of GRGO
 
-            GRGO_end = time.time()
+            # GRGO_end = time.time()
             # print("GRGO time taken:", GRGO_end - GRGO_start, "seconds")
 
             # MF -> GO
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
 
-            MFGO_end = time.time()
+            # MFGO_end = time.time()
 
             # GO spikes
             GO.do_Golgi(t)
 
-            GOspike_end = time.time()
+            # GOspike_end = time.time()
 
             # GO -> GO update
             GO.update_input_activity(GOGO_connect_arr, 2, t = t)
 
-            GOGO_end = time.time()
+            # GOGO_end = time.time()
 
             GOact = GO.get_act()
             # GO -> GR update
             GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[trial])
 
-            GOGR_end = time.time()
+            # GOGR_end = time.time()
             
             MFrasters[t, :] = MFact
 
-            print("MF time:", MF_end - timestep_start)
-            print("MFGR time:", MFGR_end - MF_end)
-            print("GR time:", GR_end - MFGR_end)
-            print("GRGO time:", GRGO_end - GR_end)
-            print("MFGO time:", MFGO_end - GRGO_end)
-            print("GO spikes time:", GOspike_end - MFGO_end)
-            print("GOGO time:", GOGO_end - GOspike_end)
-            print("GOGR time:", GOGR_end - GOGO_end)
+            # print("MF time:", MF_end - timestep_start)
+            # print("MFGR time:", MFGR_end - MF_end)
+            # print("GR time:", GR_end - MFGR_end)
+            # print("GRGO time:", GRGO_end - GR_end)
+            # print("MFGO time:", MFGO_end - GRGO_end)
+            # print("GO spikes time:", GOspike_end - MFGO_end)
+            # print("GOGO time:", GOGO_end - GOspike_end)
+            # print("GOGR time:", GOGR_end - GOGO_end)
 
             # print("Time step:", t)
         # Final update
