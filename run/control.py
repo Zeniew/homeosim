@@ -3,7 +3,8 @@ import cupy as cp
 import os
 import time
 
-import playground_MFGOGRFunctions as mfgogr
+import MFGoGrFunctions as mfgogr
+# import playground_MFGOGRFunctions as mfgogr
 import importConnect as connect
 import WireFunctions
 
@@ -29,11 +30,13 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, conv, grgoW = 0.000
     MFrasters = np.zeros((numBins, numMF), dtype = np.uint8)
 
     # # Init GO class
-    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, mfgo_plast = 0, gogo_plast = 0, grgo_plast = 1, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW)
+    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, mfgo_plast = MFGO_PLAST, gogo_plast = GOGO_PLAST, grgo_plast = GRGO_PLAST, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW)
+    # GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW) # playground version
     GOrasters = np.zeros((numTrial, numBins, numGO), dtype = np.uint8)
 
     # # Init GR class
-    GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_plast = 0, gogr_plast = 0)
+    GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_plast = MFGR_PLAST, gogr_plast = GOGR_PLAST)
+    # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
     GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
     print("Objects initialized.")
 
@@ -202,10 +205,15 @@ numBins =  5000 # 5000
 useCS = 1
 CSon, CSoff = 500, 3500
 numTrial = 1 # 150
+MFGO_PLAST = 0
+GOGO_PLAST = 0
+GRGO_PLAST = 0
+MFGR_PLAST = 0
+GOGR_PLAST = 1
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_full'
+expName = 'MFGoGr_gogrplast_full'
 
 # Save Rasters
 saveGORaster = True
