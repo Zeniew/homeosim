@@ -53,6 +53,7 @@ def showRasters(raster, save_path=None, raster_type = 1):
     linelengths2 = 1
     if raster_type == 1: # MF
         print("Raster shape:", raster.shape)
+        # raster = np.mean(raster, axis = 0) # Average across trials
         if raster.ndim != 2:
             raise ValueError(f"Expected a 2D raster array, but got shape {raster.shape}")
 
@@ -67,7 +68,9 @@ def showRasters(raster, save_path=None, raster_type = 1):
         plt.xlim(0, 5000)
 
     if raster_type == 2: # Go
-        raster = raster[0]
+        # raster = raster[0]
+        # raster = np.mean(raster, axis = 0)
+        raster = (np.mean(raster, axis=0) > 0.0).astype(np.uint8)
         numCell = raster.shape[1]
         plotarray = [np.where(raster[:, i] == 1)[0] for i in range(numCell)]
 
@@ -79,13 +82,15 @@ def showRasters(raster, save_path=None, raster_type = 1):
         plt.xlim(0, 5000)
     
     if raster_type == 3: # Gr
-        # print("Entered granule raster plotting function")
-        raster = raster[0]
+        print("Entered granule raster plotting function")
+        # raster = raster[0]
+        # raster = np.mean(raster, axis = 0)
+        raster = (np.mean(raster, axis=0) > 0.0).astype(np.uint8)
         print("Raster shape:", raster.shape)
         # raster = downsample_granule_cells_only(raster)
         # print("Downsampled shape (only granule cells):", raster.shape)
         
-        numCell = 5000 # raster.shape[1]
+        numCell = 1000 #5000 # raster.shape[1]
         plotarray = [np.where(raster[:, i] == 1)[0] for i in range(numCell)]
 
         plt.figure(figsize=(18, 9))
@@ -113,10 +118,10 @@ def downsample_granule_cells_only(raster, max_cells=10000):
     return raster[:, ::downsample_factor]
 
 # Load the raster data
-raster_data = np.load('/home/data/einez/MFGoGr_gogrplast_full_GOrasters.npy')
-
+raster_data = np.load('/home/data/einez/MFGoGr_mfgoplast_2_trials_GOrasters.npy')
+print("Finished loading data")
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/Eventplot_MFGoGr_gogrplast_full_GOrasters.png"
+plot_save_path = "/home/aw39625/minisim/Results/Eventplot_MFGoGr_mfgoplast_2_trials_GOrasters.png"
 
 # Show and save
 showRasters(raster_data, save_path=plot_save_path, raster_type = 2)

@@ -197,7 +197,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
 
         # plasticity
         self.grgoW += self.grgo_plast * (self.gr_input * ((self.act[t] * self.grgo_LTD_inc) + ((self.act[t] - 1) * self.grgo_LTP_inc)))
-        self.mfgoW += self.mfgo_plast * (self.mf_input * ((self.act[t] * self.mfgo_LTD_inc) + ((self.act[t] - 1) * self.mfgo_LTP_inc)))
+        self.mfgoW += self.mfgo_plast * (self.mf_input * ((self.act[t] * self.mfgo_LTD_inc) + ((self.act[t] - 1) * self.mfgo_LTP_inc))) # this is working!
         self.gogoW += self.gogo_plast * (self.go_input * ((self.act[t] * self.gogo_LTD_inc) + ((self.act[t] - 1) * self.gogo_LTP_inc)))
 
         self.mf_input = 0 
@@ -263,6 +263,15 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
     def get_act(self):
         return self.act
     
+    def get_mfgoW(self):
+        return self.mfgoW
+    
+    def get_grgoW(self):
+        return self.grgoW
+
+    def get_gogoW(self):
+        return self.gogoW
+    
     def get_gGOGO(self):
         return self.gSum_GOGO
 
@@ -289,10 +298,10 @@ class Granule():
         ##### Plasticity
         self.GPU_mfgr_plast = cp.uint8(mfgr_plast)
         self.GPU_gogr_plast = cp.uint8(gogr_plast)
-        self.plast_ratio = 1/10000 # LTP / LTD, 0.1 Hz
-        self.GPU_mfgr_LTD_inc = cp.float32(1/1000 * mfgr_weight * -1)
+        self.plast_ratio =  1/10000 # LTP / LTD, 0.1 Hz
+        self.GPU_mfgr_LTD_inc = cp.float32(1/1000 * mfgr_weight * -1) # 1/1000
         self.GPU_mfgr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_mfgr_LTD_inc) # negative due to computation
-        self.GPU_gogr_LTD_inc = cp.float32(1/1000 * gogr_weight * -1)
+        self.GPU_gogr_LTD_inc = cp.float32(1/1000 * gogr_weight * -1) # 1/1000
         self.GPU_gogr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_gogr_LTD_inc)
         self.GPU_mf_input = cp.uint8(0) 
         self.GPU_go_input = cp.uint8(0)
@@ -455,6 +464,12 @@ class Granule():
 
     def get_act(self):
         return self.act
+    
+    def get_mfgrW(self):
+        return self.mfgrW
+    
+    def get_gogrW(self):
+        return self.gogrW
 
     def updateFinalState(self):
         with cp.cuda.Device(0):
