@@ -130,9 +130,6 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.gogo_LTP_inc = self.plast_ratio * self.gogo_LTD_inc 
         self.grgo_LTD_inc = 1/1000 * grgo_weight * -1
         self.grgo_LTP_inc = self.plast_ratio * self.grgo_LTD_inc 
-        self.mf_input = 0 
-        self.gr_input = 0
-        self.go_input = 0
 
         ### Arrays
         self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float32) # array of synaptic weight
@@ -196,13 +193,9 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.act[t] = spike_mask.astype(np.uint8) # convert boolean array to int array, true = 1, false = 0
 
         # plasticity
-        self.grgoW += self.grgo_plast * (self.gr_input * ((self.act[t] * self.grgo_LTD_inc) + ((self.act[t] - 1) * self.grgo_LTP_inc)))
-        self.mfgoW += self.mfgo_plast * (self.mf_input * ((self.act[t] * self.mfgo_LTD_inc) + ((self.act[t] - 1) * self.mfgo_LTP_inc))) # this is working!
-        self.gogoW += self.gogo_plast * (self.go_input * ((self.act[t] * self.gogo_LTD_inc) + ((self.act[t] - 1) * self.gogo_LTP_inc)))
-
-        self.mf_input = 0 
-        self.gr_input = 0
-        self.go_input = 0
+        self.grgoW += self.grgo_plast * (((self.act[t] * self.grgo_LTD_inc) + ((self.act[t] - 1) * self.grgo_LTP_inc)))
+        self.mfgoW += self.mfgo_plast * (((self.act[t] * self.mfgo_LTD_inc) + ((self.act[t] - 1) * self.mfgo_LTP_inc))) # this is working!
+        self.gogoW += self.gogo_plast * (((self.act[t]-1) * self.gogo_LTD_inc) + ((self.act[t]) * self.gogo_LTP_inc)) # inhibitory, so inverted
 
         # Update thresholds where spikes occurred (condition, value if true, if false)
         self.currentThresh = np.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
@@ -215,7 +208,6 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
 
         # MFGO - faster, so kept
         if inputArrayChoice == 1:
-            self.mf_input = 1
             goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
             spiked_idx = np.where(mfAct)[0]
             for mf in spiked_idx:
@@ -225,7 +217,6 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             # self.inputMFGO = np.sum(mfAct[connectArr], axis = 1)
         
         if inputArrayChoice == 2:
-            self.go_input = 1
             goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
             spiked_idx = np.where(self.act[t])[0]
             for go in spiked_idx:
@@ -250,7 +241,6 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         #     self.inputGOGO[:len(counts)] = counts
         # GRGO
         if inputArrayChoice == 3: 
-            self.gr_input = 1
             goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
             spiked_idx = np.where(grAct)[0]
             for gr in spiked_idx:
@@ -303,8 +293,6 @@ class Granule():
         self.GPU_mfgr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_mfgr_LTD_inc) # negative due to computation
         self.GPU_gogr_LTD_inc = cp.float32(1/1000 * gogr_weight * -1) # 1/1000
         self.GPU_gogr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_gogr_LTD_inc)
-        self.GPU_mf_input = cp.uint8(0) 
-        self.GPU_go_input = cp.uint8(0)
 
 
         ### Arrays
@@ -329,7 +317,7 @@ class Granule():
         unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, float *GPU_currentThresh, float *GPU_mfgrW, 
         float GPU_g_decay_MFGR, float *GPU_gogrW, float GPU_gGABA_decayGOGR, float GPU_g_decay_NMDA_MFGR, float GPU_gDirectInc_MFGR,
         float GPU_threshRest, float GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask, float GPU_gogr_LTD_inc, float GPU_gogr_LTP_inc, 
-        float GPU_mfgr_LTD_inc, float GPU_mfgr_LTP_inc, unsigned char GPU_go_input, unsigned char GPU_mf_input, unsigned char GPU_mfgr_plast, unsigned char GPU_gogr_plast){
+        float GPU_mfgr_LTD_inc, float GPU_mfgr_LTP_inc, unsigned char GPU_mfgr_plast, unsigned char GPU_gogr_plast){
             int idx = threadIdx.x + blockIdx.x * blockDim.x;
             if (idx >= size) return;
             GPU_gLeak[idx] = (0.0000001021370733 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
@@ -355,11 +343,8 @@ class Granule():
 
             GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
 
-            GPU_gogrW[idx] = GPU_gogrW[idx] + GPU_gogr_plast * (GPU_go_input * ((GPU_spike_mask[idx] * GPU_gogr_LTD_inc) + ((GPU_spike_mask[idx] - 1) * GPU_gogr_LTP_inc)));
-            GPU_mfgrW[idx] = GPU_mfgrW[idx] + GPU_mfgr_plast * (GPU_mf_input * ((GPU_spike_mask[idx] * GPU_mfgr_LTD_inc) + ((GPU_spike_mask[idx] - 1) * GPU_mfgr_LTP_inc)));
-
-            GPU_mf_input = 0;
-            GPU_go_input = 0;
+            GPU_gogrW[idx] = GPU_gogrW[idx] + GPU_gogr_plast * (((GPU_spike_mask[idx] - 1) * GPU_gogr_LTD_inc) + (GPU_spike_mask[idx] * GPU_gogr_LTP_inc));
+            GPU_mfgrW[idx] = GPU_mfgrW[idx] + GPU_mfgr_plast * ((GPU_spike_mask[idx] * GPU_mfgr_LTD_inc) + ((GPU_spike_mask[idx] - 1) * GPU_mfgr_LTP_inc));
 
         }
         """
@@ -393,8 +378,7 @@ class Granule():
             self.GRgpu((grid_size,),(block_size,), (self.numGranule, self.GPU_gLeak, self.GPU_Vm, GPU_inputMFGR, self.GPU_gSum_MFGR, GPU_inputGOGR, 
             self.GPU_gSum_GOGR, self.GPU_gNMDA_Inc_MFGR, self.GPU_gNMDA_MFGR, self.GPU_currentThresh, self.GPU_mfgrW, self.GPU_g_decay_MFGR, self.GPU_gogrW, 
             self.GPU_gGABA_decayGOGR, self.GPU_g_decay_NMDA_MFGR, self.GPU_gDirectInc_MFGR, self.GPU_threshRest, self.GPU_threshDecGR, self.GPU_eLeak, 
-            self.GPU_eGOGR, self.GPU_spike_mask, self.GPU_gogr_LTD_inc, self.GPU_gogr_LTP_inc, self.GPU_mfgr_LTD_inc, self.GPU_mfgr_LTP_inc, self.GPU_go_input, 
-            self.GPU_mf_input, self.GPU_mfgr_plast, self.GPU_gogr_plast))
+            self.GPU_eGOGR, self.GPU_spike_mask, self.GPU_gogr_LTD_inc, self.GPU_gogr_LTP_inc, self.GPU_mfgr_LTD_inc, self.GPU_mfgr_LTP_inc, self.GPU_mfgr_plast, self.GPU_gogr_plast))
             return self.GPU_spike_mask.get()
 
     # generic function for updating GOGR and MFGR input arrays
@@ -402,7 +386,6 @@ class Granule():
         ''' inputArrayChoice selects between 1 = MFGR, 2 = GOGR '''
         #### Playground version, adapt to main code
         if inputArrayChoice == 1:
-            self.GPU_mf_input = cp.uint8(1) 
             grInputs = np.zeros(self.numGranule, dtype = np.uint8) # array that stores how many inputs each gr gets
             MFdiverge = int((self.numGranule * 5)/4096) # how many gr each MF connects to  <-- where is this used lmao
             spiked_idx = np.where(mfAct)[0]
@@ -430,7 +413,6 @@ class Granule():
         # if inputArrayChoice == 1:
         #     spike_mask = (mfAct == 1)
         if inputArrayChoice == 2:
-            self.GPU_go_input = cp.uint8(1) 
             spike_mask = (goAct == 1)
             spiked_idx = np.where(spike_mask)[0]
             # get connections for all spiked cells
