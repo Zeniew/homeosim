@@ -108,6 +108,8 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         # Run trial
         all_start = time.time()
         for t in range(0, numBins):
+            # print(t, ":", GO.get_grgoW())
+
             # timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
             # MF_end = time.time()
@@ -159,8 +161,9 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
 
             # GOGR_end = time.time()
             
+            # grab the weight array at each time step and averaging them for recording
             MFrasters[t, :] = MFact
-            GO_avg_gogoW[trial][t] = np.mean(GO.get_gogoW())
+            GO_avg_gogoW[trial][t] = np.mean(GO.get_gogoW()) 
             GO_avg_grgoW[trial][t] = np.mean(GO.get_grgoW())
             GO_avg_mfgoW[trial][t] = np.mean(GO.get_mfgoW())
             GR_avg_gogrW[trial][t] = np.mean(GR.get_gogrW())
@@ -184,7 +187,8 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         all_end = time.time()
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
         
-    print(GO_avg_mfgoW)
+    print(GO_avg_grgoW)
+
     # Save rasters
     if saveGORaster:
         os.makedirs(saveDir, exist_ok = True)
@@ -247,16 +251,16 @@ recip_list = [0.75]
 numBins =  5000 # 5000
 useCS = 1
 CSon, CSoff = 500, 3500
-numTrial = 10 # 150
+numTrial = 5 # 150
 MFGO_PLAST = 0
-GOGO_PLAST = 0
+GOGO_PLAST = 1
 GRGO_PLAST = 0
 MFGR_PLAST = 0
 GOGR_PLAST = 0
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_mfgoplast_2_trials'
+expName = 'MFGoGr_gogoplast_5_trials'
 
 # Save Rasters
 saveGORaster = True
@@ -282,4 +286,4 @@ for i in range(len(recip_list)):
             span = int(conv/2) if conv > 5 else 6 
             filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr = gen_filepaths(expName, conv, gogoW)
             recip = round(conv * recip_list[i])
-            run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv, grgoW=0, gogrW=0, gogoW = 0)
+            run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv, grgoW=0.0007, gogrW=0.015, gogoW = 0.0125)

@@ -118,10 +118,10 @@ def downsample_granule_cells_only(raster, max_cells=10000):
     return raster[:, ::downsample_factor]
 
 # Load the raster data
-raster_data = np.load('/home/data/einez/MFGoGr_mfgoplast_2_trials_GOrasters.npy')
+raster_data = np.load('/home/data/einez/MFGoGr_grgoplast_10_trials_GOrasters.npy')
 print("Finished loading data")
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/Eventplot_MFGoGr_mfgoplast_2_trials_GOrasters.png"
+plot_save_path = "/home/aw39625/minisim/Results/Eventplot_MFGoGr_grgoplast_10_trials_GOrasters.png"
 
 # Show and save
 showRasters(raster_data, save_path=plot_save_path, raster_type = 2)
