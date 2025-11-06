@@ -126,9 +126,9 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.plast_ratio = 1/200 # LTP / LTD, 5 Hz
         self.mfgo_LTD_inc = 1/1000 * mfgo_weight * -1
         self.mfgo_LTP_inc = self.plast_ratio * self.mfgo_LTD_inc # negative due to computation
-        self.gogo_LTD_inc = 1/1000 * gogo_weight * -1
+        self.gogo_LTD_inc =  1/1000 * gogo_weight * -1
         self.gogo_LTP_inc = self.plast_ratio * self.gogo_LTD_inc 
-        self.grgo_LTD_inc = 1/1000 * grgo_weight * -1
+        self.grgo_LTD_inc =  1/1000 * grgo_weight * -1
         self.grgo_LTP_inc = self.plast_ratio * self.grgo_LTD_inc 
 
         ### Arrays

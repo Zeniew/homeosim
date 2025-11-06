@@ -45,7 +45,7 @@ def plotWeights(weights, save_path = None, weights_type = 1):
         plt.savefig(save_path, dpi = 300, bbox_inches = 'tight')
         print(f"Plot saved to {save_path}")
 
-weights_data = np.load('/home/data/einez/MFGoGr_grgoplast_10_trials_grgoW.npy')
-plot_save_path = plot_save_path = "/home/aw39625/minisim/Results/Eventplot_MFGoGr_grgoplast_10_trials_grgoW.png"
+weights_data = np.load('/home/data/einez/MFGoGr_sanitycheck_GOGRplast_10_trials_mfgrW.npy')
+plot_save_path = plot_save_path = "/home/aw39625/minisim/Results/Eventplot_MFGoGr_sanitycheck_GOGRplast_10_trials_mfgrW.png"
 
-plotWeights(weights_data, save_path = plot_save_path, weights_type = 1)
+plotWeights(weights_data, save_path = plot_save_path, weights_type = 4)

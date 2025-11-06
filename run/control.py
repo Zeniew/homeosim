@@ -50,7 +50,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     # # Init GR class
     GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_plast = MFGR_PLAST, gogr_plast = GOGR_PLAST)
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
-    GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
+    # GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
     GR_avg_mfgrW = np.zeros((numTrial, numBins), dtype = np.float32)
     GR_avg_gogrW = np.zeros((numTrial, numBins), dtype = np.float32)
 
@@ -183,7 +183,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         GR.updateFinalState()
         # Rasters
         GOrasters[trial] = GO.get_act()
-        GRrasters[trial] = GR.get_act()
+        # GRrasters[trial] = GR.get_act()
         all_end = time.time()
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
         
@@ -251,22 +251,22 @@ recip_list = [0.75]
 numBins =  5000 # 5000
 useCS = 1
 CSon, CSoff = 500, 3500
-numTrial = 5 # 150
+numTrial = 50 # 150
 MFGO_PLAST = 0
-GOGO_PLAST = 1
+GOGO_PLAST = 0
 GRGO_PLAST = 0
 MFGR_PLAST = 0
 GOGR_PLAST = 0
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_gogoplast_5_trials'
+expName = 'MFGoGr_sanitycheck_noplast_50_trials'
 
 # Save Rasters
 saveGORaster = True
-saveGRRaster = True
-saveMFRaster = True
-saveWeights = True
+saveGRRaster = False
+saveMFRaster = False
+saveWeights = False
 
 # GOGO Connect Params
 conv_list = [25]
