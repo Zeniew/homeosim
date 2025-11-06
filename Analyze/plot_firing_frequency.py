@@ -26,8 +26,8 @@ def plotFiringFrequencyDrift(raster, timestep_ms=1.0, save_path=None):
 
     # Plot each cell’s firing frequency trajectory
     plt.figure(figsize=(12, 6))
-    for cell in range(num_cells):
-        plt.plot(range(1, num_trials + 1), freq[:, cell], alpha=0.3, lw=0.8)
+    # for cell in range(num_cells):
+    #     plt.plot(range(1, num_trials + 1), freq[:, cell], alpha=0.3, lw=0.8)
 
     # Plot the population average in bold
     plt.plot(range(1, num_trials + 1), np.mean(freq, axis=1), color='black', lw=2, label='Mean firing rate')
@@ -42,14 +42,15 @@ def plotFiringFrequencyDrift(raster, timestep_ms=1.0, save_path=None):
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, dpi=300, bbox_inches='tight')
         print(f"Plot saved to {save_path}")
+    print("Average frequency: ", np.mean(freq))
 
     plt.show()
 
 # Load the raster data
-raster_data = np.load('/home/data/einez/MFGoGr_GOGRplast_150_trials_GOrasters.npy')
+raster_data = np.load('/home/data/einez/MFGoGr_MFGRplast_150_trials_GOrasters.npy')
 print("Finished loading data")
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/Firing_Freq_Plots/MFGoGr_GOGRplast_150_trials_GO_Firing_Frequency.png"
+plot_save_path = "/home/aw39625/minisim/Results/Firing_Freq_Plots/MFGoGr_MFGRplast_150_trials_GO_Average_Firing_Frequency.png"
 
 # Show and save
 plotFiringFrequencyDrift(raster_data, timestep_ms=1, save_path=plot_save_path)
