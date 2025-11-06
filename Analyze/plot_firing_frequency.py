@@ -20,8 +20,7 @@ def plotFiringFrequencyDrift(raster, timestep_ms=1.0, save_path=None):
         raise ValueError(f"Expected 3D array (num_trials, num_timesteps, num_cells), got {raster.shape}")
 
     num_trials, num_timesteps, num_cells = raster.shape
-    trial_duration_sec = (num_timesteps * timestep_ms) / 1000.0
-
+    trial_duration_sec = (num_timesteps) / 1000.0
     # Compute firing frequency per cell per trial (Hz)
     freq = np.sum(raster, axis=1) / trial_duration_sec  # shape: (num_trials, num_cells)
 
@@ -47,10 +46,10 @@ def plotFiringFrequencyDrift(raster, timestep_ms=1.0, save_path=None):
     plt.show()
 
 # Load the raster data
-raster_data = np.load('/home/data/einez/MFGoGr_sanitycheck_noplast_50_trials_GOrasters.npy')
+raster_data = np.load('/home/data/einez/MFGoGr_GOGRplast_150_trials_GOrasters.npy')
 print("Finished loading data")
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/Firing_Freq_Plots/MFGoGr_sanitycheck_noplast_50_trials_GO_Firing_Frequency.png"
+plot_save_path = "/home/aw39625/minisim/Results/Firing_Freq_Plots/MFGoGr_GOGRplast_150_trials_GO_Firing_Frequency.png"
 
 # Show and save
-plotFiringFrequencyDrift(raster_data, timestep_ms=5000.0, save_path=plot_save_path)
+plotFiringFrequencyDrift(raster_data, timestep_ms=1, save_path=plot_save_path)
