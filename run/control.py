@@ -251,16 +251,16 @@ recip_list = [0.75]
 numBins =  5000 # 5000
 useCS = 1
 CSon, CSoff = 500, 3500
-numTrial = 150 # 150
-MFGO_PLAST = 0
+numTrial = 20 # 150
+MFGO_PLAST = 1
 GOGO_PLAST = 0
 GRGO_PLAST = 0
 MFGR_PLAST = 0
-GOGR_PLAST = 1
+GOGR_PLAST = 0
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_GOGRplast_150_trials'
+expName = 'MFGoGr_MFGOplast_parentheses_100000_plast_step_20_trials'
 
 # Save Rasters
 saveGORaster = True

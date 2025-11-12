@@ -123,13 +123,13 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.mfgo_plast = mfgo_plast
         self.gogo_plast = gogo_plast
         self.grgo_plast = grgo_plast
-        self.plast_ratio = 1/200 # LTP / LTD, 5 Hz
-        self.mfgo_LTD_inc = 1/1000 * mfgo_weight * -1
-        self.mfgo_LTP_inc = self.plast_ratio * self.mfgo_LTD_inc # negative due to computation
-        self.gogo_LTD_inc =  1/1000 * gogo_weight * -1
-        self.gogo_LTP_inc = self.plast_ratio * self.gogo_LTD_inc 
-        self.grgo_LTD_inc =  1/1000 * grgo_weight * -1
-        self.grgo_LTP_inc = self.plast_ratio * self.grgo_LTD_inc 
+        self.plast_ratio = np.float32(1/200) # LTP / LTD, 5 Hz
+        self.mfgo_LTD_inc = np.float32((1/100000) * mfgo_weight * -1)
+        self.mfgo_LTP_inc = np.float32(self.plast_ratio * self.mfgo_LTD_inc) # negative due to computation
+        self.gogo_LTD_inc =  np.float32((1/100000) * gogo_weight * -1)
+        self.gogo_LTP_inc = np.float32(self.plast_ratio * self.gogo_LTD_inc) 
+        self.grgo_LTD_inc =  np.float32((1/100000) * grgo_weight * -1)
+        self.grgo_LTP_inc = np.float32(self.plast_ratio * self.grgo_LTD_inc) 
 
         ### Arrays
         self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float32) # array of synaptic weight
@@ -288,10 +288,10 @@ class Granule():
         ##### Plasticity
         self.GPU_mfgr_plast = cp.uint8(mfgr_plast)
         self.GPU_gogr_plast = cp.uint8(gogr_plast)
-        self.plast_ratio =  1/10000 # LTP / LTD, 0.1 Hz
-        self.GPU_mfgr_LTD_inc = cp.float32(1/1000 * mfgr_weight * -1) # 1/1000
+        self.plast_ratio =  cp.float32(1/10000) # LTP / LTD, 0.1 Hz
+        self.GPU_mfgr_LTD_inc = cp.float32((1/100000) * mfgr_weight * -1) # 1/100000
         self.GPU_mfgr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_mfgr_LTD_inc) # negative due to computation
-        self.GPU_gogr_LTD_inc = cp.float32(1/1000 * gogr_weight * -1) # 1/1000
+        self.GPU_gogr_LTD_inc = cp.float32((1/100000) * gogr_weight * -1) # 1/100000
         self.GPU_gogr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_gogr_LTD_inc)
 
 
