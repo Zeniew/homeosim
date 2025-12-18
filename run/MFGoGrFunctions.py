@@ -195,7 +195,12 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         # plasticity
         self.grgoW += self.grgo_plast * (((self.act[t] * self.grgo_LTD_inc) + ((self.act[t] - 1) * self.grgo_LTP_inc)))
         self.mfgoW += self.mfgo_plast * (((self.act[t] * self.mfgo_LTD_inc) + ((self.act[t] - 1) * self.mfgo_LTP_inc))) # this is working!
-        self.gogoW += self.gogo_plast * (((self.act[t]-1) * self.gogo_LTD_inc) + ((self.act[t]) * self.gogo_LTP_inc)) # inhibitory, so inverted
+        self.gogoW += self.gogo_plast * (((1-self.act[t]) * self.gogo_LTD_inc) + ((-1 * self.act[t]) * self.gogo_LTP_inc)) # inhibitory, so inverted
+
+        # capping
+        self.grgoW = np.clip(self.grgoW, 0.0, 1.0)
+        self.mfgoW = np.clip(self.mfgoW, 0.0, 1.0)
+        self.gogoW = np.clip(self.gogoW, 0.0, 1.0)
 
         # Update thresholds where spikes occurred (condition, value if true, if false)
         self.currentThresh = np.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
@@ -343,9 +348,16 @@ class Granule():
 
             GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
 
-            GPU_gogrW[idx] = GPU_gogrW[idx] + GPU_gogr_plast * (((GPU_spike_mask[idx] - 1) * GPU_gogr_LTD_inc) + (GPU_spike_mask[idx] * GPU_gogr_LTP_inc));
+            GPU_gogrW[idx] = GPU_gogrW[idx] + GPU_gogr_plast * (((1-GPU_spike_mask[idx]) * GPU_gogr_LTD_inc) + (-1 * GPU_spike_mask[idx] * GPU_gogr_LTP_inc));
             GPU_mfgrW[idx] = GPU_mfgrW[idx] + GPU_mfgr_plast * ((GPU_spike_mask[idx] * GPU_mfgr_LTD_inc) + ((GPU_spike_mask[idx] - 1) * GPU_mfgr_LTP_inc));
+            // --- CAPPING (Added Here) ---
+            // Using fminf/fmaxf logic: "Take the max of 0 and value (floor), then take the min of 1 and that result (ceiling)"
+            
+            // Clamp MF->GR (Excitatory)
+            GPU_mfgrW[idx] = fminf(1.0f, fmaxf(0.0f, GPU_mfgrW[idx]));
 
+            // Clamp GO->GR (Inhibitory)
+            GPU_gogrW[idx] = fminf(1.0f, fmaxf(0.0f, GPU_gogrW[idx]));
         }
         """
 

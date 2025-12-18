@@ -47,7 +47,7 @@ def plotFiringFrequencyDrift(raster, timestep_ms=1.0, save_path=None):
     plt.show()
 
 # Load the raster data
-raster_data = np.load('/home/data/einez/MFGoGr_MFGOplast_parentheses_100000_plast_step_20_trials_GOrasters.npy')
+raster_data = np.load('/home/data/einez/MFGoGr_MFGOplast_plast_ratio_12000_20_trials_GOrasters.npy')
 
 print("Finished loading data")
 print(raster_data.shape)
@@ -55,7 +55,7 @@ print(np.where(np.mean(np.sum(raster_data, axis = 1) / 5, axis = 0) > 100)) # wh
 print(np.mean(np.sum(raster_data, axis = 1) / 5, axis = 0)[0]) # average frequency across trials of cell
 
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/Firing_Freq_Plots/MFGoGr_MFGOplast_parentheses_100000_plast_step_20_trials_GO_Average_Firing_Frequency.png"
+plot_save_path = "/home/aw39625/minisim/Results/Firing_Freq_Plots/MFGoGr_MFGOplast_plast_ratio_12000_20_trials_GO_Average_Firing_Frequency.png"
 
 # Show and save
 plotFiringFrequencyDrift(raster_data, timestep_ms=1, save_path=plot_save_path)

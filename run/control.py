@@ -260,7 +260,7 @@ GOGR_PLAST = 0
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_MFGOplast_parentheses_100000_plast_step_20_trials'
+expName = 'MFGoGr_MFGOplast_plast_ratio_12000_20_trials'
 
 # Save Rasters
 saveGORaster = True
