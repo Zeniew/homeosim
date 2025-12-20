@@ -123,13 +123,24 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.mfgo_plast = mfgo_plast
         self.gogo_plast = gogo_plast
         self.grgo_plast = grgo_plast
-        self.plast_ratio = np.float32(1/200) # LTP / LTD, 5 Hz
-        self.mfgo_LTD_inc = np.float32((1/100000) * mfgo_weight * -1)
-        self.mfgo_LTP_inc = np.float32(self.plast_ratio * self.mfgo_LTD_inc) # negative due to computation
-        self.gogo_LTD_inc =  np.float32((1/100000) * gogo_weight * -1)
-        self.gogo_LTP_inc = np.float32(self.plast_ratio * self.gogo_LTD_inc) 
-        self.grgo_LTD_inc =  np.float32((1/100000) * grgo_weight * -1)
-        self.grgo_LTP_inc = np.float32(self.plast_ratio * self.grgo_LTD_inc) 
+        ## Multiplicative
+        self.target_hz = 5.0
+        self.tau_trace = 500.0 # ms (Calcium Integration Window)
+        self.UP_LIMIT = 2.73 # Turrigiano 1998 TTX
+        self.DOWN_LIMIT = 0.66 # Turrigiano 1998 bicuculline
+        self.alpha = 0.0001 # homeostastic learning rates
+        self.alpha_up = self.alpha #  * self.UP_LIMIT
+        self.alpha_down = self.alpha # * self.DOWN_LIMIT
+        self.target_trace_val = self.target_hz * (self.tau_trace / 1000.0) # target trace value for homeostasis
+
+        ## Discrete
+        # self.plast_ratio = np.float32(1/200) # LTP / LTD, 5 Hz
+        # self.mfgo_LTD_inc = np.float32((1/100000) * mfgo_weight * -1)
+        # self.mfgo_LTP_inc = np.float32(self.plast_ratio * self.mfgo_LTD_inc) # negative due to computation
+        # self.gogo_LTD_inc =  np.float32((1/100000) * gogo_weight * -1)
+        # self.gogo_LTP_inc = np.float32(self.plast_ratio * self.gogo_LTD_inc) 
+        # self.grgo_LTD_inc =  np.float32((1/100000) * grgo_weight * -1)
+        # self.grgo_LTP_inc = np.float32(self.plast_ratio * self.grgo_LTD_inc) 
 
         ### Arrays
         self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float32) # array of synaptic weight
@@ -148,7 +159,12 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         # Threshold
         self.currentThresh = np.full(self.numGolgi, self.threshRest, dtype = np.float32) # current threshold of Golgi cells, initialized to resting threshold
         self.act = np.zeros((trialSize, self.numGolgi), dtype = np.uint8) # activity of Golgi cells over the entire trial, 2D array of size (trialSize, numGolgi)
-        # NTS: Properties of gr that are different from Go? think abt it
+
+        # Trace
+        self.MFGO_trace = np.zeros(self.numGolgi, dtype = np.float32) # trace for MF to Golgi input
+        self.GRGO_trace = np.zeros(self.numGolgi, dtype = np.float32) # trace for granule to Golgi input
+        self.GOGO_trace = np.zeros(self.numGolgi, dtype = np.float32) # trace for Golgi to Golgi input
+
 
     def do_Golgi(self, t):
         # Vectorized
@@ -193,14 +209,23 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.act[t] = spike_mask.astype(np.uint8) # convert boolean array to int array, true = 1, false = 0
 
         # plasticity
-        self.grgoW += self.grgo_plast * (((self.act[t] * self.grgo_LTD_inc) + ((self.act[t] - 1) * self.grgo_LTP_inc)))
-        self.mfgoW += self.mfgo_plast * (((self.act[t] * self.mfgo_LTD_inc) + ((self.act[t] - 1) * self.mfgo_LTP_inc))) # this is working!
-        self.gogoW += self.gogo_plast * (((1-self.act[t]) * self.gogo_LTD_inc) + ((-1 * self.act[t]) * self.gogo_LTP_inc)) # inhibitory, so inverted
+        ## Multiplicative
+        if self.mfgo_plast == 1:  # update MF to Golgi weight
+            self.update_weight(self.mfgoW, self.MFGO_trace, 1, t) # update MF to Golgi weight
+        if self.grgo_plast == 1:  # update granule to Golgi weight
+            self.update_weight(self.grgoW, self.GRGO_trace, 1, t) # update granule to Golgi weight
+        if self.gogo_plast == 1:  # update Golgi to Golgi weight
+            self.update_weight(self.gogoW, self.GOGO_trace, 2, t) # update Golgi to Golgi weight
 
-        # capping
-        self.grgoW = np.clip(self.grgoW, 0.0, 1.0)
-        self.mfgoW = np.clip(self.mfgoW, 0.0, 1.0)
-        self.gogoW = np.clip(self.gogoW, 0.0, 1.0)
+        ## Discrete
+        # self.grgoW += self.grgo_plast * (((self.act[t] * self.grgo_LTD_inc) + ((self.act[t] - 1) * self.grgo_LTP_inc)))
+        # self.mfgoW += self.mfgo_plast * (((self.act[t] * self.mfgo_LTD_inc) + ((self.act[t] - 1) * self.mfgo_LTP_inc))) # this is working!
+        # self.gogoW += self.gogo_plast * (((1-self.act[t]) * self.gogo_LTD_inc) + ((self.act[t]) * -1.0 * self.gogo_LTP_inc)) # inhibitory, so inverted
+
+        # # capping
+        # self.grgoW = np.clip(self.grgoW, 0.0, 1.0)
+        # self.mfgoW = np.clip(self.mfgoW, 0.0, 1.0)
+        # self.gogoW = np.clip(self.gogoW, 0.0, 1.0)
 
         # Update thresholds where spikes occurred (condition, value if true, if false)
         self.currentThresh = np.where(spike_mask, self.thresholdMax, self.currentThresh) # set current threshold to max where spikes occurred
@@ -255,6 +280,33 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             # grAct[0] = 0 # hardcode to 0 for optimization
             # self.inputGRGO = np.sum(grAct[connectArr], axis = 1)
 
+    def update_weight(self, weight_array, trace_array, exc_or_inh, t):
+        # 1. Update Calcium Trace (Leaky Integrator)
+        # Decay the trace
+        decay = (-trace_array / self.tau_trace) * 1.0 # 1.0 ms
+        trace_array += decay 
+        # Add spike
+        trace_array += self.act[t] # 1.0 ms
+
+        # 2. Calculate Error
+        error = self.target_trace_val - trace_array # error between target trace value and current trace value
+
+        # 3. Excitatory vs Inhibitory
+        if exc_or_inh == 2:
+            error = -error 
+        
+        # 4. Asymmetric Learning Rate
+        learning_rates = np.where(error > 0, self.alpha_up, self.alpha_down) # use alpha_up if error is positive, alpha_down otherwise
+
+        # 5. Multiplicative Plasticity
+        delta_w = learning_rates * error * weight_array * 1.0 # 1.0 ms
+        weight_array += delta_w 
+
+        # Clip weights
+        weight_array = np.clip(weight_array, 0.0, 1.0)
+
+
+
     def get_act(self):
         return self.act
     
@@ -293,11 +345,21 @@ class Granule():
         ##### Plasticity
         self.GPU_mfgr_plast = cp.uint8(mfgr_plast)
         self.GPU_gogr_plast = cp.uint8(gogr_plast)
-        self.plast_ratio =  cp.float32(1/10000) # LTP / LTD, 0.1 Hz
-        self.GPU_mfgr_LTD_inc = cp.float32((1/100000) * mfgr_weight * -1) # 1/100000
-        self.GPU_mfgr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_mfgr_LTD_inc) # negative due to computation
-        self.GPU_gogr_LTD_inc = cp.float32((1/100000) * gogr_weight * -1) # 1/100000
-        self.GPU_gogr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_gogr_LTD_inc)
+
+        self.GPU_tau_trace = cp.float32(2000.0) # NTS: need to find literature supporting this
+        self.GPU_target_hz = cp.float32(0.1)
+        self.GPU_target_trace_val = cp.float32(self.GPU_target_hz * (self.GPU_tau_trace / 1000.0))
+
+        # Turrigiano Learning Rates
+        base_alpha = 0.00001 # 1/10 of Golgi, need to find literature supporting this
+        self.GPU_alpha_up = cp.float32(base_alpha) # * 2.73
+        self.GPU_alpha_down = cp.float32(base_alpha) # * (1.0 / 0.66)
+
+        # self.plast_ratio =  cp.float32(1/10000) # LTP / LTD, 0.1 Hz
+        # self.GPU_mfgr_LTD_inc = cp.float32((1/100000) * mfgr_weight * -1) # 1/100000
+        # self.GPU_mfgr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_mfgr_LTD_inc) # negative due to computation
+        # self.GPU_gogr_LTD_inc = cp.float32((1/100000) * gogr_weight * -1) # 1/100000
+        # self.GPU_gogr_LTP_inc = cp.float32(self.plast_ratio * self.GPU_gogr_LTD_inc)
 
 
         ### Arrays
@@ -321,8 +383,19 @@ class Granule():
         extern "C" __global__ void doGranule(int size, float *GPU_gLeak, float *GPU_Vm, unsigned char *inputMFGR, float *GPU_gSum_MFGR,
         unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, float *GPU_currentThresh, float *GPU_mfgrW, 
         float GPU_g_decay_MFGR, float *GPU_gogrW, float GPU_gGABA_decayGOGR, float GPU_g_decay_NMDA_MFGR, float GPU_gDirectInc_MFGR,
-        float GPU_threshRest, float GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask, float GPU_gogr_LTD_inc, float GPU_gogr_LTP_inc, 
-        float GPU_mfgr_LTD_inc, float GPU_mfgr_LTP_inc, unsigned char GPU_mfgr_plast, unsigned char GPU_gogr_plast){
+        float GPU_threshRest, float GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask, 
+        // float GPU_gogr_LTD_inc, 
+        // float GPU_gogr_LTP_inc, 
+        // float GPU_mfgr_LTD_inc, 
+        // float GPU_mfgr_LTP_inc, 
+        unsigned char GPU_mfgr_plast, unsigned char GPU_gogr_plast,
+        float *GPU_mfgr_trace,    // Trace array for MF->GR synapses
+        float *GPU_gogr_trace,    // Trace array for GO->GR synapses
+        float tau_trace,          // 500.0
+        float target_trace_val,   // 2.5 (for 5Hz)
+        float alpha_up,           // calculated alpha * 2.73
+        float alpha_down          // calculated alpha * (1/0.66)
+        ){
             int idx = threadIdx.x + blockIdx.x * blockDim.x;
             if (idx >= size) return;
             GPU_gLeak[idx] = (0.0000001021370733 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
@@ -348,16 +421,71 @@ class Granule():
 
             GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
 
-            GPU_gogrW[idx] = GPU_gogrW[idx] + GPU_gogr_plast * (((1-GPU_spike_mask[idx]) * GPU_gogr_LTD_inc) + (-1 * GPU_spike_mask[idx] * GPU_gogr_LTP_inc));
-            GPU_mfgrW[idx] = GPU_mfgrW[idx] + GPU_mfgr_plast * ((GPU_spike_mask[idx] * GPU_mfgr_LTD_inc) + ((GPU_spike_mask[idx] - 1) * GPU_mfgr_LTP_inc));
-            // --- CAPPING (Added Here) ---
-            // Using fminf/fmaxf logic: "Take the max of 0 and value (floor), then take the min of 1 and that result (ceiling)"
-            
-            // Clamp MF->GR (Excitatory)
-            GPU_mfgrW[idx] = fminf(1.0f, fmaxf(0.0f, GPU_mfgrW[idx]));
+            // Multiplicative Scaling
+            // Cast spike to float for math
+            float spike_val = (float)GPU_spike_mask[idx];
 
-            // Clamp GO->GR (Inhibitory)
-            GPU_gogrW[idx] = fminf(1.0f, fmaxf(0.0f, GPU_gogrW[idx]));
+            // A. MF -> GR Update (Excitatory)
+            // ----------------------------------------------------
+            float mf_trace = GPU_mfgr_trace[idx];
+            // Update Trace: Decay + Spike
+            mf_trace += (-mf_trace / tau_trace);
+            mf_trace += spike_val;
+            GPU_mfgr_trace[idx] = mf_trace; // Write back state
+            
+            // Calc Error (Positive = Need Potentiation)
+            float mf_error = target_trace_val - mf_trace;
+            
+            // Determine Rate (Asymmetric)
+            float mf_rate = (mf_error > 0.0f) ? alpha_up : alpha_down;
+            
+            // Update Weight (Multiplicative)
+            // Formula: W_new = W_old + (alpha * error * W_old)
+            float mf_weight = GPU_mfgrW[idx];
+            mf_weight += GPU_mfgr_plast * (mf_rate * mf_error * mf_weight);
+            
+            // Clamp between 0.0 and 1.0
+            GPU_mfgrW[idx] = fminf(1.0f, fmaxf(0.0f, mf_weight));
+
+            // B. GO -> GR Update (Inhibitory)
+            // ----------------------------------------------------
+            float go_trace = GPU_gogr_trace[idx];
+            
+            // Update Trace
+            go_trace += (-go_trace / tau_trace);
+            go_trace += spike_val;
+            GPU_gogr_trace[idx] = go_trace; // Write back
+            
+            // Calc Error (Inverted for Inhibition)
+            // If Trace > Target (Error < 0), we are firing too fast.
+            // For inhibition, we need to STRENGTHEN the weight to stop firing.
+            // So we invert the error sign to make it Positive (triggering Potentiation logic).
+            float go_error = -(target_trace_val - go_trace); 
+            
+            // Determine Rate
+            float go_rate = (go_error > 0.0f) ? alpha_up : alpha_down;
+            
+            // Update Weight
+            float go_weight = GPU_gogrW[idx];
+            go_weight += GPU_gogr_plast * (go_rate * go_error * go_weight);
+            
+            // Clamp
+            GPU_gogrW[idx] = fminf(1.0f, fmaxf(0.0f, go_weight));
+
+            //----------------------------------------------------------------------------------------------//
+            
+            // Discrete Scaling
+            
+            //GPU_gogrW[idx] = GPU_gogrW[idx] + GPU_gogr_plast * (((1-GPU_spike_mask[idx]) * GPU_gogr_LTD_inc) + (-1 * GPU_spike_mask[idx] * GPU_gogr_LTP_inc));
+            //GPU_mfgrW[idx] = GPU_mfgrW[idx] + GPU_mfgr_plast * ((GPU_spike_mask[idx] * GPU_mfgr_LTD_inc) + ((GPU_spike_mask[idx] - 1) * GPU_mfgr_LTP_inc));
+            //// --- CAPPING (Added Here) ---
+            //// Using fminf/fmaxf logic: "Take the max of 0 and value (floor), then take the min of 1 and that result (ceiling)"
+            
+            //// Clamp MF->GR (Excitatory)
+            //GPU_mfgrW[idx] = fminf(1.0f, fmaxf(0.0f, GPU_mfgrW[idx]));
+
+            //// Clamp GO->GR (Inhibitory)
+            //GPU_gogrW[idx] = fminf(1.0f, fmaxf(0.0f, GPU_gogrW[idx]));
         }
         """
 
@@ -380,6 +508,9 @@ class Granule():
         self.GPU_eLeak = cp.float32(self.eLeak)
         self.GPU_eGOGR = cp.float32(self.eGOGR)
         self.GPU_spike_mask = cp.zeros(self.numGranule, dtype = cp.uint8)
+        # New Trace Arrays (Float32) on GPU
+        self.GPU_mfgr_trace = cp.zeros(self.n_cells, dtype=cp.float32)
+        self.GPU_gogr_trace = cp.zeros(self.n_cells, dtype=cp.float32)
 
     def doGRGPU(self):
         block_size = 256
@@ -387,10 +518,16 @@ class Granule():
         with cp.cuda.Device(0):
             GPU_inputMFGR = cp.array(self.inputMFGR)
             GPU_inputGOGR = cp.array(self.inputGOGR)
+            # self.GRgpu((grid_size,),(block_size,), (self.numGranule, self.GPU_gLeak, self.GPU_Vm, GPU_inputMFGR, self.GPU_gSum_MFGR, GPU_inputGOGR, 
+            # self.GPU_gSum_GOGR, self.GPU_gNMDA_Inc_MFGR, self.GPU_gNMDA_MFGR, self.GPU_currentThresh, self.GPU_mfgrW, self.GPU_g_decay_MFGR, self.GPU_gogrW, 
+            # self.GPU_gGABA_decayGOGR, self.GPU_g_decay_NMDA_MFGR, self.GPU_gDirectInc_MFGR, self.GPU_threshRest, self.GPU_threshDecGR, self.GPU_eLeak, 
+            # self.GPU_eGOGR, self.GPU_spike_mask, self.GPU_gogr_LTD_inc, self.GPU_gogr_LTP_inc, self.GPU_mfgr_LTD_inc, self.GPU_mfgr_LTP_inc, self.GPU_mfgr_plast, self.GPU_gogr_plast))
+            
             self.GRgpu((grid_size,),(block_size,), (self.numGranule, self.GPU_gLeak, self.GPU_Vm, GPU_inputMFGR, self.GPU_gSum_MFGR, GPU_inputGOGR, 
             self.GPU_gSum_GOGR, self.GPU_gNMDA_Inc_MFGR, self.GPU_gNMDA_MFGR, self.GPU_currentThresh, self.GPU_mfgrW, self.GPU_g_decay_MFGR, self.GPU_gogrW, 
             self.GPU_gGABA_decayGOGR, self.GPU_g_decay_NMDA_MFGR, self.GPU_gDirectInc_MFGR, self.GPU_threshRest, self.GPU_threshDecGR, self.GPU_eLeak, 
-            self.GPU_eGOGR, self.GPU_spike_mask, self.GPU_gogr_LTD_inc, self.GPU_gogr_LTP_inc, self.GPU_mfgr_LTD_inc, self.GPU_mfgr_LTP_inc, self.GPU_mfgr_plast, self.GPU_gogr_plast))
+            self.GPU_eGOGR, self.GPU_spike_mask, self.GPU_mfgr_plast, self.GPU_gogr_plast, self.GPU_mfgr_trace, self.GPU_gogr_trace, self.GPU_tau_trace,self.GPU_target_trace_val,
+            self.GPU_alpha_up, self.GPU_alpha_down))
             return self.GPU_spike_mask.get()
 
     # generic function for updating GOGR and MFGR input arrays
