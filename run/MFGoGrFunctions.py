@@ -123,6 +123,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.mfgo_plast = mfgo_plast
         self.gogo_plast = gogo_plast
         self.grgo_plast = grgo_plast
+
         ## Multiplicative
         self.target_hz = 5.0
         self.tau_trace = 500.0 # ms (Calcium Integration Window)
@@ -174,6 +175,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             (0.000089369 * self.Vm * self.Vm) +
             (0.0151 * self.Vm) + 0.7713
         ) # calculated NMDA increment based on current Vm, vectorized for all Golgi cells
+
         # update total go -> go input conductance
         self.gSum_GOGO = (self.inputGOGO * self.gogoW) + self.gSum_GOGO * self.gGABA_decayGOGO # decay previous conductance and add new input conductance scaled by weight
         # update total mf -> go input conductance
@@ -246,13 +248,14 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             # mfAct[0] = 0 # hardcode to 0 for optimization
             # self.inputMFGO = np.sum(mfAct[connectArr], axis = 1)
         
+        # GOGO
         if inputArrayChoice == 2:
             goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
             spiked_idx = np.where(self.act[t])[0]
             for go in spiked_idx:
                 goInputs[connectArr[go, :]] += 1
             self.inputGOGO = goInputs
-        # # GOGO
+
         # if inputArrayChoice == 2:
         #     spike_mask = (self.act[t] == 1)
         #     spiked_idx = np.where(spike_mask)[0]
@@ -269,6 +272,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         #     counts = np.bincount(spiked_connections)
         #     # add to input array
         #     self.inputGOGO[:len(counts)] = counts
+
         # GRGO
         if inputArrayChoice == 3: 
             goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
@@ -509,8 +513,8 @@ class Granule():
         self.GPU_eGOGR = cp.float32(self.eGOGR)
         self.GPU_spike_mask = cp.zeros(self.numGranule, dtype = cp.uint8)
         # New Trace Arrays (Float32) on GPU
-        self.GPU_mfgr_trace = cp.zeros(self.n_cells, dtype=cp.float32)
-        self.GPU_gogr_trace = cp.zeros(self.n_cells, dtype=cp.float32)
+        self.GPU_mfgr_trace = cp.zeros(self.numGranule, dtype=cp.float32)
+        self.GPU_gogr_trace = cp.zeros(self.numGranule, dtype=cp.float32)
 
     def doGRGPU(self):
         block_size = 256
@@ -534,6 +538,7 @@ class Granule():
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, goAct = None):
         ''' inputArrayChoice selects between 1 = MFGR, 2 = GOGR '''
         #### Playground version, adapt to main code
+        # MFGR
         if inputArrayChoice == 1:
             grInputs = np.zeros(self.numGranule, dtype = np.uint8) # array that stores how many inputs each gr gets
             MFdiverge = int((self.numGranule * 5)/4096) # how many gr each MF connects to  <-- where is this used lmao
@@ -561,6 +566,8 @@ class Granule():
         # ## MF input update
         # if inputArrayChoice == 1:
         #     spike_mask = (mfAct == 1)
+
+        # GOGR
         if inputArrayChoice == 2:
             spike_mask = (goAct == 1)
             spiked_idx = np.where(spike_mask)[0]

@@ -3,7 +3,7 @@ import cupy as cp
 import os
 import time
 
-import MFGoGrFunctions as mfgogr
+import MFGOGrFunctions_discrete_trace as mfgogr
 # import playground_MFGOGRFunctions as mfgogr
 import importConnect as connect
 import WireFunctions
@@ -251,7 +251,7 @@ recip_list = [0.75]
 numBins =  5000 # 5000
 useCS = 1
 CSon, CSoff = 500, 3500
-numTrial = 100 # 150
+numTrial = 20 # 150
 MFGO_PLAST = 1
 GOGO_PLAST = 0
 GRGO_PLAST = 0
@@ -260,13 +260,13 @@ GOGR_PLAST = 0
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_MFGOplast_multiplicative_100_trials'
+expName = 'MFGoGr_MFGOplast_discrete_trace_20_trials'
 
 # Save Rasters
 saveGORaster = True
 saveGRRaster = False
 saveMFRaster = False
-saveWeights = False
+saveWeights = True
 
 # GOGO Connect Params
 conv_list = [25]
