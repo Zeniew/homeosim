@@ -6,23 +6,16 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     """
     Plots average firing frequency per cell across trials.
     Handles subsampling for large populations (Granule cells).
-    
-    Parameters
-    ----------
-    raster : np.ndarray
-        3D array with shape (num_trials, num_timesteps, num_cells)
-        Each entry should be 1 if the cell spiked at that timestep, else 0.
-    cell_type : int
-        1 = MF (Mossy Fiber)
-        2 = Golgi Cell
-        3 = Granule Cell (Triggers subsampling)
-    timestep_ms : float
-        Duration of each timestep in milliseconds.
-    save_path : str or None
-        Optional path to save the figure.
+    Skips the first cell (index 0) to avoid artifacts.
     """
     if raster.ndim != 3:
         raise ValueError(f"Expected 3D array (num_trials, num_timesteps, num_cells), got {raster.shape}")
+
+    # --- MODIFICATION: REMOVE FIRST CELL ---
+    # We slice the array to exclude index 0 before doing any calculations
+    print(f"Original shape: {raster.shape}")
+    raster = raster[:, :, 1:] 
+    print(f"Shape after removing first cell: {raster.shape}")
 
     num_trials, num_timesteps, num_cells = raster.shape
     
@@ -55,7 +48,6 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     type_name = cell_names.get(cell_type, "Unknown Cell")
     
     # # Plot individual traces (lighter, thinner)
-    # # We iterate range(num_cells) because we might have sliced the array
     # for cell in range(num_cells):
     #     plt.plot(range(1, num_trials + 1), freq[:, cell], alpha=0.3, lw=0.8)
 
@@ -64,7 +56,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 
     plt.xlabel("Trial")
     plt.ylabel("Firing frequency (Hz)")
-    plt.title(f"{type_name} Firing Frequency Drift Across Trials")
+    plt.title(f"{type_name} Firing Frequency Drift Across Trials (Cell 0 Excluded)")
     plt.legend()
     plt.tight_layout()
 
@@ -79,20 +71,17 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-# Update this path to your Granule raster file if testing cell_type=3
-raster_path = '/home/data/einez/MFGoGr_MFGOplast_discrete_trace_20_trials_GOrasters.npy' 
+raster_path = '/home/data/einez/MFGoGr_MFGOplast_discrete_trace_symmetric_20_trials_GOrasters.npy' 
 raster_data = np.load(raster_path)
 
 print("Finished loading data")
-print(f"Original Shape: {raster_data.shape}")
 
-# 2. Define Cell Type (CHANGE THIS: 1=MF, 2=Golgi, 3=Granule)
+# 2. Define Cell Type (1=MF, 2=Golgi, 3=Granule)
 current_cell_type = 2
 
 # 3. Define save location
-save_filename = "MFGoGr_MFGOplast_discrete_trace_20_trials_average.png"
+save_filename = "MFGoGr_MFGOplast_discrete_trace_symmetric_20_trials_average.png"
 plot_save_path = f"/home/aw39625/minisim/Results/Firing_Freq_Plots/{save_filename}"
 
 # 4. Run the function
-# Note: Ensure timestep_ms matches your simulation (usually 1.0 ms)
 plotFiringFrequencyDrift(raster_data, cell_type=current_cell_type, timestep_ms=1.0, save_path=plot_save_path)

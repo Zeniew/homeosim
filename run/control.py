@@ -260,7 +260,7 @@ GOGR_PLAST = 0
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_MFGOplast_discrete_trace_20_trials'
+expName = 'MFGoGr_MFGOplast_discrete_trace_symmetric_20_trials'
 
 # Save Rasters
 saveGORaster = True

@@ -135,14 +135,13 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.target_trace_val = self.target_hz * (self.tau_trace / 1000.0) # target trace value for homeostasis
 
         ## Discrete
-        self.plast_ratio = np.float32(1/200) # LTP / LTD, 5 Hz
+        self.plast_ratio = np.float32(1) # np.float32(1/200) # LTP / LTD, 5 Hz
         self.mfgo_LTD_inc = np.float32((1/100000) * mfgo_weight * -1)
-        self.mfgo_LTP_inc = np.float32(self.plast_ratio * self.mfgo_LTD_inc) # negative due to computation
+        self.mfgo_LTP_inc = np.float32(self.plast_ratio * self.mfgo_LTD_inc * -1) # positive due to computation
         self.gogo_LTD_inc =  np.float32((1/100000) * gogo_weight * -1)
-        self.gogo_LTP_inc = np.float32(self.plast_ratio * self.gogo_LTD_inc) 
+        self.gogo_LTP_inc = np.float32(self.plast_ratio * self.gogo_LTD_inc * -1) 
         self.grgo_LTD_inc =  np.float32((1/100000) * grgo_weight * -1)
-        self.grgo_LTP_inc = np.float32(self.plast_ratio * self.grgo_LTD_inc) 
-
+        self.grgo_LTP_inc = np.float32(self.plast_ratio * self.grgo_LTD_inc * -1) 
         ### Arrays
         self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float32) # array of synaptic weight
         self.mfgoW = np.full(self.numGolgi, mfgo_weight, dtype = np.float32) # array of synaptic weight
