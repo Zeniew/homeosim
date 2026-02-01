@@ -71,7 +71,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/MFGoGr_MFGOplast_discrete_trace_symmetric_20_trials_GOrasters.npy' 
+raster_path = '/home/data/einez/MFGoGr_simple_mfgoplast_diff_1000_trial_GOrasters.npy' 
 raster_data = np.load(raster_path)
 
 print("Finished loading data")
@@ -80,7 +80,7 @@ print("Finished loading data")
 current_cell_type = 2
 
 # 3. Define save location
-save_filename = "MFGoGr_MFGOplast_discrete_trace_symmetric_20_trials_average.png"
+save_filename = "MFGoGr_simple_mfgoplast_diff_1000_trial_average.png"
 plot_save_path = f"/home/aw39625/minisim/Results/Firing_Freq_Plots/{save_filename}"
 
 # 4. Run the function
