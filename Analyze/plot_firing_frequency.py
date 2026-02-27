@@ -47,9 +47,14 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     cell_names = {1: "Mossy Fiber", 2: "Golgi Cell", 3: "Granule Cell"}
     type_name = cell_names.get(cell_type, "Unknown Cell")
     
-    # # Plot individual traces (lighter, thinner)
-    # for cell in range(num_cells):
-    #     plt.plot(range(1, num_trials + 1), freq[:, cell], alpha=0.3, lw=0.8)
+    # Plot individual traces (lighter, thinner)
+    for cell in range(num_cells):
+        plt.plot(range(1, num_trials + 1), freq[:, cell], alpha=0.3, lw=0.8)
+
+    # #---
+    # # TEST: ONLY PLOT ONE CELL TO VERIFY REMOVAL OF ARTIFACT
+    # plt.plot(range(1, num_trials + 1), freq[:, 1], alpha=0.7, lw=1.5, label='Cell 2 Firing Rate')  # Plot only the first cell after removal
+    # #---
 
     # Plot the population average in bold (black)
     plt.plot(range(1, num_trials + 1), np.mean(freq, axis=1), color='black', lw=2, label='Mean firing rate')
@@ -71,7 +76,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/MFGoGr_simple_mfgoplast_diff_1000_trial_GOrasters.npy' 
+raster_path = '/home/data/einez/MFGoGr_shuffledMFisi_noCS_noGoGo_mfgoplast_halfcell_50_trial_GOrasters.npy' 
 raster_data = np.load(raster_path)
 
 print("Finished loading data")
@@ -80,7 +85,7 @@ print("Finished loading data")
 current_cell_type = 2
 
 # 3. Define save location
-save_filename = "MFGoGr_simple_mfgoplast_diff_1000_trial_average.png"
+save_filename = "MFGoGr_shuffledMFisi_noCS_noGoGo_mfgoplast_halfcell_50_trial.png"
 plot_save_path = f"/home/aw39625/minisim/Results/Firing_Freq_Plots/{save_filename}"
 
 # 4. Run the function

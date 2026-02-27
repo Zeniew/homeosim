@@ -40,19 +40,19 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     MFrasters = np.zeros((numBins, numMF), dtype = np.uint8)
 
     # # Init GO class
-    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, mfgo_plast = MFGO_PLAST, gogo_plast = GOGO_PLAST, grgo_plast = GRGO_PLAST, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW)
+    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, mfgo_plast = MFGO_PLAST, gogo_plast = GOGO_PLAST, grgo_plast = GRGO_PLAST, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW, plast_ratio = 1.0)
     # GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW) # playground version
     GOrasters = np.zeros((numTrial, numBins, numGO), dtype = np.uint8)
-    GO_avg_gogoW = np.zeros((numTrial, numBins), dtype = np.float32)
-    GO_avg_grgoW = np.zeros((numTrial, numBins), dtype = np.float32)
-    GO_avg_mfgoW = np.zeros((numTrial, numBins), dtype = np.float32)
+    GO_gogoW = np.zeros((numTrial, numGO), dtype = np.float32)
+    GO_grgoW = np.zeros((numTrial, numGO), dtype = np.float32)
+    GO_mfgoW = np.zeros((numTrial, numGO), dtype = np.float32)
 
     # # Init GR class
     GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_plast = MFGR_PLAST, gogr_plast = GOGR_PLAST, mfgr_weight = mfgrW, gogr_weight = gogrW)
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
     # GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
-    GR_avg_mfgrW = np.zeros((numTrial, numBins), dtype = np.float32)
-    GR_avg_gogrW = np.zeros((numTrial, numBins), dtype = np.float32)
+    # GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
+    # GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
 
     print("Objects initialized.")
 
@@ -158,19 +158,26 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
 
 
             MFrasters[t, :] = MFact
-            GO_avg_gogoW[trial][t] = np.mean(GO.get_gogoW()) 
-            GO_avg_grgoW[trial][t] = np.mean(GO.get_grgoW())
-            GO_avg_mfgoW[trial][t] = np.mean(GO.get_mfgoW())
-            GR_avg_gogrW[trial][t] = np.mean(GR.get_gogrW())
-            GR_avg_mfgrW[trial][t] = np.mean(GR.get_mfgrW())
         
         # Update plasticityt weight
         if MFGO_PLAST == 1:
             GO.mfgoW = GO.update_weight(trial, exc_or_inh = 1, weight_array = GO.get_mfgoW())
+            # --- DEBUG: PRINT TRUTH ---
+            # Print Cell 1 (Plastic) vs Cell 2 (Should be Static)
+            w = GO.get_mfgoW()
+            print(f"Trial {trial}: Cell 1 (Static) = {w[1]:.6f} | Cell 2 (Plastic) = {w[2]:.6f}")
+            # --------------------------
         if GOGO_PLAST == 1:
             GO.gogoW = GO.update_weight(trial, exc_or_inh = 2, weight_array = GO.get_gogoW())
         if GRGO_PLAST == 1:
-            GO.grgoW = GO.update_weight(trial, exc_or_inh = 3, weight_array = GO.get_grgoW())
+
+            GO.grgoW = GO.update_weight(trial, exc_or_inh = 1, weight_array = GO.get_grgoW())
+    
+        GO_gogoW[trial] = (GO.get_gogoW()) 
+        GO_grgoW[trial] = (GO.get_grgoW())
+        GO_mfgoW[trial] = (GO.get_mfgoW())
+        # GR_gogrW[trial] = (GR.get_gogrW())
+        # GR_mfgrW[trial] = (GR.get_mfgrW())
 
         # Final update
         GR.updateFinalState()
@@ -178,9 +185,9 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         GOrasters[trial] = GO.get_act()
         # GRrasters[trial] = GR.get_act()
         all_end = time.time()
+        MF.generate_MFisiDistribution()
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
-        
-    print(GO_avg_grgoW)
+    
 
     # Save rasters
     if saveGORaster:
@@ -198,16 +205,16 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         print(f"Raster array saved to '{filepath_m}'")
     if saveWeights:
         os.makedirs(saveDir, exist_ok = True)
-        cp.save(filepath_w_gogo, GO_avg_gogoW)
+        cp.save(filepath_w_gogo, GO_gogoW)
         print(f"Raster array saved to '{filepath_w_gogo}'")
-        cp.save(filepath_w_grgo, GO_avg_grgoW)
+        cp.save(filepath_w_grgo, GO_grgoW)
         print(f"Raster array saved to '{filepath_w_grgo}'")
-        cp.save(filepath_w_mfgo, GO_avg_mfgoW)
+        cp.save(filepath_w_mfgo, GO_mfgoW)
         print(f"Raster array saved to '{filepath_w_mfgo}'")
-        cp.save(filepath_w_mfgr, GR_avg_mfgrW)
-        print(f"Raster array saved to '{filepath_w_mfgr}'")
-        cp.save(filepath_w_gogr, GR_avg_gogrW)
-        print(f"Raster array saved to '{filepath_w_gogr}'")
+        # cp.save(filepath_w_mfgr, GR_avg_mfgrW)
+        # print(f"Raster array saved to '{filepath_w_mfgr}'")
+        # cp.save(filepath_w_gogr, GR_avg_gogrW)
+        # print(f"Raster array saved to '{filepath_w_gogr}'")
         
 
     # if saveGORaster:
@@ -241,10 +248,10 @@ recip_list = [0.75]
 #span = 6 # changing span below
 
 # Trial Params
-numBins =  5000 # 5000
-useCS = 1
+numBins = 5000 
+useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 1000 # 150
+numTrial = 1000
 MFGO_PLAST = 1
 GOGO_PLAST = 0
 GRGO_PLAST = 0
@@ -253,7 +260,7 @@ GOGR_PLAST = 0
 
 # saving to hard drive
 saveDir = '/home/data/einez'
-expName = 'MFGoGr_simple_mfgoplast_diff_1000_trial'
+expName = 'MFGoGr_shuffledMFisi_noCS_noGoGo_mfgoplast_allcell_1000_trial'
 
 # Save Rasters
 saveGORaster = True
@@ -279,4 +286,4 @@ for i in range(len(recip_list)):
             span = int(conv/2) if conv > 5 else 6 
             filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr = gen_filepaths(expName, conv, gogoW)
             recip = round(conv * recip_list[i])
-            run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv)
+            run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv, gogoW = 0)

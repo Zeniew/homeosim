@@ -25,6 +25,11 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
     # 2. Process data by Trial (Average across time steps)
     # Instead of flattening, we average axis 1 (time) to get one value per trial
     weights_per_trial = np.mean(weights, axis=1)
+
+    # #---
+    # # TEST: ONLY PLOTTING WEIGHT OF FIRST CELL
+    # weights_per_trial = weights[:, 2]  # Take only the first weight from each trial
+    # # ---   
     
     # Create the X-axis for Trials
     time_axis = np.arange(num_trials)
@@ -92,8 +97,8 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
 
 
 # --- Execution ---
-weights_data = np.load('/home/data/einez/MFGoGr_simple_mfgoplast_diff_1000_trial_mfgoW.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_simple_mfgoplast_diff_1000_trial_mfgoW.png"
+weights_data = np.load('/home/data/einez/MFGoGr_stagnantMFisi_noCS_mfgoplast_allcell_1000_trial_mfgoW.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_stagnantMFisi_noCS_mfgoplast_allcell_1000_trial_mfgoW.png"
 
 # Plotting MFGO (Type 3)
 plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=3)

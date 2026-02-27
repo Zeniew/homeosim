@@ -1,0 +1,95 @@
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial 0 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 0 Golgi Cell 2 Spike Count: 1.0 Error: 24.0
+Trial 0: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004213
+Trial: 1, Time:47.397s
+Trial 1 Golgi Cell 1 Spike Count: 44.0 Error: 0.0
+Trial 1 Golgi Cell 2 Spike Count: 116.0 Error: -91.0
+Trial 1: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004200
+Trial: 2, Time:35.259s
+Trial 2 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 2 Golgi Cell 2 Spike Count: 58.0 Error: -33.0
+Trial 2: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004187
+Trial: 3, Time:36.544s
+Trial 3 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 3 Golgi Cell 2 Spike Count: 0.0 Error: 25.0
+Trial 3: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004200
+Trial: 4, Time:37.027s
+Trial 4 Golgi Cell 1 Spike Count: 82.0 Error: 0.0
+Trial 4 Golgi Cell 2 Spike Count: 1.0 Error: 24.0
+Trial 4: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004213
+Trial: 5, Time:36.645s
+Trial 5 Golgi Cell 1 Spike Count: 1.0 Error: 0.0
+Trial 5 Golgi Cell 2 Spike Count: 2.0 Error: 23.0
+Trial 5: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004225
+Trial: 6, Time:37.772s
+Trial 6 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 6 Golgi Cell 2 Spike Count: 0.0 Error: 25.0
+Trial 6: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004238
+Trial: 7, Time:36.565s
+Trial 7 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 7 Golgi Cell 2 Spike Count: 1.0 Error: 24.0
+Trial 7: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004251
+Trial: 8, Time:36.403s
+Trial 8 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 8 Golgi Cell 2 Spike Count: 5.0 Error: 20.0
+Trial 8: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004263
+Trial: 9, Time:38.155s
+Trial 9 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 9 Golgi Cell 2 Spike Count: 8.0 Error: 17.0
+Trial 9: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004276
+Trial: 10, Time:37.559s
+Trial 10 Golgi Cell 1 Spike Count: 5.0 Error: 0.0
+Trial 10 Golgi Cell 2 Spike Count: 152.0 Error: -127.0
+Trial 10: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004263
+Trial: 11, Time:37.998s
+Trial 11 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 11 Golgi Cell 2 Spike Count: 3.0 Error: 22.0
+Trial 11: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004276
+Trial: 12, Time:37.841s
+Trial 12 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 12 Golgi Cell 2 Spike Count: 2.0 Error: 23.0
+Trial 12: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004289
+Trial: 13, Time:36.190s
+Trial 13 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 13 Golgi Cell 2 Spike Count: 0.0 Error: 25.0
+Trial 13: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004302
+Trial: 14, Time:36.679s
+Trial 14 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 14 Golgi Cell 2 Spike Count: 1.0 Error: 24.0
+Trial 14: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004315
+Trial: 15, Time:38.310s
+Trial 15 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 15 Golgi Cell 2 Spike Count: 1.0 Error: 24.0
+Trial 15: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004328
+Trial: 16, Time:38.032s
+Trial 16 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 16 Golgi Cell 2 Spike Count: 199.0 Error: -174.0
+Trial 16: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004315
+Trial: 17, Time:38.208s
+Trial 17 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 17 Golgi Cell 2 Spike Count: 4.0 Error: 21.0
+Trial 17: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004328
+Trial: 18, Time:38.377s
+Trial 18 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 18 Golgi Cell 2 Spike Count: 0.0 Error: 25.0
+Trial 18: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004341
+Trial: 19, Time:37.370s
+Trial 19 Golgi Cell 1 Spike Count: 0.0 Error: 0.0
+Trial 19 Golgi Cell 2 Spike Count: 158.0 Error: -133.0
+Trial 19: Cell 1 (Static) = 0.004200 | Cell 2 (Plastic) = 0.004328
+Trial: 20, Time:38.043s
+Raster array saved to '/home/data/einez/MFGoGr_newMFisi_mfgoplast_onecell_20_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/MFGoGr_newMFisi_mfgoplast_onecell_20_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/MFGoGr_newMFisi_mfgoplast_onecell_20_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/MFGoGr_newMFisi_mfgoplast_onecell_20_trial_mfgoW.npy'
+python3: can't open file '/home/aw39625/minisim/control_1.py': [Errno 2] No such file or directory

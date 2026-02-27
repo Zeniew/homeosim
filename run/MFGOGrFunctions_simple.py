@@ -15,6 +15,29 @@ class Mossy(): # MF Objects, entire network of MF per object
         self.act = np.zeros(self.numMossy, dtype = np.uint8) # activity of MFs, indicated by 0/1
         self.sizeOfDist = 1000 # size of the ISI distribution
         self.MFisiDistribution = np.zeros((101, self.sizeOfDist), dtype = int) # 2D array, with 101 rows of arrays that consist of 1000 zeroes , each row corresponds to ISI of particular frequency, where we select the new ISI distribution from
+        self.generate_MFisiDistribution() # generate the ISI distribution for each frequency and fill MFisiDistribution
+
+        # self.MFisi = np.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
+
+        # for i in range(0, 101): # for each integer from 0 to 100 <-- for gnenerating frequencies?
+        #     if i == 0 : f = 1000 # f = firing frequency
+        #     else: f = 1000.0/(i) 
+        #     f_stdev = f/5.0  # why 5.0?
+        #     # cp.random.normal(loc, scale, size) <-- generate random numbers from a normal distribution, characterized by mean, stdev, and last param = number of random numbers to generate
+        #     ISItemp = np.random.normal(loc = f, scale = f_stdev, size = self.sizeOfDist) # create an array of random integers selected from normal distribution of ISI values with mean f and standard deviation f_stdev, these will be our "countdown" ISI values
+        #     # check for values less than 5 and replace with 5
+        #     for j in range(0, self.sizeOfDist):
+        #         if ISItemp[j] < 5: ISItemp[j] = 5
+        #     # fill temp normal values for row i of MFisiDistribution <-- generates the ISI distribution for each frequency
+        #     self.MFisiDistribution[i, :] = ISItemp
+
+        # # Set Frequency index selection arrays <-- just curious, why not use normal distribution for the MF freq? is it completely uniform
+        # self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
+        # self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
+        # # choose CS MF
+        # self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
+
+    def generate_MFisiDistribution(self):
         self.MFisi = np.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
 
         for i in range(0, 101): # for each integer from 0 to 100 <-- for gnenerating frequencies?
@@ -34,7 +57,7 @@ class Mossy(): # MF Objects, entire network of MF per object
         self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
         # choose CS MF
         self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
-
+    
     def do_MF_dist(self, timestep, useCS):
         self.act.fill(0) # reset activity of MFs to 0 for new timestep
         isi_mask = (self.MFisi == 0) # boolean array indicating which MF fired, true where MFisi is 0, false otherwise
@@ -100,7 +123,7 @@ class Mossy(): # MF Objects, entire network of MF per object
         return self.act
             
 class Golgi(): # class of Golgi cells, entire network of Golgi cells
-    def __init__(self, n, csON, csOFF, useCS, numBins, mfgo_plast = 0, gogo_plast = 0, grgo_plast = 0, gogo_weight = 0.0125, mfgo_weight = 0.0042, grgo_weight = 0.0007):
+    def __init__(self, n, csON, csOFF, useCS, numBins, mfgo_plast = 0, gogo_plast = 0, grgo_plast = 0, gogo_weight = 0.0125, mfgo_weight = 0.0042, grgo_weight = 0.0007, plast_ratio = 1):
         ### Constants
         self.numGolgi = n
         self.useCS = useCS
@@ -120,6 +143,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.threshRest = -34.0 # resting threshold for Golgi cells
 
         ##### Plasticity
+        self.plast_pop_portion = plast_ratio # portion of population that undergoes plasticity, out of total population of Golgi cells
         self.mfgo_plast = mfgo_plast
         self.gogo_plast = gogo_plast
         self.grgo_plast = grgo_plast
@@ -227,34 +251,44 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
             self.inputGRGO = goInputs
 
     def update_weight(self, t, exc_or_inh, weight_array):
+        plast_cells = np.random.choice(self.numGolgi, int(self.numGolgi * self.plast_pop_portion), replace = False) # randomly select portion of Golgi cells to undergo plasticity
 
         count = np.sum(self.act, axis = 0) # count spikes over trial for each Golgi cell
-        count_float = count.astype(float) # <--- CRITICAL FIX
+        count_float = count.astype(float)
         # 2. Calculate Error
         error = self.target_spikes - count_float # error
 
-        # # Only print for the first trial or first few updates to avoid spam
-        # if t < 2: 
-        #     print(f"\n--- DEBUG PLASTICITY (Type {exc_or_inh}) ---")
-        #     print(f"Target Spikes: {self.target_spikes}")
-        #     print(f"Mean Count Seen: {np.mean(count):.2f}")
-        #     print(f"Max Count Seen:  {np.max(count)}")
-        #     print(f"Min Error:       {np.min(error)}")
-        #     print(f"Mean Weight Before: {np.mean(weight_array):.6f}")
-        # # ------------------------
+        # #---
+        # # TESTING ONLY ONE CELL
+        # error = np.zeros(self.numGolgi, dtype = np.float32) # reset error to 0
+        # error[2] = self.target_spikes - count_float[2] # only first cell has error
+        # print("Trial", t, "Golgi Cell 1 Spike Count:", count_float[1], "Error:", error[1])
+        # print("Trial", t, "Golgi Cell 2 Spike Count:", count_float[2], "Error:", error[2])
+        # #---
 
         # 3. Excitatory vs Inhibitory
         if exc_or_inh == 2:
             error = -error 
         
         # # 4. Asymmetric Learning Rate
+        # Fix!! error = 0 should make the constant 1
         learning_rates = np.where(error > 0, self.plast_mult_constant, 1/self.plast_mult_constant) # use asymmetric learning rates based on error sign
+        learning_rates = np.where(error == 0, 1, learning_rates) # if error is 0, set learning rate to 1 (no change)
+
+        # 4.5 Filter out the non-plastic cells
+        # Create a boolean mask of all False, then set the plastic cell indices to True
+        is_plastic = np.zeros(self.numGolgi, dtype=bool)
+        is_plastic[plast_cells] = True 
+        
+        # Where is_plastic is False, force the learning rate to be 1.0 (no weight change)
+        learning_rates = np.where(is_plastic, learning_rates, 1.0)
+        # -----------------
 
         # 5. Additive Plasticity
         weight_array = weight_array * learning_rates
 
         # # Clip weights
-        # weight_array = np.clip(weight_array, 0.0, 1.0)
+        weight_array = np.clip(weight_array, 0.0, 1.0)
 
         return weight_array
 
