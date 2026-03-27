@@ -97,8 +97,8 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
 
 
 # --- Execution ---
-weights_data = np.load('/home/data/einez/MFGoGr_stagnantMFisi_noCS_mfgoplast_allcell_1000_trial_mfgoW.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_stagnantMFisi_noCS_mfgoplast_allcell_1000_trial_mfgoW.png"
+weights_data = np.load('/home/data/einez/MFGoGr_stagnantMFisi_noCS_noGoGo_mfgoplast_grgoplast_allcell_500_trial_grgoW.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_stagnantMFisi_noCS_noGoGo_mfgoplast_grgoplast_allcell_500_trial_grgoW.png"
 
-# Plotting MFGO (Type 3)
-plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=3)
+# Plotting GRGO (Type 1)
+plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=1)

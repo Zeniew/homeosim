@@ -45,11 +45,11 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     plt.figure(figsize=(10, 6))
 
     # Flatten the array to get the distribution of every cell's frequency across the sliced trials
-    flat_freqs = freq.flatten()
-    global_avg = np.mean(flat_freqs)
+    cell_avg_freqs = np.mean(freq, axis=0)
+    global_avg = np.mean(cell_avg_freqs)
 
     # Plot the histogram
-    plt.hist(flat_freqs, bins=50, color='skyblue', edgecolor='black', alpha=0.8)
+    plt.hist(cell_avg_freqs, bins=50, color='skyblue', edgecolor='black', alpha=0.8)
 
     # Add vertical reference lines
     plt.axvline(global_avg, color='red', linestyle='dashed', linewidth=2, label=f'Global Average: {global_avg:.2f} Hz')
@@ -75,7 +75,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/MFGoGr_shuffledMFisi_noCS_noGoGo_mfgoplast_halfcell_50_trial_GOrasters.npy' 
+raster_path = '/home/data/einez/MFGoGr_intrinsic_excitability_stagnantMF_noCS_noGoGo_nogrGo_GOplast_500_trial_GOrasters.npy' 
 
 if os.path.exists(raster_path):
     raster_data = np.load(raster_path)
@@ -85,7 +85,7 @@ if os.path.exists(raster_path):
     current_cell_type = 2
 
     # 3. Define save location
-    save_filename = "MFGoGr_shuffledMFisi_noCS_noGoGo_mfgoplast_halfcell_50_trial_histogram.png"
+    save_filename = "MFGoGr_intrinsic_excitability_stagnantMF_noCS_noGoGo_nogrGo_GOplast_500_trial_histogram.png"
     plot_save_path = f"/home/aw39625/minisim/Results/Firing_Freq_Plots/{save_filename}"
 
     # 4. Run the function
