@@ -17,7 +17,7 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
         5: "GOGR Weights Across Time"
     }
     title = titles.get(weights_type, "Weights Across Time")
-
+    # weights = weights[:, 1:numcells]
     print("Array shape:", weights.shape)
     num_trials = weights.shape[0]
     steps_per_trial = weights.shape[1]
@@ -34,9 +34,18 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
     # Create the X-axis for Trials
     time_axis = np.arange(num_trials)
 
-    plt.figure(figsize=(18, 6))
+    plt.figure(figsize=(8, 6))
 
-    # 3. Plot the trial averages
+    # Plot individual cell weight traces across trials (lighter, thinner)
+    for cell in range(1, weights.shape[1]):
+        plt.plot(
+            time_axis,
+            weights[:, cell], 
+            alpha=0.3, 
+            linewidth=0.8
+        )
+
+     # 3. Plot the trial averages
     plt.plot(
         time_axis, 
         weights_per_trial, 
@@ -47,7 +56,6 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
         label='Mean Weight per Trial'
     )
 
-    # (Vertical lines for trial boundaries are no longer needed since X-axis IS trials)
 
     plt.xlabel("Trial Number") # Fixed X-axis label
 
@@ -97,8 +105,10 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
 
 
 # --- Execution ---
-weights_data = np.load('/home/data/einez/MFGoGr_stagnantMFisi_noCS_noGoGo_mfgoplast_grgoplast_allcell_500_trial_grgoW.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_stagnantMFisi_noCS_noGoGo_mfgoplast_grgoplast_allcell_500_trial_grgoW.png"
+weights_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial_mfgoW.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial_mfgoW.png"
 
-# Plotting GRGO (Type 1)
-plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=1)
+weights_data = weights_data[:, 1:4096]
+
+# Plotting MFGO (Type 3)
+plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=3)

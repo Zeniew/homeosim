@@ -172,8 +172,8 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, co
         # GRrasters[trial] = GR.get_act()
         all_end = time.time()
         # Shuffling MF
-        if trial % 50 == 0: 
-            MF.generate_MFisiDistribution()
+        # if trial % 50 == 0: 
+        MF.generate_MFisiDistribution()
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
     
 
@@ -235,7 +235,7 @@ numTrial = 1000
 GO_PLAST = 1
 GR_PLAST = 0
 # saving to hard drive
-expName = 'MFGoGr_IE_shuffleMF50_noCS_yesGoGo_yesgrGo_GOplast_1000_trial'
+expName = 'MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial'
 saveDir = f'/home/data/einez/homeostat_IE/{expName}'
 
 

@@ -4,6 +4,7 @@ import os
 import time
 # import json 
 
+# import MFGoGrFunction_updated_gr_raster_synaptic_scaling as mfgogr
 import MFGOGrFunctions_synaptic_scaling as mfgogr
 # import playground_MFGOGRFunctions as mfgogr
 import importConnect as connect
@@ -54,7 +55,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     # # Init GR class
     GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_weight = mfgrW, gogr_weight = gogrW)
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
-    # GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
+    # GRrasters = np.zeros((numTrial, numGR), dtype = np.uint8)
     # GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
     # GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
 
@@ -193,8 +194,8 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         # GRrasters[trial] = GR.get_act()
         all_end = time.time()
         # Shuffling MF
-        if trial % 50 == 0: 
-            MF.generate_MFisiDistribution()
+        # if trial % 50 == 0: 
+        MF.generate_MFisiDistribution()
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
     
 
@@ -260,15 +261,15 @@ recip_list = [0.75]
 numBins = 5000 
 useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 1000
+numTrial = 10
 MFGO_PLAST = 0
 GOGO_PLAST = 0
-GRGO_PLAST = 1
+GRGO_PLAST = 0
 MFGR_PLAST = 0
 GOGR_PLAST = 0
 
 # saving to hard drive
-expName = 'MFGoGr_SS_shuffleMF50_noCS_yesGoGo_yesgrGo_grgoplast__allcell_1000_trial'
+expName = 'MFGoGr_SS_shuffleMF10percent_noCS_100GoGo_100grGo_noplast_allcell_10_trial'
 saveDir = f'/home/data/einez/homeostat_SS/{expName}'
 
 # Save Rasters

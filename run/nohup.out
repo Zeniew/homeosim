@@ -3682,3 +3682,473 @@ Raster array saved to '/home/data/einez/MFGoGr_intrinsic_excitability_stagnantMF
 Raster array saved to '/home/data/einez/MFGoGr_intrinsic_excitability_stagnantMF_noCS_noGoGo_yesgrGo_GOplast_500_trial_gogoW.npy'
 Raster array saved to '/home/data/einez/MFGoGr_intrinsic_excitability_stagnantMF_noCS_noGoGo_yesgrGo_GOplast_500_trial_grgoW.npy'
 Raster array saved to '/home/data/einez/MFGoGr_intrinsic_excitability_stagnantMF_noCS_noGoGo_yesgrGo_GOplast_500_trial_mfgoW.npy'
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+Traceback (most recent call last):
+  File "/home/aw39625/minisim/run/control_1.py", line 299, in <module>
+    run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv, gogoW = 0.01375)
+  File "/home/aw39625/minisim/run/control_1.py", line 80, in run_session
+    GOGR_connect_arr = connect.read_connect(GOGR_importPath, numGO, 12800) # TRUNCATE: just grab the first 975 columns, the furthest start of -1 is at 975
+  File "/home/aw39625/minisim/run/importConnect.py", line 23, in read_connect
+    array_2d = np.array(array_2d)
+KeyboardInterrupt
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial: 1, Time:19.528s
+Trial: 2, Time:19.107s
+Trial: 3, Time:19.168s
+Trial: 4, Time:19.085s
+Trial: 5, Time:19.103s
+Trial: 6, Time:19.195s
+Trial: 7, Time:18.924s
+Trial: 8, Time:18.770s
+Trial: 9, Time:18.887s
+Trial: 10, Time:19.588s
+Trial: 11, Time:19.455s
+Trial: 12, Time:19.287s
+Trial: 13, Time:19.123s
+Trial: 14, Time:18.480s
+Trial: 15, Time:18.301s
+Trial: 16, Time:18.357s
+Trial: 17, Time:18.568s
+Trial: 18, Time:18.579s
+Trial: 19, Time:18.569s
+Trial: 20, Time:18.854s
+Trial: 21, Time:19.210s
+Trial: 22, Time:19.377s
+Trial: 23, Time:19.228s
+Trial: 24, Time:19.271s
+Trial: 25, Time:19.251s
+Trial: 26, Time:19.250s
+Trial: 27, Time:19.166s
+Trial: 28, Time:19.228s
+Trial: 29, Time:19.254s
+Trial: 30, Time:19.239s
+Trial: 31, Time:19.231s
+Trial: 32, Time:19.000s
+Trial: 33, Time:19.319s
+Trial: 34, Time:19.278s
+Trial: 35, Time:18.923s
+Trial: 36, Time:19.095s
+Trial: 37, Time:18.916s
+Trial: 38, Time:19.035s
+Trial: 39, Time:18.966s
+Trial: 40, Time:18.707s
+Trial: 41, Time:18.699s
+Trial: 42, Time:18.566s
+Trial: 43, Time:18.569s
+Trial: 44, Time:18.631s
+Trial: 45, Time:18.665s
+Trial: 46, Time:18.791s
+Trial: 47, Time:18.733s
+Trial: 48, Time:18.685s
+Trial: 49, Time:18.657s
+Trial: 50, Time:19.031s
+Trial: 51, Time:19.638s
+Trial: 52, Time:19.812s
+Trial: 53, Time:20.417s
+Trial: 54, Time:20.263s
+Trial: 55, Time:20.845s
+Trial: 56, Time:20.457s
+Trial: 57, Time:20.659s
+Trial: 58, Time:21.233s
+Trial: 59, Time:21.242s
+Trial: 60, Time:20.770s
+Trial: 61, Time:20.791s
+Trial: 62, Time:20.560s
+Trial: 63, Time:20.464s
+Trial: 64, Time:20.507s
+Trial: 65, Time:20.547s
+Trial: 66, Time:20.857s
+Trial: 67, Time:20.566s
+Trial: 68, Time:20.502s
+Trial: 69, Time:20.616s
+Trial: 70, Time:20.179s
+Trial: 71, Time:20.478s
+Trial: 72, Time:20.685s
+Trial: 73, Time:20.926s
+Trial: 74, Time:20.902s
+Trial: 75, Time:21.300s
+Trial: 76, Time:21.235s
+Trial: 77, Time:21.256s
+Trial: 78, Time:21.234s
+Trial: 79, Time:21.323s
+Trial: 80, Time:21.338s
+Trial: 81, Time:21.259s
+Trial: 82, Time:21.131s
+Trial: 83, Time:20.952s
+Trial: 84, Time:20.996s
+Trial: 85, Time:21.098s
+Trial: 86, Time:21.052s
+Trial: 87, Time:21.070s
+Trial: 88, Time:21.123s
+Trial: 89, Time:20.799s
+Trial: 90, Time:20.650s
+Trial: 91, Time:20.793s
+Trial: 92, Time:20.409s
+Trial: 93, Time:20.472s
+Trial: 94, Time:20.114s
+Trial: 95, Time:20.363s
+Trial: 96, Time:20.504s
+Trial: 97, Time:20.097s
+Trial: 98, Time:20.181s
+Trial: 99, Time:19.995s
+Trial: 100, Time:20.080s
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_110GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_110GoGo_100grGo_noplast_allcell_100_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_110GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_110GoGo_100grGo_noplast_allcell_100_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_110GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_110GoGo_100grGo_noplast_allcell_100_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_110GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_110GoGo_100grGo_noplast_allcell_100_trial_mfgoW.npy'
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial: 1, Time:24.916s
+Trial: 2, Time:19.609s
+Trial: 3, Time:20.117s
+Trial: 4, Time:19.435s
+Trial: 5, Time:19.942s
+Trial: 6, Time:19.980s
+Trial: 7, Time:20.414s
+Trial: 8, Time:20.594s
+Trial: 9, Time:20.462s
+Trial: 10, Time:20.640s
+Trial: 11, Time:20.333s
+Trial: 12, Time:21.094s
+Trial: 13, Time:21.052s
+Trial: 14, Time:21.197s
+Trial: 15, Time:21.184s
+Trial: 16, Time:21.338s
+Trial: 17, Time:21.538s
+Trial: 18, Time:21.592s
+Trial: 19, Time:21.430s
+Trial: 20, Time:21.288s
+Trial: 21, Time:21.238s
+Trial: 22, Time:21.245s
+Trial: 23, Time:21.367s
+Trial: 24, Time:21.199s
+Trial: 25, Time:20.999s
+Trial: 26, Time:20.904s
+Trial: 27, Time:20.948s
+Trial: 28, Time:20.854s
+Trial: 29, Time:21.003s
+Trial: 30, Time:20.801s
+Trial: 31, Time:20.804s
+Trial: 32, Time:21.123s
+Trial: 33, Time:21.213s
+Trial: 34, Time:20.965s
+Trial: 35, Time:20.935s
+Trial: 36, Time:20.595s
+Trial: 37, Time:20.909s
+Trial: 38, Time:20.633s
+Trial: 39, Time:20.678s
+Trial: 40, Time:20.620s
+Trial: 41, Time:20.721s
+Trial: 42, Time:20.635s
+Trial: 43, Time:20.442s
+Trial: 44, Time:20.782s
+Trial: 45, Time:20.944s
+Trial: 46, Time:20.918s
+Trial: 47, Time:20.726s
+Trial: 48, Time:20.767s
+Trial: 49, Time:20.613s
+Trial: 50, Time:20.166s
+Trial: 51, Time:20.144s
+Trial: 52, Time:20.206s
+Trial: 53, Time:20.172s
+Trial: 54, Time:20.047s
+Trial: 55, Time:20.208s
+Trial: 56, Time:20.281s
+Trial: 57, Time:20.041s
+Trial: 58, Time:20.291s
+Trial: 59, Time:20.227s
+Trial: 60, Time:20.207s
+Trial: 61, Time:20.067s
+Trial: 62, Time:20.172s
+Trial: 63, Time:20.173s
+Trial: 64, Time:20.131s
+Trial: 65, Time:20.270s
+Trial: 66, Time:20.134s
+Trial: 67, Time:20.223s
+Trial: 68, Time:19.895s
+Trial: 69, Time:19.783s
+Trial: 70, Time:19.681s
+Trial: 71, Time:19.849s
+Trial: 72, Time:19.832s
+Trial: 73, Time:19.970s
+Trial: 74, Time:19.941s
+Trial: 75, Time:19.906s
+Trial: 76, Time:19.726s
+Trial: 77, Time:19.698s
+Trial: 78, Time:19.598s
+Trial: 79, Time:19.906s
+Trial: 80, Time:19.847s
+Trial: 81, Time:20.169s
+Trial: 82, Time:20.190s
+Trial: 83, Time:20.246s
+Trial: 84, Time:20.379s
+Trial: 85, Time:20.283s
+Trial: 86, Time:20.202s
+Trial: 87, Time:20.369s
+Trial: 88, Time:20.499s
+Trial: 89, Time:20.526s
+Trial: 90, Time:19.981s
+Trial: 91, Time:19.942s
+Trial: 92, Time:20.280s
+Trial: 93, Time:20.024s
+Trial: 94, Time:20.224s
+Trial: 95, Time:20.416s
+Trial: 96, Time:20.302s
+Trial: 97, Time:20.299s
+Trial: 98, Time:20.193s
+Trial: 99, Time:20.153s
+Trial: 100, Time:20.210s
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_120GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_120GoGo_100grGo_noplast_allcell_100_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_120GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_120GoGo_100grGo_noplast_allcell_100_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_120GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_120GoGo_100grGo_noplast_allcell_100_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_120GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_120GoGo_100grGo_noplast_allcell_100_trial_mfgoW.npy'
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial: 1, Time:35.707s
+Trial: 2, Time:19.840s
+Trial: 3, Time:20.195s
+Trial: 4, Time:20.311s
+Trial: 5, Time:20.123s
+Trial: 6, Time:20.235s
+Trial: 7, Time:20.553s
+Trial: 8, Time:20.793s
+Trial: 9, Time:20.818s
+Trial: 10, Time:20.937s
+Trial: 11, Time:20.872s
+Trial: 12, Time:21.042s
+Trial: 13, Time:20.785s
+Trial: 14, Time:20.527s
+Trial: 15, Time:20.694s
+Trial: 16, Time:20.803s
+Trial: 17, Time:21.131s
+Trial: 18, Time:20.892s
+Trial: 19, Time:20.853s
+Trial: 20, Time:20.566s
+Trial: 21, Time:20.769s
+Trial: 22, Time:21.068s
+Trial: 23, Time:21.148s
+Trial: 24, Time:21.150s
+Trial: 25, Time:20.811s
+Trial: 26, Time:20.787s
+Trial: 27, Time:20.554s
+Trial: 28, Time:20.899s
+Trial: 29, Time:20.308s
+Trial: 30, Time:20.762s
+Trial: 31, Time:20.721s
+Trial: 32, Time:20.790s
+Trial: 33, Time:20.510s
+Trial: 34, Time:20.471s
+Trial: 35, Time:20.328s
+Trial: 36, Time:20.693s
+Trial: 37, Time:20.930s
+Trial: 38, Time:20.574s
+Trial: 39, Time:20.642s
+Trial: 40, Time:20.763s
+Trial: 41, Time:21.051s
+Trial: 42, Time:21.018s
+Trial: 43, Time:20.837s
+Trial: 44, Time:20.785s
+Trial: 45, Time:20.944s
+Trial: 46, Time:20.834s
+Trial: 47, Time:20.507s
+Trial: 48, Time:20.292s
+Trial: 49, Time:20.177s
+Trial: 50, Time:20.261s
+Trial: 51, Time:20.208s
+Trial: 52, Time:20.356s
+Trial: 53, Time:20.253s
+Trial: 54, Time:20.304s
+Trial: 55, Time:20.177s
+Trial: 56, Time:20.137s
+Trial: 57, Time:20.344s
+Trial: 58, Time:20.466s
+Trial: 59, Time:20.338s
+Trial: 60, Time:20.478s
+Trial: 61, Time:20.422s
+Trial: 62, Time:20.568s
+Trial: 63, Time:20.201s
+Trial: 64, Time:20.123s
+Trial: 65, Time:19.634s
+Trial: 66, Time:20.261s
+Trial: 67, Time:20.185s
+Trial: 68, Time:20.416s
+Trial: 69, Time:20.296s
+Trial: 70, Time:20.163s
+Trial: 71, Time:20.266s
+Trial: 72, Time:20.047s
+Trial: 73, Time:19.859s
+Trial: 74, Time:19.716s
+Trial: 75, Time:20.074s
+Trial: 76, Time:19.807s
+Trial: 77, Time:19.760s
+Trial: 78, Time:19.670s
+Trial: 79, Time:20.017s
+Trial: 80, Time:20.096s
+Trial: 81, Time:20.077s
+Trial: 82, Time:20.054s
+Trial: 83, Time:19.764s
+Trial: 84, Time:19.671s
+Trial: 85, Time:19.900s
+Trial: 86, Time:19.919s
+Trial: 87, Time:20.179s
+Trial: 88, Time:19.891s
+Trial: 89, Time:19.889s
+Trial: 90, Time:20.226s
+Trial: 91, Time:20.841s
+Trial: 92, Time:20.067s
+Trial: 93, Time:20.219s
+Trial: 94, Time:19.960s
+Trial: 95, Time:19.951s
+Trial: 96, Time:20.089s
+Trial: 97, Time:19.684s
+Trial: 98, Time:19.266s
+Trial: 99, Time:18.806s
+Trial: 100, Time:18.784s
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_130GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_130GoGo_100grGo_noplast_allcell_100_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_130GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_130GoGo_100grGo_noplast_allcell_100_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_130GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_130GoGo_100grGo_noplast_allcell_100_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_130GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_130GoGo_100grGo_noplast_allcell_100_trial_mfgoW.npy'
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial: 1, Time:18.709s
+Trial: 2, Time:18.171s
+Trial: 3, Time:18.333s
+Trial: 4, Time:17.748s
+Trial: 5, Time:18.046s
+Trial: 6, Time:18.264s
+Trial: 7, Time:17.882s
+Trial: 8, Time:17.904s
+Trial: 9, Time:17.902s
+Trial: 10, Time:18.163s
+Trial: 11, Time:17.858s
+Trial: 12, Time:18.029s
+Trial: 13, Time:18.104s
+Trial: 14, Time:18.277s
+Trial: 15, Time:18.357s
+Trial: 16, Time:18.806s
+Trial: 17, Time:18.354s
+Trial: 18, Time:18.377s
+Trial: 19, Time:18.120s
+Trial: 20, Time:18.066s
+Trial: 21, Time:17.837s
+Trial: 22, Time:17.823s
+Trial: 23, Time:17.920s
+Trial: 24, Time:17.847s
+Trial: 25, Time:17.944s
+Trial: 26, Time:18.085s
+Trial: 27, Time:18.387s
+Trial: 28, Time:18.253s
+Trial: 29, Time:18.369s
+Trial: 30, Time:18.039s
+Trial: 31, Time:17.759s
+Trial: 32, Time:17.726s
+Trial: 33, Time:17.860s
+Trial: 34, Time:17.845s
+Trial: 35, Time:18.484s
+Trial: 36, Time:18.304s
+Trial: 37, Time:18.132s
+Trial: 38, Time:18.357s
+Trial: 39, Time:18.258s
+Trial: 40, Time:18.085s
+Trial: 41, Time:18.365s
+Trial: 42, Time:19.504s
+Trial: 43, Time:19.962s
+Trial: 44, Time:20.061s
+Trial: 45, Time:19.094s
+Trial: 46, Time:19.270s
+Trial: 47, Time:19.266s
+Trial: 48, Time:19.087s
+Trial: 49, Time:19.416s
+Trial: 50, Time:19.180s
+Trial: 51, Time:19.531s
+Trial: 52, Time:19.621s
+Trial: 53, Time:19.653s
+Trial: 54, Time:19.932s
+Trial: 55, Time:20.083s
+Trial: 56, Time:19.393s
+Trial: 57, Time:19.311s
+Trial: 58, Time:19.403s
+Trial: 59, Time:19.414s
+Trial: 60, Time:19.365s
+Trial: 61, Time:19.193s
+Trial: 62, Time:18.944s
+Trial: 63, Time:19.141s
+Trial: 64, Time:19.012s
+Trial: 65, Time:18.960s
+Trial: 66, Time:18.758s
+Trial: 67, Time:18.240s
+Trial: 68, Time:18.545s
+Trial: 69, Time:18.986s
+Trial: 70, Time:19.252s
+Trial: 71, Time:18.885s
+Trial: 72, Time:18.586s
+Trial: 73, Time:18.851s
+Trial: 74, Time:18.433s
+Trial: 75, Time:17.853s
+Trial: 76, Time:18.107s
+Trial: 77, Time:18.357s
+Trial: 78, Time:18.327s
+Trial: 79, Time:18.319s
+Trial: 80, Time:18.260s
+Trial: 81, Time:18.596s
+Trial: 82, Time:18.601s
+Trial: 83, Time:18.487s
+Trial: 84, Time:18.674s
+Trial: 85, Time:18.600s
+Trial: 86, Time:18.553s
+Trial: 87, Time:18.467s
+Trial: 88, Time:18.170s
+Trial: 89, Time:18.398s
+Trial: 90, Time:18.607s
+Trial: 91, Time:18.619s
+Trial: 92, Time:18.793s
+Trial: 93, Time:18.334s
+Trial: 94, Time:18.277s
+Trial: 95, Time:18.207s
+Trial: 96, Time:18.743s
+Trial: 97, Time:18.925s
+Trial: 98, Time:19.042s
+Trial: 99, Time:18.929s
+Trial: 100, Time:19.135s
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_100GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_100GoGo_100grGo_noplast_allcell_100_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_100GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_100GoGo_100grGo_noplast_allcell_100_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_100GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_100GoGo_100grGo_noplast_allcell_100_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_100GoGo_100grGo_noplast_allcell_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_100GoGo_100grGo_noplast_allcell_100_trial_mfgoW.npy'

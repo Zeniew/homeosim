@@ -15,8 +15,8 @@ class Mossy(): # MF Objects, entire network of MF per object
         self.act = np.zeros(self.numMossy, dtype = np.uint8) # activity of MFs, indicated by 0/1
         self.sizeOfDist = 1000 # size of the ISI distribution
         self.MFisiDistribution = np.zeros((101, self.sizeOfDist), dtype = int) # 2D array, with 101 rows of arrays that consist of 1000 zeroes , each row corresponds to ISI of particular frequency, where we select the new ISI distribution from
+        self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
         self.generate_MFisiDistribution() # generate the ISI distribution for each frequency and fill MFisiDistribution
-
         # self.MFisi = np.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
 
         # for i in range(0, 101): # for each integer from 0 to 100 <-- for gnenerating frequencies?
@@ -51,10 +51,15 @@ class Mossy(): # MF Objects, entire network of MF per object
                 if ISItemp[j] < 5: ISItemp[j] = 5
             # fill temp normal values for row i of MFisiDistribution <-- generates the ISI distribution for each frequency
             self.MFisiDistribution[i, :] = ISItemp
+        
+        rand_10_indices = np.random.choice(self.numMossy, int(0.1 * self.numMossy), replace = False) # randomly select 10% of the indices to be randomized
+        new_freq = np.random.randint(self.minBackground, self.maxBackground, int(0.1 * self.numMossy))
+        for i in range(len(rand_10_indices)):
+            self.MFfreqs[rand_10_indices[i]] = new_freq[i] # set the frequencies at the randomly selected indices to new random frequencies, this adds some variability to the MF frequencies while still keeping them mostly uniform
 
-        # Set Frequency index selection arrays <-- just curious, why not use normal distribution for the MF freq? is it completely uniform
-        self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
-        self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
+        # # Set Frequency index selection arrays <-- just curious, why not use normal distribution for the MF freq? is it completely uniform
+        # self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
+        # self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
         # choose CS MF
         self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
     

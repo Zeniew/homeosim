@@ -53,7 +53,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 
     # Add vertical reference lines
     plt.axvline(global_avg, color='red', linestyle='dashed', linewidth=2, label=f'Global Average: {global_avg:.2f} Hz')
-    plt.axvline(5.0, color='green', linestyle='dashed', linewidth=2, label='Homeostatic Target: 5.00 Hz')
+    plt.axvline(10.0, color='green', linestyle='dashed', linewidth=2, label='Homeostatic Target: 10.00 Hz')
 
     plt.xlabel(f"Average Firing Frequency (Hz) over last {trials_to_keep} trials")
     plt.ylabel("Count (Number of Cell-Trials)")
@@ -61,6 +61,8 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     plt.legend()
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.tight_layout()
+    plt.xlim(0, 80) # For SS
+    # plt.xlim(0, 50) # For IE
 
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
@@ -75,7 +77,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/MFGoGr_intrinsic_excitability_stagnantMF_noCS_noGoGo_nogrGo_GOplast_500_trial_GOrasters.npy' 
+raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial_GOrasters.npy' 
 
 if os.path.exists(raster_path):
     raster_data = np.load(raster_path)
@@ -85,7 +87,7 @@ if os.path.exists(raster_path):
     current_cell_type = 2
 
     # 3. Define save location
-    save_filename = "MFGoGr_intrinsic_excitability_stagnantMF_noCS_noGoGo_nogrGo_GOplast_500_trial_histogram.png"
+    save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial/GO_Firing_Frequency_Histogram.png"
     plot_save_path = f"/home/aw39625/minisim/Results/Firing_Freq_Plots/{save_filename}"
 
     # 4. Run the function

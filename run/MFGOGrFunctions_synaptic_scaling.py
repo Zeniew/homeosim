@@ -15,8 +15,9 @@ class Mossy(): # MF Objects, entire network of MF per object
         self.act = np.zeros(self.numMossy, dtype = np.uint8) # activity of MFs, indicated by 0/1
         self.sizeOfDist = 1000 # size of the ISI distribution
         self.MFisiDistribution = np.zeros((101, self.sizeOfDist), dtype = int) # 2D array, with 101 rows of arrays that consist of 1000 zeroes , each row corresponds to ISI of particular frequency, where we select the new ISI distribution from
+        self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
         self.generate_MFisiDistribution() # generate the ISI distribution for each frequency and fill MFisiDistribution
-
+        
         # self.MFisi = np.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
 
         # for i in range(0, 101): # for each integer from 0 to 100 <-- for gnenerating frequencies?
@@ -53,8 +54,13 @@ class Mossy(): # MF Objects, entire network of MF per object
             self.MFisiDistribution[i, :] = ISItemp
 
         # Set Frequency index selection arrays <-- just curious, why not use normal distribution for the MF freq? is it completely uniform
-        self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
-        self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
+        rand_10_indices = np.random.choice(self.numMossy, int(0.1 * self.numMossy), replace = False) # randomly select 10% of the indices to be randomized
+        new_freq = np.random.randint(self.minBackground, self.maxBackground, int(0.1 * self.numMossy))
+        for i in range(len(rand_10_indices)):
+            self.MFfreqs[rand_10_indices[i]] = new_freq[i] # set the frequencies at the randomly selected indices to new random frequencies, this adds some variability to the MF frequencies while still keeping them mostly uniform
+
+        # self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
+        # self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
         # choose CS MF
         self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
     
@@ -140,7 +146,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.NMDA_AMPA_ratioMFGO = 1.3 # ratio of NMDA to AMPA conductance for MF to Golgi synapse
 
         self.threshDecGo = 1- math.exp(-1.0/11.0) # (-msPerTimestep / threshDecTauGO), decay constant for Golgi threshold
-        self.threshRest = -34.0 # resting threshold for Golgi cells
+        self.threshRest = -38.0 # resting threshold for Golgi cells
 
         ##### Plasticity
         self.plast_pop_portion = plast_ratio # portion of population that undergoes plasticity, out of total population of Golgi cells
@@ -308,7 +314,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
 
 
 class Granule():
-    def __init__(self, n, csOFF, csON, useCS, trialSize, mfgr_weight = 0.0007, gogr_weight = 0.015):
+    def __init__(self, n, csOFF, csON, useCS, numBins, mfgr_weight = 0.0007, gogr_weight = 0.015):
         ### Constants
         self.numGranule = n
         self.csOFF, self.csON = csOFF, csON
@@ -348,7 +354,7 @@ class Granule():
         self.gKCa = np.zeros(self.numGranule, dtype = np.float32) # experimental K and Ca conductance, initialized to 0
         # Threshold
         self.currentThresh = np.full(self.numGranule, self.threshRest, dtype = np.float32) # current threshold of Granule cells, initialized to resting threshold
-        self.act = np.zeros((trialSize, self.numGranule), dtype = np.uint8) # activity of Granule cells over the entire trial, 2D array of size
+        self.act = np.zeros((numBins, self.numGranule), dtype = np.uint8) # activity of Granule cells over the entire trial, 2D array of size
         
         # Kernel stuff
         doGranulekernel_code = """
