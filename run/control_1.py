@@ -55,7 +55,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     # # Init GR class
     GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_weight = mfgrW, gogr_weight = gogrW)
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
-    # GRrasters = np.zeros((numTrial, numGR), dtype = np.uint8)
+    GRrasters = np.zeros((numTrial, numGR), dtype = np.uint8)
     # GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
     # GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
 
@@ -191,7 +191,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         GR.updateFinalState()
         # Rasters
         GOrasters[trial] = GO.get_act()
-        # GRrasters[trial] = GR.get_act()
+        GRrasters[trial] = GR.get_act()
         all_end = time.time()
         # Shuffling MF
         # if trial % 50 == 0: 
@@ -259,9 +259,9 @@ recip_list = [0.75]
 
 # Trial Params
 numBins = 5000 
-useCS = 0
+useCS = 1
 CSon, CSoff = 500, 3500
-numTrial = 10
+numTrial = 1
 MFGO_PLAST = 0
 GOGO_PLAST = 0
 GRGO_PLAST = 0
@@ -274,7 +274,7 @@ saveDir = f'/home/data/einez/homeostat_SS/{expName}'
 
 # Save Rasters
 saveGORaster = True
-saveGRRaster = False
+saveGRRaster = True
 saveMFRaster = False
 saveWeights = True
 

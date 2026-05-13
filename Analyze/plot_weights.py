@@ -32,7 +32,7 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
     # # ---   
     
     # Create the X-axis for Trials
-    time_axis = np.arange(num_trials)
+    time_axis = np.arange(num_trials) + 1 # Start from 1 for better readability on the plot
 
     plt.figure(figsize=(8, 6))
 
@@ -105,10 +105,21 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
 
 
 # --- Execution ---
-weights_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial_mfgoW.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_nogrGo_mfgoplast_allcell_1000_trial_mfgoW.png"
+weights_data = np.load('/home/data/einez/homeostat_playground/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_mfgrW.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_mfgrW.png"
 
-weights_data = weights_data[:, 1:4096]
+if weights_data.shape[1] > 4096:
+    weights_data = weights_data[:, 1:5000]  # Remove the first column (cell 0) to exclude it from the plot
+else:
+    weights_data = weights_data[:, 1:weights_data.shape[1]]  # Remove the first column (cell 0) to exclude it from the plot
 
-# Plotting MFGO (Type 3)
-plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=3)
+# Check if the values are "close enough"
+is_consistent = np.allclose(weights_data, weights_data[0], atol=1e-10)
+print(f"Are weights effectively the same? {is_consistent}")
+
+# Print weights to check if changing
+print(f"Sample weights from first trial:", weights_data[0, :5])  # Print first 5 weights from the first trial
+print(f"Sample weights from second trial:", weights_data[1, :5])  # Print first 5 weights from the last trial
+print(f"Sample weights from third trial:", weights_data[2, :5])  # Print first 5 weights from the third trial
+
+plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=4)

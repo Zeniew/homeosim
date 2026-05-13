@@ -27,6 +27,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     raster = raster[:, selected_indices]
     # Update num_cells after slicing
     num_cells = raster.shape[1] 
+    print(np.sum(raster)) 
 
     # --- CALCULATE FREQUENCY ---
     # Convert timestep count to seconds
@@ -66,13 +67,13 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
         plt.savefig(save_path, dpi=300, bbox_inches='tight')
         print(f"Plot saved to {save_path}")
     
-    print(f"Global Average Frequency ({type_name}): {np.mean(freq):.4f} Hz")
+    print(f"Global Average Frequency ({type_name}): {np.mean(freq)} Hz")
     plt.show()
 
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/homeostat_playground/MFGoGr_grrassterSS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_50_trial/MFGoGr_grrassterSS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_50_trial_GRrasters.npy' 
+raster_path = '/home/data/einez/homeostat_playground/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_GRrasters.npy' 
 raster_data = np.load(raster_path)
 
 print("Finished loading data")
@@ -81,7 +82,7 @@ print("Finished loading data")
 current_cell_type = 3
 
 # 3. Define save location
-save_filename = "MFGoGr_grrassterSS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_50_trial/GR_Firing_Frequency.png"
+save_filename = "MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/GR_Firing_Frequency.png"
 plot_save_path = f"/home/aw39625/minisim/Results/Firing_Freq_Plots/{save_filename}"
 
 # 4. Run the function

@@ -36,7 +36,7 @@ def gen_filepaths(exp_name, convergence, gogoW):
     
     return filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr #, filepath_params
 
-def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.001, gogoW = 0.0125):
+def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.0007, gogoW = 0.0125):
     
     print("Initializing objects...")
 
@@ -55,9 +55,9 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     # # Init GR class
     GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_weight = mfgrW, gogr_weight = gogrW)
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
-    # GRrasters = np.zeros((numTrial, numGR), dtype = np.uint32)
-    # GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
-    # GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
+    GRrasters = np.zeros((numTrial, numGR), dtype = np.int16)
+    GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
+    GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
 
     print("Objects initialized.")
 
@@ -115,7 +115,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         for t in range(0, numBins):
             # print(t, ":", GO.get_grgoW())
 
-            print(f"Trial {trial+1}, Time bin {t} ...")
+            # print(f"Trial {trial+1}, Time bin {t} ...")
             MFact = MF.do_MF_dist(t, useCS)
             # MF_end = time.time()
 
@@ -164,6 +164,12 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
 
             MFrasters[t, :] = MFact
         
+        GO_gogoW[trial] = (GO.get_gogoW()) 
+        GO_grgoW[trial] = (GO.get_grgoW())
+        GO_mfgoW[trial] = (GO.get_mfgoW())
+        GR_gogrW[trial] = (GR.get_gogrW())
+        GR_mfgrW[trial] = (GR.get_mfgrW())
+
         # Update plasticity weight
         if MFGO_PLAST == 1:
             GO.mfgoW = GO.update_weight(trial, exc_or_inh = 1, weight_array = GO.get_mfgoW())
@@ -178,20 +184,22 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             GO.grgoW = GO.update_weight(trial, exc_or_inh = 1, weight_array = GO.get_grgoW())
         if MFGR_PLAST == 1:
             GR.mfgrW = GR.update_weight(trial, exc_or_inh = 1, weight_array = GR.get_mfgrW())
+            GR.GPU_mfgrW = cp.asarray(GR.mfgrW) # sync to GPU after update
+            w = GR.get_mfgrW()
+            print(f"Trial {trial}: Cell 1 (Static) = {w[1]:.6f} | Cell 2 (Plastic) = {w[2]:.6f}")
         if GOGR_PLAST == 1:
             GR.gogrW = GR.update_weight(trial, exc_or_inh = 2, weight_array = GR.get_gogrW())
+            GR.GPU_gogrW = cp.asarray(GR.gogrW) # sync to GPU after update
+            w = GR.get_gogrW()
+            print(f"Trial {trial}: Cell 1 (Static) = {w[1]:.6f} | Cell 2 (Plastic) = {w[2]:.6f}")
     
-        GO_gogoW[trial] = (GO.get_gogoW()) 
-        GO_grgoW[trial] = (GO.get_grgoW())
-        GO_mfgoW[trial] = (GO.get_mfgoW())
-        # GR_gogrW[trial] = (GR.get_gogrW())
-        # GR_mfgrW[trial] = (GR.get_mfgrW())
+        
 
         # Final update
         GR.updateFinalState()
         # Rasters
         GOrasters[trial] = GO.get_act()
-        # GRrasters[trial] = GR.get_summed_act()
+        GRrasters[trial] = GR.get_summed_act()
         all_end = time.time()
         # Shuffling MF
         # if trial % 50 == 0: 
@@ -221,10 +229,10 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         print(f"Raster array saved to '{filepath_w_grgo}'")
         cp.save(filepath_w_mfgo, GO_mfgoW)
         print(f"Raster array saved to '{filepath_w_mfgo}'")
-        # cp.save(filepath_w_mfgr, GR_avg_mfgrW)
-        # print(f"Raster array saved to '{filepath_w_mfgr}'")
-        # cp.save(filepath_w_gogr, GR_avg_gogrW)
-        # print(f"Raster array saved to '{filepath_w_gogr}'")
+        cp.save(filepath_w_mfgr, GR_mfgrW)
+        print(f"Raster array saved to '{filepath_w_mfgr}'")
+        cp.save(filepath_w_gogr, GR_gogrW)
+        print(f"Raster array saved to '{filepath_w_gogr}'")
         
 
     # if saveGORaster:
@@ -258,23 +266,23 @@ recip_list = [0.75]
 #span = 6 # changing span below
 
 # Trial Params
-numBins = 10
+numBins = 5000
 useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 2
+numTrial = 1000
 MFGO_PLAST = 0
 GOGO_PLAST = 0
 GRGO_PLAST = 0
 MFGR_PLAST = 0
-GOGR_PLAST = 0
+GOGR_PLAST = 1
 
 # saving to hard drive
-expName = 'MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_2_trial_10_timebins'
+expName = 'MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_allcell_1000_trial'
 saveDir = f'/home/data/einez/homeostat_playground/{expName}'
 
 # Save Rasters
 saveGORaster = True
-saveGRRaster = False
+saveGRRaster = True
 saveMFRaster = False
 saveWeights = True
 

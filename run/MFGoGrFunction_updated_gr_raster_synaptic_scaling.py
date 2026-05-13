@@ -60,7 +60,7 @@ class Mossy(): # MF Objects, entire network of MF per object
             self.MFfreqs[rand_10_indices[i]] = new_freq[i] # set the frequencies at the randomly selected indices to new random frequencies, this adds some variability to the MF frequencies while still keeping them mostly uniform
 
         # self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
-        # self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
+        self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
         # choose CS MF
         self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
     
@@ -155,9 +155,9 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.plast_mult_constant = 1.003 # plasticity multiplier constant to scale learning rates
 
         ### Arrays
-        self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float32) # array of synaptic weight
-        self.mfgoW = np.full(self.numGolgi, mfgo_weight, dtype = np.float32) # array of synaptic weight
-        self.gogoW = np.full(self.numGolgi, gogo_weight, dtype = np.float32) # array of synaptic weight
+        self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float64) # array of synaptic weight
+        self.mfgoW = np.full(self.numGolgi, mfgo_weight, dtype = np.float64) # array of synaptic weight
+        self.gogoW = np.full(self.numGolgi, gogo_weight, dtype = np.float64) # array of synaptic weight
         self.Vm = np.full(self.numGolgi, self.eLeak, dtype = np.float32) # membrane potential of Golgi cells, initialized to leak reversal potential
         self.gSum_GOGO = np.zeros(self.numGolgi, dtype = np.float32) # sum of GABA conductances from Golgi to Golgi
         self.inputGOGO = np.zeros(self.numGolgi, dtype = np.uint8) # input GABA conductance from Golgi to Golgi
@@ -336,8 +336,8 @@ class Granule():
         self.plast_mult_constant = 1.003 # plasticity multiplier constant to scale learning rates
 
         ### Arrays
-        self.mfgrW = np.full(self.numGranule, mfgr_weight, dtype = np.float32) # synaptic weight of mossy fiber to granule
-        self.gogrW = np.full(self.numGranule, gogr_weight, dtype = np.float32) # synaptic weight of mossy fiber to granule 
+        self.mfgrW = np.full(self.numGranule, mfgr_weight, dtype = np.float64) # synaptic weight of mossy fiber to granule
+        self.gogrW = np.full(self.numGranule, gogr_weight, dtype = np.float64) # synaptic weight of mossy fiber to granule 
         self.Vm = np.full(self.numGranule, self.eLeak, dtype = np.float32) # membrane potential of Granule cells, initialized to leak reversal potential
         self.gSum_MFGR = np.zeros(self.numGranule, dtype = np.float32) # sum of excitatory conductances from MF to Granule
         self.inputMFGR = np.zeros(self.numGranule, dtype = np.uint8) # input excit
@@ -427,8 +427,8 @@ class Granule():
             self.GRgpu((grid_size,),(block_size,), (self.numGranule, self.GPU_gLeak, self.GPU_Vm, GPU_inputMFGR, self.GPU_gSum_MFGR, GPU_inputGOGR, 
             self.GPU_gSum_GOGR, self.GPU_gNMDA_Inc_MFGR, self.GPU_gNMDA_MFGR, self.GPU_currentThresh, self.GPU_mfgrW, self.GPU_g_decay_MFGR, self.GPU_gogrW, 
             self.GPU_gGABA_decayGOGR, self.GPU_g_decay_NMDA_MFGR, self.GPU_gDirectInc_MFGR, self.GPU_threshRest, self.GPU_threshDecGR, self.GPU_eLeak, 
-            self.GPU_eGOGR, self.GPU_spike_mask))
-            return self.GPU_spike_mask.get()
+            self.GPU_eGOGR, self.GPU_spike_mask, self.GPU_summed_act))
+            return self.GPU_spike_mask.get().astype(np.uint8) # return spike mask as uint8 numpy array
 
     # generic function for updating GOGR and MFGR input arrays
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, goAct = None):
@@ -440,12 +440,12 @@ class Granule():
             MFdiverge = int((self.numGranule * 5)/4096) # how many gr each MF connects to  <-- where is this used lmao
             spiked_idx = np.where(mfAct)[0]
             # print(spiked_idx)
-            for mf in spiked_idx: # for every MF that spikes, this can be done in parallel
-            # Important here
-                grInputs[connectArr[mf, :]] += 1 # for each active MF, update each gr listed in its row by 1
+            # for mf in spiked_idx: # for every MF that spikes, this can be done in parallel
+            # # Important here
+            #     grInputs[connectArr[mf, :]] += 1 # for each active MF, update each gr listed in its row by 1
 
             # Vectorized below
-            # np.add.at(grInputs, connectArr[spiked_idx, :].ravel(), 1)
+            np.add.at(grInputs, connectArr[spiked_idx, :].ravel(), 1)
             self.inputMFGR = grInputs
 
         ### THIS VERSION IS ACTUALLY SLOWER
@@ -527,7 +527,7 @@ class Granule():
         is_plastic[plast_cells] = True 
         
         # Where is_plastic is False, force the learning rate to be 1.0 (no weight change)
-        learning_rates = np.where(is_plastic, learning_rates, 1.0)
+        learning_rates = np.where(is_plastic, learning_rates, 1.0) 
         # -----------------
 
         # 5. Additive Plasticity
