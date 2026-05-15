@@ -200,6 +200,8 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         # Rasters
         GOrasters[trial] = GO.get_act()
         GRrasters[trial] = GR.get_summed_act()
+        print(np.sum(GRrasters[trial]))
+        GR.reset_GPU_summed_act() # reset summed act on GPU after saving raster
         all_end = time.time()
         # Shuffling MF
         # if trial % 50 == 0: 
@@ -269,15 +271,16 @@ recip_list = [0.75]
 numBins = 5000
 useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 1000
+numTrial = 2 # 1000
 MFGO_PLAST = 0
 GOGO_PLAST = 0
 GRGO_PLAST = 0
 MFGR_PLAST = 0
-GOGR_PLAST = 1
+GOGR_PLAST = 0
 
 # saving to hard drive
-expName = 'MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_allcell_1000_trial'
+
+expName = 'MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_2_trial'
 saveDir = f'/home/data/einez/homeostat_playground/{expName}'
 
 # Save Rasters

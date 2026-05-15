@@ -60,7 +60,7 @@ class Mossy(): # MF Objects, entire network of MF per object
             self.MFfreqs[rand_10_indices[i]] = new_freq[i] # set the frequencies at the randomly selected indices to new random frequencies, this adds some variability to the MF frequencies while still keeping them mostly uniform
 
         # self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
-        # self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
+        self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
         # choose CS MF
         self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
     
@@ -114,10 +114,9 @@ class Mossy(): # MF Objects, entire network of MF per object
                     # get new isi inbetween temp and current ISI <-- why do this for the ending artifact?
                     self.MFisi[self.CSMFindex] = np.random.randint(min_isi, max_isi + 1, (int(len(self.CSMFindex)),)) # update the ISI values of the CSMF with a random integer between the min and max ISI values        
         else: # No CS, if MF fired, then get new ISI from background distribution
+            random_idx = np.random.randint(0, self.sizeOfDist - 1, size=int(np.sum(isi_mask).item()))
             # only need the MFfreqs where firing = true
             freq_idx = self.MFfreqs[isi_mask] # get the frequencies of the MFs that fired
-           # for selecting MF isi's from distribution
-            random_idx = np.random.randint(0, self.sizeOfDist - 1, size=int(np.sum(isi_mask).item()))
            # generating new isi's
             new_isi = self.MFisiDistribution[freq_idx, random_idx] # get new ISI values from distribution for the MFs that fired
             # place into main MFisi array

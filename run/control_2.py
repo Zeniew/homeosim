@@ -50,6 +50,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, co
     # GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
     # GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
     # GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
+    GR_Thr = np.zeros((numTrial, numGR), dtype = np.float32)
 
     print("Objects initialized.")
 
@@ -163,6 +164,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, co
             GR.threshRest = GR.update_thresh(trial, threshRest = GR.get_threshRest())
 
         GO_Thr[trial] = (GO.get_GO_Thr()) 
+        GR_Thr[trial] = (GR.get_GR_Thr())
 
 
         # Final update

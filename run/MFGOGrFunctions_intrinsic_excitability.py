@@ -549,6 +549,9 @@ class Granule():
     
     def get_gogrW(self):
         return self.gogrW
+    
+    def get_GR_Thr(self):
+        return self.currentThresh
 
     def updateFinalState(self):
         with cp.cuda.Device(0):

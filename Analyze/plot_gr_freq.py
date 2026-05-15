@@ -14,7 +14,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     # --- MODIFICATION: REMOVE FIRST CELL ---
     # We slice the array to exclude index 0 before doing any calculations
     print(f"Original shape: {raster.shape}")
-    raster = raster[:, 1:] 
+    raster = raster[1:, 1:] # Remove first trial and first cell (index 0) to avoid artifacts
     print(f"Shape after removing first cell: {raster.shape}")
 
     num_trials, num_cells = raster.shape
@@ -73,7 +73,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/homeostat_playground/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_GRrasters.npy' 
+raster_path = '/home/data/einez/homeostat_playground/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_allcell_5_trial/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_allcell_5_trial_GRrasters.npy' 
 raster_data = np.load(raster_path)
 
 print("Finished loading data")
@@ -82,8 +82,11 @@ print("Finished loading data")
 current_cell_type = 3
 
 # 3. Define save location
-save_filename = "MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/GR_Firing_Frequency.png"
+save_filename = "MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_allcell_5_trial/GR_Firing_Frequency.png"
 plot_save_path = f"/home/aw39625/minisim/Results/Firing_Freq_Plots/{save_filename}"
 
 # 4. Run the function
 plotFiringFrequencyDrift(raster_data, cell_type=current_cell_type, timestep_ms=1.0, save_path=plot_save_path)
+
+# Sample some spikes for granule
+print(raster_data[0:10, 0])

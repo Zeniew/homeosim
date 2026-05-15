@@ -9,7 +9,7 @@ class Mossy(): # MF Objects, entire network of MF per object
     def __init__(self,n,CSon, CSoff):
         self.numMossy = n # number of MFs
         self.CSon, self.CSoff = CSon, CSoff # time of CS on and off
-        self.minBackground, self.maxBackground = 1, 30 # background frequency range
+        self.minBackground, self.maxBackground = 99, 100 # 1, 30 # background frequency range
         self.minCS, self.maxCS = 90, 100 # CS frequency range
 
         self.act = np.zeros(self.numMossy, dtype = np.uint8) # activity of MFs, indicated by 0/1
@@ -44,7 +44,7 @@ class Mossy(): # MF Objects, entire network of MF per object
         for i in range(0, 101): # for each integer from 0 to 100 <-- for gnenerating frequencies?
             if i == 0 : f = 1000 # f = firing frequency
             else: f = 1000.0/(i) 
-            f_stdev = f/5.0  # why 5.0?
+            f_stdev = f/5.0 # why 5.0?
             # cp.random.normal(loc, scale, size) <-- generate random numbers from a normal distribution, characterized by mean, stdev, and last param = number of random numbers to generate
             ISItemp = np.random.normal(loc = f, scale = f_stdev, size = self.sizeOfDist) # create an array of random integers selected from normal distribution of ISI values with mean f and standard deviation f_stdev, these will be our "countdown" ISI values
             # check for values less than 5 and replace with 5
@@ -537,13 +537,17 @@ class Granule():
         weight_array = np.clip(weight_array, 0.0, 1.0)
 
         return weight_array
-    
+
     def get_act(self):
         return self.act
     
     def get_summed_act(self):
-        return self.GPU_summed_act.get().astype(np.int16)
+        # return self.act.sum(axis = 0, dtype = np.int64) # sum activity over trial for each cell, used for plasticity
+        return self.GPU_summed_act.get().astype(np.int64)
     
+    def reset_GPU_summed_act(self):
+        self.GPU_summed_act.fill(0)
+
     def get_mfgrW(self):
         return self.mfgrW
     
