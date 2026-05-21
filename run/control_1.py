@@ -36,7 +36,7 @@ def gen_filepaths(exp_name, convergence, gogoW):
     
     return filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr #, filepath_params
 
-def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.001, gogoW = 0.0125):
+def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv):
     
     print("Initializing objects...")
 
@@ -45,7 +45,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     MFrasters = np.zeros((numBins, numMF), dtype = np.uint8)
 
     # # Init GO class
-    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW, plast_ratio = 1.0)
+    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, plast_ratio = 1.0)
     # GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW) # playground version
     GOrasters = np.zeros((numTrial, numBins, numGO), dtype = np.uint8)
     GO_gogoW = np.zeros((numTrial, numGO), dtype = np.float32)
@@ -53,11 +53,12 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     GO_mfgoW = np.zeros((numTrial, numGO), dtype = np.float32)
 
     # # Init GR class
-    GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_weight = mfgrW, gogr_weight = gogrW)
+    GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
-    GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
-    # GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
-    # GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
+    # GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
+    GRrasters = np.zeros((numTrial, numGR), dtype = np.int16)
+    GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
+    GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
 
     print("Objects initialized.")
 
@@ -115,19 +116,22 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         for t in range(0, numBins):
             # print(t, ":", GO.get_grgoW())
 
-            # timestep_start = time.time()
+            timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
-            # MF_end = time.time()
+            MF_end = time.time()
+            print("MF time taken:", MF_end - timestep_start, "seconds")
 
             # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
 
-            # MFGR_end = time.time()
+            MFGR_end = time.time()
+            print("MFGR time taken:", MFGR_end - MF_end, "seconds")
 
             # do gr spikes
             GR.do_Granule(t)
 
-            # GR_end = time.time()
+            GR_end = time.time()
+            print("GR time taken:", GR_end - MFGR_end, "seconds")
 
             # grab GR activity
             GRact = GR.get_act()
@@ -136,21 +140,25 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             # GO.update_input_activity(GOGR_connect_arr, 3, grAct = GRact[trial])
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[t]) # for the new version of GRGO
 
-            # GRGO_end = time.time()
-            # print("GRGO time taken:", GRGO_end - GRGO_start, "seconds")
+            GRGO_end = time.time()
+            print("GRGO time taken:", GRGO_end - GR_end, "seconds")
 
             # MF -> GO
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
 
-            # MFGO_end = time.time()
+            MFGO_end = time.time()
+            print("MFGO time taken:", MFGO_end - GRGO_end, "seconds")
 
             # GO spikes
             GO.do_Golgi(t)
 
-            # GOspike_end = time.time()
+            GOspike_end = time.time()
+            print("GO spike time taken:", GOspike_end - MFGO_end, "seconds")
 
             # GO -> GO update
             GO.update_input_activity(GOGO_connect_arr, 2, t = t)
+            GOGO_end = time.time()
+            print("GOGO time taken:", GOGO_end - GOspike_end, "seconds")
 
             # test - see what happens when I add another do_Golgi
             # GO.do_Golgi(t)
@@ -160,9 +168,12 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             GOact = GO.get_act()
             # GO -> GR update
             GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[t])
-
+            GOGR_end = time.time()
+            print("GOGR time taken:", GOGR_end - GOGO_end, "seconds")
 
             MFrasters[t, :] = MFact
+
+            # print(f"Finished timestep: {t}")
         
         # Update plasticity weight
         if MFGO_PLAST == 1:
@@ -184,15 +195,16 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         GO_gogoW[trial] = (GO.get_gogoW()) 
         GO_grgoW[trial] = (GO.get_grgoW())
         GO_mfgoW[trial] = (GO.get_mfgoW())
-        # GR_gogrW[trial] = (GR.get_gogrW())
-        # GR_mfgrW[trial] = (GR.get_mfgrW())
+        GR_gogrW[trial] = (GR.get_gogrW())
+        GR_mfgrW[trial] = (GR.get_mfgrW())
 
         # Final update
         GR.updateFinalState()
         # Rasters
         GOrasters[trial] = GO.get_act()
-        GRrasters[trial] = GR.get_act()
-        print(np.sum(GRrasters[trial]))
+        # GRrasters[trial] = GR.get_act()
+        GRrasters[trial] = GR.get_summed_act()
+        GR.reset_GPU_summed_act()
         all_end = time.time()
         # Shuffling MF
         # if trial % 50 == 0: 
@@ -270,13 +282,13 @@ MFGR_PLAST = 0
 GOGR_PLAST = 0
 
 # saving to hard drive
-expName = 'MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_5_trial'
+expName = 'testMFraster_noCS_newMFGRW' # 'MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_5_trial'
 saveDir = f'/home/data/einez/homeostat_SS/{expName}'
 
 # Save Rasters
 saveGORaster = True
 saveGRRaster = True
-saveMFRaster = False
+saveMFRaster = True
 saveWeights = True
 
 # GOGO Connect Params

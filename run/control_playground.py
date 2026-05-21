@@ -271,7 +271,7 @@ recip_list = [0.75]
 numBins = 5000
 useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 2 # 1000
+numTrial = 5 # 1000
 MFGO_PLAST = 0
 GOGO_PLAST = 0
 GRGO_PLAST = 0
@@ -280,7 +280,7 @@ GOGR_PLAST = 0
 
 # saving to hard drive
 
-expName = 'MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_2_trial'
+expName = 'MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_5_trial'
 saveDir = f'/home/data/einez/homeostat_playground/{expName}'
 
 # Save Rasters

@@ -309,7 +309,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
 
 
 class Granule():
-    def __init__(self, n, csOFF, csON, useCS, numBins, mfgr_weight = 0.0007, gogr_weight = 0.015):
+    def __init__(self, n, csOFF, csON, useCS, numBins, mfgr_weight = 0.032, gogr_weight = 0.015):
         ### Constants
         self.numGranule = n
         self.csOFF, self.csON = csOFF, csON
@@ -319,7 +319,7 @@ class Granule():
         self.thresholdMax = 10.0 # maximum Vm threshold
         self.gLeak_base = 0.1  # leak conductance
         self.g_decay_NMDA_MFGR = math.exp(-1.0/30.0) # 0.9672
-        self.gDirectInc_MFGR = 0.0320
+        self.gDirectInc_MFGR = 0.0064
 
         self.g_decay_MFGR = 0.9355 # math.exp(-1.0/15.0), which compiles as 0 in C++? # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule

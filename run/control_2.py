@@ -29,7 +29,7 @@ def gen_filepaths(exp_name, convergence, gogoW):
     
     return filepath_m, filepath_go, filepath_gr, filepath_thr_go #, filepath_params
 
-def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, conv, grgoW = 0.0007, gogrW = 0.015, RA = False, mfgoW = 0.0042, mfgrW = 0.001, gogoW = 0.0125):
+def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, conv):
     
     print("Initializing objects...")
 
@@ -38,14 +38,14 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, co
     MFrasters = np.zeros((numBins, numMF), dtype = np.uint8)
 
     # # Init GO class
-    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW, plast_ratio = 1.0)
+    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, plast_ratio = 1.0)
     # GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW) # playground version
     GOrasters = np.zeros((numTrial, numBins, numGO), dtype = np.uint8)
     GO_Thr = np.zeros((numTrial, numGO), dtype = np.float32)
 
 
     # # Init GR class
-    GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins, mfgr_weight = mfgrW, gogr_weight = gogrW)
+    GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
     # GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
     # GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)

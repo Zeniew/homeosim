@@ -17,51 +17,23 @@ class Mossy(): # MF Objects, entire network of MF per object
         self.MFisiDistribution = np.zeros((101, self.sizeOfDist), dtype = int) # 2D array, with 101 rows of arrays that consist of 1000 zeroes , each row corresponds to ISI of particular frequency, where we select the new ISI distribution from
         self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
         self.generate_MFisiDistribution() # generate the ISI distribution for each frequency and fill MFisiDistribution
-        
-        # self.MFisi = np.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
-
-        # for i in range(0, 101): # for each integer from 0 to 100 <-- for gnenerating frequencies?
-        #     if i == 0 : f = 1000 # f = firing frequency
-        #     else: f = 1000.0/(i) 
-        #     f_stdev = f/5.0  # why 5.0?
-        #     # cp.random.normal(loc, scale, size) <-- generate random numbers from a normal distribution, characterized by mean, stdev, and last param = number of random numbers to generate
-        #     ISItemp = np.random.normal(loc = f, scale = f_stdev, size = self.sizeOfDist) # create an array of random integers selected from normal distribution of ISI values with mean f and standard deviation f_stdev, these will be our "countdown" ISI values
-        #     # check for values less than 5 and replace with 5
-        #     for j in range(0, self.sizeOfDist):
-        #         if ISItemp[j] < 5: ISItemp[j] = 5
-        #     # fill temp normal values for row i of MFisiDistribution <-- generates the ISI distribution for each frequency
-        #     self.MFisiDistribution[i, :] = ISItemp
-
-        # # Set Frequency index selection arrays <-- just curious, why not use normal distribution for the MF freq? is it completely uniform
-        # self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
-        # self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
-        # # choose CS MF
-        # self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
 
     def generate_MFisiDistribution(self):
         self.MFisi = np.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
-
         for i in range(0, 101): # for each integer from 0 to 100 <-- for gnenerating frequencies?
             if i == 0 : f = 1000 # f = firing frequency
             else: f = 1000.0/(i) 
             f_stdev = f/5.0  # why 5.0?
-            # cp.random.normal(loc, scale, size) <-- generate random numbers from a normal distribution, characterized by mean, stdev, and last param = number of random numbers to generate
             ISItemp = np.random.normal(loc = f, scale = f_stdev, size = self.sizeOfDist) # create an array of random integers selected from normal distribution of ISI values with mean f and standard deviation f_stdev, these will be our "countdown" ISI values
-            # check for values less than 5 and replace with 5
             for j in range(0, self.sizeOfDist):
                 if ISItemp[j] < 5: ISItemp[j] = 5
-            # fill temp normal values for row i of MFisiDistribution <-- generates the ISI distribution for each frequency
             self.MFisiDistribution[i, :] = ISItemp
 
-        # Set Frequency index selection arrays <-- just curious, why not use normal distribution for the MF freq? is it completely uniform
         rand_10_indices = np.random.choice(self.numMossy, int(0.1 * self.numMossy), replace = False) # randomly select 10% of the indices to be randomized
         new_freq = np.random.randint(self.minBackground, self.maxBackground, int(0.1 * self.numMossy))
         for i in range(len(rand_10_indices)):
             self.MFfreqs[rand_10_indices[i]] = new_freq[i] # set the frequencies at the randomly selected indices to new random frequencies, this adds some variability to the MF frequencies while still keeping them mostly uniform
-
-        # self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
         self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
-        # choose CS MF
         self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
     
     def do_MF_dist(self, timestep, useCS):
@@ -69,30 +41,17 @@ class Mossy(): # MF Objects, entire network of MF per object
         isi_mask = (self.MFisi == 0) # boolean array indicating which MF fired, true where MFisi is 0, false otherwise
         self.act = isi_mask.astype(np.uint8) # convert boolean array to int array, true = 1, false = 0
         if useCS == 1:
-            # get random indices the size of all spiked cells
             random_idx = np.random.randint(0, self.sizeOfDist - 1, size=int(np.sum(isi_mask).item())) # array of random integers from the range of sizeOfDist - 1, For each spiked cell, get a random index to select new ISI from distribution
-            # for starting and ending artifacts
             random_CSMF_idx = np.random.randint(0, self.sizeOfDist - 1, size = int(len(self.CSMFindex))) # For each CS MF (in CS, the CSMF definitely spiked, so there's no "checking"), get a random index to select new ISI from distribution
-            # only need to worry about CS MF if in CS
             if (timestep >= self.CSon) and (timestep < self.CSoff): # if in CS period
-                # create boolean array for CS cells
                 is_CSMF = np.zeros(self.numMossy, dtype = bool)
                 is_CSMF[self.CSMFindex] = True # set the CS MF indices to true
-                # find cells that meet all conditions <-- what are theses conditions?
                 spiking_cs_cell = isi_mask & is_CSMF # boolean arrays, which MF fired and are CSMF
-                # don't need to run if no cells spike
-
-                # **ASK CARTER
                 if spiking_cs_cell.any(): # if there are any spiking CS cells that are also part of the ones that spiked
-                    # pulls out actual index values
                     cs_idx = np.where(spiking_cs_cell)[0] # get the indices of the MF that fired and are CSMF
-                    # store frequencies for the indexes
                     cs_freqs = self.CSfreqs[cs_idx] # get the preset firing frequencies of the CSMF that fired
-                    # up to len cs idx get these rand idx, non cs indx get the rest
                     cs_rand_idx = random_idx[:len(cs_idx)] # get the random indices for the CSMF that fired
-                    # select new isi
                     self.MFisi[cs_idx] = self.MFisiDistribution[cs_freqs, cs_rand_idx] # update the ISI values of the CSMF that fired with the new ISI values from the distribution
-                #**
                 spiking_non_cs_cell = isi_mask & ~is_CSMF # boolean arrays, which MF fired and are not CSMF
                 if spiking_non_cs_cell.any(): # if there are any spiking non-CS cells that are also part of the ones that spiked
                     non_cs_idx = np.where(spiking_non_cs_cell)[0]
@@ -102,7 +61,6 @@ class Mossy(): # MF Objects, entire network of MF per object
                 if timestep == self.CSon: # dealing with starting CS artifact
                     temp_isi = self.MFisiDistribution[self.CSfreqs[self.CSMFindex], random_CSMF_idx] # get new ISI values from distribution for the CSMF
                     self.MFisi[self.CSMFindex] = np.minimum(temp_isi, self.MFisi[self.CSMFindex]) # update the ISI values of the CSMF with the new ISI values, taking the minimum of the current ISI and the new ISI
-                    # why take the minimum?
             else:
                 freq_idx = self.MFfreqs[isi_mask] # get the frequencies of the MFs that fired
                 new_isi = self.MFisiDistribution[freq_idx, random_idx] # get new ISI values from distribution for the MFs that fired
@@ -111,17 +69,12 @@ class Mossy(): # MF Objects, entire network of MF per object
                     temp_isi = self.MFisiDistribution[self.CSfreqs[self.CSMFindex], random_CSMF_idx] # get new ISI values from distribution for the CSMF
                     min_isi = np.minimum(temp_isi, self.MFisi[self.CSMFindex]) # take the minimum of the current ISI and the new ISI
                     max_isi = np.maximum(temp_isi, self.MFisi[self.CSMFindex]) # take the maximum of the current ISI and the new ISI
-                    # get new isi inbetween temp and current ISI <-- why do this for the ending artifact?
                     self.MFisi[self.CSMFindex] = np.random.randint(min_isi, max_isi + 1, (int(len(self.CSMFindex)),)) # update the ISI values of the CSMF with a random integer between the min and max ISI values        
         else: # No CS, if MF fired, then get new ISI from background distribution
             random_idx = np.random.randint(0, self.sizeOfDist - 1, size=int(np.sum(isi_mask).item()))
-            # only need the MFfreqs where firing = true
             freq_idx = self.MFfreqs[isi_mask] # get the frequencies of the MFs that fired
-           # generating new isi's
             new_isi = self.MFisiDistribution[freq_idx, random_idx] # get new ISI values from distribution for the MFs that fired
-            # place into main MFisi array
             self.MFisi[isi_mask] = new_isi # update the ISI values of the MFs that fired with the new ISI values
-            #decrement ISI for all firing = false
         self.MFisi[~isi_mask] -= 1 # decrement the ISI values of the MFs that did not fire by 1
         return self.act # return the activity of the MFs for this timestep
     def get_act(self):
@@ -313,7 +266,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
 
 
 class Granule():
-    def __init__(self, n, csOFF, csON, useCS, numBins, mfgr_weight = 0.0007, gogr_weight = 0.015):
+    def __init__(self, n, csOFF, csON, useCS, numBins, mfgr_weight = 0.032, gogr_weight = 0.015):
         ### Constants
         self.numGranule = n
         self.csOFF, self.csON = csOFF, csON
@@ -323,7 +276,7 @@ class Granule():
         self.thresholdMax = 10.0 # maximum Vm threshold
         self.gLeak_base = 0.1  # leak conductance
         self.g_decay_NMDA_MFGR = math.exp(-1.0/30.0) # 0.9672
-        self.gDirectInc_MFGR = 0.0320
+        self.gDirectInc_MFGR = 0.0064 # AMPA conductance
 
         self.g_decay_MFGR = 0.9355 # math.exp(-1.0/15.0), which compiles as 0 in C++? # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule
@@ -391,6 +344,7 @@ class Granule():
             GPU_currentThresh[idx] = GPU_currentThresh[idx] + (GPU_threshRest - GPU_currentThresh[idx]) * (GPU_threshDecGR);
 
             GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
+            GPU_summed_act[idx] = GPU_summed_act[idx] + GPU_spike_mask[idx];
         }
         """
 
@@ -413,9 +367,8 @@ class Granule():
         self.GPU_eLeak = cp.float32(self.eLeak)
         self.GPU_eGOGR = cp.float32(self.eGOGR)
         self.GPU_spike_mask = cp.zeros(self.numGranule, dtype = cp.uint8)
-        # New Trace Arrays (Float32) on GPU
-        self.GPU_mfgr_trace = cp.zeros(self.numGranule, dtype=cp.float32)
-        self.GPU_gogr_trace = cp.zeros(self.numGranule, dtype=cp.float32)
+        self.GPU_summed_act = cp.zeros(self.numGranule, dtype = cp.int16) # summed activity of Granule cells over the trial, used for plasticity
+
 
     def doGRGPU(self):
         block_size = 256
@@ -550,6 +503,13 @@ class Granule():
     
     def get_gogrW(self):
         return self.gogrW
+    
+    def get_summed_act(self):
+        # return self.act.sum(axis = 0, dtype = np.int64) # sum activity over trial for each cell, used for plasticity
+        return self.GPU_summed_act.get().astype(np.int64)
+    
+    def reset_GPU_summed_act(self):
+        self.GPU_summed_act.fill(0)
 
     def updateFinalState(self):
         with cp.cuda.Device(0):

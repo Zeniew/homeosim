@@ -85,12 +85,14 @@ def showRasters(raster, save_path=None, raster_type = 1):
         print("Entered granule raster plotting function")
         # raster = raster[0]
         # raster = np.mean(raster, axis = 0)
+        # plot only the first 5000 cells to avoid memory issues
+        raster = raster[:, :, :5000]
         raster = (np.mean(raster, axis=0) > 0.0).astype(np.uint8)
         print("Raster shape:", raster.shape)
         # raster = downsample_granule_cells_only(raster)
         # print("Downsampled shape (only granule cells):", raster.shape)
         
-        numCell = 1000 #5000 # raster.shape[1]
+        numCell = 5000 # raster.shape[1]
         plotarray = [np.where(raster[:, i] == 1)[0] for i in range(numCell)]
 
         plt.figure(figsize=(18, 9))
@@ -118,10 +120,10 @@ def downsample_granule_cells_only(raster, max_cells=10000):
     return raster[:, ::downsample_factor]
 
 # Load the raster data
-raster_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_2_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_2_trial_GRrasters.npy')
+raster_data = np.load('/home/data/einez/homeostat_SS/testMFraster_noCS_newMFGRW/testMFraster_noCS_newMFGRW_GRrasters.npy')
 print("Finished loading data")
 # Define save location
-plot_save_path = "/home/aw39625/minisim/Results/Rasters/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_allcell_2_trial_GRrasters.png"
+plot_save_path = "/home/aw39625/minisim/Results/Rasters/testMFraster_noCS_newMFGRW_GRrasters.png"
 
 # Show and save
 showRasters(raster_data, save_path=plot_save_path, raster_type = 3)
