@@ -320,31 +320,34 @@ class Granule():
         // float GPU_mfgr_LTP_inc, 
         // unsigned char GPU_mfgr_plast, unsigned char GPU_gogr_plast
         ){
-            int idx = threadIdx.x + blockIdx.x * blockDim.x;
-            if (idx >= size) return;
-            GPU_gLeak[idx] = (0.0000001021370733 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
-            (0.00001636462 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) +
-            (0.00113971219 * GPU_Vm[idx] * GPU_Vm[idx] + 0.038772 * GPU_Vm[idx] + 0.6234929);
+            int tid = threadIdx.x + blockIdx.x * blockDim.x;
+            int stride = blockDim.x * gridDim.x;
+            // each thread takes 8 gr cells to reduce overhead (256 blocks * 256 threads)
+            for (int idx = tid; idx < size; idx += stride) {
+                GPU_gLeak[idx] = (0.0000001021370733 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
+                (0.00001636462 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) +
+                (0.00113971219 * GPU_Vm[idx] * GPU_Vm[idx] + 0.038772 * GPU_Vm[idx] + 0.6234929);
 
-            GPU_gNMDA_Inc_MFGR[idx] = (
-            (0.00000011969 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
-            (0.000089369 * GPU_Vm[idx] * GPU_Vm[idx]) +
-            (0.0151 * GPU_Vm[idx]) + 0.7713
-            );
+                GPU_gNMDA_Inc_MFGR[idx] = (
+                (0.00000011969 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
+                (0.000089369 * GPU_Vm[idx] * GPU_Vm[idx]) +
+                (0.0151 * GPU_Vm[idx]) + 0.7713
+                );
 
-            GPU_gSum_MFGR[idx] = inputMFGR[idx] * GPU_mfgrW[idx] + GPU_gSum_MFGR[idx] * GPU_g_decay_MFGR; 
-            
-            GPU_gSum_GOGR[idx] = inputGOGR[idx] * GPU_gogrW[idx] + GPU_gSum_GOGR[idx] * GPU_gGABA_decayGOGR;
+                GPU_gSum_MFGR[idx] = inputMFGR[idx] * GPU_mfgrW[idx] + GPU_gSum_MFGR[idx] * GPU_g_decay_MFGR; 
+                
+                GPU_gSum_GOGR[idx] = inputGOGR[idx] * GPU_gogrW[idx] + GPU_gSum_GOGR[idx] * GPU_gGABA_decayGOGR;
 
-            GPU_gNMDA_MFGR[idx] = GPU_gNMDA_Inc_MFGR[idx] * GPU_gDirectInc_MFGR * inputMFGR[idx] + GPU_gNMDA_MFGR[idx] * 0.9672;
+                GPU_gNMDA_MFGR[idx] = GPU_gNMDA_Inc_MFGR[idx] * GPU_gDirectInc_MFGR * inputMFGR[idx] + GPU_gNMDA_MFGR[idx] * 0.9672;
 
-            GPU_Vm[idx] = GPU_Vm[idx] + GPU_gLeak[idx] * (GPU_eLeak - GPU_Vm[idx]) - GPU_gSum_MFGR[idx] * GPU_Vm[idx] - 
-            GPU_gNMDA_MFGR[idx] * GPU_Vm[idx] + GPU_gSum_GOGR[idx] * (GPU_eGOGR - GPU_Vm[idx]);
+                GPU_Vm[idx] = GPU_Vm[idx] + GPU_gLeak[idx] * (GPU_eLeak - GPU_Vm[idx]) - GPU_gSum_MFGR[idx] * GPU_Vm[idx] - 
+                GPU_gNMDA_MFGR[idx] * GPU_Vm[idx] + GPU_gSum_GOGR[idx] * (GPU_eGOGR - GPU_Vm[idx]);
 
-            GPU_currentThresh[idx] = GPU_currentThresh[idx] + (GPU_threshRest - GPU_currentThresh[idx]) * (GPU_threshDecGR);
+                GPU_currentThresh[idx] = GPU_currentThresh[idx] + (GPU_threshRest - GPU_currentThresh[idx]) * (GPU_threshDecGR);
 
-            GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
-            GPU_summed_act[idx] = GPU_summed_act[idx] + GPU_spike_mask[idx];
+                GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
+                GPU_summed_act[idx] = GPU_summed_act[idx] + GPU_spike_mask[idx];
+            }
         }
         """
 
@@ -372,7 +375,7 @@ class Granule():
 
     def doGRGPU(self):
         block_size = 256
-        grid_size = (self.numGranule + block_size - 1) // block_size
+        grid_size = 256 
         with cp.cuda.Device(0):
             GPU_inputMFGR = cp.array(self.inputMFGR)
             GPU_inputGOGR = cp.array(self.inputGOGR)

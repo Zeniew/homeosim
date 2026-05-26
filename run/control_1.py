@@ -127,22 +127,19 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
             MF_end = time.time()
-            # print("MF time taken:", MF_end - timestep_start, "seconds")
-            MF_time += (MF_end - timestep_start)
+            print("MF time taken:", MF_end - timestep_start, "seconds")
 
             # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
 
             MFGR_end = time.time()
-            MFGR_time += (MFGR_end - MF_end)
-            # print("MFGR time taken:", MFGR_end - MF_end, "seconds")
+            print("MFGR time taken:", MFGR_end - MF_end, "seconds")
 
             # do gr spikes
             GR.do_Granule(t)
 
             GR_end = time.time()
-            GR_time += (GR_end - MFGR_end)
-            # print("GR time taken:", GR_end - MFGR_end, "seconds")
+            print("GR time taken:", GR_end - MFGR_end, "seconds")
 
             # grab GR activity
             GRact = GR.get_act()
@@ -152,28 +149,24 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[t]) # for the new version of GRGO
 
             GRGO_end = time.time()
-            GRGO_time = GRGO_end - GR_end
-            # print("GRGO time taken:", GRGO_end - GR_end, "seconds")
+            print("GRGO time taken:", GRGO_end - GR_end, "seconds")
 
             # MF -> GO
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
 
             MFGO_end = time.time()
-            MFGO_time += (MFGO_end - GRGO_end)
-            # print("MFGO time taken:", MFGO_end - GRGO_end, "seconds")
+            print("MFGO time taken:", MFGO_end - GRGO_end, "seconds")
 
             # GO spikes
             GO.do_Golgi(t)
 
             GOspike_end = time.time()
-            GO_time += (GOspike_end - MFGO_end)
-            # print("GO spike time taken:", GOspike_end - MFGO_end, "seconds")
+            print("GO spike time taken:", GOspike_end - MFGO_end, "seconds")
 
             # GO -> GO update
             GO.update_input_activity(GOGO_connect_arr, 2, t = t)
             GOGO_end = time.time()
-            GOGO_time += (GOGO_end - GOspike_end)
-            # print("GOGO time taken:", GOGO_end - GOspike_end, "seconds")
+            print("GOGO time taken:", GOGO_end - GOspike_end, "seconds")
 
             # test - see what happens when I add another do_Golgi
             # GO.do_Golgi(t)
@@ -184,8 +177,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             # GO -> GR update
             GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[t])
             GOGR_end = time.time()
-            GOGR_time += (GOGR_end - GOGO_end)
-            # print("GOGR time taken:", GOGR_end - GOGO_end, "seconds")
+            print("GOGR time taken:", GOGR_end - GOGO_end, "seconds")
 
             MFrasters[t, :] = MFact
 
@@ -296,7 +288,7 @@ recip_list = [0.75]
 numBins = 5000 
 useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 1000
+numTrial = 10 # 1000
 MFGO_PLAST = 0
 GOGO_PLAST = 0
 GRGO_PLAST = 0
@@ -304,7 +296,7 @@ MFGR_PLAST = 1
 GOGR_PLAST = 0
 
 # saving to hard drive
-expName = 'MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial'
+expName = 'Carter_edits_10_trial'
 saveDir = f'/home/data/einez/homeostat_SS/{expName}'
 
 # Save Rasters
