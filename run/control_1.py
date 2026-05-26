@@ -113,6 +113,14 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     for trial in range (numTrial):
         # Run trial
         all_start = time.time()
+        MF_time = 0
+        MFGR_time = 0
+        GR_time = 0
+        GRGO_time = 0
+        MFGO_time = 0
+        GO_time = 0
+        GOGO_time = 0
+        GOGR_time = 0
         for t in range(0, numBins):
             # print(t, ":", GO.get_grgoW())
 
@@ -120,17 +128,20 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             MFact = MF.do_MF_dist(t, useCS)
             MF_end = time.time()
             # print("MF time taken:", MF_end - timestep_start, "seconds")
+            MF_time += (MF_end - timestep_start)
 
             # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
 
             MFGR_end = time.time()
+            MFGR_time += (MFGR_end - MF_end)
             # print("MFGR time taken:", MFGR_end - MF_end, "seconds")
 
             # do gr spikes
             GR.do_Granule(t)
 
             GR_end = time.time()
+            GR_time += (GR_end - MFGR_end)
             # print("GR time taken:", GR_end - MFGR_end, "seconds")
 
             # grab GR activity
@@ -141,23 +152,27 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[t]) # for the new version of GRGO
 
             GRGO_end = time.time()
+            GRGO_time = GRGO_end - GR_end
             # print("GRGO time taken:", GRGO_end - GR_end, "seconds")
 
             # MF -> GO
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
 
             MFGO_end = time.time()
+            MFGO_time += (MFGO_end - GRGO_end)
             # print("MFGO time taken:", MFGO_end - GRGO_end, "seconds")
 
             # GO spikes
             GO.do_Golgi(t)
 
             GOspike_end = time.time()
+            GO_time += (GOspike_end - MFGO_end)
             # print("GO spike time taken:", GOspike_end - MFGO_end, "seconds")
 
             # GO -> GO update
             GO.update_input_activity(GOGO_connect_arr, 2, t = t)
             GOGO_end = time.time()
+            GOGO_time += (GOGO_end - GOspike_end)
             # print("GOGO time taken:", GOGO_end - GOspike_end, "seconds")
 
             # test - see what happens when I add another do_Golgi
@@ -169,6 +184,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             # GO -> GR update
             GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[t])
             GOGR_end = time.time()
+            GOGR_time += (GOGR_end - GOGO_end)
             # print("GOGR time taken:", GOGR_end - GOGO_end, "seconds")
 
             MFrasters[t, :] = MFact
@@ -210,6 +226,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         # Shuffling MF
         # if trial % 50 == 0: 
         MF.generate_MFisiDistribution()
+        print(f"MF_time: {MF_time:.3f}s | MFGR_time: {MFGR_time:.3f}s | GR_time: {GR_time:.3f}s | GRGO_time: {GRGO_time:.3f}s | MFGO_time: {MFGO_time:.3f}s | GO_time: {GO_time:.3f}s | GOGO_time: {GOGO_time:.3f}s | GOGR_time: {GOGR_time:.3f}s")
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
     
 
