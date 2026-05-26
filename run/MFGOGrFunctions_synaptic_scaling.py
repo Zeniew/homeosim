@@ -323,7 +323,7 @@ class Granule():
             int tid = threadIdx.x + blockIdx.x * blockDim.x;
             int stride = blockDim.x * gridDim.x;
             // each thread takes 8 gr cells to reduce overhead (256 blocks * 256 threads)
-            for (int i = tid; i < size; i += stride) {
+            for (int idx = tid; idx < size; idx += stride) {
                 GPU_gLeak[idx] = (0.0000001021370733 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
                 (0.00001636462 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) +
                 (0.00113971219 * GPU_Vm[idx] * GPU_Vm[idx] + 0.038772 * GPU_Vm[idx] + 0.6234929);
