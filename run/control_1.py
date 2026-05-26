@@ -113,6 +113,14 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     for trial in range (numTrial):
         # Run trial
         all_start = time.time()
+        MF_time = 0
+        MFGR_time = 0
+        GR_time = 0
+        GRGO_time = 0
+        MFGO_time = 0
+        GO_time = 0
+        GOGO_time = 0
+        GOGR_time = 0
         for t in range(0, numBins):
             # print(t, ":", GO.get_grgoW())
 
@@ -210,6 +218,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
         # Shuffling MF
         # if trial % 50 == 0: 
         MF.generate_MFisiDistribution()
+        print(f"MF_time: {MF_time:.3f}s | MFGR_time: {MFGR_time:.3f}s | GR_time: {GR_time:.3f}s | GRGO_time: {GRGO_time:.3f}s | MFGO_time: {MFGO_time:.3f}s | GO_time: {GO_time:.3f}s | GOGO_time: {GOGO_time:.3f}s | GOGR_time: {GOGR_time:.3f}s")
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
     
 

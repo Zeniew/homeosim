@@ -105,8 +105,8 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
 
 
 # --- Execution ---
-weights_data = np.load('/home/data/einez/homeostat_playground/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_mfgrW.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_playground_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_mfgrW.png"
+weights_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_mfgrW.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_mfgrW.png"
 
 if weights_data.shape[1] > 4096:
     weights_data = weights_data[:, 1:5000]  # Remove the first column (cell 0) to exclude it from the plot

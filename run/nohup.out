@@ -9375,3 +9375,29 @@ Trial 789: Cell 1 (Static) = 0.010224 | Cell 2 (Plastic) = 0.009863
 Trial: 790, Time:78.386s
 Trial 790: Cell 1 (Static) = 0.010255 | Cell 2 (Plastic) = 0.009893
 Trial: 791, Time:78.505s
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+5157172719
+Trial: 1, Time:8626.406s
+5233205896
+Trial: 2, Time:8776.762s
+5233432556
+Trial: 3, Time:8782.400s
+5233244649
+Trial: 4, Time:8793.226s
+5233296009
+Trial: 5, Time:8824.100s
+Raster array saved to '/home/data/einez/homeostat_SS/testMFraster_noCS_background90_100/testMFraster_noCS_background90_100_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/testMFraster_noCS_background90_100/testMFraster_noCS_background90_100_GRrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/testMFraster_noCS_background90_100/testMFraster_noCS_background90_100_MFrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/testMFraster_noCS_background90_100/testMFraster_noCS_background90_100_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/testMFraster_noCS_background90_100/testMFraster_noCS_background90_100_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/testMFraster_noCS_background90_100/testMFraster_noCS_background90_100_mfgoW.npy'
