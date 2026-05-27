@@ -37,12 +37,12 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
     plt.figure(figsize=(8, 6))
 
     # Plot individual cell weight traces across trials (lighter, thinner)
-    for cell in range(1, weights.shape[1]):
+    for cell in range(weights.shape[1]):
         plt.plot(
             time_axis,
             weights[:, cell], 
-            alpha=0.3, 
-            linewidth=0.8
+            alpha=0.7, 
+            linewidth=0.6
         )
 
      # 3. Plot the trial averages
@@ -51,7 +51,7 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
         weights_per_trial, 
         color='blue',       
         linewidth=2,
-        marker='o',        # Added dots so you can see each trial clearly
+    #     marker='o',        # Added dots so you can see each trial clearly
         markersize=3,
         label='Mean Weight per Trial'
     )
@@ -88,7 +88,6 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
     # ----
 
     # Add a dummy line for the legend to explain the red dashes
-    plt.axvline(x=0, color='red', linestyle='--', alpha=0.5, label='Trial Boundary')
 
     plt.xlabel("Continuous Time Step (ms)")
     plt.ylabel("Weight Strength")
@@ -105,13 +104,13 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
 
 
 # --- Execution ---
-weights_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_mfgrW.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_allcell_1000_trial_mfgrW.png"
+weights_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_mfgrW.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_mfgrW.png"
 
 if weights_data.shape[1] > 4096:
-    weights_data = weights_data[:, 1:5000]  # Remove the first column (cell 0) to exclude it from the plot
+    weights_data = weights_data[:, 1:5001]  # Remove the first column (cell 0) to exclude it from the plot
 else:
-    weights_data = weights_data[:, 1:weights_data.shape[1]]  # Remove the first column (cell 0) to exclude it from the plot
+    weights_data = weights_data[:, 1:weights_data.shape[1]+1]  # Remove the first column (cell 0) to exclude it from the plot
 
 # Check if the values are "close enough"
 is_consistent = np.allclose(weights_data, weights_data[0], atol=1e-10)

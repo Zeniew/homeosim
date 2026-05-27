@@ -1,0 +1,79 @@
+nohup: ignoring input
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial 0 Cell 1 Spike Count: 2.0 Cell 2 Spike Count: 6.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 0 Cell 1 Error: 3.0 Cell 2 Error:  -1.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 0 Cell 1 Weight: 0.032096001524478196 Cell 2 Weight: 0.03190428865395658 Cell 3 Weight: 0.032096001524478196 Cell 4 Weight: 0.032096001524478196 Cell 5 Weight: 0.032096001524478196
+37877439
+MF_time: 0.573s | MFGR_time: 1.920s | GR_time: 6.814s | GRGO_time: 0.003s | MFGO_time: 0.706s | GO_time: 0.545s | GOGO_time: 1.238s | GOGR_time: 5.620s
+Trial: 1, Time:37.916s
+Trial 1 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 3.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 3.0 Cell 5 Spike Count: 0.0
+Trial 1 Cell 1 Error: 5.0 Cell 2 Error:  2.0 Cell 3 Error: 4.0 Cell 4 Error: 2.0 Cell 5 Error: 5.0
+Trial 1 Cell 1 Weight: 0.03219228952905163 Cell 2 Weight: 0.03200000151991845 Cell 3 Weight: 0.03219228952905163 Cell 4 Weight: 0.03219228952905163 Cell 5 Weight: 0.03219228952905163
+989693
+MF_time: 0.391s | MFGR_time: 1.791s | GR_time: 5.681s | GRGO_time: 0.000s | MFGO_time: 0.615s | GO_time: 0.470s | GOGO_time: 0.205s | GOGR_time: 3.012s
+Trial: 2, Time:15.649s
+Trial 2 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 2 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 2 Cell 1 Weight: 0.03228886639763878 Cell 2 Weight: 0.0320960015244782 Cell 3 Weight: 0.03228886639763878 Cell 4 Weight: 0.03228886639763878 Cell 5 Weight: 0.03228886639763878
+0
+MF_time: 0.382s | MFGR_time: 1.774s | GR_time: 5.603s | GRGO_time: 0.000s | MFGO_time: 0.613s | GO_time: 0.467s | GOGO_time: 0.198s | GOGR_time: 2.856s
+Trial: 3, Time:14.833s
+Trial 3 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 3 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 3 Cell 1 Weight: 0.032385732996831694 Cell 2 Weight: 0.032192289529051635 Cell 3 Weight: 0.032385732996831694 Cell 4 Weight: 0.032385732996831694 Cell 5 Weight: 0.032385732996831694
+0
+MF_time: 0.382s | MFGR_time: 1.766s | GR_time: 5.600s | GRGO_time: 0.000s | MFGO_time: 0.609s | GO_time: 0.465s | GOGO_time: 0.199s | GOGR_time: 2.849s
+Trial: 4, Time:14.805s
+Trial 4 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 4 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 4 Cell 1 Weight: 0.032482890195822185 Cell 2 Weight: 0.03228886639763879 Cell 3 Weight: 0.032482890195822185 Cell 4 Weight: 0.032482890195822185 Cell 5 Weight: 0.032482890195822185
+0
+MF_time: 0.379s | MFGR_time: 1.772s | GR_time: 5.578s | GRGO_time: 0.000s | MFGO_time: 0.612s | GO_time: 0.465s | GOGO_time: 0.199s | GOGR_time: 2.827s
+Trial: 5, Time:14.790s
+Trial 5 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 5 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 5 Cell 1 Weight: 0.032580338866409646 Cell 2 Weight: 0.0323857329968317 Cell 3 Weight: 0.032580338866409646 Cell 4 Weight: 0.032580338866409646 Cell 5 Weight: 0.032580338866409646
+0
+MF_time: 0.379s | MFGR_time: 1.771s | GR_time: 5.893s | GRGO_time: 0.000s | MFGO_time: 0.609s | GO_time: 0.464s | GOGO_time: 0.199s | GOGR_time: 2.807s
+Trial: 6, Time:15.081s
+Trial 6 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 6 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 6 Cell 1 Weight: 0.03267807988300887 Cell 2 Weight: 0.03248289019582219 Cell 3 Weight: 0.03267807988300887 Cell 4 Weight: 0.03267807988300887 Cell 5 Weight: 0.03267807988300887
+0
+MF_time: 0.382s | MFGR_time: 1.772s | GR_time: 5.945s | GRGO_time: 0.000s | MFGO_time: 0.611s | GO_time: 0.466s | GOGO_time: 0.199s | GOGR_time: 2.833s
+Trial: 7, Time:15.178s
+Trial 7 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 7 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 7 Cell 1 Weight: 0.03277611412265789 Cell 2 Weight: 0.03258033886640965 Cell 3 Weight: 0.03277611412265789 Cell 4 Weight: 0.03277611412265789 Cell 5 Weight: 0.03277611412265789
+0
+MF_time: 0.380s | MFGR_time: 1.768s | GR_time: 5.541s | GRGO_time: 0.000s | MFGO_time: 0.610s | GO_time: 0.463s | GOGO_time: 0.199s | GOGR_time: 2.837s
+Trial: 8, Time:14.767s
+Trial 8 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 8 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 8 Cell 1 Weight: 0.03287444246502586 Cell 2 Weight: 0.03267807988300888 Cell 3 Weight: 0.03287444246502586 Cell 4 Weight: 0.03287444246502586 Cell 5 Weight: 0.03287444246502586
+0
+MF_time: 0.384s | MFGR_time: 1.776s | GR_time: 5.647s | GRGO_time: 0.000s | MFGO_time: 0.609s | GO_time: 0.464s | GOGO_time: 0.199s | GOGR_time: 2.966s
+Trial: 9, Time:15.000s
+Trial 9 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 9 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 9 Cell 1 Weight: 0.03297306579242094 Cell 2 Weight: 0.0327761141226579 Cell 3 Weight: 0.03297306579242094 Cell 4 Weight: 0.03297306579242094 Cell 5 Weight: 0.03297306579242094
+0
+MF_time: 0.379s | MFGR_time: 1.767s | GR_time: 5.540s | GRGO_time: 0.000s | MFGO_time: 0.609s | GO_time: 0.463s | GOGO_time: 0.200s | GOGR_time: 2.840s
+Trial: 10, Time:14.741s
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_GRrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_MFrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_mfgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_gogrW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_noshuffleMF_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_mfgrW.npy'

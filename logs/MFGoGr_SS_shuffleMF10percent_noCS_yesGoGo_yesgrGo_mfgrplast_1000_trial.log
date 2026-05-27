@@ -1,0 +1,3019 @@
+nohup: ignoring input
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+39946034
+MF_time: 0.529s | MFGR_time: 1.921s | GR_time: 6.248s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.547s | GOGO_time: 1.279s | GOGR_time: 4.786s
+Trial: 1, Time:36.749s
+40557535
+MF_time: 0.554s | MFGR_time: 1.945s | GR_time: 5.908s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.540s | GOGO_time: 1.288s | GOGR_time: 6.040s
+Trial: 2, Time:38.096s
+40467824
+MF_time: 0.521s | MFGR_time: 1.962s | GR_time: 5.879s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.540s | GOGO_time: 1.286s | GOGR_time: 4.606s
+Trial: 3, Time:36.545s
+41519560
+MF_time: 0.565s | MFGR_time: 1.919s | GR_time: 5.971s | GRGO_time: 0.003s | MFGO_time: 0.738s | GO_time: 0.548s | GOGO_time: 1.307s | GOGR_time: 5.572s
+Trial: 4, Time:38.045s
+40585691
+MF_time: 0.517s | MFGR_time: 1.884s | GR_time: 5.797s | GRGO_time: 0.003s | MFGO_time: 0.740s | GO_time: 0.540s | GOGO_time: 1.290s | GOGR_time: 4.591s
+Trial: 5, Time:36.247s
+40541300
+MF_time: 0.539s | MFGR_time: 1.918s | GR_time: 5.869s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.544s | GOGO_time: 1.294s | GOGR_time: 5.500s
+Trial: 6, Time:37.381s
+40251617
+MF_time: 0.559s | MFGR_time: 1.902s | GR_time: 5.879s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.539s | GOGO_time: 1.288s | GOGR_time: 6.156s
+Trial: 7, Time:38.033s
+41062567
+MF_time: 0.522s | MFGR_time: 1.863s | GR_time: 5.823s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.544s | GOGO_time: 1.299s | GOGR_time: 4.577s
+Trial: 8, Time:36.456s
+40684691
+MF_time: 0.549s | MFGR_time: 1.894s | GR_time: 5.923s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.542s | GOGO_time: 1.297s | GOGR_time: 5.479s
+Trial: 9, Time:37.533s
+40794562
+MF_time: 0.528s | MFGR_time: 1.866s | GR_time: 5.835s | GRGO_time: 0.003s | MFGO_time: 0.740s | GO_time: 0.547s | GOGO_time: 1.299s | GOGR_time: 4.606s
+Trial: 10, Time:36.568s
+41114897
+MF_time: 0.555s | MFGR_time: 1.888s | GR_time: 5.929s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.546s | GOGO_time: 1.304s | GOGR_time: 5.357s
+Trial: 11, Time:37.558s
+40149873
+MF_time: 0.532s | MFGR_time: 1.872s | GR_time: 5.884s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.551s | GOGO_time: 1.291s | GOGR_time: 4.563s
+Trial: 12, Time:36.450s
+40340307
+MF_time: 0.556s | MFGR_time: 1.893s | GR_time: 5.954s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.547s | GOGO_time: 1.296s | GOGR_time: 5.414s
+Trial: 13, Time:37.532s
+41458040
+MF_time: 0.573s | MFGR_time: 1.917s | GR_time: 5.995s | GRGO_time: 0.004s | MFGO_time: 0.743s | GO_time: 0.551s | GOGO_time: 1.308s | GOGR_time: 6.157s
+Trial: 14, Time:38.597s
+41400050
+MF_time: 0.539s | MFGR_time: 1.869s | GR_time: 5.865s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.553s | GOGO_time: 1.314s | GOGR_time: 4.688s
+Trial: 15, Time:36.797s
+41394152
+MF_time: 0.575s | MFGR_time: 1.902s | GR_time: 5.957s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.554s | GOGO_time: 1.315s | GOGR_time: 5.830s
+Trial: 16, Time:38.275s
+40610429
+MF_time: 0.534s | MFGR_time: 1.869s | GR_time: 5.863s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.553s | GOGO_time: 1.304s | GOGR_time: 4.631s
+Trial: 17, Time:36.632s
+40493086
+MF_time: 0.577s | MFGR_time: 1.891s | GR_time: 5.952s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.552s | GOGO_time: 1.299s | GOGR_time: 6.018s
+Trial: 18, Time:38.212s
+40391375
+MF_time: 0.538s | MFGR_time: 1.862s | GR_time: 5.867s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.554s | GOGO_time: 1.298s | GOGR_time: 4.679s
+Trial: 19, Time:36.597s
+41147397
+MF_time: 0.572s | MFGR_time: 1.913s | GR_time: 5.976s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.558s | GOGO_time: 1.312s | GOGR_time: 5.963s
+Trial: 20, Time:38.424s
+40861732
+MF_time: 0.534s | MFGR_time: 1.879s | GR_time: 5.887s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.553s | GOGO_time: 1.302s | GOGR_time: 4.599s
+Trial: 21, Time:36.662s
+41028156
+MF_time: 0.551s | MFGR_time: 1.899s | GR_time: 5.955s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.558s | GOGO_time: 1.309s | GOGR_time: 5.354s
+Trial: 22, Time:37.628s
+40757564
+MF_time: 0.537s | MFGR_time: 1.871s | GR_time: 5.887s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.550s | GOGO_time: 1.299s | GOGR_time: 4.649s
+Trial: 23, Time:36.631s
+40303515
+MF_time: 0.558s | MFGR_time: 1.891s | GR_time: 5.949s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.553s | GOGO_time: 1.290s | GOGR_time: 5.409s
+Trial: 24, Time:37.434s
+40542847
+MF_time: 0.584s | MFGR_time: 1.912s | GR_time: 5.995s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.551s | GOGO_time: 1.290s | GOGR_time: 6.184s
+Trial: 25, Time:38.327s
+40751520
+MF_time: 0.536s | MFGR_time: 1.849s | GR_time: 5.871s | GRGO_time: 0.004s | MFGO_time: 0.743s | GO_time: 0.555s | GOGO_time: 1.295s | GOGR_time: 4.620s
+Trial: 26, Time:36.530s
+40328800
+MF_time: 0.571s | MFGR_time: 1.886s | GR_time: 5.982s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.552s | GOGO_time: 1.286s | GOGR_time: 5.982s
+Trial: 27, Time:37.976s
+40112989
+MF_time: 0.565s | MFGR_time: 1.860s | GR_time: 5.911s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.562s | GOGO_time: 1.294s | GOGR_time: 4.716s
+Trial: 28, Time:36.662s
+39626637
+MF_time: 0.585s | MFGR_time: 1.899s | GR_time: 5.981s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.565s | GOGO_time: 1.284s | GOGR_time: 5.547s
+Trial: 29, Time:37.497s
+39619761
+MF_time: 0.603s | MFGR_time: 1.901s | GR_time: 6.015s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.566s | GOGO_time: 1.286s | GOGR_time: 6.237s
+Trial: 30, Time:38.303s
+39758777
+MF_time: 0.568s | MFGR_time: 1.859s | GR_time: 5.921s | GRGO_time: 0.003s | MFGO_time: 0.746s | GO_time: 0.569s | GOGO_time: 1.291s | GOGR_time: 4.722s
+Trial: 31, Time:36.556s
+39572966
+MF_time: 0.594s | MFGR_time: 1.891s | GR_time: 6.032s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.562s | GOGO_time: 1.283s | GOGR_time: 6.035s
+Trial: 32, Time:37.997s
+40861449
+MF_time: 0.559s | MFGR_time: 1.856s | GR_time: 5.927s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.568s | GOGO_time: 1.307s | GOGR_time: 4.730s
+Trial: 33, Time:36.990s
+40340632
+MF_time: 0.571s | MFGR_time: 1.899s | GR_time: 5.956s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.560s | GOGO_time: 1.296s | GOGR_time: 5.433s
+Trial: 34, Time:37.407s
+40262870
+MF_time: 0.550s | MFGR_time: 1.866s | GR_time: 5.898s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.564s | GOGO_time: 1.295s | GOGR_time: 4.584s
+Trial: 35, Time:36.388s
+40271290
+MF_time: 0.570s | MFGR_time: 1.892s | GR_time: 5.983s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.559s | GOGO_time: 1.294s | GOGR_time: 5.387s
+Trial: 36, Time:37.429s
+40071593
+MF_time: 0.590s | MFGR_time: 1.911s | GR_time: 6.026s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.560s | GOGO_time: 1.292s | GOGR_time: 5.966s
+Trial: 37, Time:38.118s
+40558756
+MF_time: 0.554s | MFGR_time: 1.878s | GR_time: 5.930s | GRGO_time: 0.003s | MFGO_time: 0.749s | GO_time: 0.565s | GOGO_time: 1.300s | GOGR_time: 4.655s
+Trial: 38, Time:36.575s
+40305498
+MF_time: 0.592s | MFGR_time: 1.897s | GR_time: 6.040s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.559s | GOGO_time: 1.295s | GOGR_time: 5.814s
+Trial: 39, Time:37.967s
+39906775
+MF_time: 0.560s | MFGR_time: 1.880s | GR_time: 5.942s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.563s | GOGO_time: 1.292s | GOGR_time: 4.717s
+Trial: 40, Time:36.627s
+40383855
+MF_time: 0.589s | MFGR_time: 1.909s | GR_time: 6.008s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.564s | GOGO_time: 1.305s | GOGR_time: 6.105s
+Trial: 41, Time:38.436s
+40792005
+MF_time: 0.549s | MFGR_time: 1.862s | GR_time: 5.895s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.570s | GOGO_time: 1.308s | GOGR_time: 4.661s
+Trial: 42, Time:36.787s
+39288301
+MF_time: 0.575s | MFGR_time: 1.898s | GR_time: 6.004s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.563s | GOGO_time: 1.280s | GOGR_time: 5.767s
+Trial: 43, Time:37.719s
+38754137
+MF_time: 0.535s | MFGR_time: 1.846s | GR_time: 5.887s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.566s | GOGO_time: 1.275s | GOGR_time: 4.611s
+Trial: 44, Time:36.121s
+40286739
+MF_time: 0.568s | MFGR_time: 1.901s | GR_time: 5.978s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.561s | GOGO_time: 1.298s | GOGR_time: 5.882s
+Trial: 45, Time:37.967s
+40632674
+MF_time: 0.543s | MFGR_time: 1.867s | GR_time: 5.906s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.567s | GOGO_time: 1.299s | GOGR_time: 4.587s
+Trial: 46, Time:36.520s
+39540692
+MF_time: 0.569s | MFGR_time: 1.897s | GR_time: 5.997s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.559s | GOGO_time: 1.282s | GOGR_time: 5.413s
+Trial: 47, Time:37.414s
+40128122
+MF_time: 0.561s | MFGR_time: 1.884s | GR_time: 5.962s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.563s | GOGO_time: 1.294s | GOGR_time: 5.039s
+Trial: 48, Time:37.007s
+40354162
+MF_time: 0.569s | MFGR_time: 1.892s | GR_time: 5.994s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.560s | GOGO_time: 1.296s | GOGR_time: 4.868s
+Trial: 49, Time:36.915s
+41460219
+MF_time: 0.568s | MFGR_time: 1.910s | GR_time: 6.045s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.561s | GOGO_time: 1.316s | GOGR_time: 5.531s
+Trial: 50, Time:38.178s
+41384469
+MF_time: 0.558s | MFGR_time: 1.875s | GR_time: 5.967s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.570s | GOGO_time: 1.319s | GOGR_time: 4.591s
+Trial: 51, Time:37.069s
+41514806
+MF_time: 0.594s | MFGR_time: 1.908s | GR_time: 6.040s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.570s | GOGO_time: 1.319s | GOGR_time: 5.458s
+Trial: 52, Time:38.093s
+41364916
+MF_time: 0.568s | MFGR_time: 1.882s | GR_time: 5.942s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.573s | GOGO_time: 1.319s | GOGR_time: 4.649s
+Trial: 53, Time:37.178s
+41432856
+MF_time: 0.584s | MFGR_time: 1.904s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.570s | GOGO_time: 1.310s | GOGR_time: 5.444s
+Trial: 54, Time:37.922s
+41182679
+MF_time: 0.562s | MFGR_time: 1.866s | GR_time: 5.958s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.574s | GOGO_time: 1.303s | GOGR_time: 4.595s
+Trial: 55, Time:36.816s
+40799983
+MF_time: 0.577s | MFGR_time: 1.883s | GR_time: 6.036s | GRGO_time: 0.003s | MFGO_time: 0.741s | GO_time: 0.568s | GOGO_time: 1.294s | GOGR_time: 5.440s
+Trial: 56, Time:37.555s
+40131960
+MF_time: 0.557s | MFGR_time: 1.871s | GR_time: 5.965s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.573s | GOGO_time: 1.293s | GOGR_time: 4.608s
+Trial: 57, Time:36.627s
+39712858
+MF_time: 0.585s | MFGR_time: 1.903s | GR_time: 6.049s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.569s | GOGO_time: 1.289s | GOGR_time: 5.495s
+Trial: 58, Time:37.599s
+38751968
+MF_time: 0.562s | MFGR_time: 1.869s | GR_time: 5.961s | GRGO_time: 0.003s | MFGO_time: 0.740s | GO_time: 0.568s | GOGO_time: 1.272s | GOGR_time: 4.584s
+Trial: 59, Time:36.254s
+39769003
+MF_time: 0.579s | MFGR_time: 1.884s | GR_time: 6.025s | GRGO_time: 0.003s | MFGO_time: 0.745s | GO_time: 0.569s | GOGO_time: 1.296s | GOGR_time: 5.375s
+Trial: 60, Time:37.508s
+39968640
+MF_time: 0.549s | MFGR_time: 1.873s | GR_time: 5.929s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.561s | GOGO_time: 1.295s | GOGR_time: 4.575s
+Trial: 61, Time:36.491s
+39051118
+MF_time: 0.548s | MFGR_time: 1.892s | GR_time: 5.897s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.542s | GOGO_time: 1.261s | GOGR_time: 5.464s
+Trial: 62, Time:36.998s
+40456948
+MF_time: 0.521s | MFGR_time: 1.871s | GR_time: 5.815s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.548s | GOGO_time: 1.286s | GOGR_time: 4.571s
+Trial: 63, Time:36.220s
+40314165
+MF_time: 0.550s | MFGR_time: 1.882s | GR_time: 5.921s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.548s | GOGO_time: 1.286s | GOGR_time: 5.347s
+Trial: 64, Time:37.313s
+39993387
+MF_time: 0.575s | MFGR_time: 1.894s | GR_time: 5.977s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.546s | GOGO_time: 1.280s | GOGR_time: 5.938s
+Trial: 65, Time:38.081s
+38929380
+MF_time: 0.537s | MFGR_time: 1.855s | GR_time: 5.899s | GRGO_time: 0.003s | MFGO_time: 0.713s | GO_time: 0.542s | GOGO_time: 1.259s | GOGR_time: 4.607s
+Trial: 66, Time:36.160s
+38889985
+MF_time: 0.580s | MFGR_time: 1.887s | GR_time: 6.013s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.552s | GOGO_time: 1.267s | GOGR_time: 5.830s
+Trial: 67, Time:37.724s
+38318720
+MF_time: 0.549s | MFGR_time: 1.867s | GR_time: 5.918s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.558s | GOGO_time: 1.258s | GOGR_time: 4.645s
+Trial: 68, Time:36.184s
+40083865
+MF_time: 0.584s | MFGR_time: 1.889s | GR_time: 6.040s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.560s | GOGO_time: 1.290s | GOGR_time: 5.823s
+Trial: 69, Time:38.158s
+39214002
+MF_time: 0.549s | MFGR_time: 1.848s | GR_time: 5.903s | GRGO_time: 0.004s | MFGO_time: 0.706s | GO_time: 0.552s | GOGO_time: 1.278s | GOGR_time: 4.568s
+Trial: 70, Time:36.623s
+40425803
+MF_time: 0.600s | MFGR_time: 1.888s | GR_time: 6.014s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.549s | GOGO_time: 1.288s | GOGR_time: 5.989s
+Trial: 71, Time:38.618s
+40352804
+MF_time: 0.549s | MFGR_time: 1.850s | GR_time: 5.914s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.548s | GOGO_time: 1.293s | GOGR_time: 4.607s
+Trial: 72, Time:36.948s
+41158973
+MF_time: 0.591s | MFGR_time: 1.890s | GR_time: 6.044s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.561s | GOGO_time: 1.308s | GOGR_time: 5.940s
+Trial: 73, Time:38.717s
+39938697
+MF_time: 0.552s | MFGR_time: 1.873s | GR_time: 5.942s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.555s | GOGO_time: 1.281s | GOGR_time: 4.572s
+Trial: 74, Time:36.646s
+40082984
+MF_time: 0.588s | MFGR_time: 1.892s | GR_time: 5.997s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.554s | GOGO_time: 1.289s | GOGR_time: 5.509s
+Trial: 75, Time:37.757s
+41110889
+MF_time: 0.557s | MFGR_time: 1.872s | GR_time: 5.921s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.553s | GOGO_time: 1.311s | GOGR_time: 4.574s
+Trial: 76, Time:37.181s
+40916994
+MF_time: 0.578s | MFGR_time: 1.885s | GR_time: 5.993s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.558s | GOGO_time: 1.310s | GOGR_time: 5.338s
+Trial: 77, Time:37.906s
+40335519
+MF_time: 0.548s | MFGR_time: 1.867s | GR_time: 5.905s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.551s | GOGO_time: 1.293s | GOGR_time: 4.561s
+Trial: 78, Time:36.717s
+40261344
+MF_time: 0.580s | MFGR_time: 1.893s | GR_time: 5.993s | GRGO_time: 0.003s | MFGO_time: 0.728s | GO_time: 0.556s | GOGO_time: 1.296s | GOGR_time: 5.437s
+Trial: 79, Time:37.806s
+40373155
+MF_time: 0.613s | MFGR_time: 1.904s | GR_time: 6.024s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.556s | GOGO_time: 1.301s | GOGR_time: 6.399s
+Trial: 80, Time:38.992s
+39902191
+MF_time: 0.554s | MFGR_time: 1.851s | GR_time: 5.932s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.553s | GOGO_time: 1.285s | GOGR_time: 4.630s
+Trial: 81, Time:36.613s
+40205315
+MF_time: 0.606s | MFGR_time: 1.893s | GR_time: 6.039s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.558s | GOGO_time: 1.293s | GOGR_time: 6.128s
+Trial: 82, Time:38.548s
+39326634
+MF_time: 0.553s | MFGR_time: 1.850s | GR_time: 5.929s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.548s | GOGO_time: 1.276s | GOGR_time: 4.569s
+Trial: 83, Time:36.424s
+39463241
+MF_time: 0.589s | MFGR_time: 1.899s | GR_time: 6.037s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.555s | GOGO_time: 1.278s | GOGR_time: 5.860s
+Trial: 84, Time:37.996s
+39772408
+MF_time: 0.554s | MFGR_time: 1.871s | GR_time: 5.947s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.551s | GOGO_time: 1.281s | GOGR_time: 4.536s
+Trial: 85, Time:36.514s
+40036330
+MF_time: 0.585s | MFGR_time: 1.903s | GR_time: 6.004s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.553s | GOGO_time: 1.287s | GOGR_time: 5.436s
+Trial: 86, Time:37.706s
+41117535
+MF_time: 0.552s | MFGR_time: 1.870s | GR_time: 5.899s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.554s | GOGO_time: 1.306s | GOGR_time: 4.536s
+Trial: 87, Time:36.940s
+41788456
+MF_time: 0.575s | MFGR_time: 1.887s | GR_time: 5.991s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.551s | GOGO_time: 1.322s | GOGR_time: 5.370s
+Trial: 88, Time:38.173s
+41788758
+MF_time: 0.550s | MFGR_time: 1.873s | GR_time: 5.923s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.554s | GOGO_time: 1.320s | GOGR_time: 4.586s
+Trial: 89, Time:37.111s
+41357572
+MF_time: 0.575s | MFGR_time: 1.897s | GR_time: 5.977s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.559s | GOGO_time: 1.316s | GOGR_time: 5.475s
+Trial: 90, Time:38.028s
+40858254
+MF_time: 0.553s | MFGR_time: 1.876s | GR_time: 5.919s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.558s | GOGO_time: 1.307s | GOGR_time: 4.569s
+Trial: 91, Time:36.825s
+41114516
+MF_time: 0.570s | MFGR_time: 1.886s | GR_time: 6.006s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.560s | GOGO_time: 1.305s | GOGR_time: 5.324s
+Trial: 92, Time:37.742s
+40094371
+MF_time: 0.548s | MFGR_time: 1.872s | GR_time: 5.937s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.559s | GOGO_time: 1.295s | GOGR_time: 4.552s
+Trial: 93, Time:36.657s
+39164378
+MF_time: 0.573s | MFGR_time: 1.893s | GR_time: 6.011s | GRGO_time: 0.003s | MFGO_time: 0.727s | GO_time: 0.555s | GOGO_time: 1.283s | GOGR_time: 5.402s
+Trial: 94, Time:37.460s
+38575885
+MF_time: 0.553s | MFGR_time: 1.866s | GR_time: 5.938s | GRGO_time: 0.003s | MFGO_time: 0.727s | GO_time: 0.558s | GOGO_time: 1.271s | GOGR_time: 4.539s
+Trial: 95, Time:36.202s
+39195917
+MF_time: 0.568s | MFGR_time: 1.883s | GR_time: 6.020s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.558s | GOGO_time: 1.280s | GOGR_time: 5.346s
+Trial: 96, Time:37.350s
+38718363
+MF_time: 0.545s | MFGR_time: 1.862s | GR_time: 5.935s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.552s | GOGO_time: 1.268s | GOGR_time: 4.524s
+Trial: 97, Time:36.173s
+39435849
+MF_time: 0.578s | MFGR_time: 1.896s | GR_time: 6.004s | GRGO_time: 0.003s | MFGO_time: 0.727s | GO_time: 0.555s | GOGO_time: 1.286s | GOGR_time: 5.497s
+Trial: 98, Time:37.581s
+39625584
+MF_time: 0.607s | MFGR_time: 1.918s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.551s | GOGO_time: 1.287s | GOGR_time: 6.293s
+Trial: 99, Time:38.517s
+39914159
+MF_time: 0.548s | MFGR_time: 1.865s | GR_time: 5.923s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.559s | GOGO_time: 1.290s | GOGR_time: 4.615s
+Trial: 100, Time:36.580s
+40225052
+MF_time: 0.585s | MFGR_time: 1.884s | GR_time: 6.043s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.555s | GOGO_time: 1.294s | GOGR_time: 5.621s
+Trial: 101, Time:37.912s
+40091357
+MF_time: 0.547s | MFGR_time: 1.843s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.558s | GOGO_time: 1.290s | GOGR_time: 4.596s
+Trial: 102, Time:36.491s
+39694997
+MF_time: 0.597s | MFGR_time: 1.887s | GR_time: 6.046s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.560s | GOGO_time: 1.282s | GOGR_time: 6.000s
+Trial: 103, Time:38.059s
+39798582
+MF_time: 0.549s | MFGR_time: 1.852s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.556s | GOGO_time: 1.286s | GOGR_time: 4.634s
+Trial: 104, Time:36.482s
+39277799
+MF_time: 0.592s | MFGR_time: 1.877s | GR_time: 6.017s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.553s | GOGO_time: 1.277s | GOGR_time: 5.945s
+Trial: 105, Time:37.896s
+37748465
+MF_time: 0.561s | MFGR_time: 1.853s | GR_time: 5.911s | GRGO_time: 0.003s | MFGO_time: 0.719s | GO_time: 0.555s | GOGO_time: 1.245s | GOGR_time: 4.576s
+Trial: 106, Time:35.819s
+37479523
+MF_time: 0.570s | MFGR_time: 1.882s | GR_time: 5.995s | GRGO_time: 0.003s | MFGO_time: 0.714s | GO_time: 0.552s | GOGO_time: 1.242s | GOGR_time: 5.438s
+Trial: 107, Time:36.746s
+38158895
+MF_time: 0.565s | MFGR_time: 1.867s | GR_time: 5.942s | GRGO_time: 0.004s | MFGO_time: 0.716s | GO_time: 0.558s | GOGO_time: 1.254s | GOGR_time: 5.055s
+Trial: 108, Time:36.416s
+38020950
+MF_time: 0.557s | MFGR_time: 1.861s | GR_time: 5.915s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.555s | GOGO_time: 1.246s | GOGR_time: 4.676s
+Trial: 109, Time:35.906s
+38236664
+MF_time: 0.582s | MFGR_time: 1.891s | GR_time: 5.997s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.558s | GOGO_time: 1.252s | GOGR_time: 5.653s
+Trial: 110, Time:37.166s
+38351279
+MF_time: 0.544s | MFGR_time: 1.849s | GR_time: 5.935s | GRGO_time: 0.003s | MFGO_time: 0.719s | GO_time: 0.559s | GOGO_time: 1.256s | GOGR_time: 4.514s
+Trial: 111, Time:35.906s
+37333083
+MF_time: 0.568s | MFGR_time: 1.875s | GR_time: 5.988s | GRGO_time: 0.004s | MFGO_time: 0.699s | GO_time: 0.550s | GOGO_time: 1.237s | GOGR_time: 5.335s
+Trial: 112, Time:36.825s
+37666368
+MF_time: 0.549s | MFGR_time: 1.850s | GR_time: 5.912s | GRGO_time: 0.003s | MFGO_time: 0.697s | GO_time: 0.545s | GOGO_time: 1.237s | GOGR_time: 4.464s
+Trial: 113, Time:35.831s
+38604740
+MF_time: 0.574s | MFGR_time: 1.876s | GR_time: 5.981s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.550s | GOGO_time: 1.252s | GOGR_time: 5.354s
+Trial: 114, Time:37.146s
+38048500
+MF_time: 0.552s | MFGR_time: 1.864s | GR_time: 5.882s | GRGO_time: 0.004s | MFGO_time: 0.703s | GO_time: 0.546s | GOGO_time: 1.247s | GOGR_time: 4.508s
+Trial: 115, Time:36.024s
+38883743
+MF_time: 0.571s | MFGR_time: 1.890s | GR_time: 5.969s | GRGO_time: 0.004s | MFGO_time: 0.713s | GO_time: 0.550s | GOGO_time: 1.264s | GOGR_time: 5.440s
+Trial: 116, Time:37.432s
+38386274
+MF_time: 0.547s | MFGR_time: 1.855s | GR_time: 5.915s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.545s | GOGO_time: 1.258s | GOGR_time: 4.493s
+Trial: 117, Time:36.159s
+38763343
+MF_time: 0.588s | MFGR_time: 1.893s | GR_time: 6.002s | GRGO_time: 0.003s | MFGO_time: 0.718s | GO_time: 0.549s | GOGO_time: 1.267s | GOGR_time: 5.446s
+Trial: 118, Time:37.376s
+39143468
+MF_time: 0.549s | MFGR_time: 1.864s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.559s | GOGO_time: 1.273s | GOGR_time: 4.527s
+Trial: 119, Time:36.203s
+39246831
+MF_time: 0.568s | MFGR_time: 1.885s | GR_time: 6.001s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.557s | GOGO_time: 1.273s | GOGR_time: 5.363s
+Trial: 120, Time:37.249s
+40333594
+MF_time: 0.559s | MFGR_time: 1.874s | GR_time: 5.940s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.559s | GOGO_time: 1.290s | GOGR_time: 4.566s
+Trial: 121, Time:36.778s
+40402533
+MF_time: 0.571s | MFGR_time: 1.892s | GR_time: 6.020s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.557s | GOGO_time: 1.287s | GOGR_time: 5.376s
+Trial: 122, Time:37.540s
+40325803
+MF_time: 0.552s | MFGR_time: 1.862s | GR_time: 5.941s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.561s | GOGO_time: 1.291s | GOGR_time: 4.567s
+Trial: 123, Time:36.615s
+40095959
+MF_time: 0.579s | MFGR_time: 1.902s | GR_time: 5.994s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.553s | GOGO_time: 1.283s | GOGR_time: 5.476s
+Trial: 124, Time:37.615s
+39724880
+MF_time: 0.604s | MFGR_time: 1.918s | GR_time: 6.026s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.554s | GOGO_time: 1.279s | GOGR_time: 6.284s
+Trial: 125, Time:38.462s
+40394730
+MF_time: 0.565s | MFGR_time: 1.892s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.561s | GOGO_time: 1.288s | GOGR_time: 4.664s
+Trial: 126, Time:36.768s
+39387427
+MF_time: 0.593s | MFGR_time: 1.913s | GR_time: 6.081s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.557s | GOGO_time: 1.266s | GOGR_time: 5.845s
+Trial: 127, Time:37.820s
+40411892
+MF_time: 0.562s | MFGR_time: 1.884s | GR_time: 5.977s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.564s | GOGO_time: 1.288s | GOGR_time: 4.696s
+Trial: 128, Time:36.746s
+39534001
+MF_time: 0.602s | MFGR_time: 1.908s | GR_time: 6.080s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.553s | GOGO_time: 1.268s | GOGR_time: 6.009s
+Trial: 129, Time:37.992s
+40084096
+MF_time: 0.560s | MFGR_time: 1.857s | GR_time: 5.958s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.556s | GOGO_time: 1.276s | GOGR_time: 4.627s
+Trial: 130, Time:36.448s
+39227850
+MF_time: 0.598s | MFGR_time: 1.907s | GR_time: 6.069s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.556s | GOGO_time: 1.272s | GOGR_time: 5.915s
+Trial: 131, Time:37.875s
+40101103
+MF_time: 0.561s | MFGR_time: 1.867s | GR_time: 5.972s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.564s | GOGO_time: 1.292s | GOGR_time: 4.633s
+Trial: 132, Time:36.692s
+39216101
+MF_time: 0.602s | MFGR_time: 1.897s | GR_time: 6.068s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.561s | GOGO_time: 1.278s | GOGR_time: 6.028s
+Trial: 133, Time:38.108s
+38107524
+MF_time: 0.554s | MFGR_time: 1.842s | GR_time: 5.954s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.562s | GOGO_time: 1.260s | GOGR_time: 4.583s
+Trial: 134, Time:36.094s
+38686262
+MF_time: 0.589s | MFGR_time: 1.896s | GR_time: 6.077s | GRGO_time: 0.003s | MFGO_time: 0.720s | GO_time: 0.557s | GOGO_time: 1.267s | GOGR_time: 5.807s
+Trial: 135, Time:37.740s
+39454430
+MF_time: 0.553s | MFGR_time: 1.865s | GR_time: 5.989s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.568s | GOGO_time: 1.288s | GOGR_time: 4.607s
+Trial: 136, Time:36.593s
+38164460
+MF_time: 0.594s | MFGR_time: 1.897s | GR_time: 6.076s | GRGO_time: 0.003s | MFGO_time: 0.720s | GO_time: 0.559s | GOGO_time: 1.265s | GOGR_time: 5.866s
+Trial: 137, Time:37.657s
+38969063
+MF_time: 0.557s | MFGR_time: 1.866s | GR_time: 5.984s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.565s | GOGO_time: 1.276s | GOGR_time: 4.573s
+Trial: 138, Time:36.413s
+39218955
+MF_time: 0.582s | MFGR_time: 1.891s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.566s | GOGO_time: 1.285s | GOGR_time: 5.423s
+Trial: 139, Time:37.517s
+39039425
+MF_time: 0.572s | MFGR_time: 1.880s | GR_time: 6.008s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.566s | GOGO_time: 1.280s | GOGR_time: 5.075s
+Trial: 140, Time:36.956s
+40518394
+MF_time: 0.563s | MFGR_time: 1.874s | GR_time: 5.980s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.568s | GOGO_time: 1.310s | GOGR_time: 4.592s
+Trial: 141, Time:36.988s
+40595618
+MF_time: 0.593s | MFGR_time: 1.897s | GR_time: 6.050s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.568s | GOGO_time: 1.307s | GOGR_time: 5.466s
+Trial: 142, Time:37.928s
+39858096
+MF_time: 0.581s | MFGR_time: 1.892s | GR_time: 6.001s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.565s | GOGO_time: 1.296s | GOGR_time: 5.156s
+Trial: 143, Time:37.388s
+40088766
+MF_time: 0.576s | MFGR_time: 1.889s | GR_time: 5.989s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.565s | GOGO_time: 1.301s | GOGR_time: 4.762s
+Trial: 144, Time:37.036s
+40829108
+MF_time: 0.590s | MFGR_time: 1.900s | GR_time: 6.047s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.570s | GOGO_time: 1.314s | GOGR_time: 5.653s
+Trial: 145, Time:38.246s
+40735208
+MF_time: 0.584s | MFGR_time: 1.895s | GR_time: 6.024s | GRGO_time: 0.003s | MFGO_time: 0.743s | GO_time: 0.565s | GOGO_time: 1.310s | GOGR_time: 5.210s
+Trial: 146, Time:37.622s
+40545115
+MF_time: 0.569s | MFGR_time: 1.882s | GR_time: 5.978s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.568s | GOGO_time: 1.305s | GOGR_time: 4.615s
+Trial: 147, Time:36.969s
+41168343
+MF_time: 0.593s | MFGR_time: 1.893s | GR_time: 6.050s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.567s | GOGO_time: 1.314s | GOGR_time: 5.433s
+Trial: 148, Time:38.066s
+40996320
+MF_time: 0.567s | MFGR_time: 1.874s | GR_time: 5.984s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.568s | GOGO_time: 1.313s | GOGR_time: 4.610s
+Trial: 149, Time:37.049s
+41520821
+MF_time: 0.589s | MFGR_time: 1.894s | GR_time: 6.044s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.571s | GOGO_time: 1.323s | GOGR_time: 5.480s
+Trial: 150, Time:38.093s
+41748129
+MF_time: 0.570s | MFGR_time: 1.878s | GR_time: 5.970s | GRGO_time: 0.004s | MFGO_time: 0.761s | GO_time: 0.575s | GOGO_time: 1.322s | GOGR_time: 4.645s
+Trial: 151, Time:37.102s
+41594694
+MF_time: 0.581s | MFGR_time: 1.898s | GR_time: 6.044s | GRGO_time: 0.004s | MFGO_time: 0.758s | GO_time: 0.572s | GOGO_time: 1.321s | GOGR_time: 5.344s
+Trial: 152, Time:37.871s
+41430879
+MF_time: 0.571s | MFGR_time: 1.881s | GR_time: 5.975s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.573s | GOGO_time: 1.320s | GOGR_time: 4.636s
+Trial: 153, Time:37.013s
+41197602
+MF_time: 0.584s | MFGR_time: 1.897s | GR_time: 6.037s | GRGO_time: 0.004s | MFGO_time: 0.752s | GO_time: 0.567s | GOGO_time: 1.313s | GOGR_time: 5.348s
+Trial: 154, Time:37.746s
+42085206
+MF_time: 0.616s | MFGR_time: 1.903s | GR_time: 6.075s | GRGO_time: 0.004s | MFGO_time: 0.762s | GO_time: 0.568s | GOGO_time: 1.332s | GOGR_time: 6.134s
+Trial: 155, Time:38.996s
+41806915
+MF_time: 0.547s | MFGR_time: 1.868s | GR_time: 5.887s | GRGO_time: 0.004s | MFGO_time: 0.759s | GO_time: 0.566s | GOGO_time: 1.328s | GOGR_time: 4.770s
+Trial: 156, Time:37.209s
+40825458
+MF_time: 0.583s | MFGR_time: 1.910s | GR_time: 5.945s | GRGO_time: 0.004s | MFGO_time: 0.752s | GO_time: 0.562s | GOGO_time: 1.313s | GOGR_time: 5.915s
+Trial: 157, Time:38.310s
+41607033
+MF_time: 0.541s | MFGR_time: 1.854s | GR_time: 5.842s | GRGO_time: 0.004s | MFGO_time: 0.758s | GO_time: 0.568s | GOGO_time: 1.324s | GOGR_time: 4.670s
+Trial: 158, Time:37.000s
+41743276
+MF_time: 0.587s | MFGR_time: 1.903s | GR_time: 5.937s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.563s | GOGO_time: 1.324s | GOGR_time: 5.899s
+Trial: 159, Time:38.546s
+42564407
+MF_time: 0.535s | MFGR_time: 1.863s | GR_time: 5.825s | GRGO_time: 0.004s | MFGO_time: 0.764s | GO_time: 0.566s | GOGO_time: 1.338s | GOGR_time: 4.706s
+Trial: 160, Time:37.257s
+42851294
+MF_time: 0.577s | MFGR_time: 1.907s | GR_time: 5.927s | GRGO_time: 0.004s | MFGO_time: 0.762s | GO_time: 0.567s | GOGO_time: 1.343s | GOGR_time: 5.932s
+Trial: 161, Time:38.809s
+42268598
+MF_time: 0.536s | MFGR_time: 1.865s | GR_time: 5.837s | GRGO_time: 0.004s | MFGO_time: 0.761s | GO_time: 0.567s | GOGO_time: 1.332s | GOGR_time: 4.694s
+Trial: 162, Time:37.173s
+41519075
+MF_time: 0.587s | MFGR_time: 1.910s | GR_time: 5.922s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.563s | GOGO_time: 1.320s | GOGR_time: 6.003s
+Trial: 163, Time:38.514s
+40962941
+MF_time: 0.530s | MFGR_time: 1.867s | GR_time: 5.842s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.563s | GOGO_time: 1.312s | GOGR_time: 4.627s
+Trial: 164, Time:36.733s
+42022128
+MF_time: 0.557s | MFGR_time: 1.892s | GR_time: 5.894s | GRGO_time: 0.004s | MFGO_time: 0.759s | GO_time: 0.565s | GOGO_time: 1.333s | GOGR_time: 5.319s
+Trial: 165, Time:37.871s
+41184596
+MF_time: 0.548s | MFGR_time: 1.886s | GR_time: 5.869s | GRGO_time: 0.004s | MFGO_time: 0.752s | GO_time: 0.565s | GOGO_time: 1.318s | GOGR_time: 5.052s
+Trial: 166, Time:37.486s
+40896632
+MF_time: 0.539s | MFGR_time: 1.867s | GR_time: 5.833s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.562s | GOGO_time: 1.307s | GOGR_time: 4.631s
+Trial: 167, Time:36.702s
+41049609
+MF_time: 0.551s | MFGR_time: 1.883s | GR_time: 5.889s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.562s | GOGO_time: 1.313s | GOGR_time: 5.374s
+Trial: 168, Time:37.619s
+40482939
+MF_time: 0.533s | MFGR_time: 1.862s | GR_time: 5.835s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.562s | GOGO_time: 1.304s | GOGR_time: 4.615s
+Trial: 169, Time:36.601s
+41875257
+MF_time: 0.555s | MFGR_time: 1.895s | GR_time: 5.891s | GRGO_time: 0.004s | MFGO_time: 0.759s | GO_time: 0.562s | GOGO_time: 1.325s | GOGR_time: 5.393s
+Trial: 170, Time:37.867s
+40952051
+MF_time: 0.580s | MFGR_time: 1.910s | GR_time: 5.926s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.559s | GOGO_time: 1.306s | GOGR_time: 6.067s
+Trial: 171, Time:38.413s
+41917684
+MF_time: 0.523s | MFGR_time: 1.873s | GR_time: 5.816s | GRGO_time: 0.003s | MFGO_time: 0.758s | GO_time: 0.549s | GOGO_time: 1.325s | GOGR_time: 4.702s
+Trial: 172, Time:37.046s
+41727816
+MF_time: 0.558s | MFGR_time: 1.894s | GR_time: 5.896s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.546s | GOGO_time: 1.316s | GOGR_time: 5.768s
+Trial: 173, Time:38.247s
+42196960
+MF_time: 0.536s | MFGR_time: 1.857s | GR_time: 5.837s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.556s | GOGO_time: 1.324s | GOGR_time: 4.685s
+Trial: 174, Time:37.085s
+42982456
+MF_time: 0.585s | MFGR_time: 1.895s | GR_time: 6.014s | GRGO_time: 0.003s | MFGO_time: 0.762s | GO_time: 0.567s | GOGO_time: 1.339s | GOGR_time: 5.321s
+Trial: 175, Time:38.113s
+41703458
+MF_time: 0.555s | MFGR_time: 1.865s | GR_time: 5.957s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.565s | GOGO_time: 1.320s | GOGR_time: 4.613s
+Trial: 176, Time:36.914s
+41026009
+MF_time: 0.580s | MFGR_time: 1.900s | GR_time: 6.024s | GRGO_time: 0.004s | MFGO_time: 0.756s | GO_time: 0.563s | GOGO_time: 1.305s | GOGR_time: 5.474s
+Trial: 177, Time:37.715s
+41339681
+MF_time: 0.612s | MFGR_time: 1.915s | GR_time: 6.010s | GRGO_time: 0.004s | MFGO_time: 0.752s | GO_time: 0.566s | GOGO_time: 1.314s | GOGR_time: 6.170s
+Trial: 178, Time:38.681s
+41044347
+MF_time: 0.577s | MFGR_time: 1.893s | GR_time: 5.985s | GRGO_time: 0.004s | MFGO_time: 0.752s | GO_time: 0.561s | GOGO_time: 1.302s | GOGR_time: 5.336s
+Trial: 179, Time:37.561s
+41245897
+MF_time: 0.587s | MFGR_time: 1.900s | GR_time: 6.023s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.565s | GOGO_time: 1.307s | GOGR_time: 5.741s
+Trial: 180, Time:38.072s
+40628084
+MF_time: 0.558s | MFGR_time: 1.880s | GR_time: 5.929s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.564s | GOGO_time: 1.297s | GOGR_time: 4.601s
+Trial: 181, Time:36.509s
+41040470
+MF_time: 0.571s | MFGR_time: 1.895s | GR_time: 5.997s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.560s | GOGO_time: 1.304s | GOGR_time: 5.338s
+Trial: 182, Time:37.567s
+41299883
+MF_time: 0.553s | MFGR_time: 1.876s | GR_time: 5.941s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.562s | GOGO_time: 1.306s | GOGR_time: 4.589s
+Trial: 183, Time:36.713s
+41333578
+MF_time: 0.575s | MFGR_time: 1.891s | GR_time: 5.997s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.560s | GOGO_time: 1.302s | GOGR_time: 5.349s
+Trial: 184, Time:37.526s
+40303033
+MF_time: 0.549s | MFGR_time: 1.872s | GR_time: 5.948s | GRGO_time: 0.003s | MFGO_time: 0.741s | GO_time: 0.560s | GOGO_time: 1.287s | GOGR_time: 4.598s
+Trial: 185, Time:36.420s
+40382799
+MF_time: 0.571s | MFGR_time: 1.890s | GR_time: 5.985s | GRGO_time: 0.004s | MFGO_time: 0.743s | GO_time: 0.560s | GOGO_time: 1.289s | GOGR_time: 5.426s
+Trial: 186, Time:37.376s
+39063915
+MF_time: 0.543s | MFGR_time: 1.859s | GR_time: 5.898s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.561s | GOGO_time: 1.268s | GOGR_time: 4.552s
+Trial: 187, Time:35.951s
+40229610
+MF_time: 0.583s | MFGR_time: 1.898s | GR_time: 5.978s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.562s | GOGO_time: 1.293s | GOGR_time: 5.510s
+Trial: 188, Time:37.557s
+41148847
+MF_time: 0.557s | MFGR_time: 1.869s | GR_time: 5.912s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.566s | GOGO_time: 1.313s | GOGR_time: 4.628s
+Trial: 189, Time:36.830s
+41740501
+MF_time: 0.572s | MFGR_time: 1.895s | GR_time: 5.990s | GRGO_time: 0.004s | MFGO_time: 0.752s | GO_time: 0.569s | GOGO_time: 1.320s | GOGR_time: 5.408s
+Trial: 190, Time:37.847s
+40841740
+MF_time: 0.553s | MFGR_time: 1.869s | GR_time: 5.923s | GRGO_time: 0.004s | MFGO_time: 0.752s | GO_time: 0.562s | GOGO_time: 1.301s | GOGR_time: 4.593s
+Trial: 191, Time:36.586s
+41644870
+MF_time: 0.581s | MFGR_time: 1.893s | GR_time: 5.989s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.563s | GOGO_time: 1.308s | GOGR_time: 5.413s
+Trial: 192, Time:37.653s
+41603089
+MF_time: 0.560s | MFGR_time: 1.866s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.564s | GOGO_time: 1.305s | GOGR_time: 4.592s
+Trial: 193, Time:36.726s
+41685577
+MF_time: 0.586s | MFGR_time: 1.895s | GR_time: 5.984s | GRGO_time: 0.004s | MFGO_time: 0.753s | GO_time: 0.561s | GOGO_time: 1.309s | GOGR_time: 5.455s
+Trial: 194, Time:37.809s
+42020573
+MF_time: 0.623s | MFGR_time: 1.915s | GR_time: 6.020s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.563s | GOGO_time: 1.321s | GOGR_time: 6.229s
+Trial: 195, Time:38.889s
+41890302
+MF_time: 0.564s | MFGR_time: 1.880s | GR_time: 5.953s | GRGO_time: 0.003s | MFGO_time: 0.761s | GO_time: 0.574s | GOGO_time: 1.326s | GOGR_time: 4.691s
+Trial: 196, Time:37.049s
+41495712
+MF_time: 0.594s | MFGR_time: 1.904s | GR_time: 6.061s | GRGO_time: 0.004s | MFGO_time: 0.753s | GO_time: 0.566s | GOGO_time: 1.320s | GOGR_time: 5.827s
+Trial: 197, Time:38.462s
+41054073
+MF_time: 0.548s | MFGR_time: 1.874s | GR_time: 5.937s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.562s | GOGO_time: 1.310s | GOGR_time: 4.692s
+Trial: 198, Time:37.057s
+40933329
+MF_time: 0.596s | MFGR_time: 1.907s | GR_time: 6.033s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.565s | GOGO_time: 1.314s | GOGR_time: 5.909s
+Trial: 199, Time:38.600s
+41009946
+MF_time: 0.545s | MFGR_time: 1.868s | GR_time: 5.910s | GRGO_time: 0.004s | MFGO_time: 0.743s | GO_time: 0.567s | GOGO_time: 1.310s | GOGR_time: 4.630s
+Trial: 200, Time:36.905s
+40569618
+MF_time: 0.587s | MFGR_time: 1.896s | GR_time: 6.005s | GRGO_time: 0.003s | MFGO_time: 0.733s | GO_time: 0.563s | GOGO_time: 1.301s | GOGR_time: 5.924s
+Trial: 201, Time:38.291s
+40858982
+MF_time: 0.542s | MFGR_time: 1.848s | GR_time: 5.904s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.564s | GOGO_time: 1.313s | GOGR_time: 4.628s
+Trial: 202, Time:36.933s
+41125257
+MF_time: 0.603s | MFGR_time: 1.906s | GR_time: 6.012s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.565s | GOGO_time: 1.318s | GOGR_time: 5.943s
+Trial: 203, Time:38.752s
+41218686
+MF_time: 0.544s | MFGR_time: 1.872s | GR_time: 5.915s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.568s | GOGO_time: 1.325s | GOGR_time: 4.581s
+Trial: 204, Time:37.092s
+41855208
+MF_time: 0.566s | MFGR_time: 1.889s | GR_time: 5.973s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.553s | GOGO_time: 1.328s | GOGR_time: 5.325s
+Trial: 205, Time:38.009s
+41652591
+MF_time: 0.548s | MFGR_time: 1.882s | GR_time: 5.910s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.552s | GOGO_time: 1.321s | GOGR_time: 4.583s
+Trial: 206, Time:37.037s
+41156321
+MF_time: 0.569s | MFGR_time: 1.889s | GR_time: 5.969s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.551s | GOGO_time: 1.306s | GOGR_time: 5.368s
+Trial: 207, Time:37.720s
+41381231
+MF_time: 0.544s | MFGR_time: 1.869s | GR_time: 5.906s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.555s | GOGO_time: 1.307s | GOGR_time: 4.616s
+Trial: 208, Time:36.879s
+42413822
+MF_time: 0.558s | MFGR_time: 1.894s | GR_time: 5.964s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.553s | GOGO_time: 1.321s | GOGR_time: 5.403s
+Trial: 209, Time:37.944s
+42493348
+MF_time: 0.538s | MFGR_time: 1.881s | GR_time: 5.908s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.557s | GOGO_time: 1.323s | GOGR_time: 4.598s
+Trial: 210, Time:37.104s
+42058629
+MF_time: 0.570s | MFGR_time: 1.898s | GR_time: 5.970s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.550s | GOGO_time: 1.313s | GOGR_time: 5.457s
+Trial: 211, Time:38.181s
+42896414
+MF_time: 0.534s | MFGR_time: 1.875s | GR_time: 5.911s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.555s | GOGO_time: 1.329s | GOGR_time: 4.610s
+Trial: 212, Time:37.246s
+42628836
+MF_time: 0.566s | MFGR_time: 1.904s | GR_time: 5.979s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.553s | GOGO_time: 1.322s | GOGR_time: 5.361s
+Trial: 213, Time:38.089s
+43267207
+MF_time: 0.540s | MFGR_time: 1.882s | GR_time: 5.916s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.553s | GOGO_time: 1.337s | GOGR_time: 4.582s
+Trial: 214, Time:37.413s
+43238514
+MF_time: 0.565s | MFGR_time: 1.899s | GR_time: 5.975s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.555s | GOGO_time: 1.338s | GOGR_time: 5.337s
+Trial: 215, Time:38.279s
+43061921
+MF_time: 0.547s | MFGR_time: 1.880s | GR_time: 5.909s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.560s | GOGO_time: 1.340s | GOGR_time: 4.636s
+Trial: 216, Time:37.445s
+42895263
+MF_time: 0.563s | MFGR_time: 1.902s | GR_time: 5.966s | GRGO_time: 0.004s | MFGO_time: 0.753s | GO_time: 0.562s | GOGO_time: 1.337s | GOGR_time: 5.290s
+Trial: 217, Time:38.231s
+43566725
+MF_time: 0.543s | MFGR_time: 1.880s | GR_time: 5.925s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.563s | GOGO_time: 1.347s | GOGR_time: 4.598s
+Trial: 218, Time:37.516s
+42882610
+MF_time: 0.560s | MFGR_time: 1.890s | GR_time: 5.984s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.563s | GOGO_time: 1.338s | GOGR_time: 5.281s
+Trial: 219, Time:38.151s
+42356123
+MF_time: 0.540s | MFGR_time: 1.875s | GR_time: 5.917s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.553s | GOGO_time: 1.325s | GOGR_time: 4.598s
+Trial: 220, Time:37.214s
+42171862
+MF_time: 0.564s | MFGR_time: 1.893s | GR_time: 5.983s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.553s | GOGO_time: 1.323s | GOGR_time: 5.397s
+Trial: 221, Time:38.093s
+41890650
+MF_time: 0.592s | MFGR_time: 1.916s | GR_time: 5.997s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.558s | GOGO_time: 1.324s | GOGR_time: 6.208s
+Trial: 222, Time:38.931s
+42169968
+MF_time: 0.543s | MFGR_time: 1.859s | GR_time: 5.907s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.557s | GOGO_time: 1.329s | GOGR_time: 4.654s
+Trial: 223, Time:37.275s
+41204001
+MF_time: 0.580s | MFGR_time: 1.881s | GR_time: 6.031s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.557s | GOGO_time: 1.312s | GOGR_time: 5.855s
+Trial: 224, Time:38.541s
+40524997
+MF_time: 0.544s | MFGR_time: 1.857s | GR_time: 5.924s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.559s | GOGO_time: 1.298s | GOGR_time: 4.690s
+Trial: 225, Time:36.851s
+40777512
+MF_time: 0.585s | MFGR_time: 1.888s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.549s | GOGO_time: 1.300s | GOGR_time: 6.012s
+Trial: 226, Time:38.499s
+40391765
+MF_time: 0.544s | MFGR_time: 1.861s | GR_time: 5.917s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.546s | GOGO_time: 1.297s | GOGR_time: 4.745s
+Trial: 227, Time:36.985s
+40044057
+MF_time: 0.581s | MFGR_time: 1.886s | GR_time: 6.011s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.545s | GOGO_time: 1.286s | GOGR_time: 6.214s
+Trial: 228, Time:38.538s
+39857784
+MF_time: 0.531s | MFGR_time: 1.861s | GR_time: 5.917s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.544s | GOGO_time: 1.287s | GOGR_time: 4.583s
+Trial: 229, Time:36.617s
+39477898
+MF_time: 0.554s | MFGR_time: 1.892s | GR_time: 5.985s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.549s | GOGO_time: 1.280s | GOGR_time: 5.463s
+Trial: 230, Time:37.523s
+39373385
+MF_time: 0.548s | MFGR_time: 1.873s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.548s | GOGO_time: 1.279s | GOGR_time: 5.132s
+Trial: 231, Time:37.033s
+38828870
+MF_time: 0.542s | MFGR_time: 1.868s | GR_time: 5.934s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.549s | GOGO_time: 1.271s | GOGR_time: 4.755s
+Trial: 232, Time:36.527s
+39021535
+MF_time: 0.574s | MFGR_time: 1.891s | GR_time: 5.979s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.543s | GOGO_time: 1.271s | GOGR_time: 5.640s
+Trial: 233, Time:37.531s
+39273697
+MF_time: 0.532s | MFGR_time: 1.859s | GR_time: 5.922s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.544s | GOGO_time: 1.277s | GOGR_time: 4.559s
+Trial: 234, Time:36.345s
+39968670
+MF_time: 0.561s | MFGR_time: 1.894s | GR_time: 5.968s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.544s | GOGO_time: 1.283s | GOGR_time: 5.468s
+Trial: 235, Time:37.570s
+40908545
+MF_time: 0.589s | MFGR_time: 1.910s | GR_time: 6.005s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.545s | GOGO_time: 1.295s | GOGR_time: 6.284s
+Trial: 236, Time:38.671s
+41095813
+MF_time: 0.537s | MFGR_time: 1.863s | GR_time: 5.921s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.551s | GOGO_time: 1.302s | GOGR_time: 4.681s
+Trial: 237, Time:36.844s
+40291502
+MF_time: 0.573s | MFGR_time: 1.873s | GR_time: 6.010s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.544s | GOGO_time: 1.289s | GOGR_time: 5.893s
+Trial: 238, Time:38.070s
+40473561
+MF_time: 0.539s | MFGR_time: 1.850s | GR_time: 5.894s | GRGO_time: 0.003s | MFGO_time: 0.741s | GO_time: 0.546s | GOGO_time: 1.285s | GOGR_time: 4.638s
+Trial: 239, Time:36.552s
+40229011
+MF_time: 0.578s | MFGR_time: 1.899s | GR_time: 6.014s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.546s | GOGO_time: 1.287s | GOGR_time: 5.894s
+Trial: 240, Time:38.035s
+39929820
+MF_time: 0.549s | MFGR_time: 1.862s | GR_time: 5.927s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.552s | GOGO_time: 1.283s | GOGR_time: 4.577s
+Trial: 241, Time:36.408s
+40159253
+MF_time: 0.568s | MFGR_time: 1.884s | GR_time: 5.991s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.553s | GOGO_time: 1.286s | GOGR_time: 5.339s
+Trial: 242, Time:37.294s
+40273031
+MF_time: 0.562s | MFGR_time: 1.881s | GR_time: 5.962s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.553s | GOGO_time: 1.287s | GOGR_time: 5.012s
+Trial: 243, Time:36.904s
+40226886
+MF_time: 0.547s | MFGR_time: 1.867s | GR_time: 5.925s | GRGO_time: 0.003s | MFGO_time: 0.742s | GO_time: 0.553s | GOGO_time: 1.286s | GOGR_time: 4.591s
+Trial: 244, Time:36.496s
+39074470
+MF_time: 0.568s | MFGR_time: 1.897s | GR_time: 6.012s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.551s | GOGO_time: 1.261s | GOGR_time: 5.455s
+Trial: 245, Time:37.095s
+39059482
+MF_time: 0.550s | MFGR_time: 1.866s | GR_time: 5.952s | GRGO_time: 0.003s | MFGO_time: 0.734s | GO_time: 0.557s | GOGO_time: 1.264s | GOGR_time: 4.569s
+Trial: 246, Time:36.101s
+39327510
+MF_time: 0.576s | MFGR_time: 1.896s | GR_time: 6.027s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.558s | GOGO_time: 1.266s | GOGR_time: 5.502s
+Trial: 247, Time:37.296s
+39960784
+MF_time: 0.552s | MFGR_time: 1.866s | GR_time: 5.953s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.558s | GOGO_time: 1.275s | GOGR_time: 4.576s
+Trial: 248, Time:36.275s
+39276243
+MF_time: 0.574s | MFGR_time: 1.895s | GR_time: 6.031s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.557s | GOGO_time: 1.262s | GOGR_time: 5.461s
+Trial: 249, Time:37.146s
+40199425
+MF_time: 0.555s | MFGR_time: 1.869s | GR_time: 5.948s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.558s | GOGO_time: 1.288s | GOGR_time: 4.591s
+Trial: 250, Time:36.520s
+40254036
+MF_time: 0.575s | MFGR_time: 1.895s | GR_time: 6.033s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.560s | GOGO_time: 1.289s | GOGR_time: 5.459s
+Trial: 251, Time:37.569s
+38852856
+MF_time: 0.551s | MFGR_time: 1.859s | GR_time: 5.947s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.557s | GOGO_time: 1.263s | GOGR_time: 4.567s
+Trial: 252, Time:36.135s
+38544214
+MF_time: 0.574s | MFGR_time: 1.891s | GR_time: 6.029s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.554s | GOGO_time: 1.256s | GOGR_time: 5.487s
+Trial: 253, Time:37.151s
+39055579
+MF_time: 0.552s | MFGR_time: 1.867s | GR_time: 5.961s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.557s | GOGO_time: 1.264s | GOGR_time: 4.584s
+Trial: 254, Time:36.231s
+39046468
+MF_time: 0.578s | MFGR_time: 1.899s | GR_time: 6.043s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.553s | GOGO_time: 1.266s | GOGR_time: 5.491s
+Trial: 255, Time:37.366s
+39490341
+MF_time: 0.553s | MFGR_time: 1.869s | GR_time: 5.960s | GRGO_time: 0.003s | MFGO_time: 0.738s | GO_time: 0.557s | GOGO_time: 1.277s | GOGR_time: 4.602s
+Trial: 256, Time:36.577s
+39594531
+MF_time: 0.578s | MFGR_time: 1.899s | GR_time: 6.053s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.560s | GOGO_time: 1.278s | GOGR_time: 5.505s
+Trial: 257, Time:37.564s
+39500096
+MF_time: 0.554s | MFGR_time: 1.869s | GR_time: 5.966s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.557s | GOGO_time: 1.284s | GOGR_time: 4.599s
+Trial: 258, Time:36.519s
+39099394
+MF_time: 0.578s | MFGR_time: 1.901s | GR_time: 6.045s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.558s | GOGO_time: 1.274s | GOGR_time: 5.485s
+Trial: 259, Time:37.532s
+39109380
+MF_time: 0.555s | MFGR_time: 1.868s | GR_time: 5.965s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.557s | GOGO_time: 1.271s | GOGR_time: 4.586s
+Trial: 260, Time:36.380s
+40535959
+MF_time: 0.580s | MFGR_time: 1.900s | GR_time: 6.049s | GRGO_time: 0.003s | MFGO_time: 0.740s | GO_time: 0.558s | GOGO_time: 1.291s | GOGR_time: 5.488s
+Trial: 261, Time:37.805s
+41046299
+MF_time: 0.556s | MFGR_time: 1.873s | GR_time: 5.968s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.557s | GOGO_time: 1.302s | GOGR_time: 4.610s
+Trial: 262, Time:36.887s
+40948802
+MF_time: 0.578s | MFGR_time: 1.903s | GR_time: 6.049s | GRGO_time: 0.003s | MFGO_time: 0.743s | GO_time: 0.556s | GOGO_time: 1.293s | GOGR_time: 5.530s
+Trial: 263, Time:37.917s
+40639060
+MF_time: 0.552s | MFGR_time: 1.875s | GR_time: 5.977s | GRGO_time: 0.003s | MFGO_time: 0.747s | GO_time: 0.558s | GOGO_time: 1.287s | GOGR_time: 4.605s
+Trial: 264, Time:36.607s
+41645875
+MF_time: 0.575s | MFGR_time: 1.904s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.752s | GO_time: 0.562s | GOGO_time: 1.309s | GOGR_time: 5.457s
+Trial: 265, Time:37.869s
+41543092
+MF_time: 0.554s | MFGR_time: 1.884s | GR_time: 5.980s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.558s | GOGO_time: 1.304s | GOGR_time: 4.623s
+Trial: 266, Time:36.829s
+40817087
+MF_time: 0.570s | MFGR_time: 1.896s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.560s | GOGO_time: 1.296s | GOGR_time: 5.332s
+Trial: 267, Time:37.514s
+40549319
+MF_time: 0.551s | MFGR_time: 1.875s | GR_time: 5.967s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.559s | GOGO_time: 1.295s | GOGR_time: 4.567s
+Trial: 268, Time:36.498s
+40967658
+MF_time: 0.568s | MFGR_time: 1.891s | GR_time: 6.049s | GRGO_time: 0.004s | MFGO_time: 0.758s | GO_time: 0.558s | GOGO_time: 1.303s | GOGR_time: 5.232s
+Trial: 269, Time:37.553s
+40433155
+MF_time: 0.551s | MFGR_time: 1.872s | GR_time: 5.965s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.560s | GOGO_time: 1.301s | GOGR_time: 4.568s
+Trial: 270, Time:36.591s
+40280790
+MF_time: 0.569s | MFGR_time: 1.891s | GR_time: 6.046s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.558s | GOGO_time: 1.296s | GOGR_time: 5.200s
+Trial: 271, Time:37.391s
+41096355
+MF_time: 0.591s | MFGR_time: 1.893s | GR_time: 6.086s | GRGO_time: 0.004s | MFGO_time: 0.760s | GO_time: 0.558s | GOGO_time: 1.311s | GOGR_time: 5.796s
+Trial: 272, Time:38.358s
+40960358
+MF_time: 0.552s | MFGR_time: 1.873s | GR_time: 5.956s | GRGO_time: 0.004s | MFGO_time: 0.757s | GO_time: 0.563s | GOGO_time: 1.308s | GOGR_time: 4.665s
+Trial: 273, Time:36.878s
+41431632
+MF_time: 0.598s | MFGR_time: 1.906s | GR_time: 6.061s | GRGO_time: 0.004s | MFGO_time: 0.757s | GO_time: 0.557s | GOGO_time: 1.314s | GOGR_time: 6.077s
+Trial: 274, Time:38.651s
+40960922
+MF_time: 0.535s | MFGR_time: 1.866s | GR_time: 5.902s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.548s | GOGO_time: 1.305s | GOGR_time: 4.661s
+Trial: 275, Time:36.750s
+41402852
+MF_time: 0.577s | MFGR_time: 1.916s | GR_time: 5.994s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.550s | GOGO_time: 1.311s | GOGR_time: 5.947s
+Trial: 276, Time:38.420s
+41449082
+MF_time: 0.532s | MFGR_time: 1.882s | GR_time: 5.905s | GRGO_time: 0.004s | MFGO_time: 0.757s | GO_time: 0.548s | GOGO_time: 1.313s | GOGR_time: 4.617s
+Trial: 277, Time:36.834s
+41608539
+MF_time: 0.548s | MFGR_time: 1.904s | GR_time: 5.899s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.544s | GOGO_time: 1.315s | GOGR_time: 5.427s
+Trial: 278, Time:37.734s
+40933954
+MF_time: 0.522s | MFGR_time: 1.879s | GR_time: 5.850s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.544s | GOGO_time: 1.307s | GOGR_time: 4.610s
+Trial: 279, Time:36.636s
+39783503
+MF_time: 0.548s | MFGR_time: 1.899s | GR_time: 5.903s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.539s | GOGO_time: 1.284s | GOGR_time: 5.471s
+Trial: 280, Time:37.292s
+41342870
+MF_time: 0.527s | MFGR_time: 1.871s | GR_time: 5.833s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.541s | GOGO_time: 1.306s | GOGR_time: 4.596s
+Trial: 281, Time:36.565s
+41119193
+MF_time: 0.545s | MFGR_time: 1.894s | GR_time: 5.891s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.541s | GOGO_time: 1.300s | GOGR_time: 5.433s
+Trial: 282, Time:37.498s
+41058555
+MF_time: 0.530s | MFGR_time: 1.872s | GR_time: 5.853s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.548s | GOGO_time: 1.297s | GOGR_time: 4.587s
+Trial: 283, Time:36.412s
+40978039
+MF_time: 0.586s | MFGR_time: 1.893s | GR_time: 5.973s | GRGO_time: 0.003s | MFGO_time: 0.744s | GO_time: 0.565s | GOGO_time: 1.302s | GOGR_time: 5.448s
+Trial: 284, Time:37.607s
+40330924
+MF_time: 0.559s | MFGR_time: 1.869s | GR_time: 5.912s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.567s | GOGO_time: 1.292s | GOGR_time: 4.578s
+Trial: 285, Time:36.377s
+40951321
+MF_time: 0.582s | MFGR_time: 1.896s | GR_time: 5.966s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.564s | GOGO_time: 1.302s | GOGR_time: 5.457s
+Trial: 286, Time:37.593s
+40197679
+MF_time: 0.598s | MFGR_time: 1.895s | GR_time: 5.983s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.567s | GOGO_time: 1.290s | GOGR_time: 6.231s
+Trial: 287, Time:38.278s
+40011478
+MF_time: 0.556s | MFGR_time: 1.860s | GR_time: 5.905s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.565s | GOGO_time: 1.292s | GOGR_time: 4.736s
+Trial: 288, Time:36.527s
+39907056
+MF_time: 0.585s | MFGR_time: 1.882s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.565s | GOGO_time: 1.291s | GOGR_time: 5.838s
+Trial: 289, Time:37.947s
+40178356
+MF_time: 0.556s | MFGR_time: 1.863s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.564s | GOGO_time: 1.305s | GOGR_time: 4.715s
+Trial: 290, Time:36.851s
+39954092
+MF_time: 0.589s | MFGR_time: 1.893s | GR_time: 6.059s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.565s | GOGO_time: 1.305s | GOGR_time: 5.862s
+Trial: 291, Time:38.235s
+39302664
+MF_time: 0.557s | MFGR_time: 1.880s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.571s | GOGO_time: 1.293s | GOGR_time: 4.608s
+Trial: 292, Time:36.632s
+39958335
+MF_time: 0.573s | MFGR_time: 1.894s | GR_time: 6.017s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.564s | GOGO_time: 1.301s | GOGR_time: 5.451s
+Trial: 293, Time:37.635s
+40593379
+MF_time: 0.557s | MFGR_time: 1.886s | GR_time: 5.954s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.566s | GOGO_time: 1.314s | GOGR_time: 4.622s
+Trial: 294, Time:36.893s
+39457742
+MF_time: 0.570s | MFGR_time: 1.889s | GR_time: 6.017s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.560s | GOGO_time: 1.288s | GOGR_time: 5.447s
+Trial: 295, Time:37.424s
+38627331
+MF_time: 0.553s | MFGR_time: 1.870s | GR_time: 5.947s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.559s | GOGO_time: 1.273s | GOGR_time: 4.581s
+Trial: 296, Time:36.191s
+38597407
+MF_time: 0.570s | MFGR_time: 1.877s | GR_time: 5.982s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.555s | GOGO_time: 1.268s | GOGR_time: 5.422s
+Trial: 297, Time:37.133s
+38314834
+MF_time: 0.554s | MFGR_time: 1.854s | GR_time: 5.916s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.561s | GOGO_time: 1.261s | GOGR_time: 4.558s
+Trial: 298, Time:36.036s
+38256803
+MF_time: 0.562s | MFGR_time: 1.881s | GR_time: 5.992s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.554s | GOGO_time: 1.261s | GOGR_time: 5.421s
+Trial: 299, Time:37.018s
+37878914
+MF_time: 0.562s | MFGR_time: 1.883s | GR_time: 5.923s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.559s | GOGO_time: 1.253s | GOGR_time: 5.032s
+Trial: 300, Time:36.378s
+37824316
+MF_time: 0.553s | MFGR_time: 1.866s | GR_time: 5.906s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.558s | GOGO_time: 1.247s | GOGR_time: 4.554s
+Trial: 301, Time:35.939s
+36635298
+MF_time: 0.566s | MFGR_time: 1.878s | GR_time: 5.956s | GRGO_time: 0.003s | MFGO_time: 0.702s | GO_time: 0.553s | GOGO_time: 1.220s | GOGR_time: 5.397s
+Trial: 302, Time:36.349s
+37885277
+MF_time: 0.553s | MFGR_time: 1.864s | GR_time: 5.894s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.558s | GOGO_time: 1.237s | GOGR_time: 4.539s
+Trial: 303, Time:35.647s
+38753043
+MF_time: 0.571s | MFGR_time: 1.886s | GR_time: 5.971s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.551s | GOGO_time: 1.254s | GOGR_time: 5.434s
+Trial: 304, Time:37.043s
+38062875
+MF_time: 0.553s | MFGR_time: 1.861s | GR_time: 5.909s | GRGO_time: 0.003s | MFGO_time: 0.704s | GO_time: 0.555s | GOGO_time: 1.240s | GOGR_time: 4.508s
+Trial: 305, Time:35.741s
+37305793
+MF_time: 0.567s | MFGR_time: 1.876s | GR_time: 5.989s | GRGO_time: 0.003s | MFGO_time: 0.702s | GO_time: 0.552s | GOGO_time: 1.228s | GOGR_time: 5.383s
+Trial: 306, Time:36.620s
+38627617
+MF_time: 0.555s | MFGR_time: 1.863s | GR_time: 5.909s | GRGO_time: 0.003s | MFGO_time: 0.708s | GO_time: 0.556s | GOGO_time: 1.250s | GOGR_time: 4.526s
+Trial: 307, Time:35.952s
+38319578
+MF_time: 0.566s | MFGR_time: 1.882s | GR_time: 5.981s | GRGO_time: 0.004s | MFGO_time: 0.708s | GO_time: 0.555s | GOGO_time: 1.242s | GOGR_time: 5.398s
+Trial: 308, Time:36.821s
+38151037
+MF_time: 0.550s | MFGR_time: 1.864s | GR_time: 5.917s | GRGO_time: 0.004s | MFGO_time: 0.707s | GO_time: 0.554s | GOGO_time: 1.233s | GOGR_time: 4.510s
+Trial: 309, Time:35.663s
+38619119
+MF_time: 0.571s | MFGR_time: 1.885s | GR_time: 5.990s | GRGO_time: 0.004s | MFGO_time: 0.710s | GO_time: 0.552s | GOGO_time: 1.244s | GOGR_time: 5.410s
+Trial: 310, Time:36.874s
+39309275
+MF_time: 0.602s | MFGR_time: 1.892s | GR_time: 6.011s | GRGO_time: 0.004s | MFGO_time: 0.713s | GO_time: 0.557s | GOGO_time: 1.260s | GOGR_time: 6.195s
+Trial: 311, Time:38.060s
+39929229
+MF_time: 0.553s | MFGR_time: 1.853s | GR_time: 5.925s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.554s | GOGO_time: 1.272s | GOGR_time: 4.655s
+Trial: 312, Time:36.339s
+39491871
+MF_time: 0.588s | MFGR_time: 1.887s | GR_time: 6.042s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.562s | GOGO_time: 1.270s | GOGR_time: 5.805s
+Trial: 313, Time:37.803s
+39517411
+MF_time: 0.557s | MFGR_time: 1.863s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.558s | GOGO_time: 1.275s | GOGR_time: 4.656s
+Trial: 314, Time:36.571s
+40014865
+MF_time: 0.589s | MFGR_time: 1.889s | GR_time: 6.059s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.561s | GOGO_time: 1.282s | GOGR_time: 5.842s
+Trial: 315, Time:38.166s
+40356317
+MF_time: 0.564s | MFGR_time: 1.863s | GR_time: 5.950s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.559s | GOGO_time: 1.284s | GOGR_time: 4.676s
+Trial: 316, Time:36.829s
+40975786
+MF_time: 0.581s | MFGR_time: 1.895s | GR_time: 6.062s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.560s | GOGO_time: 1.298s | GOGR_time: 5.330s
+Trial: 317, Time:37.875s
+40218433
+MF_time: 0.552s | MFGR_time: 1.871s | GR_time: 5.982s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.555s | GOGO_time: 1.284s | GOGR_time: 4.588s
+Trial: 318, Time:36.645s
+40390054
+MF_time: 0.577s | MFGR_time: 1.897s | GR_time: 6.063s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.558s | GOGO_time: 1.284s | GOGR_time: 5.330s
+Trial: 319, Time:37.674s
+39982780
+MF_time: 0.551s | MFGR_time: 1.874s | GR_time: 5.986s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.554s | GOGO_time: 1.284s | GOGR_time: 4.595s
+Trial: 320, Time:36.693s
+39885815
+MF_time: 0.573s | MFGR_time: 1.893s | GR_time: 6.073s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.554s | GOGO_time: 1.274s | GOGR_time: 5.350s
+Trial: 321, Time:37.552s
+40143805
+MF_time: 0.550s | MFGR_time: 1.872s | GR_time: 5.984s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.552s | GOGO_time: 1.277s | GOGR_time: 4.589s
+Trial: 322, Time:36.555s
+39846714
+MF_time: 0.575s | MFGR_time: 1.891s | GR_time: 6.069s | GRGO_time: 0.003s | MFGO_time: 0.730s | GO_time: 0.557s | GOGO_time: 1.271s | GOGR_time: 5.332s
+Trial: 323, Time:37.396s
+38896106
+MF_time: 0.550s | MFGR_time: 1.869s | GR_time: 5.995s | GRGO_time: 0.003s | MFGO_time: 0.733s | GO_time: 0.555s | GOGO_time: 1.260s | GOGR_time: 4.599s
+Trial: 324, Time:36.225s
+40012650
+MF_time: 0.578s | MFGR_time: 1.892s | GR_time: 6.064s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.558s | GOGO_time: 1.281s | GOGR_time: 5.337s
+Trial: 325, Time:37.486s
+40554156
+MF_time: 0.553s | MFGR_time: 1.880s | GR_time: 5.992s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.561s | GOGO_time: 1.292s | GOGR_time: 4.625s
+Trial: 326, Time:36.762s
+39884589
+MF_time: 0.575s | MFGR_time: 1.895s | GR_time: 6.063s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.556s | GOGO_time: 1.280s | GOGR_time: 5.345s
+Trial: 327, Time:37.365s
+41087500
+MF_time: 0.554s | MFGR_time: 1.881s | GR_time: 5.984s | GRGO_time: 0.004s | MFGO_time: 0.756s | GO_time: 0.563s | GOGO_time: 1.304s | GOGR_time: 4.643s
+Trial: 328, Time:36.758s
+41673513
+MF_time: 0.576s | MFGR_time: 1.899s | GR_time: 6.057s | GRGO_time: 0.004s | MFGO_time: 0.756s | GO_time: 0.561s | GOGO_time: 1.309s | GOGR_time: 5.325s
+Trial: 329, Time:37.833s
+42073708
+MF_time: 0.549s | MFGR_time: 1.881s | GR_time: 5.981s | GRGO_time: 0.004s | MFGO_time: 0.760s | GO_time: 0.563s | GOGO_time: 1.319s | GOGR_time: 4.653s
+Trial: 330, Time:37.041s
+41931049
+MF_time: 0.578s | MFGR_time: 1.896s | GR_time: 6.034s | GRGO_time: 0.004s | MFGO_time: 0.757s | GO_time: 0.558s | GOGO_time: 1.315s | GOGR_time: 5.327s
+Trial: 331, Time:37.828s
+41526788
+MF_time: 0.557s | MFGR_time: 1.879s | GR_time: 5.934s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.563s | GOGO_time: 1.304s | GOGR_time: 4.631s
+Trial: 332, Time:36.780s
+41766440
+MF_time: 0.579s | MFGR_time: 1.900s | GR_time: 5.996s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.555s | GOGO_time: 1.308s | GOGR_time: 5.320s
+Trial: 333, Time:37.697s
+43294478
+MF_time: 0.551s | MFGR_time: 1.885s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.764s | GO_time: 0.562s | GOGO_time: 1.334s | GOGR_time: 4.651s
+Trial: 334, Time:37.228s
+43097814
+MF_time: 0.574s | MFGR_time: 1.904s | GR_time: 6.001s | GRGO_time: 0.004s | MFGO_time: 0.760s | GO_time: 0.562s | GOGO_time: 1.327s | GOGR_time: 5.284s
+Trial: 335, Time:37.942s
+43063041
+MF_time: 0.554s | MFGR_time: 1.879s | GR_time: 5.941s | GRGO_time: 0.004s | MFGO_time: 0.759s | GO_time: 0.560s | GOGO_time: 1.325s | GOGR_time: 4.646s
+Trial: 336, Time:37.134s
+41978729
+MF_time: 0.572s | MFGR_time: 1.893s | GR_time: 6.004s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.553s | GOGO_time: 1.309s | GOGR_time: 5.344s
+Trial: 337, Time:37.851s
+42553386
+MF_time: 0.548s | MFGR_time: 1.878s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.560s | GOGO_time: 1.326s | GOGR_time: 4.596s
+Trial: 338, Time:37.108s
+41630420
+MF_time: 0.581s | MFGR_time: 1.882s | GR_time: 6.016s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.558s | GOGO_time: 1.301s | GOGR_time: 5.309s
+Trial: 339, Time:37.677s
+43059080
+MF_time: 0.612s | MFGR_time: 1.901s | GR_time: 6.032s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.558s | GOGO_time: 1.328s | GOGR_time: 6.120s
+Trial: 340, Time:38.988s
+42554011
+MF_time: 0.558s | MFGR_time: 1.865s | GR_time: 5.954s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.563s | GOGO_time: 1.318s | GOGR_time: 4.657s
+Trial: 341, Time:37.173s
+41579133
+MF_time: 0.578s | MFGR_time: 1.902s | GR_time: 6.056s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.563s | GOGO_time: 1.302s | GOGR_time: 5.744s
+Trial: 342, Time:38.183s
+41671958
+MF_time: 0.556s | MFGR_time: 1.860s | GR_time: 5.916s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.568s | GOGO_time: 1.307s | GOGR_time: 4.687s
+Trial: 343, Time:36.989s
+42120879
+MF_time: 0.585s | MFGR_time: 1.889s | GR_time: 6.041s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.562s | GOGO_time: 1.316s | GOGR_time: 5.850s
+Trial: 344, Time:38.509s
+41479485
+MF_time: 0.546s | MFGR_time: 1.871s | GR_time: 5.948s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.568s | GOGO_time: 1.304s | GOGR_time: 4.600s
+Trial: 345, Time:36.862s
+41566667
+MF_time: 0.573s | MFGR_time: 1.896s | GR_time: 6.010s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.564s | GOGO_time: 1.313s | GOGR_time: 5.484s
+Trial: 346, Time:38.172s
+40187746
+MF_time: 0.545s | MFGR_time: 1.871s | GR_time: 5.951s | GRGO_time: 0.003s | MFGO_time: 0.748s | GO_time: 0.567s | GOGO_time: 1.291s | GOGR_time: 4.589s
+Trial: 347, Time:36.578s
+40053280
+MF_time: 0.571s | MFGR_time: 1.889s | GR_time: 6.011s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.563s | GOGO_time: 1.287s | GOGR_time: 5.469s
+Trial: 348, Time:37.517s
+39673674
+MF_time: 0.591s | MFGR_time: 1.887s | GR_time: 6.029s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.556s | GOGO_time: 1.286s | GOGR_time: 6.223s
+Trial: 349, Time:38.257s
+39392219
+MF_time: 0.553s | MFGR_time: 1.853s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.562s | GOGO_time: 1.279s | GOGR_time: 4.686s
+Trial: 350, Time:36.411s
+38470231
+MF_time: 0.584s | MFGR_time: 1.881s | GR_time: 6.035s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.560s | GOGO_time: 1.258s | GOGR_time: 5.927s
+Trial: 351, Time:37.573s
+39490656
+MF_time: 0.553s | MFGR_time: 1.852s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.559s | GOGO_time: 1.280s | GOGR_time: 4.692s
+Trial: 352, Time:36.419s
+39087551
+MF_time: 0.567s | MFGR_time: 1.883s | GR_time: 6.017s | GRGO_time: 0.003s | MFGO_time: 0.728s | GO_time: 0.559s | GOGO_time: 1.269s | GOGR_time: 5.341s
+Trial: 353, Time:37.113s
+39280005
+MF_time: 0.544s | MFGR_time: 1.861s | GR_time: 5.952s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.558s | GOGO_time: 1.273s | GOGR_time: 4.563s
+Trial: 354, Time:36.194s
+39648607
+MF_time: 0.570s | MFGR_time: 1.888s | GR_time: 6.016s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.557s | GOGO_time: 1.277s | GOGR_time: 5.352s
+Trial: 355, Time:37.274s
+40673602
+MF_time: 0.602s | MFGR_time: 1.892s | GR_time: 6.051s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.561s | GOGO_time: 1.293s | GOGR_time: 6.132s
+Trial: 356, Time:38.405s
+40196507
+MF_time: 0.556s | MFGR_time: 1.857s | GR_time: 5.935s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.564s | GOGO_time: 1.286s | GOGR_time: 4.656s
+Trial: 357, Time:36.481s
+39481256
+MF_time: 0.606s | MFGR_time: 1.951s | GR_time: 6.070s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.555s | GOGO_time: 1.273s | GOGR_time: 6.117s
+Trial: 358, Time:38.082s
+38784558
+MF_time: 0.547s | MFGR_time: 1.861s | GR_time: 5.950s | GRGO_time: 0.003s | MFGO_time: 0.731s | GO_time: 0.558s | GOGO_time: 1.262s | GOGR_time: 4.567s
+Trial: 359, Time:36.075s
+39183692
+MF_time: 0.575s | MFGR_time: 1.886s | GR_time: 6.002s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.559s | GOGO_time: 1.272s | GOGR_time: 5.472s
+Trial: 360, Time:37.266s
+38714872
+MF_time: 0.546s | MFGR_time: 1.861s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.562s | GOGO_time: 1.265s | GOGR_time: 4.567s
+Trial: 361, Time:36.107s
+39317031
+MF_time: 0.575s | MFGR_time: 1.892s | GR_time: 6.001s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.558s | GOGO_time: 1.274s | GOGR_time: 5.498s
+Trial: 362, Time:37.327s
+39223113
+MF_time: 0.547s | MFGR_time: 1.856s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.565s | GOGO_time: 1.269s | GOGR_time: 4.572s
+Trial: 363, Time:36.155s
+39674377
+MF_time: 0.574s | MFGR_time: 1.885s | GR_time: 6.014s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.560s | GOGO_time: 1.279s | GOGR_time: 5.478s
+Trial: 364, Time:37.398s
+39700141
+MF_time: 0.546s | MFGR_time: 1.858s | GR_time: 5.928s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.568s | GOGO_time: 1.281s | GOGR_time: 4.585s
+Trial: 365, Time:36.355s
+38402985
+MF_time: 0.569s | MFGR_time: 1.884s | GR_time: 5.972s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.562s | GOGO_time: 1.261s | GOGR_time: 5.472s
+Trial: 366, Time:37.010s
+37858819
+MF_time: 0.590s | MFGR_time: 1.879s | GR_time: 5.978s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.558s | GOGO_time: 1.244s | GOGR_time: 6.178s
+Trial: 367, Time:37.562s
+37287671
+MF_time: 0.557s | MFGR_time: 1.841s | GR_time: 5.901s | GRGO_time: 0.003s | MFGO_time: 0.722s | GO_time: 0.558s | GOGO_time: 1.238s | GOGR_time: 4.645s
+Trial: 368, Time:35.695s
+37041789
+MF_time: 0.584s | MFGR_time: 1.868s | GR_time: 5.986s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.558s | GOGO_time: 1.234s | GOGR_time: 5.851s
+Trial: 369, Time:37.086s
+37849289
+MF_time: 0.547s | MFGR_time: 1.845s | GR_time: 5.897s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.559s | GOGO_time: 1.250s | GOGR_time: 4.665s
+Trial: 370, Time:35.894s
+37694257
+MF_time: 0.576s | MFGR_time: 1.888s | GR_time: 5.978s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.560s | GOGO_time: 1.247s | GOGR_time: 5.705s
+Trial: 371, Time:37.130s
+38462256
+MF_time: 0.533s | MFGR_time: 1.848s | GR_time: 5.846s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.543s | GOGO_time: 1.259s | GOGR_time: 4.668s
+Trial: 372, Time:35.898s
+38738750
+MF_time: 0.543s | MFGR_time: 1.877s | GR_time: 5.915s | GRGO_time: 0.003s | MFGO_time: 0.730s | GO_time: 0.543s | GOGO_time: 1.265s | GOGR_time: 5.347s
+Trial: 373, Time:36.882s
+38164515
+MF_time: 0.529s | MFGR_time: 1.861s | GR_time: 5.844s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.543s | GOGO_time: 1.255s | GOGR_time: 4.601s
+Trial: 374, Time:35.788s
+39115760
+MF_time: 0.541s | MFGR_time: 1.878s | GR_time: 5.910s | GRGO_time: 0.003s | MFGO_time: 0.729s | GO_time: 0.538s | GOGO_time: 1.267s | GOGR_time: 5.340s
+Trial: 375, Time:36.893s
+38929330
+MF_time: 0.527s | MFGR_time: 1.859s | GR_time: 5.847s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.539s | GOGO_time: 1.264s | GOGR_time: 4.610s
+Trial: 376, Time:35.907s
+37966001
+MF_time: 0.544s | MFGR_time: 1.878s | GR_time: 5.906s | GRGO_time: 0.003s | MFGO_time: 0.723s | GO_time: 0.535s | GOGO_time: 1.245s | GOGR_time: 5.328s
+Trial: 377, Time:36.535s
+38540908
+MF_time: 0.527s | MFGR_time: 1.856s | GR_time: 5.849s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.541s | GOGO_time: 1.257s | GOGR_time: 4.605s
+Trial: 378, Time:35.822s
+38767248
+MF_time: 0.555s | MFGR_time: 1.881s | GR_time: 5.965s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.542s | GOGO_time: 1.265s | GOGR_time: 5.351s
+Trial: 379, Time:36.950s
+38795746
+MF_time: 0.585s | MFGR_time: 1.891s | GR_time: 5.991s | GRGO_time: 0.003s | MFGO_time: 0.731s | GO_time: 0.547s | GOGO_time: 1.269s | GOGR_time: 6.088s
+Trial: 380, Time:37.858s
+39028063
+MF_time: 0.539s | MFGR_time: 1.851s | GR_time: 5.903s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.551s | GOGO_time: 1.272s | GOGR_time: 4.633s
+Trial: 381, Time:36.149s
+39625184
+MF_time: 0.577s | MFGR_time: 1.877s | GR_time: 6.003s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.550s | GOGO_time: 1.283s | GOGR_time: 5.851s
+Trial: 382, Time:37.814s
+39380904
+MF_time: 0.545s | MFGR_time: 1.865s | GR_time: 5.895s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.549s | GOGO_time: 1.278s | GOGR_time: 4.689s
+Trial: 383, Time:36.347s
+39011105
+MF_time: 0.551s | MFGR_time: 1.884s | GR_time: 5.976s | GRGO_time: 0.003s | MFGO_time: 0.734s | GO_time: 0.549s | GOGO_time: 1.271s | GOGR_time: 5.328s
+Trial: 384, Time:37.044s
+39658897
+MF_time: 0.539s | MFGR_time: 1.862s | GR_time: 5.900s | GRGO_time: 0.003s | MFGO_time: 0.733s | GO_time: 0.547s | GOGO_time: 1.280s | GOGR_time: 4.585s
+Trial: 385, Time:36.174s
+40134916
+MF_time: 0.554s | MFGR_time: 1.884s | GR_time: 5.969s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.550s | GOGO_time: 1.287s | GOGR_time: 5.324s
+Trial: 386, Time:37.248s
+40355621
+MF_time: 0.545s | MFGR_time: 1.862s | GR_time: 5.902s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.556s | GOGO_time: 1.291s | GOGR_time: 4.593s
+Trial: 387, Time:36.370s
+39776077
+MF_time: 0.563s | MFGR_time: 1.884s | GR_time: 5.970s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.549s | GOGO_time: 1.282s | GOGR_time: 5.329s
+Trial: 388, Time:37.167s
+39264480
+MF_time: 0.541s | MFGR_time: 1.863s | GR_time: 5.904s | GRGO_time: 0.003s | MFGO_time: 0.729s | GO_time: 0.550s | GOGO_time: 1.269s | GOGR_time: 4.577s
+Trial: 389, Time:35.995s
+40047285
+MF_time: 0.557s | MFGR_time: 1.882s | GR_time: 5.979s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.549s | GOGO_time: 1.285s | GOGR_time: 5.327s
+Trial: 390, Time:37.220s
+39716121
+MF_time: 0.541s | MFGR_time: 1.861s | GR_time: 5.903s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.550s | GOGO_time: 1.281s | GOGR_time: 4.587s
+Trial: 391, Time:36.330s
+39542868
+MF_time: 0.556s | MFGR_time: 1.881s | GR_time: 5.981s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.552s | GOGO_time: 1.275s | GOGR_time: 5.326s
+Trial: 392, Time:37.107s
+39988160
+MF_time: 0.541s | MFGR_time: 1.861s | GR_time: 5.901s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.549s | GOGO_time: 1.283s | GOGR_time: 4.585s
+Trial: 393, Time:36.210s
+40140189
+MF_time: 0.558s | MFGR_time: 1.880s | GR_time: 5.984s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.551s | GOGO_time: 1.282s | GOGR_time: 5.332s
+Trial: 394, Time:37.228s
+40246422
+MF_time: 0.543s | MFGR_time: 1.859s | GR_time: 5.889s | GRGO_time: 0.003s | MFGO_time: 0.733s | GO_time: 0.552s | GOGO_time: 1.283s | GOGR_time: 4.577s
+Trial: 395, Time:36.155s
+40967055
+MF_time: 0.556s | MFGR_time: 1.877s | GR_time: 5.983s | GRGO_time: 0.004s | MFGO_time: 0.743s | GO_time: 0.559s | GOGO_time: 1.300s | GOGR_time: 5.319s
+Trial: 396, Time:37.434s
+40816686
+MF_time: 0.589s | MFGR_time: 1.887s | GR_time: 5.998s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.556s | GOGO_time: 1.300s | GOGR_time: 6.222s
+Trial: 397, Time:38.402s
+40550935
+MF_time: 0.536s | MFGR_time: 1.854s | GR_time: 5.910s | GRGO_time: 0.003s | MFGO_time: 0.747s | GO_time: 0.559s | GOGO_time: 1.300s | GOGR_time: 4.668s
+Trial: 398, Time:36.541s
+41094162
+MF_time: 0.573s | MFGR_time: 1.872s | GR_time: 5.964s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.557s | GOGO_time: 1.307s | GOGR_time: 5.836s
+Trial: 399, Time:38.158s
+40763581
+MF_time: 0.540s | MFGR_time: 1.850s | GR_time: 5.888s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.549s | GOGO_time: 1.306s | GOGR_time: 4.629s
+Trial: 400, Time:36.807s
+41270084
+MF_time: 0.596s | MFGR_time: 1.888s | GR_time: 6.037s | GRGO_time: 0.004s | MFGO_time: 0.743s | GO_time: 0.564s | GOGO_time: 1.320s | GOGR_time: 5.721s
+Trial: 401, Time:38.311s
+40363002
+MF_time: 0.557s | MFGR_time: 1.864s | GR_time: 5.925s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.560s | GOGO_time: 1.302s | GOGR_time: 4.584s
+Trial: 402, Time:36.588s
+39778942
+MF_time: 0.574s | MFGR_time: 1.881s | GR_time: 5.998s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.564s | GOGO_time: 1.292s | GOGR_time: 5.375s
+Trial: 403, Time:37.356s
+41130282
+MF_time: 0.558s | MFGR_time: 1.875s | GR_time: 5.933s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.563s | GOGO_time: 1.316s | GOGR_time: 4.609s
+Trial: 404, Time:36.802s
+40659462
+MF_time: 0.574s | MFGR_time: 1.887s | GR_time: 6.004s | GRGO_time: 0.003s | MFGO_time: 0.746s | GO_time: 0.566s | GOGO_time: 1.309s | GOGR_time: 5.389s
+Trial: 405, Time:37.655s
+40539686
+MF_time: 0.554s | MFGR_time: 1.868s | GR_time: 5.900s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.565s | GOGO_time: 1.306s | GOGR_time: 4.608s
+Trial: 406, Time:36.511s
+40256962
+MF_time: 0.574s | MFGR_time: 1.885s | GR_time: 5.972s | GRGO_time: 0.003s | MFGO_time: 0.747s | GO_time: 0.562s | GOGO_time: 1.298s | GOGR_time: 5.382s
+Trial: 407, Time:37.417s
+40395155
+MF_time: 0.593s | MFGR_time: 1.885s | GR_time: 5.993s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.567s | GOGO_time: 1.296s | GOGR_time: 6.005s
+Trial: 408, Time:38.135s
+40569500
+MF_time: 0.557s | MFGR_time: 1.860s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.752s | GO_time: 0.570s | GOGO_time: 1.302s | GOGR_time: 4.717s
+Trial: 409, Time:36.649s
+40354436
+MF_time: 0.588s | MFGR_time: 1.887s | GR_time: 6.023s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.565s | GOGO_time: 1.297s | GOGR_time: 5.886s
+Trial: 410, Time:38.065s
+39746503
+MF_time: 0.553s | MFGR_time: 1.852s | GR_time: 5.915s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.559s | GOGO_time: 1.288s | GOGR_time: 4.674s
+Trial: 411, Time:36.553s
+39683406
+MF_time: 0.589s | MFGR_time: 1.875s | GR_time: 6.033s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.558s | GOGO_time: 1.287s | GOGR_time: 5.825s
+Trial: 412, Time:37.929s
+41682566
+MF_time: 0.553s | MFGR_time: 1.860s | GR_time: 5.914s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.562s | GOGO_time: 1.329s | GOGR_time: 4.693s
+Trial: 413, Time:37.318s
+41731196
+MF_time: 0.578s | MFGR_time: 1.896s | GR_time: 6.035s | GRGO_time: 0.004s | MFGO_time: 0.743s | GO_time: 0.560s | GOGO_time: 1.328s | GOGR_time: 5.718s
+Trial: 414, Time:38.611s
+41072623
+MF_time: 0.552s | MFGR_time: 1.851s | GR_time: 5.892s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.558s | GOGO_time: 1.323s | GOGR_time: 4.668s
+Trial: 415, Time:37.269s
+39347553
+MF_time: 0.588s | MFGR_time: 1.877s | GR_time: 6.022s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.553s | GOGO_time: 1.288s | GOGR_time: 5.816s
+Trial: 416, Time:38.048s
+39108272
+MF_time: 0.555s | MFGR_time: 1.875s | GR_time: 5.912s | GRGO_time: 0.003s | MFGO_time: 0.723s | GO_time: 0.559s | GOGO_time: 1.283s | GOGR_time: 4.513s
+Trial: 417, Time:36.504s
+39154354
+MF_time: 0.572s | MFGR_time: 1.891s | GR_time: 5.985s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.556s | GOGO_time: 1.278s | GOGR_time: 5.392s
+Trial: 418, Time:37.422s
+40296594
+MF_time: 0.564s | MFGR_time: 1.888s | GR_time: 5.936s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.561s | GOGO_time: 1.297s | GOGR_time: 5.046s
+Trial: 419, Time:37.175s
+40904815
+MF_time: 0.554s | MFGR_time: 1.874s | GR_time: 5.919s | GRGO_time: 0.003s | MFGO_time: 0.748s | GO_time: 0.565s | GOGO_time: 1.305s | GOGR_time: 4.575s
+Trial: 420, Time:36.762s
+40804821
+MF_time: 0.576s | MFGR_time: 1.892s | GR_time: 5.996s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.562s | GOGO_time: 1.299s | GOGR_time: 5.393s
+Trial: 421, Time:37.508s
+41086288
+MF_time: 0.556s | MFGR_time: 1.882s | GR_time: 5.933s | GRGO_time: 0.004s | MFGO_time: 0.757s | GO_time: 0.567s | GOGO_time: 1.305s | GOGR_time: 4.593s
+Trial: 422, Time:36.668s
+40287804
+MF_time: 0.578s | MFGR_time: 1.895s | GR_time: 6.001s | GRGO_time: 0.003s | MFGO_time: 0.746s | GO_time: 0.565s | GOGO_time: 1.292s | GOGR_time: 5.408s
+Trial: 423, Time:37.379s
+40468521
+MF_time: 0.552s | MFGR_time: 1.880s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.753s | GO_time: 0.564s | GOGO_time: 1.299s | GOGR_time: 4.590s
+Trial: 424, Time:36.613s
+41168030
+MF_time: 0.579s | MFGR_time: 1.899s | GR_time: 6.028s | GRGO_time: 0.003s | MFGO_time: 0.753s | GO_time: 0.567s | GOGO_time: 1.316s | GOGR_time: 5.402s
+Trial: 425, Time:37.850s
+39853360
+MF_time: 0.559s | MFGR_time: 1.879s | GR_time: 5.960s | GRGO_time: 0.004s | MFGO_time: 0.753s | GO_time: 0.569s | GOGO_time: 1.301s | GOGR_time: 4.595s
+Trial: 426, Time:36.657s
+39976527
+MF_time: 0.577s | MFGR_time: 1.897s | GR_time: 5.985s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.562s | GOGO_time: 1.296s | GOGR_time: 5.434s
+Trial: 427, Time:37.520s
+38802994
+MF_time: 0.552s | MFGR_time: 1.876s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.565s | GOGO_time: 1.287s | GOGR_time: 4.569s
+Trial: 428, Time:36.466s
+39165069
+MF_time: 0.574s | MFGR_time: 1.892s | GR_time: 6.025s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.554s | GOGO_time: 1.289s | GOGR_time: 5.393s
+Trial: 429, Time:37.439s
+38729678
+MF_time: 0.555s | MFGR_time: 1.866s | GR_time: 5.947s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.557s | GOGO_time: 1.275s | GOGR_time: 4.535s
+Trial: 430, Time:36.209s
+38584251
+MF_time: 0.579s | MFGR_time: 1.883s | GR_time: 6.024s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.559s | GOGO_time: 1.272s | GOGR_time: 5.405s
+Trial: 431, Time:37.176s
+38356861
+MF_time: 0.552s | MFGR_time: 1.858s | GR_time: 5.950s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.557s | GOGO_time: 1.266s | GOGR_time: 4.530s
+Trial: 432, Time:36.053s
+38375913
+MF_time: 0.576s | MFGR_time: 1.883s | GR_time: 6.006s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.561s | GOGO_time: 1.269s | GOGR_time: 5.399s
+Trial: 433, Time:37.095s
+38861919
+MF_time: 0.568s | MFGR_time: 1.874s | GR_time: 5.962s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.560s | GOGO_time: 1.269s | GOGR_time: 5.046s
+Trial: 434, Time:36.669s
+38935297
+MF_time: 0.555s | MFGR_time: 1.864s | GR_time: 5.927s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.567s | GOGO_time: 1.279s | GOGR_time: 4.553s
+Trial: 435, Time:36.339s
+39411574
+MF_time: 0.577s | MFGR_time: 1.886s | GR_time: 6.006s | GRGO_time: 0.003s | MFGO_time: 0.728s | GO_time: 0.558s | GOGO_time: 1.283s | GOGR_time: 5.418s
+Trial: 436, Time:37.496s
+39917096
+MF_time: 0.549s | MFGR_time: 1.864s | GR_time: 5.940s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.564s | GOGO_time: 1.293s | GOGR_time: 4.554s
+Trial: 437, Time:36.622s
+39734373
+MF_time: 0.574s | MFGR_time: 1.887s | GR_time: 6.003s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.558s | GOGO_time: 1.287s | GOGR_time: 5.413s
+Trial: 438, Time:37.522s
+39484186
+MF_time: 0.547s | MFGR_time: 1.862s | GR_time: 5.894s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.563s | GOGO_time: 1.285s | GOGR_time: 4.544s
+Trial: 439, Time:36.465s
+38805384
+MF_time: 0.564s | MFGR_time: 1.880s | GR_time: 5.968s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.556s | GOGO_time: 1.271s | GOGR_time: 5.389s
+Trial: 440, Time:37.043s
+38584416
+MF_time: 0.542s | MFGR_time: 1.855s | GR_time: 5.925s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.560s | GOGO_time: 1.263s | GOGR_time: 4.510s
+Trial: 441, Time:35.998s
+38720835
+MF_time: 0.570s | MFGR_time: 1.881s | GR_time: 6.015s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.553s | GOGO_time: 1.269s | GOGR_time: 5.380s
+Trial: 442, Time:37.155s
+39297198
+MF_time: 0.547s | MFGR_time: 1.863s | GR_time: 5.942s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.561s | GOGO_time: 1.280s | GOGR_time: 4.531s
+Trial: 443, Time:36.359s
+39344786
+MF_time: 0.572s | MFGR_time: 1.886s | GR_time: 6.019s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.556s | GOGO_time: 1.276s | GOGR_time: 5.441s
+Trial: 444, Time:37.402s
+40169063
+MF_time: 0.551s | MFGR_time: 1.867s | GR_time: 5.945s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.560s | GOGO_time: 1.292s | GOGR_time: 4.547s
+Trial: 445, Time:36.548s
+39582948
+MF_time: 0.574s | MFGR_time: 1.887s | GR_time: 5.981s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.560s | GOGO_time: 1.277s | GOGR_time: 5.408s
+Trial: 446, Time:37.341s
+40415413
+MF_time: 0.552s | MFGR_time: 1.867s | GR_time: 5.907s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.560s | GOGO_time: 1.300s | GOGR_time: 4.544s
+Trial: 447, Time:36.612s
+40681733
+MF_time: 0.572s | MFGR_time: 1.893s | GR_time: 5.985s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.561s | GOGO_time: 1.304s | GOGR_time: 5.412s
+Trial: 448, Time:37.680s
+40411162
+MF_time: 0.595s | MFGR_time: 1.895s | GR_time: 6.013s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.566s | GOGO_time: 1.296s | GOGR_time: 6.218s
+Trial: 449, Time:38.499s
+39824673
+MF_time: 0.557s | MFGR_time: 1.849s | GR_time: 5.919s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.564s | GOGO_time: 1.291s | GOGR_time: 4.725s
+Trial: 450, Time:36.622s
+39675867
+MF_time: 0.600s | MFGR_time: 1.891s | GR_time: 6.036s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.562s | GOGO_time: 1.293s | GOGR_time: 6.218s
+Trial: 451, Time:38.403s
+39221540
+MF_time: 0.552s | MFGR_time: 1.845s | GR_time: 5.914s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.562s | GOGO_time: 1.281s | GOGR_time: 4.699s
+Trial: 452, Time:36.561s
+38863118
+MF_time: 0.591s | MFGR_time: 1.890s | GR_time: 6.037s | GRGO_time: 0.003s | MFGO_time: 0.714s | GO_time: 0.559s | GOGO_time: 1.271s | GOGR_time: 5.995s
+Trial: 453, Time:37.961s
+39668473
+MF_time: 0.554s | MFGR_time: 1.843s | GR_time: 5.936s | GRGO_time: 0.003s | MFGO_time: 0.727s | GO_time: 0.563s | GOGO_time: 1.295s | GOGR_time: 4.706s
+Trial: 454, Time:36.674s
+40004943
+MF_time: 0.597s | MFGR_time: 1.885s | GR_time: 6.033s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.562s | GOGO_time: 1.294s | GOGR_time: 6.182s
+Trial: 455, Time:38.502s
+39592029
+MF_time: 0.555s | MFGR_time: 1.847s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.556s | GOGO_time: 1.288s | GOGR_time: 4.711s
+Trial: 456, Time:36.738s
+38704718
+MF_time: 0.591s | MFGR_time: 1.887s | GR_time: 6.056s | GRGO_time: 0.004s | MFGO_time: 0.713s | GO_time: 0.558s | GOGO_time: 1.279s | GOGR_time: 6.153s
+Trial: 457, Time:38.364s
+38496494
+MF_time: 0.551s | MFGR_time: 1.843s | GR_time: 5.951s | GRGO_time: 0.003s | MFGO_time: 0.713s | GO_time: 0.556s | GOGO_time: 1.274s | GOGR_time: 4.688s
+Trial: 458, Time:36.557s
+37766312
+MF_time: 0.583s | MFGR_time: 1.892s | GR_time: 6.064s | GRGO_time: 0.003s | MFGO_time: 0.709s | GO_time: 0.558s | GOGO_time: 1.256s | GOGR_time: 5.969s
+Trial: 459, Time:37.799s
+37951993
+MF_time: 0.552s | MFGR_time: 1.856s | GR_time: 5.978s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.557s | GOGO_time: 1.259s | GOGR_time: 4.514s
+Trial: 460, Time:36.129s
+38521620
+MF_time: 0.579s | MFGR_time: 1.890s | GR_time: 6.048s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.560s | GOGO_time: 1.267s | GOGR_time: 5.472s
+Trial: 461, Time:37.344s
+38414114
+MF_time: 0.551s | MFGR_time: 1.857s | GR_time: 5.958s | GRGO_time: 0.003s | MFGO_time: 0.718s | GO_time: 0.558s | GOGO_time: 1.264s | GOGR_time: 4.510s
+Trial: 462, Time:36.128s
+39416912
+MF_time: 0.576s | MFGR_time: 1.879s | GR_time: 6.023s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.566s | GOGO_time: 1.282s | GOGR_time: 5.462s
+Trial: 463, Time:37.501s
+39560134
+MF_time: 0.606s | MFGR_time: 1.890s | GR_time: 6.051s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.560s | GOGO_time: 1.284s | GOGR_time: 6.279s
+Trial: 464, Time:38.473s
+39483572
+MF_time: 0.544s | MFGR_time: 1.861s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.557s | GOGO_time: 1.279s | GOGR_time: 4.537s
+Trial: 465, Time:36.348s
+39600003
+MF_time: 0.574s | MFGR_time: 1.891s | GR_time: 6.028s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.562s | GOGO_time: 1.274s | GOGR_time: 5.388s
+Trial: 466, Time:37.342s
+39367887
+MF_time: 0.546s | MFGR_time: 1.860s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.559s | GOGO_time: 1.273s | GOGR_time: 4.528s
+Trial: 467, Time:36.253s
+38571565
+MF_time: 0.565s | MFGR_time: 1.883s | GR_time: 5.988s | GRGO_time: 0.003s | MFGO_time: 0.719s | GO_time: 0.560s | GOGO_time: 1.262s | GOGR_time: 5.374s
+Trial: 468, Time:37.100s
+38300499
+MF_time: 0.546s | MFGR_time: 1.858s | GR_time: 5.927s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.562s | GOGO_time: 1.261s | GOGR_time: 4.522s
+Trial: 469, Time:36.044s
+37774540
+MF_time: 0.573s | MFGR_time: 1.886s | GR_time: 6.017s | GRGO_time: 0.003s | MFGO_time: 0.717s | GO_time: 0.558s | GOGO_time: 1.252s | GOGR_time: 5.385s
+Trial: 470, Time:36.988s
+39070141
+MF_time: 0.549s | MFGR_time: 1.849s | GR_time: 5.919s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.557s | GOGO_time: 1.268s | GOGR_time: 4.523s
+Trial: 471, Time:36.122s
+39685052
+MF_time: 0.574s | MFGR_time: 1.881s | GR_time: 6.003s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.562s | GOGO_time: 1.279s | GOGR_time: 5.402s
+Trial: 472, Time:37.437s
+39317071
+MF_time: 0.550s | MFGR_time: 1.861s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.562s | GOGO_time: 1.274s | GOGR_time: 4.531s
+Trial: 473, Time:36.311s
+38707998
+MF_time: 0.574s | MFGR_time: 1.881s | GR_time: 6.022s | GRGO_time: 0.003s | MFGO_time: 0.718s | GO_time: 0.564s | GOGO_time: 1.263s | GOGR_time: 5.379s
+Trial: 474, Time:37.101s
+39046721
+MF_time: 0.549s | MFGR_time: 1.855s | GR_time: 5.940s | GRGO_time: 0.003s | MFGO_time: 0.726s | GO_time: 0.561s | GOGO_time: 1.277s | GOGR_time: 4.525s
+Trial: 475, Time:36.197s
+38507401
+MF_time: 0.572s | MFGR_time: 1.882s | GR_time: 6.024s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.557s | GOGO_time: 1.262s | GOGR_time: 5.379s
+Trial: 476, Time:37.079s
+39729121
+MF_time: 0.547s | MFGR_time: 1.857s | GR_time: 5.947s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.561s | GOGO_time: 1.280s | GOGR_time: 4.537s
+Trial: 477, Time:36.362s
+38754147
+MF_time: 0.572s | MFGR_time: 1.886s | GR_time: 6.026s | GRGO_time: 0.003s | MFGO_time: 0.721s | GO_time: 0.562s | GOGO_time: 1.265s | GOGR_time: 5.382s
+Trial: 478, Time:37.146s
+39734721
+MF_time: 0.549s | MFGR_time: 1.863s | GR_time: 5.948s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.559s | GOGO_time: 1.278s | GOGR_time: 4.547s
+Trial: 479, Time:36.367s
+39644098
+MF_time: 0.572s | MFGR_time: 1.890s | GR_time: 6.032s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.559s | GOGO_time: 1.275s | GOGR_time: 5.390s
+Trial: 480, Time:37.334s
+40125227
+MF_time: 0.550s | MFGR_time: 1.864s | GR_time: 5.943s | GRGO_time: 0.003s | MFGO_time: 0.734s | GO_time: 0.560s | GOGO_time: 1.284s | GOGR_time: 4.563s
+Trial: 481, Time:36.630s
+39623845
+MF_time: 0.572s | MFGR_time: 1.891s | GR_time: 5.985s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.560s | GOGO_time: 1.277s | GOGR_time: 5.414s
+Trial: 482, Time:37.379s
+39678383
+MF_time: 0.552s | MFGR_time: 1.862s | GR_time: 5.905s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.566s | GOGO_time: 1.282s | GOGR_time: 4.553s
+Trial: 483, Time:36.348s
+39466952
+MF_time: 0.570s | MFGR_time: 1.891s | GR_time: 5.991s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.560s | GOGO_time: 1.272s | GOGR_time: 5.406s
+Trial: 484, Time:37.264s
+38609925
+MF_time: 0.549s | MFGR_time: 1.869s | GR_time: 5.928s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.558s | GOGO_time: 1.262s | GOGR_time: 4.547s
+Trial: 485, Time:36.089s
+39162100
+MF_time: 0.570s | MFGR_time: 1.897s | GR_time: 6.006s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.563s | GOGO_time: 1.274s | GOGR_time: 5.413s
+Trial: 486, Time:37.299s
+38914281
+MF_time: 0.545s | MFGR_time: 1.868s | GR_time: 5.919s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.561s | GOGO_time: 1.271s | GOGR_time: 4.555s
+Trial: 487, Time:36.234s
+40543634
+MF_time: 0.580s | MFGR_time: 1.896s | GR_time: 5.994s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.564s | GOGO_time: 1.296s | GOGR_time: 5.430s
+Trial: 488, Time:37.651s
+39979894
+MF_time: 0.540s | MFGR_time: 1.860s | GR_time: 5.913s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.548s | GOGO_time: 1.289s | GOGR_time: 4.497s
+Trial: 489, Time:36.568s
+39353524
+MF_time: 0.566s | MFGR_time: 1.884s | GR_time: 5.993s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.548s | GOGO_time: 1.276s | GOGR_time: 5.373s
+Trial: 490, Time:37.480s
+40357947
+MF_time: 0.542s | MFGR_time: 1.862s | GR_time: 5.921s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.556s | GOGO_time: 1.289s | GOGR_time: 4.545s
+Trial: 491, Time:36.537s
+39811137
+MF_time: 0.563s | MFGR_time: 1.885s | GR_time: 5.998s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.550s | GOGO_time: 1.282s | GOGR_time: 5.381s
+Trial: 492, Time:37.480s
+40706981
+MF_time: 0.537s | MFGR_time: 1.868s | GR_time: 5.916s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.546s | GOGO_time: 1.297s | GOGR_time: 4.545s
+Trial: 493, Time:36.733s
+41446544
+MF_time: 0.561s | MFGR_time: 1.883s | GR_time: 5.989s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.551s | GOGO_time: 1.318s | GOGR_time: 5.340s
+Trial: 494, Time:37.974s
+40201479
+MF_time: 0.535s | MFGR_time: 1.866s | GR_time: 5.918s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.548s | GOGO_time: 1.291s | GOGR_time: 4.539s
+Trial: 495, Time:36.609s
+40053259
+MF_time: 0.561s | MFGR_time: 1.888s | GR_time: 5.988s | GRGO_time: 0.003s | MFGO_time: 0.730s | GO_time: 0.550s | GOGO_time: 1.287s | GOGR_time: 5.384s
+Trial: 496, Time:37.556s
+39925571
+MF_time: 0.536s | MFGR_time: 1.855s | GR_time: 5.918s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.551s | GOGO_time: 1.282s | GOGR_time: 4.538s
+Trial: 497, Time:36.442s
+39960720
+MF_time: 0.560s | MFGR_time: 1.890s | GR_time: 5.991s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.548s | GOGO_time: 1.287s | GOGR_time: 5.413s
+Trial: 498, Time:37.577s
+39210973
+MF_time: 0.537s | MFGR_time: 1.865s | GR_time: 5.919s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.551s | GOGO_time: 1.275s | GOGR_time: 4.535s
+Trial: 499, Time:36.311s
+39304922
+MF_time: 0.564s | MFGR_time: 1.884s | GR_time: 5.997s | GRGO_time: 0.003s | MFGO_time: 0.726s | GO_time: 0.547s | GOGO_time: 1.274s | GOGR_time: 5.378s
+Trial: 500, Time:37.318s
+38806550
+MF_time: 0.535s | MFGR_time: 1.859s | GR_time: 5.922s | GRGO_time: 0.003s | MFGO_time: 0.726s | GO_time: 0.550s | GOGO_time: 1.265s | GOGR_time: 4.527s
+Trial: 501, Time:36.168s
+39413216
+MF_time: 0.561s | MFGR_time: 1.890s | GR_time: 5.999s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.548s | GOGO_time: 1.275s | GOGR_time: 5.389s
+Trial: 502, Time:37.365s
+39869532
+MF_time: 0.539s | MFGR_time: 1.865s | GR_time: 5.925s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.548s | GOGO_time: 1.284s | GOGR_time: 4.548s
+Trial: 503, Time:36.472s
+40670152
+MF_time: 0.563s | MFGR_time: 1.888s | GR_time: 6.001s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.553s | GOGO_time: 1.292s | GOGR_time: 5.385s
+Trial: 504, Time:37.627s
+40826259
+MF_time: 0.540s | MFGR_time: 1.864s | GR_time: 5.924s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.548s | GOGO_time: 1.295s | GOGR_time: 4.555s
+Trial: 505, Time:36.638s
+39849151
+MF_time: 0.559s | MFGR_time: 1.891s | GR_time: 6.002s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.550s | GOGO_time: 1.282s | GOGR_time: 5.394s
+Trial: 506, Time:37.445s
+40739874
+MF_time: 0.591s | MFGR_time: 1.893s | GR_time: 6.025s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.549s | GOGO_time: 1.297s | GOGR_time: 6.306s
+Trial: 507, Time:38.689s
+41917656
+MF_time: 0.545s | MFGR_time: 1.855s | GR_time: 5.921s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.551s | GOGO_time: 1.324s | GOGR_time: 4.642s
+Trial: 508, Time:37.249s
+41475779
+MF_time: 0.588s | MFGR_time: 1.899s | GR_time: 6.041s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.551s | GOGO_time: 1.315s | GOGR_time: 6.051s
+Trial: 509, Time:38.772s
+41513288
+MF_time: 0.543s | MFGR_time: 1.862s | GR_time: 5.931s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.560s | GOGO_time: 1.319s | GOGR_time: 4.646s
+Trial: 510, Time:37.172s
+40957738
+MF_time: 0.589s | MFGR_time: 1.897s | GR_time: 6.040s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.549s | GOGO_time: 1.309s | GOGR_time: 6.073s
+Trial: 511, Time:38.671s
+40961213
+MF_time: 0.545s | MFGR_time: 1.860s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.555s | GOGO_time: 1.309s | GOGR_time: 4.639s
+Trial: 512, Time:36.974s
+40352969
+MF_time: 0.587s | MFGR_time: 1.895s | GR_time: 6.050s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.552s | GOGO_time: 1.290s | GOGR_time: 6.102s
+Trial: 513, Time:38.424s
+41289014
+MF_time: 0.545s | MFGR_time: 1.855s | GR_time: 5.928s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.560s | GOGO_time: 1.313s | GOGR_time: 4.637s
+Trial: 514, Time:37.036s
+39942144
+MF_time: 0.589s | MFGR_time: 1.893s | GR_time: 6.044s | GRGO_time: 0.003s | MFGO_time: 0.731s | GO_time: 0.549s | GOGO_time: 1.286s | GOGR_time: 6.081s
+Trial: 515, Time:38.317s
+40023150
+MF_time: 0.547s | MFGR_time: 1.852s | GR_time: 5.926s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.555s | GOGO_time: 1.283s | GOGR_time: 4.608s
+Trial: 516, Time:36.552s
+40919198
+MF_time: 0.580s | MFGR_time: 1.897s | GR_time: 6.036s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.548s | GOGO_time: 1.295s | GOGR_time: 5.941s
+Trial: 517, Time:38.312s
+40175326
+MF_time: 0.543s | MFGR_time: 1.869s | GR_time: 5.924s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.552s | GOGO_time: 1.284s | GOGR_time: 4.557s
+Trial: 518, Time:36.496s
+39789256
+MF_time: 0.564s | MFGR_time: 1.873s | GR_time: 5.993s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.556s | GOGO_time: 1.282s | GOGR_time: 5.324s
+Trial: 519, Time:37.362s
+40446833
+MF_time: 0.552s | MFGR_time: 1.861s | GR_time: 5.902s | GRGO_time: 0.003s | MFGO_time: 0.730s | GO_time: 0.553s | GOGO_time: 1.296s | GOGR_time: 4.554s
+Trial: 520, Time:36.589s
+39658171
+MF_time: 0.568s | MFGR_time: 1.876s | GR_time: 5.986s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.552s | GOGO_time: 1.284s | GOGR_time: 5.325s
+Trial: 521, Time:37.328s
+39815726
+MF_time: 0.548s | MFGR_time: 1.867s | GR_time: 5.907s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.554s | GOGO_time: 1.285s | GOGR_time: 4.547s
+Trial: 522, Time:36.411s
+39526244
+MF_time: 0.567s | MFGR_time: 1.879s | GR_time: 5.965s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.554s | GOGO_time: 1.282s | GOGR_time: 5.341s
+Trial: 523, Time:37.394s
+39236050
+MF_time: 0.546s | MFGR_time: 1.871s | GR_time: 5.894s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.553s | GOGO_time: 1.273s | GOGR_time: 4.570s
+Trial: 524, Time:36.348s
+39471447
+MF_time: 0.561s | MFGR_time: 1.879s | GR_time: 5.971s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.552s | GOGO_time: 1.274s | GOGR_time: 5.343s
+Trial: 525, Time:37.320s
+39613943
+MF_time: 0.582s | MFGR_time: 1.892s | GR_time: 5.995s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.554s | GOGO_time: 1.279s | GOGR_time: 6.019s
+Trial: 526, Time:38.309s
+39907670
+MF_time: 0.548s | MFGR_time: 1.851s | GR_time: 5.912s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.556s | GOGO_time: 1.286s | GOGR_time: 4.644s
+Trial: 527, Time:36.644s
+39901204
+MF_time: 0.582s | MFGR_time: 1.884s | GR_time: 6.030s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.552s | GOGO_time: 1.291s | GOGR_time: 5.988s
+Trial: 528, Time:38.247s
+40197991
+MF_time: 0.548s | MFGR_time: 1.854s | GR_time: 5.911s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.556s | GOGO_time: 1.290s | GOGR_time: 4.610s
+Trial: 529, Time:36.626s
+39044164
+MF_time: 0.575s | MFGR_time: 1.895s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.549s | GOGO_time: 1.269s | GOGR_time: 5.887s
+Trial: 530, Time:37.756s
+39606123
+MF_time: 0.547s | MFGR_time: 1.864s | GR_time: 5.928s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.553s | GOGO_time: 1.273s | GOGR_time: 4.567s
+Trial: 531, Time:36.317s
+40063912
+MF_time: 0.568s | MFGR_time: 1.892s | GR_time: 6.022s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.553s | GOGO_time: 1.280s | GOGR_time: 5.441s
+Trial: 532, Time:37.473s
+40009775
+MF_time: 0.552s | MFGR_time: 1.870s | GR_time: 5.947s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.558s | GOGO_time: 1.280s | GOGR_time: 4.586s
+Trial: 533, Time:36.469s
+40499448
+MF_time: 0.564s | MFGR_time: 1.894s | GR_time: 6.026s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.554s | GOGO_time: 1.288s | GOGR_time: 5.449s
+Trial: 534, Time:37.638s
+41130404
+MF_time: 0.555s | MFGR_time: 1.877s | GR_time: 5.947s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.559s | GOGO_time: 1.299s | GOGR_time: 4.610s
+Trial: 535, Time:36.841s
+40477715
+MF_time: 0.571s | MFGR_time: 1.895s | GR_time: 6.024s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.552s | GOGO_time: 1.286s | GOGR_time: 5.430s
+Trial: 536, Time:37.591s
+40873742
+MF_time: 0.557s | MFGR_time: 1.859s | GR_time: 5.949s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.555s | GOGO_time: 1.287s | GOGR_time: 4.590s
+Trial: 537, Time:36.553s
+39578684
+MF_time: 0.566s | MFGR_time: 1.887s | GR_time: 6.031s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.548s | GOGO_time: 1.262s | GOGR_time: 5.443s
+Trial: 538, Time:37.229s
+39731965
+MF_time: 0.551s | MFGR_time: 1.861s | GR_time: 5.945s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.551s | GOGO_time: 1.271s | GOGR_time: 4.578s
+Trial: 539, Time:36.279s
+39940691
+MF_time: 0.565s | MFGR_time: 1.891s | GR_time: 6.029s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.551s | GOGO_time: 1.274s | GOGR_time: 5.449s
+Trial: 540, Time:37.380s
+41083436
+MF_time: 0.554s | MFGR_time: 1.869s | GR_time: 5.945s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.556s | GOGO_time: 1.294s | GOGR_time: 4.606s
+Trial: 541, Time:36.716s
+40777706
+MF_time: 0.565s | MFGR_time: 1.892s | GR_time: 5.983s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.547s | GOGO_time: 1.290s | GOGR_time: 5.419s
+Trial: 542, Time:37.570s
+40666973
+MF_time: 0.552s | MFGR_time: 1.875s | GR_time: 5.904s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.548s | GOGO_time: 1.291s | GOGR_time: 4.586s
+Trial: 543, Time:36.598s
+40787019
+MF_time: 0.564s | MFGR_time: 1.890s | GR_time: 5.976s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.551s | GOGO_time: 1.290s | GOGR_time: 5.408s
+Trial: 544, Time:37.579s
+41713017
+MF_time: 0.552s | MFGR_time: 1.870s | GR_time: 5.906s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.551s | GOGO_time: 1.309s | GOGR_time: 4.606s
+Trial: 545, Time:36.943s
+41167718
+MF_time: 0.562s | MFGR_time: 1.891s | GR_time: 5.983s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.552s | GOGO_time: 1.296s | GOGR_time: 5.409s
+Trial: 546, Time:37.675s
+41195295
+MF_time: 0.552s | MFGR_time: 1.864s | GR_time: 5.917s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.554s | GOGO_time: 1.298s | GOGR_time: 4.593s
+Trial: 547, Time:36.708s
+41460387
+MF_time: 0.562s | MFGR_time: 1.890s | GR_time: 5.958s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.554s | GOGO_time: 1.300s | GOGR_time: 5.400s
+Trial: 548, Time:37.633s
+40580436
+MF_time: 0.594s | MFGR_time: 1.904s | GR_time: 6.012s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.548s | GOGO_time: 1.285s | GOGR_time: 6.191s
+Trial: 549, Time:38.366s
+40749297
+MF_time: 0.549s | MFGR_time: 1.860s | GR_time: 5.927s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.551s | GOGO_time: 1.286s | GOGR_time: 4.661s
+Trial: 550, Time:36.622s
+41420014
+MF_time: 0.583s | MFGR_time: 1.885s | GR_time: 6.038s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.549s | GOGO_time: 1.299s | GOGR_time: 5.839s
+Trial: 551, Time:38.320s
+40741479
+MF_time: 0.550s | MFGR_time: 1.853s | GR_time: 5.936s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.551s | GOGO_time: 1.290s | GOGR_time: 4.685s
+Trial: 552, Time:36.852s
+40865092
+MF_time: 0.587s | MFGR_time: 1.884s | GR_time: 6.039s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.562s | GOGO_time: 1.300s | GOGR_time: 5.845s
+Trial: 553, Time:38.490s
+41984846
+MF_time: 0.553s | MFGR_time: 1.862s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.560s | GOGO_time: 1.324s | GOGR_time: 4.703s
+Trial: 554, Time:37.380s
+40870246
+MF_time: 0.585s | MFGR_time: 1.898s | GR_time: 6.038s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.558s | GOGO_time: 1.311s | GOGR_time: 5.748s
+Trial: 555, Time:38.409s
+41452090
+MF_time: 0.556s | MFGR_time: 1.879s | GR_time: 5.934s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.563s | GOGO_time: 1.318s | GOGR_time: 4.576s
+Trial: 556, Time:37.152s
+41040557
+MF_time: 0.578s | MFGR_time: 1.883s | GR_time: 5.990s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.557s | GOGO_time: 1.306s | GOGR_time: 5.374s
+Trial: 557, Time:37.782s
+40234490
+MF_time: 0.553s | MFGR_time: 1.871s | GR_time: 5.927s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.564s | GOGO_time: 1.297s | GOGR_time: 4.546s
+Trial: 558, Time:36.690s
+39552648
+MF_time: 0.579s | MFGR_time: 1.894s | GR_time: 5.998s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.557s | GOGO_time: 1.285s | GOGR_time: 5.396s
+Trial: 559, Time:37.477s
+39784903
+MF_time: 0.550s | MFGR_time: 1.876s | GR_time: 5.929s | GRGO_time: 0.003s | MFGO_time: 0.729s | GO_time: 0.558s | GOGO_time: 1.290s | GOGR_time: 4.540s
+Trial: 560, Time:36.507s
+39352254
+MF_time: 0.576s | MFGR_time: 1.893s | GR_time: 6.000s | GRGO_time: 0.003s | MFGO_time: 0.719s | GO_time: 0.559s | GOGO_time: 1.277s | GOGR_time: 5.394s
+Trial: 561, Time:37.332s
+39660670
+MF_time: 0.552s | MFGR_time: 1.870s | GR_time: 5.925s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.558s | GOGO_time: 1.281s | GOGR_time: 4.536s
+Trial: 562, Time:36.417s
+40635345
+MF_time: 0.577s | MFGR_time: 1.892s | GR_time: 6.001s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.558s | GOGO_time: 1.295s | GOGR_time: 5.399s
+Trial: 563, Time:37.698s
+39739940
+MF_time: 0.611s | MFGR_time: 1.896s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.563s | GOGO_time: 1.277s | GOGR_time: 6.190s
+Trial: 564, Time:38.236s
+39333549
+MF_time: 0.551s | MFGR_time: 1.855s | GR_time: 5.928s | GRGO_time: 0.003s | MFGO_time: 0.721s | GO_time: 0.559s | GOGO_time: 1.272s | GOGR_time: 4.532s
+Trial: 565, Time:36.316s
+39530453
+MF_time: 0.572s | MFGR_time: 1.886s | GR_time: 5.999s | GRGO_time: 0.003s | MFGO_time: 0.719s | GO_time: 0.558s | GOGO_time: 1.278s | GOGR_time: 5.504s
+Trial: 566, Time:37.492s
+39115395
+MF_time: 0.547s | MFGR_time: 1.857s | GR_time: 5.931s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.555s | GOGO_time: 1.267s | GOGR_time: 4.533s
+Trial: 567, Time:36.355s
+37871326
+MF_time: 0.574s | MFGR_time: 1.889s | GR_time: 5.997s | GRGO_time: 0.003s | MFGO_time: 0.710s | GO_time: 0.551s | GOGO_time: 1.253s | GOGR_time: 5.511s
+Trial: 568, Time:37.208s
+38394574
+MF_time: 0.553s | MFGR_time: 1.852s | GR_time: 5.929s | GRGO_time: 0.003s | MFGO_time: 0.720s | GO_time: 0.555s | GOGO_time: 1.264s | GOGR_time: 4.544s
+Trial: 569, Time:36.199s
+39007493
+MF_time: 0.580s | MFGR_time: 1.891s | GR_time: 6.000s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.552s | GOGO_time: 1.277s | GOGR_time: 5.526s
+Trial: 570, Time:37.524s
+39491351
+MF_time: 0.557s | MFGR_time: 1.859s | GR_time: 5.929s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.559s | GOGO_time: 1.284s | GOGR_time: 4.575s
+Trial: 571, Time:36.601s
+39592076
+MF_time: 0.576s | MFGR_time: 1.889s | GR_time: 6.003s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.556s | GOGO_time: 1.283s | GOGR_time: 5.506s
+Trial: 572, Time:37.464s
+40860145
+MF_time: 0.554s | MFGR_time: 1.859s | GR_time: 5.943s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.561s | GOGO_time: 1.307s | GOGR_time: 4.585s
+Trial: 573, Time:36.785s
+40554958
+MF_time: 0.575s | MFGR_time: 1.890s | GR_time: 6.005s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.559s | GOGO_time: 1.301s | GOGR_time: 5.517s
+Trial: 574, Time:37.763s
+40999995
+MF_time: 0.555s | MFGR_time: 1.865s | GR_time: 5.943s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.559s | GOGO_time: 1.307s | GOGR_time: 4.586s
+Trial: 575, Time:36.806s
+41150022
+MF_time: 0.578s | MFGR_time: 1.898s | GR_time: 6.006s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.560s | GOGO_time: 1.311s | GOGR_time: 5.503s
+Trial: 576, Time:37.901s
+41608846
+MF_time: 0.608s | MFGR_time: 1.894s | GR_time: 6.005s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.559s | GOGO_time: 1.317s | GOGR_time: 6.379s
+Trial: 577, Time:38.952s
+42337033
+MF_time: 0.561s | MFGR_time: 1.861s | GR_time: 5.931s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.565s | GOGO_time: 1.324s | GOGR_time: 4.798s
+Trial: 578, Time:37.265s
+41115944
+MF_time: 0.595s | MFGR_time: 1.883s | GR_time: 6.033s | GRGO_time: 0.003s | MFGO_time: 0.740s | GO_time: 0.559s | GOGO_time: 1.306s | GOGR_time: 5.849s
+Trial: 579, Time:38.286s
+40390153
+MF_time: 0.564s | MFGR_time: 1.860s | GR_time: 5.933s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.558s | GOGO_time: 1.294s | GOGR_time: 4.725s
+Trial: 580, Time:36.718s
+40159851
+MF_time: 0.594s | MFGR_time: 1.883s | GR_time: 6.041s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.557s | GOGO_time: 1.287s | GOGR_time: 5.844s
+Trial: 581, Time:38.017s
+39630608
+MF_time: 0.560s | MFGR_time: 1.854s | GR_time: 5.933s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.557s | GOGO_time: 1.276s | GOGR_time: 4.705s
+Trial: 582, Time:36.462s
+39531267
+MF_time: 0.576s | MFGR_time: 1.871s | GR_time: 5.998s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.557s | GOGO_time: 1.278s | GOGR_time: 5.347s
+Trial: 583, Time:37.273s
+40354724
+MF_time: 0.553s | MFGR_time: 1.858s | GR_time: 5.925s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.561s | GOGO_time: 1.294s | GOGR_time: 4.667s
+Trial: 584, Time:36.635s
+40180314
+MF_time: 0.574s | MFGR_time: 1.877s | GR_time: 6.004s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.555s | GOGO_time: 1.291s | GOGR_time: 5.358s
+Trial: 585, Time:37.468s
+39963513
+MF_time: 0.609s | MFGR_time: 1.889s | GR_time: 6.019s | GRGO_time: 0.003s | MFGO_time: 0.729s | GO_time: 0.557s | GOGO_time: 1.290s | GOGR_time: 6.211s
+Trial: 586, Time:38.419s
+41479668
+MF_time: 0.560s | MFGR_time: 1.875s | GR_time: 5.943s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.565s | GOGO_time: 1.317s | GOGR_time: 4.615s
+Trial: 587, Time:36.990s
+41018351
+MF_time: 0.586s | MFGR_time: 1.903s | GR_time: 6.010s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.563s | GOGO_time: 1.313s | GOGR_time: 5.458s
+Trial: 588, Time:37.873s
+40382975
+MF_time: 0.554s | MFGR_time: 1.864s | GR_time: 5.936s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.565s | GOGO_time: 1.297s | GOGR_time: 4.590s
+Trial: 589, Time:36.605s
+40625411
+MF_time: 0.580s | MFGR_time: 1.888s | GR_time: 6.006s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.563s | GOGO_time: 1.302s | GOGR_time: 5.442s
+Trial: 590, Time:37.725s
+40728329
+MF_time: 0.611s | MFGR_time: 1.901s | GR_time: 6.012s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.559s | GOGO_time: 1.305s | GOGR_time: 6.314s
+Trial: 591, Time:38.720s
+41316502
+MF_time: 0.564s | MFGR_time: 1.861s | GR_time: 5.923s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.559s | GOGO_time: 1.311s | GOGR_time: 4.716s
+Trial: 592, Time:36.956s
+41207469
+MF_time: 0.598s | MFGR_time: 1.880s | GR_time: 6.040s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.558s | GOGO_time: 1.313s | GOGR_time: 5.882s
+Trial: 593, Time:38.489s
+41767330
+MF_time: 0.558s | MFGR_time: 1.872s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.564s | GOGO_time: 1.319s | GOGR_time: 4.686s
+Trial: 594, Time:37.234s
+40512100
+MF_time: 0.585s | MFGR_time: 1.893s | GR_time: 6.051s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.558s | GOGO_time: 1.294s | GOGR_time: 5.726s
+Trial: 595, Time:38.055s
+41256503
+MF_time: 0.547s | MFGR_time: 1.870s | GR_time: 5.949s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.565s | GOGO_time: 1.314s | GOGR_time: 4.623s
+Trial: 596, Time:37.026s
+41255881
+MF_time: 0.577s | MFGR_time: 1.896s | GR_time: 6.023s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.561s | GOGO_time: 1.318s | GOGR_time: 5.437s
+Trial: 597, Time:38.029s
+40471910
+MF_time: 0.550s | MFGR_time: 1.873s | GR_time: 5.948s | GRGO_time: 0.003s | MFGO_time: 0.738s | GO_time: 0.565s | GOGO_time: 1.312s | GOGR_time: 4.623s
+Trial: 598, Time:36.956s
+39441178
+MF_time: 0.575s | MFGR_time: 1.899s | GR_time: 6.023s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.555s | GOGO_time: 1.290s | GOGR_time: 5.467s
+Trial: 599, Time:37.615s
+39169861
+MF_time: 0.547s | MFGR_time: 1.870s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.561s | GOGO_time: 1.282s | GOGR_time: 4.599s
+Trial: 600, Time:36.536s
+39603103
+MF_time: 0.581s | MFGR_time: 1.893s | GR_time: 6.010s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.558s | GOGO_time: 1.294s | GOGR_time: 5.445s
+Trial: 601, Time:37.702s
+39078200
+MF_time: 0.551s | MFGR_time: 1.866s | GR_time: 5.937s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.560s | GOGO_time: 1.280s | GOGR_time: 4.574s
+Trial: 602, Time:36.436s
+38636210
+MF_time: 0.582s | MFGR_time: 1.891s | GR_time: 6.017s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.557s | GOGO_time: 1.275s | GOGR_time: 5.427s
+Trial: 603, Time:37.405s
+39278708
+MF_time: 0.544s | MFGR_time: 1.867s | GR_time: 5.901s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.559s | GOGO_time: 1.288s | GOGR_time: 4.571s
+Trial: 604, Time:36.555s
+39700331
+MF_time: 0.577s | MFGR_time: 1.894s | GR_time: 5.971s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.561s | GOGO_time: 1.297s | GOGR_time: 5.436s
+Trial: 605, Time:37.705s
+39919670
+MF_time: 0.551s | MFGR_time: 1.874s | GR_time: 5.904s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.560s | GOGO_time: 1.301s | GOGR_time: 4.589s
+Trial: 606, Time:36.767s
+39915760
+MF_time: 0.574s | MFGR_time: 1.891s | GR_time: 5.984s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.557s | GOGO_time: 1.306s | GOGR_time: 5.427s
+Trial: 607, Time:37.809s
+41298081
+MF_time: 0.597s | MFGR_time: 1.893s | GR_time: 6.006s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.565s | GOGO_time: 1.330s | GOGR_time: 5.872s
+Trial: 608, Time:38.802s
+40437562
+MF_time: 0.559s | MFGR_time: 1.862s | GR_time: 5.923s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.561s | GOGO_time: 1.318s | GOGR_time: 4.708s
+Trial: 609, Time:37.099s
+41488425
+MF_time: 0.597s | MFGR_time: 1.890s | GR_time: 6.044s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.565s | GOGO_time: 1.337s | GOGR_time: 5.759s
+Trial: 610, Time:38.801s
+40889734
+MF_time: 0.561s | MFGR_time: 1.865s | GR_time: 5.903s | GRGO_time: 0.003s | MFGO_time: 0.741s | GO_time: 0.554s | GOGO_time: 1.325s | GOGR_time: 4.715s
+Trial: 611, Time:37.323s
+40258368
+MF_time: 0.586s | MFGR_time: 1.884s | GR_time: 6.024s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.557s | GOGO_time: 1.322s | GOGR_time: 5.831s
+Trial: 612, Time:38.633s
+39240512
+MF_time: 0.567s | MFGR_time: 1.858s | GR_time: 5.901s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.552s | GOGO_time: 1.296s | GOGR_time: 4.679s
+Trial: 613, Time:36.850s
+39419252
+MF_time: 0.580s | MFGR_time: 1.883s | GR_time: 5.998s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.557s | GOGO_time: 1.297s | GOGR_time: 5.331s
+Trial: 614, Time:37.705s
+40029302
+MF_time: 0.566s | MFGR_time: 1.865s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.553s | GOGO_time: 1.304s | GOGR_time: 4.610s
+Trial: 615, Time:36.858s
+38603322
+MF_time: 0.576s | MFGR_time: 1.883s | GR_time: 6.018s | GRGO_time: 0.003s | MFGO_time: 0.720s | GO_time: 0.555s | GOGO_time: 1.275s | GOGR_time: 5.319s
+Trial: 616, Time:37.347s
+39297442
+MF_time: 0.598s | MFGR_time: 1.888s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.556s | GOGO_time: 1.283s | GOGR_time: 6.160s
+Trial: 617, Time:38.407s
+39504946
+MF_time: 0.557s | MFGR_time: 1.856s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.554s | GOGO_time: 1.289s | GOGR_time: 4.654s
+Trial: 618, Time:36.676s
+39177064
+MF_time: 0.591s | MFGR_time: 1.898s | GR_time: 5.989s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.560s | GOGO_time: 1.281s | GOGR_time: 6.022s
+Trial: 619, Time:38.104s
+39553092
+MF_time: 0.554s | MFGR_time: 1.848s | GR_time: 5.903s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.559s | GOGO_time: 1.287s | GOGR_time: 4.664s
+Trial: 620, Time:36.601s
+39908853
+MF_time: 0.595s | MFGR_time: 1.902s | GR_time: 6.019s | GRGO_time: 0.003s | MFGO_time: 0.724s | GO_time: 0.561s | GOGO_time: 1.288s | GOGR_time: 6.041s
+Trial: 621, Time:38.303s
+40370881
+MF_time: 0.555s | MFGR_time: 1.869s | GR_time: 5.925s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.559s | GOGO_time: 1.298s | GOGR_time: 4.557s
+Trial: 622, Time:36.730s
+39642113
+MF_time: 0.576s | MFGR_time: 1.889s | GR_time: 6.000s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.559s | GOGO_time: 1.286s | GOGR_time: 5.364s
+Trial: 623, Time:37.696s
+40466311
+MF_time: 0.553s | MFGR_time: 1.871s | GR_time: 5.942s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.562s | GOGO_time: 1.307s | GOGR_time: 4.569s
+Trial: 624, Time:36.899s
+40299876
+MF_time: 0.572s | MFGR_time: 1.893s | GR_time: 6.007s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.557s | GOGO_time: 1.308s | GOGR_time: 5.372s
+Trial: 625, Time:37.823s
+41601614
+MF_time: 0.555s | MFGR_time: 1.879s | GR_time: 5.949s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.565s | GOGO_time: 1.325s | GOGR_time: 4.586s
+Trial: 626, Time:37.248s
+40377137
+MF_time: 0.572s | MFGR_time: 1.882s | GR_time: 6.016s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.559s | GOGO_time: 1.307s | GOGR_time: 5.342s
+Trial: 627, Time:37.804s
+40892084
+MF_time: 0.598s | MFGR_time: 1.894s | GR_time: 6.032s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.563s | GOGO_time: 1.317s | GOGR_time: 5.948s
+Trial: 628, Time:38.751s
+41503049
+MF_time: 0.560s | MFGR_time: 1.863s | GR_time: 5.929s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.561s | GOGO_time: 1.335s | GOGR_time: 4.689s
+Trial: 629, Time:37.415s
+41169962
+MF_time: 0.592s | MFGR_time: 1.896s | GR_time: 6.063s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.563s | GOGO_time: 1.325s | GOGR_time: 5.722s
+Trial: 630, Time:38.680s
+40551299
+MF_time: 0.564s | MFGR_time: 1.872s | GR_time: 5.952s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.560s | GOGO_time: 1.316s | GOGR_time: 4.619s
+Trial: 631, Time:37.099s
+39794190
+MF_time: 0.585s | MFGR_time: 1.896s | GR_time: 6.027s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.562s | GOGO_time: 1.301s | GOGR_time: 5.349s
+Trial: 632, Time:37.737s
+39863101
+MF_time: 0.559s | MFGR_time: 1.867s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.559s | GOGO_time: 1.302s | GOGR_time: 4.600s
+Trial: 633, Time:36.830s
+39745795
+MF_time: 0.576s | MFGR_time: 1.888s | GR_time: 6.028s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.560s | GOGO_time: 1.299s | GOGR_time: 5.339s
+Trial: 634, Time:37.753s
+40119004
+MF_time: 0.607s | MFGR_time: 1.886s | GR_time: 6.069s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.560s | GOGO_time: 1.300s | GOGR_time: 5.998s
+Trial: 635, Time:38.490s
+40708044
+MF_time: 0.566s | MFGR_time: 1.864s | GR_time: 5.952s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.564s | GOGO_time: 1.305s | GOGR_time: 4.732s
+Trial: 636, Time:37.094s
+39899933
+MF_time: 0.594s | MFGR_time: 1.882s | GR_time: 6.053s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.556s | GOGO_time: 1.285s | GOGR_time: 5.989s
+Trial: 637, Time:38.226s
+39796006
+MF_time: 0.559s | MFGR_time: 1.857s | GR_time: 5.946s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.560s | GOGO_time: 1.285s | GOGR_time: 4.699s
+Trial: 638, Time:36.675s
+39525557
+MF_time: 0.587s | MFGR_time: 1.887s | GR_time: 6.058s | GRGO_time: 0.003s | MFGO_time: 0.716s | GO_time: 0.550s | GOGO_time: 1.276s | GOGR_time: 5.808s
+Trial: 639, Time:37.866s
+39815341
+MF_time: 0.561s | MFGR_time: 1.855s | GR_time: 5.946s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.554s | GOGO_time: 1.282s | GOGR_time: 4.695s
+Trial: 640, Time:36.669s
+38818613
+MF_time: 0.589s | MFGR_time: 1.888s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.711s | GO_time: 0.551s | GOGO_time: 1.262s | GOGR_time: 5.774s
+Trial: 641, Time:37.643s
+38604124
+MF_time: 0.558s | MFGR_time: 1.852s | GR_time: 5.945s | GRGO_time: 0.003s | MFGO_time: 0.713s | GO_time: 0.552s | GOGO_time: 1.258s | GOGR_time: 4.670s
+Trial: 642, Time:36.239s
+37783490
+MF_time: 0.586s | MFGR_time: 1.878s | GR_time: 6.060s | GRGO_time: 0.004s | MFGO_time: 0.707s | GO_time: 0.554s | GOGO_time: 1.247s | GOGR_time: 5.890s
+Trial: 643, Time:37.513s
+38631113
+MF_time: 0.546s | MFGR_time: 1.856s | GR_time: 5.947s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.551s | GOGO_time: 1.263s | GOGR_time: 4.502s
+Trial: 644, Time:36.182s
+38296168
+MF_time: 0.578s | MFGR_time: 1.876s | GR_time: 6.032s | GRGO_time: 0.004s | MFGO_time: 0.708s | GO_time: 0.549s | GOGO_time: 1.256s | GOGR_time: 5.400s
+Trial: 645, Time:37.097s
+38828618
+MF_time: 0.570s | MFGR_time: 1.873s | GR_time: 5.970s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.554s | GOGO_time: 1.262s | GOGR_time: 5.080s
+Trial: 646, Time:36.780s
+39635907
+MF_time: 0.550s | MFGR_time: 1.855s | GR_time: 5.948s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.551s | GOGO_time: 1.274s | GOGR_time: 4.512s
+Trial: 647, Time:36.355s
+40024464
+MF_time: 0.577s | MFGR_time: 1.886s | GR_time: 6.033s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.555s | GOGO_time: 1.278s | GOGR_time: 5.420s
+Trial: 648, Time:37.485s
+41287548
+MF_time: 0.549s | MFGR_time: 1.865s | GR_time: 5.948s | GRGO_time: 0.003s | MFGO_time: 0.733s | GO_time: 0.561s | GOGO_time: 1.303s | GOGR_time: 4.543s
+Trial: 649, Time:36.819s
+41198128
+MF_time: 0.580s | MFGR_time: 1.890s | GR_time: 6.034s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.560s | GOGO_time: 1.300s | GOGR_time: 5.422s
+Trial: 650, Time:37.808s
+40576881
+MF_time: 0.549s | MFGR_time: 1.863s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.557s | GOGO_time: 1.290s | GOGR_time: 4.532s
+Trial: 651, Time:36.570s
+40523281
+MF_time: 0.578s | MFGR_time: 1.889s | GR_time: 6.035s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.561s | GOGO_time: 1.291s | GOGR_time: 5.435s
+Trial: 652, Time:37.701s
+39524899
+MF_time: 0.551s | MFGR_time: 1.862s | GR_time: 5.951s | GRGO_time: 0.003s | MFGO_time: 0.727s | GO_time: 0.556s | GOGO_time: 1.280s | GOGR_time: 4.526s
+Trial: 653, Time:36.426s
+39676066
+MF_time: 0.577s | MFGR_time: 1.891s | GR_time: 6.044s | GRGO_time: 0.003s | MFGO_time: 0.725s | GO_time: 0.559s | GOGO_time: 1.283s | GOGR_time: 5.426s
+Trial: 654, Time:37.553s
+40363629
+MF_time: 0.548s | MFGR_time: 1.858s | GR_time: 5.925s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.555s | GOGO_time: 1.298s | GOGR_time: 4.544s
+Trial: 655, Time:36.769s
+40330785
+MF_time: 0.577s | MFGR_time: 1.892s | GR_time: 5.996s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.554s | GOGO_time: 1.297s | GOGR_time: 5.449s
+Trial: 656, Time:37.818s
+40419131
+MF_time: 0.549s | MFGR_time: 1.862s | GR_time: 5.915s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.557s | GOGO_time: 1.303s | GOGR_time: 4.546s
+Trial: 657, Time:36.820s
+40945276
+MF_time: 0.575s | MFGR_time: 1.888s | GR_time: 5.977s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.556s | GOGO_time: 1.308s | GOGR_time: 5.407s
+Trial: 658, Time:38.084s
+42054908
+MF_time: 0.620s | MFGR_time: 1.903s | GR_time: 6.007s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.554s | GOGO_time: 1.325s | GOGR_time: 6.498s
+Trial: 659, Time:39.636s
+40982709
+MF_time: 0.547s | MFGR_time: 1.875s | GR_time: 5.928s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.557s | GOGO_time: 1.304s | GOGR_time: 4.577s
+Trial: 660, Time:36.991s
+41047317
+MF_time: 0.578s | MFGR_time: 1.894s | GR_time: 5.994s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.554s | GOGO_time: 1.304s | GOGR_time: 5.489s
+Trial: 661, Time:38.042s
+41026759
+MF_time: 0.549s | MFGR_time: 1.865s | GR_time: 5.938s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.560s | GOGO_time: 1.310s | GOGR_time: 4.579s
+Trial: 662, Time:37.113s
+40561401
+MF_time: 0.578s | MFGR_time: 1.889s | GR_time: 5.995s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.553s | GOGO_time: 1.298s | GOGR_time: 5.490s
+Trial: 663, Time:37.914s
+40697109
+MF_time: 0.547s | MFGR_time: 1.869s | GR_time: 5.916s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.558s | GOGO_time: 1.298s | GOGR_time: 4.581s
+Trial: 664, Time:36.787s
+41025237
+MF_time: 0.575s | MFGR_time: 1.895s | GR_time: 5.968s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.556s | GOGO_time: 1.309s | GOGR_time: 5.490s
+Trial: 665, Time:38.077s
+40533046
+MF_time: 0.600s | MFGR_time: 1.894s | GR_time: 5.991s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.558s | GOGO_time: 1.300s | GOGR_time: 6.394s
+Trial: 666, Time:39.001s
+40390417
+MF_time: 0.541s | MFGR_time: 1.865s | GR_time: 5.896s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.552s | GOGO_time: 1.291s | GOGR_time: 4.529s
+Trial: 667, Time:36.690s
+39469897
+MF_time: 0.568s | MFGR_time: 1.881s | GR_time: 5.993s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.551s | GOGO_time: 1.280s | GOGR_time: 5.347s
+Trial: 668, Time:37.700s
+39739393
+MF_time: 0.539s | MFGR_time: 1.861s | GR_time: 5.914s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.552s | GOGO_time: 1.284s | GOGR_time: 4.510s
+Trial: 669, Time:36.577s
+39397767
+MF_time: 0.565s | MFGR_time: 1.877s | GR_time: 5.992s | GRGO_time: 0.004s | MFGO_time: 0.713s | GO_time: 0.548s | GOGO_time: 1.281s | GOGR_time: 5.332s
+Trial: 670, Time:37.460s
+38916033
+MF_time: 0.548s | MFGR_time: 1.872s | GR_time: 5.927s | GRGO_time: 0.004s | MFGO_time: 0.708s | GO_time: 0.550s | GOGO_time: 1.268s | GOGR_time: 4.941s
+Trial: 671, Time:36.801s
+39681122
+MF_time: 0.535s | MFGR_time: 1.859s | GR_time: 5.887s | GRGO_time: 0.004s | MFGO_time: 0.713s | GO_time: 0.548s | GOGO_time: 1.285s | GOGR_time: 4.519s
+Trial: 672, Time:36.551s
+39804147
+MF_time: 0.562s | MFGR_time: 1.881s | GR_time: 5.976s | GRGO_time: 0.004s | MFGO_time: 0.716s | GO_time: 0.557s | GOGO_time: 1.286s | GOGR_time: 5.348s
+Trial: 673, Time:37.630s
+41243193
+MF_time: 0.543s | MFGR_time: 1.874s | GR_time: 5.903s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.553s | GOGO_time: 1.320s | GOGR_time: 4.545s
+Trial: 674, Time:37.167s
+41921754
+MF_time: 0.569s | MFGR_time: 1.890s | GR_time: 5.982s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.556s | GOGO_time: 1.332s | GOGR_time: 5.310s
+Trial: 675, Time:38.298s
+41573933
+MF_time: 0.545s | MFGR_time: 1.878s | GR_time: 5.906s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.555s | GOGO_time: 1.330s | GOGR_time: 4.555s
+Trial: 676, Time:37.310s
+40406211
+MF_time: 0.568s | MFGR_time: 1.890s | GR_time: 5.988s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.556s | GOGO_time: 1.312s | GOGR_time: 5.331s
+Trial: 677, Time:38.008s
+40849215
+MF_time: 0.543s | MFGR_time: 1.874s | GR_time: 5.909s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.556s | GOGO_time: 1.318s | GOGR_time: 4.545s
+Trial: 678, Time:37.156s
+40756348
+MF_time: 0.569s | MFGR_time: 1.891s | GR_time: 6.001s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.557s | GOGO_time: 1.317s | GOGR_time: 5.344s
+Trial: 679, Time:38.117s
+40364456
+MF_time: 0.545s | MFGR_time: 1.872s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.554s | GOGO_time: 1.302s | GOGR_time: 4.531s
+Trial: 680, Time:36.866s
+40849103
+MF_time: 0.570s | MFGR_time: 1.891s | GR_time: 6.003s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.558s | GOGO_time: 1.310s | GOGR_time: 5.352s
+Trial: 681, Time:38.009s
+40601041
+MF_time: 0.545s | MFGR_time: 1.869s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.555s | GOGO_time: 1.304s | GOGR_time: 4.536s
+Trial: 682, Time:36.904s
+40511980
+MF_time: 0.571s | MFGR_time: 1.888s | GR_time: 6.007s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.557s | GOGO_time: 1.303s | GOGR_time: 5.347s
+Trial: 683, Time:37.866s
+40066598
+MF_time: 0.545s | MFGR_time: 1.869s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.557s | GOGO_time: 1.301s | GOGR_time: 4.532s
+Trial: 684, Time:36.849s
+41207440
+MF_time: 0.570s | MFGR_time: 1.896s | GR_time: 6.014s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.562s | GOGO_time: 1.318s | GOGR_time: 5.348s
+Trial: 685, Time:38.152s
+40570621
+MF_time: 0.549s | MFGR_time: 1.879s | GR_time: 5.945s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.556s | GOGO_time: 1.307s | GOGR_time: 4.549s
+Trial: 686, Time:37.018s
+41167000
+MF_time: 0.577s | MFGR_time: 1.898s | GR_time: 6.030s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.562s | GOGO_time: 1.316s | GOGR_time: 5.368s
+Trial: 687, Time:38.154s
+41550975
+MF_time: 0.552s | MFGR_time: 1.884s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.558s | GOGO_time: 1.323s | GOGR_time: 4.565s
+Trial: 688, Time:37.314s
+41194817
+MF_time: 0.575s | MFGR_time: 1.894s | GR_time: 6.031s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.560s | GOGO_time: 1.316s | GOGR_time: 5.370s
+Trial: 689, Time:38.192s
+41126998
+MF_time: 0.548s | MFGR_time: 1.872s | GR_time: 5.923s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.552s | GOGO_time: 1.316s | GOGR_time: 4.541s
+Trial: 690, Time:37.188s
+41319214
+MF_time: 0.574s | MFGR_time: 1.881s | GR_time: 6.000s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.550s | GOGO_time: 1.320s | GOGR_time: 5.323s
+Trial: 691, Time:38.298s
+40752699
+MF_time: 0.594s | MFGR_time: 1.890s | GR_time: 6.031s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.551s | GOGO_time: 1.316s | GOGR_time: 5.923s
+Trial: 692, Time:38.956s
+41275341
+MF_time: 0.550s | MFGR_time: 1.856s | GR_time: 5.923s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.553s | GOGO_time: 1.320s | GOGR_time: 4.620s
+Trial: 693, Time:37.373s
+41270378
+MF_time: 0.591s | MFGR_time: 1.874s | GR_time: 6.037s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.555s | GOGO_time: 1.320s | GOGR_time: 5.842s
+Trial: 694, Time:38.845s
+41457350
+MF_time: 0.551s | MFGR_time: 1.853s | GR_time: 5.913s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.560s | GOGO_time: 1.333s | GOGR_time: 4.644s
+Trial: 695, Time:37.484s
+41522355
+MF_time: 0.586s | MFGR_time: 1.889s | GR_time: 6.036s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.559s | GOGO_time: 1.328s | GOGR_time: 5.832s
+Trial: 696, Time:38.885s
+41591596
+MF_time: 0.554s | MFGR_time: 1.854s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.556s | GOGO_time: 1.334s | GOGR_time: 4.639s
+Trial: 697, Time:37.530s
+41637876
+MF_time: 0.588s | MFGR_time: 1.888s | GR_time: 6.069s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.552s | GOGO_time: 1.327s | GOGR_time: 5.736s
+Trial: 698, Time:38.857s
+41349322
+MF_time: 0.549s | MFGR_time: 1.870s | GR_time: 5.943s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.551s | GOGO_time: 1.326s | GOGR_time: 4.534s
+Trial: 699, Time:37.349s
+41556638
+MF_time: 0.578s | MFGR_time: 1.894s | GR_time: 6.007s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.551s | GOGO_time: 1.324s | GOGR_time: 5.330s
+Trial: 700, Time:38.234s
+40585139
+MF_time: 0.565s | MFGR_time: 1.890s | GR_time: 5.952s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.555s | GOGO_time: 1.312s | GOGR_time: 5.007s
+Trial: 701, Time:37.599s
+40682191
+MF_time: 0.549s | MFGR_time: 1.874s | GR_time: 5.913s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.553s | GOGO_time: 1.310s | GOGR_time: 4.533s
+Trial: 702, Time:37.005s
+40943718
+MF_time: 0.574s | MFGR_time: 1.898s | GR_time: 5.998s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.558s | GOGO_time: 1.318s | GOGR_time: 5.348s
+Trial: 703, Time:38.119s
+41149288
+MF_time: 0.552s | MFGR_time: 1.874s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.551s | GOGO_time: 1.320s | GOGR_time: 4.542s
+Trial: 704, Time:37.165s
+40550318
+MF_time: 0.570s | MFGR_time: 1.886s | GR_time: 6.002s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.555s | GOGO_time: 1.306s | GOGR_time: 5.349s
+Trial: 705, Time:37.921s
+39973175
+MF_time: 0.546s | MFGR_time: 1.872s | GR_time: 5.907s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.552s | GOGO_time: 1.300s | GOGR_time: 4.521s
+Trial: 706, Time:36.775s
+41068401
+MF_time: 0.578s | MFGR_time: 1.898s | GR_time: 6.005s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.555s | GOGO_time: 1.319s | GOGR_time: 5.360s
+Trial: 707, Time:38.155s
+40382234
+MF_time: 0.544s | MFGR_time: 1.870s | GR_time: 5.914s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.551s | GOGO_time: 1.309s | GOGR_time: 4.526s
+Trial: 708, Time:37.010s
+39819906
+MF_time: 0.580s | MFGR_time: 1.887s | GR_time: 5.985s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.552s | GOGO_time: 1.295s | GOGR_time: 5.338s
+Trial: 709, Time:37.779s
+39639421
+MF_time: 0.544s | MFGR_time: 1.866s | GR_time: 5.900s | GRGO_time: 0.004s | MFGO_time: 0.711s | GO_time: 0.554s | GOGO_time: 1.293s | GOGR_time: 4.491s
+Trial: 710, Time:36.719s
+39309278
+MF_time: 0.573s | MFGR_time: 1.890s | GR_time: 5.989s | GRGO_time: 0.004s | MFGO_time: 0.707s | GO_time: 0.553s | GOGO_time: 1.282s | GOGR_time: 5.330s
+Trial: 711, Time:37.504s
+40008355
+MF_time: 0.600s | MFGR_time: 1.879s | GR_time: 6.019s | GRGO_time: 0.004s | MFGO_time: 0.709s | GO_time: 0.552s | GOGO_time: 1.288s | GOGR_time: 5.931s
+Trial: 712, Time:38.367s
+39448956
+MF_time: 0.555s | MFGR_time: 1.849s | GR_time: 5.900s | GRGO_time: 0.004s | MFGO_time: 0.706s | GO_time: 0.545s | GOGO_time: 1.280s | GOGR_time: 4.643s
+Trial: 713, Time:36.803s
+40370976
+MF_time: 0.597s | MFGR_time: 1.882s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.555s | GOGO_time: 1.296s | GOGR_time: 6.026s
+Trial: 714, Time:38.555s
+40406190
+MF_time: 0.555s | MFGR_time: 1.850s | GR_time: 5.910s | GRGO_time: 0.003s | MFGO_time: 0.711s | GO_time: 0.546s | GOGO_time: 1.295s | GOGR_time: 4.645s
+Trial: 715, Time:36.877s
+39737067
+MF_time: 0.594s | MFGR_time: 1.877s | GR_time: 6.019s | GRGO_time: 0.004s | MFGO_time: 0.710s | GO_time: 0.546s | GOGO_time: 1.285s | GOGR_time: 5.999s
+Trial: 716, Time:38.341s
+39056889
+MF_time: 0.555s | MFGR_time: 1.849s | GR_time: 5.916s | GRGO_time: 0.004s | MFGO_time: 0.705s | GO_time: 0.549s | GOGO_time: 1.279s | GOGR_time: 4.624s
+Trial: 717, Time:36.632s
+39486403
+MF_time: 0.577s | MFGR_time: 1.885s | GR_time: 6.005s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.549s | GOGO_time: 1.291s | GOGR_time: 5.310s
+Trial: 718, Time:37.770s
+39164525
+MF_time: 0.544s | MFGR_time: 1.860s | GR_time: 5.928s | GRGO_time: 0.004s | MFGO_time: 0.708s | GO_time: 0.548s | GOGO_time: 1.289s | GOGR_time: 4.530s
+Trial: 719, Time:36.626s
+39550277
+MF_time: 0.578s | MFGR_time: 1.889s | GR_time: 6.013s | GRGO_time: 0.004s | MFGO_time: 0.716s | GO_time: 0.551s | GOGO_time: 1.290s | GOGR_time: 5.317s
+Trial: 720, Time:37.749s
+40122361
+MF_time: 0.542s | MFGR_time: 1.857s | GR_time: 5.928s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.549s | GOGO_time: 1.301s | GOGR_time: 4.542s
+Trial: 721, Time:36.905s
+40581263
+MF_time: 0.574s | MFGR_time: 1.893s | GR_time: 6.022s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.553s | GOGO_time: 1.313s | GOGR_time: 5.318s
+Trial: 722, Time:38.118s
+40554654
+MF_time: 0.545s | MFGR_time: 1.861s | GR_time: 5.937s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.551s | GOGO_time: 1.310s | GOGR_time: 4.553s
+Trial: 723, Time:37.044s
+41247658
+MF_time: 0.577s | MFGR_time: 1.894s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.558s | GOGO_time: 1.317s | GOGR_time: 5.309s
+Trial: 724, Time:38.126s
+42430062
+MF_time: 0.615s | MFGR_time: 1.898s | GR_time: 6.054s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.559s | GOGO_time: 1.338s | GOGR_time: 6.309s
+Trial: 725, Time:39.569s
+41412495
+MF_time: 0.554s | MFGR_time: 1.860s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.555s | GOGO_time: 1.323s | GOGR_time: 4.573s
+Trial: 726, Time:37.261s
+42204080
+MF_time: 0.598s | MFGR_time: 1.905s | GR_time: 6.046s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.559s | GOGO_time: 1.334s | GOGR_time: 5.992s
+Trial: 727, Time:39.134s
+41713310
+MF_time: 0.552s | MFGR_time: 1.860s | GR_time: 5.932s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.557s | GOGO_time: 1.325s | GOGR_time: 4.584s
+Trial: 728, Time:37.295s
+41390728
+MF_time: 0.598s | MFGR_time: 1.914s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.554s | GOGO_time: 1.322s | GOGR_time: 5.909s
+Trial: 729, Time:38.888s
+41743319
+MF_time: 0.555s | MFGR_time: 1.875s | GR_time: 5.935s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.557s | GOGO_time: 1.330s | GOGR_time: 4.540s
+Trial: 730, Time:37.349s
+41536932
+MF_time: 0.583s | MFGR_time: 1.901s | GR_time: 6.022s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.554s | GOGO_time: 1.330s | GOGR_time: 5.426s
+Trial: 731, Time:38.408s
+41804457
+MF_time: 0.548s | MFGR_time: 1.875s | GR_time: 5.940s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.560s | GOGO_time: 1.326s | GOGR_time: 4.536s
+Trial: 732, Time:37.287s
+41979235
+MF_time: 0.581s | MFGR_time: 1.896s | GR_time: 6.022s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.552s | GOGO_time: 1.327s | GOGR_time: 5.440s
+Trial: 733, Time:38.344s
+42671602
+MF_time: 0.549s | MFGR_time: 1.872s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.558s | GOGO_time: 1.344s | GOGR_time: 4.552s
+Trial: 734, Time:37.574s
+40942680
+MF_time: 0.575s | MFGR_time: 1.893s | GR_time: 5.982s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.550s | GOGO_time: 1.312s | GOGR_time: 5.443s
+Trial: 735, Time:38.083s
+40869223
+MF_time: 0.605s | MFGR_time: 1.896s | GR_time: 6.012s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.555s | GOGO_time: 1.314s | GOGR_time: 6.352s
+Trial: 736, Time:39.130s
+40861151
+MF_time: 0.551s | MFGR_time: 1.868s | GR_time: 5.914s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.552s | GOGO_time: 1.322s | GOGR_time: 4.529s
+Trial: 737, Time:37.149s
+40837460
+MF_time: 0.565s | MFGR_time: 1.885s | GR_time: 5.990s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.558s | GOGO_time: 1.326s | GOGR_time: 5.338s
+Trial: 738, Time:38.192s
+41049692
+MF_time: 0.549s | MFGR_time: 1.870s | GR_time: 5.922s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.554s | GOGO_time: 1.322s | GOGR_time: 4.532s
+Trial: 739, Time:37.180s
+40825081
+MF_time: 0.570s | MFGR_time: 1.892s | GR_time: 6.002s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.557s | GOGO_time: 1.320s | GOGR_time: 5.362s
+Trial: 740, Time:38.138s
+40752257
+MF_time: 0.555s | MFGR_time: 1.870s | GR_time: 5.924s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.554s | GOGO_time: 1.319s | GOGR_time: 4.528s
+Trial: 741, Time:37.110s
+42069753
+MF_time: 0.572s | MFGR_time: 1.893s | GR_time: 5.997s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.558s | GOGO_time: 1.339s | GOGR_time: 5.314s
+Trial: 742, Time:38.401s
+41341498
+MF_time: 0.554s | MFGR_time: 1.873s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.555s | GOGO_time: 1.321s | GOGR_time: 4.534s
+Trial: 743, Time:37.257s
+40798084
+MF_time: 0.576s | MFGR_time: 1.896s | GR_time: 6.022s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.559s | GOGO_time: 1.313s | GOGR_time: 5.386s
+Trial: 744, Time:38.229s
+40148071
+MF_time: 0.558s | MFGR_time: 1.872s | GR_time: 5.940s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.553s | GOGO_time: 1.308s | GOGR_time: 4.526s
+Trial: 745, Time:37.044s
+41271879
+MF_time: 0.574s | MFGR_time: 1.900s | GR_time: 6.034s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.556s | GOGO_time: 1.325s | GOGR_time: 5.367s
+Trial: 746, Time:38.347s
+41192721
+MF_time: 0.555s | MFGR_time: 1.880s | GR_time: 5.968s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.557s | GOGO_time: 1.327s | GOGR_time: 4.552s
+Trial: 747, Time:37.377s
+41203078
+MF_time: 0.576s | MFGR_time: 1.897s | GR_time: 6.044s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.557s | GOGO_time: 1.325s | GOGR_time: 5.387s
+Trial: 748, Time:38.249s
+40310209
+MF_time: 0.552s | MFGR_time: 1.869s | GR_time: 5.970s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.556s | GOGO_time: 1.303s | GOGR_time: 4.532s
+Trial: 749, Time:36.876s
+39581500
+MF_time: 0.573s | MFGR_time: 1.891s | GR_time: 6.047s | GRGO_time: 0.003s | MFGO_time: 0.721s | GO_time: 0.555s | GOGO_time: 1.291s | GOGR_time: 5.393s
+Trial: 750, Time:37.720s
+40435215
+MF_time: 0.550s | MFGR_time: 1.861s | GR_time: 5.936s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.554s | GOGO_time: 1.300s | GOGR_time: 4.512s
+Trial: 751, Time:36.834s
+40488969
+MF_time: 0.571s | MFGR_time: 1.886s | GR_time: 5.990s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.554s | GOGO_time: 1.306s | GOGR_time: 5.348s
+Trial: 752, Time:37.887s
+40651781
+MF_time: 0.546s | MFGR_time: 1.876s | GR_time: 5.918s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.553s | GOGO_time: 1.310s | GOGR_time: 4.493s
+Trial: 753, Time:37.132s
+40839315
+MF_time: 0.566s | MFGR_time: 1.885s | GR_time: 5.998s | GRGO_time: 0.004s | MFGO_time: 0.716s | GO_time: 0.553s | GOGO_time: 1.317s | GOGR_time: 5.323s
+Trial: 754, Time:38.187s
+40715467
+MF_time: 0.550s | MFGR_time: 1.873s | GR_time: 5.917s | GRGO_time: 0.004s | MFGO_time: 0.716s | GO_time: 0.551s | GOGO_time: 1.309s | GOGR_time: 4.495s
+Trial: 755, Time:37.128s
+41083631
+MF_time: 0.568s | MFGR_time: 1.892s | GR_time: 6.008s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.557s | GOGO_time: 1.309s | GOGR_time: 5.347s
+Trial: 756, Time:38.151s
+40816646
+MF_time: 0.551s | MFGR_time: 1.867s | GR_time: 5.933s | GRGO_time: 0.004s | MFGO_time: 0.713s | GO_time: 0.552s | GOGO_time: 1.302s | GOGR_time: 4.488s
+Trial: 757, Time:36.946s
+40728545
+MF_time: 0.566s | MFGR_time: 1.887s | GR_time: 6.013s | GRGO_time: 0.004s | MFGO_time: 0.710s | GO_time: 0.557s | GOGO_time: 1.302s | GOGR_time: 5.355s
+Trial: 758, Time:38.348s
+40312375
+MF_time: 0.589s | MFGR_time: 1.889s | GR_time: 6.064s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.556s | GOGO_time: 1.294s | GOGR_time: 5.942s
+Trial: 759, Time:38.691s
+40805058
+MF_time: 0.545s | MFGR_time: 1.876s | GR_time: 5.941s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.551s | GOGO_time: 1.306s | GOGR_time: 4.509s
+Trial: 760, Time:37.132s
+40661330
+MF_time: 0.566s | MFGR_time: 1.891s | GR_time: 6.005s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.554s | GOGO_time: 1.309s | GOGR_time: 5.341s
+Trial: 761, Time:38.169s
+40069041
+MF_time: 0.545s | MFGR_time: 1.863s | GR_time: 5.891s | GRGO_time: 0.004s | MFGO_time: 0.711s | GO_time: 0.547s | GOGO_time: 1.297s | GOGR_time: 4.486s
+Trial: 762, Time:36.892s
+40857003
+MF_time: 0.565s | MFGR_time: 1.885s | GR_time: 5.984s | GRGO_time: 0.004s | MFGO_time: 0.716s | GO_time: 0.553s | GOGO_time: 1.308s | GOGR_time: 5.336s
+Trial: 763, Time:38.132s
+40421272
+MF_time: 0.546s | MFGR_time: 1.867s | GR_time: 5.906s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.552s | GOGO_time: 1.298s | GOGR_time: 4.489s
+Trial: 764, Time:36.945s
+40364942
+MF_time: 0.565s | MFGR_time: 1.887s | GR_time: 5.999s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.547s | GOGO_time: 1.305s | GOGR_time: 5.332s
+Trial: 765, Time:38.068s
+39721631
+MF_time: 0.543s | MFGR_time: 1.867s | GR_time: 5.910s | GRGO_time: 0.004s | MFGO_time: 0.710s | GO_time: 0.551s | GOGO_time: 1.289s | GOGR_time: 4.484s
+Trial: 766, Time:36.765s
+39151339
+MF_time: 0.565s | MFGR_time: 1.888s | GR_time: 5.994s | GRGO_time: 0.004s | MFGO_time: 0.705s | GO_time: 0.544s | GOGO_time: 1.277s | GOGR_time: 5.329s
+Trial: 767, Time:37.596s
+39730692
+MF_time: 0.556s | MFGR_time: 1.885s | GR_time: 5.948s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.543s | GOGO_time: 1.299s | GOGR_time: 4.961s
+Trial: 768, Time:37.402s
+38955177
+MF_time: 0.544s | MFGR_time: 1.862s | GR_time: 5.911s | GRGO_time: 0.004s | MFGO_time: 0.708s | GO_time: 0.549s | GOGO_time: 1.282s | GOGR_time: 4.476s
+Trial: 769, Time:36.592s
+39530031
+MF_time: 0.565s | MFGR_time: 1.888s | GR_time: 6.011s | GRGO_time: 0.004s | MFGO_time: 0.709s | GO_time: 0.547s | GOGO_time: 1.294s | GOGR_time: 5.335s
+Trial: 770, Time:37.830s
+38775191
+MF_time: 0.557s | MFGR_time: 1.881s | GR_time: 5.968s | GRGO_time: 0.004s | MFGO_time: 0.704s | GO_time: 0.546s | GOGO_time: 1.277s | GOGR_time: 4.957s
+Trial: 771, Time:37.129s
+39239299
+MF_time: 0.546s | MFGR_time: 1.860s | GR_time: 5.903s | GRGO_time: 0.004s | MFGO_time: 0.708s | GO_time: 0.542s | GOGO_time: 1.283s | GOGR_time: 4.476s
+Trial: 772, Time:36.626s
+39254388
+MF_time: 0.563s | MFGR_time: 1.878s | GR_time: 5.993s | GRGO_time: 0.004s | MFGO_time: 0.706s | GO_time: 0.548s | GOGO_time: 1.282s | GOGR_time: 5.324s
+Trial: 773, Time:37.624s
+39413513
+MF_time: 0.546s | MFGR_time: 1.855s | GR_time: 5.909s | GRGO_time: 0.004s | MFGO_time: 0.708s | GO_time: 0.546s | GOGO_time: 1.280s | GOGR_time: 4.468s
+Trial: 774, Time:36.530s
+39622925
+MF_time: 0.564s | MFGR_time: 1.876s | GR_time: 6.000s | GRGO_time: 0.004s | MFGO_time: 0.705s | GO_time: 0.548s | GOGO_time: 1.279s | GOGR_time: 5.321s
+Trial: 775, Time:37.580s
+39068855
+MF_time: 0.585s | MFGR_time: 1.875s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.703s | GO_time: 0.545s | GOGO_time: 1.271s | GOGR_time: 5.863s
+Trial: 776, Time:38.136s
+39935848
+MF_time: 0.548s | MFGR_time: 1.842s | GR_time: 5.904s | GRGO_time: 0.003s | MFGO_time: 0.708s | GO_time: 0.550s | GOGO_time: 1.287s | GOGR_time: 4.539s
+Trial: 777, Time:36.828s
+39974829
+MF_time: 0.593s | MFGR_time: 1.894s | GR_time: 6.010s | GRGO_time: 0.004s | MFGO_time: 0.711s | GO_time: 0.551s | GOGO_time: 1.290s | GOGR_time: 6.025s
+Trial: 778, Time:38.571s
+40637127
+MF_time: 0.554s | MFGR_time: 1.854s | GR_time: 5.895s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.549s | GOGO_time: 1.302s | GOGR_time: 4.559s
+Trial: 779, Time:37.053s
+41224856
+MF_time: 0.596s | MFGR_time: 1.892s | GR_time: 6.025s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.552s | GOGO_time: 1.315s | GOGR_time: 6.048s
+Trial: 780, Time:38.980s
+41837352
+MF_time: 0.553s | MFGR_time: 1.853s | GR_time: 5.910s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.553s | GOGO_time: 1.317s | GOGR_time: 4.573s
+Trial: 781, Time:37.336s
+41881411
+MF_time: 0.571s | MFGR_time: 1.884s | GR_time: 6.012s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.553s | GOGO_time: 1.320s | GOGR_time: 5.301s
+Trial: 782, Time:38.331s
+41791566
+MF_time: 0.552s | MFGR_time: 1.864s | GR_time: 5.922s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.547s | GOGO_time: 1.322s | GOGR_time: 4.552s
+Trial: 783, Time:37.361s
+41259437
+MF_time: 0.568s | MFGR_time: 1.886s | GR_time: 6.017s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.553s | GOGO_time: 1.320s | GOGR_time: 5.318s
+Trial: 784, Time:38.310s
+40500062
+MF_time: 0.606s | MFGR_time: 1.896s | GR_time: 6.059s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.548s | GOGO_time: 1.301s | GOGR_time: 6.138s
+Trial: 785, Time:39.007s
+40898498
+MF_time: 0.546s | MFGR_time: 1.850s | GR_time: 5.922s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.549s | GOGO_time: 1.311s | GOGR_time: 4.577s
+Trial: 786, Time:37.242s
+40628296
+MF_time: 0.594s | MFGR_time: 1.877s | GR_time: 6.049s | GRGO_time: 0.004s | MFGO_time: 0.717s | GO_time: 0.552s | GOGO_time: 1.309s | GOGR_time: 5.814s
+Trial: 787, Time:38.880s
+40326083
+MF_time: 0.551s | MFGR_time: 1.857s | GR_time: 5.924s | GRGO_time: 0.004s | MFGO_time: 0.711s | GO_time: 0.550s | GOGO_time: 1.303s | GOGR_time: 4.612s
+Trial: 788, Time:37.221s
+40607120
+MF_time: 0.581s | MFGR_time: 1.885s | GR_time: 6.041s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.547s | GOGO_time: 1.305s | GOGR_time: 5.648s
+Trial: 789, Time:38.566s
+40358762
+MF_time: 0.545s | MFGR_time: 1.857s | GR_time: 5.913s | GRGO_time: 0.004s | MFGO_time: 0.709s | GO_time: 0.543s | GOGO_time: 1.301s | GOGR_time: 4.475s
+Trial: 790, Time:36.969s
+40411611
+MF_time: 0.570s | MFGR_time: 1.883s | GR_time: 6.008s | GRGO_time: 0.004s | MFGO_time: 0.710s | GO_time: 0.548s | GOGO_time: 1.301s | GOGR_time: 5.404s
+Trial: 791, Time:38.121s
+39488233
+MF_time: 0.540s | MFGR_time: 1.858s | GR_time: 5.926s | GRGO_time: 0.003s | MFGO_time: 0.705s | GO_time: 0.539s | GOGO_time: 1.288s | GOGR_time: 4.456s
+Trial: 792, Time:36.693s
+39622291
+MF_time: 0.572s | MFGR_time: 1.887s | GR_time: 6.028s | GRGO_time: 0.004s | MFGO_time: 0.710s | GO_time: 0.545s | GOGO_time: 1.292s | GOGR_time: 5.413s
+Trial: 793, Time:37.870s
+40192933
+MF_time: 0.545s | MFGR_time: 1.864s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.546s | GOGO_time: 1.299s | GOGR_time: 4.476s
+Trial: 794, Time:36.883s
+40465233
+MF_time: 0.572s | MFGR_time: 1.890s | GR_time: 6.036s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.545s | GOGO_time: 1.307s | GOGR_time: 5.411s
+Trial: 795, Time:38.166s
+39470301
+MF_time: 0.544s | MFGR_time: 1.855s | GR_time: 5.933s | GRGO_time: 0.004s | MFGO_time: 0.709s | GO_time: 0.547s | GOGO_time: 1.296s | GOGR_time: 4.476s
+Trial: 796, Time:36.842s
+39380972
+MF_time: 0.574s | MFGR_time: 1.891s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.547s | GOGO_time: 1.298s | GOGR_time: 5.415s
+Trial: 797, Time:38.033s
+39554559
+MF_time: 0.558s | MFGR_time: 1.886s | GR_time: 5.958s | GRGO_time: 0.004s | MFGO_time: 0.712s | GO_time: 0.548s | GOGO_time: 1.304s | GOGR_time: 5.045s
+Trial: 798, Time:37.610s
+38847429
+MF_time: 0.542s | MFGR_time: 1.865s | GR_time: 5.912s | GRGO_time: 0.004s | MFGO_time: 0.710s | GO_time: 0.549s | GOGO_time: 1.291s | GOGR_time: 4.468s
+Trial: 799, Time:36.696s
+39380392
+MF_time: 0.568s | MFGR_time: 1.889s | GR_time: 5.986s | GRGO_time: 0.004s | MFGO_time: 0.713s | GO_time: 0.551s | GOGO_time: 1.295s | GOGR_time: 5.403s
+Trial: 800, Time:37.788s
+39772980
+MF_time: 0.542s | MFGR_time: 1.865s | GR_time: 5.904s | GRGO_time: 0.004s | MFGO_time: 0.716s | GO_time: 0.547s | GOGO_time: 1.303s | GOGR_time: 4.493s
+Trial: 801, Time:36.808s
+39347541
+MF_time: 0.567s | MFGR_time: 1.889s | GR_time: 5.995s | GRGO_time: 0.003s | MFGO_time: 0.711s | GO_time: 0.546s | GOGO_time: 1.293s | GOGR_time: 5.403s
+Trial: 802, Time:37.746s
+40463609
+MF_time: 0.547s | MFGR_time: 1.874s | GR_time: 5.924s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.548s | GOGO_time: 1.319s | GOGR_time: 4.529s
+Trial: 803, Time:37.324s
+39703593
+MF_time: 0.569s | MFGR_time: 1.895s | GR_time: 6.018s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.552s | GOGO_time: 1.301s | GOGR_time: 5.425s
+Trial: 804, Time:37.962s
+39528364
+MF_time: 0.544s | MFGR_time: 1.870s | GR_time: 5.924s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.548s | GOGO_time: 1.298s | GOGR_time: 4.506s
+Trial: 805, Time:36.836s
+39330356
+MF_time: 0.572s | MFGR_time: 1.895s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.711s | GO_time: 0.546s | GOGO_time: 1.289s | GOGR_time: 5.420s
+Trial: 806, Time:37.780s
+38014485
+MF_time: 0.594s | MFGR_time: 1.891s | GR_time: 6.048s | GRGO_time: 0.003s | MFGO_time: 0.703s | GO_time: 0.550s | GOGO_time: 1.272s | GOGR_time: 6.140s
+Trial: 807, Time:38.281s
+38685267
+MF_time: 0.559s | MFGR_time: 1.879s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.709s | GO_time: 0.550s | GOGO_time: 1.288s | GOGR_time: 4.525s
+Trial: 808, Time:36.697s
+40006317
+MF_time: 0.570s | MFGR_time: 1.889s | GR_time: 6.007s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.551s | GOGO_time: 1.306s | GOGR_time: 5.368s
+Trial: 809, Time:37.970s
+38996387
+MF_time: 0.557s | MFGR_time: 1.877s | GR_time: 5.911s | GRGO_time: 0.004s | MFGO_time: 0.710s | GO_time: 0.551s | GOGO_time: 1.287s | GOGR_time: 4.517s
+Trial: 810, Time:36.625s
+39488509
+MF_time: 0.572s | MFGR_time: 1.893s | GR_time: 6.017s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.554s | GOGO_time: 1.300s | GOGR_time: 5.390s
+Trial: 811, Time:37.876s
+41170431
+MF_time: 0.610s | MFGR_time: 1.904s | GR_time: 6.045s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.556s | GOGO_time: 1.327s | GOGR_time: 6.377s
+Trial: 812, Time:39.426s
+40542830
+MF_time: 0.550s | MFGR_time: 1.877s | GR_time: 5.931s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.548s | GOGO_time: 1.311s | GOGR_time: 4.499s
+Trial: 813, Time:36.976s
+40433403
+MF_time: 0.567s | MFGR_time: 1.886s | GR_time: 6.017s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.555s | GOGO_time: 1.312s | GOGR_time: 5.312s
+Trial: 814, Time:37.965s
+40590382
+MF_time: 0.552s | MFGR_time: 1.871s | GR_time: 5.943s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.552s | GOGO_time: 1.310s | GOGR_time: 4.501s
+Trial: 815, Time:36.980s
+41244851
+MF_time: 0.566s | MFGR_time: 1.894s | GR_time: 6.025s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.555s | GOGO_time: 1.319s | GOGR_time: 5.319s
+Trial: 816, Time:38.095s
+40439169
+MF_time: 0.547s | MFGR_time: 1.869s | GR_time: 5.940s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.550s | GOGO_time: 1.305s | GOGR_time: 4.495s
+Trial: 817, Time:36.925s
+41294475
+MF_time: 0.568s | MFGR_time: 1.885s | GR_time: 6.019s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.552s | GOGO_time: 1.324s | GOGR_time: 5.290s
+Trial: 818, Time:38.144s
+40983189
+MF_time: 0.549s | MFGR_time: 1.873s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.552s | GOGO_time: 1.319s | GOGR_time: 4.533s
+Trial: 819, Time:37.105s
+40732703
+MF_time: 0.566s | MFGR_time: 1.890s | GR_time: 6.019s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.551s | GOGO_time: 1.314s | GOGR_time: 5.318s
+Trial: 820, Time:37.981s
+41546709
+MF_time: 0.552s | MFGR_time: 1.878s | GR_time: 5.938s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.556s | GOGO_time: 1.335s | GOGR_time: 4.562s
+Trial: 821, Time:37.378s
+41075590
+MF_time: 0.570s | MFGR_time: 1.894s | GR_time: 6.006s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.555s | GOGO_time: 1.324s | GOGR_time: 5.308s
+Trial: 822, Time:38.054s
+41974962
+MF_time: 0.552s | MFGR_time: 1.879s | GR_time: 5.924s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.556s | GOGO_time: 1.334s | GOGR_time: 4.566s
+Trial: 823, Time:37.328s
+41891572
+MF_time: 0.567s | MFGR_time: 1.894s | GR_time: 6.001s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.559s | GOGO_time: 1.331s | GOGR_time: 5.293s
+Trial: 824, Time:38.118s
+42389228
+MF_time: 0.552s | MFGR_time: 1.879s | GR_time: 5.932s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.555s | GOGO_time: 1.337s | GOGR_time: 4.569s
+Trial: 825, Time:37.370s
+40957179
+MF_time: 0.566s | MFGR_time: 1.893s | GR_time: 6.001s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.554s | GOGO_time: 1.306s | GOGR_time: 5.317s
+Trial: 826, Time:37.789s
+41673170
+MF_time: 0.598s | MFGR_time: 1.900s | GR_time: 6.042s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.559s | GOGO_time: 1.322s | GOGR_time: 6.094s
+Trial: 827, Time:38.990s
+41053929
+MF_time: 0.549s | MFGR_time: 1.872s | GR_time: 5.896s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.557s | GOGO_time: 1.313s | GOGR_time: 4.907s
+Trial: 828, Time:37.343s
+41046702
+MF_time: 0.587s | MFGR_time: 1.905s | GR_time: 6.016s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.555s | GOGO_time: 1.315s | GOGR_time: 6.024s
+Trial: 829, Time:38.759s
+41219051
+MF_time: 0.548s | MFGR_time: 1.883s | GR_time: 5.912s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.556s | GOGO_time: 1.317s | GOGR_time: 4.578s
+Trial: 830, Time:37.136s
+40700031
+MF_time: 0.576s | MFGR_time: 1.901s | GR_time: 5.982s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.558s | GOGO_time: 1.307s | GOGR_time: 5.428s
+Trial: 831, Time:37.990s
+41333987
+MF_time: 0.547s | MFGR_time: 1.886s | GR_time: 5.927s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.561s | GOGO_time: 1.324s | GOGR_time: 4.588s
+Trial: 832, Time:37.231s
+41367327
+MF_time: 0.576s | MFGR_time: 1.902s | GR_time: 5.991s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.557s | GOGO_time: 1.325s | GOGR_time: 5.396s
+Trial: 833, Time:38.205s
+41608683
+MF_time: 0.551s | MFGR_time: 1.884s | GR_time: 5.928s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.559s | GOGO_time: 1.327s | GOGR_time: 4.590s
+Trial: 834, Time:37.268s
+40869326
+MF_time: 0.578s | MFGR_time: 1.907s | GR_time: 6.008s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.557s | GOGO_time: 1.307s | GOGR_time: 5.438s
+Trial: 835, Time:38.002s
+41857728
+MF_time: 0.611s | MFGR_time: 1.912s | GR_time: 6.061s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.562s | GOGO_time: 1.322s | GOGR_time: 6.452s
+Trial: 836, Time:39.410s
+42596007
+MF_time: 0.554s | MFGR_time: 1.867s | GR_time: 5.959s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.558s | GOGO_time: 1.332s | GOGR_time: 4.643s
+Trial: 837, Time:37.517s
+42060230
+MF_time: 0.595s | MFGR_time: 1.914s | GR_time: 6.090s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.560s | GOGO_time: 1.325s | GOGR_time: 5.937s
+Trial: 838, Time:38.959s
+41676335
+MF_time: 0.553s | MFGR_time: 1.879s | GR_time: 5.965s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.556s | GOGO_time: 1.322s | GOGR_time: 4.615s
+Trial: 839, Time:37.284s
+41708190
+MF_time: 0.577s | MFGR_time: 1.909s | GR_time: 6.045s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.559s | GOGO_time: 1.326s | GOGR_time: 5.337s
+Trial: 840, Time:38.219s
+41926353
+MF_time: 0.570s | MFGR_time: 1.911s | GR_time: 5.996s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.561s | GOGO_time: 1.325s | GOGR_time: 5.084s
+Trial: 841, Time:37.888s
+41889122
+MF_time: 0.552s | MFGR_time: 1.883s | GR_time: 5.945s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.558s | GOGO_time: 1.327s | GOGR_time: 4.657s
+Trial: 842, Time:37.348s
+42538857
+MF_time: 0.568s | MFGR_time: 1.905s | GR_time: 5.994s | GRGO_time: 0.004s | MFGO_time: 0.743s | GO_time: 0.560s | GOGO_time: 1.340s | GOGR_time: 5.256s
+Trial: 843, Time:38.333s
+42471753
+MF_time: 0.552s | MFGR_time: 1.887s | GR_time: 5.918s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.558s | GOGO_time: 1.337s | GOGR_time: 4.659s
+Trial: 844, Time:37.556s
+42252210
+MF_time: 0.569s | MFGR_time: 1.908s | GR_time: 6.012s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.561s | GOGO_time: 1.334s | GOGR_time: 5.269s
+Trial: 845, Time:38.286s
+41787103
+MF_time: 0.602s | MFGR_time: 1.904s | GR_time: 6.066s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.561s | GOGO_time: 1.332s | GOGR_time: 6.072s
+Trial: 846, Time:39.181s
+40989291
+MF_time: 0.552s | MFGR_time: 1.857s | GR_time: 5.931s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.557s | GOGO_time: 1.316s | GOGR_time: 4.606s
+Trial: 847, Time:37.173s
+40694361
+MF_time: 0.604s | MFGR_time: 1.898s | GR_time: 6.044s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.556s | GOGO_time: 1.312s | GOGR_time: 6.134s
+Trial: 848, Time:39.059s
+40024404
+MF_time: 0.553s | MFGR_time: 1.852s | GR_time: 5.924s | GRGO_time: 0.003s | MFGO_time: 0.722s | GO_time: 0.553s | GOGO_time: 1.297s | GOGR_time: 4.577s
+Trial: 849, Time:36.810s
+41485633
+MF_time: 0.599s | MFGR_time: 1.891s | GR_time: 6.015s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.556s | GOGO_time: 1.325s | GOGR_time: 6.092s
+Trial: 850, Time:39.024s
+41056449
+MF_time: 0.550s | MFGR_time: 1.854s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.557s | GOGO_time: 1.318s | GOGR_time: 4.599s
+Trial: 851, Time:37.201s
+42279765
+MF_time: 0.578s | MFGR_time: 1.895s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.558s | GOGO_time: 1.337s | GOGR_time: 5.266s
+Trial: 852, Time:38.358s
+41391756
+MF_time: 0.602s | MFGR_time: 1.889s | GR_time: 6.047s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.560s | GOGO_time: 1.317s | GOGR_time: 6.194s
+Trial: 853, Time:39.061s
+41825146
+MF_time: 0.547s | MFGR_time: 1.867s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.553s | GOGO_time: 1.325s | GOGR_time: 4.577s
+Trial: 854, Time:37.282s
+41480218
+MF_time: 0.568s | MFGR_time: 1.890s | GR_time: 5.990s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.558s | GOGO_time: 1.323s | GOGR_time: 5.353s
+Trial: 855, Time:38.148s
+42350671
+MF_time: 0.549s | MFGR_time: 1.864s | GR_time: 5.922s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.557s | GOGO_time: 1.337s | GOGR_time: 4.597s
+Trial: 856, Time:37.424s
+41928608
+MF_time: 0.567s | MFGR_time: 1.888s | GR_time: 5.982s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.560s | GOGO_time: 1.326s | GOGR_time: 5.349s
+Trial: 857, Time:38.158s
+41657196
+MF_time: 0.599s | MFGR_time: 1.888s | GR_time: 6.019s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.559s | GOGO_time: 1.316s | GOGR_time: 6.262s
+Trial: 858, Time:39.037s
+40854444
+MF_time: 0.548s | MFGR_time: 1.880s | GR_time: 5.917s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.559s | GOGO_time: 1.307s | GOGR_time: 4.548s
+Trial: 859, Time:36.934s
+41701931
+MF_time: 0.571s | MFGR_time: 1.900s | GR_time: 6.010s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.561s | GOGO_time: 1.323s | GOGR_time: 5.335s
+Trial: 860, Time:38.160s
+40597970
+MF_time: 0.551s | MFGR_time: 1.869s | GR_time: 5.931s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.558s | GOGO_time: 1.302s | GOGR_time: 4.539s
+Trial: 861, Time:36.837s
+39560973
+MF_time: 0.566s | MFGR_time: 1.896s | GR_time: 6.000s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.552s | GOGO_time: 1.284s | GOGR_time: 5.336s
+Trial: 862, Time:37.473s
+38643815
+MF_time: 0.546s | MFGR_time: 1.866s | GR_time: 5.916s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.552s | GOGO_time: 1.269s | GOGR_time: 4.498s
+Trial: 863, Time:36.203s
+39305596
+MF_time: 0.563s | MFGR_time: 1.897s | GR_time: 6.007s | GRGO_time: 0.004s | MFGO_time: 0.714s | GO_time: 0.551s | GOGO_time: 1.281s | GOGR_time: 5.344s
+Trial: 864, Time:37.529s
+40214348
+MF_time: 0.595s | MFGR_time: 1.896s | GR_time: 6.036s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.553s | GOGO_time: 1.298s | GOGR_time: 6.013s
+Trial: 865, Time:38.545s
+39448370
+MF_time: 0.556s | MFGR_time: 1.859s | GR_time: 5.933s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.549s | GOGO_time: 1.283s | GOGR_time: 4.670s
+Trial: 866, Time:36.626s
+39997421
+MF_time: 0.602s | MFGR_time: 1.912s | GR_time: 6.045s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.556s | GOGO_time: 1.292s | GOGR_time: 6.118s
+Trial: 867, Time:38.470s
+40089522
+MF_time: 0.562s | MFGR_time: 1.857s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.550s | GOGO_time: 1.289s | GOGR_time: 4.669s
+Trial: 868, Time:36.706s
+40434137
+MF_time: 0.603s | MFGR_time: 1.915s | GR_time: 6.047s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.558s | GOGO_time: 1.296s | GOGR_time: 6.122s
+Trial: 869, Time:38.530s
+40495741
+MF_time: 0.550s | MFGR_time: 1.868s | GR_time: 5.937s | GRGO_time: 0.004s | MFGO_time: 0.721s | GO_time: 0.557s | GOGO_time: 1.300s | GOGR_time: 4.526s
+Trial: 870, Time:36.776s
+40775428
+MF_time: 0.573s | MFGR_time: 1.896s | GR_time: 6.004s | GRGO_time: 0.004s | MFGO_time: 0.715s | GO_time: 0.552s | GOGO_time: 1.307s | GOGR_time: 5.430s
+Trial: 871, Time:38.108s
+40581342
+MF_time: 0.549s | MFGR_time: 1.866s | GR_time: 5.936s | GRGO_time: 0.004s | MFGO_time: 0.716s | GO_time: 0.554s | GOGO_time: 1.300s | GOGR_time: 4.509s
+Trial: 872, Time:37.414s
+40923098
+MF_time: 0.574s | MFGR_time: 1.901s | GR_time: 6.030s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.553s | GOGO_time: 1.309s | GOGR_time: 5.427s
+Trial: 873, Time:38.105s
+41697686
+MF_time: 0.558s | MFGR_time: 1.877s | GR_time: 5.957s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.559s | GOGO_time: 1.324s | GOGR_time: 4.553s
+Trial: 874, Time:37.301s
+41747875
+MF_time: 0.576s | MFGR_time: 1.904s | GR_time: 6.042s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.559s | GOGO_time: 1.320s | GOGR_time: 5.425s
+Trial: 875, Time:38.280s
+41176011
+MF_time: 0.557s | MFGR_time: 1.873s | GR_time: 5.962s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.558s | GOGO_time: 1.314s | GOGR_time: 4.551s
+Trial: 876, Time:37.095s
+40869327
+MF_time: 0.576s | MFGR_time: 1.905s | GR_time: 6.038s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.559s | GOGO_time: 1.308s | GOGR_time: 5.434s
+Trial: 877, Time:38.565s
+39796731
+MF_time: 0.551s | MFGR_time: 1.868s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.720s | GO_time: 0.557s | GOGO_time: 1.286s | GOGR_time: 4.512s
+Trial: 878, Time:36.589s
+40550743
+MF_time: 0.572s | MFGR_time: 1.892s | GR_time: 6.046s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.562s | GOGO_time: 1.298s | GOGR_time: 5.291s
+Trial: 879, Time:37.775s
+40342603
+MF_time: 0.547s | MFGR_time: 1.858s | GR_time: 5.964s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.558s | GOGO_time: 1.293s | GOGR_time: 4.496s
+Trial: 880, Time:36.651s
+39765316
+MF_time: 0.571s | MFGR_time: 1.894s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.724s | GO_time: 0.558s | GOGO_time: 1.287s | GOGR_time: 5.270s
+Trial: 881, Time:37.532s
+41086874
+MF_time: 0.601s | MFGR_time: 1.896s | GR_time: 6.082s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.563s | GOGO_time: 1.313s | GOGR_time: 5.966s
+Trial: 882, Time:39.257s
+40648326
+MF_time: 0.559s | MFGR_time: 1.870s | GR_time: 5.938s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.556s | GOGO_time: 1.303s | GOGR_time: 4.715s
+Trial: 883, Time:37.109s
+40960411
+MF_time: 0.604s | MFGR_time: 1.900s | GR_time: 6.064s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.564s | GOGO_time: 1.311s | GOGR_time: 6.124s
+Trial: 884, Time:38.842s
+40778174
+MF_time: 0.560s | MFGR_time: 1.868s | GR_time: 5.949s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.555s | GOGO_time: 1.307s | GOGR_time: 4.726s
+Trial: 885, Time:37.154s
+40820344
+MF_time: 0.592s | MFGR_time: 1.914s | GR_time: 6.050s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.562s | GOGO_time: 1.311s | GOGR_time: 5.964s
+Trial: 886, Time:38.694s
+41173228
+MF_time: 0.550s | MFGR_time: 1.883s | GR_time: 5.927s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.561s | GOGO_time: 1.319s | GOGR_time: 4.573s
+Trial: 887, Time:37.184s
+41549404
+MF_time: 0.574s | MFGR_time: 1.907s | GR_time: 6.019s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.562s | GOGO_time: 1.323s | GOGR_time: 5.346s
+Trial: 888, Time:38.683s
+41787061
+MF_time: 0.557s | MFGR_time: 1.888s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.754s | GO_time: 0.568s | GOGO_time: 1.329s | GOGR_time: 4.603s
+Trial: 889, Time:37.165s
+42450844
+MF_time: 0.580s | MFGR_time: 1.909s | GR_time: 6.034s | GRGO_time: 0.004s | MFGO_time: 0.756s | GO_time: 0.570s | GOGO_time: 1.334s | GOGR_time: 5.349s
+Trial: 890, Time:38.190s
+42287234
+MF_time: 0.559s | MFGR_time: 1.884s | GR_time: 5.953s | GRGO_time: 0.004s | MFGO_time: 0.759s | GO_time: 0.570s | GOGO_time: 1.331s | GOGR_time: 4.612s
+Trial: 891, Time:37.271s
+42492699
+MF_time: 0.583s | MFGR_time: 1.906s | GR_time: 6.036s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.570s | GOGO_time: 1.335s | GOGR_time: 5.343s
+Trial: 892, Time:38.231s
+41926028
+MF_time: 0.562s | MFGR_time: 1.888s | GR_time: 5.957s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.567s | GOGO_time: 1.324s | GOGR_time: 4.621s
+Trial: 893, Time:37.763s
+42297702
+MF_time: 0.584s | MFGR_time: 1.904s | GR_time: 6.041s | GRGO_time: 0.004s | MFGO_time: 0.755s | GO_time: 0.569s | GOGO_time: 1.330s | GOGR_time: 5.355s
+Trial: 894, Time:38.144s
+41503174
+MF_time: 0.614s | MFGR_time: 1.912s | GR_time: 6.073s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.567s | GOGO_time: 1.313s | GOGR_time: 6.347s
+Trial: 895, Time:38.970s
+41390052
+MF_time: 0.583s | MFGR_time: 1.887s | GR_time: 5.958s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.569s | GOGO_time: 1.311s | GOGR_time: 5.115s
+Trial: 896, Time:37.524s
+42500916
+MF_time: 0.612s | MFGR_time: 1.905s | GR_time: 6.037s | GRGO_time: 0.004s | MFGO_time: 0.753s | GO_time: 0.573s | GOGO_time: 1.337s | GOGR_time: 6.206s
+Trial: 897, Time:39.142s
+40879887
+MF_time: 0.581s | MFGR_time: 1.883s | GR_time: 5.934s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.569s | GOGO_time: 1.314s | GOGR_time: 5.094s
+Trial: 898, Time:37.515s
+41521980
+MF_time: 0.613s | MFGR_time: 1.907s | GR_time: 6.050s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.568s | GOGO_time: 1.324s | GOGR_time: 6.254s
+Trial: 899, Time:39.403s
+41543527
+MF_time: 0.582s | MFGR_time: 1.885s | GR_time: 5.943s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.568s | GOGO_time: 1.316s | GOGR_time: 5.098s
+Trial: 900, Time:37.489s
+42085691
+MF_time: 0.612s | MFGR_time: 1.906s | GR_time: 6.048s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.571s | GOGO_time: 1.327s | GOGR_time: 6.283s
+Trial: 901, Time:39.093s
+41403766
+MF_time: 0.582s | MFGR_time: 1.881s | GR_time: 5.946s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.569s | GOGO_time: 1.320s | GOGR_time: 5.095s
+Trial: 902, Time:37.570s
+41947013
+MF_time: 0.609s | MFGR_time: 1.905s | GR_time: 6.043s | GRGO_time: 0.004s | MFGO_time: 0.753s | GO_time: 0.570s | GOGO_time: 1.329s | GOGR_time: 6.205s
+Trial: 903, Time:39.068s
+42259712
+MF_time: 0.578s | MFGR_time: 1.880s | GR_time: 5.927s | GRGO_time: 0.003s | MFGO_time: 0.742s | GO_time: 0.562s | GOGO_time: 1.336s | GOGR_time: 5.102s
+Trial: 904, Time:37.837s
+40984063
+MF_time: 0.605s | MFGR_time: 1.918s | GR_time: 6.053s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.566s | GOGO_time: 1.306s | GOGR_time: 6.153s
+Trial: 905, Time:38.956s
+41780379
+MF_time: 0.556s | MFGR_time: 1.874s | GR_time: 5.972s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.569s | GOGO_time: 1.320s | GOGR_time: 4.580s
+Trial: 906, Time:37.094s
+41690391
+MF_time: 0.583s | MFGR_time: 1.894s | GR_time: 6.030s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.569s | GOGO_time: 1.318s | GOGR_time: 5.408s
+Trial: 907, Time:37.950s
+41617055
+MF_time: 0.550s | MFGR_time: 1.876s | GR_time: 5.965s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.565s | GOGO_time: 1.324s | GOGR_time: 4.563s
+Trial: 908, Time:37.129s
+41603985
+MF_time: 0.581s | MFGR_time: 1.900s | GR_time: 6.042s | GRGO_time: 0.004s | MFGO_time: 0.750s | GO_time: 0.567s | GOGO_time: 1.320s | GOGR_time: 5.406s
+Trial: 909, Time:38.045s
+40564340
+MF_time: 0.551s | MFGR_time: 1.870s | GR_time: 5.961s | GRGO_time: 0.004s | MFGO_time: 0.746s | GO_time: 0.564s | GOGO_time: 1.304s | GOGR_time: 4.550s
+Trial: 910, Time:37.205s
+41495688
+MF_time: 0.586s | MFGR_time: 1.899s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.749s | GO_time: 0.568s | GOGO_time: 1.314s | GOGR_time: 5.413s
+Trial: 911, Time:37.846s
+40852007
+MF_time: 0.567s | MFGR_time: 1.889s | GR_time: 5.954s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.558s | GOGO_time: 1.311s | GOGR_time: 5.072s
+Trial: 912, Time:37.403s
+40078212
+MF_time: 0.548s | MFGR_time: 1.862s | GR_time: 5.931s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.561s | GOGO_time: 1.299s | GOGR_time: 4.534s
+Trial: 913, Time:36.624s
+39908814
+MF_time: 0.581s | MFGR_time: 1.890s | GR_time: 6.010s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.559s | GOGO_time: 1.294s | GOGR_time: 5.414s
+Trial: 914, Time:38.078s
+40528742
+MF_time: 0.553s | MFGR_time: 1.860s | GR_time: 5.941s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.558s | GOGO_time: 1.307s | GOGR_time: 4.549s
+Trial: 915, Time:36.748s
+39351541
+MF_time: 0.582s | MFGR_time: 1.886s | GR_time: 6.008s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.559s | GOGO_time: 1.278s | GOGR_time: 5.417s
+Trial: 916, Time:37.313s
+38740535
+MF_time: 0.548s | MFGR_time: 1.860s | GR_time: 5.929s | GRGO_time: 0.003s | MFGO_time: 0.729s | GO_time: 0.560s | GOGO_time: 1.272s | GOGR_time: 4.513s
+Trial: 917, Time:36.162s
+38492628
+MF_time: 0.579s | MFGR_time: 1.887s | GR_time: 6.014s | GRGO_time: 0.003s | MFGO_time: 0.724s | GO_time: 0.562s | GOGO_time: 1.270s | GOGR_time: 5.402s
+Trial: 918, Time:37.229s
+38081932
+MF_time: 0.547s | MFGR_time: 1.856s | GR_time: 5.940s | GRGO_time: 0.003s | MFGO_time: 0.727s | GO_time: 0.562s | GOGO_time: 1.264s | GOGR_time: 4.507s
+Trial: 919, Time:36.509s
+37843444
+MF_time: 0.585s | MFGR_time: 1.886s | GR_time: 6.016s | GRGO_time: 0.004s | MFGO_time: 0.718s | GO_time: 0.558s | GOGO_time: 1.254s | GOGR_time: 5.400s
+Trial: 920, Time:36.900s
+38677607
+MF_time: 0.551s | MFGR_time: 1.856s | GR_time: 5.932s | GRGO_time: 0.003s | MFGO_time: 0.729s | GO_time: 0.568s | GOGO_time: 1.265s | GOGR_time: 4.526s
+Trial: 921, Time:36.029s
+38301711
+MF_time: 0.578s | MFGR_time: 1.881s | GR_time: 6.001s | GRGO_time: 0.003s | MFGO_time: 0.722s | GO_time: 0.559s | GOGO_time: 1.257s | GOGR_time: 5.411s
+Trial: 922, Time:36.947s
+37396070
+MF_time: 0.540s | MFGR_time: 1.849s | GR_time: 5.902s | GRGO_time: 0.003s | MFGO_time: 0.711s | GO_time: 0.552s | GOGO_time: 1.244s | GOGR_time: 4.489s
+Trial: 923, Time:35.669s
+38759808
+MF_time: 0.587s | MFGR_time: 1.887s | GR_time: 6.005s | GRGO_time: 0.004s | MFGO_time: 0.723s | GO_time: 0.560s | GOGO_time: 1.276s | GOGR_time: 5.409s
+Trial: 924, Time:37.786s
+38682620
+MF_time: 0.605s | MFGR_time: 1.894s | GR_time: 6.016s | GRGO_time: 0.004s | MFGO_time: 0.719s | GO_time: 0.560s | GOGO_time: 1.269s | GOGR_time: 6.240s
+Trial: 925, Time:38.119s
+39158410
+MF_time: 0.568s | MFGR_time: 1.854s | GR_time: 5.941s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.555s | GOGO_time: 1.278s | GOGR_time: 4.688s
+Trial: 926, Time:36.369s
+39762879
+MF_time: 0.593s | MFGR_time: 1.880s | GR_time: 6.041s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.562s | GOGO_time: 1.288s | GOGR_time: 5.796s
+Trial: 927, Time:37.948s
+38951789
+MF_time: 0.558s | MFGR_time: 1.843s | GR_time: 5.924s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.556s | GOGO_time: 1.274s | GOGR_time: 4.605s
+Trial: 928, Time:36.231s
+39900067
+MF_time: 0.577s | MFGR_time: 1.882s | GR_time: 6.025s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.562s | GOGO_time: 1.292s | GOGR_time: 5.283s
+Trial: 929, Time:37.429s
+40137682
+MF_time: 0.554s | MFGR_time: 1.865s | GR_time: 5.951s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.560s | GOGO_time: 1.291s | GOGR_time: 4.563s
+Trial: 930, Time:36.500s
+39577619
+MF_time: 0.571s | MFGR_time: 1.879s | GR_time: 5.995s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.564s | GOGO_time: 1.288s | GOGR_time: 5.286s
+Trial: 931, Time:37.238s
+39209535
+MF_time: 0.594s | MFGR_time: 1.903s | GR_time: 6.010s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.561s | GOGO_time: 1.284s | GOGR_time: 6.157s
+Trial: 932, Time:38.169s
+39314740
+MF_time: 0.571s | MFGR_time: 1.890s | GR_time: 6.003s | GRGO_time: 0.003s | MFGO_time: 0.738s | GO_time: 0.567s | GOGO_time: 1.293s | GOGR_time: 5.302s
+Trial: 933, Time:37.329s
+39114172
+MF_time: 0.566s | MFGR_time: 1.887s | GR_time: 6.011s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.566s | GOGO_time: 1.288s | GOGR_time: 5.254s
+Trial: 934, Time:37.194s
+38875193
+MF_time: 0.588s | MFGR_time: 1.904s | GR_time: 6.041s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.565s | GOGO_time: 1.287s | GOGR_time: 5.952s
+Trial: 935, Time:38.015s
+39962756
+MF_time: 0.561s | MFGR_time: 1.871s | GR_time: 5.936s | GRGO_time: 0.003s | MFGO_time: 0.744s | GO_time: 0.566s | GOGO_time: 1.305s | GOGR_time: 4.695s
+Trial: 936, Time:36.818s
+40456124
+MF_time: 0.580s | MFGR_time: 1.899s | GR_time: 6.016s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.567s | GOGO_time: 1.316s | GOGR_time: 5.459s
+Trial: 937, Time:37.904s
+40670510
+MF_time: 0.557s | MFGR_time: 1.873s | GR_time: 5.956s | GRGO_time: 0.004s | MFGO_time: 0.751s | GO_time: 0.569s | GOGO_time: 1.325s | GOGR_time: 4.596s
+Trial: 938, Time:37.143s
+41872576
+MF_time: 0.577s | MFGR_time: 1.907s | GR_time: 6.021s | GRGO_time: 0.004s | MFGO_time: 0.757s | GO_time: 0.570s | GOGO_time: 1.346s | GOGR_time: 5.413s
+Trial: 939, Time:38.332s
+39805148
+MF_time: 0.556s | MFGR_time: 1.874s | GR_time: 5.961s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.568s | GOGO_time: 1.306s | GOGR_time: 4.579s
+Trial: 940, Time:36.677s
+40545757
+MF_time: 0.584s | MFGR_time: 1.906s | GR_time: 6.024s | GRGO_time: 0.003s | MFGO_time: 0.743s | GO_time: 0.566s | GOGO_time: 1.315s | GOGR_time: 5.460s
+Trial: 941, Time:38.159s
+40158099
+MF_time: 0.552s | MFGR_time: 1.878s | GR_time: 5.959s | GRGO_time: 0.004s | MFGO_time: 0.745s | GO_time: 0.568s | GOGO_time: 1.306s | GOGR_time: 4.579s
+Trial: 942, Time:36.699s
+39294816
+MF_time: 0.577s | MFGR_time: 1.903s | GR_time: 6.016s | GRGO_time: 0.003s | MFGO_time: 0.734s | GO_time: 0.565s | GOGO_time: 1.288s | GOGR_time: 5.457s
+Trial: 943, Time:37.412s
+39372963
+MF_time: 0.555s | MFGR_time: 1.875s | GR_time: 5.952s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.566s | GOGO_time: 1.292s | GOGR_time: 4.568s
+Trial: 944, Time:36.424s
+39534090
+MF_time: 0.578s | MFGR_time: 1.903s | GR_time: 6.028s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.566s | GOGO_time: 1.299s | GOGR_time: 5.464s
+Trial: 945, Time:37.644s
+38698921
+MF_time: 0.604s | MFGR_time: 1.912s | GR_time: 6.030s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.561s | GOGO_time: 1.280s | GOGR_time: 6.286s
+Trial: 946, Time:38.240s
+38360127
+MF_time: 0.579s | MFGR_time: 1.906s | GR_time: 6.023s | GRGO_time: 0.004s | MFGO_time: 0.727s | GO_time: 0.565s | GOGO_time: 1.271s | GOGR_time: 5.462s
+Trial: 947, Time:37.215s
+38760769
+MF_time: 0.584s | MFGR_time: 1.896s | GR_time: 6.063s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.564s | GOGO_time: 1.281s | GOGR_time: 5.624s
+Trial: 948, Time:37.645s
+38334169
+MF_time: 0.564s | MFGR_time: 1.855s | GR_time: 5.942s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.569s | GOGO_time: 1.273s | GOGR_time: 4.622s
+Trial: 949, Time:36.195s
+38043159
+MF_time: 0.597s | MFGR_time: 1.888s | GR_time: 6.067s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.568s | GOGO_time: 1.272s | GOGR_time: 5.762s
+Trial: 950, Time:37.593s
+38759434
+MF_time: 0.563s | MFGR_time: 1.859s | GR_time: 5.952s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.564s | GOGO_time: 1.281s | GOGR_time: 4.630s
+Trial: 951, Time:36.329s
+39168817
+MF_time: 0.595s | MFGR_time: 1.891s | GR_time: 6.065s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.566s | GOGO_time: 1.288s | GOGR_time: 5.821s
+Trial: 952, Time:37.899s
+38944939
+MF_time: 0.565s | MFGR_time: 1.861s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.565s | GOGO_time: 1.282s | GOGR_time: 4.633s
+Trial: 953, Time:36.337s
+39158701
+MF_time: 0.585s | MFGR_time: 1.898s | GR_time: 6.073s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.566s | GOGO_time: 1.278s | GOGR_time: 5.612s
+Trial: 954, Time:37.518s
+39287709
+MF_time: 0.543s | MFGR_time: 1.869s | GR_time: 5.903s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.561s | GOGO_time: 1.279s | GOGR_time: 4.550s
+Trial: 955, Time:36.164s
+38316651
+MF_time: 0.562s | MFGR_time: 1.891s | GR_time: 5.968s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.559s | GOGO_time: 1.264s | GOGR_time: 5.324s
+Trial: 956, Time:36.895s
+39243334
+MF_time: 0.549s | MFGR_time: 1.870s | GR_time: 5.939s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.566s | GOGO_time: 1.284s | GOGR_time: 4.552s
+Trial: 957, Time:36.257s
+38675949
+MF_time: 0.573s | MFGR_time: 1.893s | GR_time: 6.018s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.564s | GOGO_time: 1.275s | GOGR_time: 5.330s
+Trial: 958, Time:37.080s
+39663022
+MF_time: 0.547s | MFGR_time: 1.873s | GR_time: 5.920s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.565s | GOGO_time: 1.289s | GOGR_time: 4.559s
+Trial: 959, Time:36.370s
+40345066
+MF_time: 0.575s | MFGR_time: 1.899s | GR_time: 6.019s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.569s | GOGO_time: 1.308s | GOGR_time: 5.334s
+Trial: 960, Time:37.680s
+39955212
+MF_time: 0.550s | MFGR_time: 1.871s | GR_time: 5.943s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.568s | GOGO_time: 1.302s | GOGR_time: 4.552s
+Trial: 961, Time:36.578s
+38898051
+MF_time: 0.572s | MFGR_time: 1.890s | GR_time: 6.035s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.563s | GOGO_time: 1.283s | GOGR_time: 5.223s
+Trial: 962, Time:37.154s
+38608745
+MF_time: 0.549s | MFGR_time: 1.866s | GR_time: 5.955s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.567s | GOGO_time: 1.278s | GOGR_time: 4.518s
+Trial: 963, Time:36.169s
+40031591
+MF_time: 0.577s | MFGR_time: 1.887s | GR_time: 6.034s | GRGO_time: 0.004s | MFGO_time: 0.743s | GO_time: 0.565s | GOGO_time: 1.312s | GOGR_time: 5.190s
+Trial: 964, Time:37.514s
+38922241
+MF_time: 0.593s | MFGR_time: 1.881s | GR_time: 6.068s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.563s | GOGO_time: 1.288s | GOGR_time: 5.656s
+Trial: 965, Time:37.724s
+38902001
+MF_time: 0.558s | MFGR_time: 1.871s | GR_time: 5.953s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.569s | GOGO_time: 1.288s | GOGR_time: 4.552s
+Trial: 966, Time:36.401s
+39698365
+MF_time: 0.584s | MFGR_time: 1.902s | GR_time: 6.038s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.566s | GOGO_time: 1.298s | GOGR_time: 5.459s
+Trial: 967, Time:37.630s
+39952136
+MF_time: 0.559s | MFGR_time: 1.878s | GR_time: 5.967s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.569s | GOGO_time: 1.302s | GOGR_time: 4.561s
+Trial: 968, Time:36.635s
+40204017
+MF_time: 0.584s | MFGR_time: 1.911s | GR_time: 6.045s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.563s | GOGO_time: 1.310s | GOGR_time: 5.458s
+Trial: 969, Time:37.797s
+40258365
+MF_time: 0.605s | MFGR_time: 1.923s | GR_time: 6.048s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.565s | GOGO_time: 1.310s | GOGR_time: 6.360s
+Trial: 970, Time:38.839s
+39670777
+MF_time: 0.567s | MFGR_time: 1.871s | GR_time: 5.969s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.566s | GOGO_time: 1.300s | GOGR_time: 4.710s
+Trial: 971, Time:36.717s
+39857889
+MF_time: 0.601s | MFGR_time: 1.903s | GR_time: 6.091s | GRGO_time: 0.003s | MFGO_time: 0.740s | GO_time: 0.565s | GOGO_time: 1.300s | GOGR_time: 5.922s
+Trial: 972, Time:38.316s
+39248060
+MF_time: 0.575s | MFGR_time: 1.875s | GR_time: 5.961s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.568s | GOGO_time: 1.285s | GOGR_time: 4.677s
+Trial: 973, Time:36.569s
+40304207
+MF_time: 0.581s | MFGR_time: 1.896s | GR_time: 6.020s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.560s | GOGO_time: 1.306s | GOGR_time: 5.267s
+Trial: 974, Time:37.648s
+40231534
+MF_time: 0.558s | MFGR_time: 1.874s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.563s | GOGO_time: 1.300s | GOGR_time: 4.556s
+Trial: 975, Time:36.592s
+40041758
+MF_time: 0.582s | MFGR_time: 1.888s | GR_time: 6.031s | GRGO_time: 0.003s | MFGO_time: 0.740s | GO_time: 0.563s | GOGO_time: 1.300s | GOGR_time: 5.263s
+Trial: 976, Time:37.458s
+39155331
+MF_time: 0.557s | MFGR_time: 1.865s | GR_time: 5.951s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.558s | GOGO_time: 1.282s | GOGR_time: 4.545s
+Trial: 977, Time:36.786s
+40374777
+MF_time: 0.569s | MFGR_time: 1.890s | GR_time: 5.981s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.556s | GOGO_time: 1.301s | GOGR_time: 5.264s
+Trial: 978, Time:37.534s
+40167366
+MF_time: 0.546s | MFGR_time: 1.869s | GR_time: 5.904s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.562s | GOGO_time: 1.296s | GOGR_time: 4.544s
+Trial: 979, Time:36.548s
+40068087
+MF_time: 0.578s | MFGR_time: 1.892s | GR_time: 6.000s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.559s | GOGO_time: 1.292s | GOGR_time: 5.269s
+Trial: 980, Time:37.463s
+40277082
+MF_time: 0.592s | MFGR_time: 1.900s | GR_time: 6.045s | GRGO_time: 0.004s | MFGO_time: 0.726s | GO_time: 0.562s | GOGO_time: 1.295s | GOGR_time: 6.179s
+Trial: 981, Time:38.523s
+40147498
+MF_time: 0.556s | MFGR_time: 1.858s | GR_time: 5.944s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.561s | GOGO_time: 1.301s | GOGR_time: 4.622s
+Trial: 982, Time:36.728s
+40166635
+MF_time: 0.596s | MFGR_time: 1.894s | GR_time: 6.069s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.561s | GOGO_time: 1.301s | GOGR_time: 5.867s
+Trial: 983, Time:38.514s
+39720904
+MF_time: 0.559s | MFGR_time: 1.868s | GR_time: 5.924s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.565s | GOGO_time: 1.291s | GOGR_time: 4.646s
+Trial: 984, Time:36.558s
+40006524
+MF_time: 0.592s | MFGR_time: 1.881s | GR_time: 6.048s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.558s | GOGO_time: 1.295s | GOGR_time: 5.830s
+Trial: 985, Time:38.131s
+40162927
+MF_time: 0.558s | MFGR_time: 1.862s | GR_time: 5.920s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.563s | GOGO_time: 1.298s | GOGR_time: 4.650s
+Trial: 986, Time:36.688s
+40341202
+MF_time: 0.592s | MFGR_time: 1.884s | GR_time: 6.054s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.561s | GOGO_time: 1.302s | GOGR_time: 5.815s
+Trial: 987, Time:38.161s
+40165270
+MF_time: 0.560s | MFGR_time: 1.867s | GR_time: 5.930s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.564s | GOGO_time: 1.303s | GOGR_time: 4.658s
+Trial: 988, Time:36.765s
+41779342
+MF_time: 0.595s | MFGR_time: 1.885s | GR_time: 6.052s | GRGO_time: 0.004s | MFGO_time: 0.748s | GO_time: 0.562s | GOGO_time: 1.329s | GOGR_time: 5.839s
+Trial: 989, Time:38.589s
+41756095
+MF_time: 0.563s | MFGR_time: 1.874s | GR_time: 5.940s | GRGO_time: 0.003s | MFGO_time: 0.744s | GO_time: 0.569s | GOGO_time: 1.326s | GOGR_time: 4.687s
+Trial: 990, Time:37.197s
+41116552
+MF_time: 0.576s | MFGR_time: 1.898s | GR_time: 6.026s | GRGO_time: 0.003s | MFGO_time: 0.746s | GO_time: 0.566s | GOGO_time: 1.323s | GOGR_time: 5.332s
+Trial: 991, Time:37.949s
+40985943
+MF_time: 0.554s | MFGR_time: 1.870s | GR_time: 5.950s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.564s | GOGO_time: 1.315s | GOGR_time: 4.578s
+Trial: 992, Time:36.840s
+41079404
+MF_time: 0.576s | MFGR_time: 1.894s | GR_time: 6.031s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.565s | GOGO_time: 1.316s | GOGR_time: 5.336s
+Trial: 993, Time:37.829s
+41422180
+MF_time: 0.602s | MFGR_time: 1.898s | GR_time: 6.057s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.564s | GOGO_time: 1.323s | GOGR_time: 6.195s
+Trial: 994, Time:38.855s
+41147473
+MF_time: 0.562s | MFGR_time: 1.861s | GR_time: 5.960s | GRGO_time: 0.004s | MFGO_time: 0.744s | GO_time: 0.567s | GOGO_time: 1.311s | GOGR_time: 4.661s
+Trial: 995, Time:36.919s
+40657230
+MF_time: 0.597s | MFGR_time: 1.890s | GR_time: 6.067s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.566s | GOGO_time: 1.301s | GOGR_time: 5.900s
+Trial: 996, Time:38.803s
+40108508
+MF_time: 0.563s | MFGR_time: 1.867s | GR_time: 5.942s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.555s | GOGO_time: 1.289s | GOGR_time: 4.732s
+Trial: 997, Time:36.585s
+40987521
+MF_time: 0.578s | MFGR_time: 1.882s | GR_time: 6.027s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.559s | GOGO_time: 1.301s | GOGR_time: 5.397s
+Trial: 998, Time:37.636s
+40242687
+MF_time: 0.557s | MFGR_time: 1.862s | GR_time: 5.967s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.557s | GOGO_time: 1.285s | GOGR_time: 4.706s
+Trial: 999, Time:36.473s
+40733891
+MF_time: 0.577s | MFGR_time: 1.884s | GR_time: 6.027s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.555s | GOGO_time: 1.295s | GOGR_time: 5.403s
+Trial: 1000, Time:37.550s
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial_GRrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial_MFrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial_mfgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial_gogrW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial_mfgrW.npy'

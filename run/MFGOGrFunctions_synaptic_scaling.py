@@ -199,11 +199,14 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
 
         # GRGO
         if inputArrayChoice == 3: 
-            goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
             spiked_idx = np.where(grAct)[0]
-            for gr in spiked_idx:
-                goInputs[connectArr[gr,:]] += 1
-            self.inputGRGO = goInputs
+            indices = connectArr[spiked_idx].ravel()  # all target Golgi indices, flattened
+            self.inputGRGO = np.bincount(indices, minlength=self.numGolgi).astype(np.uint8)
+            # goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
+            # spiked_idx = np.where(grAct)[0]
+            # for gr in spiked_idx:
+            #     goInputs[connectArr[gr,:]] += 1
+            # self.inputGRGO = goInputs
 
     def update_weight(self, t, exc_or_inh, weight_array):
         plast_cells = np.random.choice(self.numGolgi, int(self.numGolgi * self.plast_pop_portion), replace = False) # randomly select portion of Golgi cells to undergo plasticity
@@ -375,7 +378,7 @@ class Granule():
 
     def doGRGPU(self):
         block_size = 256
-        grid_size = 256 
+        grid_size = 256 * 2
         with cp.cuda.Device(0):
             GPU_inputMFGR = cp.array(self.inputMFGR)
             GPU_inputGOGR = cp.array(self.inputGOGR)
@@ -425,20 +428,30 @@ class Granule():
 
         # GOGR
         if inputArrayChoice == 2:
-            spike_mask = (goAct == 1)
-            spiked_idx = np.where(spike_mask)[0]
-            # get connections for all spiked cells
-            spiked_connections = [] # list to hold connections for all spiked MFs
-            for cell in spiked_idx:
-                # eliminate -1 terminator
-                valid_idx = connectArr[cell] != -1
-                # get valid connections for spiked cell
-                valid_conns = connectArr[cell, valid_idx]
-                # add to list
-                spiked_connections.extend(valid_conns)
-            spiked_connections = np.array(spiked_connections, dtype = int) # convert list to
-            counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
-            self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
+            spiked_idx = np.where(goAct == 1)[0]
+            
+            # grab all connection rows for spiked cells at once
+            spiked_connections = connectArr[spiked_idx].ravel()
+            
+            # filter out -1 terminators in one shot
+            spiked_connections = spiked_connections[spiked_connections != -1]
+            
+            counts = np.bincount(spiked_connections, minlength=len(self.inputGOGR))
+            self.inputGOGR = counts.astype(self.inputGOGR.dtype)
+            # spike_mask = (goAct == 1)
+            # spiked_idx = np.where(spike_mask)[0]
+            # # get connections for all spiked cells
+            # spiked_connections = [] # list to hold connections for all spiked MFs
+            # for cell in spiked_idx:
+            #     # eliminate -1 terminator
+            #     valid_idx = connectArr[cell] != -1
+            #     # get valid connections for spiked cell
+            #     valid_conns = connectArr[cell, valid_idx]
+            #     # add to list
+            #     spiked_connections.extend(valid_conns)
+            # spiked_connections = np.array(spiked_connections, dtype = int) # convert list to
+            # counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
+            # self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
         
         # if inputArrayChoice == 1:
         #     # add to MFGR input  
@@ -452,17 +465,22 @@ class Granule():
         self.act[t] = self.doGRGPU() # convert boolean array to int array,
         # print(t, ":", np.mean(self.GPU_gogrW))
         # print(t, ":", np.sum(self.act[t]))
-        # reset inputs
+        # reset inputsoc
         self.inputMFGR.fill(0)
         self.inputGOGR.fill(0)
         
     def update_weight(self, t, exc_or_inh, weight_array):
         plast_cells = np.random.choice(self.numGranule, int(self.numGranule * self.plast_pop_portion), replace = False) # randomly select portion of Golgi cells to undergo plasticity
 
-        count = np.sum(self.act, axis = 0) # count spikes over trial for each Golgi cell
+        count = np.sum(self.act, axis = 0) # count spikes over trial for each Granule cell, self.act = (numBins, numCells)
         count_float = count.astype(float)
+
+        print("Trial", t, "Cell 1 Spike Count:", count_float[0], "Cell 2 Spike Count:", count_float[1], "Cell 3 Spike Count:", count_float[2], "Cell 4 Spike Count:", count_float[3], "Cell 5 Spike Count:", count_float[4])
+
         # 2. Calculate Error
         error = self.target_spikes - count_float # error
+
+        print("Trial", t, "Cell 1 Error:", error[0], "Cell 2 Error: ", error[1], "Cell 3 Error:", error[2], "Cell 4 Error:", error[3], "Cell 5 Error:", error[4])
 
         # #---
         # # TESTING ONLY ONE CELL
@@ -496,6 +514,8 @@ class Granule():
         # # Clip weights
         weight_array = np.clip(weight_array, 0.0, 1.0)
 
+        print("Trial", t, "Cell 1 Weight:", weight_array[0], "Cell 2 Weight:", weight_array[1], "Cell 3 Weight:", weight_array[2], "Cell 4 Weight:", weight_array[3], "Cell 5 Weight:", weight_array[4])
+
         return weight_array
     
     def get_act(self):
@@ -522,9 +542,9 @@ class Granule():
             self.gNMDA_Inc_MFGR = cp.asnumpy(self.GPU_gNMDA_Inc_MFGR)
             self.gNMDA_MFGR = cp.asnumpy(self.GPU_gNMDA_MFGR)
             self.currentThresh = cp.asnumpy(self.GPU_currentThresh)
-            self.mfgrW = cp.asnumpy(self.GPU_mfgrW)
+            # self.mfgrW = cp.asnumpy(self.GPU_mfgrW)
             self.g_decay_MFGR = cp.asnumpy(self.GPU_g_decay_MFGR)
-            self.gogrW  = cp.asnumpy(self.GPU_gogrW)
+            # self.gogrW  = cp.asnumpy(self.GPU_gogrW)
             self.gGABA_decayGOGR = cp.asnumpy(self.GPU_gGABA_decayGOGR)
             self.g_decay_NMDA_MFGR = cp.asnumpy(self.GPU_g_decay_NMDA_MFGR)
             self.gDirectInc_MFGR = cp.asnumpy(self.GPU_gDirectInc_MFGR)
