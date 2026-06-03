@@ -14,7 +14,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     # --- MODIFICATION: REMOVE FIRST CELL ---
     # We slice the array to exclude index 0 before doing any calculations
     print(f"Original shape: {raster.shape}")
-    raster = raster[:, 1:] # Remove first trial and first cell (index 0) to avoid artifacts
+    raster = raster[:, 1:] # Remove first cell (index 0) to avoid artifacts
     print(f"Shape after removing first cell: {raster.shape}")
 
     num_trials, num_cells = raster.shape
@@ -45,17 +45,17 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     cell_names = {1: "Mossy Fiber", 2: "Golgi Cell", 3: "Granule Cell"}
     type_name = cell_names.get(cell_type, "Unknown Cell")
     
-    # Plot individual traces (lighter, thinner)
-    for cell in range(num_cells):
-        plt.plot(range(1, num_trials + 1), freq[:, cell], alpha=0.3, lw=0.8)
+    # # Plot individual traces (lighter, thinner)
+    # for cell in range(num_cells):
+    #     plt.plot(range(1, num_trials + 1), freq[:, cell], alpha=0.3, lw=0.8)
 
-    # #---
+    # # #---
     # # TEST: ONLY PLOT ONE CELL TO VERIFY REMOVAL OF ARTIFACT
     # plt.plot(range(1, num_trials + 1), freq[:, 1], alpha=0.7, lw=1.5, label='Cell 2 Firing Rate')  # Plot only the first cell after removal
     # #---
 
     # Plot the population average in bold (black)
-    plt.plot(range(1, num_trials + 1), np.mean(freq, axis=1), color='black', lw=2, label='Mean firing rate')
+    plt.plot(range(1, num_trials + 1), np.mean(freq, axis=1), color='black', lw=2, label='Mean firing rate: {:.2f} Hz'.format(np.mean(freq)))
 
     plt.xlabel("Trial")
     plt.ylabel("Firing frequency (Hz)")
@@ -74,16 +74,19 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_GRrasters.npy' 
+raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial_GRrasters.npy' 
 raster_data = np.load(raster_path)
 
 print("Finished loading data")
+
+# # Just the first 10 trials
+# raster_data = raster_data[:10, :]
 
 # 2. Define Cell Type (1=MF, 2=Golgi, 3=Granule)
 current_cell_type = 3
 
 # 3. Define save location
-save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/GR_Firing_Frequency.png"
+save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial/mean_GR_Firing_Frequency.png"
 plot_save_path = f"/home/aw39625/minisim/Results/Firing_Freq_Plots/{save_filename}"
 
 # 4. Run the function

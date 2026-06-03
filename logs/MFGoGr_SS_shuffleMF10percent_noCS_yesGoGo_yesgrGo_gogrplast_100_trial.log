@@ -1,0 +1,619 @@
+nohup: ignoring input
+Starting Session for GoGo Conv: 25 W: 0.05 ...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial 0 Cell 1 Spike Count: 2.0 Cell 2 Spike Count: 54.0 Cell 3 Spike Count: 7.0 Cell 4 Spike Count: 264.0 Cell 5 Spike Count: 208.0
+Trial 0 Cell 1 Error: 3.0 Cell 2 Error:  -49.0 Cell 3 Error: -2.0 Cell 4 Error: -259.0 Cell 5 Error: -203.0
+Trial 0 Cell 1 Weight: 0.014955134261938062 Cell 2 Weight: 0.015044999663718044 Cell 3 Weight: 0.015044999663718044 Cell 4 Weight: 0.015044999663718044 Cell 5 Weight: 0.015044999663718044
+78363364
+MF_time: 0.550s | MFGR_time: 1.864s | GR_time: 5.110s | GRGO_time: 0.003s | MFGO_time: 0.755s | GO_time: 0.569s | GOGO_time: 1.268s | GOGR_time: 4.655s
+Trial: 1, Time:35.278s
+Trial 1 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 50.0 Cell 3 Spike Count: 22.0 Cell 4 Spike Count: 148.0 Cell 5 Spike Count: 144.0
+Trial 1 Cell 1 Error: 5.0 Cell 2 Error:  -45.0 Cell 3 Error: -17.0 Cell 4 Error: -143.0 Cell 5 Error: -139.0
+Trial 1 Cell 1 Weight: 0.014910403052779724 Cell 2 Weight: 0.015090134662709196 Cell 3 Weight: 0.015090134662709196 Cell 4 Weight: 0.015090134662709196 Cell 5 Weight: 0.015090134662709196
+81170605
+MF_time: 0.553s | MFGR_time: 1.872s | GR_time: 4.541s | GRGO_time: 0.003s | MFGO_time: 0.749s | GO_time: 0.556s | GOGO_time: 1.285s | GOGR_time: 4.605s
+Trial: 2, Time:35.033s
+Trial 2 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 216.0 Cell 3 Spike Count: 13.0 Cell 4 Spike Count: 177.0 Cell 5 Spike Count: 136.0
+Trial 2 Cell 1 Error: 5.0 Cell 2 Error:  -211.0 Cell 3 Error: -8.0 Cell 4 Error: -172.0 Cell 5 Error: -131.0
+Trial 2 Cell 1 Weight: 0.01486580563587211 Cell 2 Weight: 0.015135405066697322 Cell 3 Weight: 0.015135405066697322 Cell 4 Weight: 0.015135405066697322 Cell 5 Weight: 0.015135405066697322
+77925433
+MF_time: 0.566s | MFGR_time: 1.889s | GR_time: 4.666s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.550s | GOGO_time: 1.253s | GOGR_time: 5.380s
+Trial: 3, Time:35.557s
+Trial 3 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 218.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 65.0 Cell 5 Spike Count: 181.0
+Trial 3 Cell 1 Error: 5.0 Cell 2 Error:  -213.0 Cell 3 Error: 0.0 Cell 4 Error: -60.0 Cell 5 Error: -176.0
+Trial 3 Cell 1 Weight: 0.014821341611038994 Cell 2 Weight: 0.015180811281897412 Cell 3 Weight: 0.015135405066697322 Cell 4 Weight: 0.015180811281897412 Cell 5 Weight: 0.015180811281897412
+78787153
+MF_time: 0.565s | MFGR_time: 1.895s | GR_time: 4.664s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.554s | GOGO_time: 1.265s | GOGR_time: 5.389s
+Trial: 4, Time:35.735s
+Trial 4 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 168.0 Cell 3 Spike Count: 13.0 Cell 4 Spike Count: 64.0 Cell 5 Spike Count: 153.0
+Trial 4 Cell 1 Error: 5.0 Cell 2 Error:  -163.0 Cell 3 Error: -8.0 Cell 4 Error: -59.0 Cell 5 Error: -148.0
+Trial 4 Cell 1 Weight: 0.014777010579301093 Cell 2 Weight: 0.015226353715743103 Cell 3 Weight: 0.015180811281897412 Cell 4 Weight: 0.015226353715743103 Cell 5 Weight: 0.015226353715743103
+77714736
+MF_time: 0.559s | MFGR_time: 1.894s | GR_time: 4.623s | GRGO_time: 0.004s | MFGO_time: 0.736s | GO_time: 0.542s | GOGO_time: 1.258s | GOGR_time: 5.400s
+Trial: 5, Time:35.666s
+Trial 5 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 287.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 86.0 Cell 5 Spike Count: 124.0
+Trial 5 Cell 1 Error: 5.0 Cell 2 Error:  -282.0 Cell 3 Error: -5.0 Cell 4 Error: -81.0 Cell 5 Error: -119.0
+Trial 5 Cell 1 Weight: 0.014732812142872477 Cell 2 Weight: 0.015272032776890331 Cell 3 Weight: 0.015226353715743103 Cell 4 Weight: 0.015272032776890331 Cell 5 Weight: 0.015272032776890331
+77153017
+MF_time: 0.568s | MFGR_time: 1.902s | GR_time: 4.679s | GRGO_time: 0.003s | MFGO_time: 0.727s | GO_time: 0.551s | GOGO_time: 1.259s | GOGR_time: 5.426s
+Trial: 6, Time:35.833s
+Trial 6 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 324.0 Cell 3 Spike Count: 23.0 Cell 4 Spike Count: 91.0 Cell 5 Spike Count: 137.0
+Trial 6 Cell 1 Error: 5.0 Cell 2 Error:  -319.0 Cell 3 Error: -18.0 Cell 4 Error: -86.0 Cell 5 Error: -132.0
+Trial 6 Cell 1 Weight: 0.014688745905157008 Cell 2 Weight: 0.015317848875221 Cell 3 Weight: 0.015272032776890331 Cell 4 Weight: 0.015317848875221 Cell 5 Weight: 0.015317848875221
+77337748
+MF_time: 0.562s | MFGR_time: 1.891s | GR_time: 4.601s | GRGO_time: 0.003s | MFGO_time: 0.733s | GO_time: 0.548s | GOGO_time: 1.254s | GOGR_time: 5.342s
+Trial: 7, Time:35.445s
+Trial 7 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 198.0 Cell 3 Spike Count: 7.0 Cell 4 Spike Count: 77.0 Cell 5 Spike Count: 170.0
+Trial 7 Cell 1 Error: 5.0 Cell 2 Error:  -193.0 Cell 3 Error: -2.0 Cell 4 Error: -72.0 Cell 5 Error: -165.0
+Trial 7 Cell 1 Weight: 0.014644811470744775 Cell 2 Weight: 0.015363802421846661 Cell 3 Weight: 0.015317848875221 Cell 4 Weight: 0.015363802421846661 Cell 5 Weight: 0.015363802421846661
+76897273
+MF_time: 0.545s | MFGR_time: 1.880s | GR_time: 4.557s | GRGO_time: 0.003s | MFGO_time: 0.730s | GO_time: 0.544s | GOGO_time: 1.251s | GOGR_time: 5.233s
+Trial: 8, Time:35.196s
+Trial 8 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 231.0 Cell 3 Spike Count: 29.0 Cell 4 Spike Count: 71.0 Cell 5 Spike Count: 166.0
+Trial 8 Cell 1 Error: 5.0 Cell 2 Error:  -226.0 Cell 3 Error: -24.0 Cell 4 Error: -66.0 Cell 5 Error: -161.0
+Trial 8 Cell 1 Weight: 0.014601008445408552 Cell 2 Weight: 0.0154098938291122 Cell 3 Weight: 0.015363802421846661 Cell 4 Weight: 0.0154098938291122 Cell 5 Weight: 0.0154098938291122
+76098730
+MF_time: 0.570s | MFGR_time: 1.889s | GR_time: 4.701s | GRGO_time: 0.003s | MFGO_time: 0.727s | GO_time: 0.539s | GOGO_time: 1.242s | GOGR_time: 5.610s
+Trial: 9, Time:35.717s
+Trial 9 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 204.0 Cell 3 Spike Count: 16.0 Cell 4 Spike Count: 80.0 Cell 5 Spike Count: 160.0
+Trial 9 Cell 1 Error: 5.0 Cell 2 Error:  -199.0 Cell 3 Error: -11.0 Cell 4 Error: -75.0 Cell 5 Error: -155.0
+Trial 9 Cell 1 Weight: 0.014557336436100254 Cell 2 Weight: 0.015456123510599535 Cell 3 Weight: 0.0154098938291122 Cell 4 Weight: 0.015456123510599535 Cell 5 Weight: 0.015456123510599535
+79027472
+MF_time: 0.576s | MFGR_time: 1.895s | GR_time: 4.728s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.548s | GOGO_time: 1.270s | GOGR_time: 5.661s
+Trial: 10, Time:36.152s
+Trial 10 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 288.0 Cell 3 Spike Count: 16.0 Cell 4 Spike Count: 69.0 Cell 5 Spike Count: 167.0
+Trial 10 Cell 1 Error: 5.0 Cell 2 Error:  -283.0 Cell 3 Error: -11.0 Cell 4 Error: -64.0 Cell 5 Error: -162.0
+Trial 10 Cell 1 Weight: 0.014513795050947414 Cell 2 Weight: 0.015502491881131333 Cell 3 Weight: 0.015456123510599535 Cell 4 Weight: 0.015502491881131333 Cell 5 Weight: 0.015502491881131333
+77558324
+MF_time: 0.569s | MFGR_time: 1.902s | GR_time: 4.711s | GRGO_time: 0.003s | MFGO_time: 0.733s | GO_time: 0.551s | GOGO_time: 1.260s | GOGR_time: 5.511s
+Trial: 11, Time:35.863s
+Trial 11 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 258.0 Cell 3 Spike Count: 18.0 Cell 4 Spike Count: 82.0 Cell 5 Spike Count: 151.0
+Trial 11 Cell 1 Error: 5.0 Cell 2 Error:  -253.0 Cell 3 Error: -13.0 Cell 4 Error: -77.0 Cell 5 Error: -146.0
+Trial 11 Cell 1 Weight: 0.014470383899249668 Cell 2 Weight: 0.015548999356774725 Cell 3 Weight: 0.015502491881131333 Cell 4 Weight: 0.015548999356774725 Cell 5 Weight: 0.015548999356774725
+77692531
+MF_time: 0.548s | MFGR_time: 1.891s | GR_time: 4.575s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.546s | GOGO_time: 1.263s | GOGR_time: 5.230s
+Trial: 12, Time:35.468s
+Trial 12 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 283.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 25.0 Cell 5 Spike Count: 90.0
+Trial 12 Cell 1 Error: 5.0 Cell 2 Error:  -278.0 Cell 3 Error: -3.0 Cell 4 Error: -20.0 Cell 5 Error: -85.0
+Trial 12 Cell 1 Weight: 0.014427102591475244 Cell 2 Weight: 0.015595646354845047 Cell 3 Weight: 0.015548999356774725 Cell 4 Weight: 0.015595646354845047 Cell 5 Weight: 0.015595646354845047
+77250079
+MF_time: 0.567s | MFGR_time: 1.891s | GR_time: 4.610s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.553s | GOGO_time: 1.259s | GOGR_time: 5.228s
+Trial: 13, Time:35.431s
+Trial 13 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 225.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 42.0 Cell 5 Spike Count: 109.0
+Trial 13 Cell 1 Error: 5.0 Cell 2 Error:  -220.0 Cell 3 Error: 0.0 Cell 4 Error: -37.0 Cell 5 Error: -104.0
+Trial 13 Cell 1 Weight: 0.014383950739257474 Cell 2 Weight: 0.01564243329390958 Cell 3 Weight: 0.015548999356774725 Cell 4 Weight: 0.01564243329390958 Cell 5 Weight: 0.01564243329390958
+76411401
+MF_time: 0.573s | MFGR_time: 1.890s | GR_time: 4.644s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.561s | GOGO_time: 1.253s | GOGR_time: 5.238s
+Trial: 14, Time:35.337s
+Trial 14 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 309.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 64.0
+Trial 14 Cell 1 Error: 5.0 Cell 2 Error:  -304.0 Cell 3 Error: -3.0 Cell 4 Error: 5.0 Cell 5 Error: -59.0
+Trial 14 Cell 1 Weight: 0.014340927955391302 Cell 2 Weight: 0.015689360593791307 Cell 3 Weight: 0.015595646354845047 Cell 4 Weight: 0.015595646354845049 Cell 5 Weight: 0.015689360593791307
+76474486
+MF_time: 0.547s | MFGR_time: 1.864s | GR_time: 4.486s | GRGO_time: 0.004s | MFGO_time: 0.739s | GO_time: 0.558s | GOGO_time: 1.252s | GOGR_time: 4.540s
+Trial: 15, Time:34.348s
+Trial 15 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 526.0 Cell 3 Spike Count: 33.0 Cell 4 Spike Count: 22.0 Cell 5 Spike Count: 59.0
+Trial 15 Cell 1 Error: 5.0 Cell 2 Error:  -521.0 Cell 3 Error: -28.0 Cell 4 Error: -17.0 Cell 5 Error: -54.0
+Trial 15 Cell 1 Weight: 0.014298033853829814 Cell 2 Weight: 0.015736428675572678 Cell 3 Weight: 0.01564243329390958 Cell 4 Weight: 0.01564243329390958 Cell 5 Weight: 0.015736428675572678
+76024985
+MF_time: 0.573s | MFGR_time: 1.882s | GR_time: 4.668s | GRGO_time: 0.003s | MFGO_time: 0.723s | GO_time: 0.557s | GOGO_time: 1.244s | GOGR_time: 5.200s
+Trial: 16, Time:35.526s
+Trial 16 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 75.0 Cell 3 Spike Count: 60.0 Cell 4 Spike Count: 93.0 Cell 5 Spike Count: 90.0
+Trial 16 Cell 1 Error: 5.0 Cell 2 Error:  -70.0 Cell 3 Error: -55.0 Cell 4 Error: -88.0 Cell 5 Error: -85.0
+Trial 16 Cell 1 Weight: 0.014255268049680773 Cell 2 Weight: 0.015783637961599394 Cell 3 Weight: 0.015689360593791307 Cell 4 Weight: 0.015689360593791307 Cell 5 Weight: 0.015783637961599394
+77066083
+MF_time: 0.593s | MFGR_time: 1.948s | GR_time: 4.770s | GRGO_time: 0.003s | MFGO_time: 0.727s | GO_time: 0.561s | GOGO_time: 1.253s | GOGR_time: 5.627s
+Trial: 17, Time:36.334s
+Trial 17 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 82.0 Cell 3 Spike Count: 84.0 Cell 4 Spike Count: 78.0 Cell 5 Spike Count: 97.0
+Trial 17 Cell 1 Error: 5.0 Cell 2 Error:  -77.0 Cell 3 Error: -79.0 Cell 4 Error: -73.0 Cell 5 Error: -92.0
+Trial 17 Cell 1 Weight: 0.014212630159203165 Cell 2 Weight: 0.01583098887548419 Cell 3 Weight: 0.015736428675572678 Cell 4 Weight: 0.015736428675572678 Cell 5 Weight: 0.01583098887548419
+77693247
+MF_time: 0.597s | MFGR_time: 1.882s | GR_time: 4.769s | GRGO_time: 0.003s | MFGO_time: 0.731s | GO_time: 0.560s | GOGO_time: 1.260s | GOGR_time: 5.635s
+Trial: 18, Time:36.386s
+Trial 18 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 70.0 Cell 3 Spike Count: 21.0 Cell 4 Spike Count: 62.0 Cell 5 Spike Count: 121.0
+Trial 18 Cell 1 Error: 5.0 Cell 2 Error:  -65.0 Cell 3 Error: -16.0 Cell 4 Error: -57.0 Cell 5 Error: -116.0
+Trial 18 Cell 1 Weight: 0.014170119799803756 Cell 2 Weight: 0.01587848184211064 Cell 3 Weight: 0.015783637961599394 Cell 4 Weight: 0.015783637961599394 Cell 5 Weight: 0.01587848184211064
+77423303
+MF_time: 0.595s | MFGR_time: 1.887s | GR_time: 4.766s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.560s | GOGO_time: 1.257s | GOGR_time: 5.605s
+Trial: 19, Time:36.279s
+Trial 19 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 50.0 Cell 3 Spike Count: 23.0 Cell 4 Spike Count: 59.0 Cell 5 Spike Count: 80.0
+Trial 19 Cell 1 Error: 5.0 Cell 2 Error:  -45.0 Cell 3 Error: -18.0 Cell 4 Error: -54.0 Cell 5 Error: -75.0
+Trial 19 Cell 1 Weight: 0.014127736590033657 Cell 2 Weight: 0.015926117287636973 Cell 3 Weight: 0.01583098887548419 Cell 4 Weight: 0.01583098887548419 Cell 5 Weight: 0.015926117287636973
+79363439
+MF_time: 0.579s | MFGR_time: 1.893s | GR_time: 4.711s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.561s | GOGO_time: 1.276s | GOGR_time: 5.213s
+Trial: 20, Time:36.083s
+Trial 20 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 33.0 Cell 3 Spike Count: 26.0 Cell 4 Spike Count: 17.0 Cell 5 Spike Count: 46.0
+Trial 20 Cell 1 Error: 5.0 Cell 2 Error:  -28.0 Cell 3 Error: -21.0 Cell 4 Error: -12.0 Cell 5 Error: -41.0
+Trial 20 Cell 1 Weight: 0.014085480149584904 Cell 2 Weight: 0.015973895639499882 Cell 3 Weight: 0.01587848184211064 Cell 4 Weight: 0.01587848184211064 Cell 5 Weight: 0.015973895639499882
+80295007
+MF_time: 0.581s | MFGR_time: 1.899s | GR_time: 4.716s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.564s | GOGO_time: 1.283s | GOGR_time: 5.240s
+Trial: 21, Time:36.286s
+Trial 21 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 29.0 Cell 3 Spike Count: 50.0 Cell 4 Spike Count: 24.0 Cell 5 Spike Count: 11.0
+Trial 21 Cell 1 Error: 5.0 Cell 2 Error:  -24.0 Cell 3 Error: -45.0 Cell 4 Error: -19.0 Cell 5 Error: -6.0
+Trial 21 Cell 1 Weight: 0.014043350099287045 Cell 2 Weight: 0.01602181732641838 Cell 3 Weight: 0.015926117287636973 Cell 4 Weight: 0.015926117287636973 Cell 5 Weight: 0.01602181732641838
+77331939
+MF_time: 0.576s | MFGR_time: 1.891s | GR_time: 4.718s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.562s | GOGO_time: 1.256s | GOGR_time: 5.206s
+Trial: 22, Time:35.780s
+Trial 22 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 33.0 Cell 3 Spike Count: 12.0 Cell 4 Spike Count: 43.0 Cell 5 Spike Count: 58.0
+Trial 22 Cell 1 Error: 5.0 Cell 2 Error:  -28.0 Cell 3 Error: -7.0 Cell 4 Error: -38.0 Cell 5 Error: -53.0
+Trial 22 Cell 1 Weight: 0.014001346061103736 Cell 2 Weight: 0.01606988277839763 Cell 3 Weight: 0.015973895639499882 Cell 4 Weight: 0.015973895639499882 Cell 5 Weight: 0.01606988277839763
+78083989
+MF_time: 0.556s | MFGR_time: 1.863s | GR_time: 4.573s | GRGO_time: 0.004s | MFGO_time: 0.735s | GO_time: 0.563s | GOGO_time: 1.263s | GOGR_time: 4.510s
+Trial: 23, Time:34.898s
+Trial 23 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 13.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 29.0 Cell 5 Spike Count: 9.0
+Trial 23 Cell 1 Error: 5.0 Cell 2 Error:  -8.0 Cell 3 Error: 2.0 Cell 4 Error: -24.0 Cell 5 Error: -4.0
+Trial 23 Cell 1 Weight: 0.01395946765812935 Cell 2 Weight: 0.016118092426732823 Cell 3 Weight: 0.015926117287636973 Cell 4 Weight: 0.01602181732641838 Cell 5 Weight: 0.016118092426732823
+77723942
+MF_time: 0.578s | MFGR_time: 1.893s | GR_time: 4.716s | GRGO_time: 0.004s | MFGO_time: 0.732s | GO_time: 0.561s | GOGO_time: 1.259s | GOGR_time: 5.214s
+Trial: 24, Time:35.826s
+Trial 24 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 34.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 44.0 Cell 5 Spike Count: 28.0
+Trial 24 Cell 1 Error: 5.0 Cell 2 Error:  -29.0 Cell 3 Error: -5.0 Cell 4 Error: -39.0 Cell 5 Error: -23.0
+Trial 24 Cell 1 Weight: 0.013917714514585594 Cell 2 Weight: 0.01616644670401302 Cell 3 Weight: 0.015973895639499882 Cell 4 Weight: 0.01606988277839763 Cell 5 Weight: 0.01616644670401302
+76942119
+MF_time: 0.574s | MFGR_time: 1.895s | GR_time: 4.710s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.560s | GOGO_time: 1.251s | GOGR_time: 5.215s
+Trial: 25, Time:35.682s
+Trial 25 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 90.0 Cell 3 Spike Count: 23.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 13.0
+Trial 25 Cell 1 Error: 5.0 Cell 2 Error:  -85.0 Cell 3 Error: -18.0 Cell 4 Error: -2.0 Cell 5 Error: -8.0
+Trial 25 Cell 1 Weight: 0.013876086255818142 Cell 2 Weight: 0.016214946044125055 Cell 3 Weight: 0.01602181732641838 Cell 4 Weight: 0.016118092426732823 Cell 5 Weight: 0.016214946044125055
+76017603
+MF_time: 0.573s | MFGR_time: 1.889s | GR_time: 4.704s | GRGO_time: 0.003s | MFGO_time: 0.728s | GO_time: 0.557s | GOGO_time: 1.243s | GOGR_time: 5.198s
+Trial: 26, Time:35.487s
+Trial 26 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 16.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 15.0 Cell 5 Spike Count: 18.0
+Trial 26 Cell 1 Error: 5.0 Cell 2 Error:  -11.0 Cell 3 Error: 5.0 Cell 4 Error: -10.0 Cell 5 Error: -13.0
+Trial 26 Cell 1 Weight: 0.013834582508293265 Cell 2 Weight: 0.016263590882257428 Cell 3 Weight: 0.015973895639499882 Cell 4 Weight: 0.01616644670401302 Cell 5 Weight: 0.016263590882257428
+76074847
+MF_time: 0.580s | MFGR_time: 1.889s | GR_time: 4.690s | GRGO_time: 0.003s | MFGO_time: 0.728s | GO_time: 0.560s | GOGO_time: 1.244s | GOGR_time: 5.195s
+Trial: 27, Time:35.550s
+Trial 27 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 20.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 2.0 Cell 5 Spike Count: 9.0
+Trial 27 Cell 1 Error: 5.0 Cell 2 Error:  -15.0 Cell 3 Error: 0.0 Cell 4 Error: 3.0 Cell 5 Error: -4.0
+Trial 27 Cell 1 Weight: 0.013793202899594483 Cell 2 Weight: 0.016312381654904198 Cell 3 Weight: 0.015973895639499882 Cell 4 Weight: 0.016118092426732823 Cell 5 Weight: 0.016312381654904198
+76431785
+MF_time: 0.583s | MFGR_time: 1.895s | GR_time: 4.680s | GRGO_time: 0.004s | MFGO_time: 0.729s | GO_time: 0.560s | GOGO_time: 1.248s | GOGR_time: 5.220s
+Trial: 28, Time:35.590s
+Trial 28 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 33.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 3.0
+Trial 28 Cell 1 Error: 5.0 Cell 2 Error:  -28.0 Cell 3 Error: -1.0 Cell 4 Error: 5.0 Cell 5 Error: 2.0
+Trial 28 Cell 1 Weight: 0.013751947058419228 Cell 2 Weight: 0.016361318799868907 Cell 3 Weight: 0.01602181732641838 Cell 4 Weight: 0.01606988277839763 Cell 5 Weight: 0.016263590882257428
+76898647
+MF_time: 0.579s | MFGR_time: 1.894s | GR_time: 4.662s | GRGO_time: 0.003s | MFGO_time: 0.733s | GO_time: 0.560s | GOGO_time: 1.254s | GOGR_time: 5.208s
+Trial: 29, Time:35.563s
+Trial 29 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 106.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 14.0
+Trial 29 Cell 1 Error: 5.0 Cell 2 Error:  -101.0 Cell 3 Error: -3.0 Cell 4 Error: 5.0 Cell 5 Error: -9.0
+Trial 29 Cell 1 Weight: 0.013710814614575503 Cell 2 Weight: 0.01641040275626851 Cell 3 Weight: 0.01606988277839763 Cell 4 Weight: 0.01602181732641838 Cell 5 Weight: 0.016312381654904198
+76994410
+MF_time: 0.551s | MFGR_time: 1.851s | GR_time: 4.527s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.563s | GOGO_time: 1.254s | GOGR_time: 4.510s
+Trial: 30, Time:34.606s
+Trial 30 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 123.0 Cell 3 Spike Count: 20.0 Cell 4 Spike Count: 58.0 Cell 5 Spike Count: 8.0
+Trial 30 Cell 1 Error: 5.0 Cell 2 Error:  -118.0 Cell 3 Error: -15.0 Cell 4 Error: -53.0 Cell 5 Error: -3.0
+Trial 30 Cell 1 Weight: 0.01366980519897857 Cell 2 Weight: 0.016459633964537316 Cell 3 Weight: 0.016118092426732823 Cell 4 Weight: 0.01606988277839763 Cell 5 Weight: 0.016361318799868907
+75542760
+MF_time: 0.577s | MFGR_time: 1.893s | GR_time: 4.691s | GRGO_time: 0.004s | MFGO_time: 0.728s | GO_time: 0.558s | GOGO_time: 1.239s | GOGR_time: 5.206s
+Trial: 31, Time:35.389s
+Trial 31 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 164.0 Cell 3 Spike Count: 26.0 Cell 4 Spike Count: 26.0 Cell 5 Spike Count: 21.0
+Trial 31 Cell 1 Error: 5.0 Cell 2 Error:  -159.0 Cell 3 Error: -21.0 Cell 4 Error: -21.0 Cell 5 Error: -16.0
+Trial 31 Cell 1 Weight: 0.01362891844364763 Cell 2 Weight: 0.016509012866430927 Cell 3 Weight: 0.01616644670401302 Cell 4 Weight: 0.016118092426732823 Cell 5 Weight: 0.01641040275626851
+75018141
+MF_time: 0.577s | MFGR_time: 1.889s | GR_time: 4.695s | GRGO_time: 0.004s | MFGO_time: 0.725s | GO_time: 0.556s | GOGO_time: 1.236s | GOGR_time: 5.197s
+Trial: 32, Time:35.362s
+Trial 32 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 329.0 Cell 3 Spike Count: 20.0 Cell 4 Spike Count: 14.0 Cell 5 Spike Count: 44.0
+Trial 32 Cell 1 Error: 5.0 Cell 2 Error:  -324.0 Cell 3 Error: -15.0 Cell 4 Error: -9.0 Cell 5 Error: -39.0
+Trial 32 Cell 1 Weight: 0.013588153981702523 Cell 2 Weight: 0.016558539905030218 Cell 3 Weight: 0.016214946044125055 Cell 4 Weight: 0.01616644670401302 Cell 5 Weight: 0.016459633964537316
+76228747
+MF_time: 0.572s | MFGR_time: 1.880s | GR_time: 4.685s | GRGO_time: 0.003s | MFGO_time: 0.729s | GO_time: 0.556s | GOGO_time: 1.247s | GOGR_time: 5.146s
+Trial: 33, Time:35.463s
+Trial 33 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 207.0 Cell 3 Spike Count: 7.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 20.0
+Trial 33 Cell 1 Error: 5.0 Cell 2 Error:  -202.0 Cell 3 Error: -2.0 Cell 4 Error: 4.0 Cell 5 Error: -15.0
+Trial 33 Cell 1 Weight: 0.013547511447360444 Cell 2 Weight: 0.016608215524745305 Cell 3 Weight: 0.016263590882257428 Cell 4 Weight: 0.016118092426732823 Cell 5 Weight: 0.016509012866430927
+76837023
+MF_time: 0.570s | MFGR_time: 1.898s | GR_time: 4.699s | GRGO_time: 0.003s | MFGO_time: 0.734s | GO_time: 0.558s | GOGO_time: 1.253s | GOGR_time: 5.204s
+Trial: 34, Time:35.657s
+Trial 34 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 58.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 2.0
+Trial 34 Cell 1 Error: 5.0 Cell 2 Error:  -53.0 Cell 3 Error: 5.0 Cell 4 Error: -4.0 Cell 5 Error: 3.0
+Trial 34 Cell 1 Weight: 0.013506990475932647 Cell 2 Weight: 0.01665804017131954 Cell 3 Weight: 0.016214946044125055 Cell 4 Weight: 0.01616644670401302 Cell 5 Weight: 0.016459633964537316
+77805793
+MF_time: 0.569s | MFGR_time: 1.901s | GR_time: 4.695s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.559s | GOGO_time: 1.263s | GOGR_time: 5.226s
+Trial: 35, Time:35.811s
+Trial 35 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 50.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 37.0 Cell 5 Spike Count: 37.0
+Trial 35 Cell 1 Error: 5.0 Cell 2 Error:  -45.0 Cell 3 Error: 5.0 Cell 4 Error: -32.0 Cell 5 Error: -32.0
+Trial 35 Cell 1 Weight: 0.013466590703821186 Cell 2 Weight: 0.0167080142918335 Cell 3 Weight: 0.01616644670401302 Cell 4 Weight: 0.016214946044125055 Cell 5 Weight: 0.016509012866430927
+76618787
+MF_time: 0.582s | MFGR_time: 1.905s | GR_time: 4.752s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.558s | GOGO_time: 1.250s | GOGR_time: 5.608s
+Trial: 36, Time:36.084s
+Trial 36 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 9.0
+Trial 36 Cell 1 Error: 5.0 Cell 2 Error:  -4.0 Cell 3 Error: 0.0 Cell 4 Error: 5.0 Cell 5 Error: -4.0
+Trial 36 Cell 1 Weight: 0.013426311768515642 Cell 2 Weight: 0.016758138334709 Cell 3 Weight: 0.01616644670401302 Cell 4 Weight: 0.01616644670401302 Cell 5 Weight: 0.016558539905030218
+75376217
+MF_time: 0.576s | MFGR_time: 1.903s | GR_time: 4.744s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.562s | GOGO_time: 1.239s | GOGR_time: 5.593s
+Trial: 37, Time:35.845s
+Trial 37 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 20.0 Cell 4 Spike Count: 3.0 Cell 5 Spike Count: 19.0
+Trial 37 Cell 1 Error: 5.0 Cell 2 Error:  -5.0 Cell 3 Error: -15.0 Cell 4 Error: 2.0 Cell 5 Error: -14.0
+Trial 37 Cell 1 Weight: 0.013386153308589874 Cell 2 Weight: 0.016808412749713123 Cell 3 Weight: 0.016214946044125055 Cell 4 Weight: 0.016118092426732823 Cell 5 Weight: 0.016608215524745305
+75764554
+MF_time: 0.576s | MFGR_time: 1.908s | GR_time: 4.731s | GRGO_time: 0.003s | MFGO_time: 0.734s | GO_time: 0.563s | GOGO_time: 1.242s | GOGR_time: 5.491s
+Trial: 38, Time:35.752s
+Trial 38 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 7.0
+Trial 38 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -2.0
+Trial 38 Cell 1 Weight: 0.01334611496369878 Cell 2 Weight: 0.016758138334709 Cell 3 Weight: 0.01616644670401302 Cell 4 Weight: 0.01606988277839763 Cell 5 Weight: 0.01665804017131954
+76564345
+MF_time: 0.582s | MFGR_time: 1.894s | GR_time: 4.734s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.560s | GOGO_time: 1.249s | GOGR_time: 5.612s
+Trial: 39, Time:35.995s
+Trial 39 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 15.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 10.0
+Trial 39 Cell 1 Error: 5.0 Cell 2 Error:  -10.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -5.0
+Trial 39 Cell 1 Weight: 0.013306196374575056 Cell 2 Weight: 0.016808412749713123 Cell 3 Weight: 0.016118092426732823 Cell 4 Weight: 0.01602181732641838 Cell 5 Weight: 0.0167080142918335
+75305597
+MF_time: 0.567s | MFGR_time: 1.899s | GR_time: 4.680s | GRGO_time: 0.003s | MFGO_time: 0.738s | GO_time: 0.561s | GOGO_time: 1.241s | GOGR_time: 5.211s
+Trial: 40, Time:35.298s
+Trial 40 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 40 Cell 1 Error: 5.0 Cell 2 Error:  -4.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 40 Cell 1 Weight: 0.01326639718302598 Cell 2 Weight: 0.016858837987962262 Cell 3 Weight: 0.01606988277839763 Cell 4 Weight: 0.015973895639499882 Cell 5 Weight: 0.01665804017131954
+76501197
+MF_time: 0.568s | MFGR_time: 1.896s | GR_time: 4.683s | GRGO_time: 0.004s | MFGO_time: 0.741s | GO_time: 0.562s | GOGO_time: 1.251s | GOGR_time: 5.230s
+Trial: 41, Time:35.462s
+Trial 41 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 3.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 1.0
+Trial 41 Cell 1 Error: 5.0 Cell 2 Error:  2.0 Cell 3 Error: 2.0 Cell 4 Error: 4.0 Cell 5 Error: 4.0
+Trial 41 Cell 1 Weight: 0.013226717031930192 Cell 2 Weight: 0.016808412749713127 Cell 3 Weight: 0.01602181732641838 Cell 4 Weight: 0.015926117287636973 Cell 5 Weight: 0.01660821552474531
+76985011
+MF_time: 0.545s | MFGR_time: 1.868s | GR_time: 4.541s | GRGO_time: 0.004s | MFGO_time: 0.747s | GO_time: 0.566s | GOGO_time: 1.255s | GOGR_time: 4.537s
+Trial: 42, Time:34.611s
+Trial 42 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 42 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 42 Cell 1 Weight: 0.01318715556523449 Cell 2 Weight: 0.016758138334709002 Cell 3 Weight: 0.015973895639499882 Cell 4 Weight: 0.015878481842110645 Cell 5 Weight: 0.01655853990503022
+76609201
+MF_time: 0.566s | MFGR_time: 1.897s | GR_time: 4.667s | GRGO_time: 0.004s | MFGO_time: 0.740s | GO_time: 0.565s | GOGO_time: 1.249s | GOGR_time: 5.215s
+Trial: 43, Time:35.442s
+Trial 43 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 11.0 Cell 5 Spike Count: 10.0
+Trial 43 Cell 1 Error: 5.0 Cell 2 Error:  -4.0 Cell 3 Error: -1.0 Cell 4 Error: -6.0 Cell 5 Error: -5.0
+Trial 43 Cell 1 Weight: 0.01314771242795064 Cell 2 Weight: 0.016808412749713127 Cell 3 Weight: 0.01602181732641838 Cell 4 Weight: 0.015926117287636977 Cell 5 Weight: 0.01660821552474531
+76742224
+MF_time: 0.563s | MFGR_time: 1.895s | GR_time: 4.667s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.566s | GOGO_time: 1.254s | GOGR_time: 5.215s
+Trial: 44, Time:35.474s
+Trial 44 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 44 Cell 1 Error: 5.0 Cell 2 Error:  1.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 44 Cell 1 Weight: 0.013108387266152186 Cell 2 Weight: 0.016758138334709002 Cell 3 Weight: 0.015973895639499882 Cell 4 Weight: 0.01587848184211065 Cell 5 Weight: 0.01655853990503022
+73992327
+MF_time: 0.563s | MFGR_time: 1.886s | GR_time: 4.673s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.563s | GOGO_time: 1.224s | GOGR_time: 5.198s
+Trial: 45, Time:35.016s
+Trial 45 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 29.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 3.0
+Trial 45 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -24.0 Cell 4 Error: 5.0 Cell 5 Error: 2.0
+Trial 45 Cell 1 Weight: 0.013069179726971275 Cell 2 Weight: 0.016708014291833505 Cell 3 Weight: 0.01602181732641838 Cell 4 Weight: 0.0158309888754842 Cell 5 Weight: 0.01650901286643093
+73695416
+MF_time: 0.560s | MFGR_time: 1.879s | GR_time: 4.695s | GRGO_time: 0.003s | MFGO_time: 0.722s | GO_time: 0.558s | GOGO_time: 1.224s | GOGR_time: 5.190s
+Trial: 46, Time:35.022s
+Trial 46 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 74.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 27.0 Cell 5 Spike Count: 15.0
+Trial 46 Cell 1 Error: 5.0 Cell 2 Error:  -69.0 Cell 3 Error: -5.0 Cell 4 Error: -22.0 Cell 5 Error: -10.0
+Trial 46 Cell 1 Weight: 0.01303008945859549 Cell 2 Weight: 0.016758138334709006 Cell 3 Weight: 0.01606988277839763 Cell 4 Weight: 0.015878481842110652 Cell 5 Weight: 0.01655853990503022
+73989726
+MF_time: 0.563s | MFGR_time: 1.881s | GR_time: 4.694s | GRGO_time: 0.004s | MFGO_time: 0.722s | GO_time: 0.559s | GOGO_time: 1.226s | GOGR_time: 5.189s
+Trial: 47, Time:35.120s
+Trial 47 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 100.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 5.0
+Trial 47 Cell 1 Error: 5.0 Cell 2 Error:  -95.0 Cell 3 Error: -6.0 Cell 4 Error: -4.0 Cell 5 Error: 0.0
+Trial 47 Cell 1 Weight: 0.012991116110264697 Cell 2 Weight: 0.01680841274971313 Cell 3 Weight: 0.016118092426732823 Cell 4 Weight: 0.015926117287636984 Cell 5 Weight: 0.01655853990503022
+72336671
+MF_time: 0.566s | MFGR_time: 1.874s | GR_time: 4.695s | GRGO_time: 0.003s | MFGO_time: 0.716s | GO_time: 0.554s | GOGO_time: 1.207s | GOGR_time: 5.186s
+Trial: 48, Time:34.840s
+Trial 48 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 100.0 Cell 3 Spike Count: 20.0 Cell 4 Spike Count: 33.0 Cell 5 Spike Count: 8.0
+Trial 48 Cell 1 Error: 5.0 Cell 2 Error:  -95.0 Cell 3 Error: -15.0 Cell 4 Error: -28.0 Cell 5 Error: -3.0
+Trial 48 Cell 1 Weight: 0.012952259332267894 Cell 2 Weight: 0.01685883798796227 Cell 3 Weight: 0.01616644670401302 Cell 4 Weight: 0.015973895639499892 Cell 5 Weight: 0.01660821552474531
+72385523
+MF_time: 0.540s | MFGR_time: 1.849s | GR_time: 4.549s | GRGO_time: 0.003s | MFGO_time: 0.722s | GO_time: 0.558s | GOGO_time: 1.209s | GOGR_time: 4.486s
+Trial: 49, Time:33.875s
+Trial 49 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 85.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 13.0 Cell 5 Spike Count: 0.0
+Trial 49 Cell 1 Error: 5.0 Cell 2 Error:  -80.0 Cell 3 Error: 1.0 Cell 4 Error: -8.0 Cell 5 Error: 5.0
+Trial 49 Cell 1 Weight: 0.012913518775940077 Cell 2 Weight: 0.016909414501926155 Cell 3 Weight: 0.016118092426732823 Cell 4 Weight: 0.01602181732641839 Cell 5 Weight: 0.01655853990503022
+73904655
+MF_time: 0.565s | MFGR_time: 1.882s | GR_time: 4.677s | GRGO_time: 0.003s | MFGO_time: 0.728s | GO_time: 0.558s | GOGO_time: 1.226s | GOGR_time: 5.187s
+Trial: 50, Time:35.005s
+Trial 50 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 65.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 19.0 Cell 5 Spike Count: 1.0
+Trial 50 Cell 1 Error: 5.0 Cell 2 Error:  -60.0 Cell 3 Error: 5.0 Cell 4 Error: -14.0 Cell 5 Error: 4.0
+Trial 50 Cell 1 Weight: 0.012874894093659101 Cell 2 Weight: 0.016960142745431932 Cell 3 Weight: 0.01606988277839763 Cell 4 Weight: 0.016069882778397642 Cell 5 Weight: 0.01650901286643093
+72358172
+MF_time: 0.565s | MFGR_time: 1.887s | GR_time: 4.665s | GRGO_time: 0.003s | MFGO_time: 0.728s | GO_time: 0.558s | GOGO_time: 1.210s | GOGR_time: 5.191s
+Trial: 51, Time:34.760s
+Trial 51 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 62.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 0.0
+Trial 51 Cell 1 Error: 5.0 Cell 2 Error:  -57.0 Cell 3 Error: 1.0 Cell 4 Error: -1.0 Cell 5 Error: 5.0
+Trial 51 Cell 1 Weight: 0.012836384938842574 Cell 2 Weight: 0.017011023173668226 Cell 3 Weight: 0.01602181732641838 Cell 4 Weight: 0.016118092426732834 Cell 5 Weight: 0.01645963396453732
+74331152
+MF_time: 0.562s | MFGR_time: 1.886s | GR_time: 4.651s | GRGO_time: 0.003s | MFGO_time: 0.734s | GO_time: 0.558s | GOGO_time: 1.230s | GOGR_time: 5.201s
+Trial: 52, Time:35.072s
+Trial 52 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 96.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 12.0 Cell 5 Spike Count: 9.0
+Trial 52 Cell 1 Error: 5.0 Cell 2 Error:  -91.0 Cell 3 Error: -3.0 Cell 4 Error: -7.0 Cell 5 Error: -4.0
+Trial 52 Cell 1 Weight: 0.012797990965944741 Cell 2 Weight: 0.017062056243189228 Cell 3 Weight: 0.01606988277839763 Cell 4 Weight: 0.01616644670401303 Cell 5 Weight: 0.01650901286643093
+74993745
+MF_time: 0.571s | MFGR_time: 1.895s | GR_time: 4.677s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.559s | GOGO_time: 1.236s | GOGR_time: 5.211s
+Trial: 53, Time:35.115s
+Trial 53 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 76.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 17.0 Cell 5 Spike Count: 0.0
+Trial 53 Cell 1 Error: 5.0 Cell 2 Error:  -71.0 Cell 3 Error: 5.0 Cell 4 Error: -12.0 Cell 5 Error: 5.0
+Trial 53 Cell 1 Weight: 0.012759711830453383 Cell 2 Weight: 0.017113242411918795 Cell 3 Weight: 0.01602181732641838 Cell 4 Weight: 0.016214946044125066 Cell 5 Weight: 0.01645963396453732
+74509856
+MF_time: 0.562s | MFGR_time: 1.892s | GR_time: 4.661s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.546s | GOGO_time: 1.227s | GOGR_time: 5.201s
+Trial: 54, Time:34.941s
+Trial 54 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 104.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 8.0
+Trial 54 Cell 1 Error: 5.0 Cell 2 Error:  -99.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -3.0
+Trial 54 Cell 1 Weight: 0.012721547188886725 Cell 2 Weight: 0.01716458213915455 Cell 3 Weight: 0.015973895639499882 Cell 4 Weight: 0.01616644670401303 Cell 5 Weight: 0.01650901286643093
+76175102
+MF_time: 0.575s | MFGR_time: 1.952s | GR_time: 4.705s | GRGO_time: 0.003s | MFGO_time: 0.741s | GO_time: 0.545s | GOGO_time: 1.246s | GOGR_time: 5.628s
+Trial: 55, Time:35.772s
+Trial 55 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 162.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 0.0
+Trial 55 Cell 1 Error: 5.0 Cell 2 Error:  -157.0 Cell 3 Error: 5.0 Cell 4 Error: 0.0 Cell 5 Error: 5.0
+Trial 55 Cell 1 Weight: 0.012683496698790356 Cell 2 Weight: 0.017216075885572012 Cell 3 Weight: 0.015926117287636973 Cell 4 Weight: 0.01616644670401303 Cell 5 Weight: 0.01645963396453732
+75263667
+MF_time: 0.563s | MFGR_time: 1.895s | GR_time: 4.655s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.538s | GOGO_time: 1.236s | GOGR_time: 5.579s
+Trial: 56, Time:35.493s
+Trial 56 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 100.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 13.0 Cell 5 Spike Count: 4.0
+Trial 56 Cell 1 Error: 5.0 Cell 2 Error:  -95.0 Cell 3 Error: 3.0 Cell 4 Error: -8.0 Cell 5 Error: 1.0
+Trial 56 Cell 1 Weight: 0.012645560018734155 Cell 2 Weight: 0.017267724113228727 Cell 3 Weight: 0.015878481842110645 Cell 4 Weight: 0.016214946044125066 Cell 5 Weight: 0.016410402756268518
+76195310
+MF_time: 0.565s | MFGR_time: 1.897s | GR_time: 4.629s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.538s | GOGO_time: 1.243s | GOGR_time: 5.593s
+Trial: 57, Time:35.626s
+Trial 57 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 106.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 14.0 Cell 5 Spike Count: 8.0
+Trial 57 Cell 1 Error: 5.0 Cell 2 Error:  -101.0 Cell 3 Error: 4.0 Cell 4 Error: -9.0 Cell 5 Error: -3.0
+Trial 57 Cell 1 Weight: 0.01260773680830923 Cell 2 Weight: 0.01731952728556841 Cell 3 Weight: 0.015830988875484196 Cell 4 Weight: 0.01626359088225744 Cell 5 Weight: 0.016459633964537323
+75649369
+MF_time: 0.549s | MFGR_time: 1.897s | GR_time: 4.583s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.542s | GOGO_time: 1.237s | GOGR_time: 5.216s
+Trial: 58, Time:35.040s
+Trial 58 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 78.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 21.0 Cell 5 Spike Count: 9.0
+Trial 58 Cell 1 Error: 5.0 Cell 2 Error:  -73.0 Cell 3 Error: 5.0 Cell 4 Error: -16.0 Cell 5 Error: -4.0
+Trial 58 Cell 1 Weight: 0.012570026728124857 Cell 2 Weight: 0.017371485867425113 Cell 3 Weight: 0.0157836379615994 Cell 4 Weight: 0.016312381654904208 Cell 5 Weight: 0.016509012866430934
+74620762
+MF_time: 0.562s | MFGR_time: 1.891s | GR_time: 4.629s | GRGO_time: 0.003s | MFGO_time: 0.732s | GO_time: 0.538s | GOGO_time: 1.230s | GOGR_time: 5.573s
+Trial: 59, Time:35.333s
+Trial 59 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 109.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 16.0 Cell 5 Spike Count: 0.0
+Trial 59 Cell 1 Error: 5.0 Cell 2 Error:  -104.0 Cell 3 Error: 5.0 Cell 4 Error: -11.0 Cell 5 Error: 5.0
+Trial 59 Cell 1 Weight: 0.012532429439805443 Cell 2 Weight: 0.017423600325027388 Cell 3 Weight: 0.015736428675572685 Cell 4 Weight: 0.016361318799868917 Cell 5 Weight: 0.016459633964537323
+74703584
+MF_time: 0.578s | MFGR_time: 1.897s | GR_time: 4.727s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.550s | GOGO_time: 1.231s | GOGR_time: 5.557s
+Trial: 60, Time:35.472s
+Trial 60 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 95.0 Cell 3 Spike Count: 14.0 Cell 4 Spike Count: 130.0 Cell 5 Spike Count: 52.0
+Trial 60 Cell 1 Error: 5.0 Cell 2 Error:  -90.0 Cell 3 Error: -9.0 Cell 4 Error: -125.0 Cell 5 Error: -47.0
+Trial 60 Cell 1 Weight: 0.012494944605987483 Cell 2 Weight: 0.01747587112600247 Cell 3 Weight: 0.0157836379615994 Cell 4 Weight: 0.01641040275626852 Cell 5 Weight: 0.016509012866430934
+74799910
+MF_time: 0.575s | MFGR_time: 1.898s | GR_time: 4.727s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.549s | GOGO_time: 1.231s | GOGR_time: 5.558s
+Trial: 61, Time:35.474s
+Trial 61 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 60.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 130.0 Cell 5 Spike Count: 38.0
+Trial 61 Cell 1 Error: 5.0 Cell 2 Error:  -55.0 Cell 3 Error: 5.0 Cell 4 Error: -125.0 Cell 5 Error: -33.0
+Trial 61 Cell 1 Weight: 0.012457571890316535 Cell 2 Weight: 0.017528298739380475 Cell 3 Weight: 0.015736428675572685 Cell 4 Weight: 0.016459633964537326 Cell 5 Weight: 0.016558539905030225
+74843784
+MF_time: 0.577s | MFGR_time: 1.894s | GR_time: 4.693s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.551s | GOGO_time: 1.232s | GOGR_time: 5.574s
+Trial: 62, Time:35.480s
+Trial 62 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 78.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 195.0 Cell 5 Spike Count: 54.0
+Trial 62 Cell 1 Error: 5.0 Cell 2 Error:  -73.0 Cell 3 Error: 0.0 Cell 4 Error: -190.0 Cell 5 Error: -49.0
+Trial 62 Cell 1 Weight: 0.012420310957444204 Cell 2 Weight: 0.017580883635598614 Cell 3 Weight: 0.015736428675572685 Cell 4 Weight: 0.016509012866430937 Cell 5 Weight: 0.016608215524745312
+75774433
+MF_time: 0.564s | MFGR_time: 1.901s | GR_time: 4.619s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.552s | GOGO_time: 1.241s | GOGR_time: 5.215s
+Trial: 63, Time:35.135s
+Trial 63 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 43.0 Cell 3 Spike Count: 23.0 Cell 4 Spike Count: 542.0 Cell 5 Spike Count: 168.0
+Trial 63 Cell 1 Error: 5.0 Cell 2 Error:  -38.0 Cell 3 Error: -18.0 Cell 4 Error: -537.0 Cell 5 Error: -163.0
+Trial 63 Cell 1 Weight: 0.01238316147302513 Cell 2 Weight: 0.01763362628650541 Cell 3 Weight: 0.0157836379615994 Cell 4 Weight: 0.01655853990503023 Cell 5 Weight: 0.016658040171319548
+75333969
+MF_time: 0.558s | MFGR_time: 1.937s | GR_time: 4.657s | GRGO_time: 0.005s | MFGO_time: 0.742s | GO_time: 0.556s | GOGO_time: 1.254s | GOGR_time: 5.316s
+Trial: 64, Time:35.680s
+Trial 64 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 12.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 157.0 Cell 5 Spike Count: 174.0
+Trial 64 Cell 1 Error: 5.0 Cell 2 Error:  -7.0 Cell 3 Error: 5.0 Cell 4 Error: -152.0 Cell 5 Error: -169.0
+Trial 64 Cell 1 Weight: 0.01234612310371399 Cell 2 Weight: 0.017686527165364924 Cell 3 Weight: 0.015736428675572685 Cell 4 Weight: 0.016608215524745316 Cell 5 Weight: 0.016708014291833505
+74698899
+MF_time: 0.522s | MFGR_time: 1.879s | GR_time: 4.443s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.543s | GOGO_time: 1.238s | GOGR_time: 4.547s
+Trial: 65, Time:34.186s
+Trial 65 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 13.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 69.0 Cell 5 Spike Count: 97.0
+Trial 65 Cell 1 Error: 5.0 Cell 2 Error:  -8.0 Cell 3 Error: 0.0 Cell 4 Error: -64.0 Cell 5 Error: -92.0
+Trial 65 Cell 1 Weight: 0.012309195517162504 Cell 2 Weight: 0.017739586746861016 Cell 3 Weight: 0.015736428675572685 Cell 4 Weight: 0.01665804017131955 Cell 5 Weight: 0.016758138334709006
+73526538
+MF_time: 0.547s | MFGR_time: 1.914s | GR_time: 4.579s | GRGO_time: 0.004s | MFGO_time: 0.731s | GO_time: 0.546s | GOGO_time: 1.230s | GOGR_time: 5.252s
+Trial: 66, Time:35.079s
+Trial 66 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 76.0 Cell 5 Spike Count: 40.0
+Trial 66 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -71.0 Cell 5 Error: -35.0
+Trial 66 Cell 1 Weight: 0.012272378382016457 Cell 2 Weight: 0.017686527165364924 Cell 3 Weight: 0.015689360593791314 Cell 4 Weight: 0.01670801429183351 Cell 5 Weight: 0.01680841274971313
+75577115
+MF_time: 0.570s | MFGR_time: 1.923s | GR_time: 4.655s | GRGO_time: 0.003s | MFGO_time: 0.740s | GO_time: 0.555s | GOGO_time: 1.252s | GOGR_time: 5.299s
+Trial: 67, Time:35.581s
+Trial 67 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 51.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 104.0 Cell 5 Spike Count: 46.0
+Trial 67 Cell 1 Error: 5.0 Cell 2 Error:  -46.0 Cell 3 Error: 5.0 Cell 4 Error: -99.0 Cell 5 Error: -41.0
+Trial 67 Cell 1 Weight: 0.012235671367912721 Cell 2 Weight: 0.017739586746861016 Cell 3 Weight: 0.01564243329390959 Cell 4 Weight: 0.01675813833470901 Cell 5 Weight: 0.01685883798796227
+74710513
+MF_time: 0.553s | MFGR_time: 1.902s | GR_time: 4.593s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.550s | GOGO_time: 1.239s | GOGR_time: 5.225s
+Trial: 68, Time:35.063s
+Trial 68 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 31.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 109.0 Cell 5 Spike Count: 46.0
+Trial 68 Cell 1 Error: 5.0 Cell 2 Error:  -26.0 Cell 3 Error: -5.0 Cell 4 Error: -104.0 Cell 5 Error: -41.0
+Trial 68 Cell 1 Weight: 0.012199074145476293 Cell 2 Weight: 0.017792805507101595 Cell 3 Weight: 0.015689360593791314 Cell 4 Weight: 0.016808412749713134 Cell 5 Weight: 0.016909414501926155
+75046347
+MF_time: 0.558s | MFGR_time: 1.899s | GR_time: 4.589s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.554s | GOGO_time: 1.242s | GOGR_time: 5.217s
+Trial: 69, Time:35.092s
+Trial 69 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 24.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 20.0 Cell 5 Spike Count: 23.0
+Trial 69 Cell 1 Error: 5.0 Cell 2 Error:  -19.0 Cell 3 Error: 0.0 Cell 4 Error: -15.0 Cell 5 Error: -18.0
+Trial 69 Cell 1 Weight: 0.012162586386317342 Cell 2 Weight: 0.0178461839236229 Cell 3 Weight: 0.015689360593791314 Cell 4 Weight: 0.016858837987962273 Cell 5 Weight: 0.016960142745431932
+75787440
+MF_time: 0.575s | MFGR_time: 1.906s | GR_time: 4.640s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.550s | GOGO_time: 1.248s | GOGR_time: 5.599s
+Trial: 70, Time:35.659s
+Trial 70 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 15.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 13.0 Cell 5 Spike Count: 27.0
+Trial 70 Cell 1 Error: 5.0 Cell 2 Error:  -10.0 Cell 3 Error: 5.0 Cell 4 Error: -8.0 Cell 5 Error: -22.0
+Trial 70 Cell 1 Weight: 0.012126207763028259 Cell 2 Weight: 0.017899722475393766 Cell 3 Weight: 0.01564243329390959 Cell 4 Weight: 0.016909414501926158 Cell 5 Weight: 0.017011023173668226
+75717094
+MF_time: 0.573s | MFGR_time: 1.915s | GR_time: 4.629s | GRGO_time: 0.003s | MFGO_time: 0.740s | GO_time: 0.551s | GOGO_time: 1.248s | GOGR_time: 5.620s
+Trial: 71, Time:35.734s
+Trial 71 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 11.0 Cell 3 Spike Count: 7.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 74.0
+Trial 71 Cell 1 Error: 5.0 Cell 2 Error:  -6.0 Cell 3 Error: -2.0 Cell 4 Error: -2.0 Cell 5 Error: -69.0
+Trial 71 Cell 1 Weight: 0.012089937949180719 Cell 2 Weight: 0.017953421642819944 Cell 3 Weight: 0.015689360593791314 Cell 4 Weight: 0.016960142745431936 Cell 5 Weight: 0.017062056243189228
+75616366
+MF_time: 0.568s | MFGR_time: 1.916s | GR_time: 4.647s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.545s | GOGO_time: 1.246s | GOGR_time: 5.601s
+Trial: 72, Time:35.633s
+Trial 72 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 30.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 35.0 Cell 5 Spike Count: 92.0
+Trial 72 Cell 1 Error: 5.0 Cell 2 Error:  -25.0 Cell 3 Error: 3.0 Cell 4 Error: -30.0 Cell 5 Error: -87.0
+Trial 72 Cell 1 Weight: 0.012053776619322751 Cell 2 Weight: 0.0180072819077484 Cell 3 Weight: 0.01564243329390959 Cell 4 Weight: 0.01701102317366823 Cell 5 Weight: 0.017113242411918795
+77242456
+MF_time: 0.550s | MFGR_time: 1.927s | GR_time: 4.589s | GRGO_time: 0.004s | MFGO_time: 0.742s | GO_time: 0.538s | GOGO_time: 1.262s | GOGR_time: 5.646s
+Trial: 73, Time:35.908s
+Trial 73 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 48.0 Cell 3 Spike Count: 13.0 Cell 4 Spike Count: 43.0 Cell 5 Spike Count: 93.0
+Trial 73 Cell 1 Error: 5.0 Cell 2 Error:  -43.0 Cell 3 Error: -8.0 Cell 4 Error: -38.0 Cell 5 Error: -88.0
+Trial 73 Cell 1 Weight: 0.012017723448975826 Cell 2 Weight: 0.018061303753471643 Cell 3 Weight: 0.015689360593791314 Cell 4 Weight: 0.01706205624318923 Cell 5 Weight: 0.01716458213915455
+74947763
+MF_time: 0.579s | MFGR_time: 1.930s | GR_time: 4.704s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.552s | GOGO_time: 1.238s | GOGR_time: 5.535s
+Trial: 74, Time:35.652s
+Trial 74 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 51.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 15.0 Cell 5 Spike Count: 76.0
+Trial 74 Cell 1 Error: 5.0 Cell 2 Error:  -46.0 Cell 3 Error: 5.0 Cell 4 Error: -10.0 Cell 5 Error: -71.0
+Trial 74 Cell 1 Weight: 0.011981778114631933 Cell 2 Weight: 0.018115487664732057 Cell 3 Weight: 0.01564243329390959 Cell 4 Weight: 0.0171132424119188 Cell 5 Weight: 0.017216075885572012
+74693987
+MF_time: 0.580s | MFGR_time: 1.916s | GR_time: 4.706s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.551s | GOGO_time: 1.231s | GOGR_time: 5.462s
+Trial: 75, Time:35.423s
+Trial 75 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 62.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 29.0 Cell 5 Spike Count: 76.0
+Trial 75 Cell 1 Error: 5.0 Cell 2 Error:  -57.0 Cell 3 Error: 3.0 Cell 4 Error: -24.0 Cell 5 Error: -71.0
+Trial 75 Cell 1 Weight: 0.011945940293750682 Cell 2 Weight: 0.018169834127726252 Cell 3 Weight: 0.015595646354845056 Cell 4 Weight: 0.017164582139154554 Cell 5 Weight: 0.017267724113228727
+73164238
+MF_time: 0.543s | MFGR_time: 1.888s | GR_time: 4.626s | GRGO_time: 0.003s | MFGO_time: 0.728s | GO_time: 0.566s | GOGO_time: 1.238s | GOGR_time: 4.530s
+Trial: 76, Time:34.452s
+Trial 76 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 20.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 181.0 Cell 5 Spike Count: 50.0
+Trial 76 Cell 1 Error: 5.0 Cell 2 Error:  -15.0 Cell 3 Error: 5.0 Cell 4 Error: -176.0 Cell 5 Error: -45.0
+Trial 76 Cell 1 Weight: 0.011910209664756415 Cell 2 Weight: 0.01822434363010943 Cell 3 Weight: 0.015548999356774734 Cell 4 Weight: 0.017216075885572016 Cell 5 Weight: 0.01731952728556841
+73554866
+MF_time: 0.574s | MFGR_time: 1.902s | GR_time: 4.746s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.566s | GOGO_time: 1.240s | GOGR_time: 5.204s
+Trial: 77, Time:35.261s
+Trial 77 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 27.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 194.0 Cell 5 Spike Count: 98.0
+Trial 77 Cell 1 Error: 5.0 Cell 2 Error:  -22.0 Cell 3 Error: 1.0 Cell 4 Error: -189.0 Cell 5 Error: -93.0
+Trial 77 Cell 1 Weight: 0.01187458590703531 Cell 2 Weight: 0.018279016660999757 Cell 3 Weight: 0.015502491881131342 Cell 4 Weight: 0.01726772411322873 Cell 5 Weight: 0.017371485867425113
+73223864
+MF_time: 0.571s | MFGR_time: 1.906s | GR_time: 4.751s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.567s | GOGO_time: 1.234s | GOGR_time: 5.203s
+Trial: 78, Time:35.159s
+Trial 78 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 230.0 Cell 5 Spike Count: 143.0
+Trial 78 Cell 1 Error: 5.0 Cell 2 Error:  -5.0 Cell 3 Error: 2.0 Cell 4 Error: -225.0 Cell 5 Error: -138.0
+Trial 78 Cell 1 Weight: 0.011839068700932515 Cell 2 Weight: 0.018333853710982756 Cell 3 Weight: 0.015456123510599546 Cell 4 Weight: 0.017319527285568414 Cell 5 Weight: 0.017423600325027388
+74494351
+MF_time: 0.564s | MFGR_time: 1.916s | GR_time: 4.706s | GRGO_time: 0.003s | MFGO_time: 0.743s | GO_time: 0.561s | GOGO_time: 1.236s | GOGR_time: 5.211s
+Trial: 79, Time:35.199s
+Trial 79 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 195.0 Cell 5 Spike Count: 139.0
+Trial 79 Cell 1 Error: 5.0 Cell 2 Error:  -5.0 Cell 3 Error: 5.0 Cell 4 Error: -190.0 Cell 5 Error: -134.0
+Trial 79 Cell 1 Weight: 0.01180365772774927 Cell 2 Weight: 0.0183888552721157 Cell 3 Weight: 0.015409893829112212 Cell 4 Weight: 0.017371485867425117 Cell 5 Weight: 0.01747587112600247
+73088480
+MF_time: 0.573s | MFGR_time: 1.909s | GR_time: 4.719s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.557s | GOGO_time: 1.227s | GOGR_time: 5.539s
+Trial: 80, Time:35.352s
+Trial 80 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 7.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 189.0 Cell 5 Spike Count: 27.0
+Trial 80 Cell 1 Error: 5.0 Cell 2 Error:  -2.0 Cell 3 Error: 1.0 Cell 4 Error: -184.0 Cell 5 Error: -22.0
+Trial 80 Cell 1 Weight: 0.011768352669740051 Cell 2 Weight: 0.018444021837932045 Cell 3 Weight: 0.015363802421846675 Cell 4 Weight: 0.01742360032502739 Cell 5 Weight: 0.017528298739380475
+74553214
+MF_time: 0.570s | MFGR_time: 1.910s | GR_time: 4.683s | GRGO_time: 0.003s | MFGO_time: 0.744s | GO_time: 0.556s | GOGO_time: 1.239s | GOGR_time: 5.578s
+Trial: 81, Time:35.593s
+Trial 81 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 20.0 Cell 3 Spike Count: 22.0 Cell 4 Spike Count: 213.0 Cell 5 Spike Count: 12.0
+Trial 81 Cell 1 Error: 5.0 Cell 2 Error:  -15.0 Cell 3 Error: -17.0 Cell 4 Error: -208.0 Cell 5 Error: -7.0
+Trial 81 Cell 1 Weight: 0.011733153210109723 Cell 2 Weight: 0.01849935390344584 Cell 3 Weight: 0.015409893829112214 Cell 4 Weight: 0.017475871126002473 Cell 5 Weight: 0.017580883635598614
+73606811
+MF_time: 0.549s | MFGR_time: 1.909s | GR_time: 4.548s | GRGO_time: 0.003s | MFGO_time: 0.741s | GO_time: 0.551s | GOGO_time: 1.224s | GOGR_time: 5.203s
+Trial: 82, Time:34.784s
+Trial 82 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 23.0 Cell 3 Spike Count: 28.0 Cell 4 Spike Count: 123.0 Cell 5 Spike Count: 39.0
+Trial 82 Cell 1 Error: 5.0 Cell 2 Error:  -18.0 Cell 3 Error: -23.0 Cell 4 Error: -118.0 Cell 5 Error: -34.0
+Trial 82 Cell 1 Weight: 0.011698059033010692 Cell 2 Weight: 0.018554851965156174 Cell 3 Weight: 0.01545612351059955 Cell 4 Weight: 0.017528298739380478 Cell 5 Weight: 0.01763362628650541
+74820974
+MF_time: 0.532s | MFGR_time: 1.895s | GR_time: 4.457s | GRGO_time: 0.003s | MFGO_time: 0.745s | GO_time: 0.553s | GOGO_time: 1.236s | GOGR_time: 4.699s
+Trial: 83, Time:34.264s
+Trial 83 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 69.0 Cell 3 Spike Count: 112.0 Cell 4 Spike Count: 122.0 Cell 5 Spike Count: 25.0
+Trial 83 Cell 1 Error: 5.0 Cell 2 Error:  -64.0 Cell 3 Error: -107.0 Cell 4 Error: -117.0 Cell 5 Error: -20.0
+Trial 83 Cell 1 Weight: 0.011663069823540073 Cell 2 Weight: 0.01861051652105164 Cell 3 Weight: 0.015502491881131347 Cell 4 Weight: 0.017580883635598617 Cell 5 Weight: 0.017686527165364924
+73003755
+MF_time: 0.544s | MFGR_time: 1.899s | GR_time: 4.530s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.549s | GOGO_time: 1.217s | GOGR_time: 5.137s
+Trial: 84, Time:34.588s
+Trial 84 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 77.0 Cell 3 Spike Count: 87.0 Cell 4 Spike Count: 49.0 Cell 5 Spike Count: 0.0
+Trial 84 Cell 1 Error: 5.0 Cell 2 Error:  -72.0 Cell 3 Error: -82.0 Cell 4 Error: -44.0 Cell 5 Error: 5.0
+Trial 84 Cell 1 Weight: 0.011628185267736863 Cell 2 Weight: 0.01866634807061479 Cell 3 Weight: 0.015548999356774739 Cell 4 Weight: 0.017633626286505413 Cell 5 Weight: 0.01763362628650541
+73436681
+MF_time: 0.554s | MFGR_time: 1.910s | GR_time: 4.598s | GRGO_time: 0.003s | MFGO_time: 0.735s | GO_time: 0.546s | GOGO_time: 1.220s | GOGR_time: 5.200s
+Trial: 85, Time:34.803s
+Trial 85 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 56.0 Cell 3 Spike Count: 60.0 Cell 4 Spike Count: 40.0 Cell 5 Spike Count: 0.0
+Trial 85 Cell 1 Error: 5.0 Cell 2 Error:  -51.0 Cell 3 Error: -55.0 Cell 4 Error: -35.0 Cell 5 Error: 5.0
+Trial 85 Cell 1 Weight: 0.011593405052579128 Cell 2 Weight: 0.018722347114826635 Cell 3 Weight: 0.01559564635484506 Cell 4 Weight: 0.017686527165364927 Cell 5 Weight: 0.017580883635598617
+73254977
+MF_time: 0.533s | MFGR_time: 1.878s | GR_time: 4.505s | GRGO_time: 0.004s | MFGO_time: 0.738s | GO_time: 0.553s | GOGO_time: 1.219s | GOGR_time: 4.506s
+Trial: 86, Time:33.921s
+Trial 86 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 111.0 Cell 3 Spike Count: 15.0 Cell 4 Spike Count: 60.0 Cell 5 Spike Count: 0.0
+Trial 86 Cell 1 Error: 5.0 Cell 2 Error:  -106.0 Cell 3 Error: -10.0 Cell 4 Error: -55.0 Cell 5 Error: 5.0
+Trial 86 Cell 1 Weight: 0.011558728865981185 Cell 2 Weight: 0.018778514156171114 Cell 3 Weight: 0.015642433293909595 Cell 4 Weight: 0.01773958674686102 Cell 5 Weight: 0.017528298739380478
+73254350
+MF_time: 0.556s | MFGR_time: 1.913s | GR_time: 4.639s | GRGO_time: 0.003s | MFGO_time: 0.731s | GO_time: 0.548s | GOGO_time: 1.219s | GOGR_time: 5.191s
+Trial: 87, Time:34.842s
+Trial 87 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 127.0 Cell 3 Spike Count: 73.0 Cell 4 Spike Count: 40.0 Cell 5 Spike Count: 0.0
+Trial 87 Cell 1 Error: 5.0 Cell 2 Error:  -122.0 Cell 3 Error: -68.0 Cell 4 Error: -35.0 Cell 5 Error: 5.0
+Trial 87 Cell 1 Weight: 0.011524156396790814 Cell 2 Weight: 0.018834849698639626 Cell 3 Weight: 0.01568936059379132 Cell 4 Weight: 0.0177928055071016 Cell 5 Weight: 0.017475871126002473
+74467194
+MF_time: 0.572s | MFGR_time: 1.957s | GR_time: 4.695s | GRGO_time: 0.004s | MFGO_time: 0.734s | GO_time: 0.548s | GOGO_time: 1.231s | GOGR_time: 5.581s
+Trial: 88, Time:35.558s
+Trial 88 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 136.0 Cell 3 Spike Count: 77.0 Cell 4 Spike Count: 59.0 Cell 5 Spike Count: 11.0
+Trial 88 Cell 1 Error: 5.0 Cell 2 Error:  -131.0 Cell 3 Error: -72.0 Cell 4 Error: -54.0 Cell 5 Error: -6.0
+Trial 88 Cell 1 Weight: 0.011489687334786457 Cell 2 Weight: 0.018891354247735543 Cell 3 Weight: 0.015736428675572692 Cell 4 Weight: 0.017846183923622902 Cell 5 Weight: 0.017528298739380478
+73478234
+MF_time: 0.569s | MFGR_time: 1.967s | GR_time: 4.698s | GRGO_time: 0.004s | MFGO_time: 0.730s | GO_time: 0.544s | GOGO_time: 1.221s | GOGR_time: 5.544s
+Trial: 89, Time:35.371s
+Trial 89 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 176.0 Cell 3 Spike Count: 70.0 Cell 4 Spike Count: 38.0 Cell 5 Spike Count: 16.0
+Trial 89 Cell 1 Error: 5.0 Cell 2 Error:  -171.0 Cell 3 Error: -65.0 Cell 4 Error: -33.0 Cell 5 Error: -11.0
+Trial 89 Cell 1 Weight: 0.011455321370674437 Cell 2 Weight: 0.01894802831047875 Cell 3 Weight: 0.015783637961599407 Cell 4 Weight: 0.01789972247539377 Cell 5 Weight: 0.017580883635598617
+73370212
+MF_time: 0.574s | MFGR_time: 1.922s | GR_time: 4.652s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.552s | GOGO_time: 1.221s | GOGR_time: 5.398s
+Trial: 90, Time:35.104s
+Trial 90 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 283.0 Cell 3 Spike Count: 69.0 Cell 4 Spike Count: 48.0 Cell 5 Spike Count: 0.0
+Trial 90 Cell 1 Error: 5.0 Cell 2 Error:  -278.0 Cell 3 Error: -64.0 Cell 4 Error: -43.0 Cell 5 Error: 5.0
+Trial 90 Cell 1 Weight: 0.01142105819608618 Cell 2 Weight: 0.019004872395410183 Cell 3 Weight: 0.015830988875484203 Cell 4 Weight: 0.017953421642819947 Cell 5 Weight: 0.017528298739380478
+72082025
+MF_time: 0.577s | MFGR_time: 1.909s | GR_time: 4.656s | GRGO_time: 0.003s | MFGO_time: 0.736s | GO_time: 0.548s | GOGO_time: 1.210s | GOGR_time: 5.501s
+Trial: 91, Time:34.994s
+Trial 91 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 251.0 Cell 3 Spike Count: 48.0 Cell 4 Spike Count: 46.0 Cell 5 Spike Count: 18.0
+Trial 91 Cell 1 Error: 5.0 Cell 2 Error:  -246.0 Cell 3 Error: -43.0 Cell 4 Error: -41.0 Cell 5 Error: -13.0
+Trial 91 Cell 1 Weight: 0.011386897503575456 Cell 2 Weight: 0.01906188701259641 Cell 3 Weight: 0.015878481842110655 Cell 4 Weight: 0.018007281907748404 Cell 5 Weight: 0.017580883635598617
+72874116
+MF_time: 0.567s | MFGR_time: 1.914s | GR_time: 4.616s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.552s | GOGO_time: 1.217s | GOGR_time: 5.203s
+Trial: 92, Time:34.751s
+Trial 92 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 269.0 Cell 3 Spike Count: 39.0 Cell 4 Spike Count: 66.0 Cell 5 Spike Count: 6.0
+Trial 92 Cell 1 Error: 5.0 Cell 2 Error:  -264.0 Cell 3 Error: -34.0 Cell 4 Error: -61.0 Cell 5 Error: -1.0
+Trial 92 Cell 1 Weight: 0.011352838986615611 Cell 2 Weight: 0.019119072673634198 Cell 3 Weight: 0.015926117287636987 Cell 4 Weight: 0.018061303753471647 Cell 5 Weight: 0.017633626286505413
+72248120
+MF_time: 0.565s | MFGR_time: 1.916s | GR_time: 4.620s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.551s | GOGO_time: 1.212s | GOGR_time: 5.199s
+Trial: 93, Time:34.654s
+Trial 93 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 270.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 26.0 Cell 5 Spike Count: 2.0
+Trial 93 Cell 1 Error: 5.0 Cell 2 Error:  -265.0 Cell 3 Error: 3.0 Cell 4 Error: -21.0 Cell 5 Error: 3.0
+Trial 93 Cell 1 Weight: 0.011318882339596822 Cell 2 Weight: 0.0191764298916551 Cell 3 Weight: 0.01587848184211066 Cell 4 Weight: 0.01811548766473206 Cell 5 Weight: 0.01758088363559862
+72549797
+MF_time: 0.547s | MFGR_time: 1.887s | GR_time: 4.504s | GRGO_time: 0.003s | MFGO_time: 0.743s | GO_time: 0.556s | GOGO_time: 1.219s | GOGR_time: 4.520s
+Trial: 94, Time:33.830s
+Trial 94 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 191.0 Cell 3 Spike Count: 15.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 94 Cell 1 Error: 5.0 Cell 2 Error:  -186.0 Cell 3 Error: -10.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 94 Cell 1 Weight: 0.011285027257823353 Cell 2 Weight: 0.01923395918133006 Cell 3 Weight: 0.01592611728763699 Cell 4 Weight: 0.018061303753471647 Cell 5 Weight: 0.01752829873938048
+73189946
+MF_time: 0.570s | MFGR_time: 1.917s | GR_time: 4.629s | GRGO_time: 0.003s | MFGO_time: 0.743s | GO_time: 0.555s | GOGO_time: 1.222s | GOGR_time: 5.232s
+Trial: 95, Time:34.924s
+Trial 95 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 289.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 14.0 Cell 5 Spike Count: 0.0
+Trial 95 Cell 1 Error: 5.0 Cell 2 Error:  -284.0 Cell 3 Error: -3.0 Cell 4 Error: -9.0 Cell 5 Error: 5.0
+Trial 95 Cell 1 Weight: 0.011251273437510822 Cell 2 Weight: 0.01929166105887405 Cell 3 Weight: 0.0159738956394999 Cell 4 Weight: 0.01811548766473206 Cell 5 Weight: 0.017475871126002476
+72590774
+MF_time: 0.554s | MFGR_time: 1.914s | GR_time: 4.589s | GRGO_time: 0.004s | MFGO_time: 0.737s | GO_time: 0.554s | GOGO_time: 1.215s | GOGR_time: 5.203s
+Trial: 96, Time:34.704s
+Trial 96 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 261.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 4.0 Cell 5 Spike Count: 0.0
+Trial 96 Cell 1 Error: 5.0 Cell 2 Error:  -256.0 Cell 3 Error: -5.0 Cell 4 Error: 1.0 Cell 5 Error: 5.0
+Trial 96 Cell 1 Weight: 0.011217620575783472 Cell 2 Weight: 0.01934953604205067 Cell 3 Weight: 0.016021817326418396 Cell 4 Weight: 0.018061303753471647 Cell 5 Weight: 0.017423600325027395
+71367931
+MF_time: 0.564s | MFGR_time: 1.936s | GR_time: 4.613s | GRGO_time: 0.003s | MFGO_time: 0.729s | GO_time: 0.550s | GOGO_time: 1.203s | GOGR_time: 5.488s
+Trial: 97, Time:34.884s
+Trial 97 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 271.0 Cell 3 Spike Count: 13.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 0.0
+Trial 97 Cell 1 Error: 5.0 Cell 2 Error:  -266.0 Cell 3 Error: -8.0 Cell 4 Error: -5.0 Cell 5 Error: 5.0
+Trial 97 Cell 1 Weight: 0.011184068370671459 Cell 2 Weight: 0.019407584650176817 Cell 3 Weight: 0.01606988277839765 Cell 4 Weight: 0.01811548766473206 Cell 5 Weight: 0.01737148586742512
+71432772
+MF_time: 0.557s | MFGR_time: 1.898s | GR_time: 4.595s | GRGO_time: 0.004s | MFGO_time: 0.733s | GO_time: 0.551s | GOGO_time: 1.204s | GOGR_time: 5.495s
+Trial: 98, Time:34.869s
+Trial 98 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 361.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 24.0 Cell 5 Spike Count: 8.0
+Trial 98 Cell 1 Error: 5.0 Cell 2 Error:  -356.0 Cell 3 Error: 1.0 Cell 4 Error: -19.0 Cell 5 Error: -3.0
+Trial 98 Cell 1 Weight: 0.011150616521108136 Cell 2 Weight: 0.019465807404127344 Cell 3 Weight: 0.016021817326418396 Cell 4 Weight: 0.018169834127726256 Cell 5 Weight: 0.017423600325027395
+72802967
+MF_time: 0.562s | MFGR_time: 1.907s | GR_time: 4.592s | GRGO_time: 0.003s | MFGO_time: 0.739s | GO_time: 0.551s | GOGO_time: 1.216s | GOGR_time: 5.516s
+Trial: 99, Time:35.042s
+Trial 99 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 74.0 Cell 3 Spike Count: 35.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 99 Cell 1 Error: 5.0 Cell 2 Error:  -69.0 Cell 3 Error: -30.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 99 Cell 1 Weight: 0.011117264726927355 Cell 2 Weight: 0.019524204826339726 Cell 3 Weight: 0.01606988277839765 Cell 4 Weight: 0.01811548766473206 Cell 5 Weight: 0.01737148586742512
+72472060
+MF_time: 0.554s | MFGR_time: 1.910s | GR_time: 4.581s | GRGO_time: 0.003s | MFGO_time: 0.737s | GO_time: 0.543s | GOGO_time: 1.211s | GOGR_time: 5.510s
+Trial: 100, Time:34.968s
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial_GRrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial_MFrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial_mfgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial_gogrW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_100_trial_mfgrW.npy'

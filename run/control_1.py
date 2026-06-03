@@ -48,17 +48,17 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, plast_ratio = 1.0)
     # GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW) # playground version
     GOrasters = np.zeros((numTrial, numBins, numGO), dtype = np.uint8)
-    GO_gogoW = np.zeros((numTrial, numGO), dtype = np.float32)
-    GO_grgoW = np.zeros((numTrial, numGO), dtype = np.float32)
-    GO_mfgoW = np.zeros((numTrial, numGO), dtype = np.float32)
+    GO_gogoW = np.zeros((numTrial, numGO), dtype = np.float64)
+    GO_grgoW = np.zeros((numTrial, numGO), dtype = np.float64)
+    GO_mfgoW = np.zeros((numTrial, numGO), dtype = np.float64)
 
     # # Init GR class
     GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
     # GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
-    GRrasters = np.zeros((numTrial, numGR), dtype = np.int16)
-    GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
-    GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
+    GRrasters = np.zeros((numTrial, numGR), dtype = np.int32)
+    GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float64)
+    GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float64)
 
     print("Objects initialized.")
 
@@ -205,16 +205,16 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
             GO.grgoW = GO.update_weight(trial, exc_or_inh = 1, weight_array = GO.get_grgoW())
         if MFGR_PLAST == 1:
             GR.mfgrW = GR.update_weight(trial, exc_or_inh = 1, weight_array = GR.get_mfgrW())
-            GR.GPU_mfgrW = cp.asarray(GR.mfgrW) # update GPU copy of weights
+            GR.GPU_mfgrW[:] = cp.asarray(GR.mfgrW, dtype = cp.float32) # update GPU copy of weights
         if GOGR_PLAST == 1:
             GR.gogrW = GR.update_weight(trial, exc_or_inh = 2, weight_array = GR.get_gogrW())
-            GR.GPU_gogrW = cp.asarray(GR.gogrW) # update GPU copy of weights
+            GR.GPU_gogrW[:] = cp.asarray(GR.gogrW, dtype = cp.float32) # update GPU copy of weights
     
-        GO_gogoW[trial] = (GO.get_gogoW()) 
-        GO_grgoW[trial] = (GO.get_grgoW())
-        GO_mfgoW[trial] = (GO.get_mfgoW())
-        GR_gogrW[trial] = (GR.get_gogrW())
-        GR_mfgrW[trial] = (GR.get_mfgrW())
+        GO_gogoW[trial] = (GO.get_gogoW().copy()) 
+        GO_grgoW[trial] = (GO.get_grgoW().copy())
+        GO_mfgoW[trial] = (GO.get_mfgoW().copy())
+        GR_gogrW[trial] = (GR.get_gogrW().copy())
+        GR_mfgrW[trial] = (GR.get_mfgrW().copy())
 
         # Final update
         GR.updateFinalState()
@@ -297,15 +297,15 @@ recip_list = [0.75]
 numBins = 5000 
 useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 1000 # 1000
+numTrial = 1000
 MFGO_PLAST = 0
 GOGO_PLAST = 0
-GRGO_PLAST = 0
-MFGR_PLAST = 1
+GRGO_PLAST = 1
+MFGR_PLAST = 0
 GOGR_PLAST = 0
 
 # saving to hard drive
-expName = 'MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_1000_trial'
+expName = f'MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_grgoplast_{numTrial}_trial'
 saveDir = f'/home/data/einez/homeostat_SS/{expName}'
 
 # Save Rasters

@@ -48,7 +48,7 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
      # 3. Plot the trial averages
     plt.plot(
         time_axis, 
-        weights_per_trial, 
+        weights_per_trial,
         color='blue',       
         linewidth=2,
     #     marker='o',        # Added dots so you can see each trial clearly
@@ -104,8 +104,8 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
 
 
 # --- Execution ---
-weights_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_mfgrW.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_mfgrW.png"
+weights_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial_gogrW.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial_gogrW.png"
 
 if weights_data.shape[1] > 4096:
     weights_data = weights_data[:, 1:5001]  # Remove the first column (cell 0) to exclude it from the plot
@@ -116,9 +116,12 @@ else:
 is_consistent = np.allclose(weights_data, weights_data[0], atol=1e-10)
 print(f"Are weights effectively the same? {is_consistent}")
 
+# # Only first 10 trials
+# weights_data = weights_data[:100, :]
+
 # Print weights to check if changing
 print(f"Sample weights from first trial:", weights_data[0, :5])  # Print first 5 weights from the first trial
 print(f"Sample weights from second trial:", weights_data[1, :5])  # Print first 5 weights from the last trial
 print(f"Sample weights from third trial:", weights_data[2, :5])  # Print first 5 weights from the third trial
 
-plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=4)
+plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=5)

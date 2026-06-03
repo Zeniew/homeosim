@@ -69,7 +69,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None,
     plt.legend()
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.tight_layout()
-    plt.xlim(0, 80) # For SS
+    # plt.xlim(0, 200) # For SS
     # plt.xlim(0, 50) # For IE
 
     if save_path:
@@ -85,20 +85,24 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None,
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial_GRrasters.npy' 
+raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial_GOrasters.npy' 
 
 if os.path.exists(raster_path):
     raster_data = np.load(raster_path)
     print("Finished loading data")
+    
+    # # Just the first 10 trials
+    # raster_data = raster_data[:10, :]
 
     # 2. Define Cell Type (1=MF, 2=Golgi, 3=Granule)
-    current_cell_type = 3
+    current_cell_type = 2
 
     # 3. Define save location
-    save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_mfgrplast_10_trial/GR_Firing_Frequency_Histogram.png"
+    save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogrplast_1000_trial/GO_Firing_Frequency_Histogram" 
+    "_Firing_Frequency_Histogram.png"
     plot_save_path = f"/home/aw39625/minisim/Results/Firing_Freq_Plots/{save_filename}"
 
     # 4. Run the function
-    plotFiringFrequencyDrift(raster_data, cell_type=current_cell_type, timestep_ms=1.0, save_path=plot_save_path, target = 1.0)
+    plotFiringFrequencyDrift(raster_data, cell_type=current_cell_type, timestep_ms=1.0, save_path=plot_save_path, target = 10.0)
 else:
     print(f"File not found: {raster_path}")

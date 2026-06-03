@@ -107,9 +107,9 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.plast_mult_constant = 1.003 # plasticity multiplier constant to scale learning rates
 
         ### Arrays
-        self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float32) # array of synaptic weight
-        self.mfgoW = np.full(self.numGolgi, mfgo_weight, dtype = np.float32) # array of synaptic weight
-        self.gogoW = np.full(self.numGolgi, gogo_weight, dtype = np.float32) # array of synaptic weight
+        self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float64) # array of synaptic weight
+        self.mfgoW = np.full(self.numGolgi, mfgo_weight, dtype = np.float64) # array of synaptic weight
+        self.gogoW = np.full(self.numGolgi, gogo_weight, dtype = np.float64) # array of synaptic weight
         self.Vm = np.full(self.numGolgi, self.eLeak, dtype = np.float32) # membrane potential of Golgi cells, initialized to leak reversal potential
         self.gSum_GOGO = np.zeros(self.numGolgi, dtype = np.float32) # sum of GABA conductances from Golgi to Golgi
         self.inputGOGO = np.zeros(self.numGolgi, dtype = np.uint8) # input GABA conductance from Golgi to Golgi
@@ -293,11 +293,11 @@ class Granule():
 
         self.plast_pop_portion = 1 # portion of population that undergoes plasticity, out of total population of Granule cells, set to 1 for now to maximize effect of plasticity and see if it works at all
         self.target_spikes = 5 # target spikes over trial, 1 Hz (arbitrary)
-        self.plast_mult_constant = 1.003 # plasticity multiplier constant to scale learning rates
+        self.plast_mult_constant = 1 + 0.003 # plasticity multiplier constant to scale learning rates
 
         ### Arrays
-        self.mfgrW = np.full(self.numGranule, mfgr_weight, dtype = np.float32) # synaptic weight of mossy fiber to granule
-        self.gogrW = np.full(self.numGranule, gogr_weight, dtype = np.float32) # synaptic weight of mossy fiber to granule 
+        self.mfgrW = np.full(self.numGranule, mfgr_weight, dtype = np.float64) # synaptic weight of mossy fiber to granule
+        self.gogrW = np.full(self.numGranule, gogr_weight, dtype = np.float64) # synaptic weight of mossy fiber to granule 
         self.Vm = np.full(self.numGranule, self.eLeak, dtype = np.float32) # membrane potential of Granule cells, initialized to leak reversal potential
         self.gSum_MFGR = np.zeros(self.numGranule, dtype = np.float32) # sum of excitatory conductances from MF to Granule
         self.inputMFGR = np.zeros(self.numGranule, dtype = np.uint8) # input excit
@@ -314,8 +314,8 @@ class Granule():
         # Kernel stuff
         doGranulekernel_code = """
         extern "C" __global__ void doGranule(int size, float *GPU_gLeak, float *GPU_Vm, unsigned char *inputMFGR, float *GPU_gSum_MFGR,
-        unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, float *GPU_currentThresh, float *GPU_mfgrW, 
-        float GPU_g_decay_MFGR, float *GPU_gogrW, float GPU_gGABA_decayGOGR, float GPU_g_decay_NMDA_MFGR, float GPU_gDirectInc_MFGR,
+        unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, float *GPU_currentThresh, double *GPU_mfgrW, 
+        float GPU_g_decay_MFGR, double *GPU_gogrW, float GPU_gGABA_decayGOGR, float GPU_g_decay_NMDA_MFGR, float GPU_gDirectInc_MFGR,
         float GPU_threshRest, float GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask, int *GPU_summed_act
         // float GPU_gogr_LTD_inc, 
         // float GPU_gogr_LTP_inc, 
@@ -362,9 +362,9 @@ class Granule():
         self.GPU_gNMDA_Inc_MFGR = cp.array(self.gNMDA_Inc_MFGR, dtype = cp.float32)
         self.GPU_gNMDA_MFGR = cp.array(self.gNMDA_MFGR, dtype = cp.float32)
         self.GPU_currentThresh = cp.array(self.currentThresh, dtype = cp.float32)
-        self.GPU_mfgrW = cp.array(self.mfgrW)
+        self.GPU_mfgrW = cp.array(self.mfgrW, dtype = cp.float64)
         self.GPU_g_decay_MFGR = cp.float32(self.g_decay_MFGR)
-        self.GPU_gogrW  = cp.array(self.gogrW)
+        self.GPU_gogrW  = cp.array(self.gogrW, dtype = cp.float64)
         self.GPU_gGABA_decayGOGR = cp.float32(self.gGABA_decayGOGR)
         self.GPU_g_decay_NMDA_MFGR = cp.float32(self.g_decay_NMDA_MFGR)
         self.GPU_gDirectInc_MFGR = cp.float32(self.gDirectInc_MFGR)
@@ -373,7 +373,7 @@ class Granule():
         self.GPU_eLeak = cp.float32(self.eLeak)
         self.GPU_eGOGR = cp.float32(self.eGOGR)
         self.GPU_spike_mask = cp.zeros(self.numGranule, dtype = cp.uint8)
-        self.GPU_summed_act = cp.zeros(self.numGranule, dtype = cp.int16) # summed activity of Granule cells over the trial, used for plasticity
+        self.GPU_summed_act = cp.zeros(self.numGranule, dtype = cp.int32) # summed activity of Granule cells over the trial, used for plasticity
 
 
     def doGRGPU(self):
