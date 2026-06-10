@@ -16,20 +16,21 @@ def gen_filepaths(exp_name, convergence, gogoW):
     filename_g = f"{exp_name}_GRrasters.npy"
     filename_go = f"{exp_name}_GOrasters.npy"
     filename_thr_go = f"{exp_name}_GoThr.npy"
+    filename_thr_gr = f"{exp_name}_GrThr.npy"
 
     
     filepath_m = os.path.join(saveDir,filename_m)
     filepath_go = os.path.join(saveDir, filename_go)
     filepath_gr = os.path.join(saveDir, filename_g)
     filepath_thr_go = os.path.join(saveDir,filename_thr_go)
-
+    filepath_thr_gr = os.path.join(saveDir,filename_thr_gr)
 
     # filename_params = f"{exp_name}_params.json"
     # filepath_params = os.path.join(saveDir, filename_params)
     
-    return filepath_m, filepath_go, filepath_gr, filepath_thr_go #, filepath_params
+    return filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr #, filepath_params
 
-def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, conv):
+def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr, conv):
     
     print("Initializing objects...")
 
@@ -41,16 +42,16 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, co
     GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, plast_ratio = 1.0)
     # GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW) # playground version
     GOrasters = np.zeros((numTrial, numBins, numGO), dtype = np.uint8)
-    GO_Thr = np.zeros((numTrial, numGO), dtype = np.float32)
+    GO_Thr = np.zeros((numTrial, numGO), dtype = np.float64)
 
 
     # # Init GR class
     GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
     # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
-    # GRrasters = np.zeros((numTrial, numBins, numGR), dtype = np.uint8)
     # GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
     # GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
-    GR_Thr = np.zeros((numTrial, numGR), dtype = np.float32)
+    GRrasters = np.zeros((numTrial, numGR), dtype = np.int32)
+    GR_Thr = np.zeros((numTrial, numGR), dtype = np.float64)
 
     print("Objects initialized.")
 
@@ -105,55 +106,79 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, co
     for trial in range (numTrial):
         # Run trial
         all_start = time.time()
-        for t in range(0, numBins):
+        MF_time = 0
+        MFGR_time = 0
+        GR_time = 0
+        GRGO_time = 0
+        MFGO_time = 0
+        GO_time = 0
+        GOGO_time = 0
+        GOGR_time = 0
+        for t in range(numBins):
             # print(t, ":", GO.get_grgoW())
 
-            # timestep_start = time.time()
+            timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
-            # MF_end = time.time()
-
+            # print("MFact")
+            MF_end = time.time()
+            MF_time += MF_end - timestep_start
             # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
+            # print("GR.update_input_activity(MFGR)")
 
-            # MFGR_end = time.time()
+            MFGR_end = time.time()
+            MFGR_time += MFGR_end - MF_end
 
             # do gr spikes
             GR.do_Granule(t)
+            # print("GR.do_Granule()")
 
-            # GR_end = time.time()
+            GR_end = time.time()
+            GR_time += GR_end - MFGR_end
 
             # grab GR activity
             GRact = GR.get_act()
+            # print("GR.get_act()")
 
             # GR -> GO update
             # GO.update_input_activity(GOGR_connect_arr, 3, grAct = GRact[trial])
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[t]) # for the new version of GRGO
+            # print("GO.update_input_activity(GRGO)")
 
-            # GRGO_end = time.time()
+            GRGO_end = time.time()
             # print("GRGO time taken:", GRGO_end - GRGO_start, "seconds")
+            GRGO_time += GRGO_end - GR_end
 
             # MF -> GO
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
+            # print("GO.update_input_activity(MFGO)")
 
-            # MFGO_end = time.time()
-
+            MFGO_end = time.time()
+            MFGO_time += MFGO_end - GRGO_end
             # GO spikes
             GO.do_Golgi(t)
+            # print("GO.do_Golgi()")
 
-            # GOspike_end = time.time()
+            GOspike_end = time.time()
+            GO_time += GOspike_end - MFGO_end
 
             # GO -> GO update
             GO.update_input_activity(GOGO_connect_arr, 2, t = t)
+            # print("GO.update_input_activity(GOGO)")
 
             # test - see what happens when I add another do_Golgi
             # GO.do_Golgi(t)
 
-            # GOGO_end = time.time()
+            GOGO_end = time.time()
+            GOGO_time += GOGO_end - GOspike_end
 
             GOact = GO.get_act()
+            # print("GO.get_act()")
             # GO -> GR update
             GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[t])
-
+            # print("GR.update_input_activity(GOGR)")
+            GOGR_end = time.time()
+            GOGR_time += GOGR_end - GOGO_end
 
             MFrasters[t, :] = MFact
         
@@ -162,20 +187,23 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, co
             GO.threshRest = GO.update_thresh(trial, threshRest = GO.get_threshRest())
         if GR_PLAST == 1:
             GR.threshRest = GR.update_thresh(trial, threshRest = GR.get_threshRest())
+            GR.GPU_threshRest[:] = cp.asarray(GR.threshRest, dtype = cp.float32)
 
-        GO_Thr[trial] = (GO.get_GO_Thr()) 
-        GR_Thr[trial] = (GR.get_GR_Thr())
-
+        GO_Thr[trial] = (GO.get_GO_Thr().copy()) 
+        GR_Thr[trial] = (GR.get_GR_Thr().copy())
 
         # Final update
         GR.updateFinalState()
         # Rasters
-        GOrasters[trial] = GO.get_act()
+        GOrasters[trial] = GO.get_act() 
+        GRrasters[trial] = GR.get_summed_act()
         # GRrasters[trial] = GR.get_act()
+        GR.reset_GPU_summed_act()
         all_end = time.time()
         # Shuffling MF
         # if trial % 50 == 0: 
         MF.generate_MFisiDistribution()
+        print(f"MF_time: {MF_time:.3f}s | MFGR_time: {MFGR_time:.3f}s | GR_time: {GR_time:.3f}s | GRGO_time: {GRGO_time:.3f}s | MFGO_time: {MFGO_time:.3f}s | GO_time: {GO_time:.3f}s | GOGO_time: {GOGO_time:.3f}s | GOGR_time: {GOGR_time:.3f}s")
         print(f"Trial: {trial+1}, Time:{(all_end - all_start):.3f}s")
     
 
@@ -197,8 +225,9 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, co
         os.makedirs(saveDir, exist_ok = True)
         cp.save(filepath_thr_go, GO_Thr)
         print(f"Raster array saved to '{filepath_thr_go}'")
+        cp.save(filepath_thr_gr, GR_Thr)
+        print(f"Raster array saved to '{filepath_thr_gr}'")
         
-
     # if saveGORaster:
     #     cp.save(os.path.join(saveDir, f"{expName}_GOrasters.npy"), GOrasters)
     # if saveGRRaster:
@@ -227,24 +256,23 @@ lower_lim_GR = 0.01
 conv_list = [25]
 gogoW_list = [0.05] # range cant iter by floats
 recip_list = [0.75] 
-#span = 6 # changing span below
 
 # Trial Params
 numBins = 5000 
 useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 1000
-GO_PLAST = 1
+numTrial = 50 # 1000
+GO_PLAST = 0
 GR_PLAST = 0
 # saving to hard drive
-expName = 'MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial'
+expName = f'MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_{numTrial}_trial'
 saveDir = f'/home/data/einez/homeostat_IE/{expName}'
 
 
 # Save Rasters
 saveGORaster = True
-saveGRRaster = False
-saveMFRaster = False
+saveGRRaster = True
+saveMFRaster = True
 saveThreshold = True
 
 # GOGO Connect Params
@@ -263,6 +291,6 @@ for i in range(len(recip_list)):
                 continue
             print(f"Starting Session for GoGo Conv: {conv} W: {gogoW} ...")
             span = int(conv/2) if conv > 5 else 6 
-            filepath_m, filepath_go, filepath_gr, filepath_thr_go = gen_filepaths(expName, conv, gogoW)
+            filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr = gen_filepaths(expName, conv, gogoW)
             recip = round(conv * recip_list[i])
-            run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, conv)
+            run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr, conv)

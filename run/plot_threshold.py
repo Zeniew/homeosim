@@ -102,8 +102,8 @@ def plotThresholdContinuous(thr, save_path=None, thr_type=1):
 
 
 # --- Execution ---
-thr_data = np.load('/home/data/einez/homeostat_IE/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial_GoThr.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial/GoThr.png"
+thr_data = np.load('/home/data/einez/homeostat_IE/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_{numTrial}_trial/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_{numTrial}_trial_GoThr.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_{numTrial}_trial/GoThr.png"
 
 # Plotting MFGO (Type 3)
 plotThresholdContinuous(thr_data, save_path=plot_save_path, thr_type=1)

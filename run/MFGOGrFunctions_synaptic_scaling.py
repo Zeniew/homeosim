@@ -98,7 +98,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.NMDA_AMPA_ratioMFGO = 1.3 # ratio of NMDA to AMPA conductance for MF to Golgi synapse
 
         self.threshDecGo = 1- math.exp(-1.0/11.0) # (-msPerTimestep / threshDecTauGO), decay constant for Golgi threshold
-        self.threshRest = -38.0 # resting threshold for Golgi cells
+        self.threshRest = -34.0 # resting threshold for Golgi cells
 
         ##### Plasticity
         self.plast_pop_portion = plast_ratio # portion of population that undergoes plasticity, out of total population of Golgi cells
@@ -308,15 +308,15 @@ class Granule():
         self.gLeak = np.full(self.numGranule, self.gLeak_base, dtype = np.float32) # leak conductance for Granule cells, initialized to leak conductance
         self.gKCa = np.zeros(self.numGranule, dtype = np.float32) # experimental K and Ca conductance, initialized to 0
         # Threshold
-        self.currentThresh = np.full(self.numGranule, self.threshRest, dtype = np.float32) # current threshold of Granule cells, initialized to resting threshold
+        self.currentThresh = np.full(self.numGranule, self.threshRest, dtype = np.float64) # current threshold of Granule cells, initialized to resting threshold
         self.act = np.zeros((numBins, self.numGranule), dtype = np.uint8) # activity of Granule cells over the entire trial, 2D array of size
         
         # Kernel stuff
         doGranulekernel_code = """
         extern "C" __global__ void doGranule(int size, float *GPU_gLeak, float *GPU_Vm, unsigned char *inputMFGR, float *GPU_gSum_MFGR,
-        unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, float *GPU_currentThresh, double *GPU_mfgrW, 
+        unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, double *GPU_currentThresh, double *GPU_mfgrW, 
         float GPU_g_decay_MFGR, double *GPU_gogrW, float GPU_gGABA_decayGOGR, float GPU_g_decay_NMDA_MFGR, float GPU_gDirectInc_MFGR,
-        float GPU_threshRest, float GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask, int *GPU_summed_act
+        double GPU_threshRest, double GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask, int *GPU_summed_act
         // float GPU_gogr_LTD_inc, 
         // float GPU_gogr_LTP_inc, 
         // float GPU_mfgr_LTD_inc, 
@@ -368,8 +368,8 @@ class Granule():
         self.GPU_gGABA_decayGOGR = cp.float32(self.gGABA_decayGOGR)
         self.GPU_g_decay_NMDA_MFGR = cp.float32(self.g_decay_NMDA_MFGR)
         self.GPU_gDirectInc_MFGR = cp.float32(self.gDirectInc_MFGR)
-        self.GPU_threshRest = cp.float32(self.threshRest)
-        self.GPU_threshDecGR = cp.float32(self.threshDecGR)
+        self.GPU_threshRest = cp.float64(self.threshRest)
+        self.GPU_threshDecGR = cp.float64(self.threshDecGR)
         self.GPU_eLeak = cp.float32(self.eLeak)
         self.GPU_eGOGR = cp.float32(self.eGOGR)
         self.GPU_spike_mask = cp.zeros(self.numGranule, dtype = cp.uint8)
@@ -400,7 +400,7 @@ class Granule():
         # MFGR
         if inputArrayChoice == 1:
             grInputs = np.zeros(self.numGranule, dtype = np.uint8) # array that stores how many inputs each gr gets
-            MFdiverge = int((self.numGranule * 5)/4096) # how many gr each MF connects to  <-- where is this used lmao
+            # MFdiverge = int((self.numGranule * 5)/4096) # how many gr each MF connects to  <-- where is this used lmao
             spiked_idx = np.where(mfAct)[0]
             # print(spiked_idx)
             for mf in spiked_idx: # for every MF that spikes, this can be done in parallel
@@ -513,7 +513,7 @@ class Granule():
 
         # # Clip weights
         weight_array = np.clip(weight_array, 0.0, 1.0)
-
+    
         print("Trial", t, "Cell 1 Weight:", weight_array[0], "Cell 2 Weight:", weight_array[1], "Cell 3 Weight:", weight_array[2], "Cell 4 Weight:", weight_array[3], "Cell 5 Weight:", weight_array[4])
 
         return weight_array
@@ -529,7 +529,7 @@ class Granule():
     
     def get_summed_act(self):
         # return self.act.sum(axis = 0, dtype = np.int64) # sum activity over trial for each cell, used for plasticity
-        return self.GPU_summed_act.get().astype(np.int64)
+        return self.GPU_summed_act.get().astype(np.int32)
     
     def reset_GPU_summed_act(self):
         self.GPU_summed_act.fill(0)

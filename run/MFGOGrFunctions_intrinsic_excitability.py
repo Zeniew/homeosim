@@ -154,9 +154,9 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.plast_mult_constant = 1.003 # plasticity multiplier constant to scale learning rates
 
         ### Arrays
-        self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float32) # array of synaptic weight
-        self.mfgoW = np.full(self.numGolgi, mfgo_weight, dtype = np.float32) # array of synaptic weight
-        self.gogoW = np.full(self.numGolgi, gogo_weight, dtype = np.float32) # array of synaptic weight
+        self.grgoW = np.full(self.numGolgi, grgo_weight, dtype = np.float64) # array of synaptic weight
+        self.mfgoW = np.full(self.numGolgi, mfgo_weight, dtype = np.float64) # array of synaptic weight
+        self.gogoW = np.full(self.numGolgi, gogo_weight, dtype = np.float64) # array of synaptic weight
         self.Vm = np.full(self.numGolgi, self.eLeak, dtype = np.float32) # membrane potential of Golgi cells, initialized to leak reversal potential
         self.gSum_GOGO = np.zeros(self.numGolgi, dtype = np.float32) # sum of GABA conductances from Golgi to Golgi
         self.inputGOGO = np.zeros(self.numGolgi, dtype = np.uint8) # input GABA conductance from Golgi to Golgi
@@ -246,11 +246,9 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
 
         # GRGO
         if inputArrayChoice == 3: 
-            goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
             spiked_idx = np.where(grAct)[0]
-            for gr in spiked_idx:
-                goInputs[connectArr[gr,:]] += 1
-            self.inputGRGO = goInputs
+            indices = connectArr[spiked_idx].ravel()  # all target Golgi indices, flattened
+            self.inputGRGO = np.bincount(indices, minlength=self.numGolgi).astype(np.uint8)
 
     def update_thresh(self, t, threshRest):
         plast_cells = np.random.choice(self.numGolgi, int(self.numGolgi * self.plast_pop_portion), replace = False) # randomly select portion of Golgi cells to undergo plasticity
@@ -328,8 +326,8 @@ class Granule():
         self.g_decay_MFGR = 0.9355 # math.exp(-1.0/15.0), which compiles as 0 in C++? # !! FIX THIS I'm confused bc in the big sim it's 0.0 but this isn't mathematically possible???  (-msPerTimestep / gDecayTauMFtoGR), decay constant for excitatory conductance from MF to Granule
         self.gGABA_decayGOGR = math.exp(-1.0/7.0) # (-msPerTimestep / gGABADecTauGOtoGR), decay constant for GABA conductance from Golgi to Granule
 
-        self.threshDecGR = 1 - math.exp(-1.0/3.0) 
-        self.threshRest = np.full(self.numGranule, -40.0, dtype = np.float32)
+        self.threshDecGR = np.float64(1 - math.exp(-1.0/3.0))
+        self.threshRest = np.full(self.numGranule, -40.0, dtype = np.float64)
 
         ##### Plasticity
         # self.GPU_mfgr_plast = cp.uint8(mfgr_plast) # <-- not using this constant anymore
@@ -340,8 +338,8 @@ class Granule():
         self.plast_mult_constant = 1.003 # plasticity multiplier constant to scale learning rates
 
         ### Arrays
-        self.mfgrW = np.full(self.numGranule, mfgr_weight, dtype = np.float32) # synaptic weight of mossy fiber to granule
-        self.gogrW = np.full(self.numGranule, gogr_weight, dtype = np.float32) # synaptic weight of mossy fiber to granule 
+        self.mfgrW = np.full(self.numGranule, mfgr_weight, dtype = np.float64) # synaptic weight of mossy fiber to granule
+        self.gogrW = np.full(self.numGranule, gogr_weight, dtype = np.float64) # synaptic weight of mossy fiber to granule 
         self.Vm = np.full(self.numGranule, self.eLeak, dtype = np.float32) # membrane potential of Granule cells, initialized to leak reversal potential
         self.gSum_MFGR = np.zeros(self.numGranule, dtype = np.float32) # sum of excitatory conductances from MF to Granule
         self.inputMFGR = np.zeros(self.numGranule, dtype = np.uint8) # input excit
@@ -358,39 +356,45 @@ class Granule():
         # Kernel stuff
         doGranulekernel_code = """
         extern "C" __global__ void doGranule(int size, float *GPU_gLeak, float *GPU_Vm, unsigned char *inputMFGR, float *GPU_gSum_MFGR,
-        unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, float *GPU_currentThresh, float *GPU_mfgrW, 
-        float GPU_g_decay_MFGR, float *GPU_gogrW, float GPU_gGABA_decayGOGR, float GPU_g_decay_NMDA_MFGR, float GPU_gDirectInc_MFGR,
-        float *GPU_threshRest, float GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask
+        unsigned char *inputGOGR, float *GPU_gSum_GOGR, float *GPU_gNMDA_Inc_MFGR, float *GPU_gNMDA_MFGR, double *GPU_currentThresh, double *GPU_mfgrW, 
+        float GPU_g_decay_MFGR, double *GPU_gogrW, float GPU_gGABA_decayGOGR, float GPU_g_decay_NMDA_MFGR, float GPU_gDirectInc_MFGR,
+        double *GPU_threshRest, double GPU_threshDecGR, float GPU_eLeak, float GPU_eGOGR, unsigned char *GPU_spike_mask, int *GPU_summed_act
         // float GPU_gogr_LTD_inc, 
         // float GPU_gogr_LTP_inc, 
         // float GPU_mfgr_LTD_inc, 
         // float GPU_mfgr_LTP_inc, 
         // unsigned char GPU_mfgr_plast, unsigned char GPU_gogr_plast
         ){
-            int idx = threadIdx.x + blockIdx.x * blockDim.x;
-            if (idx >= size) return;
-            GPU_gLeak[idx] = (0.0000001021370733 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
-            (0.00001636462 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) +
-            (0.00113971219 * GPU_Vm[idx] * GPU_Vm[idx] + 0.038772 * GPU_Vm[idx] + 0.6234929);
+            // int idx = threadIdx.x + blockIdx.x * blockDim.x;
+            // if (idx >= size) return;
+            int tid = threadIdx.x + blockIdx.x * blockDim.x;
+            int stride = blockDim.x * gridDim.x;
+            for (int idx = tid; idx < size; idx += stride) {
+                GPU_gLeak[idx] = (0.0000001021370733 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
+                (0.00001636462 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) +
+                (0.00113971219 * GPU_Vm[idx] * GPU_Vm[idx] + 0.038772 * GPU_Vm[idx] + 0.6234929);
 
-            GPU_gNMDA_Inc_MFGR[idx] = (
-            (0.00000011969 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
-            (0.000089369 * GPU_Vm[idx] * GPU_Vm[idx]) +
-            (0.0151 * GPU_Vm[idx]) + 0.7713
-            );
+                GPU_gNMDA_Inc_MFGR[idx] = (
+                (0.00000011969 * GPU_Vm[idx] * GPU_Vm[idx] * GPU_Vm[idx]) + 
+                (0.000089369 * GPU_Vm[idx] * GPU_Vm[idx]) +
+                (0.0151 * GPU_Vm[idx]) + 0.7713
+                );
 
-            GPU_gSum_MFGR[idx] = inputMFGR[idx] * GPU_mfgrW[idx] + GPU_gSum_MFGR[idx] * GPU_g_decay_MFGR; 
-            
-            GPU_gSum_GOGR[idx] = inputGOGR[idx] * GPU_gogrW[idx] + GPU_gSum_GOGR[idx] * GPU_gGABA_decayGOGR;
+                GPU_gSum_MFGR[idx] = inputMFGR[idx] * GPU_mfgrW[idx] + GPU_gSum_MFGR[idx] * GPU_g_decay_MFGR; 
+                
+                GPU_gSum_GOGR[idx] = inputGOGR[idx] * GPU_gogrW[idx] + GPU_gSum_GOGR[idx] * GPU_gGABA_decayGOGR;
 
-            GPU_gNMDA_MFGR[idx] = GPU_gNMDA_Inc_MFGR[idx] * GPU_gDirectInc_MFGR * inputMFGR[idx] + GPU_gNMDA_MFGR[idx] * 0.9672;
+                GPU_gNMDA_MFGR[idx] = GPU_gNMDA_Inc_MFGR[idx] * GPU_gDirectInc_MFGR * inputMFGR[idx] + GPU_gNMDA_MFGR[idx] * 0.9672;
 
-            GPU_Vm[idx] = GPU_Vm[idx] + GPU_gLeak[idx] * (GPU_eLeak - GPU_Vm[idx]) - GPU_gSum_MFGR[idx] * GPU_Vm[idx] - 
-            GPU_gNMDA_MFGR[idx] * GPU_Vm[idx] + GPU_gSum_GOGR[idx] * (GPU_eGOGR - GPU_Vm[idx]);
+                GPU_Vm[idx] = GPU_Vm[idx] + GPU_gLeak[idx] * (GPU_eLeak - GPU_Vm[idx]) - GPU_gSum_MFGR[idx] * GPU_Vm[idx] - 
+                GPU_gNMDA_MFGR[idx] * GPU_Vm[idx] + GPU_gSum_GOGR[idx] * (GPU_eGOGR - GPU_Vm[idx]);
 
-            GPU_currentThresh[idx] = GPU_currentThresh[idx] + (GPU_threshRest[idx] - GPU_currentThresh[idx]) * (GPU_threshDecGR);
+                GPU_currentThresh[idx] = GPU_currentThresh[idx] + (GPU_threshRest[idx] - GPU_currentThresh[idx]) * (GPU_threshDecGR);
 
-            GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
+                GPU_spike_mask[idx] = (GPU_Vm[idx] > GPU_currentThresh[idx]) ? 1 : 0;
+                GPU_summed_act[idx] = GPU_summed_act[idx] + GPU_spike_mask[idx];
+
+            }
         }
         """
 
@@ -401,25 +405,24 @@ class Granule():
         self.GPU_gSum_GOGR = cp.array(self.gSum_GOGR, dtype = cp.float32)
         self.GPU_gNMDA_Inc_MFGR = cp.array(self.gNMDA_Inc_MFGR, dtype = cp.float32)
         self.GPU_gNMDA_MFGR = cp.array(self.gNMDA_MFGR, dtype = cp.float32)
-        self.GPU_currentThresh = cp.array(self.currentThresh, dtype = cp.float32)
+        self.GPU_currentThresh = cp.array(self.currentThresh, dtype = cp.float64)
         self.GPU_mfgrW = cp.array(self.mfgrW)
         self.GPU_g_decay_MFGR = cp.float32(self.g_decay_MFGR)
         self.GPU_gogrW  = cp.array(self.gogrW)
         self.GPU_gGABA_decayGOGR = cp.float32(self.gGABA_decayGOGR)
         self.GPU_g_decay_NMDA_MFGR = cp.float32(self.g_decay_NMDA_MFGR)
         self.GPU_gDirectInc_MFGR = cp.float32(self.gDirectInc_MFGR)
-        self.GPU_threshRest = cp.array(self.threshRest, dtype = cp.float32)
-        self.GPU_threshDecGR = cp.float32(self.threshDecGR)
+        self.GPU_threshRest = cp.array(self.threshRest, dtype = cp.float64)
+        self.GPU_threshDecGR = cp.float64(self.threshDecGR)
         self.GPU_eLeak = cp.float32(self.eLeak)
         self.GPU_eGOGR = cp.float32(self.eGOGR)
         self.GPU_spike_mask = cp.zeros(self.numGranule, dtype = cp.uint8)
-        # New Trace Arrays (Float32) on GPU
-        self.GPU_mfgr_trace = cp.zeros(self.numGranule, dtype=cp.float32)
-        self.GPU_gogr_trace = cp.zeros(self.numGranule, dtype=cp.float32)
+        self.GPU_summed_act = cp.zeros(self.numGranule, dtype = cp.int32)
+
 
     def doGRGPU(self):
         block_size = 256
-        grid_size = (self.numGranule + block_size - 1) // block_size
+        grid_size = 256 * 2
         with cp.cuda.Device(0):
             GPU_inputMFGR = cp.array(self.inputMFGR)
             GPU_inputGOGR = cp.array(self.inputGOGR)
@@ -431,7 +434,7 @@ class Granule():
             self.GRgpu((grid_size,),(block_size,), (self.numGranule, self.GPU_gLeak, self.GPU_Vm, GPU_inputMFGR, self.GPU_gSum_MFGR, GPU_inputGOGR, 
             self.GPU_gSum_GOGR, self.GPU_gNMDA_Inc_MFGR, self.GPU_gNMDA_MFGR, self.GPU_currentThresh, self.GPU_mfgrW, self.GPU_g_decay_MFGR, self.GPU_gogrW, 
             self.GPU_gGABA_decayGOGR, self.GPU_g_decay_NMDA_MFGR, self.GPU_gDirectInc_MFGR, self.GPU_threshRest, self.GPU_threshDecGR, self.GPU_eLeak, 
-            self.GPU_eGOGR, self.GPU_spike_mask))
+            self.GPU_eGOGR, self.GPU_spike_mask, self.GPU_summed_act))
             return self.GPU_spike_mask.get()
 
     # generic function for updating GOGR and MFGR input arrays
@@ -441,7 +444,7 @@ class Granule():
         # MFGR
         if inputArrayChoice == 1:
             grInputs = np.zeros(self.numGranule, dtype = np.uint8) # array that stores how many inputs each gr gets
-            MFdiverge = int((self.numGranule * 5)/4096) # how many gr each MF connects to  <-- where is this used lmao
+            # MFdiverge = int((self.numGranule * 5)/4096) # how many gr each MF connects to  <-- where is this used lmao
             spiked_idx = np.where(mfAct)[0]
             # print(spiked_idx)
             for mf in spiked_idx: # for every MF that spikes, this can be done in parallel
@@ -469,20 +472,30 @@ class Granule():
 
         # GOGR
         if inputArrayChoice == 2:
-            spike_mask = (goAct == 1)
-            spiked_idx = np.where(spike_mask)[0]
-            # get connections for all spiked cells
-            spiked_connections = [] # list to hold connections for all spiked MFs
-            for cell in spiked_idx:
-                # eliminate -1 terminator
-                valid_idx = connectArr[cell] != -1
-                # get valid connections for spiked cell
-                valid_conns = connectArr[cell, valid_idx]
-                # add to list
-                spiked_connections.extend(valid_conns)
-            spiked_connections = np.array(spiked_connections, dtype = int) # convert list to
-            counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
-            self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
+            spiked_idx = np.where(goAct == 1)[0]
+            
+            # grab all connection rows for spiked cells at once
+            spiked_connections = connectArr[spiked_idx].ravel()
+            
+            # filter out -1 terminators in one shot
+            spiked_connections = spiked_connections[spiked_connections != -1]
+            
+            counts = np.bincount(spiked_connections, minlength=len(self.inputGOGR))
+            self.inputGOGR = counts.astype(self.inputGOGR.dtype)
+            # spike_mask = (goAct == 1)
+            # spiked_idx = np.where(spike_mask)[0]
+            # # get connections for all spiked cells
+            # spiked_connections = [] # list to hold connections for all spiked MFs
+            # for cell in spiked_idx:
+            #     # eliminate -1 terminator
+            #     valid_idx = connectArr[cell] != -1
+            #     # get valid connections for spiked cell
+            #     valid_conns = connectArr[cell, valid_idx]
+            #     # add to list
+            #     spiked_connections.extend(valid_conns)
+            # spiked_connections = np.array(spiked_connections, dtype = int) # convert list to
+            # counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
+            # self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
         
         # if inputArrayChoice == 1:
         #     # add to MFGR input  
@@ -523,7 +536,7 @@ class Granule():
 
         # 4.5 Filter out the non-plastic cells
         # Create a boolean mask of all False, then set the plastic cell indices to True
-        is_plastic = np.zeros(self.numGolgi, dtype=bool)
+        is_plastic = np.zeros(self.numGranule, dtype=bool)
         is_plastic[plast_cells] = True 
         
         # Where is_plastic is False, force the learning rate to be 1.0 (no weight change)
@@ -541,6 +554,12 @@ class Granule():
     def get_act(self):
         return self.act
     
+    def get_summed_act(self):
+        return self.GPU_summed_act.get().astype(np.int32)
+    
+    def reset_GPU_summed_act(self):
+        self.GPU_summed_act.fill(0)
+
     def get_threshRest(self):
         return self.threshRest
     
@@ -560,14 +579,14 @@ class Granule():
             self.gSum_GOGR = cp.asnumpy(self.GPU_gSum_GOGR)
             self.gNMDA_Inc_MFGR = cp.asnumpy(self.GPU_gNMDA_Inc_MFGR)
             self.gNMDA_MFGR = cp.asnumpy(self.GPU_gNMDA_MFGR)
-            self.currentThresh = cp.asnumpy(self.GPU_currentThresh)
+            # self.currentThresh = cp.asnumpy(self.GPU_currentThresh)
             self.mfgrW = cp.asnumpy(self.GPU_mfgrW)
             self.g_decay_MFGR = cp.asnumpy(self.GPU_g_decay_MFGR)
             self.gogrW  = cp.asnumpy(self.GPU_gogrW)
             self.gGABA_decayGOGR = cp.asnumpy(self.GPU_gGABA_decayGOGR)
             self.g_decay_NMDA_MFGR = cp.asnumpy(self.GPU_g_decay_NMDA_MFGR)
             self.gDirectInc_MFGR = cp.asnumpy(self.GPU_gDirectInc_MFGR)
-            self.threshRest = cp.asnumpy(self.GPU_threshRest)
+            # self.threshRest = cp.asnumpy(self.GPU_threshRest)
             self.threshDecGR = cp.asnumpy(self.GPU_threshDecGR)
             self.eLeak = cp.asnumpy(self.GPU_eLeak)
             self.eGOGR = cp.asnumpy(self.GPU_eGOGR)
