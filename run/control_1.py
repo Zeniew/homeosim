@@ -4,14 +4,13 @@ import os
 import time
 # import json 
 
-# import MFGoGrFunction_updated_gr_raster_synaptic_scaling as mfgogr
 import MFGOGrFunctions_synaptic_scaling as mfgogr
 # import playground_MFGOGRFunctions as mfgogr
 import importConnect as connect
 import WireFunctions
 
 ##### Methods #####
-def gen_filepaths(exp_name, convergence, gogoW):
+def gen_filepaths(exp_name):
     # Match printed file names
     filename_m = f"{exp_name}_MFrasters.npy"
     filename_g = f"{exp_name}_GRrasters.npy"
@@ -30,13 +29,10 @@ def gen_filepaths(exp_name, convergence, gogoW):
     filepath_w_mfgo = os.path.join(saveDir,filename_w_mfgo)
     filepath_w_gogr = os.path.join(saveDir,filename_w_gogr)
     filepath_w_mfgr = os.path.join(saveDir,filename_w_mfgr)
-
-    # filename_params = f"{exp_name}_params.json"
-    # filepath_params = os.path.join(saveDir, filename_params)
     
     return filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr #, filepath_params
 
-def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv):
+def run_session(filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr):
     
     print("Initializing objects...")
 
@@ -45,7 +41,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, fi
     MFrasters = np.zeros((numBins, numMF), dtype = np.uint8)
 
     # # Init GO class
-    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, plast_ratio = 1.0)
+    GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, plast_ratio = 1.0)
     # GO = mfgogr.Golgi(numGO, CSon, CSoff, useCS, numBins, gogo_weight = gogoW, mfgo_weight = mfgoW, grgo_weight = grgoW) # playground version
     GOrasters = np.zeros((numTrial, numBins, numGO), dtype = np.uint8)
     GO_gogoW = np.zeros((numTrial, numGO), dtype = np.float64)
@@ -244,25 +240,20 @@ lower_lim_GO = 0.01
 upper_lim_GR = 0.014
 lower_lim_GR = 0.01
 
-# GOGO Connect Params
-conv_list = [25]
-gogoW_list = [0.05] # range cant iter by floats
-recip_list = [0.75] 
-#span = 6 # changing span below
 
 # Trial Params
 numBins = 5000 
 useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 50 # 100
+numTrial = 1000
 MFGO_PLAST = 0
-GOGO_PLAST = 0
+GOGO_PLAST = 1
 GRGO_PLAST = 0
 MFGR_PLAST = 0
 GOGR_PLAST = 0
 
 # saving to hard drive
-expName = f'MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_{numTrial}_trial'
+expName = f'MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_{numTrial}_trial'
 saveDir = f'/home/data/einez/homeostat_SS/{expName}'
 
 # Save Rasters
@@ -271,22 +262,9 @@ saveGRRaster = True
 saveMFRaster = True
 saveWeights = True
 
-# GOGO Connect Params
-conv_list = [25]
-gogoW_list = [0.05] # range can't iter by floats
-recip_list = [0.75]
-# span = 6 # changing span below
 
 
 ##### Experiment Loop #####
-
-for i in range(len(recip_list)):
-    for conv in conv_list:
-        for gogoW in gogoW_list:
-            if (conv < 15):
-                continue
-            print(f"Starting Session for GoGo Conv: {conv} W: {gogoW} ...")
-            span = int(conv/2) if conv > 5 else 6 
-            filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr = gen_filepaths(expName, conv, gogoW)
-            recip = round(conv * recip_list[i])
-            run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr, conv)
+print(f"Starting Session...")
+filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr = gen_filepaths(expName)
+run_session(filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_w_gogo, filepath_w_mfgo, filepath_w_gogr, filepath_w_mfgr)

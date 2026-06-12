@@ -17,25 +17,6 @@ class Mossy(): # MF Objects, entire network of MF per object
         self.MFisiDistribution = np.zeros((101, self.sizeOfDist), dtype = int) # 2D array, with 101 rows of arrays that consist of 1000 zeroes , each row corresponds to ISI of particular frequency, where we select the new ISI distribution from
         self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
         self.generate_MFisiDistribution() # generate the ISI distribution for each frequency and fill MFisiDistribution
-        # self.MFisi = np.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
-
-        # for i in range(0, 101): # for each integer from 0 to 100 <-- for gnenerating frequencies?
-        #     if i == 0 : f = 1000 # f = firing frequency
-        #     else: f = 1000.0/(i) 
-        #     f_stdev = f/5.0  # why 5.0?
-        #     # cp.random.normal(loc, scale, size) <-- generate random numbers from a normal distribution, characterized by mean, stdev, and last param = number of random numbers to generate
-        #     ISItemp = np.random.normal(loc = f, scale = f_stdev, size = self.sizeOfDist) # create an array of random integers selected from normal distribution of ISI values with mean f and standard deviation f_stdev, these will be our "countdown" ISI values
-        #     # check for values less than 5 and replace with 5
-        #     for j in range(0, self.sizeOfDist):
-        #         if ISItemp[j] < 5: ISItemp[j] = 5
-        #     # fill temp normal values for row i of MFisiDistribution <-- generates the ISI distribution for each frequency
-        #     self.MFisiDistribution[i, :] = ISItemp
-
-        # # Set Frequency index selection arrays <-- just curious, why not use normal distribution for the MF freq? is it completely uniform
-        # self.MFfreqs = np.random.randint(self.minBackground, self.maxBackground, self.numMossy)
-        # self.CSfreqs = np.random.randint(self.minCS, self.maxCS, self.numMossy)
-        # # choose CS MF
-        # self.CSMFindex = np.random.randint(0, self.numMossy, 80) # choose 80 random MFs to be CS MFs
 
     def generate_MFisiDistribution(self):
         self.MFisi = np.random.randint(5, 40, self.numMossy) # numMossy amounts of random integers selected from the range 5 - 40, the initial ISI of each MF, randomly selected from 5 to 40 time steps
@@ -145,7 +126,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.NMDA_AMPA_ratioMFGO = 1.3 # ratio of NMDA to AMPA conductance for MF to Golgi synapse
 
         self.threshDecGo = 1- math.exp(-1.0/11.0) # (-msPerTimestep / threshDecTauGO), decay constant for Golgi threshold
-        self.threshRest = np.full(self.numGolgi, -34.0, dtype = np.float32) # resting threshold for Golgi cells
+        self.threshRest = np.full(self.numGolgi, -34.0, dtype = np.float64) # resting threshold for Golgi cells
 
         ##### Plasticity
         self.plast_pop_portion = plast_ratio # portion of population that undergoes plasticity, out of total population of Golgi cells

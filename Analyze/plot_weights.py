@@ -104,8 +104,8 @@ def plotWeightsContinuous(weights, save_path=None, weights_type=1):
 
 
 # --- Execution ---
-weights_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial_gogoW.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/gogoW.png"
+weights_data = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_grgoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_grgoplast_1000_trial_grgoW.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_grgoplast_1000_trial/grgoW.png"
 
 if weights_data.shape[1] > 4096:
     weights_data = weights_data[:, 1:5001]  # Remove the first column (cell 0) to exclude it from the plot
@@ -124,4 +124,4 @@ print(f"Sample weights from first trial:", weights_data[0, :5])  # Print first 5
 print(f"Sample weights from second trial:", weights_data[1, :5])  # Print first 5 weights from the last trial
 print(f"Sample weights from third trial:", weights_data[2, :5])  # Print first 5 weights from the third trial
 
-plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=2)
+plotWeightsContinuous(weights_data, save_path=plot_save_path, weights_type=1)

@@ -121,7 +121,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.gNMDA_MFGO = np.zeros(self.numGolgi, dtype = np.float32) # NMDA conductance from MF to Golgi
         
         # Threshold
-        self.currentThresh = np.full(self.numGolgi, self.threshRest, dtype = np.float32) # current threshold of Golgi cells, initialized to resting threshold
+        self.currentThresh = np.full(self.numGolgi, self.threshRest, dtype = np.float64) # current threshold of Golgi cells, initialized to resting threshold
         self.act = np.zeros((numBins, self.numGolgi), dtype = np.uint8) # activity of Golgi cells over the entire trial, 2D array of size (numBins, numGolgi)
 
         # Trace
@@ -361,7 +361,7 @@ class Granule():
         self.GPU_gSum_GOGR = cp.array(self.gSum_GOGR, dtype = cp.float32)
         self.GPU_gNMDA_Inc_MFGR = cp.array(self.gNMDA_Inc_MFGR, dtype = cp.float32)
         self.GPU_gNMDA_MFGR = cp.array(self.gNMDA_MFGR, dtype = cp.float32)
-        self.GPU_currentThresh = cp.array(self.currentThresh, dtype = cp.float32)
+        self.GPU_currentThresh = cp.array(self.currentThresh, dtype = cp.float64)
         self.GPU_mfgrW = cp.array(self.mfgrW, dtype = cp.float64)
         self.GPU_g_decay_MFGR = cp.float32(self.g_decay_MFGR)
         self.GPU_gogrW  = cp.array(self.gogrW, dtype = cp.float64)

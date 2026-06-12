@@ -10,7 +10,7 @@ import importConnect as connect
 import WireFunctions
 
 ##### Methods #####
-def gen_filepaths(exp_name, convergence, gogoW):
+def gen_filepaths(exp_name):
     # Match printed file names
     filename_m = f"{exp_name}_MFrasters.npy"
     filename_g = f"{exp_name}_GRrasters.npy"
@@ -30,7 +30,7 @@ def gen_filepaths(exp_name, convergence, gogoW):
     
     return filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr #, filepath_params
 
-def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr, conv):
+def run_session(filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr):
     
     print("Initializing objects...")
 
@@ -47,9 +47,6 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, fi
 
     # # Init GR class
     GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins)
-    # GR = mfgogr.Granule(numGR, CSon, CSoff, useCS, numBins) # playground version
-    # GR_mfgrW = np.zeros((numTrial, numGR), dtype = np.float32)
-    # GR_gogrW = np.zeros((numTrial, numGR), dtype = np.float32)
     GRrasters = np.zeros((numTrial, numGR), dtype = np.int32)
     GR_Thr = np.zeros((numTrial, numGR), dtype = np.float64)
 
@@ -117,24 +114,13 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, fi
         for t in range(numBins):
             # print(t, ":", GO.get_grgoW())
 
-            timestep_start = time.time()
             MFact = MF.do_MF_dist(t, useCS)
-            # print("MFact")
-            MF_end = time.time()
-            MF_time += MF_end - timestep_start
             # MF -> GR update
             GR.update_input_activity(MFGR_connect_arr, 1, mfAct = MFact)
             # print("GR.update_input_activity(MFGR)")
-
-            MFGR_end = time.time()
-            MFGR_time += MFGR_end - MF_end
-
             # do gr spikes
             GR.do_Granule(t)
             # print("GR.do_Granule()")
-
-            GR_end = time.time()
-            GR_time += GR_end - MFGR_end
 
             # grab GR activity
             GRact = GR.get_act()
@@ -145,22 +131,15 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, fi
             GO.update_input_activity(GRGO_connect_arr, 3, grAct = GRact[t]) # for the new version of GRGO
             # print("GO.update_input_activity(GRGO)")
 
-            GRGO_end = time.time()
             # print("GRGO time taken:", GRGO_end - GRGO_start, "seconds")
-            GRGO_time += GRGO_end - GR_end
 
             # MF -> GO
             GO.update_input_activity(MFGO_connect_arr, 1, mfAct = MFact)
             # print("GO.update_input_activity(MFGO)")
 
-            MFGO_end = time.time()
-            MFGO_time += MFGO_end - GRGO_end
             # GO spikes
             GO.do_Golgi(t)
             # print("GO.do_Golgi()")
-
-            GOspike_end = time.time()
-            GO_time += GOspike_end - MFGO_end
 
             # GO -> GO update
             GO.update_input_activity(GOGO_connect_arr, 2, t = t)
@@ -169,16 +148,11 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, fi
             # test - see what happens when I add another do_Golgi
             # GO.do_Golgi(t)
 
-            GOGO_end = time.time()
-            GOGO_time += GOGO_end - GOspike_end
-
             GOact = GO.get_act()
             # print("GO.get_act()")
             # GO -> GR update
             GR.update_input_activity(GOGR_connect_arr, 2, goAct = GOact[t])
             # print("GR.update_input_activity(GOGR)")
-            GOGR_end = time.time()
-            GOGR_time += GOGR_end - GOGO_end
 
             MFrasters[t, :] = MFact
         
@@ -187,7 +161,7 @@ def run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, fi
             GO.threshRest = GO.update_thresh(trial, threshRest = GO.get_threshRest())
         if GR_PLAST == 1:
             GR.threshRest = GR.update_thresh(trial, threshRest = GR.get_threshRest())
-            GR.GPU_threshRest[:] = cp.asarray(GR.threshRest, dtype = cp.float32)
+            GR.GPU_threshRest[:] = cp.asarray(GR.threshRest, dtype = cp.float64)
 
         GO_Thr[trial] = (GO.get_GO_Thr().copy()) 
         GR_Thr[trial] = (GR.get_GR_Thr().copy())
@@ -252,11 +226,6 @@ lower_lim_GO = 0.01
 upper_lim_GR = 0.014
 lower_lim_GR = 0.01
 
-# GOGO Connect Params
-conv_list = [25]
-gogoW_list = [0.05] # range cant iter by floats
-recip_list = [0.75] 
-
 # Trial Params
 numBins = 5000 
 useCS = 0
@@ -275,22 +244,8 @@ saveGRRaster = True
 saveMFRaster = True
 saveThreshold = True
 
-# GOGO Connect Params
-conv_list = [25]
-gogoW_list = [0.05] # range can't iter by floats
-recip_list = [0.75]
-# span = 6 # changing span below
-
 
 ##### Experiment Loop #####
-
-for i in range(len(recip_list)):
-    for conv in conv_list:
-        for gogoW in gogoW_list:
-            if (conv < 15):
-                continue
-            print(f"Starting Session for GoGo Conv: {conv} W: {gogoW} ...")
-            span = int(conv/2) if conv > 5 else 6 
-            filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr = gen_filepaths(expName, conv, gogoW)
-            recip = round(conv * recip_list[i])
-            run_session(recip, filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr, conv)
+print(f"Starting Session...")
+filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr = gen_filepaths(expName)
+run_session(filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_thr_gr)

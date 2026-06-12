@@ -85,7 +85,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None,
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_noGoGo_yesgrGo_noplast_50_trial/MFGoGr_SS_shuffleMF10percent_noCS_noGoGo_yesgrGo_noplast_50_trial_GOrasters.npy' 
+raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_grgoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_grgoplast_1000_trial_GOrasters.npy' 
 
 if os.path.exists(raster_path):
     raster_data = np.load(raster_path)
@@ -98,8 +98,7 @@ if os.path.exists(raster_path):
     current_cell_type = 2
 
     # 3. Define save location
-    save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_noGoGo_yesgrGo_noplast_50_trial/GO_Firing_Frequency_Histogram" 
-    "_Firing_Frequency_Histogram.png"
+    save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_grgoplast_1000_trial/GO_Firing_Frequency_Histogram" 
     plot_save_path = f"/home/aw39625/minisim/Results/{save_filename}"
 
     # 4. Run the function

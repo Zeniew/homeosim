@@ -1,5 +1,5 @@
 nohup: ignoring input
-Starting Session for GoGo Conv: 25 W: 0.05 ...
+Starting Session...
 Initializing objects...
 Objects initialized.
 Loading connectivity arrays...
@@ -9,2017 +9,1430 @@ GOGR Connectivity Array Loaded.
 GRGO Connectivity Array Loaded.
 GOGO Connectivity Array Loaded.
 Connectivity Arrays Loaded
-80504456
-Trial: 1, Time:44.038s
-82966432
-Trial: 2, Time:43.233s
-81908275
-Trial: 3, Time:46.348s
-83791899
-Trial: 4, Time:46.602s
-84283068
-Trial: 5, Time:46.589s
-84815078
-Trial: 6, Time:47.330s
-81657705
-Trial: 7, Time:45.450s
-82339157
-Trial: 8, Time:46.378s
-81086281
-Trial: 9, Time:46.431s
-80307245
-Trial: 10, Time:46.199s
-82315429
-Trial: 11, Time:47.046s
-81209325
-Trial: 12, Time:45.744s
-81049314
-Trial: 13, Time:46.879s
-79442159
-Trial: 14, Time:45.865s
-81110056
-Trial: 15, Time:46.590s
-78531257
-Trial: 16, Time:43.853s
-80981407
-Trial: 17, Time:44.746s
-80465551
-Trial: 18, Time:46.111s
-82461361
-Trial: 19, Time:46.641s
-82549748
-Trial: 20, Time:46.688s
-83410754
-Trial: 21, Time:40.921s
-83921408
-Trial: 22, Time:35.185s
-84924860
-Trial: 23, Time:35.659s
-83256977
-Trial: 24, Time:35.436s
-84088142
-Trial: 25, Time:35.229s
-82974288
-Trial: 26, Time:35.227s
-80742345
-Trial: 27, Time:34.793s
-82743007
-Trial: 28, Time:34.852s
-80633855
-Trial: 29, Time:33.406s
-81645139
-Trial: 30, Time:34.788s
-82751220
-Trial: 31, Time:34.715s
-83526995
-Trial: 32, Time:34.803s
-82323471
-Trial: 33, Time:34.771s
-81658864
-Trial: 34, Time:34.338s
-84556510
-Trial: 35, Time:34.999s
-85873711
-Trial: 36, Time:35.326s
-84684210
-Trial: 37, Time:35.407s
-83697237
-Trial: 38, Time:35.622s
-84157701
-Trial: 39, Time:35.693s
-84095304
-Trial: 40, Time:35.685s
-83675279
-Trial: 41, Time:35.406s
-84717766
-Trial: 42, Time:34.564s
-83352214
-Trial: 43, Time:35.983s
-82731435
-Trial: 44, Time:34.697s
-82535630
-Trial: 45, Time:34.598s
-82152302
-Trial: 46, Time:34.405s
-82222938
-Trial: 47, Time:34.679s
-83375767
-Trial: 48, Time:34.768s
-83101157
-Trial: 49, Time:34.726s
-82186917
-Trial: 50, Time:34.554s
-83241766
-Trial: 51, Time:34.716s
-83778643
-Trial: 52, Time:34.829s
-82285263
-Trial: 53, Time:32.964s
-84222919
-Trial: 54, Time:34.380s
-84680641
-Trial: 55, Time:35.095s
-83476943
-Trial: 56, Time:34.954s
-83627640
-Trial: 57, Time:34.909s
-83948680
-Trial: 58, Time:34.873s
-85140375
-Trial: 59, Time:35.050s
-84696385
-Trial: 60, Time:35.099s
-84189785
-Trial: 61, Time:33.412s
-85627671
-Trial: 62, Time:34.607s
-86000408
-Trial: 63, Time:34.639s
-87368570
-Trial: 64, Time:34.726s
-83899553
-Trial: 65, Time:34.356s
-84802029
-Trial: 66, Time:33.517s
-86698713
-Trial: 67, Time:34.669s
-87137004
-Trial: 68, Time:33.668s
-85577274
-Trial: 69, Time:34.391s
-84744917
-Trial: 70, Time:34.436s
-84919534
-Trial: 71, Time:34.405s
-85920829
-Trial: 72, Time:34.452s
-84859088
-Trial: 73, Time:34.274s
-83421034
-Trial: 74, Time:34.308s
-85321658
-Trial: 75, Time:33.469s
-86760911
-Trial: 76, Time:34.562s
-87069094
-Trial: 77, Time:34.579s
-88156427
-Trial: 78, Time:34.739s
-88278065
-Trial: 79, Time:34.496s
-87839307
-Trial: 80, Time:34.707s
-88884145
-Trial: 81, Time:34.779s
-89010548
-Trial: 82, Time:34.276s
-88254231
-Trial: 83, Time:34.744s
-90248166
-Trial: 84, Time:35.039s
-90470219
-Trial: 85, Time:34.991s
-92397902
-Trial: 86, Time:35.384s
-93155597
-Trial: 87, Time:35.387s
-93824755
-Trial: 88, Time:34.886s
-94461233
-Trial: 89, Time:35.372s
-94099335
-Trial: 90, Time:35.271s
-95121658
-Trial: 91, Time:36.479s
-95065133
-Trial: 92, Time:35.438s
-95036432
-Trial: 93, Time:35.712s
-92325163
-Trial: 94, Time:35.403s
-92632516
-Trial: 95, Time:36.155s
-94563955
-Trial: 96, Time:34.898s
-94295459
-Trial: 97, Time:35.276s
-92071902
-Trial: 98, Time:35.218s
-88833119
-Trial: 99, Time:35.909s
-88625937
-Trial: 100, Time:35.414s
-89348058
-Trial: 101, Time:35.269s
-87449620
-Trial: 102, Time:34.882s
-87765304
-Trial: 103, Time:34.799s
-87107561
-Trial: 104, Time:34.794s
-87290201
-Trial: 105, Time:33.840s
-88674080
-Trial: 106, Time:34.805s
-90450625
-Trial: 107, Time:35.040s
-90951990
-Trial: 108, Time:34.888s
-92873862
-Trial: 109, Time:35.092s
-92991171
-Trial: 110, Time:35.371s
-94805500
-Trial: 111, Time:35.733s
-95631961
-Trial: 112, Time:35.376s
-92239467
-Trial: 113, Time:35.292s
-92929166
-Trial: 114, Time:35.398s
-95164741
-Trial: 115, Time:35.725s
-95537245
-Trial: 116, Time:35.691s
-94620525
-Trial: 117, Time:35.433s
-94656458
-Trial: 118, Time:35.656s
-95343582
-Trial: 119, Time:35.157s
-96349095
-Trial: 120, Time:35.636s
-96559225
-Trial: 121, Time:35.608s
-96183030
-Trial: 122, Time:37.305s
-94888200
-Trial: 123, Time:36.993s
-94701782
-Trial: 124, Time:37.271s
-94252894
-Trial: 125, Time:35.573s
-94233535
-Trial: 126, Time:36.657s
-96231797
-Trial: 127, Time:35.593s
-97834316
-Trial: 128, Time:35.567s
-98862442
-Trial: 129, Time:36.030s
-96834729
-Trial: 130, Time:37.596s
-97282134
-Trial: 131, Time:37.684s
-95034448
-Trial: 132, Time:37.230s
-92431361
-Trial: 133, Time:35.552s
-90864008
-Trial: 134, Time:36.232s
-90332917
-Trial: 135, Time:35.407s
-92621521
-Trial: 136, Time:34.992s
-93397978
-Trial: 137, Time:35.535s
-95218877
-Trial: 138, Time:35.561s
-97419712
-Trial: 139, Time:35.714s
-97186766
-Trial: 140, Time:35.742s
-98338679
-Trial: 141, Time:35.848s
-99064608
-Trial: 142, Time:35.908s
-98421698
-Trial: 143, Time:35.668s
-96287410
-Trial: 144, Time:35.841s
-97779402
-Trial: 145, Time:35.696s
-97557711
-Trial: 146, Time:35.606s
-98323021
-Trial: 147, Time:37.718s
-97094624
-Trial: 148, Time:35.682s
-94974501
-Trial: 149, Time:36.996s
-97208356
-Trial: 150, Time:37.437s
-96454353
-Trial: 151, Time:35.530s
-96258985
-Trial: 152, Time:35.518s
-96237996
-Trial: 153, Time:35.526s
-93034146
-Trial: 154, Time:35.390s
-94925597
-Trial: 155, Time:35.559s
-95672329
-Trial: 156, Time:36.609s
-98329413
-Trial: 157, Time:37.153s
-99086507
-Trial: 158, Time:35.924s
-95691972
-Trial: 159, Time:35.330s
-98609880
-Trial: 160, Time:35.830s
-99218016
-Trial: 161, Time:35.669s
-98206088
-Trial: 162, Time:35.633s
-97836532
-Trial: 163, Time:35.647s
-97914618
-Trial: 164, Time:35.378s
-99358800
-Trial: 165, Time:35.761s
-97593446
-Trial: 166, Time:35.679s
-96425825
-Trial: 167, Time:35.543s
-95965051
-Trial: 168, Time:35.401s
-98322760
-Trial: 169, Time:35.715s
-99038906
-Trial: 170, Time:37.006s
-98436649
-Trial: 171, Time:35.639s
-98740396
-Trial: 172, Time:35.827s
-100236813
-Trial: 173, Time:35.778s
-100993783
-Trial: 174, Time:35.585s
-102076387
-Trial: 175, Time:35.857s
-101161661
-Trial: 176, Time:37.625s
-101083300
-Trial: 177, Time:37.627s
-100543228
-Trial: 178, Time:35.728s
-99804056
-Trial: 179, Time:35.497s
-101036631
-Trial: 180, Time:35.799s
-100737771
-Trial: 181, Time:37.714s
-101554532
-Trial: 182, Time:37.940s
-100237422
-Trial: 183, Time:37.075s
-102772485
-Trial: 184, Time:36.169s
-101890528
-Trial: 185, Time:35.783s
-99804443
-Trial: 186, Time:35.669s
-100177270
-Trial: 187, Time:35.491s
-98357796
-Trial: 188, Time:35.322s
-96581892
-Trial: 189, Time:34.935s
-97566260
-Trial: 190, Time:35.231s
-94896092
-Trial: 191, Time:34.818s
-94875316
-Trial: 192, Time:36.734s
-95740355
-Trial: 193, Time:35.227s
-95645929
-Trial: 194, Time:35.272s
-93409502
-Trial: 195, Time:36.347s
-93140803
-Trial: 196, Time:36.066s
-94198778
-Trial: 197, Time:35.184s
-94072827
-Trial: 198, Time:34.727s
-94866784
-Trial: 199, Time:35.105s
-94043735
-Trial: 200, Time:36.514s
-94422050
-Trial: 201, Time:36.727s
-94962244
-Trial: 202, Time:36.775s
-94122383
-Trial: 203, Time:36.426s
-94983919
-Trial: 204, Time:35.171s
-96406238
-Trial: 205, Time:37.011s
-97776099
-Trial: 206, Time:35.246s
-97380739
-Trial: 207, Time:35.380s
-100674358
-Trial: 208, Time:35.723s
-100485501
-Trial: 209, Time:35.625s
-97655669
-Trial: 210, Time:35.454s
-99158737
-Trial: 211, Time:35.278s
-100979931
-Trial: 212, Time:35.553s
-102888066
-Trial: 213, Time:35.890s
-100516217
-Trial: 214, Time:35.529s
-102010695
-Trial: 215, Time:37.140s
-102174023
-Trial: 216, Time:35.739s
-101757723
-Trial: 217, Time:35.571s
-102231399
-Trial: 218, Time:35.510s
-101777825
-Trial: 219, Time:35.601s
-101978190
-Trial: 220, Time:35.709s
-103530095
-Trial: 221, Time:35.878s
-103296526
-Trial: 222, Time:35.756s
-104997920
-Trial: 223, Time:37.777s
-104496855
-Trial: 224, Time:37.785s
-103099392
-Trial: 225, Time:37.733s
-102380329
-Trial: 226, Time:37.592s
-100999568
-Trial: 227, Time:37.853s
-99724692
-Trial: 228, Time:35.975s
-99924680
-Trial: 229, Time:36.355s
-100380325
-Trial: 230, Time:36.170s
-100845917
-Trial: 231, Time:36.349s
-100621350
-Trial: 232, Time:35.853s
-98982495
-Trial: 233, Time:37.773s
-100677943
-Trial: 234, Time:38.369s
-99357543
-Trial: 235, Time:37.896s
-100701732
-Trial: 236, Time:36.166s
-101196346
-Trial: 237, Time:35.811s
-102185940
-Trial: 238, Time:35.654s
-101883567
-Trial: 239, Time:35.801s
-102215878
-Trial: 240, Time:35.830s
-103449430
-Trial: 241, Time:35.749s
-102755441
-Trial: 242, Time:37.810s
-103615697
-Trial: 243, Time:35.985s
-101818270
-Trial: 244, Time:35.931s
-103528613
-Trial: 245, Time:35.855s
-101584641
-Trial: 246, Time:36.352s
-102726889
-Trial: 247, Time:36.268s
-103630068
-Trial: 248, Time:36.591s
-103057563
-Trial: 249, Time:36.065s
-104501048
-Trial: 250, Time:36.414s
-104834892
-Trial: 251, Time:35.881s
-104703135
-Trial: 252, Time:35.933s
-105287189
-Trial: 253, Time:35.964s
-106617259
-Trial: 254, Time:37.922s
-106493228
-Trial: 255, Time:36.212s
-107092020
-Trial: 256, Time:37.766s
-105735751
-Trial: 257, Time:36.510s
-105171125
-Trial: 258, Time:36.670s
-105852262
-Trial: 259, Time:37.703s
-106612908
-Trial: 260, Time:37.205s
-106444190
-Trial: 261, Time:36.871s
-105566521
-Trial: 262, Time:38.194s
-105735498
-Trial: 263, Time:36.752s
-106781127
-Trial: 264, Time:36.591s
-107271984
-Trial: 265, Time:36.159s
-108270259
-Trial: 266, Time:36.422s
-107369376
-Trial: 267, Time:36.421s
-108230352
-Trial: 268, Time:37.396s
-109884447
-Trial: 269, Time:36.696s
-110070554
-Trial: 270, Time:36.666s
-112750389
-Trial: 271, Time:37.298s
-111670517
-Trial: 272, Time:36.865s
-112293887
-Trial: 273, Time:39.146s
-109890568
-Trial: 274, Time:36.584s
-108989088
-Trial: 275, Time:38.420s
-108433933
-Trial: 276, Time:37.601s
-109647344
-Trial: 277, Time:38.081s
-111938323
-Trial: 278, Time:37.472s
-109646113
-Trial: 279, Time:37.678s
-106575223
-Trial: 280, Time:38.615s
-107064014
-Trial: 281, Time:37.544s
-108120533
-Trial: 282, Time:37.922s
-105811842
-Trial: 283, Time:37.784s
-110075103
-Trial: 284, Time:37.328s
-108893235
-Trial: 285, Time:37.786s
-108110244
-Trial: 286, Time:38.109s
-109078496
-Trial: 287, Time:38.228s
-108322640
-Trial: 288, Time:38.001s
-106208383
-Trial: 289, Time:37.548s
-104872808
-Trial: 290, Time:37.564s
-107084633
-Trial: 291, Time:37.697s
-106448594
-Trial: 292, Time:37.716s
-106412640
-Trial: 293, Time:37.737s
-106465449
-Trial: 294, Time:37.681s
-104661881
-Trial: 295, Time:37.354s
-105924991
-Trial: 296, Time:37.520s
-103789120
-Trial: 297, Time:37.234s
-103240286
-Trial: 298, Time:37.190s
-104720835
-Trial: 299, Time:38.445s
-103260937
-Trial: 300, Time:37.097s
-101652340
-Trial: 301, Time:37.082s
-105763011
-Trial: 302, Time:37.337s
-106556735
-Trial: 303, Time:36.996s
-107237067
-Trial: 304, Time:38.004s
-107975678
-Trial: 305, Time:36.878s
-108987424
-Trial: 306, Time:37.029s
-108752161
-Trial: 307, Time:37.511s
-108273432
-Trial: 308, Time:37.068s
-108554963
-Trial: 309, Time:37.492s
-109025250
-Trial: 310, Time:37.048s
-109773394
-Trial: 311, Time:36.830s
-111986319
-Trial: 312, Time:37.086s
-110944203
-Trial: 313, Time:36.707s
-110187422
-Trial: 314, Time:37.264s
-110098086
-Trial: 315, Time:37.578s
-109430600
-Trial: 316, Time:37.894s
-108023506
-Trial: 317, Time:38.057s
-108610074
-Trial: 318, Time:38.041s
-107719979
-Trial: 319, Time:38.243s
-107748868
-Trial: 320, Time:39.734s
-108537873
-Trial: 321, Time:39.239s
-108236585
-Trial: 322, Time:38.983s
-108615976
-Trial: 323, Time:37.744s
-109262972
-Trial: 324, Time:37.395s
-111370658
-Trial: 325, Time:37.426s
-108840058
-Trial: 326, Time:37.602s
-109662211
-Trial: 327, Time:37.279s
-107275728
-Trial: 328, Time:37.840s
-108340897
-Trial: 329, Time:38.234s
-107868843
-Trial: 330, Time:37.552s
-110060114
-Trial: 331, Time:37.389s
-109431352
-Trial: 332, Time:37.881s
-111163648
-Trial: 333, Time:38.541s
-107859418
-Trial: 334, Time:37.775s
-111929178
-Trial: 335, Time:37.423s
-109902790
-Trial: 336, Time:37.244s
-111020478
-Trial: 337, Time:37.465s
-111095225
-Trial: 338, Time:36.789s
-110336828
-Trial: 339, Time:39.906s
-110776601
-Trial: 340, Time:40.069s
-108324830
-Trial: 341, Time:37.774s
-107551242
-Trial: 342, Time:37.881s
-109502640
-Trial: 343, Time:37.909s
-105952980
-Trial: 344, Time:37.029s
-107482790
-Trial: 345, Time:36.987s
-109643819
-Trial: 346, Time:37.231s
-109681410
-Trial: 347, Time:37.034s
-109130963
-Trial: 348, Time:36.938s
-109225020
-Trial: 349, Time:36.776s
-108997060
-Trial: 350, Time:36.918s
-112879420
-Trial: 351, Time:36.971s
-112454230
-Trial: 352, Time:36.488s
-110299520
-Trial: 353, Time:36.955s
-110005575
-Trial: 354, Time:37.610s
-112081602
-Trial: 355, Time:36.976s
-113572991
-Trial: 356, Time:36.783s
-113304895
-Trial: 357, Time:38.995s
-114140325
-Trial: 358, Time:36.489s
-113645729
-Trial: 359, Time:36.645s
-113589780
-Trial: 360, Time:37.294s
-113058421
-Trial: 361, Time:37.046s
-114394208
-Trial: 362, Time:37.274s
-114882257
-Trial: 363, Time:36.922s
-116007101
-Trial: 364, Time:37.206s
-117207505
-Trial: 365, Time:37.211s
-116581369
-Trial: 366, Time:37.057s
-116960700
-Trial: 367, Time:37.208s
-114868478
-Trial: 368, Time:37.114s
-116585691
-Trial: 369, Time:37.481s
-115383178
-Trial: 370, Time:37.553s
-110651163
-Trial: 371, Time:37.608s
-109168085
-Trial: 372, Time:37.607s
-108728367
-Trial: 373, Time:37.349s
-109427039
-Trial: 374, Time:37.546s
-109969036
-Trial: 375, Time:37.708s
-111730615
-Trial: 376, Time:37.698s
-112060492
-Trial: 377, Time:37.828s
-114624664
-Trial: 378, Time:37.859s
-113470666
-Trial: 379, Time:37.589s
-114231717
-Trial: 380, Time:37.651s
-115457264
-Trial: 381, Time:37.715s
-116389068
-Trial: 382, Time:37.876s
-114262967
-Trial: 383, Time:38.615s
-109778656
-Trial: 384, Time:39.476s
-110951860
-Trial: 385, Time:37.664s
-112947367
-Trial: 386, Time:37.627s
-112170417
-Trial: 387, Time:37.834s
-111064741
-Trial: 388, Time:37.455s
-110286936
-Trial: 389, Time:37.273s
-112875844
-Trial: 390, Time:37.558s
-112358023
-Trial: 391, Time:37.391s
-112511208
-Trial: 392, Time:37.343s
-113235164
-Trial: 393, Time:37.391s
-111762287
-Trial: 394, Time:37.829s
-114978257
-Trial: 395, Time:37.596s
-110723501
-Trial: 396, Time:37.338s
-111475419
-Trial: 397, Time:37.773s
-111571519
-Trial: 398, Time:37.667s
-109223368
-Trial: 399, Time:37.512s
-110544074
-Trial: 400, Time:37.518s
-112113800
-Trial: 401, Time:37.729s
-115500201
-Trial: 402, Time:37.379s
-110129811
-Trial: 403, Time:37.668s
-111137912
-Trial: 404, Time:37.466s
-110786716
-Trial: 405, Time:37.553s
-113999991
-Trial: 406, Time:37.769s
-113972753
-Trial: 407, Time:37.514s
-111643218
-Trial: 408, Time:37.646s
-110263710
-Trial: 409, Time:37.495s
-109314049
-Trial: 410, Time:37.132s
-109540567
-Trial: 411, Time:37.404s
-111844720
-Trial: 412, Time:37.668s
-110882360
-Trial: 413, Time:37.504s
-111167176
-Trial: 414, Time:38.633s
-107129847
-Trial: 415, Time:37.319s
-109294771
-Trial: 416, Time:38.229s
-109979353
-Trial: 417, Time:37.359s
-111798522
-Trial: 418, Time:37.080s
-109048251
-Trial: 419, Time:38.013s
-105980387
-Trial: 420, Time:36.970s
-106525547
-Trial: 421, Time:36.957s
-106900237
-Trial: 422, Time:37.126s
-106692316
-Trial: 423, Time:36.883s
-104498662
-Trial: 424, Time:36.801s
-101580642
-Trial: 425, Time:36.484s
-104972327
-Trial: 426, Time:36.607s
-109693309
-Trial: 427, Time:37.923s
-109590490
-Trial: 428, Time:36.987s
-109092814
-Trial: 429, Time:37.884s
-110027025
-Trial: 430, Time:37.168s
-114381830
-Trial: 431, Time:37.433s
-112935902
-Trial: 432, Time:37.009s
-112651203
-Trial: 433, Time:37.079s
-116020718
-Trial: 434, Time:37.372s
-114616391
-Trial: 435, Time:37.290s
-114068514
-Trial: 436, Time:37.236s
-112859996
-Trial: 437, Time:37.377s
-110334204
-Trial: 438, Time:37.807s
-107801495
-Trial: 439, Time:37.623s
-109411711
-Trial: 440, Time:37.552s
-111419331
-Trial: 441, Time:37.633s
-109500531
-Trial: 442, Time:37.570s
-111009887
-Trial: 443, Time:38.045s
-107939828
-Trial: 444, Time:37.220s
-108781065
-Trial: 445, Time:37.505s
-113373207
-Trial: 446, Time:37.940s
-113358000
-Trial: 447, Time:37.428s
-112213074
-Trial: 448, Time:37.690s
-113205797
-Trial: 449, Time:37.505s
-114474221
-Trial: 450, Time:36.951s
-114219113
-Trial: 451, Time:36.919s
-115175271
-Trial: 452, Time:37.236s
-114534067
-Trial: 453, Time:39.469s
-114584787
-Trial: 454, Time:37.707s
-114629034
-Trial: 455, Time:37.409s
-114951012
-Trial: 456, Time:37.193s
-115504188
-Trial: 457, Time:37.092s
-120255905
-Trial: 458, Time:39.742s
-120001885
-Trial: 459, Time:39.823s
-116882086
-Trial: 460, Time:37.466s
-116682034
-Trial: 461, Time:37.683s
-117527455
-Trial: 462, Time:37.413s
-117386370
-Trial: 463, Time:37.400s
-116939002
-Trial: 464, Time:37.541s
-119581251
-Trial: 465, Time:37.501s
-117796258
-Trial: 466, Time:37.606s
-117867211
-Trial: 467, Time:37.704s
-117523056
-Trial: 468, Time:37.150s
-/home/aw39625/minisim/run/MFGOGrFunctions_synaptic_scaling.py:137: RuntimeWarning: overflow encountered in multiply
-  (0.00000011969 * self.Vm * self.Vm * self.Vm) +
-/home/aw39625/minisim/run/MFGOGrFunctions_synaptic_scaling.py:138: RuntimeWarning: overflow encountered in multiply
-  (0.000089369 * self.Vm * self.Vm) +
-/home/aw39625/minisim/run/MFGOGrFunctions_synaptic_scaling.py:137: RuntimeWarning: invalid value encountered in add
-  (0.00000011969 * self.Vm * self.Vm * self.Vm) +
-114287462
-Trial: 469, Time:37.677s
-114642602
-Trial: 470, Time:38.104s
-116435137
-Trial: 471, Time:38.201s
-115296169
-Trial: 472, Time:38.170s
-116372523
-Trial: 473, Time:38.065s
-116524987
-Trial: 474, Time:37.616s
-114222730
-Trial: 475, Time:37.788s
-114432909
-Trial: 476, Time:37.916s
-114836823
-Trial: 477, Time:38.249s
-114333781
-Trial: 478, Time:38.027s
-114211958
-Trial: 479, Time:37.933s
-111700084
-Trial: 480, Time:38.007s
-109340861
-Trial: 481, Time:37.888s
-108775899
-Trial: 482, Time:37.541s
-106498297
-Trial: 483, Time:37.335s
-106014030
-Trial: 484, Time:37.290s
-106927411
-Trial: 485, Time:37.060s
-103715293
-Trial: 486, Time:36.806s
-106112013
-Trial: 487, Time:37.091s
-104915860
-Trial: 488, Time:37.154s
-103825007
-Trial: 489, Time:36.874s
-106480095
-Trial: 490, Time:37.090s
-105984498
-Trial: 491, Time:37.224s
-101738200
-Trial: 492, Time:36.463s
-103687118
-Trial: 493, Time:36.652s
-102398589
-Trial: 494, Time:36.650s
-108229121
-Trial: 495, Time:37.253s
-108245484
-Trial: 496, Time:37.291s
-105824482
-Trial: 497, Time:37.371s
-107890492
-Trial: 498, Time:37.589s
-106857886
-Trial: 499, Time:37.431s
-106618333
-Trial: 500, Time:37.599s
-106971300
-Trial: 501, Time:37.599s
-108732373
-Trial: 502, Time:37.730s
-108018263
-Trial: 503, Time:37.648s
-112016921
-Trial: 504, Time:37.672s
-110355337
-Trial: 505, Time:37.914s
-110148250
-Trial: 506, Time:37.834s
-109517075
-Trial: 507, Time:37.521s
-109020278
-Trial: 508, Time:37.689s
-107167545
-Trial: 509, Time:37.101s
-107640578
-Trial: 510, Time:37.141s
-110170412
-Trial: 511, Time:37.757s
-111820142
-Trial: 512, Time:37.782s
-112091043
-Trial: 513, Time:37.220s
-111131532
-Trial: 514, Time:37.576s
-111709835
-Trial: 515, Time:37.505s
-112204354
-Trial: 516, Time:37.362s
-112050638
-Trial: 517, Time:37.429s
-107513911
-Trial: 518, Time:37.211s
-103613965
-Trial: 519, Time:36.897s
-103554863
-Trial: 520, Time:36.949s
-102003264
-Trial: 521, Time:36.608s
-104446706
-Trial: 522, Time:37.965s
-105754674
-Trial: 523, Time:37.360s
-107654847
-Trial: 524, Time:37.909s
-108679375
-Trial: 525, Time:39.155s
-112131008
-Trial: 526, Time:37.694s
-113015422
-Trial: 527, Time:37.600s
-111455011
-Trial: 528, Time:38.197s
-111991326
-Trial: 529, Time:38.360s
-112517652
-Trial: 530, Time:38.295s
-107897054
-Trial: 531, Time:37.472s
-104056691
-Trial: 532, Time:36.990s
-107912968
-Trial: 533, Time:37.352s
-107027340
-Trial: 534, Time:37.250s
-106721627
-Trial: 535, Time:36.961s
-107468546
-Trial: 536, Time:37.150s
-103896086
-Trial: 537, Time:36.626s
-104607914
-Trial: 538, Time:36.673s
-103873994
-Trial: 539, Time:36.806s
-106489157
-Trial: 540, Time:37.192s
-106962182
-Trial: 541, Time:37.049s
-107674603
-Trial: 542, Time:37.250s
-104279593
-Trial: 543, Time:36.649s
-108144469
-Trial: 544, Time:37.357s
-108966017
-Trial: 545, Time:37.259s
-110604619
-Trial: 546, Time:37.248s
-109768564
-Trial: 547, Time:37.587s
-108912568
-Trial: 548, Time:37.581s
-110127630
-Trial: 549, Time:37.783s
-109746425
-Trial: 550, Time:37.574s
-111932514
-Trial: 551, Time:37.696s
-109120843
-Trial: 552, Time:37.638s
-109016349
-Trial: 553, Time:37.586s
-109401418
-Trial: 554, Time:37.415s
-111921108
-Trial: 555, Time:37.276s
-113566851
-Trial: 556, Time:36.967s
-113307901
-Trial: 557, Time:37.254s
-113136403
-Trial: 558, Time:37.643s
-113881112
-Trial: 559, Time:38.505s
-112234436
-Trial: 560, Time:37.568s
-113769493
-Trial: 561, Time:37.264s
-115046175
-Trial: 562, Time:37.257s
-114086537
-Trial: 563, Time:37.152s
-113626720
-Trial: 564, Time:38.302s
-112461558
-Trial: 565, Time:39.087s
-111202477
-Trial: 566, Time:39.309s
-112724657
-Trial: 567, Time:37.393s
-111783179
-Trial: 568, Time:37.504s
-112920171
-Trial: 569, Time:38.557s
-110250194
-Trial: 570, Time:37.838s
-110636902
-Trial: 571, Time:38.442s
-113480968
-Trial: 572, Time:39.181s
-110788889
-Trial: 573, Time:38.525s
-112326553
-Trial: 574, Time:39.393s
-110701049
-Trial: 575, Time:37.841s
-111301491
-Trial: 576, Time:38.869s
-111487061
-Trial: 577, Time:38.641s
-113834770
-Trial: 578, Time:39.115s
-111730842
-Trial: 579, Time:39.843s
-113679183
-Trial: 580, Time:39.672s
-112913339
-Trial: 581, Time:38.565s
-112599804
-Trial: 582, Time:39.233s
-112988601
-Trial: 583, Time:38.656s
-113487975
-Trial: 584, Time:38.779s
-112332831
-Trial: 585, Time:37.628s
-111704341
-Trial: 586, Time:38.052s
-111786898
-Trial: 587, Time:37.631s
-112647552
-Trial: 588, Time:37.870s
-110212570
-Trial: 589, Time:38.935s
-109685004
-Trial: 590, Time:39.179s
-111308335
-Trial: 591, Time:37.389s
-112442136
-Trial: 592, Time:37.348s
-114003178
-Trial: 593, Time:37.223s
-114059460
-Trial: 594, Time:37.168s
-114668336
-Trial: 595, Time:37.309s
-113028983
-Trial: 596, Time:37.805s
-113204554
-Trial: 597, Time:38.395s
-114142187
-Trial: 598, Time:37.075s
-111979722
-Trial: 599, Time:38.036s
-114641476
-Trial: 600, Time:37.083s
-114938364
-Trial: 601, Time:37.021s
-114420539
-Trial: 602, Time:37.349s
-113437400
-Trial: 603, Time:38.494s
-114397543
-Trial: 604, Time:38.198s
-113209411
-Trial: 605, Time:37.827s
-113816755
-Trial: 606, Time:38.266s
-113761090
-Trial: 607, Time:37.653s
-113510118
-Trial: 608, Time:37.716s
-114191278
-Trial: 609, Time:37.862s
-116044002
-Trial: 610, Time:37.427s
-117425431
-Trial: 611, Time:37.794s
-116409984
-Trial: 612, Time:37.753s
-117245000
-Trial: 613, Time:38.344s
-118299212
-Trial: 614, Time:37.966s
-121276806
-Trial: 615, Time:39.750s
-122088500
-Trial: 616, Time:38.257s
-120745019
-Trial: 617, Time:40.936s
-118648217
-Trial: 618, Time:42.175s
-116718716
-Trial: 619, Time:39.126s
-117917014
-Trial: 620, Time:40.221s
-116795829
-Trial: 621, Time:38.764s
-117769560
-Trial: 622, Time:40.024s
-117430055
-Trial: 623, Time:40.528s
-118932118
-Trial: 624, Time:39.168s
-117022259
-Trial: 625, Time:39.710s
-116801209
-Trial: 626, Time:39.768s
-113256445
-Trial: 627, Time:39.568s
-113116615
-Trial: 628, Time:38.603s
-112752984
-Trial: 629, Time:38.468s
-111836908
-Trial: 630, Time:38.820s
-111205803
-Trial: 631, Time:39.654s
-111918504
-Trial: 632, Time:39.298s
-111340391
-Trial: 633, Time:39.317s
-114224922
-Trial: 634, Time:39.156s
-115308237
-Trial: 635, Time:40.102s
-114560924
-Trial: 636, Time:39.311s
-111662998
-Trial: 637, Time:39.225s
-111560233
-Trial: 638, Time:39.018s
-111490867
-Trial: 639, Time:38.675s
-106088090
-Trial: 640, Time:38.178s
-106907426
-Trial: 641, Time:38.380s
-106705965
-Trial: 642, Time:38.639s
-109985962
-Trial: 643, Time:38.109s
-112942233
-Trial: 644, Time:39.369s
-109477036
-Trial: 645, Time:39.097s
-111986953
-Trial: 646, Time:39.779s
-110318945
-Trial: 647, Time:40.044s
-109264715
-Trial: 648, Time:38.917s
-112282294
-Trial: 649, Time:38.713s
-110442790
-Trial: 650, Time:38.745s
-109483677
-Trial: 651, Time:37.760s
-110904715
-Trial: 652, Time:38.800s
-110304792
-Trial: 653, Time:39.346s
-109284367
-Trial: 654, Time:37.614s
-108169708
-Trial: 655, Time:38.522s
-111464033
-Trial: 656, Time:39.363s
-113480738
-Trial: 657, Time:41.302s
-113642565
-Trial: 658, Time:38.788s
-116616627
-Trial: 659, Time:39.210s
-116174267
-Trial: 660, Time:40.474s
-115921944
-Trial: 661, Time:41.745s
-116498429
-Trial: 662, Time:39.969s
-113990224
-Trial: 663, Time:40.043s
-116556733
-Trial: 664, Time:41.311s
-118054052
-Trial: 665, Time:39.829s
-114795779
-Trial: 666, Time:38.859s
-115261575
-Trial: 667, Time:39.974s
-116284461
-Trial: 668, Time:40.166s
-117877882
-Trial: 669, Time:40.508s
-116621785
-Trial: 670, Time:39.367s
-117545752
-Trial: 671, Time:40.322s
-115663887
-Trial: 672, Time:40.097s
-112396267
-Trial: 673, Time:39.035s
-114106130
-Trial: 674, Time:39.496s
-114079433
-Trial: 675, Time:39.404s
-114201259
-Trial: 676, Time:39.447s
-112700692
-Trial: 677, Time:40.240s
-114488594
-Trial: 678, Time:38.987s
-109846095
-Trial: 679, Time:39.210s
-111088915
-Trial: 680, Time:38.536s
-111641530
-Trial: 681, Time:38.737s
-111719304
-Trial: 682, Time:38.627s
-109895298
-Trial: 683, Time:39.652s
-108668766
-Trial: 684, Time:38.807s
-107452176
-Trial: 685, Time:39.544s
-108112657
-Trial: 686, Time:39.115s
-106539759
-Trial: 687, Time:39.560s
-108483709
-Trial: 688, Time:40.142s
-109171018
-Trial: 689, Time:40.490s
-110548525
-Trial: 690, Time:39.431s
-110557955
-Trial: 691, Time:39.306s
-110328617
-Trial: 692, Time:38.124s
-111509753
-Trial: 693, Time:39.878s
-113074144
-Trial: 694, Time:39.806s
-111162974
-Trial: 695, Time:40.580s
-110545437
-Trial: 696, Time:39.507s
-111851862
-Trial: 697, Time:38.966s
-110528393
-Trial: 698, Time:39.524s
-111522472
-Trial: 699, Time:39.712s
-113733433
-Trial: 700, Time:40.241s
-112748225
-Trial: 701, Time:39.162s
-113000594
-Trial: 702, Time:39.688s
-113471312
-Trial: 703, Time:40.370s
-111966458
-Trial: 704, Time:39.266s
-110901189
-Trial: 705, Time:39.813s
-113891100
-Trial: 706, Time:39.397s
-113374107
-Trial: 707, Time:39.222s
-111446354
-Trial: 708, Time:38.508s
-110651841
-Trial: 709, Time:38.555s
-115287294
-Trial: 710, Time:38.994s
-111757573
-Trial: 711, Time:39.268s
-110352995
-Trial: 712, Time:38.533s
-108729983
-Trial: 713, Time:38.600s
-113454983
-Trial: 714, Time:39.259s
-113638756
-Trial: 715, Time:38.742s
-112079115
-Trial: 716, Time:38.761s
-111403535
-Trial: 717, Time:38.743s
-111857071
-Trial: 718, Time:38.862s
-113270622
-Trial: 719, Time:38.484s
-114087419
-Trial: 720, Time:38.679s
-114012698
-Trial: 721, Time:38.392s
-113090765
-Trial: 722, Time:37.970s
-114321015
-Trial: 723, Time:38.896s
-112701230
-Trial: 724, Time:38.724s
-115633973
-Trial: 725, Time:38.439s
-114849316
-Trial: 726, Time:38.662s
-116400644
-Trial: 727, Time:38.908s
-115445599
-Trial: 728, Time:42.947s
-115525985
-Trial: 729, Time:40.179s
-115546832
-Trial: 730, Time:38.474s
-116246751
-Trial: 731, Time:41.115s
-115736206
-Trial: 732, Time:40.423s
-115217300
-Trial: 733, Time:38.934s
-116652291
-Trial: 734, Time:37.833s
-117975228
-Trial: 735, Time:38.333s
-117555098
-Trial: 736, Time:38.738s
-117146254
-Trial: 737, Time:38.909s
-115772619
-Trial: 738, Time:39.835s
-113941669
-Trial: 739, Time:41.327s
-112083024
-Trial: 740, Time:42.377s
-114638943
-Trial: 741, Time:39.576s
-115078803
-Trial: 742, Time:40.811s
-116925271
-Trial: 743, Time:39.815s
-116784837
-Trial: 744, Time:38.762s
-117277766
-Trial: 745, Time:40.426s
-113889474
-Trial: 746, Time:40.395s
-116795458
-Trial: 747, Time:40.686s
-111262211
-Trial: 748, Time:40.043s
-112772395
-Trial: 749, Time:39.678s
-112447448
-Trial: 750, Time:40.049s
-110101656
-Trial: 751, Time:39.727s
-109194505
-Trial: 752, Time:40.168s
-110771135
-Trial: 753, Time:38.776s
-110779335
-Trial: 754, Time:39.044s
-114263652
-Trial: 755, Time:39.229s
-114791406
-Trial: 756, Time:40.163s
-114788482
-Trial: 757, Time:40.390s
-113886619
-Trial: 758, Time:39.990s
-114430481
-Trial: 759, Time:39.853s
-112710347
-Trial: 760, Time:40.007s
-109628034
-Trial: 761, Time:39.381s
-112452502
-Trial: 762, Time:38.490s
-111309871
-Trial: 763, Time:39.410s
-113405916
-Trial: 764, Time:40.632s
-112128004
-Trial: 765, Time:39.202s
-112596410
-Trial: 766, Time:39.192s
-114200499
-Trial: 767, Time:39.462s
-114600539
-Trial: 768, Time:39.088s
-113436785
-Trial: 769, Time:39.113s
-112768440
-Trial: 770, Time:38.821s
-112249342
-Trial: 771, Time:39.397s
-110314639
-Trial: 772, Time:39.414s
-110772080
-Trial: 773, Time:40.653s
-111840757
-Trial: 774, Time:40.055s
-108762243
-Trial: 775, Time:38.958s
-107069894
-Trial: 776, Time:38.755s
-108440805
-Trial: 777, Time:40.136s
-110326516
-Trial: 778, Time:39.668s
-109794797
-Trial: 779, Time:40.397s
-110684847
-Trial: 780, Time:39.429s
-109303479
-Trial: 781, Time:39.983s
-107887907
-Trial: 782, Time:39.953s
-107225767
-Trial: 783, Time:38.762s
-110327528
-Trial: 784, Time:39.027s
-112600632
-Trial: 785, Time:39.039s
-110871893
-Trial: 786, Time:39.542s
-109371569
-Trial: 787, Time:39.708s
-111186927
-Trial: 788, Time:38.836s
-107114935
-Trial: 789, Time:38.380s
-104824366
-Trial: 790, Time:39.041s
-101204550
-Trial: 791, Time:39.609s
-105133157
-Trial: 792, Time:39.131s
-101143590
-Trial: 793, Time:37.286s
-105822827
-Trial: 794, Time:38.978s
-104053455
-Trial: 795, Time:38.658s
-104417951
-Trial: 796, Time:38.798s
-106395530
-Trial: 797, Time:39.803s
-105179117
-Trial: 798, Time:41.398s
-107508488
-Trial: 799, Time:42.621s
-107326458
-Trial: 800, Time:39.227s
-107650401
-Trial: 801, Time:38.910s
-112682950
-Trial: 802, Time:39.443s
-113500019
-Trial: 803, Time:40.424s
-113896511
-Trial: 804, Time:41.882s
-113732559
-Trial: 805, Time:41.021s
-114390525
-Trial: 806, Time:41.870s
-114202333
-Trial: 807, Time:40.743s
-114727777
-Trial: 808, Time:41.422s
-113548715
-Trial: 809, Time:41.017s
-112994304
-Trial: 810, Time:39.813s
-112682937
-Trial: 811, Time:40.366s
-111248840
-Trial: 812, Time:40.389s
-110599255
-Trial: 813, Time:39.948s
-111950267
-Trial: 814, Time:40.188s
-110801907
-Trial: 815, Time:41.294s
-112452529
-Trial: 816, Time:41.112s
-111979563
-Trial: 817, Time:40.389s
-112421457
-Trial: 818, Time:41.546s
-114175805
-Trial: 819, Time:40.661s
-113258980
-Trial: 820, Time:40.683s
-111372284
-Trial: 821, Time:39.514s
-111611755
-Trial: 822, Time:40.191s
-110546362
-Trial: 823, Time:40.923s
-113743227
-Trial: 824, Time:41.051s
-111642647
-Trial: 825, Time:38.987s
-112448630
-Trial: 826, Time:38.553s
-113710388
-Trial: 827, Time:38.933s
-115165885
-Trial: 828, Time:38.797s
-112100350
-Trial: 829, Time:40.974s
-111325550
-Trial: 830, Time:40.824s
-109583163
-Trial: 831, Time:40.597s
-108150553
-Trial: 832, Time:40.293s
-110525360
-Trial: 833, Time:39.296s
-106663624
-Trial: 834, Time:38.350s
-104524633
-Trial: 835, Time:38.078s
-105966467
-Trial: 836, Time:38.582s
-108761168
-Trial: 837, Time:38.813s
-105730661
-Trial: 838, Time:39.128s
-105069741
-Trial: 839, Time:39.284s
-102782208
-Trial: 840, Time:37.985s
-104332136
-Trial: 841, Time:37.939s
-105084551
-Trial: 842, Time:37.298s
-104680094
-Trial: 843, Time:38.147s
-105244775
-Trial: 844, Time:38.835s
-105531334
-Trial: 845, Time:37.762s
-106552082
-Trial: 846, Time:37.962s
-110126073
-Trial: 847, Time:38.697s
-107241947
-Trial: 848, Time:38.285s
-106862289
-Trial: 849, Time:38.543s
-110727937
-Trial: 850, Time:38.600s
-112989905
-Trial: 851, Time:38.286s
-109991555
-Trial: 852, Time:38.632s
-107158695
-Trial: 853, Time:38.577s
-113050351
-Trial: 854, Time:38.676s
-112681868
-Trial: 855, Time:38.505s
-112304152
-Trial: 856, Time:38.383s
-111573003
-Trial: 857, Time:39.467s
-112338736
-Trial: 858, Time:40.025s
-112828035
-Trial: 859, Time:42.836s
-110690579
-Trial: 860, Time:39.507s
-109953584
-Trial: 861, Time:37.768s
-109918493
-Trial: 862, Time:37.495s
-108265022
-Trial: 863, Time:37.525s
-107392177
-Trial: 864, Time:37.408s
-107998973
-Trial: 865, Time:37.399s
-109889581
-Trial: 866, Time:37.576s
-108219856
-Trial: 867, Time:37.611s
-105679254
-Trial: 868, Time:37.378s
-104358829
-Trial: 869, Time:38.274s
-105405818
-Trial: 870, Time:38.380s
-105819652
-Trial: 871, Time:37.550s
-108689477
-Trial: 872, Time:37.406s
-105091990
-Trial: 873, Time:37.075s
-104743818
-Trial: 874, Time:37.367s
-106352504
-Trial: 875, Time:37.432s
-104971899
-Trial: 876, Time:37.253s
-104056896
-Trial: 877, Time:38.062s
-102029212
-Trial: 878, Time:36.948s
-104070007
-Trial: 879, Time:37.198s
-104417272
-Trial: 880, Time:37.153s
-106090430
-Trial: 881, Time:37.553s
-105057669
-Trial: 882, Time:39.050s
-105017421
-Trial: 883, Time:38.383s
-106767862
-Trial: 884, Time:38.274s
-102776425
-Trial: 885, Time:37.171s
-104474565
-Trial: 886, Time:37.992s
-103076211
-Trial: 887, Time:37.135s
-100928597
-Trial: 888, Time:36.526s
-103630106
-Trial: 889, Time:37.122s
-103727855
-Trial: 890, Time:38.951s
-106511961
-Trial: 891, Time:37.530s
-106048918
-Trial: 892, Time:37.346s
-108588552
-Trial: 893, Time:37.691s
-111469589
-Trial: 894, Time:37.225s
-106954909
-Trial: 895, Time:37.274s
-106845731
-Trial: 896, Time:37.447s
-106343145
-Trial: 897, Time:37.625s
-106769863
-Trial: 898, Time:37.552s
-107011300
-Trial: 899, Time:37.669s
-108067542
-Trial: 900, Time:37.565s
-111051162
-Trial: 901, Time:38.334s
-110944805
-Trial: 902, Time:38.774s
-107482080
-Trial: 903, Time:38.204s
-110984708
-Trial: 904, Time:37.268s
-111111773
-Trial: 905, Time:37.094s
-110305476
-Trial: 906, Time:37.760s
-112067223
-Trial: 907, Time:36.995s
-112062020
-Trial: 908, Time:36.344s
-115218084
-Trial: 909, Time:36.821s
-114696424
-Trial: 910, Time:37.353s
-118277169
-Trial: 911, Time:37.384s
-120202943
-Trial: 912, Time:37.664s
-118035103
-Trial: 913, Time:37.683s
-118976104
-Trial: 914, Time:39.507s
-117345037
-Trial: 915, Time:37.100s
-118871180
-Trial: 916, Time:37.660s
-117826786
-Trial: 917, Time:38.944s
-115923024
-Trial: 918, Time:36.945s
-117571682
-Trial: 919, Time:37.508s
-116205003
-Trial: 920, Time:37.454s
-114936854
-Trial: 921, Time:37.703s
-117354760
-Trial: 922, Time:37.729s
-116511917
-Trial: 923, Time:38.082s
-117360251
-Trial: 924, Time:37.873s
-115924153
-Trial: 925, Time:37.640s
-117111675
-Trial: 926, Time:37.576s
-117384703
-Trial: 927, Time:37.945s
-117537226
-Trial: 928, Time:37.805s
-118156021
-Trial: 929, Time:37.940s
-120199996
-Trial: 930, Time:38.334s
-118734020
-Trial: 931, Time:38.433s
-120707661
-Trial: 932, Time:37.728s
-117890595
-Trial: 933, Time:37.988s
-118873425
-Trial: 934, Time:38.012s
-118362635
-Trial: 935, Time:38.353s
-120311704
-Trial: 936, Time:37.657s
-120756384
-Trial: 937, Time:37.826s
-120606226
-Trial: 938, Time:37.512s
-120599790
-Trial: 939, Time:37.621s
-118724478
-Trial: 940, Time:38.531s
-117885958
-Trial: 941, Time:38.189s
-117510112
-Trial: 942, Time:38.820s
-116202608
-Trial: 943, Time:38.162s
-114218210
-Trial: 944, Time:38.090s
-111020430
-Trial: 945, Time:38.966s
-110778870
-Trial: 946, Time:37.958s
-110587006
-Trial: 947, Time:37.768s
-111064058
-Trial: 948, Time:37.787s
-111050888
-Trial: 949, Time:37.845s
-110273327
-Trial: 950, Time:37.912s
-109410602
-Trial: 951, Time:37.738s
-105845482
-Trial: 952, Time:37.319s
-105749052
-Trial: 953, Time:37.204s
-105156998
-Trial: 954, Time:37.165s
-107325450
-Trial: 955, Time:37.350s
-109170904
-Trial: 956, Time:38.955s
-107124137
-Trial: 957, Time:37.428s
-107736902
-Trial: 958, Time:37.512s
-108784976
-Trial: 959, Time:37.726s
-109359785
-Trial: 960, Time:38.898s
-113259667
-Trial: 961, Time:38.280s
-115043157
-Trial: 962, Time:38.564s
-114618370
-Trial: 963, Time:38.475s
-115371197
-Trial: 964, Time:38.473s
-116250897
-Trial: 965, Time:38.604s
-115938206
-Trial: 966, Time:38.338s
-115155619
-Trial: 967, Time:38.323s
-116573237
-Trial: 968, Time:38.489s
-116057115
-Trial: 969, Time:38.272s
-116012547
-Trial: 970, Time:38.594s
-113653742
-Trial: 971, Time:38.383s
-112226735
-Trial: 972, Time:38.214s
-113430007
-Trial: 973, Time:38.230s
-110755220
-Trial: 974, Time:37.713s
-112358808
-Trial: 975, Time:38.901s
-111228306
-Trial: 976, Time:38.078s
-110556122
-Trial: 977, Time:37.940s
-112370648
-Trial: 978, Time:37.835s
-116615761
-Trial: 979, Time:39.405s
-108691184
-Trial: 980, Time:38.455s
-109763292
-Trial: 981, Time:43.794s
-109670006
-Trial: 982, Time:39.016s
-109893123
-Trial: 983, Time:39.487s
-107953915
-Trial: 984, Time:41.747s
-107480790
-Trial: 985, Time:39.682s
-106081629
-Trial: 986, Time:37.834s
-103533823
-Trial: 987, Time:38.225s
-102639107
-Trial: 988, Time:37.406s
-107698596
-Trial: 989, Time:38.291s
-108471955
-Trial: 990, Time:37.992s
-107865352
-Trial: 991, Time:39.451s
-109387416
-Trial: 992, Time:38.520s
-107396427
-Trial: 993, Time:38.532s
-110923952
-Trial: 994, Time:38.062s
-111696170
-Trial: 995, Time:38.016s
-110265781
-Trial: 996, Time:38.685s
-109810953
-Trial: 997, Time:38.123s
-109165514
-Trial: 998, Time:38.032s
-109135262
-Trial: 999, Time:38.708s
-109588847
-Trial: 1000, Time:38.035s
-Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial_GOrasters.npy'
-Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial_GRrasters.npy'
-Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial_MFrasters.npy'
-Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial_gogoW.npy'
-Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial_grgoW.npy'
-Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial_mfgoW.npy'
-Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial_gogrW.npy'
-Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_yesGoGo_yesgrGo_gogoplast_1000_trial_mfgrW.npy'
+47374870
+Trial: 1, Time:30.577s
+49255416
+Trial: 2, Time:30.042s
+48924112
+Trial: 3, Time:30.163s
+49233006
+Trial: 4, Time:30.440s
+49500476
+Trial: 5, Time:30.861s
+50493206
+Trial: 6, Time:30.872s
+49667312
+Trial: 7, Time:30.762s
+48891470
+Trial: 8, Time:30.475s
+49005573
+Trial: 9, Time:30.376s
+49219540
+Trial: 10, Time:30.809s
+48984298
+Trial: 11, Time:30.367s
+48338019
+Trial: 12, Time:30.330s
+48774818
+Trial: 13, Time:30.285s
+49552349
+Trial: 14, Time:30.491s
+50339117
+Trial: 15, Time:30.183s
+51096377
+Trial: 16, Time:31.144s
+50607838
+Trial: 17, Time:30.780s
+50602134
+Trial: 18, Time:30.931s
+49562085
+Trial: 19, Time:30.584s
+48933506
+Trial: 20, Time:30.502s
+49981972
+Trial: 21, Time:30.195s
+49940409
+Trial: 22, Time:31.017s
+50205595
+Trial: 23, Time:30.660s
+50758284
+Trial: 24, Time:30.927s
+50855325
+Trial: 25, Time:30.812s
+50431268
+Trial: 26, Time:30.770s
+50438227
+Trial: 27, Time:30.278s
+50062649
+Trial: 28, Time:30.989s
+50121543
+Trial: 29, Time:30.549s
+48734411
+Trial: 30, Time:30.711s
+48445839
+Trial: 31, Time:30.477s
+48500559
+Trial: 32, Time:30.570s
+47631390
+Trial: 33, Time:30.112s
+48436468
+Trial: 34, Time:30.470s
+49390493
+Trial: 35, Time:30.064s
+49778213
+Trial: 36, Time:30.896s
+49848228
+Trial: 37, Time:30.585s
+49881826
+Trial: 38, Time:30.632s
+50764489
+Trial: 39, Time:30.726s
+51443268
+Trial: 40, Time:31.076s
+52606224
+Trial: 41, Time:30.664s
+52395896
+Trial: 42, Time:31.372s
+52157286
+Trial: 43, Time:30.989s
+51181278
+Trial: 44, Time:30.893s
+51226880
+Trial: 45, Time:30.755s
+50994314
+Trial: 46, Time:30.742s
+51020211
+Trial: 47, Time:30.473s
+51639653
+Trial: 48, Time:30.787s
+52229931
+Trial: 49, Time:31.097s
+52533825
+Trial: 50, Time:31.180s
+52280197
+Trial: 51, Time:31.286s
+53194637
+Trial: 52, Time:31.332s
+52002351
+Trial: 53, Time:30.882s
+53510195
+Trial: 54, Time:31.377s
+54232406
+Trial: 55, Time:30.858s
+54144467
+Trial: 56, Time:31.662s
+53588457
+Trial: 57, Time:31.243s
+53358667
+Trial: 58, Time:31.325s
+51905759
+Trial: 59, Time:30.805s
+52763123
+Trial: 60, Time:31.051s
+51477197
+Trial: 61, Time:30.188s
+51758345
+Trial: 62, Time:31.001s
+51334827
+Trial: 63, Time:30.613s
+52282328
+Trial: 64, Time:30.973s
+51397157
+Trial: 65, Time:30.599s
+51684744
+Trial: 66, Time:30.877s
+52029234
+Trial: 67, Time:30.764s
+52501295
+Trial: 68, Time:30.937s
+52232389
+Trial: 69, Time:30.779s
+52665424
+Trial: 70, Time:31.053s
+53144500
+Trial: 71, Time:31.192s
+53539431
+Trial: 72, Time:31.449s
+53205353
+Trial: 73, Time:31.403s
+53161828
+Trial: 74, Time:31.268s
+53319614
+Trial: 75, Time:31.422s
+54407257
+Trial: 76, Time:30.991s
+54099367
+Trial: 77, Time:31.069s
+53033337
+Trial: 78, Time:31.327s
+52723228
+Trial: 79, Time:30.690s
+52442682
+Trial: 80, Time:31.019s
+52726308
+Trial: 81, Time:31.148s
+52686589
+Trial: 82, Time:30.432s
+53619351
+Trial: 83, Time:30.798s
+52931116
+Trial: 84, Time:30.996s
+53008580
+Trial: 85, Time:30.950s
+53764978
+Trial: 86, Time:31.299s
+53660374
+Trial: 87, Time:31.142s
+54765837
+Trial: 88, Time:31.024s
+54335018
+Trial: 89, Time:31.209s
+55115365
+Trial: 90, Time:31.592s
+55698111
+Trial: 91, Time:31.483s
+54544048
+Trial: 92, Time:31.452s
+55312975
+Trial: 93, Time:31.464s
+55387826
+Trial: 94, Time:31.150s
+55254767
+Trial: 95, Time:31.379s
+55233498
+Trial: 96, Time:31.788s
+54206766
+Trial: 97, Time:31.050s
+55115157
+Trial: 98, Time:31.598s
+55733825
+Trial: 99, Time:31.593s
+55678932
+Trial: 100, Time:31.634s
+54752236
+Trial: 101, Time:30.624s
+54546207
+Trial: 102, Time:31.484s
+54853162
+Trial: 103, Time:31.106s
+54718724
+Trial: 104, Time:31.277s
+54824038
+Trial: 105, Time:30.891s
+54697714
+Trial: 106, Time:31.050s
+55297667
+Trial: 107, Time:30.900s
+54544661
+Trial: 108, Time:31.035s
+54215323
+Trial: 109, Time:31.035s
+55573975
+Trial: 110, Time:31.275s
+55966826
+Trial: 111, Time:31.483s
+56446029
+Trial: 112, Time:31.371s
+55740436
+Trial: 113, Time:30.866s
+56552388
+Trial: 114, Time:31.381s
+55654773
+Trial: 115, Time:31.258s
+56820321
+Trial: 116, Time:31.483s
+56311263
+Trial: 117, Time:31.469s
+53964198
+Trial: 118, Time:31.144s
+55432650
+Trial: 119, Time:31.196s
+55291709
+Trial: 120, Time:31.097s
+55157608
+Trial: 121, Time:31.181s
+55942931
+Trial: 122, Time:30.481s
+55449452
+Trial: 123, Time:31.309s
+56590188
+Trial: 124, Time:31.125s
+57055031
+Trial: 125, Time:31.444s
+57359046
+Trial: 126, Time:31.510s
+57402737
+Trial: 127, Time:31.472s
+57178927
+Trial: 128, Time:31.146s
+56857505
+Trial: 129, Time:31.276s
+57200219
+Trial: 130, Time:30.481s
+56891871
+Trial: 131, Time:31.318s
+57685691
+Trial: 132, Time:31.449s
+56197114
+Trial: 133, Time:31.080s
+57143929
+Trial: 134, Time:31.237s
+58491343
+Trial: 135, Time:31.814s
+58636183
+Trial: 136, Time:31.549s
+58759984
+Trial: 137, Time:31.659s
+57130705
+Trial: 138, Time:30.542s
+59095945
+Trial: 139, Time:31.235s
+57897471
+Trial: 140, Time:31.403s
+57815021
+Trial: 141, Time:31.559s
+59172575
+Trial: 142, Time:31.605s
+58717572
+Trial: 143, Time:31.644s
+57719295
+Trial: 144, Time:30.619s
+58488608
+Trial: 145, Time:31.068s
+59906601
+Trial: 146, Time:31.755s
+60032698
+Trial: 147, Time:31.955s
+59156982
+Trial: 148, Time:31.551s
+58541783
+Trial: 149, Time:31.553s
+58592272
+Trial: 150, Time:30.706s
+58792176
+Trial: 151, Time:31.616s
+59017666
+Trial: 152, Time:31.910s
+58112772
+Trial: 153, Time:31.714s
+59273658
+Trial: 154, Time:31.541s
+62072352
+Trial: 155, Time:32.387s
+60679851
+Trial: 156, Time:31.791s
+60304332
+Trial: 157, Time:31.384s
+61172379
+Trial: 158, Time:31.911s
+60828280
+Trial: 159, Time:32.044s
+60027754
+Trial: 160, Time:31.643s
+59463239
+Trial: 161, Time:31.657s
+59746099
+Trial: 162, Time:31.577s
+60735167
+Trial: 163, Time:31.413s
+60114020
+Trial: 164, Time:31.675s
+60622884
+Trial: 165, Time:31.932s
+60628380
+Trial: 166, Time:31.681s
+61275300
+Trial: 167, Time:31.816s
+60676002
+Trial: 168, Time:31.622s
+59783017
+Trial: 169, Time:31.085s
+59445028
+Trial: 170, Time:31.571s
+61435947
+Trial: 171, Time:31.796s
+60927491
+Trial: 172, Time:31.737s
+60095542
+Trial: 173, Time:31.532s
+59229791
+Trial: 174, Time:31.389s
+59276950
+Trial: 175, Time:30.800s
+58225669
+Trial: 176, Time:31.214s
+56395092
+Trial: 177, Time:31.013s
+57611850
+Trial: 178, Time:31.311s
+57709836
+Trial: 179, Time:31.253s
+57871346
+Trial: 180, Time:31.199s
+58326178
+Trial: 181, Time:31.171s
+58435508
+Trial: 182, Time:31.350s
+57748075
+Trial: 183, Time:30.106s
+58317785
+Trial: 184, Time:31.332s
+57179834
+Trial: 185, Time:30.882s
+57229436
+Trial: 186, Time:30.512s
+60281247
+Trial: 187, Time:31.527s
+56486078
+Trial: 188, Time:30.847s
+57649971
+Trial: 189, Time:31.531s
+57273640
+Trial: 190, Time:31.156s
+59051247
+Trial: 191, Time:31.692s
+59420591
+Trial: 192, Time:31.331s
+58921479
+Trial: 193, Time:31.447s
+59808820
+Trial: 194, Time:30.563s
+59896784
+Trial: 195, Time:31.599s
+59415647
+Trial: 196, Time:31.733s
+61715190
+Trial: 197, Time:32.249s
+61985246
+Trial: 198, Time:32.071s
+59469565
+Trial: 199, Time:31.764s
+60668604
+Trial: 200, Time:31.552s
+61927109
+Trial: 201, Time:31.401s
+62206517
+Trial: 202, Time:31.902s
+62700126
+Trial: 203, Time:32.138s
+62402912
+Trial: 204, Time:31.876s
+62391813
+Trial: 205, Time:32.057s
+64686881
+Trial: 206, Time:32.267s
+66038029
+Trial: 207, Time:32.009s
+64663715
+Trial: 208, Time:32.370s
+64451451
+Trial: 209, Time:32.565s
+67432329
+Trial: 210, Time:33.066s
+66274047
+Trial: 211, Time:33.111s
+65912777
+Trial: 212, Time:32.804s
+64729333
+Trial: 213, Time:32.221s
+66406060
+Trial: 214, Time:32.103s
+67967095
+Trial: 215, Time:32.737s
+68740645
+Trial: 216, Time:33.012s
+66249602
+Trial: 217, Time:32.493s
+67871819
+Trial: 218, Time:33.195s
+65168984
+Trial: 219, Time:32.696s
+64971266
+Trial: 220, Time:32.466s
+65734173
+Trial: 221, Time:32.683s
+67358421
+Trial: 222, Time:32.772s
+66560526
+Trial: 223, Time:31.552s
+65972022
+Trial: 224, Time:32.618s
+66465561
+Trial: 225, Time:32.286s
+65055978
+Trial: 226, Time:32.166s
+67091552
+Trial: 227, Time:32.442s
+67181130
+Trial: 228, Time:32.541s
+67269312
+Trial: 229, Time:31.516s
+66639760
+Trial: 230, Time:32.503s
+67701780
+Trial: 231, Time:32.279s
+68661762
+Trial: 232, Time:32.486s
+70164818
+Trial: 233, Time:32.784s
+69845786
+Trial: 234, Time:32.798s
+69239001
+Trial: 235, Time:33.170s
+67239504
+Trial: 236, Time:32.877s
+69241736
+Trial: 237, Time:33.190s
+68734202
+Trial: 238, Time:32.846s
+68001860
+Trial: 239, Time:32.765s
+67332722
+Trial: 240, Time:31.451s
+66795985
+Trial: 241, Time:31.567s
+66265619
+Trial: 242, Time:32.058s
+69617690
+Trial: 243, Time:32.634s
+68327010
+Trial: 244, Time:32.236s
+69427974
+Trial: 245, Time:32.596s
+71009948
+Trial: 246, Time:33.309s
+71715125
+Trial: 247, Time:33.621s
+71126413
+Trial: 248, Time:33.329s
+70987640
+Trial: 249, Time:33.004s
+70164880
+Trial: 250, Time:32.956s
+70653226
+Trial: 251, Time:31.827s
+70076678
+Trial: 252, Time:32.938s
+70037051
+Trial: 253, Time:32.976s
+68518853
+Trial: 254, Time:32.728s
+69358211
+Trial: 255, Time:32.558s
+69414388
+Trial: 256, Time:32.647s
+69678412
+Trial: 257, Time:32.468s
+67753613
+Trial: 258, Time:32.301s
+68702220
+Trial: 259, Time:31.558s
+69647664
+Trial: 260, Time:32.809s
+70119553
+Trial: 261, Time:32.181s
+71279666
+Trial: 262, Time:33.441s
+69508291
+Trial: 263, Time:32.541s
+69444945
+Trial: 264, Time:31.720s
+69812810
+Trial: 265, Time:31.950s
+70145321
+Trial: 266, Time:32.635s
+68265310
+Trial: 267, Time:33.174s
+69614123
+Trial: 268, Time:33.327s
+69955678
+Trial: 269, Time:33.209s
+69578288
+Trial: 270, Time:32.821s
+70231863
+Trial: 271, Time:33.077s
+68624521
+Trial: 272, Time:31.575s
+68128624
+Trial: 273, Time:32.656s
+70319275
+Trial: 274, Time:32.269s
+70696637
+Trial: 275, Time:32.669s
+70355698
+Trial: 276, Time:32.672s
+69073469
+Trial: 277, Time:32.382s
+68191756
+Trial: 278, Time:31.618s
+67916590
+Trial: 279, Time:32.800s
+69614661
+Trial: 280, Time:33.276s
+70406397
+Trial: 281, Time:33.368s
+69232335
+Trial: 282, Time:33.013s
+69690715
+Trial: 283, Time:32.886s
+71337011
+Trial: 284, Time:33.322s
+71712181
+Trial: 285, Time:32.120s
+72225300
+Trial: 286, Time:33.284s
+71458293
+Trial: 287, Time:32.480s
+70810451
+Trial: 288, Time:32.701s
+71061092
+Trial: 289, Time:32.790s
+73279107
+Trial: 290, Time:33.787s
+72848350
+Trial: 291, Time:33.391s
+72743655
+Trial: 292, Time:33.528s
+73418011
+Trial: 293, Time:33.037s
+72587127
+Trial: 294, Time:32.985s
+72802351
+Trial: 295, Time:32.114s
+73225756
+Trial: 296, Time:33.104s
+73291257
+Trial: 297, Time:32.858s
+73038910
+Trial: 298, Time:32.973s
+75194817
+Trial: 299, Time:33.250s
+76044070
+Trial: 300, Time:34.164s
+76762128
+Trial: 301, Time:34.384s
+77831932
+Trial: 302, Time:34.428s
+77308142
+Trial: 303, Time:34.214s
+75822183
+Trial: 304, Time:34.099s
+73889669
+Trial: 305, Time:32.266s
+71757156
+Trial: 306, Time:33.404s
+72333859
+Trial: 307, Time:33.224s
+70515005
+Trial: 308, Time:32.896s
+72730681
+Trial: 309, Time:33.061s
+71751533
+Trial: 310, Time:33.226s
+71972385
+Trial: 311, Time:31.719s
+73760722
+Trial: 312, Time:33.008s
+73166927
+Trial: 313, Time:32.632s
+74113761
+Trial: 314, Time:33.757s
+73303270
+Trial: 315, Time:33.246s
+74040518
+Trial: 316, Time:33.559s
+73789252
+Trial: 317, Time:33.059s
+72489565
+Trial: 318, Time:32.994s
+73433828
+Trial: 319, Time:31.856s
+72095363
+Trial: 320, Time:32.752s
+71150780
+Trial: 321, Time:32.324s
+71919060
+Trial: 322, Time:32.662s
+72768028
+Trial: 323, Time:32.594s
+73274610
+Trial: 324, Time:33.207s
+74402080
+Trial: 325, Time:33.384s
+75476793
+Trial: 326, Time:33.865s
+75445666
+Trial: 327, Time:33.011s
+75439590
+Trial: 328, Time:33.993s
+77804896
+Trial: 329, Time:33.836s
+75063478
+Trial: 330, Time:33.504s
+76275010
+Trial: 331, Time:33.147s
+76206178
+Trial: 332, Time:34.019s
+76392973
+Trial: 333, Time:33.550s
+74459151
+Trial: 334, Time:33.598s
+73803478
+Trial: 335, Time:33.092s
+73852896
+Trial: 336, Time:33.476s
+74970217
+Trial: 337, Time:32.174s
+74339605
+Trial: 338, Time:33.528s
+74404424
+Trial: 339, Time:33.174s
+74603422
+Trial: 340, Time:33.610s
+75595293
+Trial: 341, Time:33.382s
+74419690
+Trial: 342, Time:33.322s
+74217241
+Trial: 343, Time:31.984s
+74195861
+Trial: 344, Time:33.089s
+72443613
+Trial: 345, Time:32.479s
+72628797
+Trial: 346, Time:32.698s
+74771983
+Trial: 347, Time:32.797s
+76462992
+Trial: 348, Time:33.202s
+77624282
+Trial: 349, Time:33.935s
+76822961
+Trial: 350, Time:34.026s
+75253545
+Trial: 351, Time:33.439s
+77711002
+Trial: 352, Time:33.298s
+77384688
+Trial: 353, Time:33.361s
+76955946
+Trial: 354, Time:33.713s
+78702269
+Trial: 355, Time:33.741s
+78255467
+Trial: 356, Time:33.886s
+77140076
+Trial: 357, Time:33.151s
+78214626
+Trial: 358, Time:33.471s
+77106527
+Trial: 359, Time:32.275s
+79232762
+Trial: 360, Time:32.674s
+79452658
+Trial: 361, Time:33.950s
+78354363
+Trial: 362, Time:33.296s
+79004027
+Trial: 363, Time:33.482s
+80314929
+Trial: 364, Time:33.533s
+79784107
+Trial: 365, Time:32.784s
+78455762
+Trial: 366, Time:34.042s
+78732084
+Trial: 367, Time:33.995s
+79096495
+Trial: 368, Time:33.380s
+80190793
+Trial: 369, Time:33.576s
+79944826
+Trial: 370, Time:33.443s
+79593161
+Trial: 371, Time:32.601s
+78822523
+Trial: 372, Time:33.367s
+78827926
+Trial: 373, Time:33.443s
+80545809
+Trial: 374, Time:32.653s
+78964209
+Trial: 375, Time:32.464s
+81322983
+Trial: 376, Time:33.586s
+80810295
+Trial: 377, Time:33.715s
+80803077
+Trial: 378, Time:34.390s
+82075489
+Trial: 379, Time:34.238s
+81141583
+Trial: 380, Time:33.960s
+82557101
+Trial: 381, Time:34.702s
+82068074
+Trial: 382, Time:34.083s
+81192734
+Trial: 383, Time:33.509s
+81647732
+Trial: 384, Time:34.145s
+79382685
+Trial: 385, Time:33.824s
+80257956
+Trial: 386, Time:33.805s
+79799215
+Trial: 387, Time:33.994s
+79983481
+Trial: 388, Time:33.876s
+80824443
+Trial: 389, Time:33.599s
+81983865
+Trial: 390, Time:34.300s
+81092413
+Trial: 391, Time:34.184s
+80911523
+Trial: 392, Time:34.005s
+82538755
+Trial: 393, Time:34.380s
+81402648
+Trial: 394, Time:34.027s
+82570097
+Trial: 395, Time:33.848s
+82287298
+Trial: 396, Time:34.186s
+81696762
+Trial: 397, Time:34.103s
+80823377
+Trial: 398, Time:33.997s
+81601548
+Trial: 399, Time:34.078s
+82078913
+Trial: 400, Time:34.138s
+84102893
+Trial: 401, Time:33.995s
+82913673
+Trial: 402, Time:34.208s
+83410396
+Trial: 403, Time:34.309s
+84466512
+Trial: 404, Time:34.586s
+85705278
+Trial: 405, Time:34.523s
+82397150
+Trial: 406, Time:34.143s
+82356160
+Trial: 407, Time:33.778s
+81102492
+Trial: 408, Time:33.980s
+81874979
+Trial: 409, Time:34.076s
+83571908
+Trial: 410, Time:34.407s
+82244884
+Trial: 411, Time:34.106s
+81797589
+Trial: 412, Time:34.050s
+82674669
+Trial: 413, Time:33.805s
+83931305
+Trial: 414, Time:34.292s
+86274912
+Trial: 415, Time:34.519s
+85638128
+Trial: 416, Time:34.752s
+85878124
+Trial: 417, Time:34.474s
+86678575
+Trial: 418, Time:34.530s
+85160881
+Trial: 419, Time:34.119s
+83468577
+Trial: 420, Time:34.245s
+83420393
+Trial: 421, Time:34.289s
+82906096
+Trial: 422, Time:34.401s
+83516373
+Trial: 423, Time:34.721s
+82297480
+Trial: 424, Time:34.105s
+84191751
+Trial: 425, Time:34.010s
+84136320
+Trial: 426, Time:34.361s
+82782807
+Trial: 427, Time:34.264s
+84137467
+Trial: 428, Time:34.570s
+83699557
+Trial: 429, Time:34.349s
+82525788
+Trial: 430, Time:34.179s
+83426248
+Trial: 431, Time:33.971s
+80874581
+Trial: 432, Time:33.946s
+81132090
+Trial: 433, Time:33.991s
+81265218
+Trial: 434, Time:34.068s
+81616490
+Trial: 435, Time:34.054s
+84531506
+Trial: 436, Time:34.378s
+85053410
+Trial: 437, Time:34.156s
+84952258
+Trial: 438, Time:34.411s
+84050608
+Trial: 439, Time:34.331s
+83381983
+Trial: 440, Time:34.364s
+85612468
+Trial: 441, Time:34.467s
+85799942
+Trial: 442, Time:34.476s
+86027357
+Trial: 443, Time:34.207s
+85382831
+Trial: 444, Time:34.436s
+84859593
+Trial: 445, Time:34.389s
+85382151
+Trial: 446, Time:34.696s
+88696233
+Trial: 447, Time:34.623s
+88039967
+Trial: 448, Time:34.560s
+87193701
+Trial: 449, Time:34.384s
+88561376
+Trial: 450, Time:34.781s
+85837517
+Trial: 451, Time:34.469s
+86759642
+Trial: 452, Time:34.942s
+86121475
+Trial: 453, Time:35.052s
+83415160
+Trial: 454, Time:34.213s
+84154808
+Trial: 455, Time:33.995s
+85504608
+Trial: 456, Time:34.473s
+85723980
+Trial: 457, Time:34.469s
+85312416
+Trial: 458, Time:34.655s
+85915039
+Trial: 459, Time:34.428s
+85609756
+Trial: 460, Time:34.416s
+88868780
+Trial: 461, Time:34.426s
+87599557
+Trial: 462, Time:34.577s
+87500683
+Trial: 463, Time:34.579s
+87583592
+Trial: 464, Time:35.139s
+87804319
+Trial: 465, Time:34.718s
+88326963
+Trial: 466, Time:34.681s
+89216830
+Trial: 467, Time:34.521s
+90725610
+Trial: 468, Time:34.869s
+89491560
+Trial: 469, Time:34.599s
+90577980
+Trial: 470, Time:35.456s
+94004888
+Trial: 471, Time:36.265s
+92759052
+Trial: 472, Time:34.756s
+93997214
+Trial: 473, Time:34.731s
+95441615
+Trial: 474, Time:35.019s
+95641552
+Trial: 475, Time:34.993s
+96448132
+Trial: 476, Time:36.446s
+96867645
+Trial: 477, Time:35.193s
+95886664
+Trial: 478, Time:35.153s
+97768731
+Trial: 479, Time:35.290s
+95533839
+Trial: 480, Time:35.087s
+93774065
+Trial: 481, Time:34.930s
+92665455
+Trial: 482, Time:35.896s
+94044852
+Trial: 483, Time:36.352s
+93272996
+Trial: 484, Time:34.850s
+90849572
+Trial: 485, Time:34.603s
+91068685
+Trial: 486, Time:34.741s
+92806645
+Trial: 487, Time:34.846s
+91233511
+Trial: 488, Time:35.569s
+91254515
+Trial: 489, Time:35.585s
+92918051
+Trial: 490, Time:34.688s
+91238288
+Trial: 491, Time:34.404s
+91925404
+Trial: 492, Time:34.653s
+91443661
+Trial: 493, Time:34.552s
+94317253
+Trial: 494, Time:35.911s
+92892853
+Trial: 495, Time:34.618s
+93125656
+Trial: 496, Time:34.708s
+93874746
+Trial: 497, Time:34.616s
+93822687
+Trial: 498, Time:34.678s
+93855193
+Trial: 499, Time:34.696s
+93515089
+Trial: 500, Time:35.806s
+93721543
+Trial: 501, Time:36.020s
+96456461
+Trial: 502, Time:34.939s
+95596650
+Trial: 503, Time:34.811s
+95549285
+Trial: 504, Time:34.920s
+95568009
+Trial: 505, Time:34.815s
+95665966
+Trial: 506, Time:36.142s
+94662825
+Trial: 507, Time:34.728s
+94542873
+Trial: 508, Time:34.695s
+94218286
+Trial: 509, Time:34.607s
+96983130
+Trial: 510, Time:34.886s
+94441305
+Trial: 511, Time:34.706s
+92063577
+Trial: 512, Time:35.462s
+92875598
+Trial: 513, Time:34.528s
+95511929
+Trial: 514, Time:34.764s
+93386902
+Trial: 515, Time:34.442s
+96644025
+Trial: 516, Time:34.845s
+94180995
+Trial: 517, Time:34.573s
+97293581
+Trial: 518, Time:36.338s
+95068603
+Trial: 519, Time:34.675s
+96239431
+Trial: 520, Time:34.797s
+96574342
+Trial: 521, Time:34.760s
+97761842
+Trial: 522, Time:34.953s
+98422612
+Trial: 523, Time:34.988s
+97499089
+Trial: 524, Time:36.335s
+100407944
+Trial: 525, Time:35.316s
+98788794
+Trial: 526, Time:35.136s
+95617133
+Trial: 527, Time:34.724s
+96303814
+Trial: 528, Time:34.898s
+92908315
+Trial: 529, Time:34.636s
+92463503
+Trial: 530, Time:35.623s
+96021822
+Trial: 531, Time:34.802s
+96697438
+Trial: 532, Time:34.832s
+96297731
+Trial: 533, Time:34.693s
+94400771
+Trial: 534, Time:34.654s
+92894508
+Trial: 535, Time:34.520s
+92719677
+Trial: 536, Time:35.551s
+95608154
+Trial: 537, Time:34.506s
+97266429
+Trial: 538, Time:34.712s
+96798065
+Trial: 539, Time:34.541s
+97534224
+Trial: 540, Time:34.690s
+97712591
+Trial: 541, Time:34.655s
+98678660
+Trial: 542, Time:36.342s
+97715215
+Trial: 543, Time:34.742s
+98367249
+Trial: 544, Time:34.839s
+95669462
+Trial: 545, Time:34.495s
+98306425
+Trial: 546, Time:34.823s
+98402124
+Trial: 547, Time:34.758s
+96978487
+Trial: 548, Time:36.056s
+98250495
+Trial: 549, Time:34.722s
+97863627
+Trial: 550, Time:34.686s
+97485763
+Trial: 551, Time:34.622s
+95199600
+Trial: 552, Time:34.571s
+97891575
+Trial: 553, Time:34.752s
+98263310
+Trial: 554, Time:36.317s
+96995836
+Trial: 555, Time:34.658s
+100366712
+Trial: 556, Time:35.044s
+99680839
+Trial: 557, Time:34.889s
+100601852
+Trial: 558, Time:35.049s
+102061689
+Trial: 559, Time:35.216s
+101295179
+Trial: 560, Time:36.769s
+100345132
+Trial: 561, Time:34.998s
+99983041
+Trial: 562, Time:34.973s
+100914571
+Trial: 563, Time:35.070s
+98912355
+Trial: 564, Time:34.984s
+99247050
+Trial: 565, Time:34.968s
+98258330
+Trial: 566, Time:36.360s
+96878480
+Trial: 567, Time:34.850s
+95928985
+Trial: 568, Time:35.003s
+95663069
+Trial: 569, Time:34.736s
+97698328
+Trial: 570, Time:34.890s
+97058792
+Trial: 571, Time:35.009s
+97426865
+Trial: 572, Time:36.415s
+98759461
+Trial: 573, Time:34.858s
+96982715
+Trial: 574, Time:35.025s
+97713366
+Trial: 575, Time:34.905s
+97578985
+Trial: 576, Time:35.318s
+97941186
+Trial: 577, Time:35.371s
+97205108
+Trial: 578, Time:36.736s
+97981790
+Trial: 579, Time:36.986s
+97400374
+Trial: 580, Time:35.458s
+97628559
+Trial: 581, Time:35.169s
+97489392
+Trial: 582, Time:35.266s
+97444672
+Trial: 583, Time:35.397s
+97205561
+Trial: 584, Time:36.808s
+95563824
+Trial: 585, Time:35.433s
+95906843
+Trial: 586, Time:35.515s
+94515287
+Trial: 587, Time:35.240s
+95576386
+Trial: 588, Time:35.343s
+95027949
+Trial: 589, Time:35.394s
+96838245
+Trial: 590, Time:36.586s
+97541070
+Trial: 591, Time:36.865s
+99799557
+Trial: 592, Time:35.214s
+100589242
+Trial: 593, Time:35.315s
+97638623
+Trial: 594, Time:35.409s
+98534526
+Trial: 595, Time:35.188s
+99261132
+Trial: 596, Time:36.683s
+101048192
+Trial: 597, Time:37.054s
+101864999
+Trial: 598, Time:35.362s
+100971806
+Trial: 599, Time:35.306s
+102872800
+Trial: 600, Time:35.494s
+101990077
+Trial: 601, Time:35.327s
+99708089
+Trial: 602, Time:37.070s
+100593620
+Trial: 603, Time:37.173s
+101156290
+Trial: 604, Time:35.555s
+99718179
+Trial: 605, Time:35.369s
+98592018
+Trial: 606, Time:35.516s
+100017239
+Trial: 607, Time:35.427s
+98865318
+Trial: 608, Time:37.211s
+101832247
+Trial: 609, Time:35.496s
+103307865
+Trial: 610, Time:35.620s
+104113362
+Trial: 611, Time:35.468s
+105104570
+Trial: 612, Time:35.657s
+104242794
+Trial: 613, Time:35.531s
+104989946
+Trial: 614, Time:37.412s
+106169193
+Trial: 615, Time:35.761s
+104420859
+Trial: 616, Time:35.570s
+105040497
+Trial: 617, Time:35.713s
+104458830
+Trial: 618, Time:35.645s
+106052790
+Trial: 619, Time:35.704s
+104490908
+Trial: 620, Time:37.639s
+103902928
+Trial: 621, Time:35.983s
+104422534
+Trial: 622, Time:35.813s
+103714120
+Trial: 623, Time:35.881s
+101804053
+Trial: 624, Time:35.971s
+102484856
+Trial: 625, Time:35.997s
+102616355
+Trial: 626, Time:37.560s
+104385302
+Trial: 627, Time:36.033s
+105611961
+Trial: 628, Time:35.951s
+106203690
+Trial: 629, Time:35.901s
+106249256
+Trial: 630, Time:35.928s
+106605841
+Trial: 631, Time:36.114s
+107277659
+Trial: 632, Time:37.836s
+108922248
+Trial: 633, Time:36.199s
+108374654
+Trial: 634, Time:36.392s
+107508098
+Trial: 635, Time:36.324s
+105727540
+Trial: 636, Time:36.378s
+106052331
+Trial: 637, Time:36.354s
+106757609
+Trial: 638, Time:38.161s
+107791466
+Trial: 639, Time:37.700s
+108418171
+Trial: 640, Time:36.444s
+111660176
+Trial: 641, Time:36.634s
+109222647
+Trial: 642, Time:36.506s
+112375283
+Trial: 643, Time:36.763s
+110342945
+Trial: 644, Time:38.415s
+112975649
+Trial: 645, Time:36.817s
+111028701
+Trial: 646, Time:36.579s
+112526938
+Trial: 647, Time:36.664s
+112640353
+Trial: 648, Time:36.821s
+115693805
+Trial: 649, Time:37.173s
+115053383
+Trial: 650, Time:39.109s
+113463261
+Trial: 651, Time:36.987s
+112452705
+Trial: 652, Time:36.829s
+112813261
+Trial: 653, Time:36.963s
+111456636
+Trial: 654, Time:37.080s
+109300645
+Trial: 655, Time:37.079s
+110185725
+Trial: 656, Time:38.964s
+108227976
+Trial: 657, Time:38.451s
+109255454
+Trial: 658, Time:36.867s
+109335646
+Trial: 659, Time:36.713s
+109884510
+Trial: 660, Time:36.869s
+107666031
+Trial: 661, Time:36.703s
+109502974
+Trial: 662, Time:38.555s
+109591242
+Trial: 663, Time:36.883s
+108253789
+Trial: 664, Time:36.845s
+108072367
+Trial: 665, Time:36.704s
+107822624
+Trial: 666, Time:36.570s
+110395266
+Trial: 667, Time:36.582s
+110220194
+Trial: 668, Time:38.611s
+111629352
+Trial: 669, Time:37.901s
+109844708
+Trial: 670, Time:36.772s
+111247177
+Trial: 671, Time:36.922s
+112135268
+Trial: 672, Time:36.800s
+112231993
+Trial: 673, Time:36.669s
+112489241
+Trial: 674, Time:38.615s
+111531338
+Trial: 675, Time:36.937s
+111984498
+Trial: 676, Time:37.023s
+112736292
+Trial: 677, Time:36.841s
+113222913
+Trial: 678, Time:36.941s
+112016437
+Trial: 679, Time:37.023s
+109566129
+Trial: 680, Time:38.651s
+110637779
+Trial: 681, Time:37.027s
+108824921
+Trial: 682, Time:36.651s
+111684360
+Trial: 683, Time:36.885s
+112064987
+Trial: 684, Time:36.994s
+109996688
+Trial: 685, Time:37.221s
+109245281
+Trial: 686, Time:38.649s
+111637453
+Trial: 687, Time:36.965s
+108926440
+Trial: 688, Time:36.662s
+108580106
+Trial: 689, Time:37.155s
+110038552
+Trial: 690, Time:36.951s
+108251086
+Trial: 691, Time:36.776s
+108696303
+Trial: 692, Time:38.532s
+110712738
+Trial: 693, Time:38.570s
+111853805
+Trial: 694, Time:36.923s
+112063581
+Trial: 695, Time:36.893s
+109152383
+Trial: 696, Time:36.888s
+111106731
+Trial: 697, Time:36.957s
+109994803
+Trial: 698, Time:38.642s
+112349415
+Trial: 699, Time:38.532s
+111982521
+Trial: 700, Time:36.813s
+111251467
+Trial: 701, Time:36.963s
+110886838
+Trial: 702, Time:37.207s
+112809170
+Trial: 703, Time:36.947s
+110093029
+Trial: 704, Time:39.136s
+112767582
+Trial: 705, Time:37.714s
+111150427
+Trial: 706, Time:36.964s
+109811238
+Trial: 707, Time:37.291s
+110643833
+Trial: 708, Time:37.024s
+111272479
+Trial: 709, Time:36.952s
+109488556
+Trial: 710, Time:38.657s
+111881328
+Trial: 711, Time:37.046s
+108089440
+Trial: 712, Time:36.993s
+108137267
+Trial: 713, Time:36.780s
+110642760
