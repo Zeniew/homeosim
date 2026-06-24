@@ -81,7 +81,7 @@ class Mossy(): # MF Objects, entire network of MF per object
         return self.act
             
 class Golgi(): # class of Golgi cells, entire network of Golgi cells
-    def __init__(self, n, csON, csOFF, useCS, numBins, gogo_weight = 0.0125, mfgo_weight = 0.0042, grgo_weight = 0.0007, plast_ratio = 1):
+    def __init__(self, n, csON, csOFF, useCS, numBins, gogo_weight = 0.0125, mfgo_weight = 0.0042, grgo_weight = 0.0007 * 0.5, plast_ratio = 1):
         ### Constants
         self.numGolgi = n
         self.useCS = useCS

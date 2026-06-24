@@ -1,0 +1,219 @@
+nohup: ignoring input
+Starting Session...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+47322058
+Trial: 1, Time:32.161s
+48845416
+Trial: 2, Time:30.779s
+48953387
+Trial: 3, Time:30.751s
+49744030
+Trial: 4, Time:31.582s
+48792548
+Trial: 5, Time:31.189s
+48196184
+Trial: 6, Time:31.212s
+49072431
+Trial: 7, Time:31.205s
+49913195
+Trial: 8, Time:31.021s
+49361161
+Trial: 9, Time:31.251s
+49532735
+Trial: 10, Time:31.285s
+49270444
+Trial: 11, Time:31.275s
+48529639
+Trial: 12, Time:31.331s
+48187425
+Trial: 13, Time:30.993s
+48370932
+Trial: 14, Time:31.054s
+47128842
+Trial: 15, Time:30.803s
+46735097
+Trial: 16, Time:30.905s
+47169608
+Trial: 17, Time:30.958s
+47801217
+Trial: 18, Time:31.046s
+47359655
+Trial: 19, Time:31.378s
+47947564
+Trial: 20, Time:31.625s
+47497115
+Trial: 21, Time:31.022s
+47525533
+Trial: 22, Time:31.260s
+47405934
+Trial: 23, Time:31.095s
+48332122
+Trial: 24, Time:31.227s
+49012747
+Trial: 25, Time:31.546s
+48246174
+Trial: 26, Time:31.373s
+48464179
+Trial: 27, Time:30.842s
+48592194
+Trial: 28, Time:30.874s
+48602443
+Trial: 29, Time:31.323s
+49296845
+Trial: 30, Time:31.646s
+48357489
+Trial: 31, Time:31.182s
+48509640
+Trial: 32, Time:31.754s
+48245419
+Trial: 33, Time:31.252s
+48236132
+Trial: 34, Time:31.500s
+46829831
+Trial: 35, Time:31.187s
+46654924
+Trial: 36, Time:30.836s
+47450686
+Trial: 37, Time:30.694s
+48509081
+Trial: 38, Time:31.508s
+49125580
+Trial: 39, Time:31.859s
+48295990
+Trial: 40, Time:31.515s
+48668784
+Trial: 41, Time:31.819s
+48449562
+Trial: 42, Time:31.250s
+48893829
+Trial: 43, Time:30.963s
+48508362
+Trial: 44, Time:31.543s
+47933969
+Trial: 45, Time:31.590s
+47719544
+Trial: 46, Time:31.373s
+48427515
+Trial: 47, Time:31.740s
+47830901
+Trial: 48, Time:31.150s
+47313789
+Trial: 49, Time:30.734s
+48158377
+Trial: 50, Time:31.476s
+47540052
+Trial: 51, Time:31.521s
+48617591
+Trial: 52, Time:31.621s
+47836010
+Trial: 53, Time:31.895s
+48227106
+Trial: 54, Time:31.450s
+47657361
+Trial: 55, Time:31.564s
+48411178
+Trial: 56, Time:31.892s
+48298141
+Trial: 57, Time:31.699s
+48608475
+Trial: 58, Time:31.865s
+48513063
+Trial: 59, Time:30.793s
+49026507
+Trial: 60, Time:31.887s
+47889534
+Trial: 61, Time:31.678s
+46997488
+Trial: 62, Time:31.807s
+46317678
+Trial: 63, Time:31.462s
+47476870
+Trial: 64, Time:31.934s
+48094282
+Trial: 65, Time:30.799s
+48769901
+Trial: 66, Time:31.819s
+48274806
+Trial: 67, Time:31.583s
+49159969
+Trial: 68, Time:31.905s
+48480614
+Trial: 69, Time:31.569s
+49047089
+Trial: 70, Time:31.849s
+48991630
+Trial: 71, Time:30.966s
+48610379
+Trial: 72, Time:31.720s
+48780080
+Trial: 73, Time:31.639s
+48241741
+Trial: 74, Time:31.680s
+47082616
+Trial: 75, Time:31.227s
+46177283
+Trial: 76, Time:31.204s
+47839440
+Trial: 77, Time:30.647s
+46408569
+Trial: 78, Time:31.238s
+47725632
+Trial: 79, Time:31.379s
+48757685
+Trial: 80, Time:31.770s
+47137720
+Trial: 81, Time:31.243s
+47477123
+Trial: 82, Time:31.535s
+46100826
+Trial: 83, Time:30.269s
+46294284
+Trial: 84, Time:31.178s
+47359953
+Trial: 85, Time:31.281s
+47772091
+Trial: 86, Time:31.650s
+48007888
+Trial: 87, Time:31.463s
+48929005
+Trial: 88, Time:31.811s
+48782970
+Trial: 89, Time:30.811s
+48232487
+Trial: 90, Time:31.694s
+47359840
+Trial: 91, Time:31.291s
+46978018
+Trial: 92, Time:31.421s
+46635514
+Trial: 93, Time:31.405s
+47627359
+Trial: 94, Time:31.941s
+47508022
+Trial: 95, Time:30.904s
+47901342
+Trial: 96, Time:32.007s
+48369340
+Trial: 97, Time:31.956s
+48738879
+Trial: 98, Time:32.199s
+49596343
+Trial: 99, Time:32.270s
+49085231
+Trial: 100, Time:32.286s
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial_GRrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial_MFrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial_mfgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial_gogrW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial/MFGoGr_SS_shuffleMF10percent_noCS_noplast_100_trial_mfgrW.npy'

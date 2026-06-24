@@ -149,7 +149,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         self.gNMDA_MFGO = np.zeros(self.numGolgi, dtype = np.float32) # NMDA conductance from MF to Golgi
         
         # Threshold
-        self.currentThresh = self.threshRest # current threshold of Golgi cells, initialized to resting threshold
+        self.currentThresh = self.threshRest.copy() # current threshold of Golgi cells, initialized to resting threshold
         self.act = np.zeros((numBins, self.numGolgi), dtype = np.uint8) # activity of Golgi cells over the entire trial, 2D array of size (numBins, numGolgi)
 
         # Trace
@@ -288,7 +288,7 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
         return self.gSum_GOGO
     
     def get_GO_Thr(self):
-        return self.currentThresh
+        return self.threshRest
 
 
 class Granule():
@@ -331,7 +331,7 @@ class Granule():
         self.gLeak = np.full(self.numGranule, self.gLeak_base, dtype = np.float32) # leak conductance for Granule cells, initialized to leak conductance
         self.gKCa = np.zeros(self.numGranule, dtype = np.float32) # experimental K and Ca conductance, initialized to 0
         # Threshold
-        self.currentThresh = self.threshRest # current threshold of Granule cells, initialized to resting threshold
+        self.currentThresh = self.threshRest.copy() # current threshold of Granule cells, initialized to resting threshold
         self.act = np.zeros((trialSize, self.numGranule), dtype = np.uint8) # activity of Granule cells over the entire trial, 2D array of size
         
         # Kernel stuff
@@ -551,7 +551,7 @@ class Granule():
         return self.gogrW
     
     def get_GR_Thr(self):
-        return self.currentThresh
+        return self.threshRest
 
     def updateFinalState(self):
         with cp.cuda.Device(0):

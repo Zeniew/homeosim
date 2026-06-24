@@ -162,6 +162,7 @@ def run_session(filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_
         if GR_PLAST == 1:
             GR.threshRest = GR.update_thresh(trial, threshRest = GR.get_threshRest())
             GR.GPU_threshRest[:] = cp.asarray(GR.threshRest, dtype = cp.float64)
+            GR.threshRest = cp.asnumpy(GR.GPU_threshRest)
 
         GO_Thr[trial] = (GO.get_GO_Thr().copy()) 
         GR_Thr[trial] = (GR.get_GR_Thr().copy())
@@ -230,11 +231,11 @@ lower_lim_GR = 0.01
 numBins = 5000 
 useCS = 0
 CSon, CSoff = 500, 3500
-numTrial = 50 # 1000
+numTrial = 1000
 GO_PLAST = 0
-GR_PLAST = 0
+GR_PLAST = 1
 # saving to hard drive
-expName = f'MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_{numTrial}_trial'
+expName = f'MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GRplast_{numTrial}_trial'
 saveDir = f'/home/data/einez/homeostat_IE/{expName}'
 
 
