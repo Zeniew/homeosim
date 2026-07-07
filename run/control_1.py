@@ -175,7 +175,7 @@ def run_session(filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_
         GR_mfgrW[trial] = (GR.get_mfgrW().copy())
 
         # Final update
-        GR.updateFinalState()
+        # GR.updateFinalState()
         # Rasters
         GOrasters[trial] = GO.get_act()
         # GRrasters[trial] = GR.get_act()
@@ -253,8 +253,8 @@ MFGR_PLAST = 0
 GOGR_PLAST = 0
 
 # saving to hard drive
-expName = f'MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_{numTrial}_trial'
-# MFGoGr_SS_shuffleMF10percent_noCS_gogrplast_1000_trial
+expName = f'MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_{numTrial}_trial_test'
+# MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial
 saveDir = f'/home/data/einez/homeostat_SS/{expName}'
 
 # Save Rasters

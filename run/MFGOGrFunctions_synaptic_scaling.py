@@ -412,7 +412,7 @@ class Granule():
 
     def doGRGPU(self):
         block_size = 256 
-        grid_size = 256 
+        grid_size = 256 * 4
 
         with cp.cuda.Device(0):
             start_idx = 0
@@ -561,25 +561,28 @@ class Granule():
         return self.summed_act
     
     def reset_GPU_summed_act(self):
-        self.GPU_summed_act.fill(0)
-
-    def updateFinalState(self):
         with cp.cuda.Device(0):
-            self.Vm = cp.asnumpy(self.GPU_Vm)
-            self.gSum_MFGR = cp.asnumpy(self.GPU_gSum_MFGR)
-            self.gSum_GOGR = cp.asnumpy(self.GPU_gSum_GOGR)
-            self.gNMDA_Inc_MFGR = cp.asnumpy(self.GPU_gNMDA_Inc_MFGR)
-            self.gNMDA_MFGR = cp.asnumpy(self.GPU_gNMDA_MFGR)
-            self.currentThresh = cp.asnumpy(self.GPU_currentThresh)
-            # self.mfgrW = cp.asnumpy(self.GPU_mfgrW)
-            self.g_decay_MFGR = cp.asnumpy(self.GPU_g_decay_MFGR)
-            # self.gogrW  = cp.asnumpy(self.GPU_gogrW)
-            self.gGABA_decayGOGR = cp.asnumpy(self.GPU_gGABA_decayGOGR)
-            self.g_decay_NMDA_MFGR = cp.asnumpy(self.GPU_g_decay_NMDA_MFGR)
-            self.gDirectInc_MFGR = cp.asnumpy(self.GPU_gDirectInc_MFGR)
-            self.threshRest = cp.asnumpy(self.GPU_threshRest)
-            self.threshDecGR = cp.asnumpy(self.GPU_threshDecGR)
-            self.eLeak = cp.asnumpy(self.GPU_eLeak)
-            self.eGOGR = cp.asnumpy(self.GPU_eGOGR)
+            self.GPU0_summed_act.fill(0)
+        with cp.cuda.Device(1):
+            self.GPU1_summed_act.fill(0)
+
+    # def updateFinalState(self):
+    #     with cp.cuda.Device(0):
+    #         self.Vm = cp.asnumpy(self.GPU_Vm)
+    #         self.gSum_MFGR = cp.asnumpy(self.GPU_gSum_MFGR)
+    #         self.gSum_GOGR = cp.asnumpy(self.GPU_gSum_GOGR)
+    #         self.gNMDA_Inc_MFGR = cp.asnumpy(self.GPU_gNMDA_Inc_MFGR)
+    #         self.gNMDA_MFGR = cp.asnumpy(self.GPU_gNMDA_MFGR)
+    #         self.currentThresh = cp.asnumpy(self.GPU_currentThresh)
+    #         # self.mfgrW = cp.asnumpy(self.GPU_mfgrW)
+    #         self.g_decay_MFGR = cp.asnumpy(self.GPU_g_decay_MFGR)
+    #         # self.gogrW  = cp.asnumpy(self.GPU_gogrW)
+    #         self.gGABA_decayGOGR = cp.asnumpy(self.GPU_gGABA_decayGOGR)
+    #         self.g_decay_NMDA_MFGR = cp.asnumpy(self.GPU_g_decay_NMDA_MFGR)
+    #         self.gDirectInc_MFGR = cp.asnumpy(self.GPU_gDirectInc_MFGR)
+    #         self.threshRest = cp.asnumpy(self.GPU_threshRest)
+    #         self.threshDecGR = cp.asnumpy(self.GPU_threshDecGR)
+    #         self.eLeak = cp.asnumpy(self.GPU_eLeak)
+    #         self.eGOGR = cp.asnumpy(self.GPU_eGOGR)
     
 

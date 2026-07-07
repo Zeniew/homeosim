@@ -45,9 +45,9 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
     cell_names = {1: "Mossy Fiber", 2: "Golgi Cell", 3: "Granule Cell"}
     type_name = cell_names.get(cell_type, "Unknown Cell")
     
-    # # Plot individual traces (lighter, thinner)
-    # for cell in range(num_cells):
-    #     plt.plot(range(1, num_trials + 1), freq[:, cell], alpha=0.3, lw=0.8)
+    # Plot individual traces (lighter, thinner)
+    for cell in range(num_cells):
+        plt.plot(range(1, num_trials + 1), freq[:, cell], alpha=0.3, lw=0.8)
 
     # # #---
     # # TEST: ONLY PLOT ONE CELL TO VERIFY REMOVAL OF ARTIFACT
@@ -74,7 +74,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_grgoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_grgoplast_1000_trial_GRrasters.npy' 
+raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_5_trial_test/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_5_trial_test_GRrasters.npy' 
 raster_data = np.load(raster_path)
 
 print("Finished loading data")
@@ -86,7 +86,7 @@ print("Finished loading data")
 current_cell_type = 3
 
 # 3. Define save location
-save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/mean_GR_Firing_Frequency.png"
+save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_5_trial_test/GR_Firing_Frequency.png"
 plot_save_path = f"/home/aw39625/minisim/Results/{save_filename}"
 
 # 4. Run the function
