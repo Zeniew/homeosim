@@ -5,6 +5,8 @@ import math
 import matplotlib.pyplot as plt
 import time
 
+import concurrent.futures
+
 class Mossy(): # MF Objects, entire network of MF per object
     def __init__(self,n,CSon, CSoff):
         self.numMossy = n # number of MFs
@@ -410,10 +412,7 @@ class Granule():
             self.GPU1_spike_mask = cp.zeros(self.gr_per_gpu, dtype = cp.uint8)
 
 
-    def doGRGPU(self):
-        block_size = 256 
-        grid_size = 256 * 4
-
+    def run_gpu0(self, block_size, grid_size):
         with cp.cuda.Device(0):
             start_idx = 0
             end_idx = self.gr_per_gpu
@@ -427,7 +426,9 @@ class Granule():
                         self.GPU0_currentThresh, self.GPU0_mfgrW, self.GPU0_g_decay_MFGR, self.GPU0_gogrW,
                         self.GPU0_gGABA_decayGOGR, self.GPU0_g_decay_NMDA_MFGR, self.GPU0_gDirectInc_MFGR, self.GPU0_threshRest, self.GPU0_threshDecGR, self.GPU0_eLeak,
                         self.GPU0_eGOGR, self.GPU0_spike_mask, self.GPU0_summed_act))
-
+            return self.GPU0_spike_mask.get().astype(np.uint8)
+        
+    def run_gpu1(self, block_size, grid_size):
         with cp.cuda.Device(1):
             start_idx = self.gr_per_gpu
             end_idx = self.numGranule
@@ -441,11 +442,18 @@ class Granule():
                         self.GPU1_currentThresh, self.GPU1_mfgrW, self.GPU1_g_decay_MFGR, self.GPU1_gogrW,
                         self.GPU1_gGABA_decayGOGR, self.GPU1_g_decay_NMDA_MFGR, self.GPU1_gDirectInc_MFGR, self.GPU1_threshRest, self.GPU1_threshDecGR, self.GPU1_eLeak,
                         self.GPU1_eGOGR, self.GPU1_spike_mask, self.GPU1_summed_act))
+            return self.GPU1_spike_mask.get().astype(np.uint8)
 
-        with cp.cuda.Device(0):
-            self.spike_mask[:self.gr_per_gpu] = self.GPU0_spike_mask.get().astype(np.uint8)
-        with cp.cuda.Device(1):
-            self.spike_mask[self.gr_per_gpu:] = self.GPU1_spike_mask.get().astype(np.uint8)
+    def doGRGPU(self):
+        block_size = 256 
+        grid_size = 256 * 4
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+            future0 = executor.submit(self.run_gpu0, block_size, grid_size)        
+            future1 = executor.submit(self.run_gpu1, block_size, grid_size)
+
+            self.spike_mask[:self.gr_per_gpu] = future0.result() 
+            self.spike_mask[self.gr_per_gpu:] = future1.result() 
             
         return self.spike_mask
 
