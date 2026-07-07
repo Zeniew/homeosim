@@ -293,6 +293,8 @@ class Granule():
         self.threshDecGR = 1 - math.exp(-1.0/3.0) 
         self.threshRest = -40.0
 
+        self.gr_per_gpu = self.numGranule//2
+
         ##### Plasticity
         # self.GPU_mfgr_plast = cp.uint8(mfgr_plast) # <-- not using this constant anymore
         # self.GPU_gogr_plast = cp.uint8(gogr_plast) # <-- not using this constant anymore
@@ -317,6 +319,9 @@ class Granule():
         self.currentThresh = np.full(self.numGranule, self.threshRest, dtype = np.float64) # current threshold of Granule cells, initialized to resting threshold
         self.act = np.zeros((numBins, self.numGranule), dtype = np.uint8) # activity of Granule cells over the entire trial, 2D array of size
         
+        self.summed_act = np.zeros(self.numGranule, dtype = np.int32) # summed activity of Granule cells over the trial, used for plasticity
+        self.spike_mask = np.zeros(self.numGranule, dtype = np.uint8)
+
         # Kernel stuff
         doGranulekernel_code = """
         extern "C" __global__ void doGranule(int size, float *GPU_gLeak, float *GPU_Vm, unsigned char *inputMFGR, float *GPU_gSum_MFGR,
@@ -361,73 +366,86 @@ class Granule():
         """
 
         self.GRgpu = cp.RawKernel(doGranulekernel_code, 'doGranule')
-        self.GPU_gLeak = cp.array(self.gLeak, dtype = cp.float32)
-        self.GPU_Vm = cp.array(self.Vm, dtype = cp.float32)
-        self.GPU_gSum_MFGR = cp.array(self.gSum_MFGR, dtype = cp.float32)
-        self.GPU_gSum_GOGR = cp.array(self.gSum_GOGR, dtype = cp.float32)
-        self.GPU_gNMDA_Inc_MFGR = cp.array(self.gNMDA_Inc_MFGR, dtype = cp.float32)
-        self.GPU_gNMDA_MFGR = cp.array(self.gNMDA_MFGR, dtype = cp.float32)
-        self.GPU_currentThresh = cp.array(self.currentThresh, dtype = cp.float64)
-        self.GPU_mfgrW = cp.array(self.mfgrW, dtype = cp.float64)
-        self.GPU_g_decay_MFGR = cp.float32(self.g_decay_MFGR)
-        self.GPU_gogrW  = cp.array(self.gogrW, dtype = cp.float64)
-        self.GPU_gGABA_decayGOGR = cp.float32(self.gGABA_decayGOGR)
-        self.GPU_g_decay_NMDA_MFGR = cp.float32(self.g_decay_NMDA_MFGR)
-        self.GPU_gDirectInc_MFGR = cp.float32(self.gDirectInc_MFGR)
-        self.GPU_threshRest = cp.float64(self.threshRest)
-        self.GPU_threshDecGR = cp.float64(self.threshDecGR)
-        self.GPU_eLeak = cp.float32(self.eLeak)
-        self.GPU_eGOGR = cp.float32(self.eGOGR)
 
-        self.GPU_inputMFGR = cp.zeros(self.numGranule//2, dtype = cp.uint8)
-        self.GPU_inputGOGR = cp.zeros(self.numGranule//2, dtype = cp.uint8)
+        with cp.cuda.Device(0):
+            self.GPU0_gLeak = cp.array(self.gLeak[:self.gr_per_gpu], dtype = cp.float32)
+            self.GPU0_Vm = cp.array(self.Vm[:self.gr_per_gpu], dtype = cp.float32)
+            self.GPU0_gSum_MFGR = cp.array(self.gSum_MFGR[:self.gr_per_gpu], dtype = cp.float32)
+            self.GPU0_gSum_GOGR = cp.array(self.gSum_GOGR[:self.gr_per_gpu], dtype = cp.float32)
+            self.GPU0_gNMDA_Inc_MFGR = cp.array(self.gNMDA_Inc_MFGR[:self.gr_per_gpu], dtype = cp.float32)
+            self.GPU0_gNMDA_MFGR = cp.array(self.gNMDA_MFGR[:self.gr_per_gpu], dtype = cp.float32)
+            self.GPU0_currentThresh = cp.array(self.currentThresh[:self.gr_per_gpu], dtype = cp.float64)
+            self.GPU0_mfgrW = cp.array(self.mfgrW[:self.gr_per_gpu], dtype = cp.float64)
+            self.GPU0_g_decay_MFGR = cp.float32(self.g_decay_MFGR)
+            self.GPU0_gogrW  = cp.array(self.gogrW[:self.gr_per_gpu], dtype = cp.float64)
+            self.GPU0_gGABA_decayGOGR = cp.float32(self.gGABA_decayGOGR)
+            self.GPU0_g_decay_NMDA_MFGR = cp.float32(self.g_decay_NMDA_MFGR)
+            self.GPU0_gDirectInc_MFGR = cp.float32(self.gDirectInc_MFGR)
+            self.GPU0_threshRest = cp.float64(self.threshRest)
+            self.GPU0_threshDecGR = cp.float64(self.threshDecGR)
+            self.GPU0_eLeak = cp.float32(self.eLeak)
+            self.GPU0_eGOGR = cp.float32(self.eGOGR)
+            self.GPU0_summed_act = cp.zeros(self.gr_per_gpu, dtype = cp.int32)
+            self.GPU0_spike_mask = cp.zeros(self.gr_per_gpu, dtype = cp.uint8)
 
-        self.GPU0_summed_act = cp.zeros(self.numGranule//2, dtype = cp.int32)
-        self.GPU1_summed_act = cp.zeros(self.numGranule//2, dtype = cp.int32)
-        self.summed_act = np.zeros(self.numGranule, dtype = np.int32) # summed activity of Granule cells over the trial, used for plasticity
-
-        self.spike_mask = np.zeros(self.numGranule, dtype = np.uint8)
-        self.GPU0_spike_mask = cp.zeros(self.numGranule//2, dtype = cp.uint8)
-        self.GPU1_spike_mask = cp.zeros(self.numGranule//2, dtype = cp.uint8)
+        with cp.cuda.Device(1):
+            self.GPU1_gLeak = cp.array(self.gLeak[self.gr_per_gpu:], dtype = cp.float32)
+            self.GPU1_Vm = cp.array(self.Vm[self.gr_per_gpu:], dtype = cp.float32)
+            self.GPU1_gSum_MFGR = cp.array(self.gSum_MFGR[self.gr_per_gpu:], dtype = cp.float32)
+            self.GPU1_gSum_GOGR = cp.array(self.gSum_GOGR[self.gr_per_gpu:], dtype = cp.float32)
+            self.GPU1_gNMDA_Inc_MFGR = cp.array(self.gNMDA_Inc_MFGR[self.gr_per_gpu:], dtype = cp.float32)
+            self.GPU1_gNMDA_MFGR = cp.array(self.gNMDA_MFGR[self.gr_per_gpu:], dtype = cp.float32)
+            self.GPU1_currentThresh = cp.array(self.currentThresh[self.gr_per_gpu:], dtype = cp.float64)
+            self.GPU1_mfgrW = cp.array(self.mfgrW[self.gr_per_gpu:], dtype = cp.float64)
+            self.GPU1_g_decay_MFGR = cp.float32(self.g_decay_MFGR)
+            self.GPU1_gogrW  = cp.array(self.gogrW[self.gr_per_gpu:], dtype = cp.float64)
+            self.GPU1_gGABA_decayGOGR = cp.float32(self.gGABA_decayGOGR)
+            self.GPU1_g_decay_NMDA_MFGR = cp.float32(self.g_decay_NMDA_MFGR)
+            self.GPU1_gDirectInc_MFGR = cp.float32(self.gDirectInc_MFGR)
+            self.GPU1_threshRest = cp.float64(self.threshRest)
+            self.GPU1_threshDecGR = cp.float64(self.threshDecGR)
+            self.GPU1_eLeak = cp.float32(self.eLeak)
+            self.GPU1_eGOGR = cp.float32(self.eGOGR)
+            self.GPU1_summed_act = cp.zeros(self.gr_per_gpu, dtype = cp.int32)
+            self.GPU1_spike_mask = cp.zeros(self.gr_per_gpu, dtype = cp.uint8)
 
 
     def doGRGPU(self):
-        gr_per_gpu = self.numGranule // 2
         block_size = 256 
         grid_size = 256 
 
         with cp.cuda.Device(0):
             start_idx = 0
-            end_idx = gr_per_gpu
+            end_idx = self.gr_per_gpu
 
-            self.GPU_inputMFGR = self.inputMFGR[start_idx:end_idx]
-            self.GPU_inputGOGR = self.inputGOGR[start_idx:end_idx]
+            GPU0_inputMFGR = cp.asarray(self.inputMFGR[start_idx:end_idx])
+            GPU0_inputGOGR = cp.asarray(self.inputGOGR[start_idx:end_idx])
 
             self.GRgpu((grid_size,), (block_size,), 
-                        (gr_per_gpu, self.GPU_gLeak[start_idx:end_idx], self.GPU_Vm[start_idx:end_idx], self.GPU_inputMFGR, self.GPU_gSum_MFGR[start_idx:end_idx],
-                        self.GPU_inputGOGR, self.GPU_gSum_GOGR[start_idx:end_idx], self.GPU_gNMDA_Inc_MFGR[start_idx:end_idx], self.GPU_gNMDA_MFGR[start_idx:end_idx],
-                        self.GPU_currentThresh[start_idx:end_idx], self.GPU_mfgrW[start_idx:end_idx], self.GPU_g_decay_MFGR, self.GPU_gogrW[start_idx:end_idx],
-                        self.GPU_gGABA_decayGOGR, self.GPU_g_decay_NMDA_MFGR, self.GPU_gDirectInc_MFGR, self.GPU_threshRest, self.GPU_threshDecGR, self.GPU_eLeak,
-                        self.GPU_eGOGR, self.GPU0_spike_mask, self.GPU0_summed_act))
+                        (self.gr_per_gpu, self.GPU0_gLeak, self.GPU0_Vm, GPU0_inputMFGR, self.GPU0_gSum_MFGR,
+                        GPU0_inputGOGR, self.GPU0_gSum_GOGR, self.GPU0_gNMDA_Inc_MFGR, self.GPU0_gNMDA_MFGR,
+                        self.GPU0_currentThresh, self.GPU0_mfgrW, self.GPU0_g_decay_MFGR, self.GPU0_gogrW,
+                        self.GPU0_gGABA_decayGOGR, self.GPU0_g_decay_NMDA_MFGR, self.GPU0_gDirectInc_MFGR, self.GPU0_threshRest, self.GPU0_threshDecGR, self.GPU0_eLeak,
+                        self.GPU0_eGOGR, self.GPU0_spike_mask, self.GPU0_summed_act))
 
         with cp.cuda.Device(1):
-            start_idx = gr_per_gpu
+            start_idx = self.gr_per_gpu
             end_idx = self.numGranule
 
-            self.GPU_inputMFGR = self.inputMFGR[start_idx:end_idx]
-            self.GPU_inputGOGR = self.inputGOGR[start_idx:end_idx]
+            GPU1_inputMFGR = cp.asarray(self.inputMFGR[start_idx:end_idx])
+            GPU1_inputGOGR = cp.asarray(self.inputGOGR[start_idx:end_idx])
 
             self.GRgpu((grid_size,), (block_size,), 
-                        (gr_per_gpu, self.GPU_gLeak[start_idx:end_idx], self.GPU_Vm[start_idx:end_idx], self.GPU_inputMFGR, self.GPU_gSum_MFGR[start_idx:end_idx],
-                        self.GPU_inputGOGR, self.GPU_gSum_GOGR[start_idx:end_idx], self.GPU_gNMDA_Inc_MFGR[start_idx:end_idx], self.GPU_gNMDA_MFGR[start_idx:end_idx],
-                        self.GPU_currentThresh[start_idx:end_idx], self.GPU_mfgrW[start_idx:end_idx], self.GPU_g_decay_MFGR, self.GPU_gogrW[start_idx:end_idx],
-                        self.GPU_gGABA_decayGOGR, self.GPU_g_decay_NMDA_MFGR, self.GPU_gDirectInc_MFGR, self.GPU_threshRest, self.GPU_threshDecGR, self.GPU_eLeak,
-                        self.GPU_eGOGR, self.GPU1_spike_mask, self.GPU1_summed_act))
+                        (self.gr_per_gpu, self.GPU1_gLeak, self.GPU1_Vm, GPU1_inputMFGR, self.GPU1_gSum_MFGR,
+                        GPU1_inputGOGR, self.GPU1_gSum_GOGR, self.GPU1_gNMDA_Inc_MFGR, self.GPU1_gNMDA_MFGR,
+                        self.GPU1_currentThresh, self.GPU1_mfgrW, self.GPU1_g_decay_MFGR, self.GPU1_gogrW,
+                        self.GPU1_gGABA_decayGOGR, self.GPU1_g_decay_NMDA_MFGR, self.GPU1_gDirectInc_MFGR, self.GPU1_threshRest, self.GPU1_threshDecGR, self.GPU1_eLeak,
+                        self.GPU1_eGOGR, self.GPU1_spike_mask, self.GPU1_summed_act))
 
         with cp.cuda.Device(0):
-            self.spike_mask[:gr_per_gpu] = self.GPU0_spike_mask.get().astype(np.uint8)
+            self.spike_mask[:self.gr_per_gpu] = self.GPU0_spike_mask.get().astype(np.uint8)
         with cp.cuda.Device(1):
-            self.spike_mask[gr_per_gpu:] = self.GPU1_spike_mask.get().astype(np.uint8)
+            self.spike_mask[self.gr_per_gpu:] = self.GPU1_spike_mask.get().astype(np.uint8)
             
         return self.spike_mask
 
@@ -535,11 +553,10 @@ class Granule():
     
     def get_summed_act(self):
         # return self.act.sum(axis = 0, dtype = np.int64) # sum activity over trial for each cell, used for plasticity
-        gr_per_gpu = self.numGranule // 2
         with cp.cuda.Device(0):
-            self.summed_act[:gr_per_gpu] = self.GPU0_summed_act.get().astype(np.int32)
+            self.summed_act[:self.gr_per_gpu] = self.GPU0_summed_act.get().astype(np.int32)
         with cp.cuda.Device(1):
-            self.summed_act[gr_per_gpu:] = self.GPU1_summed_act.get().astype(np.int32)
+            self.summed_act[self.gr_per_gpu:] = self.GPU1_summed_act.get().astype(np.int32)
 
         return self.summed_act
     
