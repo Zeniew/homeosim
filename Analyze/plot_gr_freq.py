@@ -74,7 +74,7 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None)
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_GRrasters.npy' 
+raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_grgoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_grgoplast_1000_trial_GRrasters.npy' 
 raster_data = np.load(raster_path)
 
 print("Finished loading data")
