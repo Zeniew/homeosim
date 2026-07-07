@@ -102,8 +102,8 @@ def plotThresholdContinuous(thr, save_path=None, thr_type=1):
 
 
 # --- Execution ---
-thr_data = np.load('/home/data/einez/homeostat_IE/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_10_trial/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_10_trial_GoThr.npy')
-plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_noplast_10_trial/GoThr.png"
+thr_data = np.load('/home/data/einez/homeostat_IE/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial_GoThr.npy')
+plot_save_path = "/home/aw39625/minisim/Results/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial/GoThr.png"
 
 if thr_data.shape[1] > 4096:
     thr_data = thr_data[:, 1:5001]  # Remove the first column (cell 0) to exclude it from the plot

@@ -250,11 +250,12 @@ MFGO_PLAST = 0
 GOGO_PLAST = 0
 GRGO_PLAST = 0
 MFGR_PLAST = 0
-GOGR_PLAST = 1
+GOGR_PLAST = 0
 
 # saving to hard drive
-expName = f'MFGoGr_SS_shuffleMF10percent_noCS_halfgrGo_gogrplast_{numTrial}_trial'
+expName = f'MFGoGr_SS_shuffleMF10percent_noCS_noplast_{numTrial}_trial'
 saveDir = f'/home/data/einez/homeostat_SS/{expName}'
+# MFGoGr_SS_shuffleMF10percent_noCS_noplast_1000_trial
 
 # Save Rasters
 saveGORaster = True

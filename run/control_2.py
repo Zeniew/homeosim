@@ -58,13 +58,13 @@ def run_session(filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_
     MFGO_importPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgo'
     MFGO_connect_arr = connect.read_connect(MFGO_importPath, numMF, 20)
     MFGO_connect_arr = MFGO_connect_arr[:, :16]
-    MFGO_connect_arr[MFGO_connect_arr == -1] = 0
+    # MFGO_connect_arr[MFGO_connect_arr == -1] = 0
     print("MFGO Connectivity Array Loaded.")
 
     MFGR_importPath = '/home/data/einez/connect_arr/connect_arr_PRE.mfgr'
     MFGR_connect_arr = connect.read_connect(MFGR_importPath, numMF, 4000)
     MFGR_connect_arr = MFGR_connect_arr[:, :1289]
-    MFGR_connect_arr[MFGR_connect_arr == -1] = 0
+    # MFGR_connect_arr[MFGR_connect_arr == -1] = 0
     print("MFGR Connectivity Array Loaded.")
 
     GOGR_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogr"
@@ -86,13 +86,13 @@ def run_session(filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_
     GRGO_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.grgo"
     GRGO_connect_arr = connect.read_connect(GRGO_importPath, numGR, 50)
     GRGO_connect_arr = GRGO_connect_arr[:, :30]
-    GRGO_connect_arr[GRGO_connect_arr == -1] = 0 # changes the -1 padding to index 0
+    # GRGO_connect_arr[GRGO_connect_arr == -1] = 0 # changes the -1 padding to index 0
     print("GRGO Connectivity Array Loaded.")
 
     # GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
     GOGO_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogo"
     GOGO_connect_arr = connect.read_connect(GOGO_importPath, numGO, 12)
-    GOGO_connect_arr[GOGO_connect_arr == -1] = 0
+    # GOGO_connect_arr[GOGO_connect_arr == -1] = 0
     print("GOGO Connectivity Array Loaded.")
 
 
@@ -232,12 +232,12 @@ numBins = 5000
 useCS = 0
 CSon, CSoff = 500, 3500
 numTrial = 1000
-GO_PLAST = 0
-GR_PLAST = 1
+GO_PLAST = 1
+GR_PLAST = 0
 # saving to hard drive
-expName = f'MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GRplast_{numTrial}_trial'
+expName = f'MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_{numTrial}_trial'
 saveDir = f'/home/data/einez/homeostat_IE/{expName}'
-
+# MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial
 
 # Save Rasters
 saveGORaster = True

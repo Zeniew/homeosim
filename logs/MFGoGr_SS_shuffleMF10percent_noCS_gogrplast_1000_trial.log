@@ -1,0 +1,2134 @@
+nohup: ignoring input
+Starting Session...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial 0 Cell 1 Spike Count: 13.0 Cell 2 Spike Count: 22.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 93.0 Cell 5 Spike Count: 11.0
+Trial 0 Cell 1 Error: -8.0 Cell 2 Error:  -17.0 Cell 3 Error: 1.0 Cell 4 Error: -88.0 Cell 5 Error: -6.0
+Trial 0 Cell 1 Weight: 0.015044999999999998 Cell 2 Weight: 0.015044999999999998 Cell 3 Weight: 0.014955134596211367 Cell 4 Weight: 0.015044999999999998 Cell 5 Weight: 0.015044999999999998
+48875295
+Trial: 1, Time:38.975s
+Trial 1 Cell 1 Spike Count: 13.0 Cell 2 Spike Count: 56.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 109.0 Cell 5 Spike Count: 1.0
+Trial 1 Cell 1 Error: -8.0 Cell 2 Error:  -51.0 Cell 3 Error: 5.0 Cell 4 Error: -104.0 Cell 5 Error: 4.0
+Trial 1 Cell 1 Weight: 0.015090134999999996 Cell 2 Weight: 0.015090134999999996 Cell 3 Weight: 0.01491040338605321 Cell 4 Weight: 0.015090134999999996 Cell 5 Weight: 0.015
+49318307
+Trial: 2, Time:36.383s
+Trial 2 Cell 1 Spike Count: 10.0 Cell 2 Spike Count: 66.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 121.0 Cell 5 Spike Count: 28.0
+Trial 2 Cell 1 Error: -5.0 Cell 2 Error:  -61.0 Cell 3 Error: -5.0 Cell 4 Error: -116.0 Cell 5 Error: -23.0
+Trial 2 Cell 1 Weight: 0.015135405404999995 Cell 2 Weight: 0.015135405404999995 Cell 3 Weight: 0.014955134596211367 Cell 4 Weight: 0.015135405404999995 Cell 5 Weight: 0.015044999999999998
+49048247
+Trial: 3, Time:36.591s
+Trial 3 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 68.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 164.0 Cell 5 Spike Count: 7.0
+Trial 3 Cell 1 Error: 0.0 Cell 2 Error:  -63.0 Cell 3 Error: 1.0 Cell 4 Error: -159.0 Cell 5 Error: -2.0
+Trial 3 Cell 1 Weight: 0.015135405404999995 Cell 2 Weight: 0.015180811621214993 Cell 3 Weight: 0.01491040338605321 Cell 4 Weight: 0.015180811621214993 Cell 5 Weight: 0.015090134999999996
+48662893
+Trial: 4, Time:36.350s
+Trial 4 Cell 1 Spike Count: 141.0 Cell 2 Spike Count: 253.0 Cell 3 Spike Count: 25.0 Cell 4 Spike Count: 156.0 Cell 5 Spike Count: 50.0
+Trial 4 Cell 1 Error: -136.0 Cell 2 Error:  -248.0 Cell 3 Error: -20.0 Cell 4 Error: -151.0 Cell 5 Error: -45.0
+Trial 4 Cell 1 Weight: 0.015180811621214993 Cell 2 Weight: 0.015226354056078636 Cell 3 Weight: 0.014955134596211367 Cell 4 Weight: 0.015226354056078636 Cell 5 Weight: 0.015135405404999995
+49238869
+Trial: 5, Time:36.334s
+Trial 5 Cell 1 Spike Count: 136.0 Cell 2 Spike Count: 211.0 Cell 3 Spike Count: 17.0 Cell 4 Spike Count: 163.0 Cell 5 Spike Count: 14.0
+Trial 5 Cell 1 Error: -131.0 Cell 2 Error:  -206.0 Cell 3 Error: -12.0 Cell 4 Error: -158.0 Cell 5 Error: -9.0
+Trial 5 Cell 1 Weight: 0.015226354056078636 Cell 2 Weight: 0.01527203311824687 Cell 3 Weight: 0.015 Cell 4 Weight: 0.01527203311824687 Cell 5 Weight: 0.015180811621214993
+50676556
+Trial: 6, Time:36.736s
+Trial 6 Cell 1 Spike Count: 138.0 Cell 2 Spike Count: 181.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 129.0 Cell 5 Spike Count: 24.0
+Trial 6 Cell 1 Error: -133.0 Cell 2 Error:  -176.0 Cell 3 Error: 2.0 Cell 4 Error: -124.0 Cell 5 Error: -19.0
+Trial 6 Cell 1 Weight: 0.01527203311824687 Cell 2 Weight: 0.015317849217601608 Cell 3 Weight: 0.014955134596211367 Cell 4 Weight: 0.015317849217601608 Cell 5 Weight: 0.015226354056078636
+50204435
+Trial: 7, Time:36.631s
+Trial 7 Cell 1 Spike Count: 84.0 Cell 2 Spike Count: 242.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 27.0 Cell 5 Spike Count: 27.0
+Trial 7 Cell 1 Error: -79.0 Cell 2 Error:  -237.0 Cell 3 Error: 2.0 Cell 4 Error: -22.0 Cell 5 Error: -22.0
+Trial 7 Cell 1 Weight: 0.015317849217601608 Cell 2 Weight: 0.015363802765254411 Cell 3 Weight: 0.01491040338605321 Cell 4 Weight: 0.015363802765254411 Cell 5 Weight: 0.01527203311824687
+49038494
+Trial: 8, Time:36.470s
+Trial 8 Cell 1 Spike Count: 113.0 Cell 2 Spike Count: 202.0 Cell 3 Spike Count: 15.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 85.0
+Trial 8 Cell 1 Error: -108.0 Cell 2 Error:  -197.0 Cell 3 Error: -10.0 Cell 4 Error: -4.0 Cell 5 Error: -80.0
+Trial 8 Cell 1 Weight: 0.015363802765254411 Cell 2 Weight: 0.015409894173550173 Cell 3 Weight: 0.014955134596211367 Cell 4 Weight: 0.015409894173550173 Cell 5 Weight: 0.015317849217601608
+49206380
+Trial: 9, Time:36.359s
+Trial 9 Cell 1 Spike Count: 136.0 Cell 2 Spike Count: 91.0 Cell 3 Spike Count: 18.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 72.0
+Trial 9 Cell 1 Error: -131.0 Cell 2 Error:  -86.0 Cell 3 Error: -13.0 Cell 4 Error: -1.0 Cell 5 Error: -67.0
+Trial 9 Cell 1 Weight: 0.015409894173550173 Cell 2 Weight: 0.015456123856070822 Cell 3 Weight: 0.015 Cell 4 Weight: 0.015456123856070822 Cell 5 Weight: 0.015363802765254411
+47815504
+Trial: 10, Time:36.057s
+Trial 10 Cell 1 Spike Count: 110.0 Cell 2 Spike Count: 93.0 Cell 3 Spike Count: 15.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 87.0
+Trial 10 Cell 1 Error: -105.0 Cell 2 Error:  -88.0 Cell 3 Error: -10.0 Cell 4 Error: -5.0 Cell 5 Error: -82.0
+Trial 10 Cell 1 Weight: 0.015456123856070822 Cell 2 Weight: 0.015502492227639032 Cell 3 Weight: 0.015044999999999998 Cell 4 Weight: 0.015502492227639032 Cell 5 Weight: 0.015409894173550173
+47691675
+Trial: 11, Time:35.811s
+Trial 11 Cell 1 Spike Count: 108.0 Cell 2 Spike Count: 22.0 Cell 3 Spike Count: 64.0 Cell 4 Spike Count: 26.0 Cell 5 Spike Count: 121.0
+Trial 11 Cell 1 Error: -103.0 Cell 2 Error:  -17.0 Cell 3 Error: -59.0 Cell 4 Error: -21.0 Cell 5 Error: -116.0
+Trial 11 Cell 1 Weight: 0.015502492227639032 Cell 2 Weight: 0.015548999704321947 Cell 3 Weight: 0.015090134999999996 Cell 4 Weight: 0.015548999704321947 Cell 5 Weight: 0.015456123856070822
+48348818
+Trial: 12, Time:36.658s
+Trial 12 Cell 1 Spike Count: 30.0 Cell 2 Spike Count: 13.0 Cell 3 Spike Count: 52.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 16.0
+Trial 12 Cell 1 Error: -25.0 Cell 2 Error:  -8.0 Cell 3 Error: -47.0 Cell 4 Error: 5.0 Cell 5 Error: -11.0
+Trial 12 Cell 1 Weight: 0.015548999704321947 Cell 2 Weight: 0.01559564670343491 Cell 3 Weight: 0.015135405404999995 Cell 4 Weight: 0.015502492227639032 Cell 5 Weight: 0.015502492227639032
+47305930
+Trial: 13, Time:36.084s
+Trial 13 Cell 1 Spike Count: 16.0 Cell 2 Spike Count: 33.0 Cell 3 Spike Count: 75.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 6.0
+Trial 13 Cell 1 Error: -11.0 Cell 2 Error:  -28.0 Cell 3 Error: -70.0 Cell 4 Error: 4.0 Cell 5 Error: -1.0
+Trial 13 Cell 1 Weight: 0.01559564670343491 Cell 2 Weight: 0.015642433643545214 Cell 3 Weight: 0.015180811621214993 Cell 4 Weight: 0.015456123856070822 Cell 5 Weight: 0.015548999704321947
+47328297
+Trial: 14, Time:36.013s
+Trial 14 Cell 1 Spike Count: 9.0 Cell 2 Spike Count: 35.0 Cell 3 Spike Count: 38.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 10.0
+Trial 14 Cell 1 Error: -4.0 Cell 2 Error:  -30.0 Cell 3 Error: -33.0 Cell 4 Error: 5.0 Cell 5 Error: -5.0
+Trial 14 Cell 1 Weight: 0.015642433643545214 Cell 2 Weight: 0.015689360944475848 Cell 3 Weight: 0.015226354056078636 Cell 4 Weight: 0.015409894173550175 Cell 5 Weight: 0.01559564670343491
+47556743
+Trial: 15, Time:36.112s
+Trial 15 Cell 1 Spike Count: 9.0 Cell 2 Spike Count: 49.0 Cell 3 Spike Count: 113.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 5.0
+Trial 15 Cell 1 Error: -4.0 Cell 2 Error:  -44.0 Cell 3 Error: -108.0 Cell 4 Error: 5.0 Cell 5 Error: 0.0
+Trial 15 Cell 1 Weight: 0.015689360944475848 Cell 2 Weight: 0.015736429027309273 Cell 3 Weight: 0.01527203311824687 Cell 4 Weight: 0.015363802765254413 Cell 5 Weight: 0.01559564670343491
+47161511
+Trial: 16, Time:36.116s
+Trial 16 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 32.0 Cell 3 Spike Count: 131.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 11.0
+Trial 16 Cell 1 Error: -1.0 Cell 2 Error:  -27.0 Cell 3 Error: -126.0 Cell 4 Error: 5.0 Cell 5 Error: -6.0
+Trial 16 Cell 1 Weight: 0.015736429027309273 Cell 2 Weight: 0.0157836383143912 Cell 3 Weight: 0.015317849217601608 Cell 4 Weight: 0.01531784921760161 Cell 5 Weight: 0.015642433643545214
+47600687
+Trial: 17, Time:36.240s
+Trial 17 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 15.0 Cell 3 Spike Count: 26.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 17 Cell 1 Error: 5.0 Cell 2 Error:  -10.0 Cell 3 Error: -21.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 17 Cell 1 Weight: 0.015689360944475848 Cell 2 Weight: 0.01583098922933437 Cell 3 Weight: 0.015363802765254411 Cell 4 Weight: 0.015272033118246871 Cell 5 Weight: 0.015595646703434912
+48165465
+Trial: 18, Time:36.157s
+Trial 18 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 23.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 18 Cell 1 Error: 0.0 Cell 2 Error:  -18.0 Cell 3 Error: -3.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 18 Cell 1 Weight: 0.015689360944475848 Cell 2 Weight: 0.015878482197022373 Cell 3 Weight: 0.015409894173550173 Cell 4 Weight: 0.015226354056078637 Cell 5 Weight: 0.015548999704321949
+48044684
+Trial: 19, Time:36.966s
+Trial 19 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 12.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 19 Cell 1 Error: 1.0 Cell 2 Error:  -7.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 19 Cell 1 Weight: 0.015642433643545214 Cell 2 Weight: 0.01592611764361344 Cell 3 Weight: 0.015363802765254411 Cell 4 Weight: 0.015180811621214995 Cell 5 Weight: 0.015502492227639034
+48575255
+Trial: 20, Time:36.598s
+Trial 20 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 34.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 20 Cell 1 Error: 5.0 Cell 2 Error:  -29.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 20 Cell 1 Weight: 0.015595646703434912 Cell 2 Weight: 0.01597389599654428 Cell 3 Weight: 0.015317849217601608 Cell 4 Weight: 0.015135405404999996 Cell 5 Weight: 0.015456123856070824
+48192497
+Trial: 21, Time:36.514s
+Trial 21 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 76.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 21 Cell 1 Error: 5.0 Cell 2 Error:  -71.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 21 Cell 1 Weight: 0.015548999704321949 Cell 2 Weight: 0.01602181768453391 Cell 3 Weight: 0.01527203311824687 Cell 4 Weight: 0.015090135 Cell 5 Weight: 0.015409894173550176
+48864624
+Trial: 22, Time:36.694s
+Trial 22 Cell 1 Spike Count: 2.0 Cell 2 Spike Count: 12.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 22 Cell 1 Error: 3.0 Cell 2 Error:  -7.0 Cell 3 Error: 1.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 22 Cell 1 Weight: 0.015502492227639034 Cell 2 Weight: 0.01606988313758751 Cell 3 Weight: 0.015226354056078636 Cell 4 Weight: 0.015045000000000001 Cell 5 Weight: 0.015363802765254415
+47476358
+Trial: 23, Time:36.368s
+Trial 23 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 7.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 23 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -2.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 23 Cell 1 Weight: 0.015456123856070824 Cell 2 Weight: 0.016021817684533913 Cell 3 Weight: 0.01527203311824687 Cell 4 Weight: 0.015000000000000003 Cell 5 Weight: 0.015317849217601612
+47255701
+Trial: 24, Time:36.412s
+Trial 24 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 13.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 24 Cell 1 Error: 1.0 Cell 2 Error:  -8.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 24 Cell 1 Weight: 0.015409894173550176 Cell 2 Weight: 0.016069883137587514 Cell 3 Weight: 0.015226354056078636 Cell 4 Weight: 0.01495513459621137 Cell 5 Weight: 0.015272033118246873
+46739849
+Trial: 25, Time:36.164s
+Trial 25 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 15.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 12.0
+Trial 25 Cell 1 Error: 5.0 Cell 2 Error:  -10.0 Cell 3 Error: 0.0 Cell 4 Error: 5.0 Cell 5 Error: -7.0
+Trial 25 Cell 1 Weight: 0.015363802765254415 Cell 2 Weight: 0.016118092787000275 Cell 3 Weight: 0.015226354056078636 Cell 4 Weight: 0.014910403386053213 Cell 5 Weight: 0.015317849217601612
+46409368
+Trial: 26, Time:35.899s
+Trial 26 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 20.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 26 Cell 1 Error: 5.0 Cell 2 Error:  -15.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 26 Cell 1 Weight: 0.015317849217601612 Cell 2 Weight: 0.016166447065361272 Cell 3 Weight: 0.015180811621214993 Cell 4 Weight: 0.014865805968148769 Cell 5 Weight: 0.015272033118246873
+46443249
+Trial: 27, Time:36.079s
+Trial 27 Cell 1 Spike Count: 18.0 Cell 2 Spike Count: 30.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 0.0
+Trial 27 Cell 1 Error: -13.0 Cell 2 Error:  -25.0 Cell 3 Error: 4.0 Cell 4 Error: -1.0 Cell 5 Error: 5.0
+Trial 27 Cell 1 Weight: 0.015363802765254415 Cell 2 Weight: 0.016214946406557355 Cell 3 Weight: 0.015135405404999995 Cell 4 Weight: 0.014910403386053213 Cell 5 Weight: 0.01522635405607864
+47507898
+Trial: 28, Time:36.262s
+Trial 28 Cell 1 Spike Count: 107.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 28 Cell 1 Error: -102.0 Cell 2 Error:  5.0 Cell 3 Error: -3.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 28 Cell 1 Weight: 0.015409894173550176 Cell 2 Weight: 0.016166447065361272 Cell 3 Weight: 0.015180811621214993 Cell 4 Weight: 0.014865805968148769 Cell 5 Weight: 0.015180811621214997
+47600646
+Trial: 29, Time:38.260s
+Trial 29 Cell 1 Spike Count: 122.0 Cell 2 Spike Count: 12.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 29 Cell 1 Error: -117.0 Cell 2 Error:  -7.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 29 Cell 1 Weight: 0.015456123856070826 Cell 2 Weight: 0.016214946406557355 Cell 3 Weight: 0.015135405404999995 Cell 4 Weight: 0.014821341942321806 Cell 5 Weight: 0.015135405404999998
+47371530
+Trial: 30, Time:36.126s
+Trial 30 Cell 1 Spike Count: 55.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 0.0
+Trial 30 Cell 1 Error: -50.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -1.0 Cell 5 Error: 5.0
+Trial 30 Cell 1 Weight: 0.015502492227639036 Cell 2 Weight: 0.016166447065361272 Cell 3 Weight: 0.015090134999999998 Cell 4 Weight: 0.014865805968148769 Cell 5 Weight: 0.015090135000000001
+47243216
+Trial: 31, Time:36.533s
+Trial 31 Cell 1 Spike Count: 99.0 Cell 2 Spike Count: 2.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 31 Cell 1 Error: -94.0 Cell 2 Error:  3.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 31 Cell 1 Weight: 0.01554899970432195 Cell 2 Weight: 0.016118092787000275 Cell 3 Weight: 0.015045 Cell 4 Weight: 0.014821341942321806 Cell 5 Weight: 0.015045000000000003
+46196319
+Trial: 32, Time:36.010s
+Trial 32 Cell 1 Spike Count: 86.0 Cell 2 Spike Count: 14.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 32 Cell 1 Error: -81.0 Cell 2 Error:  -9.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 32 Cell 1 Weight: 0.015595646703434914 Cell 2 Weight: 0.016166447065361272 Cell 3 Weight: 0.015000000000000001 Cell 4 Weight: 0.01477701090959303 Cell 5 Weight: 0.015000000000000005
+46839130
+Trial: 33, Time:36.070s
+Trial 33 Cell 1 Spike Count: 100.0 Cell 2 Spike Count: 3.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 2.0
+Trial 33 Cell 1 Error: -95.0 Cell 2 Error:  2.0 Cell 3 Error: -1.0 Cell 4 Error: 4.0 Cell 5 Error: 3.0
+Trial 33 Cell 1 Weight: 0.015642433643545218 Cell 2 Weight: 0.016118092787000275 Cell 3 Weight: 0.015045 Cell 4 Weight: 0.014732812472176502 Cell 5 Weight: 0.014955134596211372
+48742952
+Trial: 34, Time:36.860s
+Trial 34 Cell 1 Spike Count: 1.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 20.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 13.0
+Trial 34 Cell 1 Error: 4.0 Cell 2 Error:  1.0 Cell 3 Error: -15.0 Cell 4 Error: 5.0 Cell 5 Error: -8.0
+Trial 34 Cell 1 Weight: 0.015595646703434916 Cell 2 Weight: 0.016069883137587514 Cell 3 Weight: 0.015090134999999998 Cell 4 Weight: 0.014688746233476076 Cell 5 Weight: 0.015000000000000005
+47256308
+Trial: 35, Time:36.131s
+Trial 35 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 9.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 0.0
+Trial 35 Cell 1 Error: 1.0 Cell 2 Error:  5.0 Cell 3 Error: -4.0 Cell 4 Error: -1.0 Cell 5 Error: 5.0
+Trial 35 Cell 1 Weight: 0.015548999704321952 Cell 2 Weight: 0.016021817684533916 Cell 3 Weight: 0.015135405404999996 Cell 4 Weight: 0.014732812472176502 Cell 5 Weight: 0.014955134596211372
+47120186
+Trial: 36, Time:37.466s
+Trial 36 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 7.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 36 Cell 1 Error: 5.0 Cell 2 Error:  1.0 Cell 3 Error: -2.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 36 Cell 1 Weight: 0.015502492227639037 Cell 2 Weight: 0.015973895996544286 Cell 3 Weight: 0.015180811621214995 Cell 4 Weight: 0.014688746233476076 Cell 5 Weight: 0.014910403386053215
+47569543
+Trial: 37, Time:36.268s
+Trial 37 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 13.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 7.0
+Trial 37 Cell 1 Error: 5.0 Cell 2 Error:  -4.0 Cell 3 Error: -8.0 Cell 4 Error: 5.0 Cell 5 Error: -2.0
+Trial 37 Cell 1 Weight: 0.015456123856070828 Cell 2 Weight: 0.016021817684533916 Cell 3 Weight: 0.01522635405607864 Cell 4 Weight: 0.014644811798081832 Cell 5 Weight: 0.014955134596211372
+46306615
+Trial: 38, Time:35.857s
+Trial 38 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 18.0 Cell 4 Spike Count: 18.0 Cell 5 Spike Count: 0.0
+Trial 38 Cell 1 Error: 5.0 Cell 2 Error:  1.0 Cell 3 Error: -13.0 Cell 4 Error: -13.0 Cell 5 Error: 5.0
+Trial 38 Cell 1 Weight: 0.01540989417355018 Cell 2 Weight: 0.015973895996544286 Cell 3 Weight: 0.015272033118246873 Cell 4 Weight: 0.014688746233476076 Cell 5 Weight: 0.014910403386053215
+46924588
+Trial: 39, Time:37.951s
+Trial 39 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 18.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 0.0
+Trial 39 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -13.0 Cell 4 Error: -3.0 Cell 5 Error: 5.0
+Trial 39 Cell 1 Weight: 0.015363802765254418 Cell 2 Weight: 0.015926117643613447 Cell 3 Weight: 0.015317849217601612 Cell 4 Weight: 0.014732812472176502 Cell 5 Weight: 0.01486580596814877
+48001896
+Trial: 40, Time:37.948s
+Trial 40 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 2.0
+Trial 40 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 1.0 Cell 4 Error: 5.0 Cell 5 Error: 3.0
+Trial 40 Cell 1 Weight: 0.015317849217601615 Cell 2 Weight: 0.015878482197022384 Cell 3 Weight: 0.015272033118246873 Cell 4 Weight: 0.014688746233476076 Cell 5 Weight: 0.014821341942321807
+48406577
+Trial: 41, Time:36.501s
+Trial 41 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 2.0 Cell 5 Spike Count: 1.0
+Trial 41 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -1.0 Cell 4 Error: 3.0 Cell 5 Error: 4.0
+Trial 41 Cell 1 Weight: 0.015272033118246877 Cell 2 Weight: 0.01583098922933438 Cell 3 Weight: 0.015317849217601612 Cell 4 Weight: 0.014644811798081832 Cell 5 Weight: 0.014777010909593031
+47490571
+Trial: 42, Time:36.264s
+Trial 42 Cell 1 Spike Count: 2.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 28.0 Cell 4 Spike Count: 24.0 Cell 5 Spike Count: 9.0
+Trial 42 Cell 1 Error: 3.0 Cell 2 Error:  5.0 Cell 3 Error: -23.0 Cell 4 Error: -19.0 Cell 5 Error: -4.0
+Trial 42 Cell 1 Weight: 0.015226354056078643 Cell 2 Weight: 0.01578363831439121 Cell 3 Weight: 0.015363802765254415 Cell 4 Weight: 0.014688746233476076 Cell 5 Weight: 0.01482134194232181
+47612431
+Trial: 43, Time:36.345s
+Trial 43 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 19.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 43 Cell 1 Error: 5.0 Cell 2 Error:  -14.0 Cell 3 Error: 3.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 43 Cell 1 Weight: 0.015180811621215 Cell 2 Weight: 0.01583098922933438 Cell 3 Weight: 0.015317849217601612 Cell 4 Weight: 0.014644811798081832 Cell 5 Weight: 0.014777010909593033
+47921229
+Trial: 44, Time:36.457s
+Trial 44 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 5.0 Cell 3 Spike Count: 26.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 3.0
+Trial 44 Cell 1 Error: 5.0 Cell 2 Error:  0.0 Cell 3 Error: -21.0 Cell 4 Error: -5.0 Cell 5 Error: 2.0
+Trial 44 Cell 1 Weight: 0.015135405405000002 Cell 2 Weight: 0.01583098922933438 Cell 3 Weight: 0.015363802765254415 Cell 4 Weight: 0.014688746233476076 Cell 5 Weight: 0.014732812472176506
+48216892
+Trial: 45, Time:36.606s
+Trial 45 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 13.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 0.0
+Trial 45 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -8.0 Cell 4 Error: -2.0 Cell 5 Error: 5.0
+Trial 45 Cell 1 Weight: 0.015090135000000005 Cell 2 Weight: 0.01578363831439121 Cell 3 Weight: 0.015409894173550176 Cell 4 Weight: 0.014732812472176502 Cell 5 Weight: 0.01468874623347608
+46682184
+Trial: 46, Time:36.203s
+Trial 46 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 46 Cell 1 Error: 5.0 Cell 2 Error:  -5.0 Cell 3 Error: 4.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 46 Cell 1 Weight: 0.015045000000000006 Cell 2 Weight: 0.01583098922933438 Cell 3 Weight: 0.015363802765254415 Cell 4 Weight: 0.014688746233476076 Cell 5 Weight: 0.014644811798081836
+47709174
+Trial: 47, Time:36.449s
+Trial 47 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 4.0
+Trial 47 Cell 1 Error: 0.0 Cell 2 Error:  1.0 Cell 3 Error: -5.0 Cell 4 Error: 5.0 Cell 5 Error: 1.0
+Trial 47 Cell 1 Weight: 0.015045000000000006 Cell 2 Weight: 0.01578363831439121 Cell 3 Weight: 0.015409894173550176 Cell 4 Weight: 0.014644811798081832 Cell 5 Weight: 0.014601008771766538
+47459684
+Trial: 48, Time:36.624s
+Trial 48 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 19.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 4.0
+Trial 48 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -14.0 Cell 4 Error: 5.0 Cell 5 Error: 1.0
+Trial 48 Cell 1 Weight: 0.015000000000000008 Cell 2 Weight: 0.015736429027309283 Cell 3 Weight: 0.015456123856070826 Cell 4 Weight: 0.014601008771766535 Cell 5 Weight: 0.014557336761482093
+46510668
+Trial: 49, Time:36.126s
+Trial 49 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 31.0 Cell 3 Spike Count: 48.0 Cell 4 Spike Count: 18.0 Cell 5 Spike Count: 0.0
+Trial 49 Cell 1 Error: 5.0 Cell 2 Error:  -26.0 Cell 3 Error: -43.0 Cell 4 Error: -13.0 Cell 5 Error: 5.0
+Trial 49 Cell 1 Weight: 0.014955134596211376 Cell 2 Weight: 0.01578363831439121 Cell 3 Weight: 0.015502492227639036 Cell 4 Weight: 0.014644811798081832 Cell 5 Weight: 0.014513795375356027
+46789298
+Trial: 50, Time:36.106s
+Trial 50 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 49.0 Cell 3 Spike Count: 67.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 0.0
+Trial 50 Cell 1 Error: 5.0 Cell 2 Error:  -44.0 Cell 3 Error: -62.0 Cell 4 Error: 0.0 Cell 5 Error: 5.0
+Trial 50 Cell 1 Weight: 0.014910403386053218 Cell 2 Weight: 0.01583098922933438 Cell 3 Weight: 0.01554899970432195 Cell 4 Weight: 0.014644811798081832 Cell 5 Weight: 0.014470384222687965
+47424665
+Trial: 51, Time:36.259s
+Trial 51 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 62.0 Cell 3 Spike Count: 39.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 0.0
+Trial 51 Cell 1 Error: 5.0 Cell 2 Error:  -57.0 Cell 3 Error: -34.0 Cell 4 Error: -5.0 Cell 5 Error: 5.0
+Trial 51 Cell 1 Weight: 0.014865805968148774 Cell 2 Weight: 0.015878482197022384 Cell 3 Weight: 0.015595646703434914 Cell 4 Weight: 0.014688746233476076 Cell 5 Weight: 0.014427102913946128
+47821066
+Trial: 52, Time:36.599s
+Trial 52 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 59.0 Cell 3 Spike Count: 42.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 0.0
+Trial 52 Cell 1 Error: 5.0 Cell 2 Error:  -54.0 Cell 3 Error: -37.0 Cell 4 Error: -3.0 Cell 5 Error: 5.0
+Trial 52 Cell 1 Weight: 0.014821341942321811 Cell 2 Weight: 0.01592611764361345 Cell 3 Weight: 0.015642433643545218 Cell 4 Weight: 0.014732812472176502 Cell 5 Weight: 0.014383951060763839
+47709109
+Trial: 53, Time:36.209s
+Trial 53 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 23.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 0.0
+Trial 53 Cell 1 Error: 5.0 Cell 2 Error:  -18.0 Cell 3 Error: -3.0 Cell 4 Error: -4.0 Cell 5 Error: 5.0
+Trial 53 Cell 1 Weight: 0.014777010909593033 Cell 2 Weight: 0.01597389599654429 Cell 3 Weight: 0.01568936094447585 Cell 4 Weight: 0.01477701090959303 Cell 5 Weight: 0.014340928275936034
+48844810
+Trial: 54, Time:36.827s
+Trial 54 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 29.0 Cell 3 Spike Count: 41.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 8.0
+Trial 54 Cell 1 Error: 5.0 Cell 2 Error:  -24.0 Cell 3 Error: -36.0 Cell 4 Error: 0.0 Cell 5 Error: -3.0
+Trial 54 Cell 1 Weight: 0.014732812472176506 Cell 2 Weight: 0.01602181768453392 Cell 3 Weight: 0.015736429027309276 Cell 4 Weight: 0.01477701090959303 Cell 5 Weight: 0.01438395106076384
+47093373
+Trial: 55, Time:36.264s
+Trial 55 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 89.0 Cell 3 Spike Count: 23.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 9.0
+Trial 55 Cell 1 Error: 5.0 Cell 2 Error:  -84.0 Cell 3 Error: -18.0 Cell 4 Error: -5.0 Cell 5 Error: -4.0
+Trial 55 Cell 1 Weight: 0.01468874623347608 Cell 2 Weight: 0.01606988313758752 Cell 3 Weight: 0.015783638314391203 Cell 4 Weight: 0.014821341942321807 Cell 5 Weight: 0.014427102913946131
+46960409
+Trial: 56, Time:36.123s
+Trial 56 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 56.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 24.0
+Trial 56 Cell 1 Error: 5.0 Cell 2 Error:  -51.0 Cell 3 Error: -5.0 Cell 4 Error: 4.0 Cell 5 Error: -19.0
+Trial 56 Cell 1 Weight: 0.014644811798081836 Cell 2 Weight: 0.01611809278700028 Cell 3 Weight: 0.015830989229334375 Cell 4 Weight: 0.014777010909593031 Cell 5 Weight: 0.014470384222687968
+46630238
+Trial: 57, Time:36.066s
+Trial 57 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 41.0 Cell 3 Spike Count: 15.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 7.0
+Trial 57 Cell 1 Error: 5.0 Cell 2 Error:  -36.0 Cell 3 Error: -10.0 Cell 4 Error: 5.0 Cell 5 Error: -2.0
+Trial 57 Cell 1 Weight: 0.014601008771766538 Cell 2 Weight: 0.01616644706536128 Cell 3 Weight: 0.015878482197022377 Cell 4 Weight: 0.014732812472176504 Cell 5 Weight: 0.01451379537535603
+46424277
+Trial: 58, Time:36.238s
+Trial 58 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 5.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 6.0
+Trial 58 Cell 1 Error: 5.0 Cell 2 Error:  0.0 Cell 3 Error: 2.0 Cell 4 Error: 4.0 Cell 5 Error: -1.0
+Trial 58 Cell 1 Weight: 0.014557336761482093 Cell 2 Weight: 0.01616644706536128 Cell 3 Weight: 0.015830989229334375 Cell 4 Weight: 0.014688746233476078 Cell 5 Weight: 0.014557336761482097
+46900429
+Trial: 59, Time:36.009s
+Trial 59 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 0.0
+Trial 59 Cell 1 Error: 0.0 Cell 2 Error:  1.0 Cell 3 Error: 3.0 Cell 4 Error: -2.0 Cell 5 Error: 5.0
+Trial 59 Cell 1 Weight: 0.014557336761482093 Cell 2 Weight: 0.01611809278700028 Cell 3 Weight: 0.015783638314391203 Cell 4 Weight: 0.014732812472176504 Cell 5 Weight: 0.01451379537535603
+46146866
+Trial: 60, Time:36.178s
+Trial 60 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 15.0 Cell 3 Spike Count: 97.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 13.0
+Trial 60 Cell 1 Error: 5.0 Cell 2 Error:  -10.0 Cell 3 Error: -92.0 Cell 4 Error: 5.0 Cell 5 Error: -8.0
+Trial 60 Cell 1 Weight: 0.014513795375356027 Cell 2 Weight: 0.01616644706536128 Cell 3 Weight: 0.015830989229334375 Cell 4 Weight: 0.014688746233476078 Cell 5 Weight: 0.014557336761482097
+45796637
+Trial: 61, Time:35.961s
+Trial 61 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 13.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 61 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -8.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 61 Cell 1 Weight: 0.014470384222687965 Cell 2 Weight: 0.01611809278700028 Cell 3 Weight: 0.015878482197022377 Cell 4 Weight: 0.014644811798081834 Cell 5 Weight: 0.01451379537535603
+45589967
+Trial: 62, Time:35.787s
+Trial 62 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 64.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 5.0
+Trial 62 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -59.0 Cell 4 Error: 5.0 Cell 5 Error: 0.0
+Trial 62 Cell 1 Weight: 0.014427102913946128 Cell 2 Weight: 0.01606988313758752 Cell 3 Weight: 0.015926117643613444 Cell 4 Weight: 0.014601008771766536 Cell 5 Weight: 0.01451379537535603
+46342588
+Trial: 63, Time:35.989s
+Trial 63 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 40.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 63 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -35.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 63 Cell 1 Weight: 0.014383951060763839 Cell 2 Weight: 0.016021817684533923 Cell 3 Weight: 0.015973895996544283 Cell 4 Weight: 0.014557336761482092 Cell 5 Weight: 0.014470384222687968
+46541439
+Trial: 64, Time:36.375s
+Trial 64 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 12.0 Cell 5 Spike Count: 0.0
+Trial 64 Cell 1 Error: 5.0 Cell 2 Error:  -5.0 Cell 3 Error: -3.0 Cell 4 Error: -7.0 Cell 5 Error: 5.0
+Trial 64 Cell 1 Weight: 0.014340928275936034 Cell 2 Weight: 0.016069883137587525 Cell 3 Weight: 0.016021817684533913 Cell 4 Weight: 0.014601008771766536 Cell 5 Weight: 0.014427102913946131
+47238587
+Trial: 65, Time:36.105s
+Trial 65 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 19.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 0.0
+Trial 65 Cell 1 Error: 5.0 Cell 2 Error:  -14.0 Cell 3 Error: 5.0 Cell 4 Error: 0.0 Cell 5 Error: 5.0
+Trial 65 Cell 1 Weight: 0.014298034173415788 Cell 2 Weight: 0.016118092787000285 Cell 3 Weight: 0.015973895996544283 Cell 4 Weight: 0.014601008771766536 Cell 5 Weight: 0.014383951060763843
+46974342
+Trial: 66, Time:36.379s
+Trial 66 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 6.0 Cell 3 Spike Count: 94.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 0.0
+Trial 66 Cell 1 Error: 5.0 Cell 2 Error:  -1.0 Cell 3 Error: -89.0 Cell 4 Error: -1.0 Cell 5 Error: 5.0
+Trial 66 Cell 1 Weight: 0.014255268368310857 Cell 2 Weight: 0.016166447065361283 Cell 3 Weight: 0.016021817684533913 Cell 4 Weight: 0.014644811798081834 Cell 5 Weight: 0.014340928275936037
+46934445
+Trial: 67, Time:36.223s
+Trial 67 Cell 1 Spike Count: 7.0 Cell 2 Spike Count: 5.0 Cell 3 Spike Count: 62.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 67 Cell 1 Error: -2.0 Cell 2 Error:  0.0 Cell 3 Error: -57.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 67 Cell 1 Weight: 0.014298034173415788 Cell 2 Weight: 0.016166447065361283 Cell 3 Weight: 0.016069883137587514 Cell 4 Weight: 0.014601008771766536 Cell 5 Weight: 0.014298034173415792
+47307143
+Trial: 68, Time:36.204s
+Trial 68 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 19.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 68 Cell 1 Error: 0.0 Cell 2 Error:  5.0 Cell 3 Error: -14.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 68 Cell 1 Weight: 0.014298034173415788 Cell 2 Weight: 0.016118092787000285 Cell 3 Weight: 0.016118092787000275 Cell 4 Weight: 0.014557336761482092 Cell 5 Weight: 0.01425526836831086
+46297939
+Trial: 69, Time:36.006s
+Trial 69 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 9.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 8.0
+Trial 69 Cell 1 Error: -1.0 Cell 2 Error:  5.0 Cell 3 Error: -4.0 Cell 4 Error: 0.0 Cell 5 Error: -3.0
+Trial 69 Cell 1 Weight: 0.014340928275936034 Cell 2 Weight: 0.016069883137587525 Cell 3 Weight: 0.016166447065361272 Cell 4 Weight: 0.014557336761482092 Cell 5 Weight: 0.014298034173415792
+46150620
+Trial: 70, Time:36.164s
+Trial 70 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 38.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 12.0
+Trial 70 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -33.0 Cell 4 Error: 5.0 Cell 5 Error: -7.0
+Trial 70 Cell 1 Weight: 0.014298034173415788 Cell 2 Weight: 0.016021817684533927 Cell 3 Weight: 0.016214946406557355 Cell 4 Weight: 0.014513795375356025 Cell 5 Weight: 0.014340928275936037
+46826679
+Trial: 71, Time:35.965s
+Trial 71 Cell 1 Spike Count: 7.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 42.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 30.0
+Trial 71 Cell 1 Error: -2.0 Cell 2 Error:  5.0 Cell 3 Error: -37.0 Cell 4 Error: 5.0 Cell 5 Error: -25.0
+Trial 71 Cell 1 Weight: 0.014340928275936034 Cell 2 Weight: 0.015973895996544297 Cell 3 Weight: 0.016263591245777025 Cell 4 Weight: 0.014470384222687963 Cell 5 Weight: 0.014383951060763844
+45401462
+Trial: 72, Time:35.983s
+Trial 72 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 70.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 4.0
+Trial 72 Cell 1 Error: 0.0 Cell 2 Error:  5.0 Cell 3 Error: -65.0 Cell 4 Error: -4.0 Cell 5 Error: 1.0
+Trial 72 Cell 1 Weight: 0.014340928275936034 Cell 2 Weight: 0.015926117643613458 Cell 3 Weight: 0.016312382019514352 Cell 4 Weight: 0.014513795375356025 Cell 5 Weight: 0.014340928275936039
+45485930
+Trial: 73, Time:35.914s
+Trial 73 Cell 1 Spike Count: 2.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 182.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 73 Cell 1 Error: 3.0 Cell 2 Error:  5.0 Cell 3 Error: -177.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 73 Cell 1 Weight: 0.014298034173415788 Cell 2 Weight: 0.015878482197022394 Cell 3 Weight: 0.016361319165572895 Cell 4 Weight: 0.014470384222687963 Cell 5 Weight: 0.014298034173415793
+46478465
+Trial: 74, Time:36.105s
+Trial 74 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 90.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 5.0
+Trial 74 Cell 1 Error: 5.0 Cell 2 Error:  1.0 Cell 3 Error: -85.0 Cell 4 Error: 0.0 Cell 5 Error: 0.0
+Trial 74 Cell 1 Weight: 0.014255268368310857 Cell 2 Weight: 0.015830989229334392 Cell 3 Weight: 0.01641040312306961 Cell 4 Weight: 0.014470384222687963 Cell 5 Weight: 0.014298034173415793
+46089257
+Trial: 75, Time:36.045s
+Trial 75 Cell 1 Spike Count: 29.0 Cell 2 Spike Count: 6.0 Cell 3 Spike Count: 84.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 6.0
+Trial 75 Cell 1 Error: -24.0 Cell 2 Error:  -1.0 Cell 3 Error: -79.0 Cell 4 Error: 5.0 Cell 5 Error: -1.0
+Trial 75 Cell 1 Weight: 0.014298034173415788 Cell 2 Weight: 0.015878482197022394 Cell 3 Weight: 0.016459634332438817 Cell 4 Weight: 0.014427102913946126 Cell 5 Weight: 0.014340928275936039
+46027004
+Trial: 76, Time:36.222s
+Trial 76 Cell 1 Spike Count: 57.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 19.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 0.0
+Trial 76 Cell 1 Error: -52.0 Cell 2 Error:  5.0 Cell 3 Error: -14.0 Cell 4 Error: 4.0 Cell 5 Error: 5.0
+Trial 76 Cell 1 Weight: 0.014340928275936034 Cell 2 Weight: 0.015830989229334392 Cell 3 Weight: 0.016509013235436132 Cell 4 Weight: 0.014383951060763837 Cell 5 Weight: 0.014298034173415793
+45346100
+Trial: 77, Time:35.726s
+Trial 77 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 31.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 77 Cell 1 Error: 0.0 Cell 2 Error:  5.0 Cell 3 Error: -26.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 77 Cell 1 Weight: 0.014340928275936034 Cell 2 Weight: 0.01578363831439122 Cell 3 Weight: 0.01655854027514244 Cell 4 Weight: 0.014340928275936032 Cell 5 Weight: 0.014255268368310862
+45092672
+Trial: 78, Time:36.026s
+Trial 78 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 166.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 78 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -161.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 78 Cell 1 Weight: 0.014298034173415788 Cell 2 Weight: 0.015736429027309293 Cell 3 Weight: 0.016608215895967865 Cell 4 Weight: 0.014298034173415786 Cell 5 Weight: 0.014212630476880223
+45809478
+Trial: 79, Time:36.031s
+Trial 79 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 176.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 2.0
+Trial 79 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -171.0 Cell 4 Error: -2.0 Cell 5 Error: 3.0
+Trial 79 Cell 1 Weight: 0.014255268368310857 Cell 2 Weight: 0.01568936094447587 Cell 3 Weight: 0.016658040543655765 Cell 4 Weight: 0.014340928275936032 Cell 5 Weight: 0.014170120116530634
+46305284
+Trial: 80, Time:36.072s
+Trial 80 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 287.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 6.0
+Trial 80 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -282.0 Cell 4 Error: -2.0 Cell 5 Error: -1.0
+Trial 80 Cell 1 Weight: 0.014212630476880218 Cell 2 Weight: 0.015642433643545235 Cell 3 Weight: 0.016708014665286732 Cell 4 Weight: 0.014383951060763839 Cell 5 Weight: 0.014212630476880223
+46092382
+Trial: 81, Time:36.097s
+Trial 81 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 152.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 50.0
+Trial 81 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -147.0 Cell 4 Error: 5.0 Cell 5 Error: -45.0
+Trial 81 Cell 1 Weight: 0.014170120116530628 Cell 2 Weight: 0.015595646703434933 Cell 3 Weight: 0.01675813870928259 Cell 4 Weight: 0.014340928275936034 Cell 5 Weight: 0.014255268368310862
+45026633
+Trial: 82, Time:36.023s
+Trial 82 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 179.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 42.0
+Trial 82 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -174.0 Cell 4 Error: -3.0 Cell 5 Error: -37.0
+Trial 82 Cell 1 Weight: 0.01412773690581319 Cell 2 Weight: 0.01554899970432197 Cell 3 Weight: 0.016808413125410437 Cell 4 Weight: 0.01438395106076384 Cell 5 Weight: 0.014298034173415793
+45890052
+Trial: 83, Time:35.963s
+Trial 83 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 275.0 Cell 4 Spike Count: 4.0 Cell 5 Spike Count: 55.0
+Trial 83 Cell 1 Error: 5.0 Cell 2 Error:  1.0 Cell 3 Error: -270.0 Cell 4 Error: 1.0 Cell 5 Error: -50.0
+Trial 83 Cell 1 Weight: 0.014085480464419932 Cell 2 Weight: 0.015502492227639055 Cell 3 Weight: 0.016858838364786667 Cell 4 Weight: 0.014340928275936035 Cell 5 Weight: 0.014340928275936039
+44704983
+Trial: 84, Time:36.039s
+Trial 84 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 87.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 84 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -82.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 84 Cell 1 Weight: 0.014043350413180392 Cell 2 Weight: 0.015456123856070845 Cell 3 Weight: 0.016909414879881027 Cell 4 Weight: 0.01429803417341579 Cell 5 Weight: 0.014298034173415793
+45089029
+Trial: 85, Time:35.826s
+Trial 85 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 60.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 85 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -55.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 85 Cell 1 Weight: 0.01400134637405822 Cell 2 Weight: 0.015409894173550197 Cell 3 Weight: 0.01696014312452067 Cell 4 Weight: 0.014255268368310859 Cell 5 Weight: 0.014255268368310862
+45457760
+Trial: 86, Time:35.832s
+Trial 86 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 25.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 0.0
+Trial 86 Cell 1 Error: -1.0 Cell 2 Error:  5.0 Cell 3 Error: -20.0 Cell 4 Error: -1.0 Cell 5 Error: 5.0
+Trial 86 Cell 1 Weight: 0.014043350413180392 Cell 2 Weight: 0.015363802765254436 Cell 3 Weight: 0.01701102355389423 Cell 4 Weight: 0.01429803417341579 Cell 5 Weight: 0.014212630476880223
+46031623
+Trial: 87, Time:35.975s
+Trial 87 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 15.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 4.0
+Trial 87 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -10.0 Cell 4 Error: 5.0 Cell 5 Error: 1.0
+Trial 87 Cell 1 Weight: 0.01400134637405822 Cell 2 Weight: 0.015317849217601633 Cell 3 Weight: 0.01706205662455591 Cell 4 Weight: 0.014255268368310859 Cell 5 Weight: 0.014170120116530634
+45478608
+Trial: 88, Time:36.052s
+Trial 88 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 6.0 Cell 3 Spike Count: 22.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 88 Cell 1 Error: 5.0 Cell 2 Error:  -1.0 Cell 3 Error: -17.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 88 Cell 1 Weight: 0.013959467970147778 Cell 2 Weight: 0.015363802765254436 Cell 3 Weight: 0.017113242794429575 Cell 4 Weight: 0.01421263047688022 Cell 5 Weight: 0.014127736905813195
+45300794
+Trial: 89, Time:35.690s
+Trial 89 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 19.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 89 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -14.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 89 Cell 1 Weight: 0.013917714825670767 Cell 2 Weight: 0.015317849217601633 Cell 3 Weight: 0.01716458252281286 Cell 4 Weight: 0.01417012011653063 Cell 5 Weight: 0.014085480464419937
+45280671
+Trial: 90, Time:36.024s
+Trial 90 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 9.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 90 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -4.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 90 Cell 1 Weight: 0.013876086565972851 Cell 2 Weight: 0.015272033118246894 Cell 3 Weight: 0.017216076270381298 Cell 4 Weight: 0.014127736905813192 Cell 5 Weight: 0.014043350413180397
+44236848
+Trial: 91, Time:35.641s
+Trial 91 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 26.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 91 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -21.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 91 Cell 1 Weight: 0.013834582817520293 Cell 2 Weight: 0.01522635405607866 Cell 3 Weight: 0.01726772449919244 Cell 4 Weight: 0.014085480464419934 Cell 5 Weight: 0.014001346374058225
+44436591
+Trial: 92, Time:35.574s
+Trial 92 Cell 1 Spike Count: 2.0 Cell 2 Spike Count: 3.0 Cell 3 Spike Count: 28.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 92 Cell 1 Error: 3.0 Cell 2 Error:  2.0 Cell 3 Error: -23.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 92 Cell 1 Weight: 0.013793203207896605 Cell 2 Weight: 0.015180811621215018 Cell 3 Weight: 0.017319527672690016 Cell 4 Weight: 0.014043350413180394 Cell 5 Weight: 0.013959467970147783
+44092290
+Trial: 93, Time:35.500s
+Trial 93 Cell 1 Spike Count: 23.0 Cell 2 Spike Count: 7.0 Cell 3 Spike Count: 18.0 Cell 4 Spike Count: 15.0 Cell 5 Spike Count: 0.0
+Trial 93 Cell 1 Error: -18.0 Cell 2 Error:  -2.0 Cell 3 Error: -13.0 Cell 4 Error: -10.0 Cell 5 Error: 5.0
+Trial 93 Cell 1 Weight: 0.013834582817520293 Cell 2 Weight: 0.015226354056078662 Cell 3 Weight: 0.017371486255708085 Cell 4 Weight: 0.014085480464419934 Cell 5 Weight: 0.013917714825670773
+44408322
+Trial: 94, Time:35.943s
+Trial 94 Cell 1 Spike Count: 22.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 17.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 3.0
+Trial 94 Cell 1 Error: -17.0 Cell 2 Error:  1.0 Cell 3 Error: -12.0 Cell 4 Error: -1.0 Cell 5 Error: 2.0
+Trial 94 Cell 1 Weight: 0.013876086565972851 Cell 2 Weight: 0.01518081162121502 Cell 3 Weight: 0.01742360071447521 Cell 4 Weight: 0.014127736905813192 Cell 5 Weight: 0.013876086565972856
+44837628
+Trial: 95, Time:35.721s
+Trial 95 Cell 1 Spike Count: 74.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 12.0 Cell 4 Spike Count: 3.0 Cell 5 Spike Count: 48.0
+Trial 95 Cell 1 Error: -69.0 Cell 2 Error:  5.0 Cell 3 Error: -7.0 Cell 4 Error: 2.0 Cell 5 Error: -43.0
+Trial 95 Cell 1 Weight: 0.013917714825670769 Cell 2 Weight: 0.01513540540500002 Cell 3 Weight: 0.017475871516618634 Cell 4 Weight: 0.014085480464419934 Cell 5 Weight: 0.013917714825670774
+44791147
+Trial: 96, Time:36.040s
+Trial 96 Cell 1 Spike Count: 48.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 56.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 145.0
+Trial 96 Cell 1 Error: -43.0 Cell 2 Error:  -5.0 Cell 3 Error: -51.0 Cell 4 Error: 5.0 Cell 5 Error: -140.0
+Trial 96 Cell 1 Weight: 0.01395946797014778 Cell 2 Weight: 0.01518081162121502 Cell 3 Weight: 0.017528299131168486 Cell 4 Weight: 0.014043350413180394 Cell 5 Weight: 0.013959467970147785
+44894212
+Trial: 97, Time:35.935s
+Trial 97 Cell 1 Spike Count: 46.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 53.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 10.0
+Trial 97 Cell 1 Error: -41.0 Cell 2 Error:  5.0 Cell 3 Error: -48.0 Cell 4 Error: -4.0 Cell 5 Error: -5.0
+Trial 97 Cell 1 Weight: 0.014001346374058221 Cell 2 Weight: 0.01513540540500002 Cell 3 Weight: 0.01758088402856199 Cell 4 Weight: 0.014085480464419934 Cell 5 Weight: 0.014001346374058227
+43345652
+Trial: 98, Time:35.420s
+Trial 98 Cell 1 Spike Count: 45.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 28.0 Cell 4 Spike Count: 21.0 Cell 5 Spike Count: 17.0
+Trial 98 Cell 1 Error: -40.0 Cell 2 Error:  1.0 Cell 3 Error: -23.0 Cell 4 Error: -16.0 Cell 5 Error: -12.0
+Trial 98 Cell 1 Weight: 0.014043350413180394 Cell 2 Weight: 0.015090135000000024 Cell 3 Weight: 0.017633626680647677 Cell 4 Weight: 0.014127736905813192 Cell 5 Weight: 0.0140433504131804
+43798162
+Trial: 99, Time:35.543s
+Trial 99 Cell 1 Spike Count: 62.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 12.0
+Trial 99 Cell 1 Error: -57.0 Cell 2 Error:  5.0 Cell 3 Error: 1.0 Cell 4 Error: 5.0 Cell 5 Error: -7.0
+Trial 99 Cell 1 Weight: 0.014085480464419934 Cell 2 Weight: 0.015045000000000025 Cell 3 Weight: 0.017580884028561995 Cell 4 Weight: 0.014085480464419934 Cell 5 Weight: 0.01408548046441994
+44113782
+Trial: 100, Time:35.883s
+Trial 100 Cell 1 Spike Count: 44.0 Cell 2 Spike Count: 3.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 25.0
+Trial 100 Cell 1 Error: -39.0 Cell 2 Error:  2.0 Cell 3 Error: -6.0 Cell 4 Error: 4.0 Cell 5 Error: -20.0
+Trial 100 Cell 1 Weight: 0.014127736905813192 Cell 2 Weight: 0.015000000000000027 Cell 3 Weight: 0.01763362668064768 Cell 4 Weight: 0.014043350413180394 Cell 5 Weight: 0.014127736905813197
+44876574
+Trial: 101, Time:35.811s
+Trial 101 Cell 1 Spike Count: 75.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 2.0
+Trial 101 Cell 1 Error: -70.0 Cell 2 Error:  5.0 Cell 3 Error: -6.0 Cell 4 Error: 5.0 Cell 5 Error: 3.0
+Trial 101 Cell 1 Weight: 0.01417012011653063 Cell 2 Weight: 0.014955134596211395 Cell 3 Weight: 0.01768652756068962 Cell 4 Weight: 0.014001346374058221 Cell 5 Weight: 0.01408548046441994
+45037403
+Trial: 102, Time:36.190s
+Trial 102 Cell 1 Spike Count: 282.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 16.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 4.0
+Trial 102 Cell 1 Error: -277.0 Cell 2 Error:  5.0 Cell 3 Error: -11.0 Cell 4 Error: 5.0 Cell 5 Error: 1.0
+Trial 102 Cell 1 Weight: 0.01421263047688022 Cell 2 Weight: 0.014910403386053237 Cell 3 Weight: 0.017739587143371687 Cell 4 Weight: 0.01395946797014778 Cell 5 Weight: 0.0140433504131804
+44768472
+Trial: 103, Time:35.991s
+Trial 103 Cell 1 Spike Count: 408.0 Cell 2 Spike Count: 33.0 Cell 3 Spike Count: 46.0 Cell 4 Spike Count: 27.0 Cell 5 Spike Count: 165.0
+Trial 103 Cell 1 Error: -403.0 Cell 2 Error:  -28.0 Cell 3 Error: -41.0 Cell 4 Error: -22.0 Cell 5 Error: -160.0
+Trial 103 Cell 1 Weight: 0.014255268368310859 Cell 2 Weight: 0.014955134596211395 Cell 3 Weight: 0.0177928059048018 Cell 4 Weight: 0.014001346374058221 Cell 5 Weight: 0.01408548046441994
+45020495
+Trial: 104, Time:35.812s
+Trial 104 Cell 1 Spike Count: 416.0 Cell 2 Spike Count: 33.0 Cell 3 Spike Count: 61.0 Cell 4 Spike Count: 23.0 Cell 5 Spike Count: 236.0
+Trial 104 Cell 1 Error: -411.0 Cell 2 Error:  -28.0 Cell 3 Error: -56.0 Cell 4 Error: -18.0 Cell 5 Error: -231.0
+Trial 104 Cell 1 Weight: 0.01429803417341579 Cell 2 Weight: 0.015000000000000027 Cell 3 Weight: 0.017846184322516206 Cell 4 Weight: 0.014043350413180394 Cell 5 Weight: 0.014127736905813197
+45231967
+Trial: 105, Time:35.985s
+Trial 105 Cell 1 Spike Count: 409.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 41.0 Cell 4 Spike Count: 19.0 Cell 5 Spike Count: 227.0
+Trial 105 Cell 1 Error: -404.0 Cell 2 Error:  -4.0 Cell 3 Error: -36.0 Cell 4 Error: -14.0 Cell 5 Error: -222.0
+Trial 105 Cell 1 Weight: 0.014340928275936035 Cell 2 Weight: 0.015045000000000025 Cell 3 Weight: 0.01789972287548375 Cell 4 Weight: 0.014085480464419934 Cell 5 Weight: 0.014170120116530635
+46022905
+Trial: 106, Time:36.384s
+Trial 106 Cell 1 Spike Count: 151.0 Cell 2 Spike Count: 11.0 Cell 3 Spike Count: 36.0 Cell 4 Spike Count: 23.0 Cell 5 Spike Count: 208.0
+Trial 106 Cell 1 Error: -146.0 Cell 2 Error:  -6.0 Cell 3 Error: -31.0 Cell 4 Error: -18.0 Cell 5 Error: -203.0
+Trial 106 Cell 1 Weight: 0.014383951060763843 Cell 2 Weight: 0.015090135000000024 Cell 3 Weight: 0.0179534220441102 Cell 4 Weight: 0.014127736905813192 Cell 5 Weight: 0.014212630476880225
+46133207
+Trial: 107, Time:35.956s
+Trial 107 Cell 1 Spike Count: 184.0 Cell 2 Spike Count: 112.0 Cell 3 Spike Count: 100.0 Cell 4 Spike Count: 98.0 Cell 5 Spike Count: 572.0
+Trial 107 Cell 1 Error: -179.0 Cell 2 Error:  -107.0 Cell 3 Error: -95.0 Cell 4 Error: -93.0 Cell 5 Error: -567.0
+Trial 107 Cell 1 Weight: 0.014427102913946133 Cell 2 Weight: 0.015135405405000022 Cell 3 Weight: 0.01800728231024253 Cell 4 Weight: 0.01417012011653063 Cell 5 Weight: 0.014255268368310864
+46326394
+Trial: 108, Time:36.371s
+Trial 108 Cell 1 Spike Count: 170.0 Cell 2 Spike Count: 136.0 Cell 3 Spike Count: 62.0 Cell 4 Spike Count: 68.0 Cell 5 Spike Count: 510.0
+Trial 108 Cell 1 Error: -165.0 Cell 2 Error:  -131.0 Cell 3 Error: -57.0 Cell 4 Error: -63.0 Cell 5 Error: -505.0
+Trial 108 Cell 1 Weight: 0.01447038422268797 Cell 2 Weight: 0.015180811621215021 Cell 3 Weight: 0.018061304157173254 Cell 4 Weight: 0.01421263047688022 Cell 5 Weight: 0.014298034173415795
+46800999
+Trial: 109, Time:36.342s
+Trial 109 Cell 1 Spike Count: 248.0 Cell 2 Spike Count: 187.0 Cell 3 Spike Count: 52.0 Cell 4 Spike Count: 109.0 Cell 5 Spike Count: 643.0
+Trial 109 Cell 1 Error: -243.0 Cell 2 Error:  -182.0 Cell 3 Error: -47.0 Cell 4 Error: -104.0 Cell 5 Error: -638.0
+Trial 109 Cell 1 Weight: 0.014513795375356032 Cell 2 Weight: 0.015226354056078665 Cell 3 Weight: 0.01811548806964477 Cell 4 Weight: 0.014255268368310859 Cell 5 Weight: 0.01434092827593604
+45723531
+Trial: 110, Time:35.979s
+Trial 110 Cell 1 Spike Count: 57.0 Cell 2 Spike Count: 182.0 Cell 3 Spike Count: 89.0 Cell 4 Spike Count: 154.0 Cell 5 Spike Count: 642.0
+Trial 110 Cell 1 Error: -52.0 Cell 2 Error:  -177.0 Cell 3 Error: -84.0 Cell 4 Error: -149.0 Cell 5 Error: -637.0
+Trial 110 Cell 1 Weight: 0.014557336761482098 Cell 2 Weight: 0.0152720331182469 Cell 3 Weight: 0.018169834533853704 Cell 4 Weight: 0.01429803417341579 Cell 5 Weight: 0.014383951060763848
+45614771
+Trial: 111, Time:36.001s
+Trial 111 Cell 1 Spike Count: 41.0 Cell 2 Spike Count: 124.0 Cell 3 Spike Count: 46.0 Cell 4 Spike Count: 97.0 Cell 5 Spike Count: 609.0
+Trial 111 Cell 1 Error: -36.0 Cell 2 Error:  -119.0 Cell 3 Error: -41.0 Cell 4 Error: -92.0 Cell 5 Error: -604.0
+Trial 111 Cell 1 Weight: 0.014601008771766543 Cell 2 Weight: 0.015317849217601638 Cell 3 Weight: 0.01822434403745526 Cell 4 Weight: 0.014340928275936035 Cell 5 Weight: 0.014427102913946138
+45490370
+Trial: 112, Time:36.254s
+Trial 112 Cell 1 Spike Count: 52.0 Cell 2 Spike Count: 192.0 Cell 3 Spike Count: 75.0 Cell 4 Spike Count: 158.0 Cell 5 Spike Count: 453.0
+Trial 112 Cell 1 Error: -47.0 Cell 2 Error:  -187.0 Cell 3 Error: -70.0 Cell 4 Error: -153.0 Cell 5 Error: -448.0
+Trial 112 Cell 1 Weight: 0.01464481179808184 Cell 2 Weight: 0.01536380276525444 Cell 3 Weight: 0.018279017069567624 Cell 4 Weight: 0.014383951060763843 Cell 5 Weight: 0.014470384222687975
+45990495
+Trial: 113, Time:36.020s
+Trial 113 Cell 1 Spike Count: 173.0 Cell 2 Spike Count: 403.0 Cell 3 Spike Count: 59.0 Cell 4 Spike Count: 597.0 Cell 5 Spike Count: 588.0
+Trial 113 Cell 1 Error: -168.0 Cell 2 Error:  -398.0 Cell 3 Error: -54.0 Cell 4 Error: -592.0 Cell 5 Error: -583.0
+Trial 113 Cell 1 Weight: 0.014688746233476085 Cell 2 Weight: 0.015409894173550202 Cell 3 Weight: 0.018333854120776327 Cell 4 Weight: 0.014427102913946133 Cell 5 Weight: 0.014513795375356037
+46255361
+Trial: 114, Time:36.398s
+Trial 114 Cell 1 Spike Count: 102.0 Cell 2 Spike Count: 502.0 Cell 3 Spike Count: 73.0 Cell 4 Spike Count: 377.0 Cell 5 Spike Count: 470.0
+Trial 114 Cell 1 Error: -97.0 Cell 2 Error:  -497.0 Cell 3 Error: -68.0 Cell 4 Error: -372.0 Cell 5 Error: -465.0
+Trial 114 Cell 1 Weight: 0.014732812472176511 Cell 2 Weight: 0.015456123856070852 Cell 3 Weight: 0.018388855683138652 Cell 4 Weight: 0.01447038422268797 Cell 5 Weight: 0.014557336761482104
+45992521
+Trial: 115, Time:36.170s
+Trial 115 Cell 1 Spike Count: 106.0 Cell 2 Spike Count: 515.0 Cell 3 Spike Count: 89.0 Cell 4 Spike Count: 396.0 Cell 5 Spike Count: 471.0
+Trial 115 Cell 1 Error: -101.0 Cell 2 Error:  -510.0 Cell 3 Error: -84.0 Cell 4 Error: -391.0 Cell 5 Error: -466.0
+Trial 115 Cell 1 Weight: 0.014777010909593038 Cell 2 Weight: 0.015502492227639064 Cell 3 Weight: 0.018444022250188066 Cell 4 Weight: 0.014513795375356032 Cell 5 Weight: 0.014601008771766549
+44171811
+Trial: 116, Time:35.652s
+Trial 116 Cell 1 Spike Count: 135.0 Cell 2 Spike Count: 394.0 Cell 3 Spike Count: 81.0 Cell 4 Spike Count: 404.0 Cell 5 Spike Count: 372.0
+Trial 116 Cell 1 Error: -130.0 Cell 2 Error:  -389.0 Cell 3 Error: -76.0 Cell 4 Error: -399.0 Cell 5 Error: -367.0
+Trial 116 Cell 1 Weight: 0.014821341942321816 Cell 2 Weight: 0.015548999704321978 Cell 3 Weight: 0.018499354316938627 Cell 4 Weight: 0.014557336761482098 Cell 5 Weight: 0.014644811798081846
+44264150
+Trial: 117, Time:35.691s
+Trial 117 Cell 1 Spike Count: 32.0 Cell 2 Spike Count: 858.0 Cell 3 Spike Count: 39.0 Cell 4 Spike Count: 491.0 Cell 5 Spike Count: 530.0
+Trial 117 Cell 1 Error: -27.0 Cell 2 Error:  -853.0 Cell 3 Error: -34.0 Cell 4 Error: -486.0 Cell 5 Error: -525.0
+Trial 117 Cell 1 Weight: 0.01486580596814878 Cell 2 Weight: 0.015595646703434942 Cell 3 Weight: 0.01855485237988944 Cell 4 Weight: 0.014601008771766543 Cell 5 Weight: 0.01468874623347609
+43786886
+Trial: 118, Time:35.739s
+Trial 118 Cell 1 Spike Count: 29.0 Cell 2 Spike Count: 355.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 559.0 Cell 5 Spike Count: 660.0
+Trial 118 Cell 1 Error: -24.0 Cell 2 Error:  -350.0 Cell 3 Error: 1.0 Cell 4 Error: -554.0 Cell 5 Error: -655.0
+Trial 118 Cell 1 Weight: 0.014910403386053223 Cell 2 Weight: 0.015642433643545246 Cell 3 Weight: 0.018499354316938627 Cell 4 Weight: 0.01464481179808184 Cell 5 Weight: 0.014732812472176516
+43389903
+Trial: 119, Time:35.372s
+Trial 119 Cell 1 Spike Count: 59.0 Cell 2 Spike Count: 272.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 371.0 Cell 5 Spike Count: 791.0
+Trial 119 Cell 1 Error: -54.0 Cell 2 Error:  -267.0 Cell 3 Error: 1.0 Cell 4 Error: -366.0 Cell 5 Error: -786.0
+Trial 119 Cell 1 Weight: 0.01495513459621138 Cell 2 Weight: 0.01568936094447588 Cell 3 Weight: 0.018444022250188066 Cell 4 Weight: 0.014688746233476085 Cell 5 Weight: 0.014777010909593043
+43448909
+Trial: 120, Time:35.716s
+Trial 120 Cell 1 Spike Count: 86.0 Cell 2 Spike Count: 349.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 509.0 Cell 5 Spike Count: 736.0
+Trial 120 Cell 1 Error: -81.0 Cell 2 Error:  -344.0 Cell 3 Error: 5.0 Cell 4 Error: -504.0 Cell 5 Error: -731.0
+Trial 120 Cell 1 Weight: 0.015000000000000013 Cell 2 Weight: 0.015736429027309304 Cell 3 Weight: 0.018388855683138652 Cell 4 Weight: 0.014732812472176511 Cell 5 Weight: 0.014821341942321821
+44300199
+Trial: 121, Time:35.760s
+Trial 121 Cell 1 Spike Count: 56.0 Cell 2 Spike Count: 312.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 21.0 Cell 5 Spike Count: 68.0
+Trial 121 Cell 1 Error: -51.0 Cell 2 Error:  -307.0 Cell 3 Error: 5.0 Cell 4 Error: -16.0 Cell 5 Error: -63.0
+Trial 121 Cell 1 Weight: 0.015045000000000011 Cell 2 Weight: 0.01578363831439123 Cell 3 Weight: 0.018333854120776327 Cell 4 Weight: 0.014777010909593038 Cell 5 Weight: 0.014865805968148784
+44515792
+Trial: 122, Time:35.713s
+Trial 122 Cell 1 Spike Count: 59.0 Cell 2 Spike Count: 156.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 54.0 Cell 5 Spike Count: 50.0
+Trial 122 Cell 1 Error: -54.0 Cell 2 Error:  -151.0 Cell 3 Error: 5.0 Cell 4 Error: -49.0 Cell 5 Error: -45.0
+Trial 122 Cell 1 Weight: 0.01509013500000001 Cell 2 Weight: 0.015830989229334402 Cell 3 Weight: 0.018279017069567628 Cell 4 Weight: 0.014821341942321816 Cell 5 Weight: 0.014910403386053228
+44380954
+Trial: 123, Time:35.699s
+Trial 123 Cell 1 Spike Count: 44.0 Cell 2 Spike Count: 116.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 26.0 Cell 5 Spike Count: 52.0
+Trial 123 Cell 1 Error: -39.0 Cell 2 Error:  -111.0 Cell 3 Error: 5.0 Cell 4 Error: -21.0 Cell 5 Error: -47.0
+Trial 123 Cell 1 Weight: 0.015135405405000009 Cell 2 Weight: 0.015878482197022405 Cell 3 Weight: 0.018224344037455265 Cell 4 Weight: 0.01486580596814878 Cell 5 Weight: 0.014955134596211386
+44370721
+Trial: 124, Time:35.906s
+Trial 124 Cell 1 Spike Count: 62.0 Cell 2 Spike Count: 95.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 29.0 Cell 5 Spike Count: 20.0
+Trial 124 Cell 1 Error: -57.0 Cell 2 Error:  -90.0 Cell 3 Error: 5.0 Cell 4 Error: -24.0 Cell 5 Error: -15.0
+Trial 124 Cell 1 Weight: 0.015180811621215007 Cell 2 Weight: 0.01592611764361347 Cell 3 Weight: 0.018169834533853707 Cell 4 Weight: 0.014910403386053223 Cell 5 Weight: 0.015000000000000019
+44191632
+Trial: 125, Time:35.548s
+Trial 125 Cell 1 Spike Count: 32.0 Cell 2 Spike Count: 209.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 47.0 Cell 5 Spike Count: 38.0
+Trial 125 Cell 1 Error: -27.0 Cell 2 Error:  -204.0 Cell 3 Error: 5.0 Cell 4 Error: -42.0 Cell 5 Error: -33.0
+Trial 125 Cell 1 Weight: 0.015226354056078651 Cell 2 Weight: 0.01597389599654431 Cell 3 Weight: 0.018115488069644775 Cell 4 Weight: 0.01495513459621138 Cell 5 Weight: 0.015045000000000017
+44849282
+Trial: 126, Time:36.039s
+Trial 126 Cell 1 Spike Count: 276.0 Cell 2 Spike Count: 147.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 42.0 Cell 5 Spike Count: 41.0
+Trial 126 Cell 1 Error: -271.0 Cell 2 Error:  -142.0 Cell 3 Error: 5.0 Cell 4 Error: -37.0 Cell 5 Error: -36.0
+Trial 126 Cell 1 Weight: 0.015272033118246885 Cell 2 Weight: 0.01602181768453394 Cell 3 Weight: 0.018061304157173257 Cell 4 Weight: 0.015000000000000013 Cell 5 Weight: 0.015090135000000015
+43957358
+Trial: 127, Time:35.687s
+Trial 127 Cell 1 Spike Count: 349.0 Cell 2 Spike Count: 76.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 13.0 Cell 5 Spike Count: 17.0
+Trial 127 Cell 1 Error: -344.0 Cell 2 Error:  -71.0 Cell 3 Error: 5.0 Cell 4 Error: -8.0 Cell 5 Error: -12.0
+Trial 127 Cell 1 Weight: 0.015317849217601624 Cell 2 Weight: 0.016069883137587542 Cell 3 Weight: 0.018007282310242533 Cell 4 Weight: 0.015045000000000011 Cell 5 Weight: 0.015135405405000014
+43719688
+Trial: 128, Time:35.518s
+Trial 128 Cell 1 Spike Count: 272.0 Cell 2 Spike Count: 69.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 69.0 Cell 5 Spike Count: 24.0
+Trial 128 Cell 1 Error: -267.0 Cell 2 Error:  -64.0 Cell 3 Error: 5.0 Cell 4 Error: -64.0 Cell 5 Error: -19.0
+Trial 128 Cell 1 Weight: 0.015363802765254427 Cell 2 Weight: 0.016118092787000302 Cell 3 Weight: 0.017953422044110205 Cell 4 Weight: 0.01509013500000001 Cell 5 Weight: 0.015180811621215012
+43921010
+Trial: 129, Time:35.606s
+Trial 129 Cell 1 Spike Count: 209.0 Cell 2 Spike Count: 164.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 52.0 Cell 5 Spike Count: 25.0
+Trial 129 Cell 1 Error: -204.0 Cell 2 Error:  -159.0 Cell 3 Error: 5.0 Cell 4 Error: -47.0 Cell 5 Error: -20.0
+Trial 129 Cell 1 Weight: 0.015409894173550188 Cell 2 Weight: 0.0161664470653613 Cell 3 Weight: 0.017899722875483755 Cell 4 Weight: 0.015135405405000009 Cell 5 Weight: 0.015226354056078657
+44384605
+Trial: 130, Time:35.931s
+Trial 130 Cell 1 Spike Count: 39.0 Cell 2 Spike Count: 182.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 0.0
+Trial 130 Cell 1 Error: -34.0 Cell 2 Error:  -177.0 Cell 3 Error: 5.0 Cell 4 Error: -1.0 Cell 5 Error: 5.0
+Trial 130 Cell 1 Weight: 0.015456123856070838 Cell 2 Weight: 0.016214946406557382 Cell 3 Weight: 0.01784618432251621 Cell 4 Weight: 0.015180811621215007 Cell 5 Weight: 0.015180811621215014
+45575356
+Trial: 131, Time:35.885s
+Trial 131 Cell 1 Spike Count: 20.0 Cell 2 Spike Count: 15.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 131 Cell 1 Error: -15.0 Cell 2 Error:  -10.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 131 Cell 1 Weight: 0.015502492227639048 Cell 2 Weight: 0.016263591245777052 Cell 3 Weight: 0.017792805904801805 Cell 4 Weight: 0.015135405405000009 Cell 5 Weight: 0.015135405405000016
+45802874
+Trial: 132, Time:36.273s
+Trial 132 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 27.0 Cell 3 Spike Count: 23.0 Cell 4 Spike Count: 52.0 Cell 5 Spike Count: 64.0
+Trial 132 Cell 1 Error: -1.0 Cell 2 Error:  -22.0 Cell 3 Error: -18.0 Cell 4 Error: -47.0 Cell 5 Error: -59.0
+Trial 132 Cell 1 Weight: 0.015548999704321963 Cell 2 Weight: 0.016312382019514383 Cell 3 Weight: 0.01784618432251621 Cell 4 Weight: 0.015180811621215007 Cell 5 Weight: 0.015180811621215014
+44795811
+Trial: 133, Time:35.887s
+Trial 133 Cell 1 Spike Count: 31.0 Cell 2 Spike Count: 30.0 Cell 3 Spike Count: 34.0 Cell 4 Spike Count: 14.0 Cell 5 Spike Count: 43.0
+Trial 133 Cell 1 Error: -26.0 Cell 2 Error:  -25.0 Cell 3 Error: -29.0 Cell 4 Error: -9.0 Cell 5 Error: -38.0
+Trial 133 Cell 1 Weight: 0.015595646703434926 Cell 2 Weight: 0.016361319165572926 Cell 3 Weight: 0.017899722875483755 Cell 4 Weight: 0.015226354056078651 Cell 5 Weight: 0.015226354056078658
+46158615
+Trial: 134, Time:36.101s
+Trial 134 Cell 1 Spike Count: 26.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 16.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 19.0
+Trial 134 Cell 1 Error: -21.0 Cell 2 Error:  1.0 Cell 3 Error: -11.0 Cell 4 Error: 5.0 Cell 5 Error: -14.0
+Trial 134 Cell 1 Weight: 0.015642433643545228 Cell 2 Weight: 0.016312382019514387 Cell 3 Weight: 0.017953422044110205 Cell 4 Weight: 0.015180811621215009 Cell 5 Weight: 0.015272033118246892
+45827707
+Trial: 135, Time:36.100s
+Trial 135 Cell 1 Spike Count: 15.0 Cell 2 Spike Count: 22.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 13.0 Cell 5 Spike Count: 1.0
+Trial 135 Cell 1 Error: -10.0 Cell 2 Error:  -17.0 Cell 3 Error: -5.0 Cell 4 Error: -8.0 Cell 5 Error: 4.0
+Trial 135 Cell 1 Weight: 0.01568936094447586 Cell 2 Weight: 0.01636131916557293 Cell 3 Weight: 0.018007282310242533 Cell 4 Weight: 0.015226354056078653 Cell 5 Weight: 0.015226354056078658
+44929562
+Trial: 136, Time:36.065s
+Trial 136 Cell 1 Spike Count: 35.0 Cell 2 Spike Count: 19.0 Cell 3 Spike Count: 13.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 5.0
+Trial 136 Cell 1 Error: -30.0 Cell 2 Error:  -14.0 Cell 3 Error: -8.0 Cell 4 Error: 5.0 Cell 5 Error: 0.0
+Trial 136 Cell 1 Weight: 0.015736429027309286 Cell 2 Weight: 0.016410403123069645 Cell 3 Weight: 0.018061304157173257 Cell 4 Weight: 0.01518081162121501 Cell 5 Weight: 0.015226354056078658
+45326144
+Trial: 137, Time:35.798s
+Trial 137 Cell 1 Spike Count: 25.0 Cell 2 Spike Count: 8.0 Cell 3 Spike Count: 29.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 2.0
+Trial 137 Cell 1 Error: -20.0 Cell 2 Error:  -3.0 Cell 3 Error: -24.0 Cell 4 Error: 5.0 Cell 5 Error: 3.0
+Trial 137 Cell 1 Weight: 0.015783638314391214 Cell 2 Weight: 0.01645963433243885 Cell 3 Weight: 0.018115488069644775 Cell 4 Weight: 0.015135405405000012 Cell 5 Weight: 0.015180811621215016
+45530216
+Trial: 138, Time:36.181s
+Trial 138 Cell 1 Spike Count: 41.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 18.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 6.0
+Trial 138 Cell 1 Error: -36.0 Cell 2 Error:  -5.0 Cell 3 Error: -13.0 Cell 4 Error: -1.0 Cell 5 Error: -1.0
+Trial 138 Cell 1 Weight: 0.015830989229334385 Cell 2 Weight: 0.016509013235436167 Cell 3 Weight: 0.018169834533853707 Cell 4 Weight: 0.01518081162121501 Cell 5 Weight: 0.01522635405607866
+45847071
+Trial: 139, Time:36.116s
+Trial 139 Cell 1 Spike Count: 15.0 Cell 2 Spike Count: 12.0 Cell 3 Spike Count: 12.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 0.0
+Trial 139 Cell 1 Error: -10.0 Cell 2 Error:  -7.0 Cell 3 Error: -7.0 Cell 4 Error: -4.0 Cell 5 Error: 5.0
+Trial 139 Cell 1 Weight: 0.015878482197022387 Cell 2 Weight: 0.016558540275142475 Cell 3 Weight: 0.018224344037455265 Cell 4 Weight: 0.015226354056078655 Cell 5 Weight: 0.015180811621215018
+45957318
+Trial: 140, Time:36.080s
+Trial 140 Cell 1 Spike Count: 19.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 17.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 1.0
+Trial 140 Cell 1 Error: -14.0 Cell 2 Error:  -4.0 Cell 3 Error: -12.0 Cell 4 Error: 5.0 Cell 5 Error: 4.0
+Trial 140 Cell 1 Weight: 0.015926117643613454 Cell 2 Weight: 0.0166082158959679 Cell 3 Weight: 0.018279017069567628 Cell 4 Weight: 0.015180811621215012 Cell 5 Weight: 0.015135405405000019
+45519325
+Trial: 141, Time:35.981s
+Trial 141 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 3.0 Cell 3 Spike Count: 25.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 11.0
+Trial 141 Cell 1 Error: 0.0 Cell 2 Error:  2.0 Cell 3 Error: -20.0 Cell 4 Error: 5.0 Cell 5 Error: -6.0
+Trial 141 Cell 1 Weight: 0.015926117643613454 Cell 2 Weight: 0.016558540275142475 Cell 3 Weight: 0.01833385412077633 Cell 4 Weight: 0.015135405405000014 Cell 5 Weight: 0.015180811621215018
+45203868
+Trial: 142, Time:36.091s
+Trial 142 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 17.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 142 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -12.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 142 Cell 1 Weight: 0.01587848219702239 Cell 2 Weight: 0.01650901323543617 Cell 3 Weight: 0.018388855683138656 Cell 4 Weight: 0.015090135000000017 Cell 5 Weight: 0.015135405405000019
+44319998
+Trial: 143, Time:35.541s
+Trial 143 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 4.0 Cell 5 Spike Count: 3.0
+Trial 143 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 1.0 Cell 5 Error: 2.0
+Trial 143 Cell 1 Weight: 0.01583098922933439 Cell 2 Weight: 0.016459634332438855 Cell 3 Weight: 0.01833385412077633 Cell 4 Weight: 0.015045000000000018 Cell 5 Weight: 0.015090135000000022
+44286821
+Trial: 144, Time:35.887s
+Trial 144 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 17.0 Cell 5 Spike Count: 0.0
+Trial 144 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -12.0 Cell 5 Error: 5.0
+Trial 144 Cell 1 Weight: 0.015783638314391217 Cell 2 Weight: 0.01641040312306965 Cell 3 Weight: 0.01827901706956763 Cell 4 Weight: 0.015090135000000017 Cell 5 Weight: 0.015045000000000024
+44444188
+Trial: 145, Time:35.818s
+Trial 145 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 2.0 Cell 5 Spike Count: 12.0
+Trial 145 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 3.0 Cell 5 Error: -7.0
+Trial 145 Cell 1 Weight: 0.01573642902730929 Cell 2 Weight: 0.016361319165572933 Cell 3 Weight: 0.018224344037455268 Cell 4 Weight: 0.015045000000000018 Cell 5 Weight: 0.015090135000000022
+44338369
+Trial: 146, Time:35.747s
+Trial 146 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 3.0 Cell 5 Spike Count: 0.0
+Trial 146 Cell 1 Error: 5.0 Cell 2 Error:  1.0 Cell 3 Error: 2.0 Cell 4 Error: 2.0 Cell 5 Error: 5.0
+Trial 146 Cell 1 Weight: 0.015689360944475865 Cell 2 Weight: 0.01631238201951439 Cell 3 Weight: 0.01816983453385371 Cell 4 Weight: 0.01500000000000002 Cell 5 Weight: 0.015045000000000024
+45229011
+Trial: 147, Time:36.004s
+Trial 147 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 8.0 Cell 3 Spike Count: 34.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 147 Cell 1 Error: 5.0 Cell 2 Error:  -3.0 Cell 3 Error: -29.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 147 Cell 1 Weight: 0.01564243364354523 Cell 2 Weight: 0.016361319165572933 Cell 3 Weight: 0.018224344037455268 Cell 4 Weight: 0.014955134596211388 Cell 5 Weight: 0.015000000000000025
+45626643
+Trial: 148, Time:36.323s
+Trial 148 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 26.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 8.0
+Trial 148 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -21.0 Cell 4 Error: 4.0 Cell 5 Error: -3.0
+Trial 148 Cell 1 Weight: 0.01559564670343493 Cell 2 Weight: 0.01631238201951439 Cell 3 Weight: 0.01827901706956763 Cell 4 Weight: 0.01491040338605323 Cell 5 Weight: 0.015045000000000024
+44575528
+Trial: 149, Time:35.729s
+Trial 149 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 8.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 0.0
+Trial 149 Cell 1 Error: 5.0 Cell 2 Error:  -3.0 Cell 3 Error: -1.0 Cell 4 Error: -3.0 Cell 5 Error: 5.0
+Trial 149 Cell 1 Weight: 0.015548999704321966 Cell 2 Weight: 0.016361319165572933 Cell 3 Weight: 0.018333854120776334 Cell 4 Weight: 0.014955134596211388 Cell 5 Weight: 0.015000000000000025
+44139249
+Trial: 150, Time:35.923s
+Trial 150 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 150 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -1.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 150 Cell 1 Weight: 0.015502492227639051 Cell 2 Weight: 0.01631238201951439 Cell 3 Weight: 0.01838885568313866 Cell 4 Weight: 0.01491040338605323 Cell 5 Weight: 0.014955134596211393
+43613497
+Trial: 151, Time:35.527s
+Trial 151 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 151 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 3.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 151 Cell 1 Weight: 0.015456123856070841 Cell 2 Weight: 0.016263591245777063 Cell 3 Weight: 0.018333854120776334 Cell 4 Weight: 0.014865805968148786 Cell 5 Weight: 0.014910403386053235
+43776267
+Trial: 152, Time:35.461s
+Trial 152 Cell 1 Spike Count: 11.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 6.0
+Trial 152 Cell 1 Error: -6.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -1.0
+Trial 152 Cell 1 Weight: 0.015502492227639051 Cell 2 Weight: 0.016214946406557393 Cell 3 Weight: 0.018279017069567634 Cell 4 Weight: 0.014821341942321823 Cell 5 Weight: 0.014955134596211393
+45068118
+Trial: 153, Time:35.816s
+Trial 153 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 48.0 Cell 5 Spike Count: 39.0
+Trial 153 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -43.0 Cell 5 Error: -34.0
+Trial 153 Cell 1 Weight: 0.015456123856070841 Cell 2 Weight: 0.01616644706536131 Cell 3 Weight: 0.01822434403745527 Cell 4 Weight: 0.014865805968148786 Cell 5 Weight: 0.015000000000000025
+44919946
+Trial: 154, Time:36.007s
+Trial 154 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 25.0 Cell 5 Spike Count: 48.0
+Trial 154 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 1.0 Cell 4 Error: -20.0 Cell 5 Error: -43.0
+Trial 154 Cell 1 Weight: 0.015409894173550194 Cell 2 Weight: 0.016118092787000313 Cell 3 Weight: 0.018169834533853714 Cell 4 Weight: 0.01491040338605323 Cell 5 Weight: 0.015045000000000024
+44010091
+Trial: 155, Time:35.449s
+Trial 155 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 17.0 Cell 5 Spike Count: 3.0
+Trial 155 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -12.0 Cell 5 Error: 2.0
+Trial 155 Cell 1 Weight: 0.015363802765254432 Cell 2 Weight: 0.016069883137587553 Cell 3 Weight: 0.018115488069644782 Cell 4 Weight: 0.014955134596211388 Cell 5 Weight: 0.015000000000000025
+43980727
+Trial: 156, Time:35.758s
+Trial 156 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 58.0 Cell 5 Spike Count: 0.0
+Trial 156 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 1.0 Cell 4 Error: -53.0 Cell 5 Error: 5.0
+Trial 156 Cell 1 Weight: 0.015317849217601629 Cell 2 Weight: 0.016021817684533955 Cell 3 Weight: 0.018061304157173264 Cell 4 Weight: 0.01500000000000002 Cell 5 Weight: 0.014955134596211393
+43352763
+Trial: 157, Time:35.460s
+Trial 157 Cell 1 Spike Count: 14.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 75.0 Cell 5 Spike Count: 27.0
+Trial 157 Cell 1 Error: -9.0 Cell 2 Error:  5.0 Cell 3 Error: 1.0 Cell 4 Error: -70.0 Cell 5 Error: -22.0
+Trial 157 Cell 1 Weight: 0.015363802765254432 Cell 2 Weight: 0.015973895996544325 Cell 3 Weight: 0.01800728231024254 Cell 4 Weight: 0.015045000000000018 Cell 5 Weight: 0.015000000000000025
+43579037
+Trial: 158, Time:35.424s
+Trial 158 Cell 1 Spike Count: 28.0 Cell 2 Spike Count: 13.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 96.0 Cell 5 Spike Count: 16.0
+Trial 158 Cell 1 Error: -23.0 Cell 2 Error:  -8.0 Cell 3 Error: 5.0 Cell 4 Error: -91.0 Cell 5 Error: -11.0
+Trial 158 Cell 1 Weight: 0.015409894173550194 Cell 2 Weight: 0.016021817684533955 Cell 3 Weight: 0.017953422044110212 Cell 4 Weight: 0.015090135000000017 Cell 5 Weight: 0.015045000000000024
+43106083
+Trial: 159, Time:35.339s
+Trial 159 Cell 1 Spike Count: 74.0 Cell 2 Spike Count: 3.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 111.0 Cell 5 Spike Count: 6.0
+Trial 159 Cell 1 Error: -69.0 Cell 2 Error:  2.0 Cell 3 Error: 5.0 Cell 4 Error: -106.0 Cell 5 Error: -1.0
+Trial 159 Cell 1 Weight: 0.015456123856070843 Cell 2 Weight: 0.015973895996544325 Cell 3 Weight: 0.01789972287548376 Cell 4 Weight: 0.015135405405000016 Cell 5 Weight: 0.015090135000000022
+44395766
+Trial: 160, Time:35.895s
+Trial 160 Cell 1 Spike Count: 53.0 Cell 2 Spike Count: 1.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 144.0 Cell 5 Spike Count: 63.0
+Trial 160 Cell 1 Error: -48.0 Cell 2 Error:  4.0 Cell 3 Error: 5.0 Cell 4 Error: -139.0 Cell 5 Error: -58.0
+Trial 160 Cell 1 Weight: 0.015502492227639055 Cell 2 Weight: 0.015926117643613485 Cell 3 Weight: 0.017846184322516216 Cell 4 Weight: 0.015180811621215014 Cell 5 Weight: 0.01513540540500002
+44192034
+Trial: 161, Time:35.507s
+Trial 161 Cell 1 Spike Count: 45.0 Cell 2 Spike Count: 12.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 169.0 Cell 5 Spike Count: 31.0
+Trial 161 Cell 1 Error: -40.0 Cell 2 Error:  -7.0 Cell 3 Error: 3.0 Cell 4 Error: -164.0 Cell 5 Error: -26.0
+Trial 161 Cell 1 Weight: 0.01554899970432197 Cell 2 Weight: 0.015973895996544325 Cell 3 Weight: 0.01779280590480181 Cell 4 Weight: 0.015226354056078658 Cell 5 Weight: 0.01518081162121502
+44533688
+Trial: 162, Time:35.882s
+Trial 162 Cell 1 Spike Count: 46.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 31.0 Cell 5 Spike Count: 33.0
+Trial 162 Cell 1 Error: -41.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -26.0 Cell 5 Error: -28.0
+Trial 162 Cell 1 Weight: 0.015595646703434933 Cell 2 Weight: 0.015926117643613485 Cell 3 Weight: 0.017739587143371698 Cell 4 Weight: 0.015272033118246892 Cell 5 Weight: 0.015226354056078664
+44635315
+Trial: 163, Time:35.807s
+Trial 163 Cell 1 Spike Count: 43.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 47.0 Cell 5 Spike Count: 34.0
+Trial 163 Cell 1 Error: -38.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -42.0 Cell 5 Error: -29.0
+Trial 163 Cell 1 Weight: 0.015642433643545235 Cell 2 Weight: 0.015878482197022422 Cell 3 Weight: 0.01768652756068963 Cell 4 Weight: 0.01531784921760163 Cell 5 Weight: 0.015272033118246897
+43854386
+Trial: 164, Time:35.489s
+Trial 164 Cell 1 Spike Count: 27.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 24.0 Cell 5 Spike Count: 27.0
+Trial 164 Cell 1 Error: -22.0 Cell 2 Error:  5.0 Cell 3 Error: -3.0 Cell 4 Error: -19.0 Cell 5 Error: -22.0
+Trial 164 Cell 1 Weight: 0.01568936094447587 Cell 2 Weight: 0.01583098922933442 Cell 3 Weight: 0.017739587143371698 Cell 4 Weight: 0.015363802765254434 Cell 5 Weight: 0.015317849217601636
+44114265
+Trial: 165, Time:35.538s
+Trial 165 Cell 1 Spike Count: 50.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 19.0 Cell 5 Spike Count: 20.0
+Trial 165 Cell 1 Error: -45.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -14.0 Cell 5 Error: -15.0
+Trial 165 Cell 1 Weight: 0.015736429027309293 Cell 2 Weight: 0.01578363831439125 Cell 3 Weight: 0.01768652756068963 Cell 4 Weight: 0.015409894173550195 Cell 5 Weight: 0.015363802765254439
+43692858
+Trial: 166, Time:35.669s
+Trial 166 Cell 1 Spike Count: 35.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 92.0 Cell 5 Spike Count: 6.0
+Trial 166 Cell 1 Error: -30.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -87.0 Cell 5 Error: -1.0
+Trial 166 Cell 1 Weight: 0.01578363831439122 Cell 2 Weight: 0.01573642902730932 Cell 3 Weight: 0.01763362668064769 Cell 4 Weight: 0.015456123856070845 Cell 5 Weight: 0.0154098941735502
+43307343
+Trial: 167, Time:35.282s
+Trial 167 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 13.0 Cell 5 Spike Count: 0.0
+Trial 167 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -8.0 Cell 5 Error: 5.0
+Trial 167 Cell 1 Weight: 0.015736429027309293 Cell 2 Weight: 0.015689360944475896 Cell 3 Weight: 0.01758088402856201 Cell 4 Weight: 0.015502492227639057 Cell 5 Weight: 0.015363802765254439
+43883005
+Trial: 168, Time:35.711s
+Trial 168 Cell 1 Spike Count: 14.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 168 Cell 1 Error: -9.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 168 Cell 1 Weight: 0.01578363831439122 Cell 2 Weight: 0.015642433643545263 Cell 3 Weight: 0.017528299131168504 Cell 4 Weight: 0.015456123856070847 Cell 5 Weight: 0.015317849217601636
+43738403
+Trial: 169, Time:35.542s
+Trial 169 Cell 1 Spike Count: 21.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 169 Cell 1 Error: -16.0 Cell 2 Error:  5.0 Cell 3 Error: -5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 169 Cell 1 Weight: 0.015830989229334392 Cell 2 Weight: 0.01559564670343496 Cell 3 Weight: 0.01758088402856201 Cell 4 Weight: 0.015409894173550199 Cell 5 Weight: 0.015272033118246897
+44005738
+Trial: 170, Time:35.500s
+Trial 170 Cell 1 Spike Count: 33.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 4.0
+Trial 170 Cell 1 Error: -28.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -2.0 Cell 5 Error: 1.0
+Trial 170 Cell 1 Weight: 0.015878482197022394 Cell 2 Weight: 0.015548999704321997 Cell 3 Weight: 0.017528299131168504 Cell 4 Weight: 0.015456123856070848 Cell 5 Weight: 0.015226354056078664
+44912271
+Trial: 171, Time:35.769s
+Trial 171 Cell 1 Spike Count: 98.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 23.0 Cell 5 Spike Count: 0.0
+Trial 171 Cell 1 Error: -93.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -18.0 Cell 5 Error: 5.0
+Trial 171 Cell 1 Weight: 0.01592611764361346 Cell 2 Weight: 0.015502492227639083 Cell 3 Weight: 0.01747587151661865 Cell 4 Weight: 0.01550249222763906 Cell 5 Weight: 0.015180811621215021
+43804961
+Trial: 172, Time:35.700s
+Trial 172 Cell 1 Spike Count: 109.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 9.0
+Trial 172 Cell 1 Error: -104.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -3.0 Cell 5 Error: -4.0
+Trial 172 Cell 1 Weight: 0.0159738959965443 Cell 2 Weight: 0.015456123856070873 Cell 3 Weight: 0.017423600714475226 Cell 4 Weight: 0.015548999704321975 Cell 5 Weight: 0.015226354056078665
+43137965
+Trial: 173, Time:35.213s
+Trial 173 Cell 1 Spike Count: 78.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 173 Cell 1 Error: -73.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 173 Cell 1 Weight: 0.01602181768453393 Cell 2 Weight: 0.015409894173550225 Cell 3 Weight: 0.017371486255708106 Cell 4 Weight: 0.01550249222763906 Cell 5 Weight: 0.015180811621215023
+42957058
+Trial: 174, Time:35.470s
+Trial 174 Cell 1 Spike Count: 131.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 174 Cell 1 Error: -126.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 174 Cell 1 Weight: 0.01606988313758753 Cell 2 Weight: 0.015363802765254463 Cell 3 Weight: 0.017319527672690037 Cell 4 Weight: 0.01545612385607085 Cell 5 Weight: 0.015135405405000024
+42750327
+Trial: 175, Time:35.316s
+Trial 175 Cell 1 Spike Count: 169.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 0.0
+Trial 175 Cell 1 Error: -164.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -3.0 Cell 5 Error: 5.0
+Trial 175 Cell 1 Weight: 0.016118092787000292 Cell 2 Weight: 0.01531784921760166 Cell 3 Weight: 0.017267724499192463 Cell 4 Weight: 0.015502492227639062 Cell 5 Weight: 0.015090135000000027
+42994185
+Trial: 176, Time:35.240s
+Trial 176 Cell 1 Spike Count: 123.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 7.0
+Trial 176 Cell 1 Error: -118.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -2.0
+Trial 176 Cell 1 Weight: 0.01616644706536129 Cell 2 Weight: 0.015272033118246922 Cell 3 Weight: 0.017216076270381322 Cell 4 Weight: 0.015456123856070852 Cell 5 Weight: 0.015135405405000026
+42441343
+Trial: 177, Time:35.150s
+Trial 177 Cell 1 Spike Count: 113.0 Cell 2 Spike Count: 11.0 Cell 3 Spike Count: 15.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 0.0
+Trial 177 Cell 1 Error: -108.0 Cell 2 Error:  -6.0 Cell 3 Error: -10.0 Cell 4 Error: -2.0 Cell 5 Error: 5.0
+Trial 177 Cell 1 Weight: 0.016214946406557372 Cell 2 Weight: 0.01531784921760166 Cell 3 Weight: 0.017267724499192463 Cell 4 Weight: 0.015502492227639064 Cell 5 Weight: 0.015090135000000029
+42926814
+Trial: 178, Time:35.478s
+Trial 178 Cell 1 Spike Count: 129.0 Cell 2 Spike Count: 18.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 178 Cell 1 Error: -124.0 Cell 2 Error:  -13.0 Cell 3 Error: -1.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 178 Cell 1 Weight: 0.016263591245777042 Cell 2 Weight: 0.015363802765254463 Cell 3 Weight: 0.01731952767269004 Cell 4 Weight: 0.015456123856070854 Cell 5 Weight: 0.01504500000000003
+42704824
+Trial: 179, Time:35.119s
+Trial 179 Cell 1 Spike Count: 19.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 179 Cell 1 Error: -14.0 Cell 2 Error:  5.0 Cell 3 Error: 1.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 179 Cell 1 Weight: 0.016312382019514373 Cell 2 Weight: 0.01531784921760166 Cell 3 Weight: 0.017267724499192467 Cell 4 Weight: 0.015409894173550206 Cell 5 Weight: 0.015000000000000032
+42178657
+Trial: 180, Time:35.311s
+Trial 180 Cell 1 Spike Count: 34.0 Cell 2 Spike Count: 30.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 2.0
+Trial 180 Cell 1 Error: -29.0 Cell 2 Error:  -25.0 Cell 3 Error: 3.0 Cell 4 Error: -1.0 Cell 5 Error: 3.0
+Trial 180 Cell 1 Weight: 0.016361319165572916 Cell 2 Weight: 0.015363802765254463 Cell 3 Weight: 0.017216076270381325 Cell 4 Weight: 0.015456123856070855 Cell 5 Weight: 0.0149551345962114
+41975043
+Trial: 181, Time:35.133s
+Trial 181 Cell 1 Spike Count: 13.0 Cell 2 Spike Count: 399.0 Cell 3 Spike Count: 105.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 18.0
+Trial 181 Cell 1 Error: -8.0 Cell 2 Error:  -394.0 Cell 3 Error: -100.0 Cell 4 Error: 0.0 Cell 5 Error: -13.0
+Trial 181 Cell 1 Weight: 0.01641040312306963 Cell 2 Weight: 0.015409894173550225 Cell 3 Weight: 0.017267724499192467 Cell 4 Weight: 0.015456123856070855 Cell 5 Weight: 0.015000000000000032
+42249941
+Trial: 182, Time:35.173s
+Trial 182 Cell 1 Spike Count: 18.0 Cell 2 Spike Count: 126.0 Cell 3 Spike Count: 81.0 Cell 4 Spike Count: 40.0 Cell 5 Spike Count: 34.0
+Trial 182 Cell 1 Error: -13.0 Cell 2 Error:  -121.0 Cell 3 Error: -76.0 Cell 4 Error: -35.0 Cell 5 Error: -29.0
+Trial 182 Cell 1 Weight: 0.016459634332438838 Cell 2 Weight: 0.015456123856070874 Cell 3 Weight: 0.017319527672690044 Cell 4 Weight: 0.015502492227639067 Cell 5 Weight: 0.01504500000000003
+41818107
+Trial: 183, Time:35.089s
+Trial 183 Cell 1 Spike Count: 36.0 Cell 2 Spike Count: 160.0 Cell 3 Spike Count: 106.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 97.0
+Trial 183 Cell 1 Error: -31.0 Cell 2 Error:  -155.0 Cell 3 Error: -101.0 Cell 4 Error: -1.0 Cell 5 Error: -92.0
+Trial 183 Cell 1 Weight: 0.016509013235436153 Cell 2 Weight: 0.015502492227639086 Cell 3 Weight: 0.017371486255708113 Cell 4 Weight: 0.015548999704321982 Cell 5 Weight: 0.015090135000000029
+42237562
+Trial: 184, Time:35.412s
+Trial 184 Cell 1 Spike Count: 17.0 Cell 2 Spike Count: 123.0 Cell 3 Spike Count: 64.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 52.0
+Trial 184 Cell 1 Error: -12.0 Cell 2 Error:  -118.0 Cell 3 Error: -59.0 Cell 4 Error: -4.0 Cell 5 Error: -47.0
+Trial 184 Cell 1 Weight: 0.01655854027514246 Cell 2 Weight: 0.015548999704322001 Cell 3 Weight: 0.017423600714475237 Cell 4 Weight: 0.015595646703434947 Cell 5 Weight: 0.015135405405000028
+41658982
+Trial: 185, Time:34.978s
+Trial 185 Cell 1 Spike Count: 24.0 Cell 2 Spike Count: 116.0 Cell 3 Spike Count: 41.0 Cell 4 Spike Count: 15.0 Cell 5 Spike Count: 58.0
+Trial 185 Cell 1 Error: -19.0 Cell 2 Error:  -111.0 Cell 3 Error: -36.0 Cell 4 Error: -10.0 Cell 5 Error: -53.0
+Trial 185 Cell 1 Weight: 0.016608215895967886 Cell 2 Weight: 0.015595646703434966 Cell 3 Weight: 0.01747587151661866 Cell 4 Weight: 0.01564243364354525 Cell 5 Weight: 0.015180811621215026
+42219454
+Trial: 186, Time:35.321s
+Trial 186 Cell 1 Spike Count: 52.0 Cell 2 Spike Count: 126.0 Cell 3 Spike Count: 99.0 Cell 4 Spike Count: 17.0 Cell 5 Spike Count: 43.0
+Trial 186 Cell 1 Error: -47.0 Cell 2 Error:  -121.0 Cell 3 Error: -94.0 Cell 4 Error: -12.0 Cell 5 Error: -38.0
+Trial 186 Cell 1 Weight: 0.016658040543655786 Cell 2 Weight: 0.01564243364354527 Cell 3 Weight: 0.017528299131168514 Cell 4 Weight: 0.015689360944475882 Cell 5 Weight: 0.01522635405607867
+42020105
+Trial: 187, Time:35.160s
+Trial 187 Cell 1 Spike Count: 128.0 Cell 2 Spike Count: 105.0 Cell 3 Spike Count: 90.0 Cell 4 Spike Count: 28.0 Cell 5 Spike Count: 155.0
+Trial 187 Cell 1 Error: -123.0 Cell 2 Error:  -100.0 Cell 3 Error: -85.0 Cell 4 Error: -23.0 Cell 5 Error: -150.0
+Trial 187 Cell 1 Weight: 0.016708014665286753 Cell 2 Weight: 0.015689360944475903 Cell 3 Weight: 0.01758088402856202 Cell 4 Weight: 0.015736429027309307 Cell 5 Weight: 0.015272033118246904
+43421597
+Trial: 188, Time:35.409s
+Trial 188 Cell 1 Spike Count: 132.0 Cell 2 Spike Count: 143.0 Cell 3 Spike Count: 202.0 Cell 4 Spike Count: 99.0 Cell 5 Spike Count: 411.0
+Trial 188 Cell 1 Error: -127.0 Cell 2 Error:  -138.0 Cell 3 Error: -197.0 Cell 4 Error: -94.0 Cell 5 Error: -406.0
+Trial 188 Cell 1 Weight: 0.01675813870928261 Cell 2 Weight: 0.015736429027309328 Cell 3 Weight: 0.017633626680647704 Cell 4 Weight: 0.015783638314391234 Cell 5 Weight: 0.015317849217601643
+43236474
+Trial: 189, Time:35.487s
+Trial 189 Cell 1 Spike Count: 44.0 Cell 2 Spike Count: 194.0 Cell 3 Spike Count: 50.0 Cell 4 Spike Count: 94.0 Cell 5 Spike Count: 348.0
+Trial 189 Cell 1 Error: -39.0 Cell 2 Error:  -189.0 Cell 3 Error: -45.0 Cell 4 Error: -89.0 Cell 5 Error: -343.0
+Trial 189 Cell 1 Weight: 0.016808413125410458 Cell 2 Weight: 0.015783638314391255 Cell 3 Weight: 0.017686527560689645 Cell 4 Weight: 0.015830989229334406 Cell 5 Weight: 0.015363802765254446
+43053669
+Trial: 190, Time:35.638s
+Trial 190 Cell 1 Spike Count: 52.0 Cell 2 Spike Count: 157.0 Cell 3 Spike Count: 38.0 Cell 4 Spike Count: 191.0 Cell 5 Spike Count: 479.0
+Trial 190 Cell 1 Error: -47.0 Cell 2 Error:  -152.0 Cell 3 Error: -33.0 Cell 4 Error: -186.0 Cell 5 Error: -474.0
+Trial 190 Cell 1 Weight: 0.016858838364786688 Cell 2 Weight: 0.015830989229334427 Cell 3 Weight: 0.01773958714337171 Cell 4 Weight: 0.015878482197022408 Cell 5 Weight: 0.015409894173550208
+43474779
+Trial: 191, Time:35.428s
+Trial 191 Cell 1 Spike Count: 61.0 Cell 2 Spike Count: 55.0 Cell 3 Spike Count: 27.0 Cell 4 Spike Count: 202.0 Cell 5 Spike Count: 439.0
+Trial 191 Cell 1 Error: -56.0 Cell 2 Error:  -50.0 Cell 3 Error: -22.0 Cell 4 Error: -197.0 Cell 5 Error: -434.0
+Trial 191 Cell 1 Weight: 0.016909414879881048 Cell 2 Weight: 0.01587848219702243 Cell 3 Weight: 0.017792805904801826 Cell 4 Weight: 0.015926117643613475 Cell 5 Weight: 0.015456123856070857
+44455661
+Trial: 192, Time:35.887s
+Trial 192 Cell 1 Spike Count: 47.0 Cell 2 Spike Count: 7.0 Cell 3 Spike Count: 54.0 Cell 4 Spike Count: 62.0 Cell 5 Spike Count: 510.0
+Trial 192 Cell 1 Error: -42.0 Cell 2 Error:  -2.0 Cell 3 Error: -49.0 Cell 4 Error: -57.0 Cell 5 Error: -505.0
+Trial 192 Cell 1 Weight: 0.01696014312452069 Cell 2 Weight: 0.015926117643613496 Cell 3 Weight: 0.01784618432251623 Cell 4 Weight: 0.015973895996544314 Cell 5 Weight: 0.015502492227639069
+44124310
+Trial: 193, Time:35.666s
+Trial 193 Cell 1 Spike Count: 35.0 Cell 2 Spike Count: 25.0 Cell 3 Spike Count: 17.0 Cell 4 Spike Count: 25.0 Cell 5 Spike Count: 218.0
+Trial 193 Cell 1 Error: -30.0 Cell 2 Error:  -20.0 Cell 3 Error: -12.0 Cell 4 Error: -20.0 Cell 5 Error: -213.0
+Trial 193 Cell 1 Weight: 0.01701102355389425 Cell 2 Weight: 0.015973895996544335 Cell 3 Weight: 0.017899722875483776 Cell 4 Weight: 0.016021817684533944 Cell 5 Weight: 0.015548999704321984
+43749855
+Trial: 194, Time:35.469s
+Trial 194 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 27.0 Cell 3 Spike Count: 14.0 Cell 4 Spike Count: 20.0 Cell 5 Spike Count: 356.0
+Trial 194 Cell 1 Error: -1.0 Cell 2 Error:  -22.0 Cell 3 Error: -9.0 Cell 4 Error: -15.0 Cell 5 Error: -351.0
+Trial 194 Cell 1 Weight: 0.01706205662455593 Cell 2 Weight: 0.016021817684533965 Cell 3 Weight: 0.017953422044110226 Cell 4 Weight: 0.016069883137587546 Cell 5 Weight: 0.015595646703434949
+42216476
+Trial: 195, Time:35.103s
+Trial 195 Cell 1 Spike Count: 15.0 Cell 2 Spike Count: 47.0 Cell 3 Spike Count: 84.0 Cell 4 Spike Count: 35.0 Cell 5 Spike Count: 257.0
+Trial 195 Cell 1 Error: -10.0 Cell 2 Error:  -42.0 Cell 3 Error: -79.0 Cell 4 Error: -30.0 Cell 5 Error: -252.0
+Trial 195 Cell 1 Weight: 0.017113242794429596 Cell 2 Weight: 0.016069883137587566 Cell 3 Weight: 0.018007282310242553 Cell 4 Weight: 0.016118092787000306 Cell 5 Weight: 0.015642433643545253
+42324191
+Trial: 196, Time:35.317s
+Trial 196 Cell 1 Spike Count: 29.0 Cell 2 Spike Count: 49.0 Cell 3 Spike Count: 107.0 Cell 4 Spike Count: 28.0 Cell 5 Spike Count: 182.0
+Trial 196 Cell 1 Error: -24.0 Cell 2 Error:  -44.0 Cell 3 Error: -102.0 Cell 4 Error: -23.0 Cell 5 Error: -177.0
+Trial 196 Cell 1 Weight: 0.017164582522812884 Cell 2 Weight: 0.016118092787000327 Cell 3 Weight: 0.018061304157173278 Cell 4 Weight: 0.016166447065361304 Cell 5 Weight: 0.015689360944475886
+42105085
+Trial: 197, Time:35.028s
+Trial 197 Cell 1 Spike Count: 46.0 Cell 2 Spike Count: 64.0 Cell 3 Spike Count: 112.0 Cell 4 Spike Count: 30.0 Cell 5 Spike Count: 47.0
+Trial 197 Cell 1 Error: -41.0 Cell 2 Error:  -59.0 Cell 3 Error: -107.0 Cell 4 Error: -25.0 Cell 5 Error: -42.0
+Trial 197 Cell 1 Weight: 0.017216076270381322 Cell 2 Weight: 0.016166447065361324 Cell 3 Weight: 0.018115488069644796 Cell 4 Weight: 0.016214946406557386 Cell 5 Weight: 0.01573642902730931
+42680911
+Trial: 198, Time:35.451s
+Trial 198 Cell 1 Spike Count: 36.0 Cell 2 Spike Count: 33.0 Cell 3 Spike Count: 101.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 47.0
+Trial 198 Cell 1 Error: -31.0 Cell 2 Error:  -28.0 Cell 3 Error: -96.0 Cell 4 Error: -3.0 Cell 5 Error: -42.0
+Trial 198 Cell 1 Weight: 0.017267724499192463 Cell 2 Weight: 0.016214946406557407 Cell 3 Weight: 0.018169834533853728 Cell 4 Weight: 0.016263591245777056 Cell 5 Weight: 0.015783638314391238
+43783906
+Trial: 199, Time:35.571s
+Trial 199 Cell 1 Spike Count: 3.0 Cell 2 Spike Count: 102.0 Cell 3 Spike Count: 134.0 Cell 4 Spike Count: 27.0 Cell 5 Spike Count: 41.0
+Trial 199 Cell 1 Error: 2.0 Cell 2 Error:  -97.0 Cell 3 Error: -129.0 Cell 4 Error: -22.0 Cell 5 Error: -36.0
+Trial 199 Cell 1 Weight: 0.017216076270381322 Cell 2 Weight: 0.016263591245777077 Cell 3 Weight: 0.018224344037455285 Cell 4 Weight: 0.016312382019514387 Cell 5 Weight: 0.01583098922933441
+43399825
+Trial: 200, Time:35.400s
+Trial 200 Cell 1 Spike Count: 20.0 Cell 2 Spike Count: 187.0 Cell 3 Spike Count: 199.0 Cell 4 Spike Count: 43.0 Cell 5 Spike Count: 71.0
+Trial 200 Cell 1 Error: -15.0 Cell 2 Error:  -182.0 Cell 3 Error: -194.0 Cell 4 Error: -38.0 Cell 5 Error: -66.0
+Trial 200 Cell 1 Weight: 0.017267724499192463 Cell 2 Weight: 0.016312382019514408 Cell 3 Weight: 0.01827901706956765 Cell 4 Weight: 0.01636131916557293 Cell 5 Weight: 0.01587848219702241
+42073640
+Trial: 201, Time:35.069s
+Trial 201 Cell 1 Spike Count: 7.0 Cell 2 Spike Count: 133.0 Cell 3 Spike Count: 153.0 Cell 4 Spike Count: 73.0 Cell 5 Spike Count: 92.0
+Trial 201 Cell 1 Error: -2.0 Cell 2 Error:  -128.0 Cell 3 Error: -148.0 Cell 4 Error: -68.0 Cell 5 Error: -87.0
+Trial 201 Cell 1 Weight: 0.01731952767269004 Cell 2 Weight: 0.01636131916557295 Cell 3 Weight: 0.01833385412077635 Cell 4 Weight: 0.016410403123069645 Cell 5 Weight: 0.01592611764361348
+41954628
+Trial: 202, Time:35.246s
+Trial 202 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 44.0 Cell 3 Spike Count: 221.0 Cell 4 Spike Count: 36.0 Cell 5 Spike Count: 36.0
+Trial 202 Cell 1 Error: 1.0 Cell 2 Error:  -39.0 Cell 3 Error: -216.0 Cell 4 Error: -31.0 Cell 5 Error: -31.0
+Trial 202 Cell 1 Weight: 0.017267724499192467 Cell 2 Weight: 0.016410403123069666 Cell 3 Weight: 0.018388855683138677 Cell 4 Weight: 0.01645963433243885 Cell 5 Weight: 0.015973895996544318
+42751666
+Trial: 203, Time:35.158s
+Trial 203 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 22.0 Cell 3 Spike Count: 156.0 Cell 4 Spike Count: 15.0 Cell 5 Spike Count: 19.0
+Trial 203 Cell 1 Error: 1.0 Cell 2 Error:  -17.0 Cell 3 Error: -151.0 Cell 4 Error: -10.0 Cell 5 Error: -14.0
+Trial 203 Cell 1 Weight: 0.017216076270381325 Cell 2 Weight: 0.016459634332438872 Cell 3 Weight: 0.01844402225018809 Cell 4 Weight: 0.016509013235436167 Cell 5 Weight: 0.016021817684533948
+42460048
+Trial: 204, Time:35.384s
+Trial 204 Cell 1 Spike Count: 27.0 Cell 2 Spike Count: 199.0 Cell 3 Spike Count: 126.0 Cell 4 Spike Count: 58.0 Cell 5 Spike Count: 35.0
+Trial 204 Cell 1 Error: -22.0 Cell 2 Error:  -194.0 Cell 3 Error: -121.0 Cell 4 Error: -53.0 Cell 5 Error: -30.0
+Trial 204 Cell 1 Weight: 0.017267724499192467 Cell 2 Weight: 0.016509013235436187 Cell 3 Weight: 0.01849935431693865 Cell 4 Weight: 0.016558540275142475 Cell 5 Weight: 0.01606988313758755
+42832442
+Trial: 205, Time:35.356s
+Trial 205 Cell 1 Spike Count: 65.0 Cell 2 Spike Count: 230.0 Cell 3 Spike Count: 142.0 Cell 4 Spike Count: 56.0 Cell 5 Spike Count: 42.0
+Trial 205 Cell 1 Error: -60.0 Cell 2 Error:  -225.0 Cell 3 Error: -137.0 Cell 4 Error: -51.0 Cell 5 Error: -37.0
+Trial 205 Cell 1 Weight: 0.017319527672690044 Cell 2 Weight: 0.016558540275142496 Cell 3 Weight: 0.018554852379889464 Cell 4 Weight: 0.0166082158959679 Cell 5 Weight: 0.01611809278700031
+41836007
+Trial: 206, Time:35.015s
+Trial 206 Cell 1 Spike Count: 30.0 Cell 2 Spike Count: 25.0 Cell 3 Spike Count: 191.0 Cell 4 Spike Count: 50.0 Cell 5 Spike Count: 19.0
+Trial 206 Cell 1 Error: -25.0 Cell 2 Error:  -20.0 Cell 3 Error: -186.0 Cell 4 Error: -45.0 Cell 5 Error: -14.0
+Trial 206 Cell 1 Weight: 0.017371486255708113 Cell 2 Weight: 0.01660821589596792 Cell 3 Weight: 0.01861051693702913 Cell 4 Weight: 0.0166580405436558 Cell 5 Weight: 0.016166447065361307
+41930157
+Trial: 207, Time:35.062s
+Trial 207 Cell 1 Spike Count: 35.0 Cell 2 Spike Count: 39.0 Cell 3 Spike Count: 121.0 Cell 4 Spike Count: 22.0 Cell 5 Spike Count: 0.0
+Trial 207 Cell 1 Error: -30.0 Cell 2 Error:  -34.0 Cell 3 Error: -116.0 Cell 4 Error: -17.0 Cell 5 Error: 5.0
+Trial 207 Cell 1 Weight: 0.017423600714475237 Cell 2 Weight: 0.01665804054365582 Cell 3 Weight: 0.018666348487840215 Cell 4 Weight: 0.016708014665286767 Cell 5 Weight: 0.01611809278700031
+43798474
+Trial: 208, Time:35.796s
+Trial 208 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 5.0 Cell 3 Spike Count: 165.0 Cell 4 Spike Count: 69.0 Cell 5 Spike Count: 1.0
+Trial 208 Cell 1 Error: 5.0 Cell 2 Error:  0.0 Cell 3 Error: -160.0 Cell 4 Error: -64.0 Cell 5 Error: 4.0
+Trial 208 Cell 1 Weight: 0.017371486255708116 Cell 2 Weight: 0.01665804054365582 Cell 3 Weight: 0.018722347533303735 Cell 4 Weight: 0.016758138709282625 Cell 5 Weight: 0.01606988313758755
+42446234
+Trial: 209, Time:35.103s
+Trial 209 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 119.0 Cell 4 Spike Count: 57.0 Cell 5 Spike Count: 8.0
+Trial 209 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -114.0 Cell 4 Error: -52.0 Cell 5 Error: -3.0
+Trial 209 Cell 1 Weight: 0.017319527672690047 Cell 2 Weight: 0.01660821589596792 Cell 3 Weight: 0.018778514575903644 Cell 4 Weight: 0.01680841312541047 Cell 5 Weight: 0.01611809278700031
+43289947
+Trial: 210, Time:35.556s
+Trial 210 Cell 1 Spike Count: 10.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 79.0 Cell 4 Spike Count: 40.0 Cell 5 Spike Count: 0.0
+Trial 210 Cell 1 Error: -5.0 Cell 2 Error:  -5.0 Cell 3 Error: -74.0 Cell 4 Error: -35.0 Cell 5 Error: 5.0
+Trial 210 Cell 1 Weight: 0.017371486255708116 Cell 2 Weight: 0.01665804054365582 Cell 3 Weight: 0.018834850119631354 Cell 4 Weight: 0.016858838364786702 Cell 5 Weight: 0.01606988313758755
+42135245
+Trial: 211, Time:35.102s
+Trial 211 Cell 1 Spike Count: 62.0 Cell 2 Spike Count: 71.0 Cell 3 Spike Count: 133.0 Cell 4 Spike Count: 38.0 Cell 5 Spike Count: 4.0
+Trial 211 Cell 1 Error: -57.0 Cell 2 Error:  -66.0 Cell 3 Error: -128.0 Cell 4 Error: -33.0 Cell 5 Error: 1.0
+Trial 211 Cell 1 Weight: 0.01742360071447524 Cell 2 Weight: 0.016708014665286788 Cell 3 Weight: 0.018891354669990246 Cell 4 Weight: 0.01690941487988106 Cell 5 Weight: 0.01602181768453395
+42850871
+Trial: 212, Time:35.579s
+Trial 212 Cell 1 Spike Count: 93.0 Cell 2 Spike Count: 118.0 Cell 3 Spike Count: 109.0 Cell 4 Spike Count: 30.0 Cell 5 Spike Count: 0.0
+Trial 212 Cell 1 Error: -88.0 Cell 2 Error:  -113.0 Cell 3 Error: -104.0 Cell 4 Error: -25.0 Cell 5 Error: 5.0
+Trial 212 Cell 1 Weight: 0.017475871516618665 Cell 2 Weight: 0.016758138709282645 Cell 3 Weight: 0.018948028734000213 Cell 4 Weight: 0.016960143124520703 Cell 5 Weight: 0.01597389599654432
+42607731
+Trial: 213, Time:35.397s
+Trial 213 Cell 1 Spike Count: 170.0 Cell 2 Spike Count: 143.0 Cell 3 Spike Count: 128.0 Cell 4 Spike Count: 44.0 Cell 5 Spike Count: 4.0
+Trial 213 Cell 1 Error: -165.0 Cell 2 Error:  -138.0 Cell 3 Error: -123.0 Cell 4 Error: -39.0 Cell 5 Error: 1.0
+Trial 213 Cell 1 Weight: 0.017528299131168518 Cell 2 Weight: 0.016808413125410492 Cell 3 Weight: 0.01900487282020221 Cell 4 Weight: 0.017011023553894264 Cell 5 Weight: 0.015926117643613482
+43037241
+Trial: 214, Time:35.396s
+Trial 214 Cell 1 Spike Count: 135.0 Cell 2 Spike Count: 176.0 Cell 3 Spike Count: 201.0 Cell 4 Spike Count: 36.0 Cell 5 Spike Count: 7.0
+Trial 214 Cell 1 Error: -130.0 Cell 2 Error:  -171.0 Cell 3 Error: -196.0 Cell 4 Error: -31.0 Cell 5 Error: -2.0
+Trial 214 Cell 1 Weight: 0.017580884028562022 Cell 2 Weight: 0.016858838364786723 Cell 3 Weight: 0.019061887438662814 Cell 4 Weight: 0.017062056624555944 Cell 5 Weight: 0.01597389599654432
+42720489
+Trial: 215, Time:35.255s
+Trial 215 Cell 1 Spike Count: 42.0 Cell 2 Spike Count: 108.0 Cell 3 Spike Count: 129.0 Cell 4 Spike Count: 48.0 Cell 5 Spike Count: 3.0
+Trial 215 Cell 1 Error: -37.0 Cell 2 Error:  -103.0 Cell 3 Error: -124.0 Cell 4 Error: -43.0 Cell 5 Error: 2.0
+Trial 215 Cell 1 Weight: 0.017633626680647708 Cell 2 Weight: 0.016909414879881082 Cell 3 Weight: 0.019119073100978802 Cell 4 Weight: 0.01711324279442961 Cell 5 Weight: 0.015926117643613482
+42727396
+Trial: 216, Time:35.533s
+Trial 216 Cell 1 Spike Count: 28.0 Cell 2 Spike Count: 126.0 Cell 3 Spike Count: 771.0 Cell 4 Spike Count: 56.0 Cell 5 Spike Count: 16.0
+Trial 216 Cell 1 Error: -23.0 Cell 2 Error:  -121.0 Cell 3 Error: -766.0 Cell 4 Error: -51.0 Cell 5 Error: -11.0
+Trial 216 Cell 1 Weight: 0.017686527560689648 Cell 2 Weight: 0.016960143124520724 Cell 3 Weight: 0.019176430320281736 Cell 4 Weight: 0.0171645825228129 Cell 5 Weight: 0.01597389599654432
+42388111
+Trial: 217, Time:35.208s
+Trial 217 Cell 1 Spike Count: 11.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 192.0 Cell 4 Spike Count: 56.0 Cell 5 Spike Count: 1.0
+Trial 217 Cell 1 Error: -6.0 Cell 2 Error:  -5.0 Cell 3 Error: -187.0 Cell 4 Error: -51.0 Cell 5 Error: 4.0
+Trial 217 Cell 1 Weight: 0.017739587143371715 Cell 2 Weight: 0.017011023553894285 Cell 3 Weight: 0.01923395961124258 Cell 4 Weight: 0.017216076270381336 Cell 5 Weight: 0.015926117643613482
+41518014
+Trial: 218, Time:35.169s
+Trial 218 Cell 1 Spike Count: 50.0 Cell 2 Spike Count: 20.0 Cell 3 Spike Count: 107.0 Cell 4 Spike Count: 24.0 Cell 5 Spike Count: 3.0
+Trial 218 Cell 1 Error: -45.0 Cell 2 Error:  -15.0 Cell 3 Error: -102.0 Cell 4 Error: -19.0 Cell 5 Error: 2.0
+Trial 218 Cell 1 Weight: 0.01779280590480183 Cell 2 Weight: 0.017062056624555965 Cell 3 Weight: 0.019291661490076304 Cell 4 Weight: 0.017267724499192477 Cell 5 Weight: 0.01587848219702242
+42020851
+Trial: 219, Time:35.199s
+Trial 219 Cell 1 Spike Count: 33.0 Cell 2 Spike Count: 49.0 Cell 3 Spike Count: 81.0 Cell 4 Spike Count: 34.0 Cell 5 Spike Count: 0.0
+Trial 219 Cell 1 Error: -28.0 Cell 2 Error:  -44.0 Cell 3 Error: -76.0 Cell 4 Error: -29.0 Cell 5 Error: 5.0
+Trial 219 Cell 1 Weight: 0.017846184322516234 Cell 2 Weight: 0.01711324279442963 Cell 3 Weight: 0.01934953647454653 Cell 4 Weight: 0.017319527672690054 Cell 5 Weight: 0.015830989229334416
+41575112
+Trial: 220, Time:34.933s
+Trial 220 Cell 1 Spike Count: 30.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 18.0 Cell 5 Spike Count: 0.0
+Trial 220 Cell 1 Error: -25.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -13.0 Cell 5 Error: 5.0
+Trial 220 Cell 1 Weight: 0.01789972287548378 Cell 2 Weight: 0.017062056624555965 Cell 3 Weight: 0.019291661490076304 Cell 4 Weight: 0.017371486255708123 Cell 5 Weight: 0.015783638314391245
+41711976
+Trial: 221, Time:34.909s
+Trial 221 Cell 1 Spike Count: 57.0 Cell 2 Spike Count: 2.0 Cell 3 Spike Count: 12.0 Cell 4 Spike Count: 41.0 Cell 5 Spike Count: 2.0
+Trial 221 Cell 1 Error: -52.0 Cell 2 Error:  3.0 Cell 3 Error: -7.0 Cell 4 Error: -36.0 Cell 5 Error: 3.0
+Trial 221 Cell 1 Weight: 0.01795342204411023 Cell 2 Weight: 0.017011023553894285 Cell 3 Weight: 0.01934953647454653 Cell 4 Weight: 0.017423600714475247 Cell 5 Weight: 0.015736429027309318
+41537415
+Trial: 222, Time:35.159s
+Trial 222 Cell 1 Spike Count: 47.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 14.0 Cell 4 Spike Count: 4.0 Cell 5 Spike Count: 0.0
+Trial 222 Cell 1 Error: -42.0 Cell 2 Error:  5.0 Cell 3 Error: -9.0 Cell 4 Error: 1.0 Cell 5 Error: 5.0
+Trial 222 Cell 1 Weight: 0.018007282310242557 Cell 2 Weight: 0.016960143124520724 Cell 3 Weight: 0.01940758508397017 Cell 4 Weight: 0.017371486255708127 Cell 5 Weight: 0.015689360944475893
+41152016
+Trial: 223, Time:34.879s
+Trial 223 Cell 1 Spike Count: 14.0 Cell 2 Spike Count: 11.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 223 Cell 1 Error: -9.0 Cell 2 Error:  -6.0 Cell 3 Error: -3.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 223 Cell 1 Weight: 0.01806130415717328 Cell 2 Weight: 0.017011023553894285 Cell 3 Weight: 0.01946580783922208 Cell 4 Weight: 0.017319527672690058 Cell 5 Weight: 0.01564243364354526
+41549777
+Trial: 224, Time:35.149s
+Trial 224 Cell 1 Spike Count: 47.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 4.0 Cell 5 Spike Count: 3.0
+Trial 224 Cell 1 Error: -42.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 1.0 Cell 5 Error: 2.0
+Trial 224 Cell 1 Weight: 0.0181154880696448 Cell 2 Weight: 0.016960143124520724 Cell 3 Weight: 0.019407585083970173 Cell 4 Weight: 0.017267724499192484 Cell 5 Weight: 0.015595646703434957
+41616989
+Trial: 225, Time:35.069s
+Trial 225 Cell 1 Spike Count: 47.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 13.0
+Trial 225 Cell 1 Error: -42.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -5.0 Cell 5 Error: -8.0
+Trial 225 Cell 1 Weight: 0.01816983453385373 Cell 2 Weight: 0.016909414879881082 Cell 3 Weight: 0.019349536474546535 Cell 4 Weight: 0.01731952767269006 Cell 5 Weight: 0.01564243364354526
+41927877
+Trial: 226, Time:35.032s
+Trial 226 Cell 1 Spike Count: 34.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 2.0 Cell 5 Spike Count: 17.0
+Trial 226 Cell 1 Error: -29.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 3.0 Cell 5 Error: -12.0
+Trial 226 Cell 1 Weight: 0.018224344037455292 Cell 2 Weight: 0.016858838364786726 Cell 3 Weight: 0.019291661490076308 Cell 4 Weight: 0.017267724499192488 Cell 5 Weight: 0.015689360944475893
+42051708
+Trial: 227, Time:35.008s
+Trial 227 Cell 1 Spike Count: 38.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 3.0 Cell 5 Spike Count: 0.0
+Trial 227 Cell 1 Error: -33.0 Cell 2 Error:  5.0 Cell 3 Error: -3.0 Cell 4 Error: 2.0 Cell 5 Error: 5.0
+Trial 227 Cell 1 Weight: 0.018279017069567655 Cell 2 Weight: 0.016808413125410496 Cell 3 Weight: 0.019349536474546535 Cell 4 Weight: 0.017216076270381346 Cell 5 Weight: 0.01564243364354526
+42770278
+Trial: 228, Time:35.476s
+Trial 228 Cell 1 Spike Count: 9.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 10.0
+Trial 228 Cell 1 Error: -4.0 Cell 2 Error:  1.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -5.0
+Trial 228 Cell 1 Weight: 0.018333854120776358 Cell 2 Weight: 0.01675813870928265 Cell 3 Weight: 0.019291661490076308 Cell 4 Weight: 0.01716458252281291 Cell 5 Weight: 0.015689360944475893
+43223078
+Trial: 229, Time:35.378s
+Trial 229 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 11.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 0.0
+Trial 229 Cell 1 Error: 5.0 Cell 2 Error:  -6.0 Cell 3 Error: 5.0 Cell 4 Error: -1.0 Cell 5 Error: 5.0
+Trial 229 Cell 1 Weight: 0.01827901706956766 Cell 2 Weight: 0.016808413125410496 Cell 3 Weight: 0.019233959611242583 Cell 4 Weight: 0.017216076270381346 Cell 5 Weight: 0.01564243364354526
+42989300
+Trial: 230, Time:35.507s
+Trial 230 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 230 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 230 Cell 1 Weight: 0.018224344037455296 Cell 2 Weight: 0.01675813870928265 Cell 3 Weight: 0.01917643032028174 Cell 4 Weight: 0.01716458252281291 Cell 5 Weight: 0.015595646703434957
+42984465
+Trial: 231, Time:35.380s
+Trial 231 Cell 1 Spike Count: 9.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 29.0
+Trial 231 Cell 1 Error: -4.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -24.0
+Trial 231 Cell 1 Weight: 0.01827901706956766 Cell 2 Weight: 0.01670801466528679 Cell 3 Weight: 0.019119073100978805 Cell 4 Weight: 0.017113242794429624 Cell 5 Weight: 0.01564243364354526
+43052876
+Trial: 232, Time:35.293s
+Trial 232 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 9.0
+Trial 232 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -3.0 Cell 5 Error: -4.0
+Trial 232 Cell 1 Weight: 0.018224344037455296 Cell 2 Weight: 0.016658040543655828 Cell 3 Weight: 0.01906188743866282 Cell 4 Weight: 0.017164582522812912 Cell 5 Weight: 0.015689360944475893
+42501002
+Trial: 233, Time:35.127s
+Trial 233 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 28.0 Cell 5 Spike Count: 23.0
+Trial 233 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: -1.0 Cell 4 Error: -23.0 Cell 5 Error: -18.0
+Trial 233 Cell 1 Weight: 0.01816983453385374 Cell 2 Weight: 0.016608215895967927 Cell 3 Weight: 0.01911907310097881 Cell 4 Weight: 0.01721607627038135 Cell 5 Weight: 0.015736429027309318
+42764188
+Trial: 234, Time:35.476s
+Trial 234 Cell 1 Spike Count: 13.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 15.0
+Trial 234 Cell 1 Error: -8.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 0.0 Cell 5 Error: -10.0
+Trial 234 Cell 1 Weight: 0.0182243440374553 Cell 2 Weight: 0.016558540275142503 Cell 3 Weight: 0.019061887438662824 Cell 4 Weight: 0.01721607627038135 Cell 5 Weight: 0.015783638314391245
+43815038
+Trial: 235, Time:35.629s
+Trial 235 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 235 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 235 Cell 1 Weight: 0.018169834533853742 Cell 2 Weight: 0.016509013235436198 Cell 3 Weight: 0.01900487282020222 Cell 4 Weight: 0.017164582522812912 Cell 5 Weight: 0.015736429027309318
+44127037
+Trial: 236, Time:35.895s
+Trial 236 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 9.0
+Trial 236 Cell 1 Error: -1.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -4.0
+Trial 236 Cell 1 Weight: 0.018224344037455303 Cell 2 Weight: 0.016459634332438883 Cell 3 Weight: 0.018948028734000224 Cell 4 Weight: 0.017113242794429627 Cell 5 Weight: 0.015783638314391245
+43739203
+Trial: 237, Time:35.721s
+Trial 237 Cell 1 Spike Count: 28.0 Cell 2 Spike Count: 1.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 0.0
+Trial 237 Cell 1 Error: -23.0 Cell 2 Error:  4.0 Cell 3 Error: -1.0 Cell 4 Error: 4.0 Cell 5 Error: 5.0
+Trial 237 Cell 1 Weight: 0.018279017069567666 Cell 2 Weight: 0.016410403123069676 Cell 3 Weight: 0.01900487282020222 Cell 4 Weight: 0.01706205662455596 Cell 5 Weight: 0.015736429027309318
+43976676
+Trial: 238, Time:35.612s
+Trial 238 Cell 1 Spike Count: 114.0 Cell 2 Spike Count: 3.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 5.0
+Trial 238 Cell 1 Error: -109.0 Cell 2 Error:  2.0 Cell 3 Error: 5.0 Cell 4 Error: 0.0 Cell 5 Error: 0.0
+Trial 238 Cell 1 Weight: 0.018333854120776368 Cell 2 Weight: 0.01636131916557296 Cell 3 Weight: 0.018948028734000224 Cell 4 Weight: 0.01706205662455596 Cell 5 Weight: 0.015736429027309318
+44212784
+Trial: 239, Time:35.616s
+Trial 239 Cell 1 Spike Count: 30.0 Cell 2 Spike Count: 5.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 10.0
+Trial 239 Cell 1 Error: -25.0 Cell 2 Error:  0.0 Cell 3 Error: 4.0 Cell 4 Error: 5.0 Cell 5 Error: -5.0
+Trial 239 Cell 1 Weight: 0.018388855683138694 Cell 2 Weight: 0.01636131916557296 Cell 3 Weight: 0.018891354669990257 Cell 4 Weight: 0.01701102355389428 Cell 5 Weight: 0.015783638314391245
+41986540
+Trial: 240, Time:35.362s
+Trial 240 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 4.0 Cell 5 Spike Count: 2.0
+Trial 240 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 1.0 Cell 5 Error: 3.0
+Trial 240 Cell 1 Weight: 0.018333854120776368 Cell 2 Weight: 0.016312382019514418 Cell 3 Weight: 0.018834850119631364 Cell 4 Weight: 0.01696014312452072 Cell 5 Weight: 0.015736429027309318
+42535629
+Trial: 241, Time:35.244s
+Trial 241 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 5.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 6.0
+Trial 241 Cell 1 Error: 1.0 Cell 2 Error:  0.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -1.0
+Trial 241 Cell 1 Weight: 0.01827901706956767 Cell 2 Weight: 0.016312382019514418 Cell 3 Weight: 0.018778514575903654 Cell 4 Weight: 0.01690941487988108 Cell 5 Weight: 0.015783638314391245
+42064770
+Trial: 242, Time:35.440s
+Trial 242 Cell 1 Spike Count: 3.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 242 Cell 1 Error: 2.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 242 Cell 1 Weight: 0.018224344037455306 Cell 2 Weight: 0.01626359124577709 Cell 3 Weight: 0.018722347533303745 Cell 4 Weight: 0.016858838364786723 Cell 5 Weight: 0.015736429027309318
+41861149
+Trial: 243, Time:35.075s
+Trial 243 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 243 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 243 Cell 1 Weight: 0.01816983453385375 Cell 2 Weight: 0.01621494640655742 Cell 3 Weight: 0.018666348487840226 Cell 4 Weight: 0.016808413125410492 Cell 5 Weight: 0.015689360944475893
+41762223
+Trial: 244, Time:35.226s
+Trial 244 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 244 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 244 Cell 1 Weight: 0.018115488069644817 Cell 2 Weight: 0.01616644706536134 Cell 3 Weight: 0.018610516937029142 Cell 4 Weight: 0.016758138709282645 Cell 5 Weight: 0.01564243364354526
+42032723
+Trial: 245, Time:35.036s
+Trial 245 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 245 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 245 Cell 1 Weight: 0.0180613041571733 Cell 2 Weight: 0.01611809278700034 Cell 3 Weight: 0.018554852379889478 Cell 4 Weight: 0.016708014665286788 Cell 5 Weight: 0.015595646703434957
+42697624
+Trial: 246, Time:35.462s
+Trial 246 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 246 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 246 Cell 1 Weight: 0.018007282310242574 Cell 2 Weight: 0.01606988313758758 Cell 3 Weight: 0.018499354316938665 Cell 4 Weight: 0.016658040543655824 Cell 5 Weight: 0.015548999704321994
+42168809
+Trial: 247, Time:35.239s
+Trial 247 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 247 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 247 Cell 1 Weight: 0.017953422044110247 Cell 2 Weight: 0.016021817684533982 Cell 3 Weight: 0.018444022250188104 Cell 4 Weight: 0.016608215895967924 Cell 5 Weight: 0.015502492227639079
+41900797
+Trial: 248, Time:35.058s
+Trial 248 Cell 1 Spike Count: 3.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 248 Cell 1 Error: 2.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 248 Cell 1 Weight: 0.017899722875483796 Cell 2 Weight: 0.015973895996544352 Cell 3 Weight: 0.01838885568313869 Cell 4 Weight: 0.0165585402751425 Cell 5 Weight: 0.01545612385607087
+41206009
+Trial: 249, Time:34.881s
+Trial 249 Cell 1 Spike Count: 8.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 6.0
+Trial 249 Cell 1 Error: -3.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -1.0
+Trial 249 Cell 1 Weight: 0.017953422044110247 Cell 2 Weight: 0.015926117643613513 Cell 3 Weight: 0.018333854120776365 Cell 4 Weight: 0.016509013235436194 Cell 5 Weight: 0.01550249222763908
+40545361
+Trial: 250, Time:34.943s
+Trial 250 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 250 Cell 1 Error: -1.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 250 Cell 1 Weight: 0.018007282310242574 Cell 2 Weight: 0.01587848219702245 Cell 3 Weight: 0.018279017069567666 Cell 4 Weight: 0.01645963433243888 Cell 5 Weight: 0.015456123856070871
+40361048
+Trial: 251, Time:34.609s
+Trial 251 Cell 1 Spike Count: 18.0 Cell 2 Spike Count: 13.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 251 Cell 1 Error: -13.0 Cell 2 Error:  -8.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 251 Cell 1 Weight: 0.0180613041571733 Cell 2 Weight: 0.015926117643613517 Cell 3 Weight: 0.018224344037455303 Cell 4 Weight: 0.016410403123069673 Cell 5 Weight: 0.015409894173550223
+40075987
+Trial: 252, Time:34.837s
+Trial 252 Cell 1 Spike Count: 13.0 Cell 2 Spike Count: 8.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 252 Cell 1 Error: -8.0 Cell 2 Error:  -3.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 252 Cell 1 Weight: 0.018115488069644817 Cell 2 Weight: 0.015973895996544356 Cell 3 Weight: 0.018169834533853745 Cell 4 Weight: 0.016361319165572957 Cell 5 Weight: 0.015363802765254462
+39852299
+Trial: 253, Time:34.681s
+Trial 253 Cell 1 Spike Count: 15.0 Cell 2 Spike Count: 7.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 253 Cell 1 Error: -10.0 Cell 2 Error:  -2.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 253 Cell 1 Weight: 0.01816983453385375 Cell 2 Weight: 0.016021817684533986 Cell 3 Weight: 0.018115488069644813 Cell 4 Weight: 0.016312382019514415 Cell 5 Weight: 0.015317849217601659
+40407483
+Trial: 254, Time:34.666s
+Trial 254 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 0.0
+Trial 254 Cell 1 Error: 5.0 Cell 2 Error:  -4.0 Cell 3 Error: 0.0 Cell 4 Error: -3.0 Cell 5 Error: 5.0
+Trial 254 Cell 1 Weight: 0.018115488069644817 Cell 2 Weight: 0.016069883137587587 Cell 3 Weight: 0.018115488069644813 Cell 4 Weight: 0.016361319165572957 Cell 5 Weight: 0.01527203311824692
+40393720
+Trial: 255, Time:34.733s
+Trial 255 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 255 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 255 Cell 1 Weight: 0.0180613041571733 Cell 2 Weight: 0.01602181768453399 Cell 3 Weight: 0.018061304157173295 Cell 4 Weight: 0.016312382019514415 Cell 5 Weight: 0.015226354056078686
+39220688
+Trial: 256, Time:34.605s
+Trial 256 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 5.0 Cell 3 Spike Count: 7.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 2.0
+Trial 256 Cell 1 Error: 5.0 Cell 2 Error:  0.0 Cell 3 Error: -2.0 Cell 4 Error: 5.0 Cell 5 Error: 3.0
+Trial 256 Cell 1 Weight: 0.018007282310242574 Cell 2 Weight: 0.01602181768453399 Cell 3 Weight: 0.018115488069644813 Cell 4 Weight: 0.016263591245777087 Cell 5 Weight: 0.015180811621215044
+39505567
+Trial: 257, Time:34.399s
+Trial 257 Cell 1 Spike Count: 9.0 Cell 2 Spike Count: 1.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 0.0
+Trial 257 Cell 1 Error: -4.0 Cell 2 Error:  4.0 Cell 3 Error: 4.0 Cell 4 Error: 4.0 Cell 5 Error: 5.0
+Trial 257 Cell 1 Weight: 0.0180613041571733 Cell 2 Weight: 0.01597389599654436 Cell 3 Weight: 0.018061304157173295 Cell 4 Weight: 0.016214946406557417 Cell 5 Weight: 0.015135405405000045
+40422867
+Trial: 258, Time:34.919s
+Trial 258 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 258 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 2.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 258 Cell 1 Weight: 0.018007282310242574 Cell 2 Weight: 0.01592611764361352 Cell 3 Weight: 0.01800728231024257 Cell 4 Weight: 0.016166447065361335 Cell 5 Weight: 0.015090135000000046
+40218104
+Trial: 259, Time:34.760s
+Trial 259 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 3.0
+Trial 259 Cell 1 Error: 1.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 2.0
+Trial 259 Cell 1 Weight: 0.017953422044110247 Cell 2 Weight: 0.015878482197022457 Cell 3 Weight: 0.017953422044110243 Cell 4 Weight: 0.016118092787000337 Cell 5 Weight: 0.015045000000000048
+40519834
+Trial: 260, Time:34.723s
+Trial 260 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 6.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 2.0
+Trial 260 Cell 1 Error: 5.0 Cell 2 Error:  -1.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 3.0
+Trial 260 Cell 1 Weight: 0.017899722875483796 Cell 2 Weight: 0.015926117643613524 Cell 3 Weight: 0.017899722875483793 Cell 4 Weight: 0.016069883137587577 Cell 5 Weight: 0.01500000000000005
+40734443
+Trial: 261, Time:34.873s
+Trial 261 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 12.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 22.0 Cell 5 Spike Count: 52.0
+Trial 261 Cell 1 Error: 1.0 Cell 2 Error:  -7.0 Cell 3 Error: 5.0 Cell 4 Error: -17.0 Cell 5 Error: -47.0
+Trial 261 Cell 1 Weight: 0.01784618432251625 Cell 2 Weight: 0.015973895996544363 Cell 3 Weight: 0.017846184322516247 Cell 4 Weight: 0.016118092787000337 Cell 5 Weight: 0.015045000000000048
+41255614
+Trial: 262, Time:35.223s
+Trial 262 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 6.0 Cell 5 Spike Count: 67.0
+Trial 262 Cell 1 Error: -1.0 Cell 2 Error:  1.0 Cell 3 Error: -1.0 Cell 4 Error: -1.0 Cell 5 Error: -62.0
+Trial 262 Cell 1 Weight: 0.017899722875483796 Cell 2 Weight: 0.015926117643613524 Cell 3 Weight: 0.017899722875483793 Cell 4 Weight: 0.016166447065361335 Cell 5 Weight: 0.015090135000000046
+41578917
+Trial: 263, Time:35.002s
+Trial 263 Cell 1 Spike Count: 37.0 Cell 2 Spike Count: 13.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 75.0
+Trial 263 Cell 1 Error: -32.0 Cell 2 Error:  -8.0 Cell 3 Error: 5.0 Cell 4 Error: 0.0 Cell 5 Error: -70.0
+Trial 263 Cell 1 Weight: 0.017953422044110247 Cell 2 Weight: 0.015973895996544363 Cell 3 Weight: 0.017846184322516247 Cell 4 Weight: 0.016166447065361335 Cell 5 Weight: 0.015135405405000045
+40754838
+Trial: 264, Time:34.966s
+Trial 264 Cell 1 Spike Count: 7.0 Cell 2 Spike Count: 33.0 Cell 3 Spike Count: 2.0 Cell 4 Spike Count: 13.0 Cell 5 Spike Count: 22.0
+Trial 264 Cell 1 Error: -2.0 Cell 2 Error:  -28.0 Cell 3 Error: 3.0 Cell 4 Error: -8.0 Cell 5 Error: -17.0
+Trial 264 Cell 1 Weight: 0.018007282310242574 Cell 2 Weight: 0.016021817684533993 Cell 3 Weight: 0.017792805904801843 Cell 4 Weight: 0.016214946406557417 Cell 5 Weight: 0.015180811621215044
+41185142
+Trial: 265, Time:35.068s
+Trial 265 Cell 1 Spike Count: 23.0 Cell 2 Spike Count: 39.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 34.0
+Trial 265 Cell 1 Error: -18.0 Cell 2 Error:  -34.0 Cell 3 Error: -5.0 Cell 4 Error: 0.0 Cell 5 Error: -29.0
+Trial 265 Cell 1 Weight: 0.0180613041571733 Cell 2 Weight: 0.016069883137587594 Cell 3 Weight: 0.017846184322516247 Cell 4 Weight: 0.016214946406557417 Cell 5 Weight: 0.015226354056078688
+41804993
+Trial: 266, Time:35.043s
+Trial 266 Cell 1 Spike Count: 21.0 Cell 2 Spike Count: 19.0 Cell 3 Spike Count: 9.0 Cell 4 Spike Count: 18.0 Cell 5 Spike Count: 33.0
+Trial 266 Cell 1 Error: -16.0 Cell 2 Error:  -14.0 Cell 3 Error: -4.0 Cell 4 Error: -13.0 Cell 5 Error: -28.0
+Trial 266 Cell 1 Weight: 0.018115488069644817 Cell 2 Weight: 0.016118092787000354 Cell 3 Weight: 0.017899722875483793 Cell 4 Weight: 0.016263591245777087 Cell 5 Weight: 0.015272033118246922
+41915614
+Trial: 267, Time:35.148s
+Trial 267 Cell 1 Spike Count: 23.0 Cell 2 Spike Count: 173.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 153.0 Cell 5 Spike Count: 25.0
+Trial 267 Cell 1 Error: -18.0 Cell 2 Error:  -168.0 Cell 3 Error: -1.0 Cell 4 Error: -148.0 Cell 5 Error: -20.0
+Trial 267 Cell 1 Weight: 0.01816983453385375 Cell 2 Weight: 0.016166447065361352 Cell 3 Weight: 0.017953422044110243 Cell 4 Weight: 0.016312382019514418 Cell 5 Weight: 0.01531784921760166
+42383890
+Trial: 268, Time:35.393s
+Trial 268 Cell 1 Spike Count: 14.0 Cell 2 Spike Count: 99.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 127.0 Cell 5 Spike Count: 10.0
+Trial 268 Cell 1 Error: -9.0 Cell 2 Error:  -94.0 Cell 3 Error: -6.0 Cell 4 Error: -122.0 Cell 5 Error: -5.0
+Trial 268 Cell 1 Weight: 0.01822434403745531 Cell 2 Weight: 0.016214946406557434 Cell 3 Weight: 0.01800728231024257 Cell 4 Weight: 0.01636131916557296 Cell 5 Weight: 0.015363802765254463
+41985482
+Trial: 269, Time:34.971s
+Trial 269 Cell 1 Spike Count: 9.0 Cell 2 Spike Count: 343.0 Cell 3 Spike Count: 72.0 Cell 4 Spike Count: 147.0 Cell 5 Spike Count: 98.0
+Trial 269 Cell 1 Error: -4.0 Cell 2 Error:  -338.0 Cell 3 Error: -67.0 Cell 4 Error: -142.0 Cell 5 Error: -93.0
+Trial 269 Cell 1 Weight: 0.018279017069567673 Cell 2 Weight: 0.016263591245777104 Cell 3 Weight: 0.018061304157173295 Cell 4 Weight: 0.016410403123069676 Cell 5 Weight: 0.015409894173550225
+42866545
+Trial: 270, Time:35.470s
+Trial 270 Cell 1 Spike Count: 24.0 Cell 2 Spike Count: 124.0 Cell 3 Spike Count: 37.0 Cell 4 Spike Count: 151.0 Cell 5 Spike Count: 70.0
+Trial 270 Cell 1 Error: -19.0 Cell 2 Error:  -119.0 Cell 3 Error: -32.0 Cell 4 Error: -146.0 Cell 5 Error: -65.0
+Trial 270 Cell 1 Weight: 0.018333854120776375 Cell 2 Weight: 0.016312382019514435 Cell 3 Weight: 0.018115488069644813 Cell 4 Weight: 0.016459634332438883 Cell 5 Weight: 0.015456123856070874
+42106852
+Trial: 271, Time:35.197s
+Trial 271 Cell 1 Spike Count: 35.0 Cell 2 Spike Count: 328.0 Cell 3 Spike Count: 67.0 Cell 4 Spike Count: 193.0 Cell 5 Spike Count: 112.0
+Trial 271 Cell 1 Error: -30.0 Cell 2 Error:  -323.0 Cell 3 Error: -62.0 Cell 4 Error: -188.0 Cell 5 Error: -107.0
+Trial 271 Cell 1 Weight: 0.0183888556831387 Cell 2 Weight: 0.016361319165572978 Cell 3 Weight: 0.018169834533853745 Cell 4 Weight: 0.016509013235436198 Cell 5 Weight: 0.015502492227639086
+42121011
+Trial: 272, Time:35.085s
+Trial 272 Cell 1 Spike Count: 64.0 Cell 2 Spike Count: 267.0 Cell 3 Spike Count: 88.0 Cell 4 Spike Count: 177.0 Cell 5 Spike Count: 92.0
+Trial 272 Cell 1 Error: -59.0 Cell 2 Error:  -262.0 Cell 3 Error: -83.0 Cell 4 Error: -172.0 Cell 5 Error: -87.0
+Trial 272 Cell 1 Weight: 0.018444022250188114 Cell 2 Weight: 0.016410403123069694 Cell 3 Weight: 0.018224344037455306 Cell 4 Weight: 0.016558540275142506 Cell 5 Weight: 0.015548999704322001
+42180925
+Trial: 273, Time:35.202s
+Trial 273 Cell 1 Spike Count: 35.0 Cell 2 Spike Count: 238.0 Cell 3 Spike Count: 87.0 Cell 4 Spike Count: 74.0 Cell 5 Spike Count: 58.0
+Trial 273 Cell 1 Error: -30.0 Cell 2 Error:  -233.0 Cell 3 Error: -82.0 Cell 4 Error: -69.0 Cell 5 Error: -53.0
+Trial 273 Cell 1 Weight: 0.018499354316938676 Cell 2 Weight: 0.0164596343324389 Cell 3 Weight: 0.01827901706956767 Cell 4 Weight: 0.01660821589596793 Cell 5 Weight: 0.015595646703434966
+41854852
+Trial: 274, Time:35.324s
+Trial 274 Cell 1 Spike Count: 3.0 Cell 2 Spike Count: 170.0 Cell 3 Spike Count: 45.0 Cell 4 Spike Count: 26.0 Cell 5 Spike Count: 58.0
+Trial 274 Cell 1 Error: 2.0 Cell 2 Error:  -165.0 Cell 3 Error: -40.0 Cell 4 Error: -21.0 Cell 5 Error: -53.0
+Trial 274 Cell 1 Weight: 0.018444022250188114 Cell 2 Weight: 0.016509013235436215 Cell 3 Weight: 0.01833385412077637 Cell 4 Weight: 0.016658040543655835 Cell 5 Weight: 0.01564243364354527
+41537447
+Trial: 275, Time:34.985s
+Trial 275 Cell 1 Spike Count: 30.0 Cell 2 Spike Count: 242.0 Cell 3 Spike Count: 61.0 Cell 4 Spike Count: 55.0 Cell 5 Spike Count: 14.0
+Trial 275 Cell 1 Error: -25.0 Cell 2 Error:  -237.0 Cell 3 Error: -56.0 Cell 4 Error: -50.0 Cell 5 Error: -9.0
+Trial 275 Cell 1 Weight: 0.018499354316938676 Cell 2 Weight: 0.016558540275142523 Cell 3 Weight: 0.018388855683138697 Cell 4 Weight: 0.0167080146652868 Cell 5 Weight: 0.015689360944475903
+41936554
+Trial: 276, Time:35.363s
+Trial 276 Cell 1 Spike Count: 27.0 Cell 2 Spike Count: 218.0 Cell 3 Spike Count: 30.0 Cell 4 Spike Count: 54.0 Cell 5 Spike Count: 15.0
+Trial 276 Cell 1 Error: -22.0 Cell 2 Error:  -213.0 Cell 3 Error: -25.0 Cell 4 Error: -49.0 Cell 5 Error: -10.0
+Trial 276 Cell 1 Weight: 0.01855485237988949 Cell 2 Weight: 0.016608215895967948 Cell 3 Weight: 0.01844402225018811 Cell 4 Weight: 0.01675813870928266 Cell 5 Weight: 0.015736429027309328
+41029229
+Trial: 277, Time:35.003s
+Trial 277 Cell 1 Spike Count: 80.0 Cell 2 Spike Count: 80.0 Cell 3 Spike Count: 18.0 Cell 4 Spike Count: 56.0 Cell 5 Spike Count: 4.0
+Trial 277 Cell 1 Error: -75.0 Cell 2 Error:  -75.0 Cell 3 Error: -13.0 Cell 4 Error: -51.0 Cell 5 Error: 1.0
+Trial 277 Cell 1 Weight: 0.01861051693702916 Cell 2 Weight: 0.016658040543655852 Cell 3 Weight: 0.018499354316938672 Cell 4 Weight: 0.016808413125410506 Cell 5 Weight: 0.015689360944475903
+40896855
+Trial: 278, Time:34.846s
+Trial 278 Cell 1 Spike Count: 43.0 Cell 2 Spike Count: 83.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 40.0 Cell 5 Spike Count: 3.0
+Trial 278 Cell 1 Error: -38.0 Cell 2 Error:  -78.0 Cell 3 Error: 1.0 Cell 4 Error: -35.0 Cell 5 Error: 2.0
+Trial 278 Cell 1 Weight: 0.018666348487840247 Cell 2 Weight: 0.01670801466528682 Cell 3 Weight: 0.01844402225018811 Cell 4 Weight: 0.016858838364786737 Cell 5 Weight: 0.01564243364354527
+40052316
+Trial: 279, Time:34.685s
+Trial 279 Cell 1 Spike Count: 123.0 Cell 2 Spike Count: 2.0 Cell 3 Spike Count: 21.0 Cell 4 Spike Count: 26.0 Cell 5 Spike Count: 23.0
+Trial 279 Cell 1 Error: -118.0 Cell 2 Error:  3.0 Cell 3 Error: -16.0 Cell 4 Error: -21.0 Cell 5 Error: -18.0
+Trial 279 Cell 1 Weight: 0.018722347533303766 Cell 2 Weight: 0.016658040543655852 Cell 3 Weight: 0.018499354316938672 Cell 4 Weight: 0.016909414879881096 Cell 5 Weight: 0.015689360944475903
+40470246
+Trial: 280, Time:34.935s
+Trial 280 Cell 1 Spike Count: 30.0 Cell 2 Spike Count: 47.0 Cell 3 Spike Count: 17.0 Cell 4 Spike Count: 173.0 Cell 5 Spike Count: 6.0
+Trial 280 Cell 1 Error: -25.0 Cell 2 Error:  -42.0 Cell 3 Error: -12.0 Cell 4 Error: -168.0 Cell 5 Error: -1.0
+Trial 280 Cell 1 Weight: 0.018778514575903675 Cell 2 Weight: 0.01670801466528682 Cell 3 Weight: 0.018554852379889488 Cell 4 Weight: 0.016960143124520738 Cell 5 Weight: 0.015736429027309328
+41320050
+Trial: 281, Time:34.791s
+Trial 281 Cell 1 Spike Count: 39.0 Cell 2 Spike Count: 37.0 Cell 3 Spike Count: 25.0 Cell 4 Spike Count: 180.0 Cell 5 Spike Count: 34.0
+Trial 281 Cell 1 Error: -34.0 Cell 2 Error:  -32.0 Cell 3 Error: -20.0 Cell 4 Error: -175.0 Cell 5 Error: -29.0
+Trial 281 Cell 1 Weight: 0.018834850119631385 Cell 2 Weight: 0.016758138709282677 Cell 3 Weight: 0.018610516937029156 Cell 4 Weight: 0.0170110235538943 Cell 5 Weight: 0.015783638314391255
+41761622
+Trial: 282, Time:35.185s
+Trial 282 Cell 1 Spike Count: 44.0 Cell 2 Spike Count: 26.0 Cell 3 Spike Count: 43.0 Cell 4 Spike Count: 139.0 Cell 5 Spike Count: 109.0
+Trial 282 Cell 1 Error: -39.0 Cell 2 Error:  -21.0 Cell 3 Error: -38.0 Cell 4 Error: -134.0 Cell 5 Error: -104.0
+Trial 282 Cell 1 Weight: 0.018891354669990278 Cell 2 Weight: 0.016808413125410523 Cell 3 Weight: 0.018666348487840243 Cell 4 Weight: 0.01706205662455598 Cell 5 Weight: 0.015830989229334427
+41899825
+Trial: 283, Time:35.098s
+Trial 283 Cell 1 Spike Count: 38.0 Cell 2 Spike Count: 17.0 Cell 3 Spike Count: 22.0 Cell 4 Spike Count: 51.0 Cell 5 Spike Count: 160.0
+Trial 283 Cell 1 Error: -33.0 Cell 2 Error:  -12.0 Cell 3 Error: -17.0 Cell 4 Error: -46.0 Cell 5 Error: -155.0
+Trial 283 Cell 1 Weight: 0.018948028734000245 Cell 2 Weight: 0.016858838364786754 Cell 3 Weight: 0.018722347533303763 Cell 4 Weight: 0.017113242794429644 Cell 5 Weight: 0.01587848219702243
+41909358
+Trial: 284, Time:34.975s
+Trial 284 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 7.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 55.0 Cell 5 Spike Count: 95.0
+Trial 284 Cell 1 Error: 5.0 Cell 2 Error:  -2.0 Cell 3 Error: 4.0 Cell 4 Error: -50.0 Cell 5 Error: -90.0
+Trial 284 Cell 1 Weight: 0.018891354669990278 Cell 2 Weight: 0.016909414879881113 Cell 3 Weight: 0.018666348487840243 Cell 4 Weight: 0.017164582522812933 Cell 5 Weight: 0.015926117643613496
+42511969
+Trial: 285, Time:35.170s
+Trial 285 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 126.0 Cell 5 Spike Count: 146.0
+Trial 285 Cell 1 Error: 5.0 Cell 2 Error:  1.0 Cell 3 Error: 2.0 Cell 4 Error: -121.0 Cell 5 Error: -141.0
+Trial 285 Cell 1 Weight: 0.018834850119631385 Cell 2 Weight: 0.016858838364786754 Cell 3 Weight: 0.01861051693702916 Cell 4 Weight: 0.01721607627038137 Cell 5 Weight: 0.015973895996544335
+42350310
+Trial: 286, Time:35.380s
+Trial 286 Cell 1 Spike Count: 12.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 54.0 Cell 5 Spike Count: 41.0
+Trial 286 Cell 1 Error: -7.0 Cell 2 Error:  -4.0 Cell 3 Error: 5.0 Cell 4 Error: -49.0 Cell 5 Error: -36.0
+Trial 286 Cell 1 Weight: 0.018891354669990278 Cell 2 Weight: 0.016909414879881113 Cell 3 Weight: 0.018554852379889495 Cell 4 Weight: 0.017267724499192512 Cell 5 Weight: 0.016021817684533965
+42593570
+Trial: 287, Time:35.093s
+Trial 287 Cell 1 Spike Count: 20.0 Cell 2 Spike Count: 20.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 97.0 Cell 5 Spike Count: 19.0
+Trial 287 Cell 1 Error: -15.0 Cell 2 Error:  -15.0 Cell 3 Error: -3.0 Cell 4 Error: -92.0 Cell 5 Error: -14.0
+Trial 287 Cell 1 Weight: 0.018948028734000245 Cell 2 Weight: 0.016960143124520755 Cell 3 Weight: 0.018610516937029163 Cell 4 Weight: 0.01731952767269009 Cell 5 Weight: 0.016069883137587566
+42229040
+Trial: 288, Time:35.124s
+Trial 288 Cell 1 Spike Count: 28.0 Cell 2 Spike Count: 2.0 Cell 3 Spike Count: 14.0 Cell 4 Spike Count: 48.0 Cell 5 Spike Count: 83.0
+Trial 288 Cell 1 Error: -23.0 Cell 2 Error:  3.0 Cell 3 Error: -9.0 Cell 4 Error: -43.0 Cell 5 Error: -78.0
+Trial 288 Cell 1 Weight: 0.019004872820202242 Cell 2 Weight: 0.016909414879881113 Cell 3 Weight: 0.01866634848784025 Cell 4 Weight: 0.017371486255708158 Cell 5 Weight: 0.016118092787000327
+42405470
+Trial: 289, Time:35.136s
+Trial 289 Cell 1 Spike Count: 27.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 99.0 Cell 5 Spike Count: 142.0
+Trial 289 Cell 1 Error: -22.0 Cell 2 Error:  5.0 Cell 3 Error: -3.0 Cell 4 Error: -94.0 Cell 5 Error: -137.0
+Trial 289 Cell 1 Weight: 0.019061887438662845 Cell 2 Weight: 0.016858838364786754 Cell 3 Weight: 0.01872234753330377 Cell 4 Weight: 0.017423600714475282 Cell 5 Weight: 0.016166447065361324
+41971018
+Trial: 290, Time:35.105s
+Trial 290 Cell 1 Spike Count: 14.0 Cell 2 Spike Count: 7.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 118.0 Cell 5 Spike Count: 50.0
+Trial 290 Cell 1 Error: -9.0 Cell 2 Error:  -2.0 Cell 3 Error: 5.0 Cell 4 Error: -113.0 Cell 5 Error: -45.0
+Trial 290 Cell 1 Weight: 0.019119073100978833 Cell 2 Weight: 0.016909414879881113 Cell 3 Weight: 0.01866634848784025 Cell 4 Weight: 0.017475871516618707 Cell 5 Weight: 0.016214946406557407
+42536774
+Trial: 291, Time:35.241s
+Trial 291 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 7.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 115.0 Cell 5 Spike Count: 78.0
+Trial 291 Cell 1 Error: 5.0 Cell 2 Error:  -2.0 Cell 3 Error: 5.0 Cell 4 Error: -110.0 Cell 5 Error: -73.0
+Trial 291 Cell 1 Weight: 0.01906188743866285 Cell 2 Weight: 0.016960143124520755 Cell 3 Weight: 0.018610516937029167 Cell 4 Weight: 0.01752829913116856 Cell 5 Weight: 0.016263591245777077
+42172659
+Trial: 292, Time:35.172s
+Trial 292 Cell 1 Spike Count: 14.0 Cell 2 Spike Count: 47.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 92.0 Cell 5 Spike Count: 280.0
+Trial 292 Cell 1 Error: -9.0 Cell 2 Error:  -42.0 Cell 3 Error: 0.0 Cell 4 Error: -87.0 Cell 5 Error: -275.0
+Trial 292 Cell 1 Weight: 0.019119073100978837 Cell 2 Weight: 0.017011023553894316 Cell 3 Weight: 0.018610516937029167 Cell 4 Weight: 0.017580884028562064 Cell 5 Weight: 0.016312382019514408
+41839213
+Trial: 293, Time:34.992s
+Trial 293 Cell 1 Spike Count: 3.0 Cell 2 Spike Count: 40.0 Cell 3 Spike Count: 16.0 Cell 4 Spike Count: 100.0 Cell 5 Spike Count: 305.0
+Trial 293 Cell 1 Error: 2.0 Cell 2 Error:  -35.0 Cell 3 Error: -11.0 Cell 4 Error: -95.0 Cell 5 Error: -300.0
+Trial 293 Cell 1 Weight: 0.019061887438662852 Cell 2 Weight: 0.017062056624555996 Cell 3 Weight: 0.018666348487840254 Cell 4 Weight: 0.01763362668064775 Cell 5 Weight: 0.01636131916557295
+41880193
+Trial: 294, Time:35.088s
+Trial 294 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 62.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 80.0 Cell 5 Spike Count: 310.0
+Trial 294 Cell 1 Error: 5.0 Cell 2 Error:  -57.0 Cell 3 Error: -6.0 Cell 4 Error: -75.0 Cell 5 Error: -305.0
+Trial 294 Cell 1 Weight: 0.01900487282020225 Cell 2 Weight: 0.01711324279442966 Cell 3 Weight: 0.018722347533303773 Cell 4 Weight: 0.01768652756068969 Cell 5 Weight: 0.016410403123069666
+41713669
+Trial: 295, Time:35.054s
+Trial 295 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 95.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 104.0 Cell 5 Spike Count: 313.0
+Trial 295 Cell 1 Error: 5.0 Cell 2 Error:  -90.0 Cell 3 Error: -5.0 Cell 4 Error: -99.0 Cell 5 Error: -308.0
+Trial 295 Cell 1 Weight: 0.01894802873400025 Cell 2 Weight: 0.01716458252281295 Cell 3 Weight: 0.018778514575903682 Cell 4 Weight: 0.017739587143371757 Cell 5 Weight: 0.016459634332438872
+43030495
+Trial: 296, Time:35.346s
+Trial 296 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 73.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 97.0 Cell 5 Spike Count: 209.0
+Trial 296 Cell 1 Error: 5.0 Cell 2 Error:  -68.0 Cell 3 Error: 2.0 Cell 4 Error: -92.0 Cell 5 Error: -204.0
+Trial 296 Cell 1 Weight: 0.018891354669990285 Cell 2 Weight: 0.017216076270381388 Cell 3 Weight: 0.018722347533303773 Cell 4 Weight: 0.01779280590480187 Cell 5 Weight: 0.016509013235436187
+42133360
+Trial: 297, Time:35.111s
+Trial 297 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 64.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 45.0 Cell 5 Spike Count: 52.0
+Trial 297 Cell 1 Error: 5.0 Cell 2 Error:  -59.0 Cell 3 Error: 5.0 Cell 4 Error: -40.0 Cell 5 Error: -47.0
+Trial 297 Cell 1 Weight: 0.018834850119631392 Cell 2 Weight: 0.01726772449919253 Cell 3 Weight: 0.018666348487840254 Cell 4 Weight: 0.017846184322516275 Cell 5 Weight: 0.016558540275142496
+42135033
+Trial: 298, Time:35.146s
+Trial 298 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 37.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 32.0 Cell 5 Spike Count: 77.0
+Trial 298 Cell 1 Error: 5.0 Cell 2 Error:  -32.0 Cell 3 Error: 5.0 Cell 4 Error: -27.0 Cell 5 Error: -72.0
+Trial 298 Cell 1 Weight: 0.018778514575903682 Cell 2 Weight: 0.017319527672690106 Cell 3 Weight: 0.01861051693702917 Cell 4 Weight: 0.01789972287548382 Cell 5 Weight: 0.01660821589596792
+42922574
+Trial: 299, Time:35.216s
+Trial 299 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 11.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 46.0 Cell 5 Spike Count: 16.0
+Trial 299 Cell 1 Error: 1.0 Cell 2 Error:  -6.0 Cell 3 Error: 1.0 Cell 4 Error: -41.0 Cell 5 Error: -11.0
+Trial 299 Cell 1 Weight: 0.018722347533303773 Cell 2 Weight: 0.017371486255708175 Cell 3 Weight: 0.018554852379889505 Cell 4 Weight: 0.01795342204411027 Cell 5 Weight: 0.01665804054365582
+42331081
+Trial: 300, Time:35.120s
+Trial 300 Cell 1 Spike Count: 3.0 Cell 2 Spike Count: 13.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 87.0 Cell 5 Spike Count: 8.0
+Trial 300 Cell 1 Error: 2.0 Cell 2 Error:  -8.0 Cell 3 Error: -6.0 Cell 4 Error: -82.0 Cell 5 Error: -3.0
+Trial 300 Cell 1 Weight: 0.018666348487840254 Cell 2 Weight: 0.0174236007144753 Cell 3 Weight: 0.018610516937029174 Cell 4 Weight: 0.0180072823102426 Cell 5 Weight: 0.016708014665286788
+41686823
+Trial: 301, Time:34.879s
+Trial 301 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 8.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 56.0 Cell 5 Spike Count: 7.0
+Trial 301 Cell 1 Error: 5.0 Cell 2 Error:  -3.0 Cell 3 Error: 5.0 Cell 4 Error: -51.0 Cell 5 Error: -2.0
+Trial 301 Cell 1 Weight: 0.01861051693702917 Cell 2 Weight: 0.017475871516618724 Cell 3 Weight: 0.01855485237988951 Cell 4 Weight: 0.018061304157173323 Cell 5 Weight: 0.016758138709282645
+42337973
+Trial: 302, Time:35.054s
+Trial 302 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 20.0 Cell 5 Spike Count: 10.0
+Trial 302 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -15.0 Cell 5 Error: -5.0
+Trial 302 Cell 1 Weight: 0.018554852379889505 Cell 2 Weight: 0.0174236007144753 Cell 3 Weight: 0.018499354316938697 Cell 4 Weight: 0.01811548806964484 Cell 5 Weight: 0.016808413125410492
+41939378
+Trial: 303, Time:34.993s
+Trial 303 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 6.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 65.0 Cell 5 Spike Count: 2.0
+Trial 303 Cell 1 Error: 5.0 Cell 2 Error:  -1.0 Cell 3 Error: 5.0 Cell 4 Error: -60.0 Cell 5 Error: 3.0
+Trial 303 Cell 1 Weight: 0.018499354316938693 Cell 2 Weight: 0.017475871516618724 Cell 3 Weight: 0.018444022250188135 Cell 4 Weight: 0.018169834533853773 Cell 5 Weight: 0.016758138709282645
+41932168
+Trial: 304, Time:35.033s
+Trial 304 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 12.0 Cell 4 Spike Count: 33.0 Cell 5 Spike Count: 0.0
+Trial 304 Cell 1 Error: 5.0 Cell 2 Error:  -5.0 Cell 3 Error: -7.0 Cell 4 Error: -28.0 Cell 5 Error: 5.0
+Trial 304 Cell 1 Weight: 0.01844402225018813 Cell 2 Weight: 0.017528299131168577 Cell 3 Weight: 0.018499354316938697 Cell 4 Weight: 0.018224344037455334 Cell 5 Weight: 0.016708014665286788
+42392201
+Trial: 305, Time:35.028s
+Trial 305 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 6.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 68.0 Cell 5 Spike Count: 9.0
+Trial 305 Cell 1 Error: 5.0 Cell 2 Error:  -1.0 Cell 3 Error: 5.0 Cell 4 Error: -63.0 Cell 5 Error: -4.0
+Trial 305 Cell 1 Weight: 0.01838885568313872 Cell 2 Weight: 0.01758088402856208 Cell 3 Weight: 0.018444022250188135 Cell 4 Weight: 0.018279017069567697 Cell 5 Weight: 0.016758138709282645
+41547988
+Trial: 306, Time:34.933s
+Trial 306 Cell 1 Spike Count: 7.0 Cell 2 Spike Count: 16.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 79.0 Cell 5 Spike Count: 14.0
+Trial 306 Cell 1 Error: -2.0 Cell 2 Error:  -11.0 Cell 3 Error: 1.0 Cell 4 Error: -74.0 Cell 5 Error: -9.0
+Trial 306 Cell 1 Weight: 0.01844402225018813 Cell 2 Weight: 0.017633626680647767 Cell 3 Weight: 0.018388855683138722 Cell 4 Weight: 0.0183338541207764 Cell 5 Weight: 0.016808413125410492
+42125718
+Trial: 307, Time:34.931s
+Trial 307 Cell 1 Spike Count: 122.0 Cell 2 Spike Count: 8.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 53.0 Cell 5 Spike Count: 4.0
+Trial 307 Cell 1 Error: -117.0 Cell 2 Error:  -3.0 Cell 3 Error: 4.0 Cell 4 Error: -48.0 Cell 5 Error: 1.0
+Trial 307 Cell 1 Weight: 0.018499354316938693 Cell 2 Weight: 0.017686527560689707 Cell 3 Weight: 0.018333854120776396 Cell 4 Weight: 0.018388855683138725 Cell 5 Weight: 0.016758138709282645
+41115601
+Trial: 308, Time:34.687s
+Trial 308 Cell 1 Spike Count: 66.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 19.0 Cell 5 Spike Count: 34.0
+Trial 308 Cell 1 Error: -61.0 Cell 2 Error:  5.0 Cell 3 Error: 4.0 Cell 4 Error: -14.0 Cell 5 Error: -29.0
+Trial 308 Cell 1 Weight: 0.01855485237988951 Cell 2 Weight: 0.017633626680647767 Cell 3 Weight: 0.018279017069567697 Cell 4 Weight: 0.01844402225018814 Cell 5 Weight: 0.016808413125410492
+41215146
+Trial: 309, Time:34.670s
+Trial 309 Cell 1 Spike Count: 81.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 51.0 Cell 5 Spike Count: 11.0
+Trial 309 Cell 1 Error: -76.0 Cell 2 Error:  -5.0 Cell 3 Error: -6.0 Cell 4 Error: -46.0 Cell 5 Error: -6.0
+Trial 309 Cell 1 Weight: 0.018610516937029177 Cell 2 Weight: 0.017686527560689707 Cell 3 Weight: 0.0183338541207764 Cell 4 Weight: 0.0184993543169387 Cell 5 Weight: 0.016858838364786723
+41198402
+Trial: 310, Time:34.729s
+Trial 310 Cell 1 Spike Count: 344.0 Cell 2 Spike Count: 2.0 Cell 3 Spike Count: 16.0 Cell 4 Spike Count: 54.0 Cell 5 Spike Count: 205.0
+Trial 310 Cell 1 Error: -339.0 Cell 2 Error:  3.0 Cell 3 Error: -11.0 Cell 4 Error: -49.0 Cell 5 Error: -200.0
+Trial 310 Cell 1 Weight: 0.018666348487840264 Cell 2 Weight: 0.017633626680647767 Cell 3 Weight: 0.018388855683138725 Cell 4 Weight: 0.018554852379889516 Cell 5 Weight: 0.016909414879881082
+40673759
+Trial: 311, Time:34.518s
+Trial 311 Cell 1 Spike Count: 348.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 50.0 Cell 5 Spike Count: 179.0
+Trial 311 Cell 1 Error: -343.0 Cell 2 Error:  1.0 Cell 3 Error: 5.0 Cell 4 Error: -45.0 Cell 5 Error: -174.0
+Trial 311 Cell 1 Weight: 0.018722347533303783 Cell 2 Weight: 0.01758088402856208 Cell 3 Weight: 0.0183338541207764 Cell 4 Weight: 0.018610516937029184 Cell 5 Weight: 0.016960143124520724
+40660217
+Trial: 312, Time:34.573s
+Trial 312 Cell 1 Spike Count: 112.0 Cell 2 Spike Count: 17.0 Cell 3 Spike Count: 38.0 Cell 4 Spike Count: 22.0 Cell 5 Spike Count: 252.0
+Trial 312 Cell 1 Error: -107.0 Cell 2 Error:  -12.0 Cell 3 Error: -33.0 Cell 4 Error: -17.0 Cell 5 Error: -247.0
+Trial 312 Cell 1 Weight: 0.018778514575903692 Cell 2 Weight: 0.017633626680647767 Cell 3 Weight: 0.018388855683138725 Cell 4 Weight: 0.01866634848784027 Cell 5 Weight: 0.017011023553894285
+41080611
+Trial: 313, Time:34.703s
+Trial 313 Cell 1 Spike Count: 100.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 30.0 Cell 5 Spike Count: 108.0
+Trial 313 Cell 1 Error: -95.0 Cell 2 Error:  -5.0 Cell 3 Error: -3.0 Cell 4 Error: -25.0 Cell 5 Error: -103.0
+Trial 313 Cell 1 Weight: 0.018834850119631402 Cell 2 Weight: 0.017686527560689707 Cell 3 Weight: 0.01844402225018814 Cell 4 Weight: 0.01872234753330379 Cell 5 Weight: 0.017062056624555965
+40953262
+Trial: 314, Time:34.689s
+Trial 314 Cell 1 Spike Count: 150.0 Cell 2 Spike Count: 71.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 97.0 Cell 5 Spike Count: 107.0
+Trial 314 Cell 1 Error: -145.0 Cell 2 Error:  -66.0 Cell 3 Error: -1.0 Cell 4 Error: -92.0 Cell 5 Error: -102.0
+Trial 314 Cell 1 Weight: 0.018891354669990295 Cell 2 Weight: 0.017739587143371774 Cell 3 Weight: 0.0184993543169387 Cell 4 Weight: 0.0187785145759037 Cell 5 Weight: 0.01711324279442963
+39825243
+Trial: 315, Time:34.361s
+Trial 315 Cell 1 Spike Count: 121.0 Cell 2 Spike Count: 37.0 Cell 3 Spike Count: 54.0 Cell 4 Spike Count: 235.0 Cell 5 Spike Count: 210.0
+Trial 315 Cell 1 Error: -116.0 Cell 2 Error:  -32.0 Cell 3 Error: -49.0 Cell 4 Error: -230.0 Cell 5 Error: -205.0
+Trial 315 Cell 1 Weight: 0.018948028734000266 Cell 2 Weight: 0.017792805904801888 Cell 3 Weight: 0.018554852379889516 Cell 4 Weight: 0.01883485011963141 Cell 5 Weight: 0.01716458252281292
+40616098
+Trial: 316, Time:34.574s
+Trial 316 Cell 1 Spike Count: 110.0 Cell 2 Spike Count: 50.0 Cell 3 Spike Count: 30.0 Cell 4 Spike Count: 167.0 Cell 5 Spike Count: 241.0
+Trial 316 Cell 1 Error: -105.0 Cell 2 Error:  -45.0 Cell 3 Error: -25.0 Cell 4 Error: -162.0 Cell 5 Error: -236.0
+Trial 316 Cell 1 Weight: 0.019004872820202263 Cell 2 Weight: 0.017846184322516292 Cell 3 Weight: 0.018610516937029184 Cell 4 Weight: 0.018891354669990302 Cell 5 Weight: 0.017216076270381356
+41236133
+Trial: 317, Time:34.735s
+Trial 317 Cell 1 Spike Count: 54.0 Cell 2 Spike Count: 68.0 Cell 3 Spike Count: 36.0 Cell 4 Spike Count: 118.0 Cell 5 Spike Count: 226.0
+Trial 317 Cell 1 Error: -49.0 Cell 2 Error:  -63.0 Cell 3 Error: -31.0 Cell 4 Error: -113.0 Cell 5 Error: -221.0
+Trial 317 Cell 1 Weight: 0.019061887438662866 Cell 2 Weight: 0.017899722875483838 Cell 3 Weight: 0.01866634848784027 Cell 4 Weight: 0.018948028734000272 Cell 5 Weight: 0.017267724499192498
+41538985
+Trial: 318, Time:34.928s
+Trial 318 Cell 1 Spike Count: 126.0 Cell 2 Spike Count: 67.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 173.0 Cell 5 Spike Count: 247.0
+Trial 318 Cell 1 Error: -121.0 Cell 2 Error:  -62.0 Cell 3 Error: -6.0 Cell 4 Error: -168.0 Cell 5 Error: -242.0
+Trial 318 Cell 1 Weight: 0.019119073100978854 Cell 2 Weight: 0.01795342204411029 Cell 3 Weight: 0.01872234753330379 Cell 4 Weight: 0.01900487282020227 Cell 5 Weight: 0.017319527672690075
+41669440
+Trial: 319, Time:34.915s
+Trial 319 Cell 1 Spike Count: 201.0 Cell 2 Spike Count: 72.0 Cell 3 Spike Count: 48.0 Cell 4 Spike Count: 147.0 Cell 5 Spike Count: 72.0
+Trial 319 Cell 1 Error: -196.0 Cell 2 Error:  -67.0 Cell 3 Error: -43.0 Cell 4 Error: -142.0 Cell 5 Error: -67.0
+Trial 319 Cell 1 Weight: 0.01917643032028179 Cell 2 Weight: 0.018007282310242616 Cell 3 Weight: 0.0187785145759037 Cell 4 Weight: 0.019061887438662873 Cell 5 Weight: 0.017371486255708144
+41235119
+Trial: 320, Time:34.845s
+Trial 320 Cell 1 Spike Count: 20.0 Cell 2 Spike Count: 54.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 120.0 Cell 5 Spike Count: 26.0
+Trial 320 Cell 1 Error: -15.0 Cell 2 Error:  -49.0 Cell 3 Error: 5.0 Cell 4 Error: -115.0 Cell 5 Error: -21.0
+Trial 320 Cell 1 Weight: 0.01923395961124263 Cell 2 Weight: 0.01806130415717334 Cell 3 Weight: 0.01872234753330379 Cell 4 Weight: 0.01911907310097886 Cell 5 Weight: 0.017423600714475268
+41290687
+Trial: 321, Time:34.818s
+Trial 321 Cell 1 Spike Count: 66.0 Cell 2 Spike Count: 67.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 121.0 Cell 5 Spike Count: 1.0
+Trial 321 Cell 1 Error: -61.0 Cell 2 Error:  -62.0 Cell 3 Error: -3.0 Cell 4 Error: -116.0 Cell 5 Error: 4.0
+Trial 321 Cell 1 Weight: 0.019291661490076356 Cell 2 Weight: 0.01811548806964486 Cell 3 Weight: 0.0187785145759037 Cell 4 Weight: 0.019176430320281795 Cell 5 Weight: 0.017371486255708148
+40739599
+Trial: 322, Time:34.719s
+Trial 322 Cell 1 Spike Count: 43.0 Cell 2 Spike Count: 20.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 55.0 Cell 5 Spike Count: 1.0
+Trial 322 Cell 1 Error: -38.0 Cell 2 Error:  -15.0 Cell 3 Error: 4.0 Cell 4 Error: -50.0 Cell 5 Error: 4.0
+Trial 322 Cell 1 Weight: 0.019349536474546583 Cell 2 Weight: 0.01816983453385379 Cell 3 Weight: 0.01872234753330379 Cell 4 Weight: 0.019233959611242638 Cell 5 Weight: 0.01731952767269008
+41213377
+Trial: 323, Time:34.763s
+Trial 323 Cell 1 Spike Count: 2.0 Cell 2 Spike Count: 6.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 3.0
+Trial 323 Cell 1 Error: 3.0 Cell 2 Error:  -1.0 Cell 3 Error: 2.0 Cell 4 Error: 0.0 Cell 5 Error: 2.0
+Trial 323 Cell 1 Weight: 0.019291661490076356 Cell 2 Weight: 0.01822434403745535 Cell 3 Weight: 0.01866634848784027 Cell 4 Weight: 0.019233959611242638 Cell 5 Weight: 0.017267724499192505
+41695506
+Trial: 324, Time:34.850s
+Trial 324 Cell 1 Spike Count: 12.0 Cell 2 Spike Count: 2.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 29.0 Cell 5 Spike Count: 21.0
+Trial 324 Cell 1 Error: -7.0 Cell 2 Error:  3.0 Cell 3 Error: 5.0 Cell 4 Error: -24.0 Cell 5 Error: -16.0
+Trial 324 Cell 1 Weight: 0.019349536474546583 Cell 2 Weight: 0.018169834533853794 Cell 3 Weight: 0.018610516937029187 Cell 4 Weight: 0.019291661490076363 Cell 5 Weight: 0.017319527672690082
+41586221
+Trial: 325, Time:34.795s
+Trial 325 Cell 1 Spike Count: 39.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 34.0
+Trial 325 Cell 1 Error: -34.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -4.0 Cell 5 Error: -29.0
+Trial 325 Cell 1 Weight: 0.01940758508397022 Cell 2 Weight: 0.018115488069644862 Cell 3 Weight: 0.018554852379889523 Cell 4 Weight: 0.01934953647454659 Cell 5 Weight: 0.01737148625570815
+40987727
+Trial: 326, Time:34.678s
+Trial 326 Cell 1 Spike Count: 49.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 26.0 Cell 5 Spike Count: 7.0
+Trial 326 Cell 1 Error: -44.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -21.0 Cell 5 Error: -2.0
+Trial 326 Cell 1 Weight: 0.01946580783922213 Cell 2 Weight: 0.018061304157173344 Cell 3 Weight: 0.01849935431693871 Cell 4 Weight: 0.019407585083970228 Cell 5 Weight: 0.017423600714475275
+41175125
+Trial: 327, Time:34.699s
+Trial 327 Cell 1 Spike Count: 39.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 54.0
+Trial 327 Cell 1 Error: -34.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -49.0
+Trial 327 Cell 1 Weight: 0.019524205262739795 Cell 2 Weight: 0.01800728231024262 Cell 3 Weight: 0.01844402225018815 Cell 4 Weight: 0.01934953647454659 Cell 5 Weight: 0.0174758715166187
+40819507
+Trial: 328, Time:34.653s
+Trial 328 Cell 1 Spike Count: 30.0 Cell 2 Spike Count: 5.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 19.0 Cell 5 Spike Count: 18.0
+Trial 328 Cell 1 Error: -25.0 Cell 2 Error:  0.0 Cell 3 Error: 5.0 Cell 4 Error: -14.0 Cell 5 Error: -13.0
+Trial 328 Cell 1 Weight: 0.019582777878528013 Cell 2 Weight: 0.01800728231024262 Cell 3 Weight: 0.018388855683138736 Cell 4 Weight: 0.019407585083970228 Cell 5 Weight: 0.017528299131168552
+40144768
+Trial: 329, Time:34.384s
+Trial 329 Cell 1 Spike Count: 27.0 Cell 2 Spike Count: 25.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 4.0
+Trial 329 Cell 1 Error: -22.0 Cell 2 Error:  -20.0 Cell 3 Error: 0.0 Cell 4 Error: -4.0 Cell 5 Error: 1.0
+Trial 329 Cell 1 Weight: 0.019641526212163595 Cell 2 Weight: 0.018061304157173344 Cell 3 Weight: 0.018388855683138736 Cell 4 Weight: 0.019465807839222138 Cell 5 Weight: 0.0174758715166187
+40199775
+Trial: 330, Time:34.475s
+Trial 330 Cell 1 Spike Count: 61.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 66.0 Cell 5 Spike Count: 2.0
+Trial 330 Cell 1 Error: -56.0 Cell 2 Error:  5.0 Cell 3 Error: -6.0 Cell 4 Error: -61.0 Cell 5 Error: 3.0
+Trial 330 Cell 1 Weight: 0.019700450790800083 Cell 2 Weight: 0.01800728231024262 Cell 3 Weight: 0.01844402225018815 Cell 4 Weight: 0.0195242052627398 Cell 5 Weight: 0.017423600714475275
+40046066
+Trial: 331, Time:34.413s
+Trial 331 Cell 1 Spike Count: 35.0 Cell 2 Spike Count: 22.0 Cell 3 Spike Count: 16.0 Cell 4 Spike Count: 54.0 Cell 5 Spike Count: 36.0
+Trial 331 Cell 1 Error: -30.0 Cell 2 Error:  -17.0 Cell 3 Error: -11.0 Cell 4 Error: -49.0 Cell 5 Error: -31.0
+Trial 331 Cell 1 Weight: 0.01975955214317248 Cell 2 Weight: 0.018061304157173344 Cell 3 Weight: 0.01849935431693871 Cell 4 Weight: 0.01958277787852802 Cell 5 Weight: 0.0174758715166187
+40078917
+Trial: 332, Time:34.546s
+Trial 332 Cell 1 Spike Count: 42.0 Cell 2 Spike Count: 8.0 Cell 3 Spike Count: 93.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 17.0
+Trial 332 Cell 1 Error: -37.0 Cell 2 Error:  -3.0 Cell 3 Error: -88.0 Cell 4 Error: -5.0 Cell 5 Error: -12.0
+Trial 332 Cell 1 Weight: 0.019818830799601995 Cell 2 Weight: 0.018115488069644862 Cell 3 Weight: 0.018554852379889526 Cell 4 Weight: 0.019641526212163602 Cell 5 Weight: 0.017528299131168552
+40917271
+Trial: 333, Time:34.776s
+Trial 333 Cell 1 Spike Count: 85.0 Cell 2 Spike Count: 32.0 Cell 3 Spike Count: 172.0 Cell 4 Spike Count: 2.0 Cell 5 Spike Count: 2.0
+Trial 333 Cell 1 Error: -80.0 Cell 2 Error:  -27.0 Cell 3 Error: -167.0 Cell 4 Error: 3.0 Cell 5 Error: 3.0
+Trial 333 Cell 1 Weight: 0.0198782872920008 Cell 2 Weight: 0.018169834533853794 Cell 3 Weight: 0.018610516937029194 Cell 4 Weight: 0.01958277787852802 Cell 5 Weight: 0.0174758715166187
+40672336
+Trial: 334, Time:34.700s
+Trial 334 Cell 1 Spike Count: 73.0 Cell 2 Spike Count: 27.0 Cell 3 Spike Count: 166.0 Cell 4 Spike Count: 1.0 Cell 5 Spike Count: 11.0
+Trial 334 Cell 1 Error: -68.0 Cell 2 Error:  -22.0 Cell 3 Error: -161.0 Cell 4 Error: 4.0 Cell 5 Error: -6.0
+Trial 334 Cell 1 Weight: 0.0199379221538768 Cell 2 Weight: 0.018224344037455355 Cell 3 Weight: 0.01866634848784028 Cell 4 Weight: 0.019524205262739805 Cell 5 Weight: 0.017528299131168552
+40922046
+Trial: 335, Time:34.607s
+Trial 335 Cell 1 Spike Count: 52.0 Cell 2 Spike Count: 53.0 Cell 3 Spike Count: 146.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 66.0
+Trial 335 Cell 1 Error: -47.0 Cell 2 Error:  -48.0 Cell 3 Error: -141.0 Cell 4 Error: -2.0 Cell 5 Error: -61.0
+Trial 335 Cell 1 Weight: 0.01999773592033843 Cell 2 Weight: 0.018279017069567718 Cell 3 Weight: 0.0187223475333038 Cell 4 Weight: 0.019582777878528024 Cell 5 Weight: 0.017580884028562057
+41816344
+Trial: 336, Time:34.901s
+Trial 336 Cell 1 Spike Count: 67.0 Cell 2 Spike Count: 38.0 Cell 3 Spike Count: 161.0 Cell 4 Spike Count: 11.0 Cell 5 Spike Count: 82.0
+Trial 336 Cell 1 Error: -62.0 Cell 2 Error:  -33.0 Cell 3 Error: -156.0 Cell 4 Error: -6.0 Cell 5 Error: -77.0
+Trial 336 Cell 1 Weight: 0.020057729128099444 Cell 2 Weight: 0.01833385412077642 Cell 3 Weight: 0.01877851457590371 Cell 4 Weight: 0.019641526212163606 Cell 5 Weight: 0.017633626680647742
+41193287
+Trial: 337, Time:34.727s
+Trial 337 Cell 1 Spike Count: 95.0 Cell 2 Spike Count: 30.0 Cell 3 Spike Count: 159.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 64.0
+Trial 337 Cell 1 Error: -90.0 Cell 2 Error:  -25.0 Cell 3 Error: -154.0 Cell 4 Error: 5.0 Cell 5 Error: -59.0
+Trial 337 Cell 1 Weight: 0.02011790231548374 Cell 2 Weight: 0.018388855683138746 Cell 3 Weight: 0.01883485011963142 Cell 4 Weight: 0.019582777878528024 Cell 5 Weight: 0.017686527560689683
+42503738
+Trial: 338, Time:35.135s
+Trial 338 Cell 1 Spike Count: 106.0 Cell 2 Spike Count: 83.0 Cell 3 Spike Count: 74.0 Cell 4 Spike Count: 20.0 Cell 5 Spike Count: 10.0
+Trial 338 Cell 1 Error: -101.0 Cell 2 Error:  -78.0 Cell 3 Error: -69.0 Cell 4 Error: -15.0 Cell 5 Error: -5.0
+Trial 338 Cell 1 Weight: 0.020178256022430188 Cell 2 Weight: 0.01844402225018816 Cell 3 Weight: 0.018891354669990312 Cell 4 Weight: 0.019641526212163606 Cell 5 Weight: 0.01773958714337175
+42068147
+Trial: 339, Time:34.997s
+Trial 339 Cell 1 Spike Count: 28.0 Cell 2 Spike Count: 97.0 Cell 3 Spike Count: 108.0 Cell 4 Spike Count: 50.0 Cell 5 Spike Count: 111.0
+Trial 339 Cell 1 Error: -23.0 Cell 2 Error:  -92.0 Cell 3 Error: -103.0 Cell 4 Error: -45.0 Cell 5 Error: -106.0
+Trial 339 Cell 1 Weight: 0.020238790790497476 Cell 2 Weight: 0.01849935431693872 Cell 3 Weight: 0.018948028734000283 Cell 4 Weight: 0.019700450790800093 Cell 5 Weight: 0.017792805904801864
+40940030
+Trial: 340, Time:34.769s
+Trial 340 Cell 1 Spike Count: 30.0 Cell 2 Spike Count: 130.0 Cell 3 Spike Count: 91.0 Cell 4 Spike Count: 14.0 Cell 5 Spike Count: 99.0
+Trial 340 Cell 1 Error: -25.0 Cell 2 Error:  -125.0 Cell 3 Error: -86.0 Cell 4 Error: -9.0 Cell 5 Error: -94.0
+Trial 340 Cell 1 Weight: 0.020299507162868966 Cell 2 Weight: 0.018554852379889537 Cell 3 Weight: 0.01900487282020228 Cell 4 Weight: 0.01975955214317249 Cell 5 Weight: 0.017846184322516268
+40820135
+Trial: 341, Time:34.768s
+Trial 341 Cell 1 Spike Count: 54.0 Cell 2 Spike Count: 133.0 Cell 3 Spike Count: 176.0 Cell 4 Spike Count: 40.0 Cell 5 Spike Count: 193.0
+Trial 341 Cell 1 Error: -49.0 Cell 2 Error:  -128.0 Cell 3 Error: -171.0 Cell 4 Error: -35.0 Cell 5 Error: -188.0
+Trial 341 Cell 1 Weight: 0.020360405684357572 Cell 2 Weight: 0.018610516937029205 Cell 3 Weight: 0.019061887438662883 Cell 4 Weight: 0.019818830799602005 Cell 5 Weight: 0.017899722875483814
+40836563
+Trial: 342, Time:34.796s
+Trial 342 Cell 1 Spike Count: 114.0 Cell 2 Spike Count: 160.0 Cell 3 Spike Count: 94.0 Cell 4 Spike Count: 2.0 Cell 5 Spike Count: 154.0
+Trial 342 Cell 1 Error: -109.0 Cell 2 Error:  -155.0 Cell 3 Error: -89.0 Cell 4 Error: 3.0 Cell 5 Error: -149.0
+Trial 342 Cell 1 Weight: 0.020421486901410643 Cell 2 Weight: 0.018666348487840292 Cell 3 Weight: 0.01911907310097887 Cell 4 Weight: 0.01975955214317249 Cell 5 Weight: 0.017953422044110264
+40626834
+Trial: 343, Time:34.783s
+Trial 343 Cell 1 Spike Count: 101.0 Cell 2 Spike Count: 151.0 Cell 3 Spike Count: 146.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 196.0
+Trial 343 Cell 1 Error: -96.0 Cell 2 Error:  -146.0 Cell 3 Error: -141.0 Cell 4 Error: 5.0 Cell 5 Error: -191.0
+Trial 343 Cell 1 Weight: 0.020482751362114873 Cell 2 Weight: 0.01872234753330381 Cell 3 Weight: 0.019176430320281806 Cell 4 Weight: 0.019700450790800093 Cell 5 Weight: 0.01800728231024259
+40468005
+Trial: 344, Time:34.626s
+Trial 344 Cell 1 Spike Count: 230.0 Cell 2 Spike Count: 225.0 Cell 3 Spike Count: 207.0 Cell 4 Spike Count: 17.0 Cell 5 Spike Count: 489.0
+Trial 344 Cell 1 Error: -225.0 Cell 2 Error:  -220.0 Cell 3 Error: -202.0 Cell 4 Error: -12.0 Cell 5 Error: -484.0
+Trial 344 Cell 1 Weight: 0.020544199616201214 Cell 2 Weight: 0.01877851457590372 Cell 3 Weight: 0.01923395961124265 Cell 4 Weight: 0.01975955214317249 Cell 5 Weight: 0.018061304157173316
+40673847
+Trial: 345, Time:34.685s
+Trial 345 Cell 1 Spike Count: 245.0 Cell 2 Spike Count: 130.0 Cell 3 Spike Count: 137.0 Cell 4 Spike Count: 3.0 Cell 5 Spike Count: 523.0
+Trial 345 Cell 1 Error: -240.0 Cell 2 Error:  -125.0 Cell 3 Error: -132.0 Cell 4 Error: 2.0 Cell 5 Error: -518.0
+Trial 345 Cell 1 Weight: 0.020605832215049816 Cell 2 Weight: 0.01883485011963143 Cell 3 Weight: 0.019291661490076373 Cell 4 Weight: 0.019700450790800093 Cell 5 Weight: 0.018115488069644834
+40511599
+Trial: 346, Time:34.615s
+Trial 346 Cell 1 Spike Count: 181.0 Cell 2 Spike Count: 152.0 Cell 3 Spike Count: 236.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 479.0
+Trial 346 Cell 1 Error: -176.0 Cell 2 Error:  -147.0 Cell 3 Error: -231.0 Cell 4 Error: 5.0 Cell 5 Error: -474.0
+Trial 346 Cell 1 Weight: 0.020667649711694963 Cell 2 Weight: 0.018891354669990323 Cell 3 Weight: 0.0193495364745466 Cell 4 Weight: 0.019641526212163606 Cell 5 Weight: 0.018169834533853766
+40793658
+Trial: 347, Time:34.658s
+Trial 347 Cell 1 Spike Count: 167.0 Cell 2 Spike Count: 161.0 Cell 3 Spike Count: 105.0 Cell 4 Spike Count: 31.0 Cell 5 Spike Count: 516.0
+Trial 347 Cell 1 Error: -162.0 Cell 2 Error:  -156.0 Cell 3 Error: -100.0 Cell 4 Error: -26.0 Cell 5 Error: -511.0
+Trial 347 Cell 1 Weight: 0.020729652660830045 Cell 2 Weight: 0.018948028734000293 Cell 3 Weight: 0.01940758508397024 Cell 4 Weight: 0.019700450790800093 Cell 5 Weight: 0.018224344037455327
+40539243
+Trial: 348, Time:34.677s
+Trial 348 Cell 1 Spike Count: 185.0 Cell 2 Spike Count: 192.0 Cell 3 Spike Count: 84.0 Cell 4 Spike Count: 543.0 Cell 5 Spike Count: 514.0
+Trial 348 Cell 1 Error: -180.0 Cell 2 Error:  -187.0 Cell 3 Error: -79.0 Cell 4 Error: -538.0 Cell 5 Error: -509.0
+Trial 348 Cell 1 Weight: 0.02079184161881253 Cell 2 Weight: 0.01900487282020229 Cell 3 Weight: 0.01946580783922215 Cell 4 Weight: 0.01975955214317249 Cell 5 Weight: 0.01827901706956769
+40592580
+Trial: 349, Time:34.604s
+Trial 349 Cell 1 Spike Count: 347.0 Cell 2 Spike Count: 171.0 Cell 3 Spike Count: 103.0 Cell 4 Spike Count: 493.0 Cell 5 Spike Count: 532.0
+Trial 349 Cell 1 Error: -342.0 Cell 2 Error:  -166.0 Cell 3 Error: -98.0 Cell 4 Error: -488.0 Cell 5 Error: -527.0
+Trial 349 Cell 1 Weight: 0.020854217143668967 Cell 2 Weight: 0.019061887438662894 Cell 3 Weight: 0.019524205262739812 Cell 4 Weight: 0.019818830799602005 Cell 5 Weight: 0.018333854120776392
+39645279
+Trial: 350, Time:34.352s
+Trial 350 Cell 1 Spike Count: 287.0 Cell 2 Spike Count: 200.0 Cell 3 Spike Count: 40.0 Cell 4 Spike Count: 546.0 Cell 5 Spike Count: 460.0
+Trial 350 Cell 1 Error: -282.0 Cell 2 Error:  -195.0 Cell 3 Error: -35.0 Cell 4 Error: -541.0 Cell 5 Error: -455.0
+Trial 350 Cell 1 Weight: 0.020916779795099972 Cell 2 Weight: 0.019119073100978882 Cell 3 Weight: 0.01958277787852803 Cell 4 Weight: 0.01987828729200081 Cell 5 Weight: 0.01838885568313872
+39283745
+Trial: 351, Time:34.265s
+Trial 351 Cell 1 Spike Count: 249.0 Cell 2 Spike Count: 177.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 564.0 Cell 5 Spike Count: 328.0
+Trial 351 Cell 1 Error: -244.0 Cell 2 Error:  -172.0 Cell 3 Error: -6.0 Cell 4 Error: -559.0 Cell 5 Error: -323.0
+Trial 351 Cell 1 Weight: 0.02097953013448527 Cell 2 Weight: 0.019176430320281816 Cell 3 Weight: 0.019641526212163612 Cell 4 Weight: 0.01993792215387681 Cell 5 Weight: 0.01844402225018813
+38718598
+Trial: 352, Time:34.105s
+Trial 352 Cell 1 Spike Count: 202.0 Cell 2 Spike Count: 130.0 Cell 3 Spike Count: 21.0 Cell 4 Spike Count: 373.0 Cell 5 Spike Count: 286.0
+Trial 352 Cell 1 Error: -197.0 Cell 2 Error:  -125.0 Cell 3 Error: -16.0 Cell 4 Error: -368.0 Cell 5 Error: -281.0
+Trial 352 Cell 1 Weight: 0.021042468724888724 Cell 2 Weight: 0.01923395961124266 Cell 3 Weight: 0.0197004507908001 Cell 4 Weight: 0.01999773592033844 Cell 5 Weight: 0.018499354316938693
+38086014
+Trial: 353, Time:33.931s
+Trial 353 Cell 1 Spike Count: 42.0 Cell 2 Spike Count: 105.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 113.0 Cell 5 Spike Count: 59.0
+Trial 353 Cell 1 Error: -37.0 Cell 2 Error:  -100.0 Cell 3 Error: 5.0 Cell 4 Error: -108.0 Cell 5 Error: -54.0
+Trial 353 Cell 1 Weight: 0.021105596131063387 Cell 2 Weight: 0.019291661490076384 Cell 3 Weight: 0.019641526212163612 Cell 4 Weight: 0.020057729128099454 Cell 5 Weight: 0.01855485237988951
+37561085
+Trial: 354, Time:33.859s
+Trial 354 Cell 1 Spike Count: 40.0 Cell 2 Spike Count: 91.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 118.0 Cell 5 Spike Count: 61.0
+Trial 354 Cell 1 Error: -35.0 Cell 2 Error:  -86.0 Cell 3 Error: 5.0 Cell 4 Error: -113.0 Cell 5 Error: -56.0
+Trial 354 Cell 1 Weight: 0.021168912919456575 Cell 2 Weight: 0.01934953647454661 Cell 3 Weight: 0.01958277787852803 Cell 4 Weight: 0.02011790231548375 Cell 5 Weight: 0.018610516937029177
+37817366
+Trial: 355, Time:33.979s
+Trial 355 Cell 1 Spike Count: 65.0 Cell 2 Spike Count: 206.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 390.0 Cell 5 Spike Count: 206.0
+Trial 355 Cell 1 Error: -60.0 Cell 2 Error:  -201.0 Cell 3 Error: 5.0 Cell 4 Error: -385.0 Cell 5 Error: -201.0
+Trial 355 Cell 1 Weight: 0.021232419658214943 Cell 2 Weight: 0.01940758508397025 Cell 3 Weight: 0.019524205262739815 Cell 4 Weight: 0.0201782560224302 Cell 5 Weight: 0.018666348487840264
+38697602
+Trial: 356, Time:34.213s
+Trial 356 Cell 1 Spike Count: 99.0 Cell 2 Spike Count: 276.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 592.0 Cell 5 Spike Count: 369.0
+Trial 356 Cell 1 Error: -94.0 Cell 2 Error:  -271.0 Cell 3 Error: 5.0 Cell 4 Error: -587.0 Cell 5 Error: -364.0
+Trial 356 Cell 1 Weight: 0.021296116917189585 Cell 2 Weight: 0.01946580783922216 Cell 3 Weight: 0.019465807839222152 Cell 4 Weight: 0.020238790790497486 Cell 5 Weight: 0.018722347533303783
+37912057
+Trial: 357, Time:34.017s
+Trial 357 Cell 1 Spike Count: 7.0 Cell 2 Spike Count: 298.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 110.0 Cell 5 Spike Count: 62.0
+Trial 357 Cell 1 Error: -2.0 Cell 2 Error:  -293.0 Cell 3 Error: 2.0 Cell 4 Error: -105.0 Cell 5 Error: -57.0
+Trial 357 Cell 1 Weight: 0.02136000526794115 Cell 2 Weight: 0.019524205262739822 Cell 3 Weight: 0.019407585083970242 Cell 4 Weight: 0.020299507162868977 Cell 5 Weight: 0.018778514575903692
+38843298
+Trial: 358, Time:34.269s
+Trial 358 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 284.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 65.0 Cell 5 Spike Count: 60.0
+Trial 358 Cell 1 Error: 0.0 Cell 2 Error:  -279.0 Cell 3 Error: 4.0 Cell 4 Error: -60.0 Cell 5 Error: -55.0
+Trial 358 Cell 1 Weight: 0.02136000526794115 Cell 2 Weight: 0.01958277787852804 Cell 3 Weight: 0.019349536474546604 Cell 4 Weight: 0.020360405684357583 Cell 5 Weight: 0.018834850119631402
+39823052
+Trial: 359, Time:34.500s
+Trial 359 Cell 1 Spike Count: 1.0 Cell 2 Spike Count: 160.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 81.0 Cell 5 Spike Count: 16.0
+Trial 359 Cell 1 Error: 4.0 Cell 2 Error:  -155.0 Cell 3 Error: 5.0 Cell 4 Error: -76.0 Cell 5 Error: -11.0
+Trial 359 Cell 1 Weight: 0.021296116917189585 Cell 2 Weight: 0.019641526212163623 Cell 3 Weight: 0.019291661490076377 Cell 4 Weight: 0.020421486901410654 Cell 5 Weight: 0.018891354669990295
+39621272
+Trial: 360, Time:34.381s
+Trial 360 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 153.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 63.0 Cell 5 Spike Count: 25.0
+Trial 360 Cell 1 Error: 5.0 Cell 2 Error:  -148.0 Cell 3 Error: 5.0 Cell 4 Error: -58.0 Cell 5 Error: -20.0
+Trial 360 Cell 1 Weight: 0.021232419658214943 Cell 2 Weight: 0.01970045079080011 Cell 3 Weight: 0.019233959611242652 Cell 4 Weight: 0.020482751362114884 Cell 5 Weight: 0.018948028734000266
+40040156
+Trial: 361, Time:34.484s
+Trial 361 Cell 1 Spike Count: 12.0 Cell 2 Spike Count: 153.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 72.0 Cell 5 Spike Count: 8.0
+Trial 361 Cell 1 Error: -7.0 Cell 2 Error:  -148.0 Cell 3 Error: -1.0 Cell 4 Error: -67.0 Cell 5 Error: -3.0
+Trial 361 Cell 1 Weight: 0.021296116917189585 Cell 2 Weight: 0.019759552143172508 Cell 3 Weight: 0.019291661490076377 Cell 4 Weight: 0.020544199616201225 Cell 5 Weight: 0.019004872820202263
+39027211
+Trial: 362, Time:34.228s
+Trial 362 Cell 1 Spike Count: 13.0 Cell 2 Spike Count: 232.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 46.0 Cell 5 Spike Count: 0.0
+Trial 362 Cell 1 Error: -8.0 Cell 2 Error:  -227.0 Cell 3 Error: 0.0 Cell 4 Error: -41.0 Cell 5 Error: 5.0
+Trial 362 Cell 1 Weight: 0.02136000526794115 Cell 2 Weight: 0.019818830799602023 Cell 3 Weight: 0.019291661490076377 Cell 4 Weight: 0.020605832215049826 Cell 5 Weight: 0.018948028734000266
+39339452
+Trial: 363, Time:34.320s
+Trial 363 Cell 1 Spike Count: 29.0 Cell 2 Spike Count: 186.0 Cell 3 Spike Count: 10.0 Cell 4 Spike Count: 115.0 Cell 5 Spike Count: 41.0
+Trial 363 Cell 1 Error: -24.0 Cell 2 Error:  -181.0 Cell 3 Error: -5.0 Cell 4 Error: -110.0 Cell 5 Error: -36.0
+Trial 363 Cell 1 Weight: 0.02142408528374497 Cell 2 Weight: 0.019878287292000828 Cell 3 Weight: 0.019349536474546604 Cell 4 Weight: 0.020667649711694974 Cell 5 Weight: 0.019004872820202263
+39805376
+Trial: 364, Time:34.435s
+Trial 364 Cell 1 Spike Count: 142.0 Cell 2 Spike Count: 64.0 Cell 3 Spike Count: 6.0 Cell 4 Spike Count: 74.0 Cell 5 Spike Count: 43.0
+Trial 364 Cell 1 Error: -137.0 Cell 2 Error:  -59.0 Cell 3 Error: -1.0 Cell 4 Error: -69.0 Cell 5 Error: -38.0
+Trial 364 Cell 1 Weight: 0.021488357539596204 Cell 2 Weight: 0.019937922153876828 Cell 3 Weight: 0.019407585083970242 Cell 4 Weight: 0.020729652660830055 Cell 5 Weight: 0.019061887438662866
+39302234
+Trial: 365, Time:34.224s
+Trial 365 Cell 1 Spike Count: 85.0 Cell 2 Spike Count: 31.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 56.0 Cell 5 Spike Count: 21.0
+Trial 365 Cell 1 Error: -80.0 Cell 2 Error:  -26.0 Cell 3 Error: 5.0 Cell 4 Error: -51.0 Cell 5 Error: -16.0
+Trial 365 Cell 1 Weight: 0.02155282261221499 Cell 2 Weight: 0.019997735920338457 Cell 3 Weight: 0.019349536474546604 Cell 4 Weight: 0.02079184161881254 Cell 5 Weight: 0.019119073100978854
+39553610
+Trial: 366, Time:34.357s
+Trial 366 Cell 1 Spike Count: 128.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 12.0 Cell 4 Spike Count: 113.0 Cell 5 Spike Count: 69.0
+Trial 366 Cell 1 Error: -123.0 Cell 2 Error:  -4.0 Cell 3 Error: -7.0 Cell 4 Error: -108.0 Cell 5 Error: -64.0
+Trial 366 Cell 1 Weight: 0.021617481080051633 Cell 2 Weight: 0.020057729128099472 Cell 3 Weight: 0.019407585083970242 Cell 4 Weight: 0.020854217143668977 Cell 5 Weight: 0.01917643032028179
+39803017
+Trial: 367, Time:34.438s
+Trial 367 Cell 1 Spike Count: 114.0 Cell 2 Spike Count: 59.0 Cell 3 Spike Count: 13.0 Cell 4 Spike Count: 158.0 Cell 5 Spike Count: 34.0
+Trial 367 Cell 1 Error: -109.0 Cell 2 Error:  -54.0 Cell 3 Error: -8.0 Cell 4 Error: -153.0 Cell 5 Error: -29.0
+Trial 367 Cell 1 Weight: 0.021682333523291786 Cell 2 Weight: 0.020117902315483768 Cell 3 Weight: 0.019465807839222152 Cell 4 Weight: 0.020916779795099982 Cell 5 Weight: 0.01923395961124263
+39376375
+Trial: 368, Time:34.330s
+Trial 368 Cell 1 Spike Count: 59.0 Cell 2 Spike Count: 21.0 Cell 3 Spike Count: 4.0 Cell 4 Spike Count: 123.0 Cell 5 Spike Count: 58.0
+Trial 368 Cell 1 Error: -54.0 Cell 2 Error:  -16.0 Cell 3 Error: 1.0 Cell 4 Error: -118.0 Cell 5 Error: -53.0
+Trial 368 Cell 1 Weight: 0.02174738052386166 Cell 2 Weight: 0.020178256022430216 Cell 3 Weight: 0.019407585083970242 Cell 4 Weight: 0.02097953013448528 Cell 5 Weight: 0.019291661490076356
+39093938
+Trial: 369, Time:34.251s
+Trial 369 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 6.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 20.0 Cell 5 Spike Count: 87.0
+Trial 369 Cell 1 Error: 5.0 Cell 2 Error:  -1.0 Cell 3 Error: 5.0 Cell 4 Error: -15.0 Cell 5 Error: -82.0
+Trial 369 Cell 1 Weight: 0.021682333523291786 Cell 2 Weight: 0.020238790790497504 Cell 3 Weight: 0.019349536474546604 Cell 4 Weight: 0.021042468724888734 Cell 5 Weight: 0.019349536474546583
+38201710
+Trial: 370, Time:34.003s
+Trial 370 Cell 1 Spike Count: 20.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 30.0 Cell 5 Spike Count: 42.0
+Trial 370 Cell 1 Error: -15.0 Cell 2 Error:  -4.0 Cell 3 Error: 5.0 Cell 4 Error: -25.0 Cell 5 Error: -37.0
+Trial 370 Cell 1 Weight: 0.02174738052386166 Cell 2 Weight: 0.020299507162868994 Cell 3 Weight: 0.019291661490076377 Cell 4 Weight: 0.021105596131063397 Cell 5 Weight: 0.01940758508397022
+38545928
+Trial: 371, Time:34.041s
+Trial 371 Cell 1 Spike Count: 8.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 2.0 Cell 5 Spike Count: 62.0
+Trial 371 Cell 1 Error: -3.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 3.0 Cell 5 Error: -57.0
+Trial 371 Cell 1 Weight: 0.02181262266543324 Cell 2 Weight: 0.020238790790497504 Cell 3 Weight: 0.019233959611242652 Cell 4 Weight: 0.021042468724888734 Cell 5 Weight: 0.01946580783922213
+38873113
+Trial: 372, Time:34.188s
+Trial 372 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 28.0
+Trial 372 Cell 1 Error: -1.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -23.0
+Trial 372 Cell 1 Weight: 0.021878060533429538 Cell 2 Weight: 0.020178256022430216 Cell 3 Weight: 0.01917643032028181 Cell 4 Weight: 0.02097953013448528 Cell 5 Weight: 0.019524205262739795
+39070349
+Trial: 373, Time:34.262s
+Trial 373 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 13.0 Cell 5 Spike Count: 8.0
+Trial 373 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: -8.0 Cell 5 Error: -3.0
+Trial 373 Cell 1 Weight: 0.02181262266543324 Cell 2 Weight: 0.020117902315483768 Cell 3 Weight: 0.019119073100978875 Cell 4 Weight: 0.021042468724888734 Cell 5 Weight: 0.019582777878528013
+39797126
+Trial: 374, Time:34.510s
+Trial 374 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 2.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 30.0
+Trial 374 Cell 1 Error: 0.0 Cell 2 Error:  3.0 Cell 3 Error: 5.0 Cell 4 Error: -2.0 Cell 5 Error: -25.0
+Trial 374 Cell 1 Weight: 0.02181262266543324 Cell 2 Weight: 0.020057729128099472 Cell 3 Weight: 0.01906188743866289 Cell 4 Weight: 0.021105596131063397 Cell 5 Weight: 0.019641526212163595
+41049742
+Trial: 375, Time:34.861s
+Trial 375 Cell 1 Spike Count: 10.0 Cell 2 Spike Count: 19.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 30.0
+Trial 375 Cell 1 Error: -5.0 Cell 2 Error:  -14.0 Cell 3 Error: -6.0 Cell 4 Error: 5.0 Cell 5 Error: -25.0
+Trial 375 Cell 1 Weight: 0.021878060533429538 Cell 2 Weight: 0.020117902315483768 Cell 3 Weight: 0.01911907310097888 Cell 4 Weight: 0.021042468724888734 Cell 5 Weight: 0.019700450790800083
+40968483
+Trial: 376, Time:34.852s
+Trial 376 Cell 1 Spike Count: 8.0 Cell 2 Spike Count: 7.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 9.0
+Trial 376 Cell 1 Error: -3.0 Cell 2 Error:  -2.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -4.0
+Trial 376 Cell 1 Weight: 0.021943694715029823 Cell 2 Weight: 0.020178256022430216 Cell 3 Weight: 0.019061887438662894 Cell 4 Weight: 0.02097953013448528 Cell 5 Weight: 0.01975955214317248
+39893283
+Trial: 377, Time:34.472s
+Trial 377 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 24.0
+Trial 377 Cell 1 Error: 5.0 Cell 2 Error:  5.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -19.0
+Trial 377 Cell 1 Weight: 0.021878060533429538 Cell 2 Weight: 0.020117902315483768 Cell 3 Weight: 0.01900487282020229 Cell 4 Weight: 0.020916779795099982 Cell 5 Weight: 0.019818830799601995
+40730819
+Trial: 378, Time:34.671s
+Trial 378 Cell 1 Spike Count: 13.0 Cell 2 Spike Count: 96.0 Cell 3 Spike Count: 58.0 Cell 4 Spike Count: 30.0 Cell 5 Spike Count: 181.0
+Trial 378 Cell 1 Error: -8.0 Cell 2 Error:  -91.0 Cell 3 Error: -53.0 Cell 4 Error: -25.0 Cell 5 Error: -176.0
+Trial 378 Cell 1 Weight: 0.021943694715029823 Cell 2 Weight: 0.020178256022430216 Cell 3 Weight: 0.019061887438662894 Cell 4 Weight: 0.02097953013448528 Cell 5 Weight: 0.0198782872920008
+39733394
+Trial: 379, Time:34.443s
+Trial 379 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 82.0 Cell 3 Spike Count: 12.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 104.0
+Trial 379 Cell 1 Error: 5.0 Cell 2 Error:  -77.0 Cell 3 Error: -7.0 Cell 4 Error: -5.0 Cell 5 Error: -99.0
+Trial 379 Cell 1 Weight: 0.021878060533429538 Cell 2 Weight: 0.020238790790497504 Cell 3 Weight: 0.019119073100978882 Cell 4 Weight: 0.021042468724888734 Cell 5 Weight: 0.0199379221538768
+39189256
+Trial: 380, Time:34.277s
+Trial 380 Cell 1 Spike Count: 8.0 Cell 2 Spike Count: 82.0 Cell 3 Spike Count: 12.0 Cell 4 Spike Count: 32.0 Cell 5 Spike Count: 50.0
+Trial 380 Cell 1 Error: -3.0 Cell 2 Error:  -77.0 Cell 3 Error: -7.0 Cell 4 Error: -27.0 Cell 5 Error: -45.0
+Trial 380 Cell 1 Weight: 0.021943694715029823 Cell 2 Weight: 0.020299507162868994 Cell 3 Weight: 0.019176430320281816 Cell 4 Weight: 0.021105596131063397 Cell 5 Weight: 0.01999773592033843
+40087645
+Trial: 381, Time:34.520s
+Trial 381 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 36.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 60.0 Cell 5 Spike Count: 24.0
+Trial 381 Cell 1 Error: 5.0 Cell 2 Error:  -31.0 Cell 3 Error: 2.0 Cell 4 Error: -55.0 Cell 5 Error: -19.0
+Trial 381 Cell 1 Weight: 0.021878060533429538 Cell 2 Weight: 0.0203604056843576 Cell 3 Weight: 0.019119073100978882 Cell 4 Weight: 0.021168912919456585 Cell 5 Weight: 0.020057729128099444
+40737246
+Trial: 382, Time:34.675s
+Trial 382 Cell 1 Spike Count: 27.0 Cell 2 Spike Count: 67.0 Cell 3 Spike Count: 24.0 Cell 4 Spike Count: 17.0 Cell 5 Spike Count: 0.0
+Trial 382 Cell 1 Error: -22.0 Cell 2 Error:  -62.0 Cell 3 Error: -19.0 Cell 4 Error: -12.0 Cell 5 Error: 5.0
+Trial 382 Cell 1 Weight: 0.021943694715029823 Cell 2 Weight: 0.02042148690141067 Cell 3 Weight: 0.019176430320281816 Cell 4 Weight: 0.021232419658214954 Cell 5 Weight: 0.019997735920338433
+40484336
+Trial: 383, Time:34.594s
+Trial 383 Cell 1 Spike Count: 50.0 Cell 2 Spike Count: 15.0 Cell 3 Spike Count: 54.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 0.0
+Trial 383 Cell 1 Error: -45.0 Cell 2 Error:  -10.0 Cell 3 Error: -49.0 Cell 4 Error: 0.0 Cell 5 Error: 5.0
+Trial 383 Cell 1 Weight: 0.02200952579917491 Cell 2 Weight: 0.0204827513621149 Cell 3 Weight: 0.01923395961124266 Cell 4 Weight: 0.021232419658214954 Cell 5 Weight: 0.019937922153876804
+40594603
+Trial: 384, Time:34.765s
+Trial 384 Cell 1 Spike Count: 22.0 Cell 2 Spike Count: 27.0 Cell 3 Spike Count: 60.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 384 Cell 1 Error: -17.0 Cell 2 Error:  -22.0 Cell 3 Error: -55.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 384 Cell 1 Weight: 0.02207555437657243 Cell 2 Weight: 0.020544199616201242 Cell 3 Weight: 0.019291661490076384 Cell 4 Weight: 0.021168912919456585 Cell 5 Weight: 0.019878287292000803
+39637608
+Trial: 385, Time:34.546s
+Trial 385 Cell 1 Spike Count: 4.0 Cell 2 Spike Count: 47.0 Cell 3 Spike Count: 34.0 Cell 4 Spike Count: 20.0 Cell 5 Spike Count: 0.0
+Trial 385 Cell 1 Error: 1.0 Cell 2 Error:  -42.0 Cell 3 Error: -29.0 Cell 4 Error: -15.0 Cell 5 Error: 5.0
+Trial 385 Cell 1 Weight: 0.02200952579917491 Cell 2 Weight: 0.020605832215049844 Cell 3 Weight: 0.01934953647454661 Cell 4 Weight: 0.021232419658214954 Cell 5 Weight: 0.019818830799602002
+39660095
+Trial: 386, Time:34.522s
+Trial 386 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 58.0 Cell 3 Spike Count: 41.0 Cell 4 Spike Count: 8.0 Cell 5 Spike Count: 8.0
+Trial 386 Cell 1 Error: 0.0 Cell 2 Error:  -53.0 Cell 3 Error: -36.0 Cell 4 Error: -3.0 Cell 5 Error: -3.0
+Trial 386 Cell 1 Weight: 0.02200952579917491 Cell 2 Weight: 0.02066764971169499 Cell 3 Weight: 0.01940758508397025 Cell 4 Weight: 0.021296116917189595 Cell 5 Weight: 0.019878287292000807
+39219244
+Trial: 387, Time:34.357s
+Trial 387 Cell 1 Spike Count: 34.0 Cell 2 Spike Count: 46.0 Cell 3 Spike Count: 103.0 Cell 4 Spike Count: 38.0 Cell 5 Spike Count: 79.0
+Trial 387 Cell 1 Error: -29.0 Cell 2 Error:  -41.0 Cell 3 Error: -98.0 Cell 4 Error: -33.0 Cell 5 Error: -74.0
+Trial 387 Cell 1 Weight: 0.02207555437657243 Cell 2 Weight: 0.020729652660830072 Cell 3 Weight: 0.01946580783922216 Cell 4 Weight: 0.021360005267941164 Cell 5 Weight: 0.019937922153876807
+39415279
+Trial: 388, Time:34.359s
+Trial 388 Cell 1 Spike Count: 33.0 Cell 2 Spike Count: 49.0 Cell 3 Spike Count: 339.0 Cell 4 Spike Count: 31.0 Cell 5 Spike Count: 74.0
+Trial 388 Cell 1 Error: -28.0 Cell 2 Error:  -44.0 Cell 3 Error: -334.0 Cell 4 Error: -26.0 Cell 5 Error: -69.0
+Trial 388 Cell 1 Weight: 0.022141781039702144 Cell 2 Weight: 0.020791841618812562 Cell 3 Weight: 0.019524205262739822 Cell 4 Weight: 0.021424085283744985 Cell 5 Weight: 0.019997735920338437
+39189455
+Trial: 389, Time:34.237s
+Trial 389 Cell 1 Spike Count: 11.0 Cell 2 Spike Count: 65.0 Cell 3 Spike Count: 424.0 Cell 4 Spike Count: 72.0 Cell 5 Spike Count: 32.0
+Trial 389 Cell 1 Error: -6.0 Cell 2 Error:  -60.0 Cell 3 Error: -419.0 Cell 4 Error: -67.0 Cell 5 Error: -27.0
+Trial 389 Cell 1 Weight: 0.022208206382821248 Cell 2 Weight: 0.020854217143668998 Cell 3 Weight: 0.01958277787852804 Cell 4 Weight: 0.021488357539596218 Cell 5 Weight: 0.02005772912809945
+39516864
+Trial: 390, Time:34.406s
+Trial 390 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 91.0 Cell 3 Spike Count: 385.0 Cell 4 Spike Count: 51.0 Cell 5 Spike Count: 55.0
+Trial 390 Cell 1 Error: -1.0 Cell 2 Error:  -86.0 Cell 3 Error: -380.0 Cell 4 Error: -46.0 Cell 5 Error: -50.0
+Trial 390 Cell 1 Weight: 0.02227483100196971 Cell 2 Weight: 0.020916779795100003 Cell 3 Weight: 0.019641526212163623 Cell 4 Weight: 0.021552822612215004 Cell 5 Weight: 0.020117902315483747
+38462132
+Trial: 391, Time:34.150s
+Trial 391 Cell 1 Spike Count: 1.0 Cell 2 Spike Count: 65.0 Cell 3 Spike Count: 410.0 Cell 4 Spike Count: 9.0 Cell 5 Spike Count: 32.0
+Trial 391 Cell 1 Error: 4.0 Cell 2 Error:  -60.0 Cell 3 Error: -405.0 Cell 4 Error: -4.0 Cell 5 Error: -27.0
+Trial 391 Cell 1 Weight: 0.02220820638282125 Cell 2 Weight: 0.0209795301344853 Cell 3 Weight: 0.01970045079080011 Cell 4 Weight: 0.021617481080051647 Cell 5 Weight: 0.020178256022430195
+38624286
+Trial: 392, Time:34.158s
+Trial 392 Cell 1 Spike Count: 12.0 Cell 2 Spike Count: 39.0 Cell 3 Spike Count: 129.0 Cell 4 Spike Count: 2.0 Cell 5 Spike Count: 11.0
+Trial 392 Cell 1 Error: -7.0 Cell 2 Error:  -34.0 Cell 3 Error: -124.0 Cell 4 Error: 3.0 Cell 5 Error: -6.0
+Trial 392 Cell 1 Weight: 0.022274831001969714 Cell 2 Weight: 0.021042468724888755 Cell 3 Weight: 0.019759552143172508 Cell 4 Weight: 0.021552822612215004 Cell 5 Weight: 0.020238790790497483
+38898078
+Trial: 393, Time:34.285s
+Trial 393 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 50.0 Cell 3 Spike Count: 209.0 Cell 4 Spike Count: 12.0 Cell 5 Spike Count: 38.0
+Trial 393 Cell 1 Error: 5.0 Cell 2 Error:  -45.0 Cell 3 Error: -204.0 Cell 4 Error: -7.0 Cell 5 Error: -33.0
+Trial 393 Cell 1 Weight: 0.022208206382821255 Cell 2 Weight: 0.021105596131063418 Cell 3 Weight: 0.019818830799602023 Cell 4 Weight: 0.021617481080051647 Cell 5 Weight: 0.020299507162868973
+38581079
+Trial: 394, Time:34.153s
+Trial 394 Cell 1 Spike Count: 39.0 Cell 2 Spike Count: 18.0 Cell 3 Spike Count: 17.0 Cell 4 Spike Count: 22.0 Cell 5 Spike Count: 0.0
+Trial 394 Cell 1 Error: -34.0 Cell 2 Error:  -13.0 Cell 3 Error: -12.0 Cell 4 Error: -17.0 Cell 5 Error: 5.0
+Trial 394 Cell 1 Weight: 0.022274831001969718 Cell 2 Weight: 0.021168912919456606 Cell 3 Weight: 0.019878287292000828 Cell 4 Weight: 0.0216823335232918 Cell 5 Weight: 0.020238790790497483
+38810051
+Trial: 395, Time:34.214s
+Trial 395 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 4.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 26.0 Cell 5 Spike Count: 20.0
+Trial 395 Cell 1 Error: 0.0 Cell 2 Error:  1.0 Cell 3 Error: -6.0 Cell 4 Error: -21.0 Cell 5 Error: -15.0
+Trial 395 Cell 1 Weight: 0.022274831001969718 Cell 2 Weight: 0.021105596131063418 Cell 3 Weight: 0.019937922153876828 Cell 4 Weight: 0.021747380523861673 Cell 5 Weight: 0.020299507162868973
+37863904
+Trial: 396, Time:34.081s
+Trial 396 Cell 1 Spike Count: 33.0 Cell 2 Spike Count: 51.0 Cell 3 Spike Count: 140.0 Cell 4 Spike Count: 45.0 Cell 5 Spike Count: 7.0
+Trial 396 Cell 1 Error: -28.0 Cell 2 Error:  -46.0 Cell 3 Error: -135.0 Cell 4 Error: -40.0 Cell 5 Error: -2.0
+Trial 396 Cell 1 Weight: 0.022341655494975625 Cell 2 Weight: 0.021168912919456606 Cell 3 Weight: 0.019997735920338457 Cell 4 Weight: 0.021812622665433257 Cell 5 Weight: 0.02036040568435758
+38149012
+Trial: 397, Time:34.176s
+Trial 397 Cell 1 Spike Count: 20.0 Cell 2 Spike Count: 0.0 Cell 3 Spike Count: 15.0 Cell 4 Spike Count: 5.0 Cell 5 Spike Count: 4.0
+Trial 397 Cell 1 Error: -15.0 Cell 2 Error:  5.0 Cell 3 Error: -10.0 Cell 4 Error: 0.0 Cell 5 Error: 1.0
+Trial 397 Cell 1 Weight: 0.02240868046146055 Cell 2 Weight: 0.021105596131063418 Cell 3 Weight: 0.020057729128099472 Cell 4 Weight: 0.021812622665433257 Cell 5 Weight: 0.020299507162868977
+37979240
+Trial: 398, Time:34.081s
+Trial 398 Cell 1 Spike Count: 72.0 Cell 2 Spike Count: 8.0 Cell 3 Spike Count: 20.0 Cell 4 Spike Count: 4.0 Cell 5 Spike Count: 0.0
+Trial 398 Cell 1 Error: -67.0 Cell 2 Error:  -3.0 Cell 3 Error: -15.0 Cell 4 Error: 1.0 Cell 5 Error: 5.0
+Trial 398 Cell 1 Weight: 0.02247590650284493 Cell 2 Weight: 0.021168912919456606 Cell 3 Weight: 0.020117902315483768 Cell 4 Weight: 0.021747380523861676 Cell 5 Weight: 0.020238790790497486
+38382195
+Trial: 399, Time:34.266s
+Trial 399 Cell 1 Spike Count: 33.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 18.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 399 Cell 1 Error: -28.0 Cell 2 Error:  -4.0 Cell 3 Error: -13.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 399 Cell 1 Weight: 0.02254333422235346 Cell 2 Weight: 0.021232419658214974 Cell 3 Weight: 0.020178256022430216 Cell 4 Weight: 0.021682333523291804 Cell 5 Weight: 0.0201782560224302
+38249347
+Trial: 400, Time:34.172s
+Trial 400 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 7.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 400 Cell 1 Error: 5.0 Cell 2 Error:  -2.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 400 Cell 1 Weight: 0.02247590650284493 Cell 2 Weight: 0.021296116917189616 Cell 3 Weight: 0.020117902315483768 Cell 4 Weight: 0.02161748108005165 Cell 5 Weight: 0.02011790231548375
+37481042
+Trial: 401, Time:33.943s
+Trial 401 Cell 1 Spike Count: 0.0 Cell 2 Spike Count: 22.0 Cell 3 Spike Count: 1.0 Cell 4 Spike Count: 16.0 Cell 5 Spike Count: 0.0
+Trial 401 Cell 1 Error: 5.0 Cell 2 Error:  -17.0 Cell 3 Error: 4.0 Cell 4 Error: -11.0 Cell 5 Error: 5.0
+Trial 401 Cell 1 Weight: 0.02240868046146055 Cell 2 Weight: 0.021360005267941184 Cell 3 Weight: 0.020057729128099472 Cell 4 Weight: 0.021682333523291804 Cell 5 Weight: 0.020057729128099454
+37472300
+Trial: 402, Time:33.961s
+Trial 402 Cell 1 Spike Count: 16.0 Cell 2 Spike Count: 47.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 7.0 Cell 5 Spike Count: 0.0
+Trial 402 Cell 1 Error: -11.0 Cell 2 Error:  -42.0 Cell 3 Error: 2.0 Cell 4 Error: -2.0 Cell 5 Error: 5.0
+Trial 402 Cell 1 Weight: 0.02247590650284493 Cell 2 Weight: 0.021424085283745006 Cell 3 Weight: 0.01999773592033846 Cell 4 Weight: 0.021747380523861676 Cell 5 Weight: 0.019997735920338443
+38144492
+Trial: 403, Time:34.098s
+Trial 403 Cell 1 Spike Count: 5.0 Cell 2 Spike Count: 29.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 403 Cell 1 Error: 0.0 Cell 2 Error:  -24.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 403 Cell 1 Weight: 0.02247590650284493 Cell 2 Weight: 0.02148835753959624 Cell 3 Weight: 0.01993792215387683 Cell 4 Weight: 0.021682333523291804 Cell 5 Weight: 0.019937922153876814
+37829857
+Trial: 404, Time:33.935s
+Trial 404 Cell 1 Spike Count: 23.0 Cell 2 Spike Count: 40.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 6.0
+Trial 404 Cell 1 Error: -18.0 Cell 2 Error:  -35.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -1.0
+Trial 404 Cell 1 Weight: 0.02254333422235346 Cell 2 Weight: 0.021552822612215024 Cell 3 Weight: 0.01987828729200083 Cell 4 Weight: 0.02161748108005165 Cell 5 Weight: 0.019997735920338443
+38220880
+Trial: 405, Time:34.126s
+Trial 405 Cell 1 Spike Count: 12.0 Cell 2 Spike Count: 26.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 0.0
+Trial 405 Cell 1 Error: -7.0 Cell 2 Error:  -21.0 Cell 3 Error: 5.0 Cell 4 Error: -5.0 Cell 5 Error: 5.0
+Trial 405 Cell 1 Weight: 0.022610964225020517 Cell 2 Weight: 0.021617481080051668 Cell 3 Weight: 0.01981883079960203 Cell 4 Weight: 0.021682333523291804 Cell 5 Weight: 0.019937922153876814
+37949947
+Trial: 406, Time:34.020s
+Trial 406 Cell 1 Spike Count: 6.0 Cell 2 Spike Count: 24.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 10.0 Cell 5 Spike Count: 0.0
+Trial 406 Cell 1 Error: -1.0 Cell 2 Error:  -19.0 Cell 3 Error: 5.0 Cell 4 Error: -5.0 Cell 5 Error: 5.0
+Trial 406 Cell 1 Weight: 0.022678797117695576 Cell 2 Weight: 0.02168233352329182 Cell 3 Weight: 0.019759552143172515 Cell 4 Weight: 0.021747380523861676 Cell 5 Weight: 0.019878287292000814
+38157507
+Trial: 407, Time:34.013s
+Trial 407 Cell 1 Spike Count: 17.0 Cell 2 Spike Count: 29.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 407 Cell 1 Error: -12.0 Cell 2 Error:  -24.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 407 Cell 1 Weight: 0.022746833509048662 Cell 2 Weight: 0.021747380523861694 Cell 3 Weight: 0.019700450790800118 Cell 4 Weight: 0.021682333523291804 Cell 5 Weight: 0.019818830799602012
+37794923
+Trial: 408, Time:33.942s
+Trial 408 Cell 1 Spike Count: 8.0 Cell 2 Spike Count: 31.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 3.0 Cell 5 Spike Count: 0.0
+Trial 408 Cell 1 Error: -3.0 Cell 2 Error:  -26.0 Cell 3 Error: 0.0 Cell 4 Error: 2.0 Cell 5 Error: 5.0
+Trial 408 Cell 1 Weight: 0.022815074009575807 Cell 2 Weight: 0.021812622665433278 Cell 3 Weight: 0.019700450790800118 Cell 4 Weight: 0.02161748108005165 Cell 5 Weight: 0.019759552143172498
+37868448
+Trial: 409, Time:34.004s
+Trial 409 Cell 1 Spike Count: 117.0 Cell 2 Spike Count: 44.0 Cell 3 Spike Count: 9.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 409 Cell 1 Error: -112.0 Cell 2 Error:  -39.0 Cell 3 Error: -4.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 409 Cell 1 Weight: 0.022883519231604532 Cell 2 Weight: 0.021878060533429576 Cell 3 Weight: 0.019759552143172515 Cell 4 Weight: 0.021552822612215007 Cell 5 Weight: 0.0197004507908001
+37478502
+Trial: 410, Time:33.850s
+Trial 410 Cell 1 Spike Count: 124.0 Cell 2 Spike Count: 19.0 Cell 3 Spike Count: 3.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 410 Cell 1 Error: -119.0 Cell 2 Error:  -14.0 Cell 3 Error: 2.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 410 Cell 1 Weight: 0.022952169789299343 Cell 2 Weight: 0.02194369471502986 Cell 3 Weight: 0.019700450790800118 Cell 4 Weight: 0.02148835753959622 Cell 5 Weight: 0.019641526212163612
+38338293
+Trial: 411, Time:34.123s
+Trial 411 Cell 1 Spike Count: 94.0 Cell 2 Spike Count: 14.0 Cell 3 Spike Count: 8.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 411 Cell 1 Error: -89.0 Cell 2 Error:  -9.0 Cell 3 Error: -3.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 411 Cell 1 Weight: 0.023021026298667237 Cell 2 Weight: 0.022009525799174947 Cell 3 Weight: 0.019759552143172515 Cell 4 Weight: 0.02142408528374499 Cell 5 Weight: 0.01958277787852803
+38359694
+Trial: 412, Time:34.128s
+Trial 412 Cell 1 Spike Count: 124.0 Cell 2 Spike Count: 34.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 412 Cell 1 Error: -119.0 Cell 2 Error:  -29.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 412 Cell 1 Weight: 0.023090089377563235 Cell 2 Weight: 0.02207555437657247 Cell 3 Weight: 0.019700450790800118 Cell 4 Weight: 0.021360005267941167 Cell 5 Weight: 0.019524205262739815
+38934858
+Trial: 413, Time:34.239s
+Trial 413 Cell 1 Spike Count: 99.0 Cell 2 Spike Count: 33.0 Cell 3 Spike Count: 11.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 413 Cell 1 Error: -94.0 Cell 2 Error:  -28.0 Cell 3 Error: -6.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 413 Cell 1 Weight: 0.02315935964569592 Cell 2 Weight: 0.022141781039702182 Cell 3 Weight: 0.019759552143172515 Cell 4 Weight: 0.021296116917189602 Cell 5 Weight: 0.019465807839222152
+38978625
+Trial: 414, Time:34.319s
+Trial 414 Cell 1 Spike Count: 61.0 Cell 2 Spike Count: 20.0 Cell 3 Spike Count: 30.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 414 Cell 1 Error: -56.0 Cell 2 Error:  -15.0 Cell 3 Error: -25.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 414 Cell 1 Weight: 0.023228837724633005 Cell 2 Weight: 0.022208206382821286 Cell 3 Weight: 0.01981883079960203 Cell 4 Weight: 0.02123241965821496 Cell 5 Weight: 0.019407585083970242
+38480042
+Trial: 415, Time:34.185s
+Trial 415 Cell 1 Spike Count: 131.0 Cell 2 Spike Count: 14.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 415 Cell 1 Error: -126.0 Cell 2 Error:  -9.0 Cell 3 Error: 0.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 415 Cell 1 Weight: 0.0232985242378069 Cell 2 Weight: 0.02227483100196975 Cell 3 Weight: 0.01981883079960203 Cell 4 Weight: 0.021168912919456592 Cell 5 Weight: 0.019349536474546604
+38614916
+Trial: 416, Time:34.205s
+Trial 416 Cell 1 Spike Count: 33.0 Cell 2 Spike Count: 2.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 416 Cell 1 Error: -28.0 Cell 2 Error:  3.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 416 Cell 1 Weight: 0.02336841981052032 Cell 2 Weight: 0.02220820638282129 Cell 3 Weight: 0.019759552143172515 Cell 4 Weight: 0.021105596131063404 Cell 5 Weight: 0.019291661490076377
+39475584
+Trial: 417, Time:34.443s
+Trial 417 Cell 1 Spike Count: 15.0 Cell 2 Spike Count: 17.0 Cell 3 Spike Count: 14.0 Cell 4 Spike Count: 3.0 Cell 5 Spike Count: 9.0
+Trial 417 Cell 1 Error: -10.0 Cell 2 Error:  -12.0 Cell 3 Error: -9.0 Cell 4 Error: 2.0 Cell 5 Error: -4.0
+Trial 417 Cell 1 Weight: 0.023438525069951876 Cell 2 Weight: 0.022274831001969753 Cell 3 Weight: 0.01981883079960203 Cell 4 Weight: 0.02104246872488874 Cell 5 Weight: 0.019349536474546604
+38905930
+Trial: 418, Time:34.289s
+Trial 418 Cell 1 Spike Count: 64.0 Cell 2 Spike Count: 2.0 Cell 3 Spike Count: 0.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 18.0
+Trial 418 Cell 1 Error: -59.0 Cell 2 Error:  3.0 Cell 3 Error: 5.0 Cell 4 Error: 5.0 Cell 5 Error: -13.0
+Trial 418 Cell 1 Weight: 0.02350884064516173 Cell 2 Weight: 0.022208206382821293 Cell 3 Weight: 0.019759552143172515 Cell 4 Weight: 0.020979530134485287 Cell 5 Weight: 0.019407585083970242
+38782559
+Trial: 419, Time:34.300s
+Trial 419 Cell 1 Spike Count: 68.0 Cell 2 Spike Count: 10.0 Cell 3 Spike Count: 37.0 Cell 4 Spike Count: 4.0 Cell 5 Spike Count: 0.0
+Trial 419 Cell 1 Error: -63.0 Cell 2 Error:  -5.0 Cell 3 Error: -32.0 Cell 4 Error: 1.0 Cell 5 Error: 5.0
+Trial 419 Cell 1 Weight: 0.02357936716709721 Cell 2 Weight: 0.022274831001969756 Cell 3 Weight: 0.01981883079960203 Cell 4 Weight: 0.02091677979509999 Cell 5 Weight: 0.019349536474546604
+39387527
+Trial: 420, Time:34.385s
+Trial 420 Cell 1 Spike Count: 34.0 Cell 2 Spike Count: 13.0 Cell 3 Spike Count: 17.0 Cell 4 Spike Count: 0.0 Cell 5 Spike Count: 0.0
+Trial 420 Cell 1 Error: -29.0 Cell 2 Error:  -8.0 Cell 3 Error: -12.0 Cell 4 Error: 5.0 Cell 5 Error: 5.0
+Trial 420 Cell 1 Weight: 0.023650105268598502 Cell 2 Weight: 0.022341655494975663 Cell 3 Weight: 0.019878287292000835 Cell 4 Weight: 0.020854217143668984 Cell 5 Weight: 0.019291661490076377
+39083831
+Trial: 421, Time:34.335s
+Trial 421 Cell 1 Spike Count: 44.0 Cell 2 Spike Count: 35.0 Cell 3 Spike Count: 23.0 Cell 4 Spike Count: 19.0 Cell 5 Spike Count: 0.0
+Trial 421 Cell 1 Error: -39.0 Cell 2 Error:  -30.0 Cell 3 Error: -18.0 Cell 4 Error: -14.0 Cell 5 Error: 5.0
+Trial 421 Cell 1 Weight: 0.023721055584404294 Cell 2 Weight: 0.02240868046146059 Cell 3 Weight: 0.019937922153876835 Cell 4 Weight: 0.02091677979509999 Cell 5 Weight: 0.019233959611242652
+39495044
+Trial: 422, Time:34.404s
+Trial 422 Cell 1 Spike Count: 36.0 Cell 2 Spike Count: 9.0 Cell 3 Spike Count: 23.0 Cell 4 Spike Count: 23.0 Cell 5 Spike Count: 0.0
+Trial 422 Cell 1 Error: -31.0 Cell 2 Error:  -4.0 Cell 3 Error: -18.0 Cell 4 Error: -18.0 Cell 5 Error: 5.0
+Trial 422 Cell 1 Weight: 0.023792218751157505 Cell 2 Weight: 0.022475906502844967 Cell 3 Weight: 0.019997735920338464 Cell 4 Weight: 0.020979530134485287 Cell 5 Weight: 0.01917643032028181
+38792425
+Trial: 423, Time:34.268s
+Trial 423 Cell 1 Spike Count: 35.0 Cell 2 Spike Count: 46.0 Cell 3 Spike Count: 18.0 Cell 4 Spike Count: 20.0 Cell 5 Spike Count: 0.0
+Trial 423 Cell 1 Error: -30.0 Cell 2 Error:  -41.0 Cell 3 Error: -13.0 Cell 4 Error: -15.0 Cell 5 Error: 5.0
+Trial 423 Cell 1 Weight: 0.023863595407410974 Cell 2 Weight: 0.0225433342223535 Cell 3 Weight: 0.02005772912809948 Cell 4 Weight: 0.02104246872488874 Cell 5 Weight: 0.019119073100978875
+38655870
+Trial: 424, Time:34.204s
+Trial 424 Cell 1 Spike Count: 75.0 Cell 2 Spike Count: 22.0 Cell 3 Spike Count: 5.0 Cell 4 Spike Count: 22.0 Cell 5 Spike Count: 9.0
+Trial 424 Cell 1 Error: -70.0 Cell 2 Error:  -17.0 Cell 3 Error: 0.0 Cell 4 Error: -17.0 Cell 5 Error: -4.0
+Trial 424 Cell 1 Weight: 

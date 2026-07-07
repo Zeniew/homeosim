@@ -208,28 +208,38 @@ class Golgi(): # class of Golgi cells, entire network of Golgi cells
     # def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, t = None, grAct = None):
     def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, t = None, grAct = None):
         ''' inputArrayChoice selects between 1 = MFGO, 2 = GOGO, 3 = GRGO'''
-
-        # MFGO - faster, so kept
+        
+        # MFGO 
         if inputArrayChoice == 1:
             goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
             spiked_idx = np.where(mfAct)[0]
             for mf in spiked_idx:
-                goInputs[connectArr[mf, :]] += 1
+                targets = connectArr[mf, :]
+                # THE FIX: Drop the -1 padding so it doesn't route to the last cell
+                valid_targets = targets[targets != -1]
+                goInputs[valid_targets] += 1 
             self.inputMFGO = goInputs
-        
+            
         # GOGO
         if inputArrayChoice == 2:
             goInputs = np.zeros(self.numGolgi, dtype = np.uint8)
             spiked_idx = np.where(self.act[t])[0]
             for go in spiked_idx:
-                goInputs[connectArr[go, :]] += 1
+                targets = connectArr[go, :]
+                # THE FIX: Drop the -1 padding
+                valid_targets = targets[targets != -1]
+                goInputs[valid_targets] += 1
             self.inputGOGO = goInputs
-
+            
         # GRGO
-        if inputArrayChoice == 3: 
+        if inputArrayChoice == 3:
             spiked_idx = np.where(grAct)[0]
-            indices = connectArr[spiked_idx].ravel()  # all target Golgi indices, flattened
-            self.inputGRGO = np.bincount(indices, minlength=self.numGolgi).astype(np.uint8)
+            indices = connectArr[spiked_idx].ravel() # all target Golgi indices, flattened
+            
+            # THE FIX: Remove the -1 padding BEFORE bincounting
+            valid_indices = indices[indices != -1]
+            
+            self.inputGRGO = np.bincount(valid_indices, minlength=self.numGolgi).astype(np.uint8)
 
     def update_thresh(self, t, threshRest):
         plast_cells = np.random.choice(self.numGolgi, int(self.numGolgi * self.plast_pop_portion), replace = False) # randomly select portion of Golgi cells to undergo plasticity
@@ -419,71 +429,38 @@ class Granule():
             return self.GPU_spike_mask.get()
 
     # generic function for updating GOGR and MFGR input arrays
-    def update_input_activity(self, connectArr, inputArrayChoice, mfAct = None, goAct = None):
+    def update_input_activity(self, connectArr, inputArrayChoice, mfAct=None, goAct=None):
         ''' inputArrayChoice selects between 1 = MFGR, 2 = GOGR '''
-        #### Playground version, adapt to main code
-        # MFGR
+        
+        # MFGR Input Update
         if inputArrayChoice == 1:
-            grInputs = np.zeros(self.numGranule, dtype = np.uint8) # array that stores how many inputs each gr gets
-            # MFdiverge = int((self.numGranule * 5)/4096) # how many gr each MF connects to  <-- where is this used lmao
-            spiked_idx = np.where(mfAct)[0]
-            # print(spiked_idx)
-            for mf in spiked_idx: # for every MF that spikes, this can be done in parallel
-            # Important here
-                grInputs[connectArr[mf, :]] += 1 # for each active MF, update each gr listed in its row by 1
-
-            # Vectorized below
-            # np.add.at(grInputs, connectArr[spiked_idx, :].ravel(), 1)
-            self.inputMFGR = grInputs
-
-        ### THIS VERSION IS ACTUALLY SLOWER
-        # if inputArrayChoice == 2: 
-        #     spiked_idx = np.where(goAct)[0]
-        #     for go in spiked_idx: # for every GO that spikes
-        #         grInputs[connectArr[go, :]] += 1
-        #     # Vectorized below
-        #     # np.add.at(grInputs, connectArr[spiked_idx, :].ravel(), 1)
-        #     self.inputGOGR = grInputs
-
-
-        # Version 1
-        # ## MF input update
-        # if inputArrayChoice == 1:
-        #     spike_mask = (mfAct == 1)
-
-        # GOGR
-        if inputArrayChoice == 2:
-            spiked_idx = np.where(goAct == 1)[0]
+            # 1. Find which Mossy Fibers spiked
+            spiked_idx = np.where(mfAct == 1)[0]
             
-            # grab all connection rows for spiked cells at once
+            # 2. Grab all their postsynaptic targets and flatten into a 1D array
             spiked_connections = connectArr[spiked_idx].ravel()
             
-            # filter out -1 terminators in one shot
-            spiked_connections = spiked_connections[spiked_connections != -1]
+            # 3. Filter out the -1 padding slots in one shot
+            valid_connections = spiked_connections[spiked_connections != -1]
             
-            counts = np.bincount(spiked_connections, minlength=len(self.inputGOGR))
-            self.inputGOGR = counts.astype(self.inputGOGR.dtype)
-            # spike_mask = (goAct == 1)
-            # spiked_idx = np.where(spike_mask)[0]
-            # # get connections for all spiked cells
-            # spiked_connections = [] # list to hold connections for all spiked MFs
-            # for cell in spiked_idx:
-            #     # eliminate -1 terminator
-            #     valid_idx = connectArr[cell] != -1
-            #     # get valid connections for spiked cell
-            #     valid_conns = connectArr[cell, valid_idx]
-            #     # add to list
-            #     spiked_connections.extend(valid_conns)
-            # spiked_connections = np.array(spiked_connections, dtype = int) # convert list to
-            # counts = np.bincount(spiked_connections) # count occurrences of each index in spiked_connections
-            # self.inputGOGR[:len(counts)] = counts # update inputGOGR with counts, only up to length of counts to avoid index error
-        
-        # if inputArrayChoice == 1:
-        #     # add to MFGR input  
-        #     self.inputMFGR[:len(counts)] = counts # update inputMFGR with counts, only up to length of counts to avoid index error
-        # elif inputArrayChoice == 2:
-            # add to GOGR input
+            # 4. Count spikes received per Granule cell and assign
+            counts = np.bincount(valid_connections, minlength=self.numGranule)
+            self.inputMFGR = counts.astype(np.uint8)
+
+        # GOGR Input Update
+        elif inputArrayChoice == 2:
+            # 1. Find which Golgi cells spiked
+            spiked_idx = np.where(goAct == 1)[0]
             
+            # 2. Grab all their postsynaptic targets and flatten into a 1D array
+            spiked_connections = connectArr[spiked_idx].ravel()
+            
+            # 3. Filter out the -1 padding slots in one shot
+            valid_connections = spiked_connections[spiked_connections != -1]
+            
+            # 4. Count spikes received per Granule cell and assign
+            counts = np.bincount(valid_connections, minlength=self.numGranule)
+            self.inputGOGR = counts.astype(np.uint8)
 
 
     def do_Granule(self, t): # t for MF output, golgi for Golgi activity
@@ -512,7 +489,7 @@ class Granule():
         
         # # 4. Asymmetric Learning Rate
         # Fix!! error = 0 should make the constant 1
-        learning_rates = np.where(error > 0, 1/self.plast_mult_constant, self.plast_mult_constant) # if error positive, target spikes > actual spikes, so decrease threshold to increase spiking, so learning rate < 1, if error negative, target spikes < actual spikes, so increase threshold to decrease spiking, so learning rate > 1
+        learning_rates = np.where(error > 0, self.plast_mult_constant, 1/self.plast_mult_constant) # if error positive, target spikes > actual spikes, so decrease threshold to increase spiking, so learning rate < 1, if error negative, target spikes < actual spikes, so increase threshold to decrease spiking, so learning rate > 1
         learning_rates = np.where(error == 0, 1, learning_rates) # if error is 0, set learning rate to 1 (no change)
 
         # 4.5 Filter out the non-plastic cells
