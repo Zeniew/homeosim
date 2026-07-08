@@ -246,15 +246,15 @@ numBins = 5000
 useCS = 0
 CSon, CSoff = 500, 3500
 numTrial = 1000
-MFGO_PLAST = 0
-GOGO_PLAST = 0
-GRGO_PLAST = 0
+MFGO_PLAST = 1
+GOGO_PLAST = 1
+GRGO_PLAST = 1
 MFGR_PLAST = 0
-GOGR_PLAST = 1
+GOGR_PLAST = 0
 
 # saving to hard drive
-expName = f'MFGoGr_SS_shuffleMF10percent_noCS_gogrplast_{numTrial}_trial'
-# MFGoGr_SS_shuffleMF10percent_noCS_gogrplast_1000_trial
+expName = f'MFGoGr_SS_shuffleMF10percent_noCS_allGOplast_{numTrial}_trial'
+# MFGoGr_SS_shuffleMF10percent_noCS_allGOplast_1000_trial
 saveDir = f'/home/data/einez/homeostat_SS/{expName}'
 
 # Save Rasters
