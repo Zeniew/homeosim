@@ -134,8 +134,8 @@ def export_activity_vs_plasticity_to_excel(go_activity, gr_activity, plasticity_
 # ==========================================
 # FILE LOADING
 # ==========================================
-go_act = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_GOrasters.npy')
-gr_act = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_GRrasters.npy')
+go_act = np.load('/home/data/einez/homeostat_SS/75recip_MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/75recip_MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_GOrasters.npy')
+gr_act = np.load('/home/data/einez/homeostat_SS/75recip_MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/75recip_MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_GRrasters.npy')
 
 ## IE
 # go_thresh = np.load('/home/data/einez/homeostat_IE/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial/MFGoGr_IE_shuffleMF10percent_noCS_yesGoGo_yesgrGo_GOplast_1000_trial_GoThr.npy')
@@ -144,13 +144,13 @@ gr_act = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noC
 ## SS
 # mfgoW = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_mfgoW.npy')
 # grgoW = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_grgoW.npy')
-gogoW = np.load('/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_gogoW.npy')
+gogoW = np.load('/home/data/einez/homeostat_SS/75recip_MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/75recip_MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_gogoW.npy')
 print("Finished loading data")
 
 df_results, corrs = export_activity_vs_plasticity_to_excel(
     go_activity=go_act, 
     gr_activity=gr_act, 
     plasticity_arrays=[gogoW],
-    output_filename="gogoplast_SS_Results.xlsx",
+    output_filename="75recip_gogoplast_SS_Results.xlsx",
     plasticity_type='SS'
 )

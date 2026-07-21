@@ -1,0 +1,245 @@
+nohup: ignoring input
+Starting Session: 0recip_MFGoGr_SS_shuffleMF10percent_noCS_allGOplast_1000_trial...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial 0: Cell 1 (Static) = 0.004187 | Cell 2 (Plastic) = 0.004187
+45491201
+Trial: 1, Time:35.833s
+Trial 1: Cell 1 (Static) = 0.004175 | Cell 2 (Plastic) = 0.004175
+46297209
+Trial: 2, Time:34.817s
+Trial 2: Cell 1 (Static) = 0.004162 | Cell 2 (Plastic) = 0.004162
+46597695
+Trial: 3, Time:35.506s
+Trial 3: Cell 1 (Static) = 0.004150 | Cell 2 (Plastic) = 0.004150
+46464418
+Trial: 4, Time:35.076s
+Trial 4: Cell 1 (Static) = 0.004138 | Cell 2 (Plastic) = 0.004138
+46684863
+Trial: 5, Time:35.415s
+Trial 5: Cell 1 (Static) = 0.004125 | Cell 2 (Plastic) = 0.004125
+47443440
+Trial: 6, Time:35.289s
+Trial 6: Cell 1 (Static) = 0.004113 | Cell 2 (Plastic) = 0.004113
+46804782
+Trial: 7, Time:34.706s
+Trial 7: Cell 1 (Static) = 0.004101 | Cell 2 (Plastic) = 0.004101
+47644966
+Trial: 8, Time:34.780s
+Trial 8: Cell 1 (Static) = 0.004088 | Cell 2 (Plastic) = 0.004088
+48953686
+Trial: 9, Time:35.383s
+Trial 9: Cell 1 (Static) = 0.004076 | Cell 2 (Plastic) = 0.004076
+49872435
+Trial: 10, Time:35.382s
+Trial 10: Cell 1 (Static) = 0.004064 | Cell 2 (Plastic) = 0.004064
+48781631
+Trial: 11, Time:34.570s
+Trial 11: Cell 1 (Static) = 0.004052 | Cell 2 (Plastic) = 0.004052
+48724399
+Trial: 12, Time:35.928s
+Trial 12: Cell 1 (Static) = 0.004040 | Cell 2 (Plastic) = 0.004040
+49961826
+Trial: 13, Time:35.054s
+Trial 13: Cell 1 (Static) = 0.004028 | Cell 2 (Plastic) = 0.004028
+50588105
+Trial: 14, Time:35.787s
+Trial 14: Cell 1 (Static) = 0.004015 | Cell 2 (Plastic) = 0.004015
+50929137
+Trial: 15, Time:35.327s
+Trial 15: Cell 1 (Static) = 0.004003 | Cell 2 (Plastic) = 0.004003
+51003655
+Trial: 16, Time:35.834s
+Trial 16: Cell 1 (Static) = 0.003991 | Cell 2 (Plastic) = 0.003991
+49456411
+Trial: 17, Time:35.310s
+Trial 17: Cell 1 (Static) = 0.003980 | Cell 2 (Plastic) = 0.003980
+49538036
+Trial: 18, Time:35.742s
+Trial 18: Cell 1 (Static) = 0.003968 | Cell 2 (Plastic) = 0.003968
+49443338
+Trial: 19, Time:34.766s
+Trial 19: Cell 1 (Static) = 0.003956 | Cell 2 (Plastic) = 0.003956
+50275264
+Trial: 20, Time:35.626s
+Trial 20: Cell 1 (Static) = 0.003944 | Cell 2 (Plastic) = 0.003944
+49588884
+Trial: 21, Time:35.155s
+Trial 21: Cell 1 (Static) = 0.003932 | Cell 2 (Plastic) = 0.003932
+49407009
+Trial: 22, Time:35.641s
+Trial 22: Cell 1 (Static) = 0.003920 | Cell 2 (Plastic) = 0.003920
+50184720
+Trial: 23, Time:35.362s
+Trial 23: Cell 1 (Static) = 0.003909 | Cell 2 (Plastic) = 0.003909
+50428380
+Trial: 24, Time:35.769s
+Trial 24: Cell 1 (Static) = 0.003897 | Cell 2 (Plastic) = 0.003897
+50764121
+Trial: 25, Time:34.878s
+Trial 25: Cell 1 (Static) = 0.003885 | Cell 2 (Plastic) = 0.003885
+51934918
+Trial: 26, Time:36.176s
+Trial 26: Cell 1 (Static) = 0.003874 | Cell 2 (Plastic) = 0.003874
+51759936
+Trial: 27, Time:36.031s
+Trial 27: Cell 1 (Static) = 0.003862 | Cell 2 (Plastic) = 0.003862
+51976010
+Trial: 28, Time:35.641s
+Trial 28: Cell 1 (Static) = 0.003851 | Cell 2 (Plastic) = 0.003851
+51782786
+Trial: 29, Time:35.756s
+Trial 29: Cell 1 (Static) = 0.003839 | Cell 2 (Plastic) = 0.003839
+52394803
+Trial: 30, Time:35.639s
+Trial 30: Cell 1 (Static) = 0.003828 | Cell 2 (Plastic) = 0.003828
+54086513
+Trial: 31, Time:35.826s
+Trial 31: Cell 1 (Static) = 0.003816 | Cell 2 (Plastic) = 0.003816
+53455206
+Trial: 32, Time:35.735s
+Trial 32: Cell 1 (Static) = 0.003805 | Cell 2 (Plastic) = 0.003805
+53523491
+Trial: 33, Time:35.649s
+Trial 33: Cell 1 (Static) = 0.003793 | Cell 2 (Plastic) = 0.003793
+52831546
+Trial: 34, Time:35.563s
+Trial 34: Cell 1 (Static) = 0.003782 | Cell 2 (Plastic) = 0.003782
+53302462
+Trial: 35, Time:36.385s
+Trial 35: Cell 1 (Static) = 0.003771 | Cell 2 (Plastic) = 0.003771
+53625306
+Trial: 36, Time:36.526s
+Trial 36: Cell 1 (Static) = 0.003759 | Cell 2 (Plastic) = 0.003759
+53620635
+Trial: 37, Time:35.177s
+Trial 37: Cell 1 (Static) = 0.003748 | Cell 2 (Plastic) = 0.003748
+54955921
+Trial: 38, Time:113.924s
+Trial 38: Cell 1 (Static) = 0.003737 | Cell 2 (Plastic) = 0.003737
+53903349
+Trial: 39, Time:34.641s
+Trial 39: Cell 1 (Static) = 0.003726 | Cell 2 (Plastic) = 0.003726
+53680586
+Trial: 40, Time:34.559s
+Trial 40: Cell 1 (Static) = 0.003715 | Cell 2 (Plastic) = 0.003715
+54282560
+Trial: 41, Time:35.005s
+Trial 41: Cell 1 (Static) = 0.003703 | Cell 2 (Plastic) = 0.003703
+54007685
+Trial: 42, Time:34.553s
+Trial 42: Cell 1 (Static) = 0.003692 | Cell 2 (Plastic) = 0.003692
+54333330
+Trial: 43, Time:34.098s
+Trial 43: Cell 1 (Static) = 0.003681 | Cell 2 (Plastic) = 0.003681
+54811633
+Trial: 44, Time:34.994s
+Trial 44: Cell 1 (Static) = 0.003670 | Cell 2 (Plastic) = 0.003670
+55056353
+Trial: 45, Time:35.439s
+Trial 45: Cell 1 (Static) = 0.003659 | Cell 2 (Plastic) = 0.003659
+53810265
+Trial: 46, Time:34.685s
+Trial 46: Cell 1 (Static) = 0.003648 | Cell 2 (Plastic) = 0.003648
+53765577
+Trial: 47, Time:34.691s
+Trial 47: Cell 1 (Static) = 0.003638 | Cell 2 (Plastic) = 0.003638
+54818447
+Trial: 48, Time:34.565s
+Trial 48: Cell 1 (Static) = 0.003627 | Cell 2 (Plastic) = 0.003627
+55362458
+Trial: 49, Time:34.046s
+Trial 49: Cell 1 (Static) = 0.003616 | Cell 2 (Plastic) = 0.003616
+55222674
+Trial: 50, Time:35.401s
+Trial 50: Cell 1 (Static) = 0.003605 | Cell 2 (Plastic) = 0.003605
+56895743
+Trial: 51, Time:36.172s
+Trial 51: Cell 1 (Static) = 0.003594 | Cell 2 (Plastic) = 0.003594
+56043010
+Trial: 52, Time:35.626s
+Trial 52: Cell 1 (Static) = 0.003583 | Cell 2 (Plastic) = 0.003583
+55655263
+Trial: 53, Time:35.922s
+Trial 53: Cell 1 (Static) = 0.003573 | Cell 2 (Plastic) = 0.003573
+57067407
+Trial: 54, Time:35.803s
+Trial 54: Cell 1 (Static) = 0.003562 | Cell 2 (Plastic) = 0.003562
+57883514
+Trial: 55, Time:35.236s
+Trial 55: Cell 1 (Static) = 0.003551 | Cell 2 (Plastic) = 0.003551
+58933885
+Trial: 56, Time:36.131s
+Trial 56: Cell 1 (Static) = 0.003541 | Cell 2 (Plastic) = 0.003541
+58336858
+Trial: 57, Time:36.296s
+Trial 57: Cell 1 (Static) = 0.003530 | Cell 2 (Plastic) = 0.003530
+58154446
+Trial: 58, Time:36.044s
+Trial 58: Cell 1 (Static) = 0.003520 | Cell 2 (Plastic) = 0.003520
+59430011
+Trial: 59, Time:36.749s
+Trial 59: Cell 1 (Static) = 0.003509 | Cell 2 (Plastic) = 0.003509
+59768840
+Trial: 60, Time:36.407s
+Trial 60: Cell 1 (Static) = 0.003499 | Cell 2 (Plastic) = 0.003499
+60570048
+Trial: 61, Time:35.815s
+Trial 61: Cell 1 (Static) = 0.003488 | Cell 2 (Plastic) = 0.003488
+58137161
+Trial: 62, Time:36.171s
+Trial 62: Cell 1 (Static) = 0.003478 | Cell 2 (Plastic) = 0.003478
+59239187
+Trial: 63, Time:36.541s
+Trial 63: Cell 1 (Static) = 0.003467 | Cell 2 (Plastic) = 0.003467
+59651537
+Trial: 64, Time:36.310s
+Trial 64: Cell 1 (Static) = 0.003457 | Cell 2 (Plastic) = 0.003457
+59937717
+Trial: 65, Time:36.489s
+Trial 65: Cell 1 (Static) = 0.003447 | Cell 2 (Plastic) = 0.003447
+59588380
+Trial: 66, Time:36.130s
+Trial 66: Cell 1 (Static) = 0.003436 | Cell 2 (Plastic) = 0.003436
+59314411
+Trial: 67, Time:35.321s
+Trial 67: Cell 1 (Static) = 0.003426 | Cell 2 (Plastic) = 0.003426
+58568937
+Trial: 68, Time:35.912s
+Trial 68: Cell 1 (Static) = 0.003416 | Cell 2 (Plastic) = 0.003416
+59850086
+Trial: 69, Time:36.400s
+Trial 69: Cell 1 (Static) = 0.003406 | Cell 2 (Plastic) = 0.003406
+60215565
+Trial: 70, Time:36.235s
+Trial 70: Cell 1 (Static) = 0.003395 | Cell 2 (Plastic) = 0.003395
+58531992
+Trial: 71, Time:36.198s
+Trial 71: Cell 1 (Static) = 0.003385 | Cell 2 (Plastic) = 0.003385
+59638504
+Trial: 72, Time:36.215s
+Trial 72: Cell 1 (Static) = 0.003375 | Cell 2 (Plastic) = 0.003375
+61056810
+Trial: 73, Time:35.678s
+Trial 73: Cell 1 (Static) = 0.003365 | Cell 2 (Plastic) = 0.003365
+60740073
+Trial: 74, Time:36.367s
+Trial 74: Cell 1 (Static) = 0.003355 | Cell 2 (Plastic) = 0.003355
+60534860
+Trial: 75, Time:36.548s
+Trial 75: Cell 1 (Static) = 0.003345 | Cell 2 (Plastic) = 0.003345
+60360824
+Trial: 76, Time:36.273s
+Trial 76: Cell 1 (Static) = 0.003335 | Cell 2 (Plastic) = 0.003335
+59789407
+Trial: 77, Time:36.409s
+Trial 77: Cell 1 (Static) = 0.003325 | Cell 2 (Plastic) = 0.003325
+60184057
+Trial: 78, Time:36.194s

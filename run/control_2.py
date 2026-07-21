@@ -90,7 +90,7 @@ def run_session(filepath_m, filepath_go, filepath_gr, filepath_thr_go, filepath_
     print("GRGO Connectivity Array Loaded.")
 
     # GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
-    GOGO_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogo"
+    GOGO_importPath = "/home/data/einez/connect_arr/R75_C12_PRE.gogo"
     GOGO_connect_arr = connect.read_connect(GOGO_importPath, numGO, 12)
     # GOGO_connect_arr[GOGO_connect_arr == -1] = 0
     print("GOGO Connectivity Array Loaded.")

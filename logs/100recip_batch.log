@@ -1,0 +1,4325 @@
+nohup: ignoring input
+Starting Session: MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+45887369
+Trial: 1, Time:35.392s
+46506500
+Trial: 2, Time:33.678s
+47322439
+Trial: 3, Time:33.405s
+47791681
+Trial: 4, Time:33.831s
+46928503
+Trial: 5, Time:33.670s
+45840469
+Trial: 6, Time:33.595s
+47328468
+Trial: 7, Time:33.789s
+47461364
+Trial: 8, Time:35.420s
+45798111
+Trial: 9, Time:33.298s
+46642745
+Trial: 10, Time:33.549s
+46770113
+Trial: 11, Time:33.897s
+48047666
+Trial: 12, Time:34.126s
+47428925
+Trial: 13, Time:34.010s
+46747183
+Trial: 14, Time:33.685s
+47866732
+Trial: 15, Time:33.819s
+48221962
+Trial: 16, Time:33.744s
+47204777
+Trial: 17, Time:33.845s
+48985072
+Trial: 18, Time:34.034s
+48500867
+Trial: 19, Time:33.992s
+50611361
+Trial: 20, Time:34.504s
+49639452
+Trial: 21, Time:34.091s
+48251323
+Trial: 22, Time:33.614s
+48835766
+Trial: 23, Time:34.071s
+48171950
+Trial: 24, Time:33.794s
+48689903
+Trial: 25, Time:33.931s
+49799661
+Trial: 26, Time:34.012s
+50205630
+Trial: 27, Time:34.424s
+50496300
+Trial: 28, Time:34.223s
+49365043
+Trial: 29, Time:34.460s
+50110549
+Trial: 30, Time:34.457s
+50232700
+Trial: 31, Time:34.475s
+50309997
+Trial: 32, Time:34.274s
+50661553
+Trial: 33, Time:34.235s
+49486338
+Trial: 34, Time:33.881s
+50813182
+Trial: 35, Time:34.745s
+50211819
+Trial: 36, Time:34.477s
+50556246
+Trial: 37, Time:34.618s
+49810314
+Trial: 38, Time:34.249s
+50338986
+Trial: 39, Time:34.186s
+49630926
+Trial: 40, Time:33.848s
+50984389
+Trial: 41, Time:34.505s
+51026281
+Trial: 42, Time:34.382s
+51634056
+Trial: 43, Time:34.660s
+50473407
+Trial: 44, Time:34.086s
+50667973
+Trial: 45, Time:34.020s
+51075576
+Trial: 46, Time:34.132s
+50389359
+Trial: 47, Time:34.506s
+50463968
+Trial: 48, Time:34.239s
+50741669
+Trial: 49, Time:34.223s
+50618974
+Trial: 50, Time:34.262s
+50374049
+Trial: 51, Time:33.982s
+50318711
+Trial: 52, Time:33.855s
+50708095
+Trial: 53, Time:34.400s
+50694285
+Trial: 54, Time:34.203s
+51161561
+Trial: 55, Time:34.453s
+50722464
+Trial: 56, Time:34.311s
+51498540
+Trial: 57, Time:34.298s
+51237635
+Trial: 58, Time:34.103s
+51244443
+Trial: 59, Time:34.633s
+51673440
+Trial: 60, Time:34.816s
+51832764
+Trial: 61, Time:34.709s
+51806827
+Trial: 62, Time:34.907s
+53117052
+Trial: 63, Time:34.608s
+53520219
+Trial: 64, Time:34.566s
+52052056
+Trial: 65, Time:34.609s
+53302211
+Trial: 66, Time:34.860s
+54723100
+Trial: 67, Time:35.192s
+53709072
+Trial: 68, Time:34.799s
+54785433
+Trial: 69, Time:34.659s
+55323629
+Trial: 70, Time:34.746s
+55902889
+Trial: 71, Time:35.281s
+54555913
+Trial: 72, Time:34.746s
+55365194
+Trial: 73, Time:35.066s
+54043543
+Trial: 74, Time:34.665s
+55987071
+Trial: 75, Time:34.968s
+54926221
+Trial: 76, Time:34.714s
+54718281
+Trial: 77, Time:35.090s
+55088447
+Trial: 78, Time:35.142s
+55936127
+Trial: 79, Time:35.352s
+55340646
+Trial: 80, Time:35.118s
+55039567
+Trial: 81, Time:34.736s
+54875624
+Trial: 82, Time:34.746s
+54971371
+Trial: 83, Time:35.091s
+54698173
+Trial: 84, Time:34.984s
+55012541
+Trial: 85, Time:34.934s
+55619778
+Trial: 86, Time:34.841s
+55499421
+Trial: 87, Time:34.705s
+56757355
+Trial: 88, Time:34.939s
+55984490
+Trial: 89, Time:34.937s
+56550812
+Trial: 90, Time:34.957s
+56926287
+Trial: 91, Time:35.374s
+57421394
+Trial: 92, Time:35.652s
+57936313
+Trial: 93, Time:35.393s
+59152707
+Trial: 94, Time:35.675s
+58994508
+Trial: 95, Time:35.952s
+57294342
+Trial: 96, Time:35.334s
+57507994
+Trial: 97, Time:35.536s
+56979686
+Trial: 98, Time:35.241s
+58454219
+Trial: 99, Time:35.147s
+58413332
+Trial: 100, Time:35.307s
+58473410
+Trial: 101, Time:35.590s
+59871714
+Trial: 102, Time:35.912s
+60301194
+Trial: 103, Time:36.213s
+60109727
+Trial: 104, Time:35.916s
+60061658
+Trial: 105, Time:35.376s
+58750342
+Trial: 106, Time:35.327s
+59576073
+Trial: 107, Time:35.833s
+59916077
+Trial: 108, Time:35.666s
+58926899
+Trial: 109, Time:35.568s
+58223112
+Trial: 110, Time:35.295s
+59196540
+Trial: 111, Time:35.096s
+59476716
+Trial: 112, Time:35.325s
+60245518
+Trial: 113, Time:36.005s
+59979527
+Trial: 114, Time:35.850s
+59977420
+Trial: 115, Time:35.993s
+59262741
+Trial: 116, Time:35.649s
+60340462
+Trial: 117, Time:35.308s
+59473144
+Trial: 118, Time:35.286s
+59988396
+Trial: 119, Time:35.793s
+60762058
+Trial: 120, Time:36.161s
+59872067
+Trial: 121, Time:35.787s
+59302535
+Trial: 122, Time:35.389s
+59697155
+Trial: 123, Time:34.954s
+58982407
+Trial: 124, Time:35.043s
+58763750
+Trial: 125, Time:35.111s
+57576377
+Trial: 126, Time:34.312s
+58434858
+Trial: 127, Time:34.520s
+58815341
+Trial: 128, Time:34.682s
+59932307
+Trial: 129, Time:34.347s
+59162313
+Trial: 130, Time:34.669s
+60793442
+Trial: 131, Time:34.931s
+61454178
+Trial: 132, Time:35.344s
+61095497
+Trial: 133, Time:35.054s
+61468171
+Trial: 134, Time:35.409s
+62061731
+Trial: 135, Time:34.581s
+61912928
+Trial: 136, Time:35.185s
+61910501
+Trial: 137, Time:35.174s
+60570619
+Trial: 138, Time:35.123s
+60959224
+Trial: 139, Time:35.069s
+60608702
+Trial: 140, Time:35.035s
+61195030
+Trial: 141, Time:34.562s
+60128254
+Trial: 142, Time:34.882s
+60658451
+Trial: 143, Time:34.932s
+60784016
+Trial: 144, Time:35.087s
+61550931
+Trial: 145, Time:35.242s
+60361879
+Trial: 146, Time:35.108s
+61139236
+Trial: 147, Time:34.475s
+60793595
+Trial: 148, Time:34.847s
+59760808
+Trial: 149, Time:34.483s
+59154403
+Trial: 150, Time:34.437s
+60554735
+Trial: 151, Time:34.865s
+60965122
+Trial: 152, Time:34.963s
+61590558
+Trial: 153, Time:34.298s
+62508745
+Trial: 154, Time:35.129s
+62744182
+Trial: 155, Time:35.184s
+63456554
+Trial: 156, Time:35.333s
+63797252
+Trial: 157, Time:35.370s
+64556822
+Trial: 158, Time:35.614s
+63901434
+Trial: 159, Time:34.565s
+64133740
+Trial: 160, Time:35.512s
+62972267
+Trial: 161, Time:35.141s
+63409146
+Trial: 162, Time:35.296s
+63276646
+Trial: 163, Time:35.350s
+62535792
+Trial: 164, Time:35.379s
+61251954
+Trial: 165, Time:34.285s
+61452819
+Trial: 166, Time:34.822s
+61172551
+Trial: 167, Time:34.625s
+60767354
+Trial: 168, Time:34.676s
+61959183
+Trial: 169, Time:34.923s
+59235653
+Trial: 170, Time:34.383s
+59905883
+Trial: 171, Time:33.849s
+60589862
+Trial: 172, Time:34.622s
+58884227
+Trial: 173, Time:34.044s
+60020737
+Trial: 174, Time:34.521s
+57509172
+Trial: 175, Time:34.034s
+58665263
+Trial: 176, Time:34.255s
+59295029
+Trial: 177, Time:33.721s
+60058310
+Trial: 178, Time:34.306s
+60107413
+Trial: 179, Time:34.230s
+60176846
+Trial: 180, Time:34.316s
+60689638
+Trial: 181, Time:34.453s
+60749244
+Trial: 182, Time:34.445s
+61235963
+Trial: 183, Time:33.819s
+60796849
+Trial: 184, Time:34.504s
+60355120
+Trial: 185, Time:34.421s
+61317644
+Trial: 186, Time:34.668s
+64189087
+Trial: 187, Time:35.257s
+63940685
+Trial: 188, Time:35.216s
+63125260
+Trial: 189, Time:34.169s
+63444157
+Trial: 190, Time:35.128s
+63170910
+Trial: 191, Time:35.016s
+61484090
+Trial: 192, Time:34.757s
+61416381
+Trial: 193, Time:34.672s
+62722900
+Trial: 194, Time:34.888s
+63951494
+Trial: 195, Time:34.346s
+63501200
+Trial: 196, Time:35.075s
+63046262
+Trial: 197, Time:34.808s
+64466603
+Trial: 198, Time:35.300s
+63519950
+Trial: 199, Time:35.046s
+66328963
+Trial: 200, Time:35.577s
+65306067
+Trial: 201, Time:34.284s
+64447471
+Trial: 202, Time:35.116s
+66002279
+Trial: 203, Time:35.475s
+65572113
+Trial: 204, Time:35.265s
+64718413
+Trial: 205, Time:35.090s
+66092890
+Trial: 206, Time:35.454s
+62920588
+Trial: 207, Time:33.979s
+62633200
+Trial: 208, Time:34.585s
+61678042
+Trial: 209, Time:34.306s
+61656206
+Trial: 210, Time:34.383s
+63244866
+Trial: 211, Time:34.735s
+61874100
+Trial: 212, Time:34.598s
+63692561
+Trial: 213, Time:34.053s
+62824623
+Trial: 214, Time:34.594s
+62597867
+Trial: 215, Time:34.600s
+62901176
+Trial: 216, Time:34.669s
+62206424
+Trial: 217, Time:34.463s
+62856765
+Trial: 218, Time:34.736s
+63992433
+Trial: 219, Time:34.653s
+63867817
+Trial: 220, Time:35.076s
+65895192
+Trial: 221, Time:35.769s
+66242710
+Trial: 222, Time:35.749s
+67161953
+Trial: 223, Time:36.102s
+67914502
+Trial: 224, Time:35.976s
+65288848
+Trial: 225, Time:34.711s
+65175955
+Trial: 226, Time:35.014s
+64898781
+Trial: 227, Time:36.023s
+67035742
+Trial: 228, Time:36.046s
+64954597
+Trial: 229, Time:35.920s
+65485301
+Trial: 230, Time:35.571s
+64885638
+Trial: 231, Time:34.573s
+66734330
+Trial: 232, Time:35.449s
+67845944
+Trial: 233, Time:36.050s
+69977068
+Trial: 234, Time:36.385s
+68419972
+Trial: 235, Time:36.148s
+67485006
+Trial: 236, Time:35.832s
+67809131
+Trial: 237, Time:34.925s
+64754851
+Trial: 238, Time:34.931s
+64407683
+Trial: 239, Time:35.150s
+64549750
+Trial: 240, Time:35.076s
+66229866
+Trial: 241, Time:35.465s
+65713789
+Trial: 242, Time:35.295s
+66095402
+Trial: 243, Time:34.462s
+64952517
+Trial: 244, Time:34.941s
+66949408
+Trial: 245, Time:35.585s
+67658328
+Trial: 246, Time:35.670s
+67359990
+Trial: 247, Time:35.724s
+68398434
+Trial: 248, Time:35.869s
+68717936
+Trial: 249, Time:35.045s
+68229990
+Trial: 250, Time:35.830s
+70082180
+Trial: 251, Time:37.114s
+69645915
+Trial: 252, Time:36.161s
+67349629
+Trial: 253, Time:36.403s
+68523246
+Trial: 254, Time:35.891s
+69284080
+Trial: 255, Time:35.034s
+68667672
+Trial: 256, Time:35.591s
+70378238
+Trial: 257, Time:36.289s
+71163434
+Trial: 258, Time:36.521s
+71899566
+Trial: 259, Time:36.560s
+70559574
+Trial: 260, Time:36.254s
+68315946
+Trial: 261, Time:34.811s
+68497404
+Trial: 262, Time:35.550s
+66170181
+Trial: 263, Time:35.769s
+67674040
+Trial: 264, Time:35.900s
+68450877
+Trial: 265, Time:36.248s
+69048342
+Trial: 266, Time:36.078s
+70033825
+Trial: 267, Time:35.134s
+71522413
+Trial: 268, Time:36.266s
+70745973
+Trial: 269, Time:36.741s
+69362647
+Trial: 270, Time:36.208s
+70077808
+Trial: 271, Time:36.442s
+72356459
+Trial: 272, Time:36.467s
+70449298
+Trial: 273, Time:35.030s
+71666779
+Trial: 274, Time:36.127s
+70643516
+Trial: 275, Time:36.629s
+71097321
+Trial: 276, Time:36.448s
+70254297
+Trial: 277, Time:36.316s
+69291416
+Trial: 278, Time:35.869s
+70199161
+Trial: 279, Time:35.247s
+69974205
+Trial: 280, Time:35.664s
+70762347
+Trial: 281, Time:36.151s
+70940059
+Trial: 282, Time:36.079s
+71775025
+Trial: 283, Time:36.323s
+71896750
+Trial: 284, Time:36.365s
+71681663
+Trial: 285, Time:35.186s
+71368525
+Trial: 286, Time:35.809s
+71550262
+Trial: 287, Time:36.517s
+72551766
+Trial: 288, Time:36.383s
+72450111
+Trial: 289, Time:36.816s
+73590294
+Trial: 290, Time:36.689s
+72993190
+Trial: 291, Time:35.462s
+73200854
+Trial: 292, Time:36.232s
+73618305
+Trial: 293, Time:37.272s
+73003489
+Trial: 294, Time:36.488s
+71215520
+Trial: 295, Time:36.801s
+72293682
+Trial: 296, Time:36.463s
+73241577
+Trial: 297, Time:35.570s
+74215892
+Trial: 298, Time:36.437s
+73387703
+Trial: 299, Time:37.138s
+72991946
+Trial: 300, Time:36.358s
+72266450
+Trial: 301, Time:36.697s
+72802007
+Trial: 302, Time:36.433s
+72704513
+Trial: 303, Time:35.334s
+73967287
+Trial: 304, Time:36.200s
+74010405
+Trial: 305, Time:36.992s
+73510171
+Trial: 306, Time:36.692s
+75065054
+Trial: 307, Time:36.842s
+75971048
+Trial: 308, Time:36.925s
+75485116
+Trial: 309, Time:35.695s
+77148336
+Trial: 310, Time:36.788s
+76108574
+Trial: 311, Time:36.560s
+76281780
+Trial: 312, Time:36.738s
+77249472
+Trial: 313, Time:36.749s
+78594005
+Trial: 314, Time:37.378s
+78033775
+Trial: 315, Time:35.769s
+76090829
+Trial: 316, Time:36.647s
+76973024
+Trial: 317, Time:36.716s
+75260144
+Trial: 318, Time:36.746s
+74069470
+Trial: 319, Time:36.148s
+73040362
+Trial: 320, Time:36.041s
+72848903
+Trial: 321, Time:35.109s
+72128859
+Trial: 322, Time:35.731s
+72651510
+Trial: 323, Time:35.904s
+71989078
+Trial: 324, Time:35.821s
+72681771
+Trial: 325, Time:35.747s
+72677219
+Trial: 326, Time:35.953s
+73355939
+Trial: 327, Time:35.313s
+73574573
+Trial: 328, Time:36.170s
+75120065
+Trial: 329, Time:37.216s
+74315844
+Trial: 330, Time:36.504s
+76502035
+Trial: 331, Time:37.503s
+75678006
+Trial: 332, Time:36.614s
+74532617
+Trial: 333, Time:35.286s
+74526680
+Trial: 334, Time:36.031s
+74120521
+Trial: 335, Time:36.796s
+73955588
+Trial: 336, Time:36.379s
+72593479
+Trial: 337, Time:36.560s
+74413776
+Trial: 338, Time:36.473s
+74376913
+Trial: 339, Time:34.946s
+74609515
+Trial: 340, Time:36.126s
+74896890
+Trial: 341, Time:36.577s
+74234170
+Trial: 342, Time:36.506s
+74821143
+Trial: 343, Time:36.741s
+76809846
+Trial: 344, Time:36.611s
+76053084
+Trial: 345, Time:35.390s
+77549217
+Trial: 346, Time:36.837s
+77019162
+Trial: 347, Time:37.609s
+75969058
+Trial: 348, Time:36.659s
+76160881
+Trial: 349, Time:37.141s
+78428989
+Trial: 350, Time:37.064s
+78893139
+Trial: 351, Time:36.001s
+79562671
+Trial: 352, Time:37.197s
+79453205
+Trial: 353, Time:38.325s
+80383336
+Trial: 354, Time:37.633s
+79657344
+Trial: 355, Time:38.192s
+79136397
+Trial: 356, Time:37.248s
+79158324
+Trial: 357, Time:35.888s
+78888183
+Trial: 358, Time:36.745s
+78534005
+Trial: 359, Time:37.938s
+78863062
+Trial: 360, Time:37.539s
+76220766
+Trial: 361, Time:37.415s
+77496174
+Trial: 362, Time:36.944s
+78995861
+Trial: 363, Time:36.081s
+77156495
+Trial: 364, Time:36.490s
+78669124
+Trial: 365, Time:37.888s
+80326104
+Trial: 366, Time:37.598s
+80501814
+Trial: 367, Time:38.011s
+80364369
+Trial: 368, Time:37.291s
+78948267
+Trial: 369, Time:36.115s
+80245166
+Trial: 370, Time:37.110s
+79741620
+Trial: 371, Time:38.270s
+78097997
+Trial: 372, Time:37.098s
+76760709
+Trial: 373, Time:37.538s
+77250856
+Trial: 374, Time:36.812s
+78017400
+Trial: 375, Time:35.820s
+78913270
+Trial: 376, Time:37.098s
+79766226
+Trial: 377, Time:37.568s
+80921317
+Trial: 378, Time:37.658s
+78750291
+Trial: 379, Time:37.486s
+77874140
+Trial: 380, Time:36.748s
+78340040
+Trial: 381, Time:35.495s
+80176837
+Trial: 382, Time:36.827s
+81947442
+Trial: 383, Time:38.114s
+82359058
+Trial: 384, Time:37.607s
+82833480
+Trial: 385, Time:38.019s
+81919448
+Trial: 386, Time:37.523s
+83735450
+Trial: 387, Time:36.864s
+84906277
+Trial: 388, Time:37.706s
+81550769
+Trial: 389, Time:37.887s
+80547071
+Trial: 390, Time:37.511s
+80900451
+Trial: 391, Time:37.820s
+81981138
+Trial: 392, Time:37.526s
+80009288
+Trial: 393, Time:36.012s
+80563707
+Trial: 394, Time:37.006s
+81994495
+Trial: 395, Time:38.153s
+82758699
+Trial: 396, Time:37.469s
+83481495
+Trial: 397, Time:38.022s
+83640529
+Trial: 398, Time:37.666s
+83354771
+Trial: 399, Time:36.216s
+83628671
+Trial: 400, Time:37.463s
+81964751
+Trial: 401, Time:38.175s
+82279166
+Trial: 402, Time:37.415s
+84078743
+Trial: 403, Time:38.099s
+81909637
+Trial: 404, Time:37.191s
+81468881
+Trial: 405, Time:35.690s
+84780214
+Trial: 406, Time:37.620s
+83366655
+Trial: 407, Time:37.817s
+83406648
+Trial: 408, Time:37.432s
+83103896
+Trial: 409, Time:37.489s
+82855540
+Trial: 410, Time:37.346s
+85713426
+Trial: 411, Time:36.866s
+82664201
+Trial: 412, Time:37.204s
+85118746
+Trial: 413, Time:38.395s
+84002164
+Trial: 414, Time:37.497s
+83377686
+Trial: 415, Time:37.740s
+83490884
+Trial: 416, Time:37.493s
+84080248
+Trial: 417, Time:36.469s
+84599492
+Trial: 418, Time:37.259s
+82813377
+Trial: 419, Time:37.706s
+82880648
+Trial: 420, Time:37.264s
+80273135
+Trial: 421, Time:37.324s
+82993773
+Trial: 422, Time:37.335s
+82961626
+Trial: 423, Time:36.039s
+83113853
+Trial: 424, Time:36.920s
+84246757
+Trial: 425, Time:37.895s
+84423342
+Trial: 426, Time:37.652s
+82609426
+Trial: 427, Time:37.741s
+84946016
+Trial: 428, Time:37.545s
+84544269
+Trial: 429, Time:36.489s
+86264607
+Trial: 430, Time:37.434s
+86287630
+Trial: 431, Time:38.372s
+85598839
+Trial: 432, Time:37.620s
+84553050
+Trial: 433, Time:37.882s
+86456116
+Trial: 434, Time:37.710s
+83736844
+Trial: 435, Time:36.348s
+83552429
+Trial: 436, Time:37.264s
+83331027
+Trial: 437, Time:38.403s
+83173976
+Trial: 438, Time:37.526s
+85855101
+Trial: 439, Time:38.245s
+85484030
+Trial: 440, Time:37.961s
+85277623
+Trial: 441, Time:36.643s
+87371904
+Trial: 442, Time:37.412s
+87658714
+Trial: 443, Time:38.420s
+85959808
+Trial: 444, Time:37.725s
+85572036
+Trial: 445, Time:37.330s
+85028403
+Trial: 446, Time:37.290s
+85818696
+Trial: 447, Time:36.068s
+87304045
+Trial: 448, Time:37.081s
+85593903
+Trial: 449, Time:37.619s
+85888598
+Trial: 450, Time:37.272s
+87404830
+Trial: 451, Time:37.383s
+87703744
+Trial: 452, Time:37.349s
+89696737
+Trial: 453, Time:36.774s
+89662746
+Trial: 454, Time:37.252s
+90054064
+Trial: 455, Time:38.452s
+88300982
+Trial: 456, Time:37.472s
+88202085
+Trial: 457, Time:37.615s
+89578560
+Trial: 458, Time:37.587s
+87386895
+Trial: 459, Time:36.586s
+88726066
+Trial: 460, Time:37.375s
+89782822
+Trial: 461, Time:38.472s
+89945512
+Trial: 462, Time:37.659s
+88795457
+Trial: 463, Time:37.405s
+90131499
+Trial: 464, Time:37.537s
+90212735
+Trial: 465, Time:36.824s
+90175108
+Trial: 466, Time:37.190s
+92422512
+Trial: 467, Time:38.777s
+90379481
+Trial: 468, Time:37.460s
+90702892
+Trial: 469, Time:37.558s
+90797294
+Trial: 470, Time:37.646s
+88489730
+Trial: 471, Time:36.680s
+89054274
+Trial: 472, Time:36.992s
+88669012
+Trial: 473, Time:38.476s
+88071438
+Trial: 474, Time:37.454s
+88050026
+Trial: 475, Time:37.441s
+86031178
+Trial: 476, Time:37.379s
+86729911
+Trial: 477, Time:36.177s
+86972707
+Trial: 478, Time:37.043s
+86934632
+Trial: 479, Time:37.761s
+87202663
+Trial: 480, Time:37.276s
+86296217
+Trial: 481, Time:37.140s
+88170637
+Trial: 482, Time:37.165s
+86473733
+Trial: 483, Time:35.936s
+86268628
+Trial: 484, Time:36.755s
+85019046
+Trial: 485, Time:37.319s
+86811077
+Trial: 486, Time:37.143s
+87395854
+Trial: 487, Time:37.318s
+86442073
+Trial: 488, Time:37.101s
+87156555
+Trial: 489, Time:36.058s
+88021028
+Trial: 490, Time:36.948s
+90043855
+Trial: 491, Time:38.859s
+90038237
+Trial: 492, Time:37.788s
+92043723
+Trial: 493, Time:37.657s
+91392064
+Trial: 494, Time:37.589s
+88884170
+Trial: 495, Time:36.611s
+90676307
+Trial: 496, Time:37.224s
+89952778
+Trial: 497, Time:38.693s
+91395073
+Trial: 498, Time:37.199s
+92741905
+Trial: 499, Time:37.878s
+91450726
+Trial: 500, Time:37.321s
+90682428
+Trial: 501, Time:37.000s
+91228746
+Trial: 502, Time:36.951s
+91206402
+Trial: 503, Time:38.924s
+91098003
+Trial: 504, Time:37.242s
+91613645
+Trial: 505, Time:37.433s
+90455582
+Trial: 506, Time:37.218s
+92786585
+Trial: 507, Time:36.707s
+93036484
+Trial: 508, Time:37.129s
+93429674
+Trial: 509, Time:39.408s
+93430616
+Trial: 510, Time:37.473s
+93901001
+Trial: 511, Time:37.686s
+93533197
+Trial: 512, Time:37.460s
+93663753
+Trial: 513, Time:37.443s
+96173408
+Trial: 514, Time:37.477s
+94663047
+Trial: 515, Time:39.189s
+92005175
+Trial: 516, Time:37.199s
+93004882
+Trial: 517, Time:37.559s
+94505922
+Trial: 518, Time:37.293s
+95618034
+Trial: 519, Time:37.321s
+94792180
+Trial: 520, Time:37.205s
+93912366
+Trial: 521, Time:39.384s
+93142353
+Trial: 522, Time:37.245s
+94845985
+Trial: 523, Time:38.383s
+93805214
+Trial: 524, Time:37.478s
+95551245
+Trial: 525, Time:37.333s
+97169637
+Trial: 526, Time:37.304s
+96869592
+Trial: 527, Time:39.802s
+99743271
+Trial: 528, Time:37.679s
+98212648
+Trial: 529, Time:37.822s
+97851914
+Trial: 530, Time:37.580s
+98027559
+Trial: 531, Time:38.068s
+98857392
+Trial: 532, Time:38.006s
+98122368
+Trial: 533, Time:39.823s
+96271040
+Trial: 534, Time:37.728s
+95552471
+Trial: 535, Time:37.603s
+94330574
+Trial: 536, Time:37.245s
+95344569
+Trial: 537, Time:37.050s
+95054373
+Trial: 538, Time:36.914s
+94713686
+Trial: 539, Time:39.202s
+97006872
+Trial: 540, Time:37.357s
+95835752
+Trial: 541, Time:37.936s
+97586854
+Trial: 542, Time:37.245s
+97582621
+Trial: 543, Time:37.367s
+97950105
+Trial: 544, Time:37.177s
+97677822
+Trial: 545, Time:39.107s
+96017940
+Trial: 546, Time:37.283s
+97359459
+Trial: 547, Time:37.647s
+100863829
+Trial: 548, Time:37.751s
+97981149
+Trial: 549, Time:37.726s
+97461180
+Trial: 550, Time:37.195s
+98323689
+Trial: 551, Time:39.219s
+96647550
+Trial: 552, Time:37.301s
+95333263
+Trial: 553, Time:37.590s
+95400590
+Trial: 554, Time:37.116s
+97123581
+Trial: 555, Time:37.238s
+96603723
+Trial: 556, Time:37.004s
+96628779
+Trial: 557, Time:38.843s
+98557730
+Trial: 558, Time:37.255s
+98815165
+Trial: 559, Time:37.641s
+100888040
+Trial: 560, Time:37.570s
+99731595
+Trial: 561, Time:37.443s
+101256248
+Trial: 562, Time:37.385s
+99432101
+Trial: 563, Time:39.229s
+103957289
+Trial: 564, Time:37.895s
+102712164
+Trial: 565, Time:38.046s
+101571793
+Trial: 566, Time:37.576s
+101298433
+Trial: 567, Time:37.657s
+104507156
+Trial: 568, Time:37.981s
+103073118
+Trial: 569, Time:39.856s
+103217227
+Trial: 570, Time:37.897s
+102763661
+Trial: 571, Time:38.116s
+101471095
+Trial: 572, Time:37.700s
+103689670
+Trial: 573, Time:37.994s
+101704969
+Trial: 574, Time:37.386s
+102317156
+Trial: 575, Time:40.204s
+104486598
+Trial: 576, Time:38.053s
+104272570
+Trial: 577, Time:38.321s
+103827433
+Trial: 578, Time:37.854s
+103547219
+Trial: 579, Time:38.139s
+103035963
+Trial: 580, Time:37.696s
+105292516
+Trial: 581, Time:40.134s
+103597179
+Trial: 582, Time:38.374s
+101787352
+Trial: 583, Time:38.026s
+104236579
+Trial: 584, Time:38.308s
+102944934
+Trial: 585, Time:38.265s
+101306462
+Trial: 586, Time:38.367s
+102699650
+Trial: 587, Time:40.004s
+101447919
+Trial: 588, Time:38.212s
+103195915
+Trial: 589, Time:38.050s
+102952617
+Trial: 590, Time:37.842s
+103725930
+Trial: 591, Time:38.243s
+103272972
+Trial: 592, Time:37.989s
+104687233
+Trial: 593, Time:40.143s
+102764960
+Trial: 594, Time:37.967s
+102119513
+Trial: 595, Time:38.325s
+101840845
+Trial: 596, Time:38.792s
+100444858
+Trial: 597, Time:38.296s
+100751162
+Trial: 598, Time:38.356s
+100685576
+Trial: 599, Time:40.537s
+101323444
+Trial: 600, Time:38.462s
+101066348
+Trial: 601, Time:39.157s
+100645607
+Trial: 602, Time:38.676s
+100275028
+Trial: 603, Time:39.341s
+102655063
+Trial: 604, Time:38.337s
+100776041
+Trial: 605, Time:40.378s
+102358835
+Trial: 606, Time:38.992s
+101345819
+Trial: 607, Time:38.754s
+99986957
+Trial: 608, Time:38.641s
+99327546
+Trial: 609, Time:38.420s
+99159857
+Trial: 610, Time:38.113s
+101615251
+Trial: 611, Time:40.249s
+101638716
+Trial: 612, Time:38.326s
+103711179
+Trial: 613, Time:38.378s
+104201919
+Trial: 614, Time:38.006s
+104595469
+Trial: 615, Time:38.399s
+106025406
+Trial: 616, Time:37.878s
+106546237
+Trial: 617, Time:40.115s
+106350450
+Trial: 618, Time:38.021s
+105053356
+Trial: 619, Time:38.918s
+104931068
+Trial: 620, Time:38.394s
+104809213
+Trial: 621, Time:38.781s
+103802401
+Trial: 622, Time:38.474s
+104760315
+Trial: 623, Time:40.776s
+105005850
+Trial: 624, Time:38.791s
+105104172
+Trial: 625, Time:38.690s
+104211925
+Trial: 626, Time:38.813s
+103998832
+Trial: 627, Time:38.722s
+101929438
+Trial: 628, Time:38.595s
+100650982
+Trial: 629, Time:40.691s
+103339998
+Trial: 630, Time:38.624s
+103769705
+Trial: 631, Time:38.924s
+101439358
+Trial: 632, Time:38.743s
+104006302
+Trial: 633, Time:39.138s
+101421944
+Trial: 634, Time:38.484s
+103930161
+Trial: 635, Time:40.668s
+105047904
+Trial: 636, Time:38.648s
+105831559
+Trial: 637, Time:39.092s
+106312050
+Trial: 638, Time:38.254s
+105984312
+Trial: 639, Time:38.357s
+101956569
+Trial: 640, Time:38.735s
+101815697
+Trial: 641, Time:41.525s
+101529022
+Trial: 642, Time:38.837s
+104156028
+Trial: 643, Time:39.469s
+103269393
+Trial: 644, Time:39.090s
+102613625
+Trial: 645, Time:39.211s
+104632821
+Trial: 646, Time:38.866s
+105037545
+Trial: 647, Time:40.763s
+102510034
+Trial: 648, Time:38.995s
+99900546
+Trial: 649, Time:38.963s
+102928275
+Trial: 650, Time:38.863s
+102032715
+Trial: 651, Time:39.062s
+100473403
+Trial: 652, Time:38.694s
+100794441
+Trial: 653, Time:40.931s
+100540963
+Trial: 654, Time:38.900s
+102789944
+Trial: 655, Time:39.287s
+101501969
+Trial: 656, Time:38.902s
+103426896
+Trial: 657, Time:39.315s
+105624763
+Trial: 658, Time:39.103s
+106628770
+Trial: 659, Time:40.559s
+106858922
+Trial: 660, Time:38.864s
+104739819
+Trial: 661, Time:39.522s
+105510637
+Trial: 662, Time:39.320s
+107002407
+Trial: 663, Time:39.078s
+107210030
+Trial: 664, Time:38.719s
+106551073
+Trial: 665, Time:41.069s
+106590769
+Trial: 666, Time:38.936s
+105858085
+Trial: 667, Time:39.307s
+104999741
+Trial: 668, Time:39.086s
+104711419
+Trial: 669, Time:39.146s
+107331893
+Trial: 670, Time:38.604s
+107318410
+Trial: 671, Time:40.751s
+106887279
+Trial: 672, Time:38.675s
+104403432
+Trial: 673, Time:39.508s
+104335811
+Trial: 674, Time:39.292s
+104176431
+Trial: 675, Time:39.472s
+106234900
+Trial: 676, Time:39.518s
+105877627
+Trial: 677, Time:41.364s
+105569462
+Trial: 678, Time:39.705s
+108337662
+Trial: 679, Time:39.287s
+107455545
+Trial: 680, Time:39.091s
+105476705
+Trial: 681, Time:39.541s
+106155549
+Trial: 682, Time:39.074s
+108835807
+Trial: 683, Time:41.072s
+108617978
+Trial: 684, Time:38.890s
+109099189
+Trial: 685, Time:39.945s
+107567953
+Trial: 686, Time:39.173s
+108249104
+Trial: 687, Time:39.582s
+108207924
+Trial: 688, Time:39.315s
+109583111
+Trial: 689, Time:41.166s
+110017076
+Trial: 690, Time:39.326s
+111548776
+Trial: 691, Time:39.608s
+110841093
+Trial: 692, Time:39.347s
+111043857
+Trial: 693, Time:39.609s
+106621444
+Trial: 694, Time:39.440s
+107381160
+Trial: 695, Time:41.416s
+105563547
+Trial: 696, Time:39.307s
+107378533
+Trial: 697, Time:39.945s
+109653531
+Trial: 698, Time:39.604s
+109202527
+Trial: 699, Time:39.613s
+109117034
+Trial: 700, Time:39.307s
+108916826
+Trial: 701, Time:41.208s
+108407232
+Trial: 702, Time:39.381s
+108404423
+Trial: 703, Time:39.446s
+111054670
+Trial: 704, Time:39.369s
+111457893
+Trial: 705, Time:39.336s
+109268144
+Trial: 706, Time:39.324s
+108809608
+Trial: 707, Time:40.994s
+109888827
+Trial: 708, Time:39.546s
+112157175
+Trial: 709, Time:39.682s
+113071068
+Trial: 710, Time:39.180s
+113805821
+Trial: 711, Time:39.507s
+112675629
+Trial: 712, Time:39.616s
+112022795
+Trial: 713, Time:42.143s
+112224202
+Trial: 714, Time:40.397s
+112866791
+Trial: 715, Time:40.099s
+110373735
+Trial: 716, Time:39.918s
+110151277
+Trial: 717, Time:40.263s
+108290067
+Trial: 718, Time:39.641s
+109823542
+Trial: 719, Time:41.721s
+112680482
+Trial: 720, Time:40.287s
+113206005
+Trial: 721, Time:40.314s
+114803724
+Trial: 722, Time:40.228s
+114135224
+Trial: 723, Time:39.654s
+113254156
+Trial: 724, Time:39.590s
+112711425
+Trial: 725, Time:41.542s
+113542675
+Trial: 726, Time:39.698s
+112618683
+Trial: 727, Time:40.334s
+113058461
+Trial: 728, Time:40.002s
+113696262
+Trial: 729, Time:40.099s
+114222233
+Trial: 730, Time:40.132s
+115061185
+Trial: 731, Time:41.374s
+114186447
+Trial: 732, Time:40.001s
+113760276
+Trial: 733, Time:40.726s
+116367609
+Trial: 734, Time:39.697s
+115498669
+Trial: 735, Time:39.785s
+115176393
+Trial: 736, Time:40.024s
+116754602
+Trial: 737, Time:42.126s
+115855788
+Trial: 738, Time:40.374s
+116588150
+Trial: 739, Time:41.203s
+114751783
+Trial: 740, Time:40.880s
+117243930
+Trial: 741, Time:40.670s
+116938941
+Trial: 742, Time:40.142s
+118086711
+Trial: 743, Time:41.997s
+116761055
+Trial: 744, Time:40.455s
+114582049
+Trial: 745, Time:41.022s
+115260455
+Trial: 746, Time:40.607s
+116682830
+Trial: 747, Time:40.259s
+117462444
+Trial: 748, Time:40.260s
+115720155
+Trial: 749, Time:42.340s
+114182367
+Trial: 750, Time:40.748s
+116186381
+Trial: 751, Time:41.253s
+114891298
+Trial: 752, Time:40.798s
+114061799
+Trial: 753, Time:40.598s
+109698628
+Trial: 754, Time:40.227s
+108111013
+Trial: 755, Time:42.044s
+105249220
+Trial: 756, Time:40.112s
+107165565
+Trial: 757, Time:40.533s
+108597909
+Trial: 758, Time:40.280s
+106953339
+Trial: 759, Time:40.047s
+108686543
+Trial: 760, Time:40.077s
+106100893
+Trial: 761, Time:41.686s
+107411210
+Trial: 762, Time:40.176s
+107705622
+Trial: 763, Time:40.405s
+105267245
+Trial: 764, Time:39.754s
+105894101
+Trial: 765, Time:40.007s
+105335935
+Trial: 766, Time:39.568s
+108235003
+Trial: 767, Time:42.008s
+111159696
+Trial: 768, Time:40.429s
+108274448
+Trial: 769, Time:40.468s
+108303180
+Trial: 770, Time:40.074s
+110924275
+Trial: 771, Time:40.178s
+106576860
+Trial: 772, Time:39.460s
+110064510
+Trial: 773, Time:41.952s
+112089453
+Trial: 774, Time:40.378s
+111180709
+Trial: 775, Time:40.783s
+109735401
+Trial: 776, Time:40.217s
+109682889
+Trial: 777, Time:40.213s
+112559904
+Trial: 778, Time:40.911s
+109813220
+Trial: 779, Time:41.839s
+113246926
+Trial: 780, Time:40.336s
+110680700
+Trial: 781, Time:40.686s
+109556353
+Trial: 782, Time:40.406s
+107446543
+Trial: 783, Time:40.730s
+110230504
+Trial: 784, Time:40.542s
+111289157
+Trial: 785, Time:42.579s
+109623304
+Trial: 786, Time:40.202s
+109257694
+Trial: 787, Time:40.769s
+111364766
+Trial: 788, Time:40.343s
+111382306
+Trial: 789, Time:40.493s
+113775011
+Trial: 790, Time:40.093s
+114700279
+Trial: 791, Time:41.751s
+112511051
+Trial: 792, Time:40.197s
+110950140
+Trial: 793, Time:40.514s
+110810003
+Trial: 794, Time:40.056s
+111360485
+Trial: 795, Time:40.167s
+107326635
+Trial: 796, Time:39.693s
+105925490
+Trial: 797, Time:41.515s
+111421911
+Trial: 798, Time:39.935s
+112871274
+Trial: 799, Time:40.438s
+111024618
+Trial: 800, Time:39.994s
+112001319
+Trial: 801, Time:40.183s
+112439621
+Trial: 802, Time:39.636s
+113261865
+Trial: 803, Time:41.846s
+110345038
+Trial: 804, Time:39.905s
+108723303
+Trial: 805, Time:40.877s
+108255543
+Trial: 806, Time:39.864s
+109118594
+Trial: 807, Time:40.276s
+111859841
+Trial: 808, Time:40.092s
+110325832
+Trial: 809, Time:41.629s
+111926872
+Trial: 810, Time:40.249s
+110999418
+Trial: 811, Time:40.602s
+111618675
+Trial: 812, Time:40.749s
+109129718
+Trial: 813, Time:40.218s
+111265338
+Trial: 814, Time:39.884s
+108661856
+Trial: 815, Time:42.058s
+109021392
+Trial: 816, Time:40.171s
+108635797
+Trial: 817, Time:40.684s
+111918519
+Trial: 818, Time:40.540s
+110158061
+Trial: 819, Time:40.271s
+111669002
+Trial: 820, Time:39.878s
+110466682
+Trial: 821, Time:41.966s
+112544630
+Trial: 822, Time:40.250s
+112261883
+Trial: 823, Time:40.911s
+113722601
+Trial: 824, Time:40.264s
+111305430
+Trial: 825, Time:40.255s
+112656964
+Trial: 826, Time:41.060s
+114422947
+Trial: 827, Time:42.096s
+114790305
+Trial: 828, Time:40.206s
+116144390
+Trial: 829, Time:40.822s
+115977425
+Trial: 830, Time:40.161s
+114922931
+Trial: 831, Time:40.326s
+115713127
+Trial: 832, Time:40.042s
+113459738
+Trial: 833, Time:42.088s
+110189345
+Trial: 834, Time:40.224s
+113704360
+Trial: 835, Time:41.183s
+114180465
+Trial: 836, Time:40.715s
+114245613
+Trial: 837, Time:40.545s
+113429242
+Trial: 838, Time:40.470s
+112688910
+Trial: 839, Time:42.284s
+110773629
+Trial: 840, Time:40.390s
+111861812
+Trial: 841, Time:40.878s
+111190736
+Trial: 842, Time:40.292s
+108738233
+Trial: 843, Time:40.226s
+109520707
+Trial: 844, Time:39.861s
+108310369
+Trial: 845, Time:41.687s
+109800823
+Trial: 846, Time:40.286s
+112592339
+Trial: 847, Time:40.534s
+111671175
+Trial: 848, Time:40.333s
+112032895
+Trial: 849, Time:40.465s
+111588825
+Trial: 850, Time:40.311s
+110729290
+Trial: 851, Time:41.873s
+110268977
+Trial: 852, Time:40.014s
+109465834
+Trial: 853, Time:40.231s
+112417613
+Trial: 854, Time:40.155s
+112839304
+Trial: 855, Time:40.506s
+111887320
+Trial: 856, Time:40.106s
+111927136
+Trial: 857, Time:42.173s
+112155114
+Trial: 858, Time:40.240s
+113026142
+Trial: 859, Time:40.548s
+112052504
+Trial: 860, Time:40.131s
+111291825
+Trial: 861, Time:40.616s
+109605777
+Trial: 862, Time:40.055s
+107028051
+Trial: 863, Time:41.750s
+105458984
+Trial: 864, Time:39.675s
+103105183
+Trial: 865, Time:39.544s
+104503932
+Trial: 866, Time:39.427s
+104303941
+Trial: 867, Time:39.621s
+102622536
+Trial: 868, Time:39.123s
+104267674
+Trial: 869, Time:41.125s
+104219503
+Trial: 870, Time:39.471s
+109371312
+Trial: 871, Time:40.540s
+109028689
+Trial: 872, Time:39.811s
+109893863
+Trial: 873, Time:40.146s
+107001711
+Trial: 874, Time:39.803s
+106687542
+Trial: 875, Time:41.770s
+106340108
+Trial: 876, Time:39.837s
+107342407
+Trial: 877, Time:39.776s
+107132706
+Trial: 878, Time:39.460s
+106126827
+Trial: 879, Time:39.550s
+103920274
+Trial: 880, Time:39.177s
+106162684
+Trial: 881, Time:41.758s
+106050538
+Trial: 882, Time:39.445s
+105543689
+Trial: 883, Time:39.791s
+102240802
+Trial: 884, Time:39.307s
+103014554
+Trial: 885, Time:39.465s
+104796156
+Trial: 886, Time:39.233s
+104123780
+Trial: 887, Time:41.315s
+106204949
+Trial: 888, Time:39.659s
+107244721
+Trial: 889, Time:39.895s
+104906965
+Trial: 890, Time:39.398s
+109982973
+Trial: 891, Time:40.021s
+110686102
+Trial: 892, Time:39.783s
+108636130
+Trial: 893, Time:41.486s
+107293382
+Trial: 894, Time:39.369s
+105595097
+Trial: 895, Time:40.520s
+105845585
+Trial: 896, Time:39.416s
+106826806
+Trial: 897, Time:39.660s
+106327488
+Trial: 898, Time:39.423s
+105207641
+Trial: 899, Time:41.309s
+105162933
+Trial: 900, Time:39.537s
+105875344
+Trial: 901, Time:39.926s
+103171660
+Trial: 902, Time:39.416s
+104836780
+Trial: 903, Time:39.539s
+105936618
+Trial: 904, Time:39.717s
+105358773
+Trial: 905, Time:41.599s
+103474989
+Trial: 906, Time:39.370s
+104121051
+Trial: 907, Time:39.845s
+100747545
+Trial: 908, Time:39.201s
+103342142
+Trial: 909, Time:39.304s
+102267758
+Trial: 910, Time:38.954s
+101387102
+Trial: 911, Time:40.972s
+103755448
+Trial: 912, Time:39.194s
+107968041
+Trial: 913, Time:39.906s
+107312686
+Trial: 914, Time:39.350s
+108051737
+Trial: 915, Time:39.625s
+109559079
+Trial: 916, Time:39.333s
+110823757
+Trial: 917, Time:41.441s
+109345745
+Trial: 918, Time:39.572s
+108417395
+Trial: 919, Time:40.025s
+107224979
+Trial: 920, Time:39.880s
+107910137
+Trial: 921, Time:39.703s
+105771746
+Trial: 922, Time:39.238s
+102934348
+Trial: 923, Time:41.128s
+105766770
+Trial: 924, Time:39.576s
+107771166
+Trial: 925, Time:39.705s
+108068652
+Trial: 926, Time:39.563s
+106314847
+Trial: 927, Time:39.569s
+105649563
+Trial: 928, Time:39.290s
+105041999
+Trial: 929, Time:41.249s
+103995695
+Trial: 930, Time:39.221s
+104432769
+Trial: 931, Time:39.581s
+102270245
+Trial: 932, Time:39.042s
+103848149
+Trial: 933, Time:39.276s
+103300850
+Trial: 934, Time:39.376s
+101734822
+Trial: 935, Time:41.224s
+105703035
+Trial: 936, Time:39.568s
+108856116
+Trial: 937, Time:39.970s
+108360428
+Trial: 938, Time:39.450s
+108916353
+Trial: 939, Time:40.211s
+109560893
+Trial: 940, Time:39.588s
+112055628
+Trial: 941, Time:41.274s
+111610143
+Trial: 942, Time:40.008s
+111953841
+Trial: 943, Time:40.292s
+111370171
+Trial: 944, Time:40.382s
+111813861
+Trial: 945, Time:39.628s
+111052315
+Trial: 946, Time:40.687s
+110063679
+Trial: 947, Time:41.886s
+112102073
+Trial: 948, Time:41.165s
+111202250
+Trial: 949, Time:41.452s
+108959413
+Trial: 950, Time:40.249s
+106742822
+Trial: 951, Time:40.166s
+107805940
+Trial: 952, Time:39.880s
+107275713
+Trial: 953, Time:41.748s
+107696372
+Trial: 954, Time:39.893s
+106321144
+Trial: 955, Time:40.600s
+107365401
+Trial: 956, Time:39.781s
+108780180
+Trial: 957, Time:40.299s
+109641317
+Trial: 958, Time:40.060s
+108772699
+Trial: 959, Time:42.493s
+108229188
+Trial: 960, Time:40.869s
+105360408
+Trial: 961, Time:40.226s
+104615759
+Trial: 962, Time:39.527s
+106618688
+Trial: 963, Time:40.214s
+105496006
+Trial: 964, Time:40.108s
+108104350
+Trial: 965, Time:42.165s
+107958623
+Trial: 966, Time:40.705s
+108337163
+Trial: 967, Time:41.138s
+111440152
+Trial: 968, Time:40.558s
+109094086
+Trial: 969, Time:40.442s
+112527785
+Trial: 970, Time:39.914s
+111557160
+Trial: 971, Time:41.979s
+112714434
+Trial: 972, Time:40.433s
+112059731
+Trial: 973, Time:40.670s
+112904409
+Trial: 974, Time:39.931s
+110435585
+Trial: 975, Time:40.478s
+110695504
+Trial: 976, Time:40.461s
+111775627
+Trial: 977, Time:42.531s
+110512583
+Trial: 978, Time:39.893s
+111717969
+Trial: 979, Time:40.796s
+112039705
+Trial: 980, Time:40.601s
+111716118
+Trial: 981, Time:40.995s
+113459463
+Trial: 982, Time:39.821s
+112737819
+Trial: 983, Time:42.545s
+109291596
+Trial: 984, Time:40.875s
+109944701
+Trial: 985, Time:40.403s
+108525208
+Trial: 986, Time:40.730s
+107986811
+Trial: 987, Time:40.701s
+105400099
+Trial: 988, Time:40.621s
+103594052
+Trial: 989, Time:41.681s
+107413739
+Trial: 990, Time:40.031s
+109631551
+Trial: 991, Time:41.254s
+109744782
+Trial: 992, Time:40.807s
+110097636
+Trial: 993, Time:40.538s
+107512104
+Trial: 994, Time:40.187s
+109907567
+Trial: 995, Time:42.109s
+111141837
+Trial: 996, Time:40.699s
+108519628
+Trial: 997, Time:41.059s
+111082368
+Trial: 998, Time:40.432s
+110995877
+Trial: 999, Time:40.496s
+110247418
+Trial: 1000, Time:40.058s
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_GOrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_GRrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_MFrasters.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_gogoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_grgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_mfgoW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_gogrW.npy'
+Raster array saved to '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial_mfgrW.npy'
+Finished Session: MFGoGr_SS_shuffleMF10percent_noCS_gogoplast_1000_trial.
+Starting Session: MFGoGr_SS_shuffleMF10percent_noCS_mfgoplast_1000_trial...
+Initializing objects...
+Objects initialized.
+Loading connectivity arrays...
+MFGO Connectivity Array Loaded.
+MFGR Connectivity Array Loaded.
+GOGR Connectivity Array Loaded.
+GRGO Connectivity Array Loaded.
+GOGO Connectivity Array Loaded.
+Connectivity Arrays Loaded
+Trial 0: Cell 1 (Static) = 0.004187 | Cell 2 (Plastic) = 0.004187
+48249113
+Trial: 1, Time:35.699s
+Trial 1: Cell 1 (Static) = 0.004175 | Cell 2 (Plastic) = 0.004175
+50013858
+Trial: 2, Time:34.382s
+Trial 2: Cell 1 (Static) = 0.004162 | Cell 2 (Plastic) = 0.004162
+49073193
+Trial: 3, Time:35.632s
+Trial 3: Cell 1 (Static) = 0.004150 | Cell 2 (Plastic) = 0.004150
+48910996
+Trial: 4, Time:33.865s
+Trial 4: Cell 1 (Static) = 0.004138 | Cell 2 (Plastic) = 0.004138
+49348714
+Trial: 5, Time:33.852s
+Trial 5: Cell 1 (Static) = 0.004125 | Cell 2 (Plastic) = 0.004125
+49431014
+Trial: 6, Time:34.119s
+Trial 6: Cell 1 (Static) = 0.004113 | Cell 2 (Plastic) = 0.004113
+49525092
+Trial: 7, Time:34.611s
+Trial 7: Cell 1 (Static) = 0.004101 | Cell 2 (Plastic) = 0.004101
+48733754
+Trial: 8, Time:34.085s
+Trial 8: Cell 1 (Static) = 0.004088 | Cell 2 (Plastic) = 0.004088
+48333606
+Trial: 9, Time:34.378s
+Trial 9: Cell 1 (Static) = 0.004076 | Cell 2 (Plastic) = 0.004076
+48661702
+Trial: 10, Time:34.127s
+Trial 10: Cell 1 (Static) = 0.004064 | Cell 2 (Plastic) = 0.004064
+48237619
+Trial: 11, Time:34.152s
+Trial 11: Cell 1 (Static) = 0.004052 | Cell 2 (Plastic) = 0.004052
+49038321
+Trial: 12, Time:33.765s
+Trial 12: Cell 1 (Static) = 0.004040 | Cell 2 (Plastic) = 0.004040
+48389846
+Trial: 13, Time:33.518s
+Trial 13: Cell 1 (Static) = 0.004028 | Cell 2 (Plastic) = 0.004028
+47876991
+Trial: 14, Time:34.298s
+Trial 14: Cell 1 (Static) = 0.004015 | Cell 2 (Plastic) = 0.004015
+47826563
+Trial: 15, Time:34.105s
+Trial 15: Cell 1 (Static) = 0.004003 | Cell 2 (Plastic) = 0.004003
+47310541
+Trial: 16, Time:33.783s
+Trial 16: Cell 1 (Static) = 0.003991 | Cell 2 (Plastic) = 0.003991
+48159008
+Trial: 17, Time:34.817s
+Trial 17: Cell 1 (Static) = 0.003980 | Cell 2 (Plastic) = 0.003980
+48103510
+Trial: 18, Time:33.494s
+Trial 18: Cell 1 (Static) = 0.003968 | Cell 2 (Plastic) = 0.003968
+47214697
+Trial: 19, Time:34.828s
+Trial 19: Cell 1 (Static) = 0.003956 | Cell 2 (Plastic) = 0.003956
+47667555
+Trial: 20, Time:33.829s
+Trial 20: Cell 1 (Static) = 0.003944 | Cell 2 (Plastic) = 0.003944
+47545458
+Trial: 21, Time:34.287s
+Trial 21: Cell 1 (Static) = 0.003932 | Cell 2 (Plastic) = 0.003932
+47749294
+Trial: 22, Time:33.836s
+Trial 22: Cell 1 (Static) = 0.003920 | Cell 2 (Plastic) = 0.003920
+47876078
+Trial: 23, Time:34.589s
+Trial 23: Cell 1 (Static) = 0.003909 | Cell 2 (Plastic) = 0.003909
+48660411
+Trial: 24, Time:35.050s
+Trial 24: Cell 1 (Static) = 0.003897 | Cell 2 (Plastic) = 0.003897
+48462083
+Trial: 25, Time:33.852s
+Trial 25: Cell 1 (Static) = 0.003885 | Cell 2 (Plastic) = 0.003885
+47353511
+Trial: 26, Time:33.632s
+Trial 26: Cell 1 (Static) = 0.003874 | Cell 2 (Plastic) = 0.003874
+47478534
+Trial: 27, Time:33.655s
+Trial 27: Cell 1 (Static) = 0.003862 | Cell 2 (Plastic) = 0.003862
+46459213
+Trial: 28, Time:34.481s
+Trial 28: Cell 1 (Static) = 0.003851 | Cell 2 (Plastic) = 0.003851
+46945967
+Trial: 29, Time:33.499s
+Trial 29: Cell 1 (Static) = 0.003839 | Cell 2 (Plastic) = 0.003839
+47196959
+Trial: 30, Time:34.702s
+Trial 30: Cell 1 (Static) = 0.003828 | Cell 2 (Plastic) = 0.003828
+47671305
+Trial: 31, Time:33.683s
+Trial 31: Cell 1 (Static) = 0.003816 | Cell 2 (Plastic) = 0.003816
+48348142
+Trial: 32, Time:33.987s
+Trial 32: Cell 1 (Static) = 0.003805 | Cell 2 (Plastic) = 0.003805
+48281500
+Trial: 33, Time:33.685s
+Trial 33: Cell 1 (Static) = 0.003793 | Cell 2 (Plastic) = 0.003793
+48700679
+Trial: 34, Time:35.329s
+Trial 34: Cell 1 (Static) = 0.003782 | Cell 2 (Plastic) = 0.003782
+47773876
+Trial: 35, Time:33.737s
+Trial 35: Cell 1 (Static) = 0.003771 | Cell 2 (Plastic) = 0.003771
+48082725
+Trial: 36, Time:33.419s
+Trial 36: Cell 1 (Static) = 0.003759 | Cell 2 (Plastic) = 0.003759
+47844197
+Trial: 37, Time:33.452s
+Trial 37: Cell 1 (Static) = 0.003748 | Cell 2 (Plastic) = 0.003748
+48541447
+Trial: 38, Time:34.801s
+Trial 38: Cell 1 (Static) = 0.003737 | Cell 2 (Plastic) = 0.003737
+48315466
+Trial: 39, Time:33.794s
+Trial 39: Cell 1 (Static) = 0.003726 | Cell 2 (Plastic) = 0.003726
+49519301
+Trial: 40, Time:35.516s
+Trial 40: Cell 1 (Static) = 0.003715 | Cell 2 (Plastic) = 0.003715
+48762495
+Trial: 41, Time:35.021s
+Trial 41: Cell 1 (Static) = 0.003703 | Cell 2 (Plastic) = 0.003703
+48627938
+Trial: 42, Time:34.469s
+Trial 42: Cell 1 (Static) = 0.003692 | Cell 2 (Plastic) = 0.003692
+48031084
+Trial: 43, Time:33.792s
+Trial 43: Cell 1 (Static) = 0.003681 | Cell 2 (Plastic) = 0.003681
+47733303
+Trial: 44, Time:34.271s
+Trial 44: Cell 1 (Static) = 0.003670 | Cell 2 (Plastic) = 0.003670
+47950496
+Trial: 45, Time:35.229s
+Trial 45: Cell 1 (Static) = 0.003659 | Cell 2 (Plastic) = 0.003659
+47563167
+Trial: 46, Time:34.409s
+Trial 46: Cell 1 (Static) = 0.003648 | Cell 2 (Plastic) = 0.003648
+47863621
+Trial: 47, Time:33.698s
+Trial 47: Cell 1 (Static) = 0.003638 | Cell 2 (Plastic) = 0.003638
+48135037
+Trial: 48, Time:34.889s
+Trial 48: Cell 1 (Static) = 0.003627 | Cell 2 (Plastic) = 0.003627
+47574854
+Trial: 49, Time:33.310s
+Trial 49: Cell 1 (Static) = 0.003616 | Cell 2 (Plastic) = 0.003616
+48637928
+Trial: 50, Time:34.927s
+Trial 50: Cell 1 (Static) = 0.003605 | Cell 2 (Plastic) = 0.003605
+48200243
+Trial: 51, Time:33.476s
+Trial 51: Cell 1 (Static) = 0.003594 | Cell 2 (Plastic) = 0.003594
+47801637
+Trial: 52, Time:34.995s
+Trial 52: Cell 1 (Static) = 0.003583 | Cell 2 (Plastic) = 0.003583
+47633172
+Trial: 53, Time:35.286s
+Trial 53: Cell 1 (Static) = 0.003573 | Cell 2 (Plastic) = 0.003573
+48185970
+Trial: 54, Time:34.960s
+Trial 54: Cell 1 (Static) = 0.003562 | Cell 2 (Plastic) = 0.003562
+46949586
+Trial: 55, Time:33.606s
+Trial 55: Cell 1 (Static) = 0.003551 | Cell 2 (Plastic) = 0.003551
+47834010
+Trial: 56, Time:34.218s
+Trial 56: Cell 1 (Static) = 0.003541 | Cell 2 (Plastic) = 0.003541
+47281423
+Trial: 57, Time:33.224s
+Trial 57: Cell 1 (Static) = 0.003530 | Cell 2 (Plastic) = 0.003530
+48729124
+Trial: 58, Time:34.786s
+Trial 58: Cell 1 (Static) = 0.003520 | Cell 2 (Plastic) = 0.003520
+48531111
+Trial: 59, Time:33.814s
+Trial 59: Cell 1 (Static) = 0.003509 | Cell 2 (Plastic) = 0.003509
+48347329
+Trial: 60, Time:34.303s
+Trial 60: Cell 1 (Static) = 0.003499 | Cell 2 (Plastic) = 0.003499
+47502811
+Trial: 61, Time:34.600s
+Trial 61: Cell 1 (Static) = 0.003488 | Cell 2 (Plastic) = 0.003488
+47156572
+Trial: 62, Time:34.051s
+Trial 62: Cell 1 (Static) = 0.003478 | Cell 2 (Plastic) = 0.003478
+46791066
+Trial: 63, Time:33.340s
+Trial 63: Cell 1 (Static) = 0.003467 | Cell 2 (Plastic) = 0.003467
+46378047
+Trial: 64, Time:34.346s
+Trial 64: Cell 1 (Static) = 0.003457 | Cell 2 (Plastic) = 0.003457
+47231560
+Trial: 65, Time:33.779s
+Trial 65: Cell 1 (Static) = 0.003447 | Cell 2 (Plastic) = 0.003447
+45945029
+Trial: 66, Time:34.579s
+Trial 66: Cell 1 (Static) = 0.003436 | Cell 2 (Plastic) = 0.003436
+47460302
+Trial: 67, Time:33.776s
+Trial 67: Cell 1 (Static) = 0.003426 | Cell 2 (Plastic) = 0.003426
+48538102
+Trial: 68, Time:35.190s
+Trial 68: Cell 1 (Static) = 0.003416 | Cell 2 (Plastic) = 0.003416
+48987678
+Trial: 69, Time:34.062s
+Trial 69: Cell 1 (Static) = 0.003406 | Cell 2 (Plastic) = 0.003406
+49304288
+Trial: 70, Time:34.799s
+Trial 70: Cell 1 (Static) = 0.003395 | Cell 2 (Plastic) = 0.003395
+48817707
+Trial: 71, Time:33.677s
+Trial 71: Cell 1 (Static) = 0.003385 | Cell 2 (Plastic) = 0.003385
+48093988
+Trial: 72, Time:34.581s
+Trial 72: Cell 1 (Static) = 0.003375 | Cell 2 (Plastic) = 0.003375
+48902817
+Trial: 73, Time:33.873s
+Trial 73: Cell 1 (Static) = 0.003365 | Cell 2 (Plastic) = 0.003365
+49781821
+Trial: 74, Time:35.597s
+Trial 74: Cell 1 (Static) = 0.003355 | Cell 2 (Plastic) = 0.003355
+49707980
+Trial: 75, Time:34.224s
+Trial 75: Cell 1 (Static) = 0.003345 | Cell 2 (Plastic) = 0.003345
+49302474
+Trial: 76, Time:35.351s
+Trial 76: Cell 1 (Static) = 0.003335 | Cell 2 (Plastic) = 0.003335
+49802311
+Trial: 77, Time:34.114s
+Trial 77: Cell 1 (Static) = 0.003325 | Cell 2 (Plastic) = 0.003325
+49415286
+Trial: 78, Time:35.181s
+Trial 78: Cell 1 (Static) = 0.003315 | Cell 2 (Plastic) = 0.003315
+48880937
+Trial: 79, Time:34.019s
+Trial 79: Cell 1 (Static) = 0.003305 | Cell 2 (Plastic) = 0.003305
+47641499
+Trial: 80, Time:34.762s
+Trial 80: Cell 1 (Static) = 0.003295 | Cell 2 (Plastic) = 0.003295
+47256878
+Trial: 81, Time:33.139s
+Trial 81: Cell 1 (Static) = 0.003285 | Cell 2 (Plastic) = 0.003285
+46809511
+Trial: 82, Time:34.740s
+Trial 82: Cell 1 (Static) = 0.003275 | Cell 2 (Plastic) = 0.003275
+48080332
+Trial: 83, Time:33.576s
+Trial 83: Cell 1 (Static) = 0.003266 | Cell 2 (Plastic) = 0.003266
+48491339
+Trial: 84, Time:34.699s
+Trial 84: Cell 1 (Static) = 0.003256 | Cell 2 (Plastic) = 0.003256
+50034615
+Trial: 85, Time:34.012s
+Trial 85: Cell 1 (Static) = 0.003246 | Cell 2 (Plastic) = 0.003246
+49538557
+Trial: 86, Time:34.429s
+Trial 86: Cell 1 (Static) = 0.003236 | Cell 2 (Plastic) = 0.003236
+49313572
+Trial: 87, Time:34.856s
+Trial 87: Cell 1 (Static) = 0.003227 | Cell 2 (Plastic) = 0.003227
+49305716
+Trial: 88, Time:33.716s
+Trial 88: Cell 1 (Static) = 0.003217 | Cell 2 (Plastic) = 0.003217
+49788117
+Trial: 89, Time:35.106s
+Trial 89: Cell 1 (Static) = 0.003207 | Cell 2 (Plastic) = 0.003207
+49108116
+Trial: 90, Time:33.589s
+Trial 90: Cell 1 (Static) = 0.003198 | Cell 2 (Plastic) = 0.003198
+49122919
+Trial: 91, Time:34.579s
+Trial 91: Cell 1 (Static) = 0.003188 | Cell 2 (Plastic) = 0.003188
+49198301
+Trial: 92, Time:33.700s
+Trial 92: Cell 1 (Static) = 0.003179 | Cell 2 (Plastic) = 0.003179
+48694605
+Trial: 93, Time:34.623s
+Trial 93: Cell 1 (Static) = 0.003169 | Cell 2 (Plastic) = 0.003169
+48947735
+Trial: 94, Time:33.547s
+Trial 94: Cell 1 (Static) = 0.003160 | Cell 2 (Plastic) = 0.003160
+48616655
+Trial: 95, Time:34.824s
+Trial 95: Cell 1 (Static) = 0.003150 | Cell 2 (Plastic) = 0.003150
+49193199
+Trial: 96, Time:34.005s
+Trial 96: Cell 1 (Static) = 0.003141 | Cell 2 (Plastic) = 0.003141
+48054654
+Trial: 97, Time:33.932s
+Trial 97: Cell 1 (Static) = 0.003132 | Cell 2 (Plastic) = 0.003132
+47356521
+Trial: 98, Time:34.401s
+Trial 98: Cell 1 (Static) = 0.003122 | Cell 2 (Plastic) = 0.003122
+47494837
+Trial: 99, Time:34.646s
+Trial 99: Cell 1 (Static) = 0.003113 | Cell 2 (Plastic) = 0.003113
+48513591
+Trial: 100, Time:35.237s
+Trial 100: Cell 1 (Static) = 0.003104 | Cell 2 (Plastic) = 0.003104
+47633677
+Trial: 101, Time:34.173s
+Trial 101: Cell 1 (Static) = 0.003094 | Cell 2 (Plastic) = 0.003094
+48182515
+Trial: 102, Time:33.102s
+Trial 102: Cell 1 (Static) = 0.003085 | Cell 2 (Plastic) = 0.003085
+48423927
+Trial: 103, Time:33.624s
+Trial 103: Cell 1 (Static) = 0.003076 | Cell 2 (Plastic) = 0.003076
+48832432
+Trial: 104, Time:33.551s
+Trial 104: Cell 1 (Static) = 0.003067 | Cell 2 (Plastic) = 0.003067
+48727722
+Trial: 105, Time:34.897s
+Trial 105: Cell 1 (Static) = 0.003057 | Cell 2 (Plastic) = 0.003057
+48583423
+Trial: 106, Time:33.564s
+Trial 106: Cell 1 (Static) = 0.003048 | Cell 2 (Plastic) = 0.003048
+48246133
+Trial: 107, Time:34.427s
+Trial 107: Cell 1 (Static) = 0.003039 | Cell 2 (Plastic) = 0.003039
+49265763
+Trial: 108, Time:33.856s
+Trial 108: Cell 1 (Static) = 0.003030 | Cell 2 (Plastic) = 0.003030
+47754451
+Trial: 109, Time:35.106s
+Trial 109: Cell 1 (Static) = 0.003021 | Cell 2 (Plastic) = 0.003021
+48579487
+Trial: 110, Time:33.872s
+Trial 110: Cell 1 (Static) = 0.003012 | Cell 2 (Plastic) = 0.003012
+50143510
+Trial: 111, Time:35.198s
+Trial 111: Cell 1 (Static) = 0.003003 | Cell 2 (Plastic) = 0.003003
+48720687
+Trial: 112, Time:34.890s
+Trial 112: Cell 1 (Static) = 0.002994 | Cell 2 (Plastic) = 0.002994
+49829859
+Trial: 113, Time:35.268s
+Trial 113: Cell 1 (Static) = 0.002985 | Cell 2 (Plastic) = 0.002985
+49265654
+Trial: 114, Time:34.033s
+Trial 114: Cell 1 (Static) = 0.002976 | Cell 2 (Plastic) = 0.002976
+49818543
+Trial: 115, Time:34.679s
+Trial 115: Cell 1 (Static) = 0.002967 | Cell 2 (Plastic) = 0.002967
+49808686
+Trial: 116, Time:34.395s
+Trial 116: Cell 1 (Static) = 0.002958 | Cell 2 (Plastic) = 0.002958
+50077436
+Trial: 117, Time:34.807s
+Trial 117: Cell 1 (Static) = 0.002949 | Cell 2 (Plastic) = 0.002949
+49060368
+Trial: 118, Time:33.947s
+Trial 118: Cell 1 (Static) = 0.002941 | Cell 2 (Plastic) = 0.002941
+48042081
+Trial: 119, Time:33.960s
+Trial 119: Cell 1 (Static) = 0.002932 | Cell 2 (Plastic) = 0.002932
+48671394
+Trial: 120, Time:33.462s
+Trial 120: Cell 1 (Static) = 0.002923 | Cell 2 (Plastic) = 0.002923
+47661951
+Trial: 121, Time:34.173s
+Trial 121: Cell 1 (Static) = 0.002914 | Cell 2 (Plastic) = 0.002914
+47878862
+Trial: 122, Time:33.135s
+Trial 122: Cell 1 (Static) = 0.002906 | Cell 2 (Plastic) = 0.002906
+48246255
+Trial: 123, Time:34.817s
+Trial 123: Cell 1 (Static) = 0.002897 | Cell 2 (Plastic) = 0.002897
+48861567
+Trial: 124, Time:33.622s
+Trial 124: Cell 1 (Static) = 0.002888 | Cell 2 (Plastic) = 0.002888
+49339674
+Trial: 125, Time:34.979s
+Trial 125: Cell 1 (Static) = 0.002880 | Cell 2 (Plastic) = 0.002880
+48705033
+Trial: 126, Time:33.892s
+Trial 126: Cell 1 (Static) = 0.002871 | Cell 2 (Plastic) = 0.002871
+47675492
+Trial: 127, Time:34.268s
+Trial 127: Cell 1 (Static) = 0.002862 | Cell 2 (Plastic) = 0.002862
+46976674
+Trial: 128, Time:33.801s
+Trial 128: Cell 1 (Static) = 0.002854 | Cell 2 (Plastic) = 0.002854
+47642796
+Trial: 129, Time:33.718s
+Trial 129: Cell 1 (Static) = 0.002845 | Cell 2 (Plastic) = 0.002845
+49539513
+Trial: 130, Time:34.075s
+Trial 130: Cell 1 (Static) = 0.002837 | Cell 2 (Plastic) = 0.002837
+48530268
+Trial: 131, Time:33.437s
+Trial 131: Cell 1 (Static) = 0.002828 | Cell 2 (Plastic) = 0.002828
+48045686
+Trial: 132, Time:33.546s
+Trial 132: Cell 1 (Static) = 0.002820 | Cell 2 (Plastic) = 0.002820
+47240504
+Trial: 133, Time:33.838s
+Trial 133: Cell 1 (Static) = 0.002811 | Cell 2 (Plastic) = 0.002811
+46822963
+Trial: 134, Time:33.496s
+Trial 134: Cell 1 (Static) = 0.002803 | Cell 2 (Plastic) = 0.002803
+47815008
+Trial: 135, Time:33.514s
+Trial 135: Cell 1 (Static) = 0.002795 | Cell 2 (Plastic) = 0.002795
+47150384
+Trial: 136, Time:33.468s
+Trial 136: Cell 1 (Static) = 0.002786 | Cell 2 (Plastic) = 0.002786
+46958131
+Trial: 137, Time:33.299s
+Trial 137: Cell 1 (Static) = 0.002778 | Cell 2 (Plastic) = 0.002778
+47843672
+Trial: 138, Time:33.214s
+Trial 138: Cell 1 (Static) = 0.002770 | Cell 2 (Plastic) = 0.002770
+48833604
+Trial: 139, Time:33.663s
+Trial 139: Cell 1 (Static) = 0.002761 | Cell 2 (Plastic) = 0.002761
+48294003
+Trial: 140, Time:33.568s
+Trial 140: Cell 1 (Static) = 0.002753 | Cell 2 (Plastic) = 0.002753
+48267558
+Trial: 141, Time:33.990s
+Trial 141: Cell 1 (Static) = 0.002745 | Cell 2 (Plastic) = 0.002745
+48695758
+Trial: 142, Time:34.139s
+Trial 142: Cell 1 (Static) = 0.002737 | Cell 2 (Plastic) = 0.002737
+48179487
+Trial: 143, Time:33.683s
+Trial 143: Cell 1 (Static) = 0.002728 | Cell 2 (Plastic) = 0.002728
+47363160
+Trial: 144, Time:32.749s
+Trial 144: Cell 1 (Static) = 0.002720 | Cell 2 (Plastic) = 0.002720
+48308184
+Trial: 145, Time:33.607s
+Trial 145: Cell 1 (Static) = 0.002712 | Cell 2 (Plastic) = 0.002712
+47855211
+Trial: 146, Time:33.453s
+Trial 146: Cell 1 (Static) = 0.002704 | Cell 2 (Plastic) = 0.002704
+48228283
+Trial: 147, Time:33.521s
+Trial 147: Cell 1 (Static) = 0.002696 | Cell 2 (Plastic) = 0.002696
+49001956
+Trial: 148, Time:33.349s
+Trial 148: Cell 1 (Static) = 0.002688 | Cell 2 (Plastic) = 0.002688
+48400409
+Trial: 149, Time:34.374s
+Trial 149: Cell 1 (Static) = 0.002680 | Cell 2 (Plastic) = 0.002680
+49025806
+Trial: 150, Time:33.700s
+Trial 150: Cell 1 (Static) = 0.002672 | Cell 2 (Plastic) = 0.002672
+48139374
+Trial: 151, Time:34.748s
+Trial 151: Cell 1 (Static) = 0.002664 | Cell 2 (Plastic) = 0.002664
+47895318
+Trial: 152, Time:33.313s
+Trial 152: Cell 1 (Static) = 0.002656 | Cell 2 (Plastic) = 0.002656
+47896281
+Trial: 153, Time:34.593s
+Trial 153: Cell 1 (Static) = 0.002648 | Cell 2 (Plastic) = 0.002648
+47872901
+Trial: 154, Time:33.353s
+Trial 154: Cell 1 (Static) = 0.002640 | Cell 2 (Plastic) = 0.002640
+47561876
+Trial: 155, Time:34.499s
+Trial 155: Cell 1 (Static) = 0.002632 | Cell 2 (Plastic) = 0.002632
+47995672
+Trial: 156, Time:33.230s
+Trial 156: Cell 1 (Static) = 0.002624 | Cell 2 (Plastic) = 0.002624
+47173705
+Trial: 157, Time:34.129s
+Trial 157: Cell 1 (Static) = 0.002616 | Cell 2 (Plastic) = 0.002616
+47491656
+Trial: 158, Time:33.680s
+Trial 158: Cell 1 (Static) = 0.002609 | Cell 2 (Plastic) = 0.002609
+46486319
+Trial: 159, Time:34.368s
+Trial 159: Cell 1 (Static) = 0.002601 | Cell 2 (Plastic) = 0.002601
+47709702
+Trial: 160, Time:33.915s
+Trial 160: Cell 1 (Static) = 0.002593 | Cell 2 (Plastic) = 0.002593
+47546626
+Trial: 161, Time:34.616s
+Trial 161: Cell 1 (Static) = 0.002585 | Cell 2 (Plastic) = 0.002585
+48591852
+Trial: 162, Time:33.356s
+Trial 162: Cell 1 (Static) = 0.002577 | Cell 2 (Plastic) = 0.002577
+49104857
+Trial: 163, Time:34.374s
+Trial 163: Cell 1 (Static) = 0.002570 | Cell 2 (Plastic) = 0.002570
+48056016
+Trial: 164, Time:34.371s
+Trial 164: Cell 1 (Static) = 0.002562 | Cell 2 (Plastic) = 0.002562
+47892414
+Trial: 165, Time:34.593s
+Trial 165: Cell 1 (Static) = 0.002554 | Cell 2 (Plastic) = 0.002554
+48293380
+Trial: 166, Time:34.586s
+Trial 166: Cell 1 (Static) = 0.002547 | Cell 2 (Plastic) = 0.002547
+49051179
+Trial: 167, Time:34.804s
+Trial 167: Cell 1 (Static) = 0.002539 | Cell 2 (Plastic) = 0.002539
+49657970
+Trial: 168, Time:35.434s
+Trial 168: Cell 1 (Static) = 0.002532 | Cell 2 (Plastic) = 0.002532
+49848201
+Trial: 169, Time:35.127s
+Trial 169: Cell 1 (Static) = 0.002524 | Cell 2 (Plastic) = 0.002524
+49181007
+Trial: 170, Time:34.049s
+Trial 170: Cell 1 (Static) = 0.002516 | Cell 2 (Plastic) = 0.002516
+50722685
+Trial: 171, Time:35.101s
+Trial 171: Cell 1 (Static) = 0.002509 | Cell 2 (Plastic) = 0.002509
+50683727
+Trial: 172, Time:34.332s
+Trial 172: Cell 1 (Static) = 0.002501 | Cell 2 (Plastic) = 0.002501
+50818015
+Trial: 173, Time:34.490s
+Trial 173: Cell 1 (Static) = 0.002494 | Cell 2 (Plastic) = 0.002494
+51126035
+Trial: 174, Time:35.378s
+Trial 174: Cell 1 (Static) = 0.002486 | Cell 2 (Plastic) = 0.002486
+50849596
+Trial: 175, Time:34.918s
+Trial 175: Cell 1 (Static) = 0.002479 | Cell 2 (Plastic) = 0.002479
+50554379
+Trial: 176, Time:33.598s
+Trial 176: Cell 1 (Static) = 0.002472 | Cell 2 (Plastic) = 0.002472
+50750366
+Trial: 177, Time:35.605s
+Trial 177: Cell 1 (Static) = 0.002464 | Cell 2 (Plastic) = 0.002464
+51577977
+Trial: 178, Time:34.475s
+Trial 178: Cell 1 (Static) = 0.002457 | Cell 2 (Plastic) = 0.002457
+49828273
+Trial: 179, Time:35.163s
+Trial 179: Cell 1 (Static) = 0.002450 | Cell 2 (Plastic) = 0.002450
+49850843
+Trial: 180, Time:33.652s
+Trial 180: Cell 1 (Static) = 0.002442 | Cell 2 (Plastic) = 0.002442
+48380917
+Trial: 181, Time:34.538s
+Trial 181: Cell 1 (Static) = 0.002435 | Cell 2 (Plastic) = 0.002435
+48472355
+Trial: 182, Time:35.350s
+Trial 182: Cell 1 (Static) = 0.002428 | Cell 2 (Plastic) = 0.002428
+49793286
+Trial: 183, Time:33.744s
+Trial 183: Cell 1 (Static) = 0.002420 | Cell 2 (Plastic) = 0.002420
+49825580
+Trial: 184, Time:33.797s
+Trial 184: Cell 1 (Static) = 0.002413 | Cell 2 (Plastic) = 0.002413
+49597237
+Trial: 185, Time:34.110s
+Trial 185: Cell 1 (Static) = 0.002406 | Cell 2 (Plastic) = 0.002406
+49528375
+Trial: 186, Time:34.189s
+Trial 186: Cell 1 (Static) = 0.002399 | Cell 2 (Plastic) = 0.002399
+49208648
+Trial: 187, Time:35.389s
+Trial 187: Cell 1 (Static) = 0.002392 | Cell 2 (Plastic) = 0.002392
+48392380
+Trial: 188, Time:33.580s
+Trial 188: Cell 1 (Static) = 0.002384 | Cell 2 (Plastic) = 0.002384
+49467263
+Trial: 189, Time:35.127s
+Trial 189: Cell 1 (Static) = 0.002377 | Cell 2 (Plastic) = 0.002377
+49020202
+Trial: 190, Time:34.009s
+Trial 190: Cell 1 (Static) = 0.002370 | Cell 2 (Plastic) = 0.002370
+50330434
+Trial: 191, Time:34.289s
+Trial 191: Cell 1 (Static) = 0.002363 | Cell 2 (Plastic) = 0.002363
+49982949
+Trial: 192, Time:34.135s
+Trial 192: Cell 1 (Static) = 0.002356 | Cell 2 (Plastic) = 0.002356
+48896118
+Trial: 193, Time:33.976s
+Trial 193: Cell 1 (Static) = 0.002349 | Cell 2 (Plastic) = 0.002349
+48055488
+Trial: 194, Time:33.733s
+Trial 194: Cell 1 (Static) = 0.002342 | Cell 2 (Plastic) = 0.002342
+48167856
+Trial: 195, Time:33.625s
+Trial 195: Cell 1 (Static) = 0.002335 | Cell 2 (Plastic) = 0.002335
+49073556
+Trial: 196, Time:33.309s
+Trial 196: Cell 1 (Static) = 0.002328 | Cell 2 (Plastic) = 0.002328
+48356384
+Trial: 197, Time:33.601s
+Trial 197: Cell 1 (Static) = 0.002321 | Cell 2 (Plastic) = 0.002321
+48944026
+Trial: 198, Time:34.792s
+Trial 198: Cell 1 (Static) = 0.002314 | Cell 2 (Plastic) = 0.002314
+48477305
+Trial: 199, Time:33.654s
+Trial 199: Cell 1 (Static) = 0.002307 | Cell 2 (Plastic) = 0.002307
+48855003
+Trial: 200, Time:33.654s
+Trial 200: Cell 1 (Static) = 0.002300 | Cell 2 (Plastic) = 0.002300
+48829585
+Trial: 201, Time:33.646s
+Trial 201: Cell 1 (Static) = 0.002293 | Cell 2 (Plastic) = 0.002293
+48485896
+Trial: 202, Time:33.493s
+Trial 202: Cell 1 (Static) = 0.002286 | Cell 2 (Plastic) = 0.002286
+49173492
+Trial: 203, Time:33.468s
+Trial 203: Cell 1 (Static) = 0.002280 | Cell 2 (Plastic) = 0.002280
+49327139
+Trial: 204, Time:33.780s
+Trial 204: Cell 1 (Static) = 0.002273 | Cell 2 (Plastic) = 0.002273
+48286001
+Trial: 205, Time:33.202s
+Trial 205: Cell 1 (Static) = 0.002266 | Cell 2 (Plastic) = 0.002266
+48709929
+Trial: 206, Time:33.457s
+Trial 206: Cell 1 (Static) = 0.002259 | Cell 2 (Plastic) = 0.002259
+48718646
+Trial: 207, Time:34.712s
+Trial 207: Cell 1 (Static) = 0.002252 | Cell 2 (Plastic) = 0.002252
+48747038
+Trial: 208, Time:33.677s
+Trial 208: Cell 1 (Static) = 0.002246 | Cell 2 (Plastic) = 0.002246
+48220102
+Trial: 209, Time:33.178s
+Trial 209: Cell 1 (Static) = 0.002239 | Cell 2 (Plastic) = 0.002239
+48120527
+Trial: 210, Time:33.226s
+Trial 210: Cell 1 (Static) = 0.002232 | Cell 2 (Plastic) = 0.002232
+49142446
+Trial: 211, Time:33.335s
+Trial 211: Cell 1 (Static) = 0.002226 | Cell 2 (Plastic) = 0.002226
+49058062
+Trial: 212, Time:33.768s
+Trial 212: Cell 1 (Static) = 0.002219 | Cell 2 (Plastic) = 0.002219
+49272782
+Trial: 213, Time:33.358s
+Trial 213: Cell 1 (Static) = 0.002212 | Cell 2 (Plastic) = 0.002212
+49766038
+Trial: 214, Time:34.643s
+Trial 214: Cell 1 (Static) = 0.002206 | Cell 2 (Plastic) = 0.002206
+50123837
+Trial: 215, Time:33.943s
+Trial 215: Cell 1 (Static) = 0.002199 | Cell 2 (Plastic) = 0.002199
+50629577
+Trial: 216, Time:34.114s
+Trial 216: Cell 1 (Static) = 0.002193 | Cell 2 (Plastic) = 0.002193
+49946079
+Trial: 217, Time:33.731s
+Trial 217: Cell 1 (Static) = 0.002186 | Cell 2 (Plastic) = 0.002186
+49397467
+Trial: 218, Time:33.494s
+Trial 218: Cell 1 (Static) = 0.002179 | Cell 2 (Plastic) = 0.002179
+49590161
+Trial: 219, Time:34.886s
+Trial 219: Cell 1 (Static) = 0.002173 | Cell 2 (Plastic) = 0.002173
+50162833
+Trial: 220, Time:34.074s
+Trial 220: Cell 1 (Static) = 0.002166 | Cell 2 (Plastic) = 0.002166
+49530831
+Trial: 221, Time:34.449s
+Trial 221: Cell 1 (Static) = 0.002160 | Cell 2 (Plastic) = 0.002160
+51050345
+Trial: 222, Time:34.149s
+Trial 222: Cell 1 (Static) = 0.002153 | Cell 2 (Plastic) = 0.002153
+50279120
+Trial: 223, Time:33.898s
+Trial 223: Cell 1 (Static) = 0.002147 | Cell 2 (Plastic) = 0.002147
+50204203
+Trial: 224, Time:35.245s
+Trial 224: Cell 1 (Static) = 0.002141 | Cell 2 (Plastic) = 0.002141
+50006058
+Trial: 225, Time:33.195s
+Trial 225: Cell 1 (Static) = 0.002134 | Cell 2 (Plastic) = 0.002134
+48948040
+Trial: 226, Time:33.687s
+Trial 226: Cell 1 (Static) = 0.002128 | Cell 2 (Plastic) = 0.002128
+49170180
+Trial: 227, Time:34.611s
+Trial 227: Cell 1 (Static) = 0.002121 | Cell 2 (Plastic) = 0.002121
+49614571
+Trial: 228, Time:33.931s
+Trial 228: Cell 1 (Static) = 0.002115 | Cell 2 (Plastic) = 0.002115
+49750203
+Trial: 229, Time:35.067s
+Trial 229: Cell 1 (Static) = 0.002109 | Cell 2 (Plastic) = 0.002109
+49692434
+Trial: 230, Time:34.124s
+Trial 230: Cell 1 (Static) = 0.002102 | Cell 2 (Plastic) = 0.002102
+49304619
+Trial: 231, Time:34.738s
+Trial 231: Cell 1 (Static) = 0.002096 | Cell 2 (Plastic) = 0.002096
+50299037
+Trial: 232, Time:33.672s
+Trial 232: Cell 1 (Static) = 0.002090 | Cell 2 (Plastic) = 0.002090
+50005997
+Trial: 233, Time:34.991s
+Trial 233: Cell 1 (Static) = 0.002084 | Cell 2 (Plastic) = 0.002084
+50662001
+Trial: 234, Time:34.193s
+Trial 234: Cell 1 (Static) = 0.002077 | Cell 2 (Plastic) = 0.002077
+50996959
+Trial: 235, Time:35.602s
+Trial 235: Cell 1 (Static) = 0.002071 | Cell 2 (Plastic) = 0.002071
+50672163
+Trial: 236, Time:34.211s
+Trial 236: Cell 1 (Static) = 0.002065 | Cell 2 (Plastic) = 0.002065
+50986998
+Trial: 237, Time:34.842s
+Trial 237: Cell 1 (Static) = 0.002059 | Cell 2 (Plastic) = 0.002059
+51686981
+Trial: 238, Time:33.910s
+Trial 238: Cell 1 (Static) = 0.002053 | Cell 2 (Plastic) = 0.002053
+51552887
+Trial: 239, Time:35.314s
+Trial 239: Cell 1 (Static) = 0.002047 | Cell 2 (Plastic) = 0.002047
+50715226
+Trial: 240, Time:33.795s
+Trial 240: Cell 1 (Static) = 0.002040 | Cell 2 (Plastic) = 0.002040
+50710764
+Trial: 241, Time:35.044s
+Trial 241: Cell 1 (Static) = 0.002034 | Cell 2 (Plastic) = 0.002034
+50627815
+Trial: 242, Time:34.109s
+Trial 242: Cell 1 (Static) = 0.002028 | Cell 2 (Plastic) = 0.002028
+50573334
+Trial: 243, Time:33.683s
+Trial 243: Cell 1 (Static) = 0.002022 | Cell 2 (Plastic) = 0.002022
+50424418
+Trial: 244, Time:33.934s
+Trial 244: Cell 1 (Static) = 0.002016 | Cell 2 (Plastic) = 0.002016
+50940334
+Trial: 245, Time:33.843s
+Trial 245: Cell 1 (Static) = 0.002010 | Cell 2 (Plastic) = 0.002010
+50370697
+Trial: 246, Time:33.901s
+Trial 246: Cell 1 (Static) = 0.002004 | Cell 2 (Plastic) = 0.002004
+50245143
+Trial: 247, Time:34.459s
+Trial 247: Cell 1 (Static) = 0.001998 | Cell 2 (Plastic) = 0.001998
+50531396
+Trial: 248, Time:34.426s
+Trial 248: Cell 1 (Static) = 0.001992 | Cell 2 (Plastic) = 0.001992
+50517815
+Trial: 249, Time:34.440s
+Trial 249: Cell 1 (Static) = 0.001986 | Cell 2 (Plastic) = 0.001986
+50147729
+Trial: 250, Time:35.720s
+Trial 250: Cell 1 (Static) = 0.001980 | Cell 2 (Plastic) = 0.001980
+49063428
+Trial: 251, Time:33.712s
+Trial 251: Cell 1 (Static) = 0.001974 | Cell 2 (Plastic) = 0.001974
+49534943
+Trial: 252, Time:34.083s
+Trial 252: Cell 1 (Static) = 0.001968 | Cell 2 (Plastic) = 0.001968
+49832900
+Trial: 253, Time:34.242s
+Trial 253: Cell 1 (Static) = 0.001963 | Cell 2 (Plastic) = 0.001963
+50189233
+Trial: 254, Time:34.160s
+Trial 254: Cell 1 (Static) = 0.001957 | Cell 2 (Plastic) = 0.001957
+49912306
+Trial: 255, Time:34.047s
+Trial 255: Cell 1 (Static) = 0.001951 | Cell 2 (Plastic) = 0.001951
+50524295
+Trial: 256, Time:34.242s
+Trial 256: Cell 1 (Static) = 0.001945 | Cell 2 (Plastic) = 0.001945
+50366183
+Trial: 257, Time:35.073s
+Trial 257: Cell 1 (Static) = 0.001939 | Cell 2 (Plastic) = 0.001939
+52245559
+Trial: 258, Time:34.271s
+Trial 258: Cell 1 (Static) = 0.001933 | Cell 2 (Plastic) = 0.001933
+51423406
+Trial: 259, Time:33.853s
+Trial 259: Cell 1 (Static) = 0.001928 | Cell 2 (Plastic) = 0.001928
+51811502
+Trial: 260, Time:34.926s
+Trial 260: Cell 1 (Static) = 0.001922 | Cell 2 (Plastic) = 0.001922
+52347581
+Trial: 261, Time:34.111s
+Trial 261: Cell 1 (Static) = 0.001916 | Cell 2 (Plastic) = 0.001916
+52061147
+Trial: 262, Time:34.382s
+Trial 262: Cell 1 (Static) = 0.001910 | Cell 2 (Plastic) = 0.001910
+52014225
+Trial: 263, Time:34.500s
+Trial 263: Cell 1 (Static) = 0.001905 | Cell 2 (Plastic) = 0.001905
+52686089
+Trial: 264, Time:34.715s
+Trial 264: Cell 1 (Static) = 0.001899 | Cell 2 (Plastic) = 0.001899
+52160561
+Trial: 265, Time:35.869s
+Trial 265: Cell 1 (Static) = 0.001893 | Cell 2 (Plastic) = 0.001893
+52916848
+Trial: 266, Time:34.812s
+Trial 266: Cell 1 (Static) = 0.001888 | Cell 2 (Plastic) = 0.001888
+52945571
+Trial: 267, Time:34.253s
+Trial 267: Cell 1 (Static) = 0.001882 | Cell 2 (Plastic) = 0.001882
+53131086
+Trial: 268, Time:34.485s
+Trial 268: Cell 1 (Static) = 0.001876 | Cell 2 (Plastic) = 0.001876
+52671532
+Trial: 269, Time:34.708s
+Trial 269: Cell 1 (Static) = 0.001871 | Cell 2 (Plastic) = 0.001871
+51615177
+Trial: 270, Time:34.646s
+Trial 270: Cell 1 (Static) = 0.001865 | Cell 2 (Plastic) = 0.001865
+52211508
+Trial: 271, Time:34.499s
+Trial 271: Cell 1 (Static) = 0.001859 | Cell 2 (Plastic) = 0.001859
+52550831
+Trial: 272, Time:34.588s
+Trial 272: Cell 1 (Static) = 0.001854 | Cell 2 (Plastic) = 0.001854
+51857120
+Trial: 273, Time:34.144s
+Trial 273: Cell 1 (Static) = 0.001848 | Cell 2 (Plastic) = 0.001848
+50757138
+Trial: 274, Time:34.080s
+Trial 274: Cell 1 (Static) = 0.001843 | Cell 2 (Plastic) = 0.001843
+50236700
+Trial: 275, Time:33.998s
+Trial 275: Cell 1 (Static) = 0.001837 | Cell 2 (Plastic) = 0.001837
+49675327
+Trial: 276, Time:33.560s
+Trial 276: Cell 1 (Static) = 0.001832 | Cell 2 (Plastic) = 0.001832
+49807588
+Trial: 277, Time:34.075s
+Trial 277: Cell 1 (Static) = 0.001826 | Cell 2 (Plastic) = 0.001826
+49970004
+Trial: 278, Time:34.069s
+Trial 278: Cell 1 (Static) = 0.001821 | Cell 2 (Plastic) = 0.001821
+51106312
+Trial: 279, Time:34.327s
+Trial 279: Cell 1 (Static) = 0.001815 | Cell 2 (Plastic) = 0.001815
+50680228
+Trial: 280, Time:34.067s
+Trial 280: Cell 1 (Static) = 0.001810 | Cell 2 (Plastic) = 0.001810
+50617448
+Trial: 281, Time:34.816s
+Trial 281: Cell 1 (Static) = 0.001805 | Cell 2 (Plastic) = 0.001805
+50242844
+Trial: 282, Time:34.991s
+Trial 282: Cell 1 (Static) = 0.001799 | Cell 2 (Plastic) = 0.001799
+48974419
+Trial: 283, Time:34.490s
+Trial 283: Cell 1 (Static) = 0.001794 | Cell 2 (Plastic) = 0.001794
+51016532
+Trial: 284, Time:34.579s
+Trial 284: Cell 1 (Static) = 0.001788 | Cell 2 (Plastic) = 0.001788
+49844869
+Trial: 285, Time:34.193s
+Trial 285: Cell 1 (Static) = 0.001783 | Cell 2 (Plastic) = 0.001783
+50327339
+Trial: 286, Time:35.534s
+Trial 286: Cell 1 (Static) = 0.001778 | Cell 2 (Plastic) = 0.001778
+50427762
+Trial: 287, Time:34.345s
+Trial 287: Cell 1 (Static) = 0.001772 | Cell 2 (Plastic) = 0.001772
+51086237
+Trial: 288, Time:34.189s
+Trial 288: Cell 1 (Static) = 0.001767 | Cell 2 (Plastic) = 0.001767
+51302781
+Trial: 289, Time:35.348s
+Trial 289: Cell 1 (Static) = 0.001762 | Cell 2 (Plastic) = 0.001762
+50985127
+Trial: 290, Time:35.245s
+Trial 290: Cell 1 (Static) = 0.001757 | Cell 2 (Plastic) = 0.001757
+50081269
+Trial: 291, Time:33.923s
+Trial 291: Cell 1 (Static) = 0.001751 | Cell 2 (Plastic) = 0.001751
+51196871
+Trial: 292, Time:34.423s
+Trial 292: Cell 1 (Static) = 0.001746 | Cell 2 (Plastic) = 0.001746
+50863070
+Trial: 293, Time:35.556s
+Trial 293: Cell 1 (Static) = 0.001741 | Cell 2 (Plastic) = 0.001741
+50955569
+Trial: 294, Time:35.228s
+Trial 294: Cell 1 (Static) = 0.001736 | Cell 2 (Plastic) = 0.001736
+52195611
+Trial: 295, Time:35.493s
+Trial 295: Cell 1 (Static) = 0.001731 | Cell 2 (Plastic) = 0.001731
+51389550
+Trial: 296, Time:34.251s
+Trial 296: Cell 1 (Static) = 0.001725 | Cell 2 (Plastic) = 0.001725
+51284537
+Trial: 297, Time:34.595s
+Trial 297: Cell 1 (Static) = 0.001720 | Cell 2 (Plastic) = 0.001720
+50060336
+Trial: 298, Time:34.162s
+Trial 298: Cell 1 (Static) = 0.001715 | Cell 2 (Plastic) = 0.001715
+49538060
+Trial: 299, Time:33.875s
+Trial 299: Cell 1 (Static) = 0.001710 | Cell 2 (Plastic) = 0.001710
+49780584
+Trial: 300, Time:33.531s
+Trial 300: Cell 1 (Static) = 0.001705 | Cell 2 (Plastic) = 0.001705
+50552026
+Trial: 301, Time:33.625s
+Trial 301: Cell 1 (Static) = 0.001700 | Cell 2 (Plastic) = 0.001700
+50163619
+Trial: 302, Time:33.490s
+Trial 302: Cell 1 (Static) = 0.001695 | Cell 2 (Plastic) = 0.001695
+50258544
+Trial: 303, Time:35.224s
+Trial 303: Cell 1 (Static) = 0.001690 | Cell 2 (Plastic) = 0.001690
+49797357
+Trial: 304, Time:35.241s
+Trial 304: Cell 1 (Static) = 0.001684 | Cell 2 (Plastic) = 0.001684
+50167876
+Trial: 305, Time:34.319s
+Trial 305: Cell 1 (Static) = 0.001679 | Cell 2 (Plastic) = 0.001679
+49969341
+Trial: 306, Time:34.078s
+Trial 306: Cell 1 (Static) = 0.001674 | Cell 2 (Plastic) = 0.001674
+50487603
+Trial: 307, Time:34.213s
+Trial 307: Cell 1 (Static) = 0.001669 | Cell 2 (Plastic) = 0.001669
+51158358
+Trial: 308, Time:34.831s
+Trial 308: Cell 1 (Static) = 0.001664 | Cell 2 (Plastic) = 0.001664
+51566411
+Trial: 309, Time:34.464s
+Trial 309: Cell 1 (Static) = 0.001659 | Cell 2 (Plastic) = 0.001659
+52369596
+Trial: 310, Time:34.531s
+Trial 310: Cell 1 (Static) = 0.001654 | Cell 2 (Plastic) = 0.001654
+52450361
+Trial: 311, Time:34.938s
+Trial 311: Cell 1 (Static) = 0.001650 | Cell 2 (Plastic) = 0.001650
+52935708
+Trial: 312, Time:33.923s
+Trial 312: Cell 1 (Static) = 0.001645 | Cell 2 (Plastic) = 0.001645
+51734070
+Trial: 313, Time:33.678s
+Trial 313: Cell 1 (Static) = 0.001640 | Cell 2 (Plastic) = 0.001640
+53046874
+Trial: 314, Time:34.689s
+Trial 314: Cell 1 (Static) = 0.001635 | Cell 2 (Plastic) = 0.001635
+52411471
+Trial: 315, Time:35.154s
+Trial 315: Cell 1 (Static) = 0.001630 | Cell 2 (Plastic) = 0.001630
+52448334
+Trial: 316, Time:34.469s
+Trial 316: Cell 1 (Static) = 0.001625 | Cell 2 (Plastic) = 0.001625
+51844828
+Trial: 317, Time:34.467s
+Trial 317: Cell 1 (Static) = 0.001620 | Cell 2 (Plastic) = 0.001620
+51119675
+Trial: 318, Time:33.727s
+Trial 318: Cell 1 (Static) = 0.001615 | Cell 2 (Plastic) = 0.001615
+51084587
+Trial: 319, Time:33.851s
+Trial 319: Cell 1 (Static) = 0.001610 | Cell 2 (Plastic) = 0.001610
+51436620
+Trial: 320, Time:34.156s
+Trial 320: Cell 1 (Static) = 0.001606 | Cell 2 (Plastic) = 0.001606
+51338853
+Trial: 321, Time:34.214s
+Trial 321: Cell 1 (Static) = 0.001601 | Cell 2 (Plastic) = 0.001601
+49840484
+Trial: 322, Time:33.865s
+Trial 322: Cell 1 (Static) = 0.001596 | Cell 2 (Plastic) = 0.001596
+50709313
+Trial: 323, Time:34.140s
+Trial 323: Cell 1 (Static) = 0.001591 | Cell 2 (Plastic) = 0.001591
+49796967
+Trial: 324, Time:33.380s
+Trial 324: Cell 1 (Static) = 0.001587 | Cell 2 (Plastic) = 0.001587
+49228718
+Trial: 325, Time:34.915s
+Trial 325: Cell 1 (Static) = 0.001582 | Cell 2 (Plastic) = 0.001582
+50127684
+Trial: 326, Time:33.858s
+Trial 326: Cell 1 (Static) = 0.001577 | Cell 2 (Plastic) = 0.001577
+49188146
+Trial: 327, Time:34.840s
+Trial 327: Cell 1 (Static) = 0.001572 | Cell 2 (Plastic) = 0.001572
+50105145
+Trial: 328, Time:33.755s
+Trial 328: Cell 1 (Static) = 0.001568 | Cell 2 (Plastic) = 0.001568
+49455004
+Trial: 329, Time:33.877s
+Trial 329: Cell 1 (Static) = 0.001563 | Cell 2 (Plastic) = 0.001563
+50931627
+Trial: 330, Time:33.930s
+Trial 330: Cell 1 (Static) = 0.001558 | Cell 2 (Plastic) = 0.001558
+50051989
+Trial: 331, Time:34.937s
+Trial 331: Cell 1 (Static) = 0.001554 | Cell 2 (Plastic) = 0.001554
+50339056
+Trial: 332, Time:33.391s
+Trial 332: Cell 1 (Static) = 0.001549 | Cell 2 (Plastic) = 0.001549
+49046724
+Trial: 333, Time:34.097s
+Trial 333: Cell 1 (Static) = 0.001544 | Cell 2 (Plastic) = 0.001544
+48464568
+Trial: 334, Time:33.658s
+Trial 334: Cell 1 (Static) = 0.001540 | Cell 2 (Plastic) = 0.001540
+48692633
+Trial: 335, Time:33.841s
+Trial 335: Cell 1 (Static) = 0.001535 | Cell 2 (Plastic) = 0.001535
+48735040
+Trial: 336, Time:35.958s
+Trial 336: Cell 1 (Static) = 0.001531 | Cell 2 (Plastic) = 0.001531
+49395695
+Trial: 337, Time:33.963s
+Trial 337: Cell 1 (Static) = 0.001526 | Cell 2 (Plastic) = 0.001526
+50013820
+Trial: 338, Time:33.646s
+Trial 338: Cell 1 (Static) = 0.001521 | Cell 2 (Plastic) = 0.001521
+49845941
+Trial: 339, Time:33.480s
+Trial 339: Cell 1 (Static) = 0.001517 | Cell 2 (Plastic) = 0.001517
+49290555
+Trial: 340, Time:33.926s
+Trial 340: Cell 1 (Static) = 0.001512 | Cell 2 (Plastic) = 0.001512
+49760487
+Trial: 341, Time:34.799s
+Trial 341: Cell 1 (Static) = 0.001508 | Cell 2 (Plastic) = 0.001508
+50094304
+Trial: 342, Time:35.210s
+Trial 342: Cell 1 (Static) = 0.001503 | Cell 2 (Plastic) = 0.001503
+48790571
+Trial: 343, Time:34.874s
+Trial 343: Cell 1 (Static) = 0.001499 | Cell 2 (Plastic) = 0.001499
+49478366
+Trial: 344, Time:34.965s
+Trial 344: Cell 1 (Static) = 0.001494 | Cell 2 (Plastic) = 0.001494
+49996742
+Trial: 345, Time:33.819s
+Trial 345: Cell 1 (Static) = 0.001490 | Cell 2 (Plastic) = 0.001490
+48991215
+Trial: 346, Time:35.088s
+Trial 346: Cell 1 (Static) = 0.001485 | Cell 2 (Plastic) = 0.001485
+48718501
+Trial: 347, Time:33.476s
+Trial 347: Cell 1 (Static) = 0.001481 | Cell 2 (Plastic) = 0.001481
+49449306
+Trial: 348, Time:35.865s
+Trial 348: Cell 1 (Static) = 0.001476 | Cell 2 (Plastic) = 0.001476
+50207154
+Trial: 349, Time:33.594s
+Trial 349: Cell 1 (Static) = 0.001472 | Cell 2 (Plastic) = 0.001472
+50810048
+Trial: 350, Time:35.182s
+Trial 350: Cell 1 (Static) = 0.001468 | Cell 2 (Plastic) = 0.001468
+51287026
+Trial: 351, Time:34.125s
+Trial 351: Cell 1 (Static) = 0.001463 | Cell 2 (Plastic) = 0.001463
+52251653
+Trial: 352, Time:34.663s
+Trial 352: Cell 1 (Static) = 0.001459 | Cell 2 (Plastic) = 0.001459
+52101223
+Trial: 353, Time:34.465s
+Trial 353: Cell 1 (Static) = 0.001455 | Cell 2 (Plastic) = 0.001455
+52454217
+Trial: 354, Time:34.650s
+Trial 354: Cell 1 (Static) = 0.001450 | Cell 2 (Plastic) = 0.001450
+52304406
+Trial: 355, Time:34.051s
+Trial 355: Cell 1 (Static) = 0.001446 | Cell 2 (Plastic) = 0.001446
+51798023
+Trial: 356, Time:35.438s
+Trial 356: Cell 1 (Static) = 0.001442 | Cell 2 (Plastic) = 0.001442
+52021772
+Trial: 357, Time:34.365s
+Trial 357: Cell 1 (Static) = 0.001437 | Cell 2 (Plastic) = 0.001437
+53131582
+Trial: 358, Time:35.836s
+Trial 358: Cell 1 (Static) = 0.001433 | Cell 2 (Plastic) = 0.001433
+52094065
+Trial: 359, Time:34.156s
+Trial 359: Cell 1 (Static) = 0.001429 | Cell 2 (Plastic) = 0.001429
+52931940
+Trial: 360, Time:35.527s
+Trial 360: Cell 1 (Static) = 0.001424 | Cell 2 (Plastic) = 0.001424
+51469710
+Trial: 361, Time:34.121s
+Trial 361: Cell 1 (Static) = 0.001420 | Cell 2 (Plastic) = 0.001420
+51466901
+Trial: 362, Time:35.253s
+Trial 362: Cell 1 (Static) = 0.001416 | Cell 2 (Plastic) = 0.001416
+50510243
+Trial: 363, Time:33.471s
+Trial 363: Cell 1 (Static) = 0.001412 | Cell 2 (Plastic) = 0.001412
+50606434
+Trial: 364, Time:34.223s
+Trial 364: Cell 1 (Static) = 0.001407 | Cell 2 (Plastic) = 0.001407
+51369178
+Trial: 365, Time:34.107s
+Trial 365: Cell 1 (Static) = 0.001403 | Cell 2 (Plastic) = 0.001403
+52020031
+Trial: 366, Time:35.225s
+Trial 366: Cell 1 (Static) = 0.001399 | Cell 2 (Plastic) = 0.001399
+52191971
+Trial: 367, Time:34.996s
+Trial 367: Cell 1 (Static) = 0.001395 | Cell 2 (Plastic) = 0.001395
+52147140
+Trial: 368, Time:33.950s
+Trial 368: Cell 1 (Static) = 0.001391 | Cell 2 (Plastic) = 0.001391
+52708289
+Trial: 369, Time:35.467s
+Trial 369: Cell 1 (Static) = 0.001386 | Cell 2 (Plastic) = 0.001386
+52071795
+Trial: 370, Time:35.669s
+Trial 370: Cell 1 (Static) = 0.001382 | Cell 2 (Plastic) = 0.001382
+51928441
+Trial: 371, Time:35.305s
+Trial 371: Cell 1 (Static) = 0.001378 | Cell 2 (Plastic) = 0.001378
+51143375
+Trial: 372, Time:34.157s
+Trial 372: Cell 1 (Static) = 0.001374 | Cell 2 (Plastic) = 0.001374
+51167328
+Trial: 373, Time:34.567s
+Trial 373: Cell 1 (Static) = 0.001370 | Cell 2 (Plastic) = 0.001370
+51107732
+Trial: 374, Time:33.796s
+Trial 374: Cell 1 (Static) = 0.001366 | Cell 2 (Plastic) = 0.001366
+51362640
+Trial: 375, Time:34.363s
+Trial 375: Cell 1 (Static) = 0.001362 | Cell 2 (Plastic) = 0.001362
+52528190
+Trial: 376, Time:35.443s
+Trial 376: Cell 1 (Static) = 0.001358 | Cell 2 (Plastic) = 0.001358
+52373194
+Trial: 377, Time:34.385s
+Trial 377: Cell 1 (Static) = 0.001354 | Cell 2 (Plastic) = 0.001354
+52547488
+Trial: 378, Time:37.022s
+Trial 378: Cell 1 (Static) = 0.001350 | Cell 2 (Plastic) = 0.001350
+52223734
+Trial: 379, Time:34.704s
+Trial 379: Cell 1 (Static) = 0.001346 | Cell 2 (Plastic) = 0.001346
+52468178
+Trial: 380, Time:34.394s
+Trial 380: Cell 1 (Static) = 0.001342 | Cell 2 (Plastic) = 0.001342
+52992709
+Trial: 381, Time:35.684s
+Trial 381: Cell 1 (Static) = 0.001337 | Cell 2 (Plastic) = 0.001337
+52437198
+Trial: 382, Time:34.353s
+Trial 382: Cell 1 (Static) = 0.001333 | Cell 2 (Plastic) = 0.001333
+52013001
+Trial: 383, Time:34.289s
+Trial 383: Cell 1 (Static) = 0.001330 | Cell 2 (Plastic) = 0.001330
+51648880
+Trial: 384, Time:34.146s
+Trial 384: Cell 1 (Static) = 0.001326 | Cell 2 (Plastic) = 0.001326
+51310880
+Trial: 385, Time:34.908s
+Trial 385: Cell 1 (Static) = 0.001322 | Cell 2 (Plastic) = 0.001322
+52187505
+Trial: 386, Time:35.355s
+Trial 386: Cell 1 (Static) = 0.001318 | Cell 2 (Plastic) = 0.001318
+50853712
+Trial: 387, Time:33.966s
+Trial 387: Cell 1 (Static) = 0.001314 | Cell 2 (Plastic) = 0.001314
+51001146
+Trial: 388, Time:35.106s
+Trial 388: Cell 1 (Static) = 0.001310 | Cell 2 (Plastic) = 0.001310
+51131969
+Trial: 389, Time:34.184s
+Trial 389: Cell 1 (Static) = 0.001306 | Cell 2 (Plastic) = 0.001306
+51232023
+Trial: 390, Time:34.107s
+Trial 390: Cell 1 (Static) = 0.001302 | Cell 2 (Plastic) = 0.001302
+51819092
+Trial: 391, Time:35.287s
+Trial 391: Cell 1 (Static) = 0.001298 | Cell 2 (Plastic) = 0.001298
+51587192
+Trial: 392, Time:34.441s
+Trial 392: Cell 1 (Static) = 0.001294 | Cell 2 (Plastic) = 0.001294
+50875253
+Trial: 393, Time:34.166s
+Trial 393: Cell 1 (Static) = 0.001290 | Cell 2 (Plastic) = 0.001290
+51888696
+Trial: 394, Time:34.445s
+Trial 394: Cell 1 (Static) = 0.001286 | Cell 2 (Plastic) = 0.001286
+51053627
+Trial: 395, Time:33.724s
+Trial 395: Cell 1 (Static) = 0.001283 | Cell 2 (Plastic) = 0.001283
+51619719
+Trial: 396, Time:34.432s
+Trial 396: Cell 1 (Static) = 0.001279 | Cell 2 (Plastic) = 0.001279
+52107936
+Trial: 397, Time:34.677s
+Trial 397: Cell 1 (Static) = 0.001275 | Cell 2 (Plastic) = 0.001275
+50975392
+Trial: 398, Time:34.012s
+Trial 398: Cell 1 (Static) = 0.001271 | Cell 2 (Plastic) = 0.001271
+51593027
+Trial: 399, Time:34.491s
+Trial 399: Cell 1 (Static) = 0.001267 | Cell 2 (Plastic) = 0.001267
+50622496
+Trial: 400, Time:33.920s
+Trial 400: Cell 1 (Static) = 0.001263 | Cell 2 (Plastic) = 0.001263
+50414325
+Trial: 401, Time:33.332s
+Trial 401: Cell 1 (Static) = 0.001260 | Cell 2 (Plastic) = 0.001260
+51242289
+Trial: 402, Time:34.111s
+Trial 402: Cell 1 (Static) = 0.001256 | Cell 2 (Plastic) = 0.001256
+51083077
+Trial: 403, Time:34.101s
+Trial 403: Cell 1 (Static) = 0.001252 | Cell 2 (Plastic) = 0.001252
+51261909
+Trial: 404, Time:34.535s
+Trial 404: Cell 1 (Static) = 0.001248 | Cell 2 (Plastic) = 0.001248
+51029351
+Trial: 405, Time:34.440s
+Trial 405: Cell 1 (Static) = 0.001245 | Cell 2 (Plastic) = 0.001245
+52362313
+Trial: 406, Time:35.805s
+Trial 406: Cell 1 (Static) = 0.001241 | Cell 2 (Plastic) = 0.001241
+51813899
+Trial: 407, Time:34.542s
+Trial 407: Cell 1 (Static) = 0.001237 | Cell 2 (Plastic) = 0.001237
+52150935
+Trial: 408, Time:34.475s
+Trial 408: Cell 1 (Static) = 0.001234 | Cell 2 (Plastic) = 0.001234
+51760129
+Trial: 409, Time:34.314s
+Trial 409: Cell 1 (Static) = 0.001230 | Cell 2 (Plastic) = 0.001230
+51353889
+Trial: 410, Time:33.444s
+Trial 410: Cell 1 (Static) = 0.001226 | Cell 2 (Plastic) = 0.001226
+53140178
+Trial: 411, Time:34.677s
+Trial 411: Cell 1 (Static) = 0.001223 | Cell 2 (Plastic) = 0.001223
+53399640
+Trial: 412, Time:34.724s
+Trial 412: Cell 1 (Static) = 0.001219 | Cell 2 (Plastic) = 0.001219
+53467120
+Trial: 413, Time:34.788s
+Trial 413: Cell 1 (Static) = 0.001215 | Cell 2 (Plastic) = 0.001215
+53171492
+Trial: 414, Time:34.164s
+Trial 414: Cell 1 (Static) = 0.001212 | Cell 2 (Plastic) = 0.001212
+53392366
+Trial: 415, Time:36.079s
+Trial 415: Cell 1 (Static) = 0.001208 | Cell 2 (Plastic) = 0.001208
+53168951
+Trial: 416, Time:34.792s
+Trial 416: Cell 1 (Static) = 0.001204 | Cell 2 (Plastic) = 0.001204
+53121265
+Trial: 417, Time:34.921s
+Trial 417: Cell 1 (Static) = 0.001201 | Cell 2 (Plastic) = 0.001201
+52734928
+Trial: 418, Time:34.444s
+Trial 418: Cell 1 (Static) = 0.001197 | Cell 2 (Plastic) = 0.001197
+52972473
+Trial: 419, Time:35.086s
+Trial 419: Cell 1 (Static) = 0.001194 | Cell 2 (Plastic) = 0.001194
+51865311
+Trial: 420, Time:35.244s
+Trial 420: Cell 1 (Static) = 0.001190 | Cell 2 (Plastic) = 0.001190
+50614708
+Trial: 421, Time:34.701s
+Trial 421: Cell 1 (Static) = 0.001186 | Cell 2 (Plastic) = 0.001186
+50362857
+Trial: 422, Time:33.485s
+Trial 422: Cell 1 (Static) = 0.001183 | Cell 2 (Plastic) = 0.001183
+50684307
+Trial: 423, Time:34.033s
+Trial 423: Cell 1 (Static) = 0.001179 | Cell 2 (Plastic) = 0.001179
+50711168
+Trial: 424, Time:34.156s
+Trial 424: Cell 1 (Static) = 0.001176 | Cell 2 (Plastic) = 0.001176
+50404824
+Trial: 425, Time:34.000s
+Trial 425: Cell 1 (Static) = 0.001172 | Cell 2 (Plastic) = 0.001172
+50915315
+Trial: 426, Time:34.107s
+Trial 426: Cell 1 (Static) = 0.001169 | Cell 2 (Plastic) = 0.001169
+50294866
+Trial: 427, Time:34.066s
+Trial 427: Cell 1 (Static) = 0.001165 | Cell 2 (Plastic) = 0.001165
+50152559
+Trial: 428, Time:33.573s
+Trial 428: Cell 1 (Static) = 0.001162 | Cell 2 (Plastic) = 0.001162
+49376342
+Trial: 429, Time:33.818s
+Trial 429: Cell 1 (Static) = 0.001158 | Cell 2 (Plastic) = 0.001158
+49554967
+Trial: 430, Time:33.786s
+Trial 430: Cell 1 (Static) = 0.001155 | Cell 2 (Plastic) = 0.001155
+49063474
+Trial: 431, Time:33.536s
+Trial 431: Cell 1 (Static) = 0.001151 | Cell 2 (Plastic) = 0.001151
+49761616
+Trial: 432, Time:33.805s
+Trial 432: Cell 1 (Static) = 0.001148 | Cell 2 (Plastic) = 0.001148
+50057075
+Trial: 433, Time:33.368s
+Trial 433: Cell 1 (Static) = 0.001145 | Cell 2 (Plastic) = 0.001145
+50873584
+Trial: 434, Time:33.499s
+Trial 434: Cell 1 (Static) = 0.001141 | Cell 2 (Plastic) = 0.001141
+51876447
+Trial: 435, Time:33.748s
+Trial 435: Cell 1 (Static) = 0.001138 | Cell 2 (Plastic) = 0.001138
+52286629
+Trial: 436, Time:34.972s
+Trial 436: Cell 1 (Static) = 0.001134 | Cell 2 (Plastic) = 0.001134
+51364462
+Trial: 437, Time:34.016s
+Trial 437: Cell 1 (Static) = 0.001131 | Cell 2 (Plastic) = 0.001131
+51766345
+Trial: 438, Time:34.460s
+Trial 438: Cell 1 (Static) = 0.001128 | Cell 2 (Plastic) = 0.001128
+52881393
+Trial: 439, Time:34.495s
+Trial 439: Cell 1 (Static) = 0.001124 | Cell 2 (Plastic) = 0.001124
+52882087
+Trial: 440, Time:34.802s
+Trial 440: Cell 1 (Static) = 0.001121 | Cell 2 (Plastic) = 0.001121
+52797816
+Trial: 441, Time:35.828s
+Trial 441: Cell 1 (Static) = 0.001117 | Cell 2 (Plastic) = 0.001117
+53507110
+Trial: 442, Time:35.425s
+Trial 442: Cell 1 (Static) = 0.001114 | Cell 2 (Plastic) = 0.001114
+52787246
+Trial: 443, Time:35.319s
+Trial 443: Cell 1 (Static) = 0.001111 | Cell 2 (Plastic) = 0.001111
+51556005
+Trial: 444, Time:34.688s
+Trial 444: Cell 1 (Static) = 0.001107 | Cell 2 (Plastic) = 0.001107
+51429277
+Trial: 445, Time:33.850s
+Trial 445: Cell 1 (Static) = 0.001104 | Cell 2 (Plastic) = 0.001104
+51737113
+Trial: 446, Time:34.318s
+Trial 446: Cell 1 (Static) = 0.001101 | Cell 2 (Plastic) = 0.001101
+52321163
+Trial: 447, Time:35.319s
+Trial 447: Cell 1 (Static) = 0.001098 | Cell 2 (Plastic) = 0.001098
+51957767
+Trial: 448, Time:35.013s
+Trial 448: Cell 1 (Static) = 0.001094 | Cell 2 (Plastic) = 0.001094
+51971614
+Trial: 449, Time:34.552s
+Trial 449: Cell 1 (Static) = 0.001091 | Cell 2 (Plastic) = 0.001091
+52003143
+Trial: 450, Time:36.153s
+Trial 450: Cell 1 (Static) = 0.001088 | Cell 2 (Plastic) = 0.001088
+51045366
+Trial: 451, Time:34.309s
+Trial 451: Cell 1 (Static) = 0.001084 | Cell 2 (Plastic) = 0.001084
+50938780
+Trial: 452, Time:35.186s
+Trial 452: Cell 1 (Static) = 0.001081 | Cell 2 (Plastic) = 0.001081
+51501479
+Trial: 453, Time:35.678s
+Trial 453: Cell 1 (Static) = 0.001078 | Cell 2 (Plastic) = 0.001078
+51601094
+Trial: 454, Time:36.655s
+Trial 454: Cell 1 (Static) = 0.001075 | Cell 2 (Plastic) = 0.001075
+53134382
+Trial: 455, Time:36.787s
+Trial 455: Cell 1 (Static) = 0.001072 | Cell 2 (Plastic) = 0.001072
+51361451
+Trial: 456, Time:38.460s
+Trial 456: Cell 1 (Static) = 0.001068 | Cell 2 (Plastic) = 0.001068
+51889667
+Trial: 457, Time:36.058s
+Trial 457: Cell 1 (Static) = 0.001065 | Cell 2 (Plastic) = 0.001065
+52421386
+Trial: 458, Time:36.818s
+Trial 458: Cell 1 (Static) = 0.001062 | Cell 2 (Plastic) = 0.001062
+52582223
+Trial: 459, Time:36.248s
+Trial 459: Cell 1 (Static) = 0.001059 | Cell 2 (Plastic) = 0.001059
+52973498
+Trial: 460, Time:36.702s
+Trial 460: Cell 1 (Static) = 0.001056 | Cell 2 (Plastic) = 0.001056
+52274083
+Trial: 461, Time:38.841s
+Trial 461: Cell 1 (Static) = 0.001052 | Cell 2 (Plastic) = 0.001052
+52777748
+Trial: 462, Time:36.929s
+Trial 462: Cell 1 (Static) = 0.001049 | Cell 2 (Plastic) = 0.001049
+52855472
+Trial: 463, Time:38.661s
+Trial 463: Cell 1 (Static) = 0.001046 | Cell 2 (Plastic) = 0.001046
+54473393
+Trial: 464, Time:36.023s
+Trial 464: Cell 1 (Static) = 0.001043 | Cell 2 (Plastic) = 0.001043
+54684852
+Trial: 465, Time:39.352s
+Trial 465: Cell 1 (Static) = 0.001040 | Cell 2 (Plastic) = 0.001040
+55003995
+Trial: 466, Time:37.413s
+Trial 466: Cell 1 (Static) = 0.001037 | Cell 2 (Plastic) = 0.001037
+54651421
+Trial: 467, Time:38.586s
+Trial 467: Cell 1 (Static) = 0.001034 | Cell 2 (Plastic) = 0.001034
+55430957
+Trial: 468, Time:37.332s
+Trial 468: Cell 1 (Static) = 0.001031 | Cell 2 (Plastic) = 0.001031
+54777542
+Trial: 469, Time:36.590s
+Trial 469: Cell 1 (Static) = 0.001028 | Cell 2 (Plastic) = 0.001028
+52635722
+Trial: 470, Time:35.817s
+Trial 470: Cell 1 (Static) = 0.001024 | Cell 2 (Plastic) = 0.001024
+53806082
+Trial: 471, Time:39.149s
+Trial 471: Cell 1 (Static) = 0.001021 | Cell 2 (Plastic) = 0.001021
+52110548
+Trial: 472, Time:36.637s
+Trial 472: Cell 1 (Static) = 0.001018 | Cell 2 (Plastic) = 0.001018
+52269161
+Trial: 473, Time:37.963s
+Trial 473: Cell 1 (Static) = 0.001015 | Cell 2 (Plastic) = 0.001015
+53339651
+Trial: 474, Time:36.576s
+Trial 474: Cell 1 (Static) = 0.001012 | Cell 2 (Plastic) = 0.001012
+52247707
+Trial: 475, Time:35.554s
+Trial 475: Cell 1 (Static) = 0.001009 | Cell 2 (Plastic) = 0.001009
+52986419
+Trial: 476, Time:35.706s
+Trial 476: Cell 1 (Static) = 0.001006 | Cell 2 (Plastic) = 0.001006
+52689563
+Trial: 477, Time:37.895s
+Trial 477: Cell 1 (Static) = 0.001003 | Cell 2 (Plastic) = 0.001003
+51721026
+Trial: 478, Time:35.671s
+Trial 478: Cell 1 (Static) = 0.001000 | Cell 2 (Plastic) = 0.001000
+52979951
+Trial: 479, Time:36.151s
+Trial 479: Cell 1 (Static) = 0.000997 | Cell 2 (Plastic) = 0.000997
+53566853
+Trial: 480, Time:35.727s
+Trial 480: Cell 1 (Static) = 0.000994 | Cell 2 (Plastic) = 0.000994
+53086113
+Trial: 481, Time:36.370s
+Trial 481: Cell 1 (Static) = 0.000991 | Cell 2 (Plastic) = 0.000991
+52926053
+Trial: 482, Time:35.569s
+Trial 482: Cell 1 (Static) = 0.000988 | Cell 2 (Plastic) = 0.000988
+52274514
+Trial: 483, Time:35.617s
+Trial 483: Cell 1 (Static) = 0.000985 | Cell 2 (Plastic) = 0.000985
+52595681
+Trial: 484, Time:35.962s
+Trial 484: Cell 1 (Static) = 0.000982 | Cell 2 (Plastic) = 0.000982
+53005433
+Trial: 485, Time:37.804s
+Trial 485: Cell 1 (Static) = 0.000979 | Cell 2 (Plastic) = 0.000979
+52574753
+Trial: 486, Time:36.223s
+Trial 486: Cell 1 (Static) = 0.000977 | Cell 2 (Plastic) = 0.000977
+51847622
+Trial: 487, Time:35.342s
+Trial 487: Cell 1 (Static) = 0.000974 | Cell 2 (Plastic) = 0.000974
+51256855
+Trial: 488, Time:34.900s
+Trial 488: Cell 1 (Static) = 0.000971 | Cell 2 (Plastic) = 0.000971
+51140358
+Trial: 489, Time:34.854s
+Trial 489: Cell 1 (Static) = 0.000968 | Cell 2 (Plastic) = 0.000968
+51853500
+Trial: 490, Time:35.867s
+Trial 490: Cell 1 (Static) = 0.000965 | Cell 2 (Plastic) = 0.000965
+51621320
+Trial: 491, Time:35.185s
+Trial 491: Cell 1 (Static) = 0.000962 | Cell 2 (Plastic) = 0.000962
+51968213
+Trial: 492, Time:35.225s
+Trial 492: Cell 1 (Static) = 0.000959 | Cell 2 (Plastic) = 0.000959
+50521513
+Trial: 493, Time:34.780s
+Trial 493: Cell 1 (Static) = 0.000956 | Cell 2 (Plastic) = 0.000956
+50980038
+Trial: 494, Time:35.258s
+Trial 494: Cell 1 (Static) = 0.000953 | Cell 2 (Plastic) = 0.000953
+52380714
+Trial: 495, Time:34.694s
+Trial 495: Cell 1 (Static) = 0.000951 | Cell 2 (Plastic) = 0.000951
+52502323
+Trial: 496, Time:35.124s
+Trial 496: Cell 1 (Static) = 0.000948 | Cell 2 (Plastic) = 0.000948
+52631593
+Trial: 497, Time:34.928s
+Trial 497: Cell 1 (Static) = 0.000945 | Cell 2 (Plastic) = 0.000945
+53151661
+Trial: 498, Time:35.630s
+Trial 498: Cell 1 (Static) = 0.000942 | Cell 2 (Plastic) = 0.000942
+52041061
+Trial: 499, Time:34.983s
+Trial 499: Cell 1 (Static) = 0.000939 | Cell 2 (Plastic) = 0.000939
+51869129
+Trial: 500, Time:35.094s
+Trial 500: Cell 1 (Static) = 0.000936 | Cell 2 (Plastic) = 0.000936
+51482372
+Trial: 501, Time:36.138s
+Trial 501: Cell 1 (Static) = 0.000934 | Cell 2 (Plastic) = 0.000934
+52963372
+Trial: 502, Time:34.793s
+Trial 502: Cell 1 (Static) = 0.000931 | Cell 2 (Plastic) = 0.000931
+52706285
+Trial: 503, Time:35.023s
+Trial 503: Cell 1 (Static) = 0.000928 | Cell 2 (Plastic) = 0.000928
+53019654
+Trial: 504, Time:35.113s
+Trial 504: Cell 1 (Static) = 0.000925 | Cell 2 (Plastic) = 0.000925
+53167685
+Trial: 505, Time:35.177s
+Trial 505: Cell 1 (Static) = 0.000923 | Cell 2 (Plastic) = 0.000923
+52118938
+Trial: 506, Time:34.889s
+Trial 506: Cell 1 (Static) = 0.000920 | Cell 2 (Plastic) = 0.000920
+53288493
+Trial: 507, Time:34.766s
+Trial 507: Cell 1 (Static) = 0.000917 | Cell 2 (Plastic) = 0.000917
+53712627
+Trial: 508, Time:34.913s
+Trial 508: Cell 1 (Static) = 0.000914 | Cell 2 (Plastic) = 0.000914
+53976684
+Trial: 509, Time:35.055s
+Trial 509: Cell 1 (Static) = 0.000912 | Cell 2 (Plastic) = 0.000912
+52962739
+Trial: 510, Time:34.857s
+Trial 510: Cell 1 (Static) = 0.000909 | Cell 2 (Plastic) = 0.000909
+52161475
+Trial: 511, Time:35.031s
+Trial 511: Cell 1 (Static) = 0.000906 | Cell 2 (Plastic) = 0.000906
+52116552
+Trial: 512, Time:34.922s
+Trial 512: Cell 1 (Static) = 0.000903 | Cell 2 (Plastic) = 0.000903
+52034235
+Trial: 513, Time:34.922s
+Trial 513: Cell 1 (Static) = 0.000901 | Cell 2 (Plastic) = 0.000901
+51496935
+Trial: 514, Time:34.798s
+Trial 514: Cell 1 (Static) = 0.000898 | Cell 2 (Plastic) = 0.000898
+51790952
+Trial: 515, Time:34.585s
+Trial 515: Cell 1 (Static) = 0.000895 | Cell 2 (Plastic) = 0.000895
+51513013
+Trial: 516, Time:34.264s
+Trial 516: Cell 1 (Static) = 0.000893 | Cell 2 (Plastic) = 0.000893
+52558259
+Trial: 517, Time:35.616s
+Trial 517: Cell 1 (Static) = 0.000890 | Cell 2 (Plastic) = 0.000890
+52457201
+Trial: 518, Time:34.868s
+Trial 518: Cell 1 (Static) = 0.000887 | Cell 2 (Plastic) = 0.000887
+50935267
+Trial: 519, Time:34.785s
+Trial 519: Cell 1 (Static) = 0.000885 | Cell 2 (Plastic) = 0.000885
+51901588
+Trial: 520, Time:35.522s
+Trial 520: Cell 1 (Static) = 0.000882 | Cell 2 (Plastic) = 0.000882
+51915069
+Trial: 521, Time:34.761s
+Trial 521: Cell 1 (Static) = 0.000879 | Cell 2 (Plastic) = 0.000879
+52071180
+Trial: 522, Time:35.101s
+Trial 522: Cell 1 (Static) = 0.000877 | Cell 2 (Plastic) = 0.000877
+51902043
+Trial: 523, Time:34.660s
+Trial 523: Cell 1 (Static) = 0.000874 | Cell 2 (Plastic) = 0.000874
+51996797
+Trial: 524, Time:35.603s
+Trial 524: Cell 1 (Static) = 0.000871 | Cell 2 (Plastic) = 0.000871
+53437430
+Trial: 525, Time:35.266s
+Trial 525: Cell 1 (Static) = 0.000869 | Cell 2 (Plastic) = 0.000869
+52853791
+Trial: 526, Time:35.360s
+Trial 526: Cell 1 (Static) = 0.000866 | Cell 2 (Plastic) = 0.000866
+52609264
+Trial: 527, Time:34.943s
+Trial 527: Cell 1 (Static) = 0.000864 | Cell 2 (Plastic) = 0.000864
+53519618
+Trial: 528, Time:36.300s
+Trial 528: Cell 1 (Static) = 0.000861 | Cell 2 (Plastic) = 0.000861
+52920493
+Trial: 529, Time:34.697s
+Trial 529: Cell 1 (Static) = 0.000859 | Cell 2 (Plastic) = 0.000859
+52830293
+Trial: 530, Time:35.896s
+Trial 530: Cell 1 (Static) = 0.000856 | Cell 2 (Plastic) = 0.000856
+53759504
+Trial: 531, Time:35.330s
+Trial 531: Cell 1 (Static) = 0.000853 | Cell 2 (Plastic) = 0.000853
+53006036
+Trial: 532, Time:35.034s
+Trial 532: Cell 1 (Static) = 0.000851 | Cell 2 (Plastic) = 0.000851
+51967186
+Trial: 533, Time:35.141s
+Trial 533: Cell 1 (Static) = 0.000848 | Cell 2 (Plastic) = 0.000848
+53821811
+Trial: 534, Time:35.615s
+Trial 534: Cell 1 (Static) = 0.000846 | Cell 2 (Plastic) = 0.000846
+53915661
+Trial: 535, Time:35.256s
+Trial 535: Cell 1 (Static) = 0.000843 | Cell 2 (Plastic) = 0.000843
+54317572
+Trial: 536, Time:34.609s
+Trial 536: Cell 1 (Static) = 0.000841 | Cell 2 (Plastic) = 0.000841
+53605554
+Trial: 537, Time:35.288s
+Trial 537: Cell 1 (Static) = 0.000838 | Cell 2 (Plastic) = 0.000838
+54356002
+Trial: 538, Time:34.967s
+Trial 538: Cell 1 (Static) = 0.000836 | Cell 2 (Plastic) = 0.000836
+53651566
+Trial: 539, Time:35.301s
+Trial 539: Cell 1 (Static) = 0.000833 | Cell 2 (Plastic) = 0.000833
+54650776
+Trial: 540, Time:35.796s
+Trial 540: Cell 1 (Static) = 0.000831 | Cell 2 (Plastic) = 0.000831
+53100590
+Trial: 541, Time:35.546s
+Trial 541: Cell 1 (Static) = 0.000828 | Cell 2 (Plastic) = 0.000828
+53085725
+Trial: 542, Time:35.915s
+Trial 542: Cell 1 (Static) = 0.000826 | Cell 2 (Plastic) = 0.000826
+53302889
+Trial: 543, Time:35.426s
+Trial 543: Cell 1 (Static) = 0.000823 | Cell 2 (Plastic) = 0.000823
+53293139
+Trial: 544, Time:35.217s
+Trial 544: Cell 1 (Static) = 0.000821 | Cell 2 (Plastic) = 0.000821
+53315132
+Trial: 545, Time:34.619s
+Trial 545: Cell 1 (Static) = 0.000818 | Cell 2 (Plastic) = 0.000818
+53084445
+Trial: 546, Time:35.527s
+Trial 546: Cell 1 (Static) = 0.000816 | Cell 2 (Plastic) = 0.000816
+52394147
+Trial: 547, Time:35.046s
+Trial 547: Cell 1 (Static) = 0.000813 | Cell 2 (Plastic) = 0.000813
+52912756
+Trial: 548, Time:35.291s
+Trial 548: Cell 1 (Static) = 0.000811 | Cell 2 (Plastic) = 0.000811
+53519668
+Trial: 549, Time:35.483s
+Trial 549: Cell 1 (Static) = 0.000809 | Cell 2 (Plastic) = 0.000809
+52324269
+Trial: 550, Time:35.166s
+Trial 550: Cell 1 (Static) = 0.000806 | Cell 2 (Plastic) = 0.000806
+51040527
+Trial: 551, Time:34.070s
+Trial 551: Cell 1 (Static) = 0.000804 | Cell 2 (Plastic) = 0.000804
+51623020
+Trial: 552, Time:34.749s
+Trial 552: Cell 1 (Static) = 0.000801 | Cell 2 (Plastic) = 0.000801
+51575809
+Trial: 553, Time:34.261s
+Trial 553: Cell 1 (Static) = 0.000799 | Cell 2 (Plastic) = 0.000799
+51812900
+Trial: 554, Time:34.744s
+Trial 554: Cell 1 (Static) = 0.000797 | Cell 2 (Plastic) = 0.000797
+52529128
+Trial: 555, Time:35.099s
+Trial 555: Cell 1 (Static) = 0.000794 | Cell 2 (Plastic) = 0.000794
+52493440
+Trial: 556, Time:34.446s
+Trial 556: Cell 1 (Static) = 0.000792 | Cell 2 (Plastic) = 0.000792
+52382094
+Trial: 557, Time:34.950s
+Trial 557: Cell 1 (Static) = 0.000789 | Cell 2 (Plastic) = 0.000789
+52281524
+Trial: 558, Time:34.810s
+Trial 558: Cell 1 (Static) = 0.000787 | Cell 2 (Plastic) = 0.000787
+52523505
+Trial: 559, Time:34.852s
+Trial 559: Cell 1 (Static) = 0.000785 | Cell 2 (Plastic) = 0.000785
+51985663
+Trial: 560, Time:35.013s
+Trial 560: Cell 1 (Static) = 0.000782 | Cell 2 (Plastic) = 0.000782
+54124316
+Trial: 561, Time:35.347s
+Trial 561: Cell 1 (Static) = 0.000780 | Cell 2 (Plastic) = 0.000780
+53886755
+Trial: 562, Time:34.621s
+Trial 562: Cell 1 (Static) = 0.000778 | Cell 2 (Plastic) = 0.000778
+53680164
+Trial: 563, Time:35.697s
+Trial 563: Cell 1 (Static) = 0.000775 | Cell 2 (Plastic) = 0.000775
+53335276
+Trial: 564, Time:35.280s
+Trial 564: Cell 1 (Static) = 0.000773 | Cell 2 (Plastic) = 0.000773
+52896824
+Trial: 565, Time:36.216s
+Trial 565: Cell 1 (Static) = 0.000771 | Cell 2 (Plastic) = 0.000771
+53942264
+Trial: 566, Time:35.042s
+Trial 566: Cell 1 (Static) = 0.000768 | Cell 2 (Plastic) = 0.000768
+52890297
+Trial: 567, Time:34.991s
+Trial 567: Cell 1 (Static) = 0.000766 | Cell 2 (Plastic) = 0.000766
+53943916
+Trial: 568, Time:36.873s
+Trial 568: Cell 1 (Static) = 0.000764 | Cell 2 (Plastic) = 0.000764
+53505761
+Trial: 569, Time:36.754s
+Trial 569: Cell 1 (Static) = 0.000762 | Cell 2 (Plastic) = 0.000762
+52770570
+Trial: 570, Time:35.400s
+Trial 570: Cell 1 (Static) = 0.000759 | Cell 2 (Plastic) = 0.000759
+52851347
+Trial: 571, Time:35.224s
+Trial 571: Cell 1 (Static) = 0.000757 | Cell 2 (Plastic) = 0.000757
+53287618
+Trial: 572, Time:34.872s
+Trial 572: Cell 1 (Static) = 0.000755 | Cell 2 (Plastic) = 0.000755
+52541310
+Trial: 573, Time:34.701s
+Trial 573: Cell 1 (Static) = 0.000753 | Cell 2 (Plastic) = 0.000753
+50830033
+Trial: 574, Time:34.801s
+Trial 574: Cell 1 (Static) = 0.000750 | Cell 2 (Plastic) = 0.000750
+50337223
+Trial: 575, Time:34.037s
+Trial 575: Cell 1 (Static) = 0.000748 | Cell 2 (Plastic) = 0.000748
+50047478
+Trial: 576, Time:34.594s
+Trial 576: Cell 1 (Static) = 0.000746 | Cell 2 (Plastic) = 0.000746
+49911031
+Trial: 577, Time:34.446s
+Trial 577: Cell 1 (Static) = 0.000744 | Cell 2 (Plastic) = 0.000744
+50636598
+Trial: 578, Time:36.266s
+Trial 578: Cell 1 (Static) = 0.000741 | Cell 2 (Plastic) = 0.000741
+50379810
+Trial: 579, Time:34.724s
+Trial 579: Cell 1 (Static) = 0.000739 | Cell 2 (Plastic) = 0.000739
+50786597
+Trial: 580, Time:35.009s
+Trial 580: Cell 1 (Static) = 0.000737 | Cell 2 (Plastic) = 0.000737
+50502895
+Trial: 581, Time:34.558s
+Trial 581: Cell 1 (Static) = 0.000735 | Cell 2 (Plastic) = 0.000735
+51258204
+Trial: 582, Time:34.063s
+Trial 582: Cell 1 (Static) = 0.000732 | Cell 2 (Plastic) = 0.000732
+50494821
+Trial: 583, Time:34.313s
+Trial 583: Cell 1 (Static) = 0.000730 | Cell 2 (Plastic) = 0.000730
+51331297
+Trial: 584, Time:34.667s
+Trial 584: Cell 1 (Static) = 0.000728 | Cell 2 (Plastic) = 0.000728
+50921243
+Trial: 585, Time:35.177s
+Trial 585: Cell 1 (Static) = 0.000726 | Cell 2 (Plastic) = 0.000726
+50684101
+Trial: 586, Time:34.687s
+Trial 586: Cell 1 (Static) = 0.000724 | Cell 2 (Plastic) = 0.000724
+51772781
+Trial: 587, Time:35.254s
+Trial 587: Cell 1 (Static) = 0.000722 | Cell 2 (Plastic) = 0.000722
+53177508
+Trial: 588, Time:35.363s
+Trial 588: Cell 1 (Static) = 0.000719 | Cell 2 (Plastic) = 0.000719
+51635518
+Trial: 589, Time:36.275s
+Trial 589: Cell 1 (Static) = 0.000717 | Cell 2 (Plastic) = 0.000717
+52999976
+Trial: 590, Time:35.502s
+Trial 590: Cell 1 (Static) = 0.000715 | Cell 2 (Plastic) = 0.000715
+52632887
+Trial: 591, Time:35.094s
+Trial 591: Cell 1 (Static) = 0.000713 | Cell 2 (Plastic) = 0.000713
+52224036
+Trial: 592, Time:35.173s
+Trial 592: Cell 1 (Static) = 0.000711 | Cell 2 (Plastic) = 0.000711
+51450545
+Trial: 593, Time:34.500s
+Trial 593: Cell 1 (Static) = 0.000709 | Cell 2 (Plastic) = 0.000709
+51900968
+Trial: 594, Time:35.351s
+Trial 594: Cell 1 (Static) = 0.000707 | Cell 2 (Plastic) = 0.000707
+51896395
+Trial: 595, Time:34.939s
+Trial 595: Cell 1 (Static) = 0.000705 | Cell 2 (Plastic) = 0.000705
+51675567
+Trial: 596, Time:34.964s
+Trial 596: Cell 1 (Static) = 0.000702 | Cell 2 (Plastic) = 0.000702
+50857929
+Trial: 597, Time:34.712s
+Trial 597: Cell 1 (Static) = 0.000700 | Cell 2 (Plastic) = 0.000700
+51348907
+Trial: 598, Time:34.734s
+Trial 598: Cell 1 (Static) = 0.000698 | Cell 2 (Plastic) = 0.000698
+51597925
+Trial: 599, Time:36.070s
+Trial 599: Cell 1 (Static) = 0.000696 | Cell 2 (Plastic) = 0.000696
+52127044
+Trial: 600, Time:35.906s
+Trial 600: Cell 1 (Static) = 0.000694 | Cell 2 (Plastic) = 0.000694
+50934462
+Trial: 601, Time:34.781s
+Trial 601: Cell 1 (Static) = 0.000692 | Cell 2 (Plastic) = 0.000692
+51200795
+Trial: 602, Time:35.887s
+Trial 602: Cell 1 (Static) = 0.000690 | Cell 2 (Plastic) = 0.000690
+50175784
+Trial: 603, Time:34.773s
+Trial 603: Cell 1 (Static) = 0.000688 | Cell 2 (Plastic) = 0.000688
+52069634
+Trial: 604, Time:35.282s
+Trial 604: Cell 1 (Static) = 0.000686 | Cell 2 (Plastic) = 0.000686
+51239346
+Trial: 605, Time:35.075s
+Trial 605: Cell 1 (Static) = 0.000684 | Cell 2 (Plastic) = 0.000684
+50869941
+Trial: 606, Time:34.946s
+Trial 606: Cell 1 (Static) = 0.000682 | Cell 2 (Plastic) = 0.000682
+51571827
+Trial: 607, Time:34.868s
+Trial 607: Cell 1 (Static) = 0.000680 | Cell 2 (Plastic) = 0.000680
+51465680
+Trial: 608, Time:34.708s
+Trial 608: Cell 1 (Static) = 0.000678 | Cell 2 (Plastic) = 0.000678
+50995065
+Trial: 609, Time:34.594s
+Trial 609: Cell 1 (Static) = 0.000676 | Cell 2 (Plastic) = 0.000676
+50515324
+Trial: 610, Time:34.272s
+Trial 610: Cell 1 (Static) = 0.000674 | Cell 2 (Plastic) = 0.000674
+49374070
+Trial: 611, Time:34.767s
+Trial 611: Cell 1 (Static) = 0.000672 | Cell 2 (Plastic) = 0.000672
+48407979
+Trial: 612, Time:34.162s
+Trial 612: Cell 1 (Static) = 0.000670 | Cell 2 (Plastic) = 0.000670
+49017905
+Trial: 613, Time:34.310s
+Trial 613: Cell 1 (Static) = 0.000668 | Cell 2 (Plastic) = 0.000668
+48528521
+Trial: 614, Time:34.025s
+Trial 614: Cell 1 (Static) = 0.000666 | Cell 2 (Plastic) = 0.000666
+49258257
+Trial: 615, Time:34.449s
+Trial 615: Cell 1 (Static) = 0.000664 | Cell 2 (Plastic) = 0.000664
+49295307
+Trial: 616, Time:36.120s
+Trial 616: Cell 1 (Static) = 0.000662 | Cell 2 (Plastic) = 0.000662
+48671051
+Trial: 617, Time:34.579s
+Trial 617: Cell 1 (Static) = 0.000660 | Cell 2 (Plastic) = 0.000660
+49121354
+Trial: 618, Time:34.626s
+Trial 618: Cell 1 (Static) = 0.000658 | Cell 2 (Plastic) = 0.000658
+49786852
+Trial: 619, Time:35.847s
+Trial 619: Cell 1 (Static) = 0.000656 | Cell 2 (Plastic) = 0.000656
+49464843
+Trial: 620, Time:35.313s
+Trial 620: Cell 1 (Static) = 0.000654 | Cell 2 (Plastic) = 0.000654
+50732108
+Trial: 621, Time:34.451s
+Trial 621: Cell 1 (Static) = 0.000652 | Cell 2 (Plastic) = 0.000652
+50964287
+Trial: 622, Time:35.103s
+Trial 622: Cell 1 (Static) = 0.000650 | Cell 2 (Plastic) = 0.000650
+49816184
+Trial: 623, Time:35.201s
+Trial 623: Cell 1 (Static) = 0.000648 | Cell 2 (Plastic) = 0.000648
+49919898
+Trial: 624, Time:35.877s
+Trial 624: Cell 1 (Static) = 0.000646 | Cell 2 (Plastic) = 0.000646
+50657548
+Trial: 625, Time:34.256s
+Trial 625: Cell 1 (Static) = 0.000644 | Cell 2 (Plastic) = 0.000644
+50604223
+Trial: 626, Time:34.820s
+Trial 626: Cell 1 (Static) = 0.000642 | Cell 2 (Plastic) = 0.000642
+49984020
+Trial: 627, Time:33.946s
+Trial 627: Cell 1 (Static) = 0.000640 | Cell 2 (Plastic) = 0.000640
+49744693
+Trial: 628, Time:34.618s
+Trial 628: Cell 1 (Static) = 0.000638 | Cell 2 (Plastic) = 0.000638
+49555736
+Trial: 629, Time:34.326s
+Trial 629: Cell 1 (Static) = 0.000636 | Cell 2 (Plastic) = 0.000636
+50489921
+Trial: 630, Time:33.937s
+Trial 630: Cell 1 (Static) = 0.000634 | Cell 2 (Plastic) = 0.000634
+50219356
+Trial: 631, Time:34.432s
+Trial 631: Cell 1 (Static) = 0.000632 | Cell 2 (Plastic) = 0.000632
+49800509
+Trial: 632, Time:34.351s
+Trial 632: Cell 1 (Static) = 0.000631 | Cell 2 (Plastic) = 0.000631
+50662955
+Trial: 633, Time:34.974s
+Trial 633: Cell 1 (Static) = 0.000629 | Cell 2 (Plastic) = 0.000629
+49387495
+Trial: 634, Time:34.354s
+Trial 634: Cell 1 (Static) = 0.000627 | Cell 2 (Plastic) = 0.000627
+50792202
+Trial: 635, Time:34.190s
+Trial 635: Cell 1 (Static) = 0.000625 | Cell 2 (Plastic) = 0.000625
+51420239
+Trial: 636, Time:34.197s
+Trial 636: Cell 1 (Static) = 0.000623 | Cell 2 (Plastic) = 0.000623
+51904744
+Trial: 637, Time:34.916s
+Trial 637: Cell 1 (Static) = 0.000621 | Cell 2 (Plastic) = 0.000621
+52071880
+Trial: 638, Time:35.136s
+Trial 638: Cell 1 (Static) = 0.000619 | Cell 2 (Plastic) = 0.000619
+51435039
+Trial: 639, Time:34.687s
+Trial 639: Cell 1 (Static) = 0.000618 | Cell 2 (Plastic) = 0.000618
+52270703
+Trial: 640, Time:35.343s
+Trial 640: Cell 1 (Static) = 0.000616 | Cell 2 (Plastic) = 0.000616
+51191591
+Trial: 641, Time:34.288s
+Trial 641: Cell 1 (Static) = 0.000614 | Cell 2 (Plastic) = 0.000614
+51621063
+Trial: 642, Time:34.588s
+Trial 642: Cell 1 (Static) = 0.000612 | Cell 2 (Plastic) = 0.000612
+52799045
+Trial: 643, Time:35.474s
+Trial 643: Cell 1 (Static) = 0.000610 | Cell 2 (Plastic) = 0.000610
+52043146
+Trial: 644, Time:34.955s
+Trial 644: Cell 1 (Static) = 0.000608 | Cell 2 (Plastic) = 0.000608
+52343112
+Trial: 645, Time:35.084s
+Trial 645: Cell 1 (Static) = 0.000607 | Cell 2 (Plastic) = 0.000607
+50585315
+Trial: 646, Time:35.016s
+Trial 646: Cell 1 (Static) = 0.000605 | Cell 2 (Plastic) = 0.000605
+51591707
+Trial: 647, Time:35.151s
+Trial 647: Cell 1 (Static) = 0.000603 | Cell 2 (Plastic) = 0.000603
+51644369
+Trial: 648, Time:35.123s
+Trial 648: Cell 1 (Static) = 0.000601 | Cell 2 (Plastic) = 0.000601
+51422400
+Trial: 649, Time:34.293s
+Trial 649: Cell 1 (Static) = 0.000599 | Cell 2 (Plastic) = 0.000599
+50572668
+Trial: 650, Time:34.955s
+Trial 650: Cell 1 (Static) = 0.000598 | Cell 2 (Plastic) = 0.000598
+50050201
+Trial: 651, Time:34.734s
+Trial 651: Cell 1 (Static) = 0.000596 | Cell 2 (Plastic) = 0.000596
+51304727
+Trial: 652, Time:35.066s
+Trial 652: Cell 1 (Static) = 0.000594 | Cell 2 (Plastic) = 0.000594
+52498682
+Trial: 653, Time:35.105s
+Trial 653: Cell 1 (Static) = 0.000592 | Cell 2 (Plastic) = 0.000592
+52888153
+Trial: 654, Time:35.231s
+Trial 654: Cell 1 (Static) = 0.000590 | Cell 2 (Plastic) = 0.000590
+53221499
+Trial: 655, Time:34.652s
+Trial 655: Cell 1 (Static) = 0.000589 | Cell 2 (Plastic) = 0.000589
+53303423
+Trial: 656, Time:35.284s
+Trial 656: Cell 1 (Static) = 0.000587 | Cell 2 (Plastic) = 0.000587
+51821260
+Trial: 657, Time:35.222s
+Trial 657: Cell 1 (Static) = 0.000585 | Cell 2 (Plastic) = 0.000585
+51980140
+Trial: 658, Time:35.272s
+Trial 658: Cell 1 (Static) = 0.000583 | Cell 2 (Plastic) = 0.000583
+51009643
+Trial: 659, Time:35.001s
+Trial 659: Cell 1 (Static) = 0.000582 | Cell 2 (Plastic) = 0.000582
+52336790
+Trial: 660, Time:35.084s
+Trial 660: Cell 1 (Static) = 0.000580 | Cell 2 (Plastic) = 0.000580
+52069176
+Trial: 661, Time:35.150s
+Trial 661: Cell 1 (Static) = 0.000578 | Cell 2 (Plastic) = 0.000578
+51919360
+Trial: 662, Time:34.676s
+Trial 662: Cell 1 (Static) = 0.000576 | Cell 2 (Plastic) = 0.000576
+52135882
+Trial: 663, Time:35.166s
+Trial 663: Cell 1 (Static) = 0.000575 | Cell 2 (Plastic) = 0.000575
+51440488
+Trial: 664, Time:35.138s
+Trial 664: Cell 1 (Static) = 0.000573 | Cell 2 (Plastic) = 0.000573
+50975698
+Trial: 665, Time:35.616s
+Trial 665: Cell 1 (Static) = 0.000571 | Cell 2 (Plastic) = 0.000571
+52130401
+Trial: 666, Time:35.123s
+Trial 666: Cell 1 (Static) = 0.000570 | Cell 2 (Plastic) = 0.000570
+51685762
+Trial: 667, Time:34.627s
+Trial 667: Cell 1 (Static) = 0.000568 | Cell 2 (Plastic) = 0.000568
+51941384
+Trial: 668, Time:34.477s
+Trial 668: Cell 1 (Static) = 0.000566 | Cell 2 (Plastic) = 0.000566
+52397359
+Trial: 669, Time:35.294s
+Trial 669: Cell 1 (Static) = 0.000564 | Cell 2 (Plastic) = 0.000564
+51570121
+Trial: 670, Time:35.607s
+Trial 670: Cell 1 (Static) = 0.000563 | Cell 2 (Plastic) = 0.000563
+53147014
+Trial: 671, Time:34.878s
+Trial 671: Cell 1 (Static) = 0.000561 | Cell 2 (Plastic) = 0.000561
+53016865
+Trial: 672, Time:34.722s
+Trial 672: Cell 1 (Static) = 0.000559 | Cell 2 (Plastic) = 0.000559
+52721698
+Trial: 673, Time:34.726s
+Trial 673: Cell 1 (Static) = 0.000558 | Cell 2 (Plastic) = 0.000558
+51737293
+Trial: 674, Time:35.628s
+Trial 674: Cell 1 (Static) = 0.000556 | Cell 2 (Plastic) = 0.000556
+52649568
+Trial: 675, Time:35.121s
+Trial 675: Cell 1 (Static) = 0.000554 | Cell 2 (Plastic) = 0.000554
+52694450
+Trial: 676, Time:35.127s
+Trial 676: Cell 1 (Static) = 0.000553 | Cell 2 (Plastic) = 0.000553
+51634049
+Trial: 677, Time:35.145s
+Trial 677: Cell 1 (Static) = 0.000551 | Cell 2 (Plastic) = 0.000551
+51717903
+Trial: 678, Time:34.869s
+Trial 678: Cell 1 (Static) = 0.000549 | Cell 2 (Plastic) = 0.000549
+52011379
+Trial: 679, Time:35.004s
+Trial 679: Cell 1 (Static) = 0.000548 | Cell 2 (Plastic) = 0.000548
+51918701
+Trial: 680, Time:34.914s
+Trial 680: Cell 1 (Static) = 0.000546 | Cell 2 (Plastic) = 0.000546
+52478274
+Trial: 681, Time:34.928s
+Trial 681: Cell 1 (Static) = 0.000545 | Cell 2 (Plastic) = 0.000545
+52090987
+Trial: 682, Time:34.815s
+Trial 682: Cell 1 (Static) = 0.000543 | Cell 2 (Plastic) = 0.000543
+52392523
+Trial: 683, Time:35.057s
+Trial 683: Cell 1 (Static) = 0.000541 | Cell 2 (Plastic) = 0.000541
+51514274
+Trial: 684, Time:34.801s
+Trial 684: Cell 1 (Static) = 0.000540 | Cell 2 (Plastic) = 0.000540
+52530685
+Trial: 685, Time:35.036s
+Trial 685: Cell 1 (Static) = 0.000538 | Cell 2 (Plastic) = 0.000538
+52068294
+Trial: 686, Time:34.856s
+Trial 686: Cell 1 (Static) = 0.000536 | Cell 2 (Plastic) = 0.000536
+51722541
+Trial: 687, Time:34.788s
+Trial 687: Cell 1 (Static) = 0.000535 | Cell 2 (Plastic) = 0.000535
+51687782
+Trial: 688, Time:34.387s
+Trial 688: Cell 1 (Static) = 0.000533 | Cell 2 (Plastic) = 0.000533
+52369031
+Trial: 689, Time:35.117s
+Trial 689: Cell 1 (Static) = 0.000532 | Cell 2 (Plastic) = 0.000532
+52653386
+Trial: 690, Time:35.037s
+Trial 690: Cell 1 (Static) = 0.000530 | Cell 2 (Plastic) = 0.000530
+52909688
+Trial: 691, Time:35.104s
+Trial 691: Cell 1 (Static) = 0.000528 | Cell 2 (Plastic) = 0.000528
+53302232
+Trial: 692, Time:35.136s
+Trial 692: Cell 1 (Static) = 0.000527 | Cell 2 (Plastic) = 0.000527
+53112604
+Trial: 693, Time:35.216s
+Trial 693: Cell 1 (Static) = 0.000525 | Cell 2 (Plastic) = 0.000525
+53675461
+Trial: 694, Time:34.756s
+Trial 694: Cell 1 (Static) = 0.000524 | Cell 2 (Plastic) = 0.000524
+53351220
+Trial: 695, Time:35.293s
+Trial 695: Cell 1 (Static) = 0.000522 | Cell 2 (Plastic) = 0.000522
+52569612
+Trial: 696, Time:34.721s
+Trial 696: Cell 1 (Static) = 0.000521 | Cell 2 (Plastic) = 0.000521
+53056414
+Trial: 697, Time:36.298s
+Trial 697: Cell 1 (Static) = 0.000519 | Cell 2 (Plastic) = 0.000519
+53478756
+Trial: 698, Time:35.212s
+Trial 698: Cell 1 (Static) = 0.000517 | Cell 2 (Plastic) = 0.000517
+52943469
+Trial: 699, Time:35.903s
+Trial 699: Cell 1 (Static) = 0.000516 | Cell 2 (Plastic) = 0.000516
+53821522
+Trial: 700, Time:35.241s
+Trial 700: Cell 1 (Static) = 0.000514 | Cell 2 (Plastic) = 0.000514
+53960579
+Trial: 701, Time:36.876s
+Trial 701: Cell 1 (Static) = 0.000513 | Cell 2 (Plastic) = 0.000513
+53867370
+Trial: 702, Time:35.201s
+Trial 702: Cell 1 (Static) = 0.000511 | Cell 2 (Plastic) = 0.000511
+52065501
+Trial: 703, Time:35.420s
+Trial 703: Cell 1 (Static) = 0.000510 | Cell 2 (Plastic) = 0.000510
+52546358
+Trial: 704, Time:34.966s
+Trial 704: Cell 1 (Static) = 0.000508 | Cell 2 (Plastic) = 0.000508
+51985091
+Trial: 705, Time:35.263s
+Trial 705: Cell 1 (Static) = 0.000507 | Cell 2 (Plastic) = 0.000507
+50741381
+Trial: 706, Time:35.043s
+Trial 706: Cell 1 (Static) = 0.000505 | Cell 2 (Plastic) = 0.000505
+50066955
+Trial: 707, Time:34.559s
+Trial 707: Cell 1 (Static) = 0.000504 | Cell 2 (Plastic) = 0.000504
+50964735
+Trial: 708, Time:34.978s
+Trial 708: Cell 1 (Static) = 0.000502 | Cell 2 (Plastic) = 0.000502
+50276943
+Trial: 709, Time:34.679s
+Trial 709: Cell 1 (Static) = 0.000501 | Cell 2 (Plastic) = 0.000501
+51176332
+Trial: 710, Time:34.234s
+Trial 710: Cell 1 (Static) = 0.000499 | Cell 2 (Plastic) = 0.000499
+51215856
+Trial: 711, Time:35.280s
+Trial 711: Cell 1 (Static) = 0.000498 | Cell 2 (Plastic) = 0.000498
+51759335
+Trial: 712, Time:35.620s
+Trial 712: Cell 1 (Static) = 0.000496 | Cell 2 (Plastic) = 0.000496
+52105377
+Trial: 713, Time:34.719s
+Trial 713: Cell 1 (Static) = 0.000495 | Cell 2 (Plastic) = 0.000495
+52628004
+Trial: 714, Time:35.964s
+Trial 714: Cell 1 (Static) = 0.000493 | Cell 2 (Plastic) = 0.000493
+51618744
+Trial: 715, Time:35.071s
+Trial 715: Cell 1 (Static) = 0.000492 | Cell 2 (Plastic) = 0.000492
+52658060
+Trial: 716, Time:36.759s
+Trial 716: Cell 1 (Static) = 0.000490 | Cell 2 (Plastic) = 0.000490
+52383162
+Trial: 717, Time:35.845s
+Trial 717: Cell 1 (Static) = 0.000489 | Cell 2 (Plastic) = 0.000489
+51965500
+Trial: 718, Time:36.679s
+Trial 718: Cell 1 (Static) = 0.000487 | Cell 2 (Plastic) = 0.000487
+52882141
+Trial: 719, Time:35.649s
+Trial 719: Cell 1 (Static) = 0.000486 | Cell 2 (Plastic) = 0.000486
+52598220
+Trial: 720, Time:35.345s
+Trial 720: Cell 1 (Static) = 0.000484 | Cell 2 (Plastic) = 0.000484
+52457502
+Trial: 721, Time:35.237s
+Trial 721: Cell 1 (Static) = 0.000483 | Cell 2 (Plastic) = 0.000483
+52775897
+Trial: 722, Time:35.302s
+Trial 722: Cell 1 (Static) = 0.000482 | Cell 2 (Plastic) = 0.000482
+53225390
+Trial: 723, Time:35.055s
+Trial 723: Cell 1 (Static) = 0.000480 | Cell 2 (Plastic) = 0.000480
+52590895
+Trial: 724, Time:35.501s
+Trial 724: Cell 1 (Static) = 0.000479 | Cell 2 (Plastic) = 0.000479
+51408598
+Trial: 725, Time:34.645s
+Trial 725: Cell 1 (Static) = 0.000477 | Cell 2 (Plastic) = 0.000477
+51425529
+Trial: 726, Time:35.574s
+Trial 726: Cell 1 (Static) = 0.000476 | Cell 2 (Plastic) = 0.000476
+51144223
+Trial: 727, Time:35.126s
+Trial 727: Cell 1 (Static) = 0.000474 | Cell 2 (Plastic) = 0.000474
+51472114
+Trial: 728, Time:35.092s
+Trial 728: Cell 1 (Static) = 0.000473 | Cell 2 (Plastic) = 0.000473
+51685192
+Trial: 729, Time:34.373s
+Trial 729: Cell 1 (Static) = 0.000472 | Cell 2 (Plastic) = 0.000472
+51429061
+Trial: 730, Time:34.841s
+Trial 730: Cell 1 (Static) = 0.000470 | Cell 2 (Plastic) = 0.000470
+52119619
+Trial: 731, Time:34.975s
+Trial 731: Cell 1 (Static) = 0.000469 | Cell 2 (Plastic) = 0.000469
+52612845
+Trial: 732, Time:35.638s
+Trial 732: Cell 1 (Static) = 0.000467 | Cell 2 (Plastic) = 0.000467
+52175743
+Trial: 733, Time:35.194s
+Trial 733: Cell 1 (Static) = 0.000466 | Cell 2 (Plastic) = 0.000466
+52295686
+Trial: 734, Time:35.082s
+Trial 734: Cell 1 (Static) = 0.000465 | Cell 2 (Plastic) = 0.000465
+51999152
+Trial: 735, Time:35.137s
+Trial 735: Cell 1 (Static) = 0.000463 | Cell 2 (Plastic) = 0.000463
+52190966
+Trial: 736, Time:34.991s
+Trial 736: Cell 1 (Static) = 0.000462 | Cell 2 (Plastic) = 0.000462
+52471952
+Trial: 737, Time:34.553s
+Trial 737: Cell 1 (Static) = 0.000460 | Cell 2 (Plastic) = 0.000460
+51570405
+Trial: 738, Time:34.975s
+Trial 738: Cell 1 (Static) = 0.000459 | Cell 2 (Plastic) = 0.000459
+52706175
+Trial: 739, Time:35.056s
+Trial 739: Cell 1 (Static) = 0.000458 | Cell 2 (Plastic) = 0.000458
+52711650
+Trial: 740, Time:34.968s
+Trial 740: Cell 1 (Static) = 0.000456 | Cell 2 (Plastic) = 0.000456
+51006763
+Trial: 741, Time:34.950s
+Trial 741: Cell 1 (Static) = 0.000455 | Cell 2 (Plastic) = 0.000455
+51333873
+Trial: 742, Time:34.697s
+Trial 742: Cell 1 (Static) = 0.000454 | Cell 2 (Plastic) = 0.000454
+51866217
+Trial: 743, Time:34.256s
+Trial 743: Cell 1 (Static) = 0.000452 | Cell 2 (Plastic) = 0.000452
+50926656
+Trial: 744, Time:34.966s
+Trial 744: Cell 1 (Static) = 0.000451 | Cell 2 (Plastic) = 0.000451
+50186369
+Trial: 745, Time:34.685s
+Trial 745: Cell 1 (Static) = 0.000450 | Cell 2 (Plastic) = 0.000450
+49874736
+Trial: 746, Time:34.427s
+Trial 746: Cell 1 (Static) = 0.000448 | Cell 2 (Plastic) = 0.000448
+50483598
+Trial: 747, Time:34.420s
+Trial 747: Cell 1 (Static) = 0.000447 | Cell 2 (Plastic) = 0.000447
+49944155
+Trial: 748, Time:34.664s
+Trial 748: Cell 1 (Static) = 0.000446 | Cell 2 (Plastic) = 0.000446
+50282194
+Trial: 749, Time:34.816s
+Trial 749: Cell 1 (Static) = 0.000444 | Cell 2 (Plastic) = 0.000444
+50891441
+Trial: 750, Time:34.248s
+Trial 750: Cell 1 (Static) = 0.000443 | Cell 2 (Plastic) = 0.000443
+48879030
+Trial: 751, Time:34.186s
+Trial 751: Cell 1 (Static) = 0.000442 | Cell 2 (Plastic) = 0.000442
+50542206
+Trial: 752, Time:34.579s
+Trial 752: Cell 1 (Static) = 0.000440 | Cell 2 (Plastic) = 0.000440
+50984081
+Trial: 753, Time:34.678s
+Trial 753: Cell 1 (Static) = 0.000439 | Cell 2 (Plastic) = 0.000439
+50881352
+Trial: 754, Time:34.811s
+Trial 754: Cell 1 (Static) = 0.000438 | Cell 2 (Plastic) = 0.000438
+51526710
+Trial: 755, Time:35.548s
+Trial 755: Cell 1 (Static) = 0.000436 | Cell 2 (Plastic) = 0.000436
+51337039
+Trial: 756, Time:34.632s
+Trial 756: Cell 1 (Static) = 0.000435 | Cell 2 (Plastic) = 0.000435
+51914423
+Trial: 757, Time:34.256s
+Trial 757: Cell 1 (Static) = 0.000434 | Cell 2 (Plastic) = 0.000434
+50971117
+Trial: 758, Time:34.554s
+Trial 758: Cell 1 (Static) = 0.000432 | Cell 2 (Plastic) = 0.000432
+51896260
+Trial: 759, Time:35.194s
+Trial 759: Cell 1 (Static) = 0.000431 | Cell 2 (Plastic) = 0.000431
+51529207
+Trial: 760, Time:35.686s
+Trial 760: Cell 1 (Static) = 0.000430 | Cell 2 (Plastic) = 0.000430
+51107586
+Trial: 761, Time:34.923s
+Trial 761: Cell 1 (Static) = 0.000428 | Cell 2 (Plastic) = 0.000428
+50503883
+Trial: 762, Time:34.831s
+Trial 762: Cell 1 (Static) = 0.000427 | Cell 2 (Plastic) = 0.000427
+50720478
+Trial: 763, Time:33.983s
+Trial 763: Cell 1 (Static) = 0.000426 | Cell 2 (Plastic) = 0.000426
+50125056
+Trial: 764, Time:34.482s
+Trial 764: Cell 1 (Static) = 0.000425 | Cell 2 (Plastic) = 0.000425
+51225827
+Trial: 765, Time:34.809s

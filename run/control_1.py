@@ -96,7 +96,7 @@ def run_session(filepath_m, filepath_go, filepath_gr, filepath_w_grgo, filepath_
     print("GRGO Connectivity Array Loaded.")
 
     # GOGO_connect_arr = WireFunctions.wire_up_verified(conv, recip, span, verbose=False)
-    GOGO_importPath = "/home/data/einez/connect_arr/connect_arr_PRE.gogo"
+    GOGO_importPath = "/home/data/einez/connect_arr/R75_C12_PRE.gogo"
     GOGO_connect_arr = connect.read_connect(GOGO_importPath, numGO, 12)
     # GOGO_connect_arr[GOGO_connect_arr == -1] = 0
     print("GOGO Connectivity Array Loaded.")
@@ -246,15 +246,15 @@ numBins = 5000
 useCS = 0
 CSon, CSoff = 500, 3500
 numTrial = 1000
-MFGO_PLAST = 1
-GOGO_PLAST = 1
+MFGO_PLAST = 0
+GOGO_PLAST = 0
 GRGO_PLAST = 1
 MFGR_PLAST = 0
 GOGR_PLAST = 0
 
 # saving to hard drive
-expName = f'MFGoGr_SS_shuffleMF10percent_noCS_allGOplast_{numTrial}_trial'
-# MFGoGr_SS_shuffleMF10percent_noCS_allGOplast_1000_trial
+expName = f'MFGoGr_SS_shuffleMF10percent_noCS_grgoplast_{numTrial}_trial'
+# MFGoGr_SS_shuffleMF10percent_noCS_grgoplast_1000_trial
 saveDir = f'/home/data/einez/homeostat_SS/{expName}'
 
 # Save Rasters

@@ -85,23 +85,45 @@ def plotFiringFrequencyDrift(raster, cell_type, timestep_ms=1.0, save_path=None,
 # --- EXECUTION BLOCK ---
 
 # 1. Load the raster data
-raster_path = '/home/data/einez/homeostat_SS/MFGoGr_SS_shuffleMF10percent_noCS_grgoplast_1000_trial/MFGoGr_SS_shuffleMF10percent_noCS_grgoplast_1000_trial_GRrasters.npy' 
+raster_path = '/home/data/einez/homeostat_SS/0recip_MFGoGr_SS_shuffleMF10percent_noCS_mfgoplast_1000_trial/0recip_MFGoGr_SS_shuffleMF10percent_noCS_mfgoplast_1000_trial' 
 
-if os.path.exists(raster_path):
-    raster_data = np.load(raster_path)
-    print("Finished loading data")
+# if os.path.exists(raster_path):
+GO_raster_path = raster_path + '_GOrasters.npy'
+raster_data = np.load(GO_raster_path)
+print("Finished loading data")
+
+# # Just the first 10 trials
+# raster_data = raster_data[:10, :]
+
+# 2. Define Cell Type (1=MF, 2=Golgi, 3=Granule)
+current_cell_type = 2
+
+# 3. Define save location
+save_filename = "0recip_MFGoGr_SS_shuffleMF10percent_noCS_mfgoplast_1000_trial/GO_Firing_Frequency_Histogram" 
+plot_save_path = f"/home/aw39625/minisim/Results/{save_filename}"
+
+# 4. Run the function
+plotFiringFrequencyDrift(raster_data, cell_type=current_cell_type, timestep_ms=1.0, save_path=plot_save_path, target = 10.0)
+
+GR_raster_path = raster_path + '_GRrasters.npy' 
+
+raster_data = np.load(GR_raster_path)
+print("Finished loading data")
+
+# # Just the first 10 trials
+# raster_data = raster_data[:10, :]
+
+# 2. Define Cell Type (1=MF, 2=Golgi, 3=Granule)
+current_cell_type = 3
+
+# 3. Define save location
+save_filename = "0recip_MFGoGr_SS_shuffleMF10percent_noCS_mfgoplast_1000_trial/GR_Firing_Frequency_Histogram" 
+plot_save_path = f"/home/aw39625/minisim/Results/{save_filename}"
+
+# 4. Run the function
+plotFiringFrequencyDrift(raster_data, cell_type=current_cell_type, timestep_ms=1.0, save_path=plot_save_path, target = 1.0)
+
+# else:
+#     print(f"File not found: {raster_path}")
+
     
-    # # Just the first 10 trials
-    # raster_data = raster_data[:10, :]
- 
-    # 2. Define Cell Type (1=MF, 2=Golgi, 3=Granule)
-    current_cell_type = 3
-
-    # 3. Define save location
-    save_filename = "MFGoGr_SS_shuffleMF10percent_noCS_grgoplast_1000_trial/GR_Firing_Frequency_Histogram" 
-    plot_save_path = f"/home/aw39625/minisim/Results/{save_filename}"
-
-    # 4. Run the function
-    plotFiringFrequencyDrift(raster_data, cell_type=current_cell_type, timestep_ms=1.0, save_path=plot_save_path, target = 1.0)
-else:
-    print(f"File not found: {raster_path}")
